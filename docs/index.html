@@ -1487,47 +1487,18 @@
         };
 
 
+        
         window.openModal = function(item) {
-            if (!item) return;
-            window.currentFicheId = item.id || 1;
-            let modal = document.getElementById('ficheModal');
-            let body = document.getElementById('modalBody');
-            
-            // Fail-safe: if modal DOM elements are missing, create them dynamically
-            if (!modal || !body) {
-                console.warn('Creating modal overlay dynamically...');
-                modal = document.createElement('div');
-                modal.id = 'ficheModal';
-                modal.className = 'modal-overlay';
-                modal.onclick = (e) => window.closeModal(e);
-                modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(12px); z-index: 99999; display: none; justify-content: center; align-items: center; padding: 2rem;';
-                
-                const content = document.createElement('div');
-                content.className = 'modal-content';
-                content.onclick = (e) => e.stopPropagation();
-                content.style.cssText = 'background: #ffffff; border: 1px solid #b8860b; border-radius: 16px; max-width: 900px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 3rem; position: relative;';
-                
-                const closeBtn = document.createElement('span');
-                closeBtn.className = 'close-btn';
-                closeBtn.innerHTML = '&times;';
-                closeBtn.onclick = () => window.closeModalForce();
-                closeBtn.style.cssText = 'position: absolute; top: 20px; right: 25px; font-size: 2rem; cursor: pointer; color: #475569; font-weight: bold;';
-                
-                body = document.createElement('div');
-                body.id = 'modalBody';
-                
-                content.appendChild(closeBtn);
-                content.appendChild(body);
-                modal.appendChild(content);
-                document.body.appendChild(modal);
-            }
-            
-            let sourcesListHTML = (item.sources || []).map(s => {
-                const sha = s.sha256 ? `<span style="display: block; font-family: monospace; font-size: 0.72rem; color: #64748b; margin-top: 4px;">SHA-256: ${s.sha256.substring(0, 32)}...</span>` : '';
-                return `<li style="margin-bottom: 0.9rem; list-style: none;">
-                    <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="color: #007791; text-decoration: none; font-weight: 700; display: inline-block; background: rgba(0, 119, 145, 0.06); padding: 12px 18px; border-radius: 8px; border: 1px solid rgba(0, 119, 145, 0.25); width: 100%; transition: all 0.2s;">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <span style="color: #007791;">🔗 ${s.name}</span>
+            const modal = document.getElementById('ficheModal');
+            const body = document.getElementById('modalBody');
+            if (!modal || !body || !item) return;
+
+            const sourcesListHTML = (item.sources || []).map(s => {
+                const sha = s.sha256 ? `<div style="font-family: monospace; font-size: 0.78rem; color: #64748b; margin-top: 2px;">SHA-256: ${s.sha256}</div>` : '';
+                return `<li style="margin-bottom: 0.8rem; background: #ffffff; padding: 10px 14px; border-radius: 8px; border: 1px solid #cbd5e1;">
+                    <a href="${s.url}" target="_blank" style="text-decoration: none; display: block;">
+                        <div style="font-weight: 700; color: #007791; font-size: 0.95rem; display: flex; justify-content: space-between;">
+                            <span>🔗 ${s.name}</span>
                             <span style="font-size: 0.82rem; color: #b8860b; font-weight: 800;">[Preuve Officielle Légifrance/PDF ↗]</span>
                         </div>
                         ${sha}
@@ -1538,42 +1509,31 @@
             const numStr = item.id < 10 ? '0' + item.id : item.id;
             const dossierFileName = 'dossiers/dossier_audit_' + numStr + '.md';
 
+            let imgHeader = '';
+            if (item.image) {
+                imgHeader = `<img src="${item.image}" alt="${item.title}" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 12px; margin-bottom: 2rem; border: 1px solid #cbd5e1; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">`;
+            }
+
             body.innerHTML = `
-                <!-- En-tête Institutionnel du Dossier d'Investigation -->
-                <div style="background: rgba(184, 134, 11, 0.12); border: 1px solid var(--accent-gold); border-radius: 12px; padding: 1.4rem 1.8rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <!-- En-tête Institutionnel du Dossier d'Investigation Presse -->
+                <div style="background: #0f172a; color: #ffffff; border-radius: 12px; padding: 1.4rem 1.8rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
                     <div>
-                        <span style="font-size: 0.82rem; font-weight: 800; color: #b8860b; letter-spacing: 1.5px; text-transform: uppercase;">ARTICLE D'INVESTIGATION COMPLET #${numStr}</span>
-                        <h4 style="margin: 0.2rem 0 0 0; padding: 0; border: none; font-size: 1.2rem; color: #0f172a; font-weight: 800;">${item.category}</h4>
+                        <span style="font-size: 0.82rem; font-weight: 800; color: #d4af37; letter-spacing: 1.5px; text-transform: uppercase;">📰 ARTICLE D'INVESTIGATION PRESSE #${numStr}</span>
+                        <h4 style="margin: 0.2rem 0 0 0; padding: 0; border: none; font-size: 1.2rem; color: #ffffff; font-weight: 800;">${item.category}</h4>
                     </div>
                     <div style="text-align: right;">
-                        <span style="display: block; font-family: monospace; font-size: 0.88rem; color: #007791; font-weight: 800;">REF: ${item.ref}</span>
-                        <span style="display: block; font-family: monospace; font-size: 0.78rem; color: #475569; margin-top: 2px;">PGP: 4096R/CASA-DI-CRISTALE-2026</span>
+                        <span style="display: block; font-family: monospace; font-size: 0.88rem; color: #d4af37; font-weight: 800;">REF: ${item.ref}</span>
+                        <span style="display: block; font-family: monospace; font-size: 0.78rem; color: #94a3b8; margin-top: 2px;">PGP: 4096R/CASA-DI-CRISTALE-2026</span>
                     </div>
                 </div>
 
-                <h1 style="font-size: 2.2rem; color: #b8860b; margin-bottom: 0.6rem; line-height: 1.3; font-weight: 800;">${item.title}</h1>
-                <p style="font-size: 1.2rem; color: #0f172a; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.5; border-bottom: 1px solid #e2e8f0; padding-bottom: 1rem;">${item.subtitle}</p>
+                ${imgHeader}
 
-                <!-- Module de Déclinaison Communale Granulaire (Code INSEE) -->
-                <div style="background: linear-gradient(135deg, rgba(0, 119, 145, 0.1) 0%, rgba(248, 250, 252, 1) 100%); border: 1px solid #007791; border-radius: 12px; padding: 1.2rem 1.6rem; margin-bottom: 2rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <span style="font-size: 0.8rem; font-weight: 800; color: #007791; letter-spacing: 1.2px; text-transform: uppercase;">🎯 APPLICATION COMMUNALE GRANULAIRE</span>
-                            <h4 style="margin: 0.2rem 0 0 0; padding: 0; border: none; font-size: 1.1rem; color: #0f172a; font-weight: 800;">Décliner cette enquête sur votre commune</h4>
-                        </div>
-                        <div style="min-width: 260px;">
-                            <select id="modalCommuneSelect" onchange="updateModalCommuneData(this.value, ${item.id})" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid #007791; font-weight: 700; color: #0f172a; background: #ffffff;">
-                                <option value="">🔍 Sélectionner une commune (ex: Piana, Cargèse, Bonifacio...)</option>
-                                ${(window.gisPack || []).map((c, i) => `<option value="${i}">${c.name} (${c.dep})</option>`).join('')}
-                            </select>
-                        </div>
-                    </div>
-                    <div id="modalCommuneOutput" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed #cbd5e1; font-size: 0.95rem; color: #0f172a; line-height: 1.6;">
-                    </div>
-                </div>
+                <h1 style="font-size: 2.2rem; color: #0f172a; margin-bottom: 0.8rem; line-height: 1.3; font-weight: 900; font-family: Georgia, serif;">${item.title}</h1>
+                <p style="font-size: 1.2rem; color: #334155; font-weight: 700; margin-bottom: 1.8rem; line-height: 1.6; border-bottom: 2px solid #e2e8f0; padding-bottom: 1.2rem;">${item.subtitle}</p>
 
                 <!-- Métadonnées Journalistiques -->
-                <div style="display: flex; gap: 1.5rem; color: #475569; font-size: 0.9rem; margin-bottom: 2rem; font-weight: 600; background: #f8fafc; padding: 10px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <div style="display: flex; gap: 1.5rem; color: #475569; font-size: 0.9rem; margin-bottom: 2rem; font-weight: 600; background: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; flex-wrap: wrap;">
                     <span>✍️ ${item.author}</span>
                     <span>📅 ${item.date}</span>
                     <span>⚙️ Tool: ${item.tool}</span>
@@ -1609,19 +1569,20 @@
                 <div style="margin-bottom: 2.5rem; background: #f8fafc; padding: 1.5rem; border-radius: 10px; border: 1px dashed #b8860b;">
                     <h4 style="margin: 0 0 0.5rem 0; border: none; padding: 0; color: #b8860b; font-size: 1.05rem; font-weight: 800;">🛡️ Note de Rigueur & Souveraineté Numérique</h4>
                     <p style="font-size: 0.95rem; color: #475569; margin: 0; line-height: 1.7;">
-                        Cette enquête a été construite par croisement des données d'État (Cour des Comptes, DGFiP, BRGM, INSEE, ARCEP, DVF, INPI) et validée par le radar de terrain <strong><code>⚙️ Tool: Bufitonu.fr</code></strong>. Anonymisation RGPD stricte garantie pour les personnes physiques.
+                        Cette enquête a été construite par croisement des données d'État (Cour des Comptes, DGFiP, BRGM, INSEE, ARCEP, DVF, INPI) et certifiée par le radar de terrain <strong><code>⚙️ Tool: Bufitonu.fr</code></strong>.
                     </p>
                 </div>
 
                 <!-- Bouton Téléchargement Dossier Brut Markdown -->
                 <div style="padding-top: 1.5rem; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.2rem;">
                     <span style="font-size: 0.95rem; color: #b8860b; font-weight: 800;">CASA DI CRISTALE 2.0 — Investigation Libre & Souveraine</span>
-                    <a href="${dossierFileName}" target="_blank" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%); color: #ffffff; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 800; font-size: 0.92rem; box-shadow: 0 4px 15px rgba(184,134,11,0.3);">📄 Consulter le Fichier Source Markdown Brut (.MD) ↗</a>
+                    <a href="${dossierFileName}" target="_blank" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #d4af37; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 800; font-size: 0.92rem; border: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">📄 Consulter le Fichier Source Markdown Brut (.MD) ↗</a>
                 </div>
             `;
             
             modal.style.display = 'flex';
         };
+
 
         window.openModalById = function(ficheId) {
             if (!window.fichesData) return;
@@ -1791,18 +1752,21 @@
             <span class="tool-tag" style="display: inline-block; background: rgba(0, 119, 145, 0.1); color: #007791; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Banque de France / IEDOM</span>
         </div>
         <div class="fiche-card" onclick="openModalById(2)" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 16px; padding: 1.8rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+            <img src="img_enquete_02.jpg" alt="Illustration Enquête 02" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; border: 1px solid #e2e8f0;">
             <div class="fiche-number" style="font-size: 0.8rem; font-weight: 800; color: #b8860b; letter-spacing: 1.5px; margin-bottom: 0.5rem;">Fiche Audit #02</div>
             <h3 style="font-size: 1.25rem; color: #0f172a; font-weight: 800; margin-bottom: 0.6rem; line-height: 1.4;">Enquête 02 : Le Mythe des Subventions — Pourquoi la Corse ne vit pas « d'assistanat »</h3>
             <p style="color: #475569; font-size: 0.92rem; line-height: 1.5; margin: 0.5rem 0 1rem;">La TVA et les impôts de 3 millions de touristes partent à Paris, pendant que nos services publics sont sous-financés</p>
             <span class="tool-tag" style="display: inline-block; background: rgba(0, 119, 145, 0.1); color: #007791; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Cour des Comptes 2023</span>
         </div>
         <div class="fiche-card" onclick="openModalById(3)" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 16px; padding: 1.8rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+            <img src="img_enquete_03.jpg" alt="Illustration Enquête 03" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; border: 1px solid #e2e8f0;">
             <div class="fiche-number" style="font-size: 0.8rem; font-weight: 800; color: #b8860b; letter-spacing: 1.5px; margin-bottom: 0.5rem;">Fiche Audit #03</div>
             <h3 style="font-size: 1.25rem; color: #0f172a; font-weight: 800; margin-bottom: 0.6rem; line-height: 1.4;">Enquête 03 : Étude Comparative — La Corse face aux régimes fonciers d'Outre-mer et d'Europe (Jersey, Polynésie, Nouvelle-Calédonie)</h3>
             <p style="color: #475569; font-size: 0.92rem; line-height: 1.5; margin: 0.5rem 0 1rem;">Pourquoi les îles anglo-normandes et les collectivités du Pacifique protègent leur sol alors que la Corse est maintenue dans l'exception juridique de l'assimilation</p>
             <span class="tool-tag" style="display: inline-block; background: rgba(0, 119, 145, 0.1); color: #007791; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Droit Comparé / States of Jersey</span>
         </div>
         <div class="fiche-card" onclick="openModalById(4)" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 16px; padding: 1.8rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+            <img src="img_enquete_04.jpg" alt="Illustration Enquête 04" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; border: 1px solid #e2e8f0;">
             <div class="fiche-number" style="font-size: 0.8rem; font-weight: 800; color: #b8860b; letter-spacing: 1.5px; margin-bottom: 0.5rem;">Fiche Audit #04</div>
             <h3 style="font-size: 1.25rem; color: #0f172a; font-weight: 800; margin-bottom: 0.6rem; line-height: 1.4;">Enquête 04 : La Marchandisation de l'Eau — Quand le château d'eau de la Méditerranée subit la pénurie</h3>
             <p style="color: #475569; font-size: 0.92rem; line-height: 1.5; margin: 0.5rem 0 1rem;">Pourquoi nos villages manquent d'eau l'été pendant que des multinationales privées engrangent les bénéfices sur la côte</p>
