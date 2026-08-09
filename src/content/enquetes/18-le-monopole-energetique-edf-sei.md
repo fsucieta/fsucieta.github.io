@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "EDF SEI / CRE / PPE Corse"
 chapeau: "Non connectée au réseau électrique continental européen et classée comme Zone Non Interconnectée (ZNI), la Corse dépend à plus de 60 % de la combustion de fioul lourd pour sa production d'électricité. Enquête sur le monopole d'EDF-SEI et la rentabilité du système de péréquation nationale."
 math: "\\text{Empreinte Carbone Électrique Insulaire (ECEI)} = \\frac{\\sum \\text{Émissions CO₂ et Particules des Centrales Thermiques Vazzio/Lucciana}}{\\text{Production Électrique Totale Injectée dans le Réseau Insulaire}} \\times 100"
-image: "img_enquete_18.svg?v=1786230999"
+image: "img_enquete_18.jpg"
 sources:
   - name: "Commission de Régulation de l'Énergie (CRE) : Charges de Péréquation Énergétique ZNI"
     url: "https://www.cre.fr/"

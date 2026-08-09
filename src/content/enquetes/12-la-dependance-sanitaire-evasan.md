@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "ARS Corse / DREES / CNAM / CHU Audit"
 chapeau: "Seul territoire métropolitain dépourvu de Centre Hospitalier Universitaire (CHU) de plein exercice, la Corse subit un sous-équipement sanitaire chronique. Enquête sur le coût humain et financier des 25 000 évacuations sanitaires (EVASAN) annuelles vers Marseille et Nice, financées au prix fort par l'assurance maladie insulaire."
 math: "\\text{Indice de Fuite Sanitaire (IFS)} = \\frac{\\sum \\text{Coûts des Évacuations Sanitaires et Hospitalisations Hors de Corse}}{\\text{Budget Global de l'Enveloppe Régionale de Santé (ARS)}} \\times 100"
-image: "img_enquete_12.svg?v=1786230999"
+image: "img_enquete_12.jpg"
 sources:
   - name: "ARS Corse : Projet Régional de Santé (PRS 2023-2028) et Bilans des Évasan"
     url: "https://www.corse.ars.sante.fr/"

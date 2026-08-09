@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "MESR / Université de Corse / Rectorat"
 chapeau: "Fondée en 1765 par Pasquale Paoli et rouverte en 1981 grâce à la lutte populaire insulaire, l'Université de Corse à Corte est le cœur battant de la jeunesse et du savoir. Pourtant, elle souffre d'un sous-investissement récurrent du Ministère de l'Enseignement Supérieur."
 math: "\\text{Indice de Sous-Dotation Universitaire (IDU)} = \\frac{\\text{Budget par Étudiant Alloué à l'Université de Corse par l'État}}{\\text{Budget Moyen par Étudiant dans les Universités Continentales}} \\times 100"
-image: "img_enquete_13.svg?v=1786230999"
+image: "img_enquete_13.jpg"
 sources:
   - name: "Ministère de l'Enseignement Supérieur (MESR) : Répartition du Budget Sanctuarisé par Université"
     url: "https://www.enseignementsup-recherche.gouv.fr/"

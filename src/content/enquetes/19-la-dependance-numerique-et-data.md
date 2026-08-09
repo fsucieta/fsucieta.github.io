@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "ARCEP / ANSSI / Corsica Fibra"
 chapeau: "Totalement dépendante de trois câbles de fibre optique sous-marins reliant l'île au continent, la Corse subit une fragilité numérique stratégique. Enquête sur le transfert des données administratives et cadastrales des résidents corses vers des datacenters continentaux et américains."
 math: "\\text{Indice de Dépendance Numérique (IDN)} = \\frac{\\sum \\text{Volume de Data Publique Insulaire Hébergée en Dehors du Territoire}}{\\text{Volume Global de la Data Administrée par les Collectivités Corses}} \\times 100"
-image: "img_enquete_19.svg?v=1786230999"
+image: "img_enquete_19.jpg"
 sources:
   - name: "ARCEP : Observatoire des Réseaux Fixes et Mobiles et Couverture Fibre en Corse"
     url: "https://www.arcep.fr/"

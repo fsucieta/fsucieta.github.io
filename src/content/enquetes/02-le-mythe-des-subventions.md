@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "Cour des Comptes / DGFiP / REPAD"
 chapeau: "Accusée depuis des décennies de vivre d'assistanat budgétaire et de générosité nationale, la Corse subit en réalité une ponction fiscale directe sur les richesses qu'elle produit. Radiographie des flux fiscaux démontrant que les transferts de l'État ne sont que la restitution très partielle des taxes collectées sur l'île."
 math: "\\text{Balance Fiscale Nette Insulaire} = (\\text{TVA Perçue} + \\text{IS Grande Distribution} + \\text{TIPP / TICPE}) - (\\text{DGF} + \\text{DCT} + \\text{Subventions d'Équipement})"
-image: "img_enquete_02.jpg?v=1786230999"
+image: "img_enquete_02.jpg"
 sources:
   - name: "Cour des Comptes : Rapport Thématique sur les Finances de la Collectivité de Corse (Juin 2023)"
     url: "https://www.ccomptes.fr/"

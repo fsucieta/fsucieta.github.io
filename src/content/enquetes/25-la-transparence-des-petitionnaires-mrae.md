@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "INPI RBE / DREAL / Code de l'Environnement"
 chapeau: "Pour franchir l'obstacle des études d'impact environnemental obligatoires devant la MRAe (Mission Régionale d'Autorité Environnementale), certains promoteurs utilisent la technique du « saucillonnage » des projets. Enquête sur le décryptage des véritables pétitionnaires."
 math: "\\text{Indice de Fractionnement des Projets (IFP)} = \\frac{\\sum \\text{Demandes de Permis d'Aménager Déposées Séparément sur un Même Massif}}{\\text{Surface Globale du Domaine Foncier à Urbaniser}} \\times 100"
-image: "img_enquete_25.svg?v=1786230999"
+image: "img_enquete_25.jpg"
 sources:
   - name: "MRAe Corse (Mission Régionale d'Autorité Environnementale) : Avis et Décisions de Soumission à Étude d'Impact"
     url: "https://www.mrae.developpement-durable.gouv.fr/corse-r10.html"

@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "States of Jersey / Loi du Pays Polynésie / Art 74"
 chapeau: "À chaque tentative de régulation foncière en Corse, le gouvernement central oppose l'inconstitutionnalité du statut de résident et le principe de libre circulation. Pourtant, de Jersey à la Polynésie française, des mécanismes juridiques de protection du sol insulaire s'appliquent en toute légalité. Démonstration comparative."
 math: "\\text{Indice de Protection Juridique du Sol (IPJS)} = \\frac{\\text{Nombre de verrous d'accès au foncier par le statut de résidence}}{\\text{Degré de soumission au marché général du Code Civil}} \\times 100"
-image: "img_enquete_03.jpg?v=1786230999"
+image: "img_enquete_03.jpg"
 sources:
   - name: "States of Jersey : Control of Housing and Work (Jersey) Law 2012"
     url: "https://www.gov.je/Government/JerseyLaw"

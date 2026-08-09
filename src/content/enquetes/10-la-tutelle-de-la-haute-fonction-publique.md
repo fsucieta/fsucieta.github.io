@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "DGAFP / CGCT / Cour des Comptes"
 chapeau: "Terre de sur-administration d'État et de sous-administration locale, la Corse subit la rotation continuelle de hauts fonctionnaires parisiens en quête d'avancement de carrière. Enquête sur le blocage des dossiers d'aménagement et le refus de former des cadres territoriaux insulaires souverains."
 math: "\\text{Indice de Vitesse de Rotation (IVR)} = \\frac{\\text{Durée Moyenne de Maintien en Poste des Préfets et Directeurs d'État (Mois)}}{36 \\text{ Mois (Durée Nominale de Projet Territorial)}} \\times 100"
-image: "img_enquete_10.jpg?v=1786230999"
+image: "img_enquete_10.jpg"
 sources:
   - name: "DGAFP : Rapport Annuel sur l'État de la Fonction Publique d'État et Territoriale"
     url: "https://www.fonction-publique.gouv.fr/"

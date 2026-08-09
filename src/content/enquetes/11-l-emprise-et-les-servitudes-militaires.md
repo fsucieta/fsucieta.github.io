@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "Ministère des Armées / CGCT / Servitudes DGF"
 chapeau: "Alors que la Corse souffre d'une pénurie aiguë de foncier pour le logement social et les infrastructures publiques, l'État conserve sous la main-mise de la Défense des domaines côtiers d'une valeur patrimoniale inestimable. Enquête sur les emprises de la Base Aérienne 126 de Solenzara, du 2e REP à Calvi et de la baie d'Aspretto à Ajaccio."
 math: "\\text{Taux de Servitude Militaire Littorale (TSML)} = \\frac{\\sum \\text{Surfaces du Domaine Public de la Défense en Zone Côtière}}{\\text{Superficie Globale des Plaines Littorales d'Utilité Publique}} \\times 100"
-image: "img_enquete_11.svg?v=1786230999"
+image: "img_enquete_11.jpg"
 sources:
   - name: "Ministère des Armées / DGA : Tableau Général des Propriétés Immobilières de la Défense"
     url: "https://www.defense.gouv.fr/"

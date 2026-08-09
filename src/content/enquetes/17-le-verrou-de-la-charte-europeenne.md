@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "Conseil Constitutionnel / Conseil de l'Europe / Education"
 chapeau: "Langue maternelle d'un peuple et véhicule de son histoire et de son patrimoine (la culture orale, les paghjelle, la toponymie), le corse subit une érosion linguistique accélérée. Enquête sur le refus de l'État d'accorder un statut de co-officialité et d'instaurer l'enseignement bilingue immersif obligatoire."
 math: "\\text{Indice de Vitalité Linguistique (IVL)} = \\frac{\\sum \\text{Locuteurs Réguliers de la Langue Corse de Moins de 20 Ans}}{\\text{Population Globale des Jeunes en Âge Scolaire dans l'Île}} \\times 100"
-image: "img_enquete_17.svg?v=1786230999"
+image: "img_enquete_17.jpg"
 sources:
   - name: "Conseil Constitutionnel : Décisions sur la Loi Molac et l'Article 2 de la Constitution"
     url: "https://www.conseil-constitutionnel.fr/"

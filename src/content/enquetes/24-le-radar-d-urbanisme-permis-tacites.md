@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "Sitadel2 / DVF / Cadastre / CADA"
 chapeau: "Pour éviter les recours des associations environnementales et la contestation des riverains, une part croissante des projets immobiliers spéculatifs sur le littoral corse naissent dans l'ombre du mécanisme du permis tacite. Enquête sur l'exploitation des failles du Code de l'Urbanisme."
 math: "\\text{Taux de Permis Tacites Littoraux (TPTL)} = \\frac{\\sum \\text{Permis de Construire Obtenus par Silence Gardé de l'Administration (R. 424-1)}}{\\text{Total des Permis Validés dans la Bande Côtière Communale}} \\times 100"
-image: "img_enquete_24.svg?v=1786230999"
+image: "img_enquete_24.jpg"
 sources:
   - name: "Ministère de la Transition Écologique / Sitadel2 : Base Nationale des Permis de Construire"
     url: "https://www.statistiques.developpement-durable.gouv.fr/"

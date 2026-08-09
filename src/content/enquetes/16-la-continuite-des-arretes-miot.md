@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "GIRTEC / Notaires / Code Civil"
 chapeau: "Instaurés en 1798 par le comte André-François Miot de Melito pour adapter le droit de succession aux réalités de la propriété familiale corse, les arrêtés Miot ont été progressivement démantelés par le Législateur. Enquête sur le piège de l'indivision et le rôle clé du GIRTEC."
 math: "\\text{Taux de Blocage par Indivision (TBI)} = \\frac{\\sum \\text{Parcelles Cadastrées sans Titre de Propriété Notarié Valide}}{\\text{Superficie Cadastrale Totale des Terres Privées de la Commune}} \\times 100"
-image: "img_enquete_16.svg?v=1786230999"
+image: "img_enquete_16.jpg"
 sources:
   - name: "GIRTEC (Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse) : Rapports d'Activité"
     url: "https://www.girtec.fr/"

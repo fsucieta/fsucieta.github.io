@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "IEDOM / Banque de France / ACPR"
 chapeau: "Considérée par les directions des grands groupes bancaires français comme un bassin de collecte d'épargne liquide particulièrement rentable, la Corse subit un sous-investissement bancaire local. Enquête sur le siphonnage des livrets et comptes d'épargne vers les marchés financiers internationaux."
 math: "\\text{Ratio de Réinvestissement Local (RRL)} = \\frac{\\sum \\text{Crédits à l'Économie Propre Accordés aux TPE/PME Corses}}{\\text{Volume Global des Dépôts de la Clientèle Collectés dans l'Île}} \\times 100"
-image: "img_enquete_22.svg?v=1786230999"
+image: "img_enquete_22.jpg"
 sources:
   - name: "IEDOM / Banque de France : Statistiques de la Collecte et du Crédit en Corse (2024)"
     url: "https://www.iedom.fr/"

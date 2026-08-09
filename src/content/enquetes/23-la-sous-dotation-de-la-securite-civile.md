@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "SIS 2A / SIS 2B / DGSCGC / PGHM"
 chapeau: "Territoire montagneux soumis à des épisodes de sécheresse estivale extrêmes et à des tempêtes hivernales violentes, la Corse fait face à des risques naturels majeurs (incendies de forêt, inondations, avalanches). Enquête sur le sous-dimensionnement des moyens de secours terrestres et aériens."
 math: "\\text{Indice de Couverture Aérienne des Risques (ICAR)} = \\frac{\\sum \\text{Heures de Disponibilité des Canadairs Positionnés à Solenzara/Ajaccio}}{90 \\text{ Jours de la Saison Estivale Haute Tension}} \\times 100"
-image: "img_enquete_23.svg?v=1786230999"
+image: "img_enquete_23.jpg"
 sources:
   - name: "DGSCGC / Ministère de l'Intérieur : Bilan de la Flotte Aérienne de la Sécurité Civile"
     url: "https://www.interieur.gouv.fr/"

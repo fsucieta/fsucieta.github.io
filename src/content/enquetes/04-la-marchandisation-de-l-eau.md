@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "SISPEA / Data.gouv / OEHC / OFB"
 chapeau: "Qualifiée historiquement de château d'eau de la Méditerranée en raison de ses sommets enneigés et de ses fleuves abondants, la Corse fait face chaque été à des arrêtés préfectoraux de restriction d'eau potable. Enquête sur la gestion opaque de l'eau, les réseaux défaillants et la captation commerciale de la ressource."
 math: "\\text{Taux de Perte Hydraulique (TPH)} = \\frac{\\text{Volume d'Eau Injecté dans les Réseaux (m³)} - \\text{Volume d'Eau Facturé aux Usagers (m³)}}{\\text{Volume d'Eau Injecté dans les Réseaux (m³)}} \\times 100"
-image: "img_enquete_04.jpg?v=1786230999"
+image: "img_enquete_04.jpg"
 sources:
   - name: "SISPEA / Ministère de la Transition Écologique : Données Nationales sur les Services d'Eau et d'Assainissement"
     url: "https://www.sispea.portail-eau.fr/"

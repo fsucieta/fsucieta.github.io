@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "ONF / Agreste / DRAAF Corse"
 chapeau: "Abritant des forêts mythiques de pin laricio, de chêne vert et de châtaignier (Vizzavona, Marmano, Bavella, Tartagine), la Corse voit sa ressource forestière pillée. Des milliers de mètres cubes de bois de haute valeur sont coupés et exportés bruts vers le continent et l'Italie sans aucune transformation industrielle sur l'île."
 math: "\\text{Taux d'Évasion de Valeur Forestière (TEVF)} = \\frac{\\text{Volume de Bois Brut Exporté sans Transformation (m³)}}{\\text{Volume Total de Bois Coupé dans le Domaine Forestier (m³)}} \\times 100"
-image: "img_enquete_08.jpg?v=1786230999"
+image: "img_enquete_08.jpg"
 sources:
   - name: "ONF / Direction Régionale de Corse : Bilans d'Exploitation et Ventes de Bois Domanial"
     url: "https://www.onf.fr/"

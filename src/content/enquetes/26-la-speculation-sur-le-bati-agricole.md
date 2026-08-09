@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "DVF / SAFER / Code de l'Urbanisme L. 151-11"
 chapeau: "Éléments emblématiques du patrimoine pastoral corse, les bergeries et cabanes de pierre (i pagliaghji) situées dans les espaces remarquables du littoral et de la montagne font l'objet d'un détournement spéculatif à grande échelle. Enquête sur le contournement de la Loi Littoral."
 math: "\\text{Indice de Spéculation sur le Bâti Ancien (ISBA)} = \\frac{\\sum \\text{Prix de Vente au m² des Bergeries/Pagliaghji Restaurés en Résidence de Luxe}}{\\text{Valeur Vénale Foncière des Terres Agricoles Ordinaires selon la SAFER}} \\times 100"
-image: "img_enquete_26.svg?v=1786230999"
+image: "img_enquete_26.jpg"
 sources:
   - name: "SAFER de Corse & ODARC : Barème Foncier Pastoral & Registre des Transactions Rurales"
     url: "https://www.safer.fr/statistiques-du-prix-des-terres/"

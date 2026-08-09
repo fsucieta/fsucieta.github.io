@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "BRGM / SIG Mines / Code Minier"
 chapeau: "Présentée comme un territoire pauvre en ressources géologiques, la Corse abrite dans son socle schisteux et granitique d'anciens gisements miniers riches en métaux critiques (antimoine, cuivre, amiante, terres rares). Enquête sur les prospections discrètes et les concessions d'État délivrées au mépris du droit des communes."
 math: "\\text{Indice de Risque d'Exploitation Extérieure (IREE)} = \\frac{\\sum \\text{Périmètres de Titres Miniers / Permis d'Exploration BRGM}}{\\text{Surface des Terres Communales Protégées par le PADDUC}} \\times 100"
-image: "img_enquete_07.jpg?v=1786230999"
+image: "img_enquete_07.jpg"
 sources:
   - name: "BRGM / Ministère de la Transition Énergétique : Carte des Gîtes Minéraux et Inventaire Minier de la Corse"
     url: "https://www.brgm.fr/"

@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "ODARC / DRAAF / Registre RPG / TéléPAC"
 chapeau: "Destinées à soutenir les agriculteurs et à maintenir le pastoralisme traditionnel, les primes de la Politique Agricole Commune (PAC) font l'objet en Corse de détouremens et d'accaparements spéculatifs. Enquête sur les « chasseurs de primes » et le déclassement de la véritable agriculture insulaire."
 math: "\\text{Indice de Concentration des Primes (ICP)} = \\frac{\\sum \\text{Montant des Primes PAC Perçues par les 10 % de Plus Grands Déclarants de Surface}}{\\text{Enveloppe Globale de la PAC Attribuée à la Région Corse}} \\times 100"
-image: "img_enquete_20.svg?v=1786230999"
+image: "img_enquete_20.jpg"
 sources:
   - name: "DRAAF / Agreste Corse : Bilans de la Campagne TéléPAC et Cartographie RPG"
     url: "https://agreste.agriculture.gouv.fr/"

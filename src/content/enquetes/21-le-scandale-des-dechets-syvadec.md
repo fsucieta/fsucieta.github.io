@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "SYVADEC / DREAL / Cour des Comptes"
 chapeau: "Face au saturation des rares sites d'enfouissement de l'île (Tallone, Viggianello, Prunelli-di-Fiumorbo), la Corse subit un scandale environnemental et financier de première grandeur. Enquête sur l'échec du tri sélectif à la source et le coût exorbitant de l'exportation des déchets ménagers par cargos maritimes."
 math: "\\text{Coût d'Incurie des Déchets (CID)} = \\frac{\\sum \\text{Dépenses d'Exportation par Cargo + Surtaxes d'Enfouissement}}{\\text{Budget Global de la Gestion des Déchets du SYVADEC}} \\times 100"
-image: "img_enquete_21.svg?v=1786230999"
+image: "img_enquete_21.jpg"
 sources:
   - name: "SYVADEC : Rapport d'Activité et Bilans du Tri Sélectif en Corse (2024-2025)"
     url: "https://www.syvadec.fr/"

@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "DDTM / Tribunal Administratif de Bastia / CGCT"
 chapeau: "Garants théoriques du contrôle de légalité des actes des collectivités, les services préfectoraux de Corse appliquent une justice administrative à deux vitesses. Enquête sur la censure systématique des arrêtés de maires de petits villages et la tolérance accordée aux grands permis de construire douteux du littoral."
 math: "\\text{Taux de Sélectivité Préfectorale (TSP)} = \\frac{\\sum \\text{Déférés Préfectoraux Attaquant des Délibérations de Communes Rurales}}{\\sum \\text{Déférés Attaquant des Permis d'Aménagement Littoraux Massifs}} \\times 100"
-image: "img_enquete_15.svg?v=1786230999"
+image: "img_enquete_15.jpg"
 sources:
   - name: "Tribunal Administratif de Bastia : Rôle des Jugements et Déférés Préfectoraux d'Urbanisme"
     url: "http://bastia.tribunal-administratif.fr/"

@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "INSEE / Banque de France / DGFiP"
 chapeau: "Présenté comme le moteur de l'économie corse, le tourisme produit chaque été un chiffre d'affaires colossal se comptant en milliards d'euros. Cependant, une analyse médico-légale des flux monétaires démontre que plus de 65 % de cette valeur ajoutée quitte l'île dès la fin de la saison."
 math: "\\text{Taux de Fuite des Devises Estivales (TFDE)} = \\frac{\\sum \\text{Chiffre d'Affaires Touristique Transféré Hors de Corse}}{\\text{Produit Brut Global de la Saison Touristique Insulaire}} \\times 100"
-image: "img_enquete_09.jpg?v=1786230999"
+image: "img_enquete_09.jpg"
 sources:
   - name: "INSEE Corse : Études Économiques sur l'Impact de la Saison Touristique (2024)"
     url: "https://www.insee.fr/fr/statistiques?geo=REG-94"

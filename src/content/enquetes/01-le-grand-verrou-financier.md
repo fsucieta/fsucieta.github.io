@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "IEDOM / ACPR / Banque de France"
 chapeau: "Pendant que les jeunes ménages résidents se voient opposer des refus systématiques de prêt immobilier au nom du strict respect du taux d'endettement de 35 %, les holdings familiales et SCI continentales lèvent des millions d'euros par nantissement d'actifs hors-sol. Enquête exclusive sur l'asymétrie bancaire qui étrangle la jeunesse insulaire et sanctuarise la spéculation."
 math: "\\text{Indice d'Asymétrie Bancaire (IAB)} = \\frac{\\sum \\text{Encours Crédits In Fine Holdings Extérieures}}{\\sum \\text{Prêts Immobiliers Accordés aux Ménages Résidents Locaux}} \\times 100"
-image: "img_enquete_01.jpg?v=1786230999"
+image: "img_enquete_01.jpg"
 sources:
   - name: "IEDOM / Banque de France : Rapport Annuel sur le Crédit en Corse (2024-2025)"
     url: "https://www.iedom.fr/"

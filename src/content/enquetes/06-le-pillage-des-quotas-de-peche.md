@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "DPMA / IFREMER / CRPMEM Corse"
 chapeau: "Alors que la Corse possède plus de 1 000 kilomètres de côtes et une tradition de pêche artisanale séculaire, ses prud'homies et marins-pêcheurs subissent une spoliation administrative systématique des droits de pêche. Enquête sur la monopolisation des quotas de thon rouge et d'espadon par les thoniers-senneurs sétois et méditerranéens continentaux."
 math: "\\text{Ratio d'Iniquité des Quotas (RIQ)} = \\frac{\\text{Volume de Quotas d'Espèces Régaliennes Attribué aux Armements Extérieurs}}{\\text{Volume Attribué aux Marins-Pêcheurs Artisans Domiciliés en Corse}} \\times 100"
-image: "img_enquete_06.jpg?v=1786230999"
+image: "img_enquete_06.jpg"
 sources:
   - name: "DPMA / Ministère de la Mer : Arrêtés Annuels de Répartition des Quotas de Pêche"
     url: "https://www.mer.gouv.fr/"

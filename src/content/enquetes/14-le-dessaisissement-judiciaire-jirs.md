@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "JIRS Marseille / Ministère de la Justice / CPP"
 chapeau: "En matière judiciaire et pénale, la Corse subit un régime de dérogation permanente. Sous le prétexte de lutter contre la criminalité organisée, la quasi-totalité des dossiers d'instruction complexes sont dépouillés des tribunaux de Bastia et Ajaccio pour être transférés à la JIRS de Marseille."
 math: "\\text{Taux de Dessaisissement Judiciaire (TDJ)} = \\frac{\\sum \\text{Dossiers d'Instruction Délocalisés vers les Juridictions Continentales}}{\\text{Total des Informations Judiciales Ouvertes en Corse}} \\times 100"
-image: "img_enquete_14.svg?v=1786230999"
+image: "img_enquete_14.jpg"
 sources:
   - name: "Ministère de la Justice / Code de Procédure Pénale : Articles 706-75 (Compétence des JIRS)"
     url: "https://www.legifrance.gouv.fr/"

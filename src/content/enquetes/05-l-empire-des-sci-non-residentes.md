@@ -9,7 +9,7 @@ date: "Août 2026"
 tool: "INPI RBE / DVF / Sitadel2 / Cadastre"
 chapeau: "Derrière les volets clos des villas qui jalonnent le littoral insulaire se cache une architecture de sociétés civiles immobilières (SCI) d'une opacité calculée. Grâce à l'exploitation des Open Data du Registre des Bénéficiaires Effectifs (RBE), nous révélons l'ampleur du transfert de propriété foncière."
 math: "\\text{Taux d'Accaparement par SCI Extérieures (TASE)} = \\frac{\\sum \\text{Surfaces Cadastrées Détenues par des Entités Morales Hors-Sol}}{\\text{Surface Cadastrée Totale de la Zone Littorale Communale}} \\times 100"
-image: "img_enquete_05.jpg?v=1786230999"
+image: "img_enquete_05.jpg"
 sources:
   - name: "INPI / Registre National des Entreprises : Registre des Bénéficiaires Effectifs (RBE)"
     url: "https://rbe.inpi.fr/"
