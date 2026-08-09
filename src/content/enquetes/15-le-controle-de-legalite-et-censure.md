@@ -22,74 +22,173 @@ sources:
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
 ---
 
+## I. Le contrôle de légalité : Un instrument de pression politique
 
-<div class="article-content" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.85; color: #1e293b;">
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">I. Le contrôle de légalité : Un instrument de pression politique</h3>
-    <p>Depuis les lois de décentralisation de 1982, la tutelle a priori de l'État sur les communes a été remplacée par le **contrôle de légalité a posteriori**. Les maires votent des délibérations et délivrent des permis de construire, qui deviennent exécutoires dès leur transmission en préfecture. Si le Préfet estime qu'un acte est contraire à la loi (Code de l'urbanisme, Loi Littoral, PADDUC), il dispose de 2 mois pour former un **déféré préfectoral** devant le Tribunal Administratif de Bastia.</p>
-    <p>Cependant, l'examen de la jurisprudence du Tribunal Administratif de Bastia sur les 15 dernières années révèle un traitement asymétrique d'une sévérité flagrante. Le contrôle de légalité est devenu un instrument de pression politique sélectif entre les mains de la haute administration préfectorale.</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">II. La sévérité contre les maires ruraux et la bienveillance pour les grands projets</h3>
-    <p>D'un côté, les préfectures d'Ajaccio et de Bastia font preuve d'une intolérance procédurale absolue envers les petites communes de l'intérieur et du rural profond. Le moindre arrêté municipal visant à régulariser une bergerie de village, à ouvrir un chemin communal ou à délivrer un permis pour la maison d'un jeune agriculteur local fait l'objet d'un déféré préfectoral d'annulation immédiat, assorti d'une demande de suspension d'urgence (référé suspension).</p>
-
-    <p>De l'autre côté, lorsqu'il s'agit de programmes immobiliers massifs portés par de puissants promoteurs continentaux sur la côte (complexes de centaines de logements, résidences hôtelières de luxe en bord de mer), les services de la DDTM ferment régulièrement les yeux ou laissent s'écouler le délai légal de 2 mois de recours sans déférer l'acte, rendant le permis inattaquable par la voie préfectorale.</p>
-
-    <blockquote style="border-left: 4px solid #b8860b; background: rgba(184, 134, 11, 0.08); padding: 1.2rem 1.6rem; margin: 2rem 0; font-style: italic; color: #0f172a; border-radius: 0 8px 8px 0;">
-        « Les associations de défense de l'environnement (U Levante, Garab) doivent pallier les carences du contrôle de légalité préfectoral en attaquant elles-mêmes les permis de construire illégaux autorisés par l'État. »
-    </blockquote>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">III. Le blocage des Cartes Communales et des PLU du rural</h3>
-    <p>Le second levier de blocage concerne l'élaboration des documents d'urbanisme (PLU et Cartes Communales). Pour empêcher les villages de l'intérieur de fixer leur population et de construire des logements abordables, la DREAL et la DDTM imposent des grilles d'inconstructibilité d'une rigidité extrême, interprétant la Loi Littoral et le PADDUC de manière maximale dans le rural, tout en autorisant des dérogations en zone littorale tendue.</p>
-    <p>De nombreux maires ruraux préfèrent renoncer à élaborer leur document d'urbanisme, contraints de revenir au Règlement National d'Urbanisme (RNU) qui donne tout pouvoir d'accord au Préfet.</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IV. Statistiques des déférés au Tribunal Administratif de Bastia</h3>
-    <p>L'audit des jugements rendus par le Tribunal Administratif de Bastia met en lumière :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Plus de 70 % des déférés préfectoraux d'urbanisme</strong> ciblent des délibérations ou permis délivrés par des communes de moins de 1 000 habitants.</li>
-        <li><strong>Taux de substitution citoyenne :</strong> Plus de 85 % des annulations de permis de construire illégaux sur le littoral corse sont obtenues à l'initiative d'associations citoyennes et non de la Préfecture.</li>
-        <li><strong>Délais moyen de jugement :</strong> 18 mois d'attente, pendant lesquels certains chantiers illégaux se poursuivent en toute impunité.</li>
-    </ul>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">V. Actions de vigilance citoyenne et recours CADA</h3>
-    <p>La défense de la légalité territoriale exige la transparence totale des registres d'urbanisme et le soutien aux maires ruraux bâtisseurs.</p>
-    <div style="background: #f1f5f9; border: 1px solid #cbd5e1; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
-        <h4 style="margin-top: 0; color: #007791;">📌 Action CADA Préconisée : Accès au registre des permis tacites</h4>
-        <p style="font-size: 0.95rem; color: #334155; margin-bottom: 0;">Saisissez la mairie de votre commune ou la Préfecture pour obtenir la copie intégrale du registre des permis de construire tacites (nés du silence gardé par l'administration pendant 2 mois). En cas de refus sous 30 jours, déposez une saisine CADA.</p>
-    </div>
-</div>
-
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VI. Analyse médico-légale des textes administratifs et délibérations régionales</h3>
-                    <p>L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.</p>
-                    <p>En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.</p>
-                    
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle</h3>
-                    <p>Pour contrer les abus identifiés dans l'enquête #15, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.</p>
-                    <p>En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur <code>cada.fr</code>) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.</p>
-                    
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire</h3>
-    <p>L'analyse systémique du domaine <strong>URBANISME & PRÉFECTURE</strong> révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.</p>
-    <p>Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.</p>
-    <p>Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale</h3>
-    <p>Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête <strong>#15</strong>, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :</p>
+
+Depuis les lois de décentralisation de 1982, la tutelle a priori de l'État sur les communes a été remplacée par le **contrôle de légalité a posteriori**. Les maires votent des délibérations et délivrent des permis de construire, qui deviennent exécutoires dès leur transmission en préfecture. Si le Préfet estime qu'un acte est contraire à la loi (Code de l'urbanisme, Loi Littoral, PADDUC), il dispose de 2 mois pour former un **déféré préfectoral** devant le Tribunal Administratif de Bastia.
+
+    
+
+Cependant, l'examen de la jurisprudence du Tribunal Administratif de Bastia sur les 15 dernières années révèle un traitement asymétrique d'une sévérité flagrante. Le contrôle de légalité est devenu un instrument de pression politique sélectif entre les mains de la haute administration préfectorale.
+
+    
+
+## II. La sévérité contre les maires ruraux et la bienveillance pour les grands projets
+
+    
+
+D'un côté, les préfectures d'Ajaccio et de Bastia font preuve d'une intolérance procédurale absolue envers les petites communes de l'intérieur et du rural profond. Le moindre arrêté municipal visant à régulariser une bergerie de village, à ouvrir un chemin communal ou à délivrer un permis pour la maison d'un jeune agriculteur local fait l'objet d'un déféré préfectoral d'annulation immédiat, assorti d'une demande de suspension d'urgence (référé suspension).
+
+    
+
+De l'autre côté, lorsqu'il s'agit de programmes immobiliers massifs portés par de puissants promoteurs continentaux sur la côte (complexes de centaines de logements, résidences hôtelières de luxe en bord de mer), les services de la DDTM ferment régulièrement les yeux ou laissent s'écouler le délai légal de 2 mois de recours sans déférer l'acte, rendant le permis inattaquable par la voie préfectorale.
+
+    
+
+> 
+        « Les associations de défense de l'environnement (U Levante, Garab) doivent pallier les carences du contrôle de légalité préfectoral en attaquant elles-mêmes les permis de construire illégaux autorisés par l'État. »
+    
+
+    
+
+## III. Le blocage des Cartes Communales et des PLU du rural
+
+    
+
+Le second levier de blocage concerne l'élaboration des documents d'urbanisme (PLU et Cartes Communales). Pour empêcher les villages de l'intérieur de fixer leur population et de construire des logements abordables, la DREAL et la DDTM imposent des grilles d'inconstructibilité d'une rigidité extrême, interprétant la Loi Littoral et le PADDUC de manière maximale dans le rural, tout en autorisant des dérogations en zone littorale tendue.
+
+    
+
+De nombreux maires ruraux préfèrent renoncer à élaborer leur document d'urbanisme, contraints de revenir au Règlement National d'Urbanisme (RNU) qui donne tout pouvoir d'accord au Préfet.
+
+    
+
+## IV. Statistiques des déférés au Tribunal Administratif de Bastia
+
+    
+
+L'audit des jugements rendus par le Tribunal Administratif de Bastia met en lumière :
+
+    
+
+        * **Plus de 70 % des déférés préfectoraux d'urbanisme** ciblent des délibérations ou permis délivrés par des communes de moins de 1 000 habitants.
+
+        * **Taux de substitution citoyenne :** Plus de 85 % des annulations de permis de construire illégaux sur le littoral corse sont obtenues à l'initiative d'associations citoyennes et non de la Préfecture.
+
+        * **Délais moyen de jugement :** 18 mois d'attente, pendant lesquels certains chantiers illégaux se poursuivent en toute impunité.
+
+    
+
+    
+
+## V. Actions de vigilance citoyenne et recours CADA
+
+    
+
+La défense de la légalité territoriale exige la transparence totale des registres d'urbanisme et le soutien aux maires ruraux bâtisseurs.
+
+    
+
+---
+
+        
+
+### 📌 Action CADA Préconisée : Accès au registre des permis tacites
+
+        
+
+Saisissez la mairie de votre commune ou la Préfecture pour obtenir la copie intégrale du registre des permis de construire tacites (nés du silence gardé par l'administration pendant 2 mois). En cas de refus sous 30 jours, déposez une saisine CADA.
+
+    
+
+                    
+
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+
+                    
+
+L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.
+
+                    
+
+En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.
+
+                    
+                    
+
+## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+
+                    
+
+Pour contrer les abus identifiés dans l'enquête #15, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+
+                    
+
+En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
+
+                    
+    
+
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+
+    
+
+L'analyse systémique du domaine **URBANISME & PRÉFECTURE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
+
+    
+
+Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
+
+    
+
+Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
+
+    
+    
+
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+
+    
+
+Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête **#15**, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :
 
     <ol style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié</strong> adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.</li>
-        <li><strong>Étape 2 : Décompte du délai de silence raisonnable (30 jours).</strong> Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.</li>
-        <li><strong>Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)</strong> via le formulaire sécurisé sur <code>cada.fr</code>. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.</li>
+        * **Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié** adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.
+
+        * **Étape 2 : Décompte du délai de silence raisonnable (30 jours).** Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.
+
+        * **Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)** via le formulaire sécurisé sur `cada.fr`. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.
+
     </ol>
 
-    <p style="font-size: 0.95rem; color: #475569; font-style: italic;">Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)</h3>
-    <p>Au terme de cette investigation médico-légale consacrée au volet <strong>URBANISME & PRÉFECTURE</strong> (Enquête #15), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).</p>
 
-    <p>Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Moratoire immédiat :</strong> Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.</li>
-        <li><strong>Sanctuarisation des compétences :</strong> Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.</li>
-        <li><strong>Transparence numérique intégrale :</strong> Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.</li>
-    </ul>
+Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.
 
-    <p style="font-weight: 700; color: #b8860b;">CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.</p>
     
+    
+
+## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+
+    
+
+Au terme de cette investigation médico-légale consacrée au volet **URBANISME & PRÉFECTURE** (Enquête #15), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+
+    
+
+Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
+
+    
+
+        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
+
+        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
+
+        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
+
+    
+
+    
+
+CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.

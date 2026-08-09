@@ -16,20 +16,21 @@ const data = entry.data;
 ---
 
 <Layout title={`${data.title} — CASA DI CRISTALE`} description={data.chapeau}>
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50 py-4 px-6">
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="/" class="flex items-center gap-3 text-amber-400 font-bold text-xl hover:opacity-80 transition">
+      <a href="/" class="flex items-center gap-2 text-amber-400 font-bold text-sm md:text-base hover:text-amber-300 transition">
         <span>← ACCUEIL CASA DI CRISTALE 2.0</span>
       </a>
-      <div class="text-xs text-slate-400 font-mono">
+      <div class="text-xs text-slate-400 font-mono bg-slate-900 px-3 py-1.5 rounded-full border border-slate-800">
         {data.ref}
       </div>
     </div>
   </header>
 
   <main class="max-w-4xl mx-auto px-6 py-12">
-    <!-- En-tête d'Article -->
-    <div class="mb-10 border-b border-amber-500/30 pb-8">
+    <!-- Header d'Article -->
+    <div class="mb-12 border-b border-amber-500/30 pb-10">
       <div class="flex items-center gap-3 mb-4">
         <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold uppercase tracking-wider">
           {data.category}
@@ -37,46 +38,56 @@ const data = entry.data;
         <span class="text-xs text-slate-400 font-mono">{data.date}</span>
       </div>
 
-      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-100 font-serif leading-tight mb-6">
+      <h1 class="text-3xl md:text-5xl font-black text-slate-100 font-serif leading-tight mb-6">
         {data.title}
       </h1>
 
-      <p class="text-lg md:text-xl text-amber-200/90 font-serif italic mb-8 leading-relaxed bg-amber-500/5 p-6 border-l-4 border-amber-500 rounded-r-lg">
+      <p class="text-lg md:text-xl text-amber-200/90 font-serif italic mb-8 leading-relaxed bg-slate-950 p-6 border-l-4 border-amber-500 rounded-r-lg border border-slate-800">
         {data.chapeau}
       </p>
 
-      <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400 pt-4 border-t border-slate-800">
+      <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400 pt-4 border-t border-slate-800/80">
         <div><strong>Auteur :</strong> {data.author}</div>
-        <div><strong>Outil d'Audit :</strong> <code class="bg-slate-800 px-2 py-1 rounded text-cyan-400">{data.tool}</code></div>
+        <div><strong>Outil d'Audit :</strong> <code class="bg-slate-900 px-2.5 py-1 rounded text-cyan-400 font-mono text-xs">{data.tool}</code></div>
       </div>
     </div>
 
     <!-- Image d'illustration -->
     {data.image && (
-      <div class="mb-12 rounded-xl overflow-hidden border border-slate-800 shadow-2xl">
+      <div class="mb-12 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950">
         <img src={`/${data.image}`} alt={data.title} class="w-full object-cover max-h-[450px]" />
       </div>
     )}
 
-    <!-- Corps de l'Article Markdown -->
-    <article class="prose prose-invert prose-amber max-w-none font-serif text-lg leading-relaxed text-slate-200">
+    <!-- Formule Mathématique (si présente) -->
+    {data.math && (
+      <div class="mb-12 bg-slate-950 border border-cyan-500/30 p-6 rounded-xl text-center">
+        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest block mb-2">Formule de Modélisation Financière / Forensique</span>
+        <div class="text-lg md:text-xl font-mono text-amber-300 font-bold py-2 overflow-x-auto">
+          {data.math}
+        </div>
+      </div>
+    )}
+
+    <!-- Corps de l'Article Markdown nettoyé et stylisé -->
+    <article class="article-body font-serif text-lg leading-relaxed text-slate-200 space-y-6">
       <Content />
     </article>
 
-    <!-- Sources & Preuves -->
+    <!-- Sources & Preuves Claires -->
     {data.sources && data.sources.length > 0 && (
-      <div class="mt-16 pt-8 border-t border-slate-800 bg-slate-950/50 p-6 rounded-xl border border-slate-800/80">
-        <h3 class="text-xl font-bold text-amber-400 mb-4 font-sans flex items-center gap-2">
-          <span>📚 Sources & Documentation Officielle</span>
+      <div class="mt-16 pt-8 border-t border-slate-800 bg-slate-950 p-6 rounded-xl border border-slate-800">
+        <h3 class="text-xl font-bold text-amber-400 mb-6 font-sans flex items-center gap-2">
+          <span>📚 Sources & Documentation Officielle Clés</span>
         </h3>
-        <ul class="space-y-3 font-sans text-sm">
+        <ul class="space-y-4 font-sans text-sm">
           {data.sources.map(src => (
-            <li class="flex flex-col md:flex-row md:items-center justify-between gap-2 p-3 bg-slate-900 rounded-lg border border-slate-800 hover:border-amber-500/40 transition">
+            <li class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-amber-500/40 transition">
               <a href={src.url} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline font-semibold flex items-center gap-2">
                 <span>🔗 {src.name}</span>
               </a>
               {src.sha256 && (
-                <span class="text-xs font-mono text-slate-500 bg-slate-950 px-2 py-1 rounded">
+                <span class="text-xs font-mono text-slate-500 bg-slate-950 px-2 py-1 rounded border border-slate-800">
                   SHA-256: {src.sha256.substring(0, 16)}...
                 </span>
               )}
@@ -86,15 +97,84 @@ const data = entry.data;
       </div>
     )}
 
-    <!-- Navigation retour -->
-    <div class="mt-12 text-center">
-      <a href="/" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-slate-950 font-bold rounded-lg hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
-        <span>← Retour à toutes les enquêtes</span>
+    <!-- Bouton de retour -->
+    <div class="mt-16 text-center">
+      <a href="/" class="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 text-slate-950 font-bold text-base rounded-xl hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+        <span>← Retour à la liste des 26 enquêtes</span>
       </a>
     </div>
   </main>
 
-  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 mt-20 text-center text-xs text-slate-500">
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 mt-20 text-center text-xs text-slate-500 font-mono">
     CASA DI CRISTALE 2.0 — INVESTIGATION CITOYENNE SOUVERAINE CORSE
   </footer>
 </Layout>
+
+<style is:global>
+  /* Styles explicites haute lisibilité pour le corps Markdown */
+  .article-body h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #b8860b;
+  }
+
+  .article-body h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-body p {
+    color: #e2e8f0;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-body blockquote {
+    border-left: 4px solid #d4af37;
+    background-color: rgba(212, 175, 55, 0.08);
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #fef08a;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .article-body ul, .article-body ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-body li {
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+
+  .article-body strong {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .article-body code {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+
+  .article-body hr {
+    border-color: #334155;
+    margin: 2.5rem 0;
+  }
+</style>

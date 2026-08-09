@@ -22,73 +22,173 @@ sources:
     sha256: "9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c"
 ---
 
+## I. L'héritage de Pasquale Paoli et le combat pour le savoir insulaire
 
-<div class="article-content" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.85; color: #1e293b;">
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">I. L'héritage de Pasquale Paoli et le combat pour le savoir insulaire</h3>
-    <p>En 1765, au sommet de la République Corse Paolienne, le Général de la Nation Pasquale Paoli fondait l'Université de Corte, consacrant l'idée pionnière que la liberté politique et la souveraineté d'un peuple reposent avant tout sur l'éducation, le savoir scientifique et la formation de ses propres élites. Fermée brutalement lors de la conquête française après la bataille de Ponte-Novu en 1769, l'Université de Corse ne rouvrit ses portes qu'en 1981, au terme d'une mobilisation populaire et politique historique qui arracha cette réouverture à l'État central.</p>
-    <p>Aujourd'hui, l'Université Pasquale Paoli accueille plus de 4 700 étudiants sur ses campus de Corte, Bastia et Ajaccio. Elle constitue le moteur principal de la promotion sociale et de la recherche scientifique sur les thématiques insulaires (énergies renouvelables, environnement, langue et culture corses, droit territorial).</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">II. La sous-dotation ministérielle et le gel des postes de chercheurs</h3>
-    <p>Cependant, l'examen de la grille budgétaire du Ministère de l'Enseignement Supérieur et de la Recherche (MESR) met en lumière une inégalité de traitement persistante. Les critères de répartition des moyens aux universités (modèle SYMPA / SYMPA 2) favorisent massivement les méga-universités métropolitaines et les pôles d'excellence des grandes capitales régionales.</p>
-    <p>En raison de sa taille d'établissement à taille humaine et de son insularité (qui engendre pourtant des surcoûts d'équipement scientifique, d'importation de matériel de laboratoire et de transport des chercheurs), l'Université de Corse reçoit une dotation par étudiant inférieure de près de 25 % à la moyenne des établissements du continent. De nombreuses filières d'excellence (ingénierie avancée, santé, droit comparé) manquent de postes d'enseignants-chercheurs titulaires, contraignant l'université à recourir à la précarité de vacataires sous-payés.</p>
-
-    <blockquote style="border-left: 4px solid #b8860b; background: rgba(184, 134, 11, 0.08); padding: 1.2rem 1.6rem; margin: 2rem 0; font-style: italic; color: #0f172a; border-radius: 0 8px 8px 0;">
-        « Près de 55 % des bacheliers corses poursuivent leurs études supérieures sur le continent. Faute de filières de masters spécialisés et d'emplois de cadres à la clé sur l'île, une majorité de ces jeunes cerveaux ne reviennent plus vivre en Corse. »
-    </blockquote>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">III. La fuite des cerveaux et la crise du logement étudiant à Corte</h3>
-    <p>À la sous-dotation pédagogique s'ajoute le problème de la fuite des talents (brain drain). Chaque année, plus de la moitié des diplômés du baccalauréat corse quittent l'île pour s'inscrire dans les facultés de Nice, Marseille, Montpellier, Toulouse ou Paris. Une part prépondérante de cette jeunesse formée aux frais des familles corses ne revient pas s'installer au pays, faute d'un marché du travail local diversifié en emplois de cadres supérieurs et d'ingénieurs.</p>
-    <p>De plus, pour les étudiants qui font le choix de rester étudier à Corte, la crise du logement frappe de plein fouet la cité paolienne. La prolifération des meublés touristiques Airbnb et la spéculation sur le petit bâti du centre historique ont réduit l'offre de studios étudiants et fait grimper les loyers à des niveaux insoutenables pour les familles modestes de l'intérieur.</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IV. Chiffres clés de l'audit enseignement supérieur MESR / INSEE</h3>
-    <p>Les indicateurs de la situation éducative en Corse révèlent :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Nombre d'étudiants à l'Université de Corse :</strong> 4 750 étudiants (dont 82 % de résidents insulaires).</li>
-        <li><strong>Déficit de logements CROUS :</strong> Moins de 1 100 chambres et logements sociaux étudiants gérés par le CROUS de Corse pour l'ensemble des campus.</li>
-        <li><strong>Taux de fuite des diplômés de Master :</strong> Plus de 60 % des jeunes corses titulaires d'un Bac+5 travaillent hors de Corse 3 ans après leur diplôme.</li>
-    </ul>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">V. Recommandations pour une université souveraine et autonome</h3>
-    <p>Le renforcement de la souveraineté intellectuelle corse passe par le transfert plein de la compétence de l'enseignement supérieur à la Collectivité de Corse et la création d'un fonds territorial de bourses de recherche d'excellence.</p>
-    <div style="background: #f1f5f9; border: 1px solid #cbd5e1; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
-        <h4 style="margin-top: 0; color: #007791;">📌 Action CADA Préconisée : Demande des conventions de dotations MESR</h4>
-        <p style="font-size: 0.95rem; color: #334155; margin-bottom: 0;">Saisissez la Présidence de l'Université de Corse ou le MESR pour obtenir la copie de la convention pluriannuelle de moyens et d'objectifs (CPOM) signée avec l'État. En cas de refus de communication des indicateurs de sous-financement, saisissez la CADA.</p>
-    </div>
-</div>
-
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VI. Analyse médico-légale des textes administratifs et délibérations régionales</h3>
-                    <p>L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.</p>
-                    <p>En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.</p>
-                    
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle</h3>
-                    <p>Pour contrer les abus identifiés dans l'enquête #13, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.</p>
-                    <p>En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur <code>cada.fr</code>) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.</p>
-                    
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire</h3>
-    <p>L'analyse systémique du domaine <strong>ÉDUCATION & RECHERCHE</strong> révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.</p>
-    <p>Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.</p>
-    <p>Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale</h3>
-    <p>Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête <strong>#13</strong>, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :</p>
+
+En 1765, au sommet de la République Corse Paolienne, le Général de la Nation Pasquale Paoli fondait l'Université de Corte, consacrant l'idée pionnière que la liberté politique et la souveraineté d'un peuple reposent avant tout sur l'éducation, le savoir scientifique et la formation de ses propres élites. Fermée brutalement lors de la conquête française après la bataille de Ponte-Novu en 1769, l'Université de Corse ne rouvrit ses portes qu'en 1981, au terme d'une mobilisation populaire et politique historique qui arracha cette réouverture à l'État central.
+
+    
+
+Aujourd'hui, l'Université Pasquale Paoli accueille plus de 4 700 étudiants sur ses campus de Corte, Bastia et Ajaccio. Elle constitue le moteur principal de la promotion sociale et de la recherche scientifique sur les thématiques insulaires (énergies renouvelables, environnement, langue et culture corses, droit territorial).
+
+    
+
+## II. La sous-dotation ministérielle et le gel des postes de chercheurs
+
+    
+
+Cependant, l'examen de la grille budgétaire du Ministère de l'Enseignement Supérieur et de la Recherche (MESR) met en lumière une inégalité de traitement persistante. Les critères de répartition des moyens aux universités (modèle SYMPA / SYMPA 2) favorisent massivement les méga-universités métropolitaines et les pôles d'excellence des grandes capitales régionales.
+
+    
+
+En raison de sa taille d'établissement à taille humaine et de son insularité (qui engendre pourtant des surcoûts d'équipement scientifique, d'importation de matériel de laboratoire et de transport des chercheurs), l'Université de Corse reçoit une dotation par étudiant inférieure de près de 25 % à la moyenne des établissements du continent. De nombreuses filières d'excellence (ingénierie avancée, santé, droit comparé) manquent de postes d'enseignants-chercheurs titulaires, contraignant l'université à recourir à la précarité de vacataires sous-payés.
+
+    
+
+> 
+        « Près de 55 % des bacheliers corses poursuivent leurs études supérieures sur le continent. Faute de filières de masters spécialisés et d'emplois de cadres à la clé sur l'île, une majorité de ces jeunes cerveaux ne reviennent plus vivre en Corse. »
+    
+
+    
+
+## III. La fuite des cerveaux et la crise du logement étudiant à Corte
+
+    
+
+À la sous-dotation pédagogique s'ajoute le problème de la fuite des talents (brain drain). Chaque année, plus de la moitié des diplômés du baccalauréat corse quittent l'île pour s'inscrire dans les facultés de Nice, Marseille, Montpellier, Toulouse ou Paris. Une part prépondérante de cette jeunesse formée aux frais des familles corses ne revient pas s'installer au pays, faute d'un marché du travail local diversifié en emplois de cadres supérieurs et d'ingénieurs.
+
+    
+
+De plus, pour les étudiants qui font le choix de rester étudier à Corte, la crise du logement frappe de plein fouet la cité paolienne. La prolifération des meublés touristiques Airbnb et la spéculation sur le petit bâti du centre historique ont réduit l'offre de studios étudiants et fait grimper les loyers à des niveaux insoutenables pour les familles modestes de l'intérieur.
+
+    
+
+## IV. Chiffres clés de l'audit enseignement supérieur MESR / INSEE
+
+    
+
+Les indicateurs de la situation éducative en Corse révèlent :
+
+    
+
+        * **Nombre d'étudiants à l'Université de Corse :** 4 750 étudiants (dont 82 % de résidents insulaires).
+
+        * **Déficit de logements CROUS :** Moins de 1 100 chambres et logements sociaux étudiants gérés par le CROUS de Corse pour l'ensemble des campus.
+
+        * **Taux de fuite des diplômés de Master :** Plus de 60 % des jeunes corses titulaires d'un Bac+5 travaillent hors de Corse 3 ans après leur diplôme.
+
+    
+
+    
+
+## V. Recommandations pour une université souveraine et autonome
+
+    
+
+Le renforcement de la souveraineté intellectuelle corse passe par le transfert plein de la compétence de l'enseignement supérieur à la Collectivité de Corse et la création d'un fonds territorial de bourses de recherche d'excellence.
+
+    
+
+---
+
+        
+
+### 📌 Action CADA Préconisée : Demande des conventions de dotations MESR
+
+        
+
+Saisissez la Présidence de l'Université de Corse ou le MESR pour obtenir la copie de la convention pluriannuelle de moyens et d'objectifs (CPOM) signée avec l'État. En cas de refus de communication des indicateurs de sous-financement, saisissez la CADA.
+
+    
+
+                    
+
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+
+                    
+
+L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.
+
+                    
+
+En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.
+
+                    
+                    
+
+## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+
+                    
+
+Pour contrer les abus identifiés dans l'enquête #13, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+
+                    
+
+En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
+
+                    
+    
+
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+
+    
+
+L'analyse systémique du domaine **ÉDUCATION & RECHERCHE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
+
+    
+
+Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
+
+    
+
+Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
+
+    
+    
+
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+
+    
+
+Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête **#13**, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :
 
     <ol style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié</strong> adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.</li>
-        <li><strong>Étape 2 : Décompte du délai de silence raisonnable (30 jours).</strong> Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.</li>
-        <li><strong>Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)</strong> via le formulaire sécurisé sur <code>cada.fr</code>. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.</li>
+        * **Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié** adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.
+
+        * **Étape 2 : Décompte du délai de silence raisonnable (30 jours).** Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.
+
+        * **Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)** via le formulaire sécurisé sur `cada.fr`. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.
+
     </ol>
 
-    <p style="font-size: 0.95rem; color: #475569; font-style: italic;">Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)</h3>
-    <p>Au terme de cette investigation médico-légale consacrée au volet <strong>ÉDUCATION & RECHERCHE</strong> (Enquête #13), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).</p>
 
-    <p>Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Moratoire immédiat :</strong> Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.</li>
-        <li><strong>Sanctuarisation des compétences :</strong> Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.</li>
-        <li><strong>Transparence numérique intégrale :</strong> Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.</li>
-    </ul>
+Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.
 
-    <p style="font-weight: 700; color: #b8860b;">CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.</p>
     
+    
+
+## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+
+    
+
+Au terme de cette investigation médico-légale consacrée au volet **ÉDUCATION & RECHERCHE** (Enquête #13), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+
+    
+
+Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
+
+    
+
+        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
+
+        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
+
+        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
+
+    
+
+    
+
+CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.

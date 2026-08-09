@@ -22,73 +22,173 @@ sources:
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
 ---
 
+## I. Le dogme de l'Article 2 de la Constitution : La langue unique de la République
 
-<div class="article-content" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.85; color: #1e293b;">
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">I. Le dogme de l'Article 2 de la Constitution : La langue unique de la République</h3>
-    <p>Depuis la révision constitutionnelle de 1992 qui a inséré dans l'article 2 de la Constitution la phrase « La langue de la République est le français », le pouvoir central et le Conseil Constitutionnel opposent un verrou juridique absolu à toute reconnaissance officielle de la langue corse. Chaque vote de l'Assemblée de Corse visant à instaurer la **co-officialité** (usage à égalité du corse et du français dans les actes administratifs, la justice et la vie publique) est systématiquement attaqué et annulé par les préfets.</p>
-    <p>Même la loi Molac sur la protection patrimoniale des langues régionales a été partiellement censurée par le Conseil Constitutionnel en mai 2021, interdisant l'enseignement immersif dans les écoles publiques sous prétexte qu'il porterait atteinte à l'usage obligatoire du français.</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">II. La non-ratification de la Charte Européenne par la France</h3>
-    <p>La France est l'un des rares pays membres du Conseil de l'Europe à refuser de ratifier la **Charte Européenne des Langues Régionales ou Minoritaires**, signée en 1999 mais bloquée par le Conseil d'État et le Conseil Constitutionnel. Cette charte garantit pourtant des droits minimaux : l'enseignement de la langue régionale, son usage devant les autorités locales et les tribunaux, et sa présence dans les médias audiovisuels publics.</p>
-    <p>Ce refus de ratification isole la Corse des standards européens de tolérance culturelle appliqués en Catalogne, au Pays Basque, au Galles, au Tyrol du Sud ou dans les îles Åland.</p>
-
-    <blockquote style="border-left: 4px solid #b8860b; background: rgba(184, 134, 11, 0.08); padding: 1.2rem 1.6rem; margin: 2rem 0; font-style: italic; color: #0f172a; border-radius: 0 8px 8px 0;">
-        « Une langue qu'on n'enseigne pas de manière obligatoire et qu'on exclut de la sphère officielle est une langue condamnée à devenir un simple folklore folklorisé pour touristes. »
-    </blockquote>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">III. La réalité du déclin linguistique et l'urgence du bilinguisme généralisé</h3>
-    <p>Les enquêtes sociolinguistiques menées par l'INSEE et l'Université de Corse révèlent une situation d'urgence : la proportion de locuteurs naturels fluides diminue à chaque génération. Si les seniors nés avant 1960 maîtrisent majoritairement la langue, la transmission familiale a été brisée par des décennies de francisation scolaire obligatoire.</p>
-    <p>Aujourd'hui, moins de 15 % des enfants en âge scolaire utilisent le corse au quotidien en dehors de la classe. Sans un statut de co-officialité et un enseignement bilingue immersif généralisé de la maternelle au lycée, la langue corse risque l'extinction comme langue vivante au cours du XXIe siècle.</p>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IV. Données INSEE et éducation sur la langue corse</h3>
-    <p>L'audit de la situation linguistique indique :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Taux d'élèves en filières bilingues :</strong> Environ 38 % des élèves du primaire inscrits en classes bilingues, mais une chute drastique au collège et au lycée.</li>
-        <li><strong>Temps d'antenne audiovisuel public :</strong> France 3 ViaStella réserve une part de ses programmes au corse, mais le réseau de télévision nationale ne consacre aucun sous-titrage ou budget significatif.</li>
-        <li><strong>Attachement populaire :</strong> Plus de 86 % de la population corse se déclare favorable à la co-officialité de la langue corse dans les sondages d'opinion.</li>
-    </ul>
-
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">V. Actions de transmission et souveraineté culturelle</h3>
-    <p>La reconquête de la langue exige l'inscription de la co-officialité dans la révision constitutionnelle d'autonomie et le soutien aux filières d'immersion citoyennes (Scola Corsa).</p>
-    <div style="background: #f1f5f9; border: 1px solid #cbd5e1; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
-        <h4 style="margin-top: 0; color: #007791;">📌 Action Citoyenne Préconisée : Inscription des enfants en filière bilingue</h4>
-        <p style="font-size: 0.95rem; color: #334155; margin-bottom: 0;">Exigez de l'inspection académique de votre secteur l'ouverture d'une section bilingue ou l'accès aux écoles associatives Scola Corsa. Saisissez la CADA pour obtenir les effectifs réels d'enseignants bilingues affectés dans votre commune.</p>
-    </div>
-</div>
-
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VI. Analyse médico-légale des textes administratifs et délibérations régionales</h3>
-                    <p>L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.</p>
-                    <p>En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.</p>
-                    
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle</h3>
-                    <p>Pour contrer les abus identifiés dans l'enquête #17, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.</p>
-                    <p>En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur <code>cada.fr</code>) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.</p>
-                    
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire</h3>
-    <p>L'analyse systémique du domaine <strong>CULTURE & LANGUE</strong> révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.</p>
-    <p>Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.</p>
-    <p>Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale</h3>
-    <p>Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête <strong>#17</strong>, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :</p>
+
+Depuis la révision constitutionnelle de 1992 qui a inséré dans l'article 2 de la Constitution la phrase « La langue de la République est le français », le pouvoir central et le Conseil Constitutionnel opposent un verrou juridique absolu à toute reconnaissance officielle de la langue corse. Chaque vote de l'Assemblée de Corse visant à instaurer la **co-officialité** (usage à égalité du corse et du français dans les actes administratifs, la justice et la vie publique) est systématiquement attaqué et annulé par les préfets.
+
+    
+
+Même la loi Molac sur la protection patrimoniale des langues régionales a été partiellement censurée par le Conseil Constitutionnel en mai 2021, interdisant l'enseignement immersif dans les écoles publiques sous prétexte qu'il porterait atteinte à l'usage obligatoire du français.
+
+    
+
+## II. La non-ratification de la Charte Européenne par la France
+
+    
+
+La France est l'un des rares pays membres du Conseil de l'Europe à refuser de ratifier la **Charte Européenne des Langues Régionales ou Minoritaires**, signée en 1999 mais bloquée par le Conseil d'État et le Conseil Constitutionnel. Cette charte garantit pourtant des droits minimaux : l'enseignement de la langue régionale, son usage devant les autorités locales et les tribunaux, et sa présence dans les médias audiovisuels publics.
+
+    
+
+Ce refus de ratification isole la Corse des standards européens de tolérance culturelle appliqués en Catalogne, au Pays Basque, au Galles, au Tyrol du Sud ou dans les îles Åland.
+
+    
+
+> 
+        « Une langue qu'on n'enseigne pas de manière obligatoire et qu'on exclut de la sphère officielle est une langue condamnée à devenir un simple folklore folklorisé pour touristes. »
+    
+
+    
+
+## III. La réalité du déclin linguistique et l'urgence du bilinguisme généralisé
+
+    
+
+Les enquêtes sociolinguistiques menées par l'INSEE et l'Université de Corse révèlent une situation d'urgence : la proportion de locuteurs naturels fluides diminue à chaque génération. Si les seniors nés avant 1960 maîtrisent majoritairement la langue, la transmission familiale a été brisée par des décennies de francisation scolaire obligatoire.
+
+    
+
+Aujourd'hui, moins de 15 % des enfants en âge scolaire utilisent le corse au quotidien en dehors de la classe. Sans un statut de co-officialité et un enseignement bilingue immersif généralisé de la maternelle au lycée, la langue corse risque l'extinction comme langue vivante au cours du XXIe siècle.
+
+    
+
+## IV. Données INSEE et éducation sur la langue corse
+
+    
+
+L'audit de la situation linguistique indique :
+
+    
+
+        * **Taux d'élèves en filières bilingues :** Environ 38 % des élèves du primaire inscrits en classes bilingues, mais une chute drastique au collège et au lycée.
+
+        * **Temps d'antenne audiovisuel public :** France 3 ViaStella réserve une part de ses programmes au corse, mais le réseau de télévision nationale ne consacre aucun sous-titrage ou budget significatif.
+
+        * **Attachement populaire :** Plus de 86 % de la population corse se déclare favorable à la co-officialité de la langue corse dans les sondages d'opinion.
+
+    
+
+    
+
+## V. Actions de transmission et souveraineté culturelle
+
+    
+
+La reconquête de la langue exige l'inscription de la co-officialité dans la révision constitutionnelle d'autonomie et le soutien aux filières d'immersion citoyennes (Scola Corsa).
+
+    
+
+---
+
+        
+
+### 📌 Action Citoyenne Préconisée : Inscription des enfants en filière bilingue
+
+        
+
+Exigez de l'inspection académique de votre secteur l'ouverture d'une section bilingue ou l'accès aux écoles associatives Scola Corsa. Saisissez la CADA pour obtenir les effectifs réels d'enseignants bilingues affectés dans votre commune.
+
+    
+
+                    
+
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+
+                    
+
+L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.
+
+                    
+
+En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.
+
+                    
+                    
+
+## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+
+                    
+
+Pour contrer les abus identifiés dans l'enquête #17, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+
+                    
+
+En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
+
+                    
+    
+
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+
+    
+
+L'analyse systémique du domaine **CULTURE & LANGUE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
+
+    
+
+Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
+
+    
+
+Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
+
+    
+    
+
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+
+    
+
+Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête **#17**, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :
 
     <ol style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié</strong> adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.</li>
-        <li><strong>Étape 2 : Décompte du délai de silence raisonnable (30 jours).</strong> Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.</li>
-        <li><strong>Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)</strong> via le formulaire sécurisé sur <code>cada.fr</code>. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.</li>
+        * **Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié** adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.
+
+        * **Étape 2 : Décompte du délai de silence raisonnable (30 jours).** Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.
+
+        * **Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)** via le formulaire sécurisé sur `cada.fr`. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.
+
     </ol>
 
-    <p style="font-size: 0.95rem; color: #475569; font-style: italic;">Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.</p>
     
-    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.5rem; color: #0f172a; margin-top: 2rem; border-bottom: 2px solid #d4af37; padding-bottom: 0.5rem;">X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)</h3>
-    <p>Au terme de cette investigation médico-légale consacrée au volet <strong>CULTURE & LANGUE</strong> (Enquête #17), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).</p>
 
-    <p>Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :</p>
-    <ul style="line-height: 2; margin-bottom: 2rem;">
-        <li><strong>Moratoire immédiat :</strong> Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.</li>
-        <li><strong>Sanctuarisation des compétences :</strong> Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.</li>
-        <li><strong>Transparence numérique intégrale :</strong> Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.</li>
-    </ul>
+Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.
 
-    <p style="font-weight: 700; color: #b8860b;">CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.</p>
     
+    
+
+## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+
+    
+
+Au terme de cette investigation médico-légale consacrée au volet **CULTURE & LANGUE** (Enquête #17), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+
+    
+
+Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
+
+    
+
+        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
+
+        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
+
+        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
+
+    
+
+    
+
+CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
