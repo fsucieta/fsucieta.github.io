@@ -117,14 +117,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les bilans d'exonération de taxe foncière des emprises de Solenzara et Calvi.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les délibérations de concession de la Base Navale d'Aspretto.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **L Emprise Et Les Servitudes Militaires** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur l'**emprise et les servitudes militaires** cartographie les institutions qui contrôlent l'occupation de 15 % du territoire insulaire par l'armée :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Ministère des Armées (SGA / Direction de l'Immobilier de l'État) :** Gestionnaire du Tableau Général des Propriétés Immobilières de l'État (TGPIE). Décide des rétrocessions éventuelles à la Collectivité ou aux communes.
+- **Base Aérienne 126 de Solenzara (Armée de l'Air et de l'Espace) :** La plus grande emprise militaire de Corse. Génère des servitudes de dégagement aérien sur plusieurs milliers d'hectares agricoles et forestiers.
+- **Base Aérienne 123 de Calvi-Sainte-Catherine :** Partagée avec l'aéroport civil. Sa servitude militaire contraint le développement du transport aérien régional.
+- **Marine Nationale / Base Navale d'Aspretto (Ajaccio) :** Emprise côtière stratégique. La convention de mise à disposition ne prévoit aucune redevance significative versée à la Collectivité de Corse.
+- **DDTM de Haute-Corse et Corse-du-Sud :** Tenues de faire respecter les servitudes militaires dans les documents d'urbanisme (PLU, PADDUC) sans pouvoir les contester.
+- **Collectivité de Corse et Communes riveraines :** N'ont aucun droit de regard sur le maintien ou la levée des servitudes militaires, contrairement à ce que prévoient les accords de statut des régions autonomes italiennes pour les bases de l'OTAN sur leur territoire.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

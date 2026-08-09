@@ -115,14 +115,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les audits DREAL d'exposition à l'amiante et à l'antimoine.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les registres de redevances minières de la DGFiP.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Cadastre Minier Secret** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **cadastre minier secret** identifie les institutions et opérateurs qui contrôlent l'inventaire et l'exploitation du sous-sol insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **BRGM (Bureau de Recherches Géologiques et Minières) :** Détient les rapports d'inventaire des ressources minérales corses (antimoine Cap Corse, chrome, amiante chrysotile). Ses rapports sont partiellement confidentiels.
+- **Direction Générale de l'Énergie et du Climat (DGEC / Ministère de la Transition Énergétique) :** Autorité nationale d'attribution des titres miniers (permis de recherches, concessions). Agit sans consultation obligatoire de la Collectivité de Corse.
+- **Préfectures de Haute-Corse et Corse-du-Sud :** Délivrent les arrêtés préfectoraux d'autorisation de travaux miniers et de prospection géophysique.
+- **DREAL de Corse :** Chargée du contrôle environnemental des sites miniers abandonnés et des risques d'exposition à l'amiante naturel. Sous-dotée en inspecteurs ICPE.
+- **Sociétés de prospection minière (françaises et étrangères) :** Déposent des demandes de permis de recherches sur des périmètres corses sans obligation d'information préalable des communes concernées.
+- **Collectivité de Corse :** Ne dispose d'aucun droit de veto sur les attributions de titres miniers, contrairement aux régions autonomes espagnoles ou aux COM françaises.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

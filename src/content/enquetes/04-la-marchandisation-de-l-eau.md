@@ -116,14 +116,17 @@ Pour stopper le gaspillage de l'eau publique et la sur-tarification pratiquée p
 3. **Les redevances d'extraction d'eau brute sur les barrages (OEHC) :** Demande de communication des bordereaux de facturation de l'Office d'Équipement Hydraulique de Corse aux distributeurs privés pour les prélèvements sur le Rizzanese, Calacuccia et Sampolo.
 4. **Les procès-verbaux de contrôle de qualité et de conformité des réseaux (ARS Corse / OFB) :** Injonction de communication des analyses bactériologiques et des arrêtés d'injonction de travaux de mise aux normes des stations d'épuration.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Marchandisation De L Eau** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui contrôlent la ressource hydraulique insulaire et en captent la valeur :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **OEHC (Office d'Équipement Hydraulique de Corse) :** Gestionnaire des barrages (Rizzanese, Calacuccia, Sampolo). Fixe les redevances de prélèvement d'eau brute sans transparence tarifaire publique.
+- **Kyrnolia / Veolia Eau :** Délégataire majoritaire de la distribution d'eau potable dans plusieurs EPCI corses. Pratique des tarifs parmi les plus élevés de France sans investissement proportionnel dans la réduction des fuites.
+- **Saur et Suez :** Présents sur plusieurs contrats de DSP dans les micro-réseaux ruraux. Même logique de captation de valeur avec peu d'investissement réseau.
+- **EPCI et Syndicats Intercommunaux des Eaux :** Autorités organisatrices du service de l'eau, souvent trop faibles financièrement pour imposer leurs conditions aux délégataires privés lors des renégociations.
+- **ARS de Corse (Agence Régionale de Santé) :** Contrôle la qualité bactériologique de l'eau potable. Ses arrêtés d'injonction de travaux sont trop rarement rendus publics.
+- **OFB (Office Français de la Biodiversité) :** Compétent sur les débits réservés et les prélèvements en milieu naturel. Sous-doté en agents de terrain en Corse.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

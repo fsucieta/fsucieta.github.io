@@ -115,14 +115,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les conventions de partenariat sanitaire avec l'AP-HM et le CHU de Nice.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports d'audit de sécurité des urgences de la DREES.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Dependance Sanitaire Evasan** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **dépendance sanitaire et les EVASAN** identifie les acteurs qui structurent et perpétuent la sous-dotation hospitalière insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **ARS de Corse (Agence Régionale de Santé) :** Définit l'offre de soins et les dotations T2A des hôpitaux corses. Ses arbitrages budgétaires reflètent souvent les contraintes nationales plus que les besoins insulaires réels.
+- **Centres Hospitaliers de Bastia et d'Ajaccio :** Établissements de référence insulaires. Sous-dotés en spécialistes (cardiologie interventionnelle, neurochirurgie, oncologie) imposant le recours aux EVASAN.
+- **AP-HM (Assistance Publique — Hôpitaux de Marseille) et CHU de Nice :** Destinations privilégiées des EVASAN. Perçoivent les financements T2A des actes réalisés sur les patients corses transférés.
+- **SAMU de Corse-du-Sud et Haute-Corse :** Coordonnent les EVASAN. Contraints par le nombre limité d'aéronefs médicalisés disponibles en période estivale.
+- **Faculté de Santé de l'Université de Corse (Corte) :** Propose un premier cycle médical mais sans formation clinique spécialisée complète sur l'île, obligeant les étudiants à partir en Externat sur le continent.
+- **Assurance Maladie / CPAM de Corse-du-Sud et Haute-Corse :** Finance les EVASAN sans publication du coût annuel total, opacifiant l'ampleur réelle de la dépendance sanitaire.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

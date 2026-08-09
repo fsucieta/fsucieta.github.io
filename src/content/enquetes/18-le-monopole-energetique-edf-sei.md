@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les bilans de compensation de la péréquation tarifaire validés par la CRE.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux d'arbitrage de la Programmation Pluriannuelle de l'Énergie.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Monopole Energetique Edf Sei** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **monopole énergétique EDF-SEI** identifie les acteurs qui contrôlent la production, la distribution et la tarification de l'électricité insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **EDF-SEI (EDF Systèmes Énergétiques Insulaires) :** Opérateur historique disposant du monopole de fait sur la production et la distribution d'électricité en Zone Non Interconnectée (ZNI) corse.
+- **CRE (Commission de Régulation de l'Énergie) :** Régulateur national. Valide les Programmations Pluriannuelles de l'Énergie (PPE) insulaires et les bilans de péréquation tarifaire. Ses décisions s'imposent à la Collectivité de Corse.
+- **DGEC (Direction Générale de l'Énergie et du Climat) :** Ministère de tutelle du secteur énergétique. Arbitre les choix de mix énergétique insulaire en lien avec EDF-SEI et la CRE, sans obligation de consultation préalable de la Collectivité.
+- **Collectivité de Corse :** A la compétence en matière de planification énergétique (PPE insulaire) mais ses orientations sont subordonnées à l'accord de la CRE et du Gouvernement.
+- **Producteurs d'énergie renouvelable en Corse (solaire, éolien) :** Dépendent des contrats d'obligation d'achat EDF-SEI pour valoriser leur production. Plafonnés par les contraintes du réseau insulaire non interconnecté.
+- **DREAL de Corse :** Instruit les demandes d'autorisation ICPE des centrales thermiques et des parcs éoliens. Ses avis techniques sont parfois contredits par les arbitrages politiques nationaux.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

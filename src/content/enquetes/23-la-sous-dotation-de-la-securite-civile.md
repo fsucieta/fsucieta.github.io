@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les conventions de partenariat entre le PGHM, le Dragon 20 et la Sécurité Civile.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports d'analyse de couverture des risques de la DGSCGC.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Sous Dotation De La Securite Civile** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **sous-dotation de la sécurité civile** identifie les acteurs qui déterminent les moyens de protection des populations corses face aux risques naturels et technologiques :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **DGSCGC (Direction Générale de la Sécurité Civile et de la Gestion des Crises) :** Gestionnaire national de la flotte aérienne de sécurité civile (Canadair, Tracker, Dash 8). Décide du positionnement saisonnier des appareils sans garantie de présence permanente en Corse.
+- **SIS de Corse-du-Sud (SDIS 2A) et SIS de Haute-Corse (SDIS 2B) :** Services Départementaux d'Incendie et de Secours. Sous-dotés en effectifs et en véhicules lourds par rapport à la superficie et aux risques insulaires.
+- **Conseils Départementaux de Corse-du-Sud et Haute-Corse :** Financeurs principaux des SDIS. Budget contraint et en décalage structurel avec les besoins réels d'une île à haute densité de risque naturel.
+- **PGHM de Corse (Peloton de Gendarmerie de Haute Montagne) :** Assure les secours en haute montagne. Sous-effectif par rapport à la fréquentation des massifs corses en été.
+- **Escadron Dragon 20 (Sécurité Civile, base de Bastia-Poretta) :** Hélitreuillage et secours médicalisé. Couverture insuffisante pour les 180 km de façade montagne en zone difficile d'accès.
+- **Collectivité de Corse :** A la compétence en matière de prévention des risques naturels (PPRN) et pourrait renforcer la coopération opérationnelle entre les SIS, le PGHM et la Sécurité Civile nationale.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

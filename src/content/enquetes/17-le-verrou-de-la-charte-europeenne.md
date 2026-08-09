@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les notes juridiques du Conseil d'État sur la Charte Européenne des Langues.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les conventions de financement Éducation Nationale / Collectivité.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Verrou De La Charte Europeenne** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **verrou de la Charte Européenne des Langues Régionales** identifie les acteurs du blocage institutionnel de la co-officialité de la langue corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Conseil Constitutionnel français :** A censuré la ratification de la Charte Européenne des Langues Régionales en 1999 (décision n° 99-412 DC) et bloque la co-officialité au titre de l'Article 2 de la Constitution.
+- **Gouvernement français (Premier Ministre / SGG) :** N'a pas inscrit la révision constitutionnelle nécessaire à la co-officialité dans ses priorités législatives, malgré les votes de l'Assemblée de Corse.
+- **Assemblée de Corse :** A voté plusieurs motions en faveur de la co-officialité. Dispose du droit d'initiative législative (Loi du Pays) mais sans pouvoir constitutionnel direct.
+- **Rectorat de Corse :** Administre l'enseignement de la langue corse. Les effectifs d'enseignants bilingues certifiés sont insuffisants pour couvrir l'ensemble du territoire scolaire insulaire.
+- **Associations de promotion de la langue corse (Scola Corsa, Cirà, Banca di a Memoria) :** Acteurs associatifs qui pallient les lacunes institutionnelles de l'enseignement public bilingue.
+- **Conseil de l'Europe / Comité d'Experts de la Charte :** Surveille l'application de la Charte par les États signataires. A régulièrement épinglé la France pour son non-respect des engagements envers les langues régionales.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

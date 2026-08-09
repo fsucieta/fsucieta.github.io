@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les délibérations de la CDOA sur l'attribution des droits à prime PAC.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les fiches de signalement de fraudes transmises au Parquet National Financier.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **L Accaparement Des Primes Pac** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur l'**accaparement des primes PAC** identifie les acteurs de la filière agricole et administrative qui captent les aides européennes au détriment de l'élevage réel :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **ODARC (Office de Développement Agricole et Rural de Corse) :** Instruits les demandes de primes PAC et effectue les contrôles sur place du cheptel. Dispose de moyens humains limités pour contrôler l'ensemble des déclarations TéléPAC.
+- **DRAAF de Corse :** Supervise la politique agricole régionale et les contrôles PAC. Produit les bilans de contrôle mais sans publication nominative des fraudes détectées.
+- **ASP (Agence de Services et de Paiement) :** Gestionnaire national du paiement des aides PAC. Applique les règles nationales sans adaptation aux spécificités de l'élevage extensif méditerranéen corse.
+- **CDOA (Commission Départementale d'Orientation de l'Agriculture) :** Arbitre l'attribution et les transferts de droits à prime. Souvent dominée par les grands éleveurs et les représentants des filières continentales.
+- **Grands éleveurs et gérants de domaines agropastoraux :** Principaux bénéficiaires des primes PAC en Corse. Certains déclarent des surfaces de maquis comme pâturages permanents sans cheptel proportionnel vérifiable.
+- **Parquet National Financier (PNF) :** Compétent pour les fraudes aux subventions européennes. A été saisi de plusieurs dossiers corses mais les poursuites restent rares face à l'ampleur présumée des fraudes.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

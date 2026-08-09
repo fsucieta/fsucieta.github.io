@@ -116,14 +116,17 @@ Pour faire sauter le verrou financier et lever le secret bancaire entourant l'ad
 3. **Les compte-rendus annuels d'évaluation du Comité Régional du Crédit (Banque de France / IEDOM) :** Demande de communication des ratios confidentiels de réinjection de l'épargne locale corse dans les crédits à l'habitat résidentiel et les prêts aux PME.
 4. **Les déclarations d'enregistrement des cessions de parts de SCI (Services d'Enregistrement DGFiP) :** Injonction d'accès aux bordereaux de liquidation des droits de mutation à titre onéreux (DMTO) des SCI immobilières enregistrées en Corse-du-Sud et Haute-Corse.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'architecture du verrou financier repose sur un réseau d'acteurs institutionnels et financiers interconnectés :
+L'enquête sur le **verrou financier** révèle une constellation d'acteurs précis dont les intérêts convergent pour maintenir l'opacité des flux de capitaux insulaires :
 
-- **Les Sièges Bancaires Continentaux & Filières de Patrimoine (BNP Paribas, Crédit Agricole, BPCE) :** Captent les dépôts locaux corses pour financer des opérations d'ingénierie patrimoniale au profit de banques privées étrangères ou continentales.
-- **La DGFiP & le Pôle Enregistrement des Entreprises :** Assurent l'enregistrement passif des mutations de parts de SCI sans contrôle de l'effectivité de l'assiette foncière ni vérification de l'identité des bénéficiaires effectifs du Registre RBE.
-- **Les Études Notariales Spécialisées d'Île-de-France et de la Côte d'Azur :** Rédigent les actes de cession de parts de SCI en dehors du territoire insulaire, évitant ainsi le droit de préemption de la SAFER et le contrôle notarial corse.
-- **L'Institut d'Émission des Départements d'Outre-Mer (IEDOM) / Banque de France :** Publie des données agrégées qui masquent la fuite nette de liquidités financières de l'île vers le marché monétaire européen.
+- **DGFiP / Service de Publicité Foncière (Ajaccio, Bastia) :** Gestionnaire des inscriptions hypothécaires et des DMTO. Administre le fichier FIER sans obligation de publication statistique territoriale.
+- **IEDOM (Institut d'Émission des Départements d'Outre-Mer) :** Publie les bilans bancaires de Corse mais ne ventile pas le taux de réinjection de l'épargne locale dans les crédits aux résidents.
+- **Crédit Agricole Mutuel de la Corse, Caisse d'Épargne CEPAC, BNP Paribas Corse :** Principaux collecteurs de l'épargne insulaire. Insuffisamment contraints à réinjecter localement les dépôts collectés.
+- **SCI non-résidentes (enregistrées hors Corse) :** Véhicules d'acquisition immobilière opaques bénéficiant d'un cadre fiscal allégé sans contrepartie de résidence.
+- **Notaires et Greffes des Tribunaux de Commerce de Bastia et Ajaccio :** Acteurs centraux de l'enregistrement des cessions de parts, soumis au secret professionnel limitant l'accès public aux transactions.
+- **Banque de France (Direction Régionale) :** Produit les statistiques de crédit mais ne communique pas les ratios de réinjection locale à l'échelle de la Corse.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

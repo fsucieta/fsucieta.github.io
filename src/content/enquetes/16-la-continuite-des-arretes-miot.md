@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les extraits de la matrice cadastrale de la DGFiP des parcelles sans maître.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux de la Commission Foncier de la Collectivité de Corse.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Continuite Des Arretes Miot** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **continuité des arrêtés Miot et la fiscalité successorale** cartographie les acteurs qui administrent et bénéficient du régime fiscal dérogatoire corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **DGFiP / Direction des Finances Publiques de Corse :** Administre l'application des exonérations de droits de succession (Art. 750 bis A CGI). Produit des statistiques agrégées sans publication des bénéficiaires.
+- **GIRTEC (Groupement d'Intérêt Public pour le Remembrement et la Titration en Corse) :** Accompagne gratuitement les propriétaires dans la régularisation des biens non titrés. Sous-financé par rapport à l'ampleur du chantier (estimé à 100 000 parcelles non titrées).
+- **Chambres des Notaires de Corse-du-Sud et Haute-Corse :** Acteurs centraux de la régularisation des indivisions et de la prescription trentenaire. Leur rôle est indispensable mais le coût des actes reste prohibitif pour les familles rurales.
+- **Collectivité de Corse (Commission Foncière) :** Pilote la politique de titration et peut proposer des Lois du Pays pour adapter le régime successoral insulaire. Sous-dotée en moyens humains pour accélérer le processus.
+- **Investisseurs et promoteurs extérieurs :** Profitent du régime fiscal dérogatoire pour acquérir à prix bas des biens en indivision auprès de familles contraintes de vendre pour sortir d'une indivision complexe.
+- **Propriétaires en indivision successorale :** Principales victimes. Bloqués dans leur patrimoine par l'impossibilité de titrer à coût abordable et menacés par la fin annoncée de l'exonération fiscale.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

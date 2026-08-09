@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les délibérations municipales autorisant la restauration du bâti ancien (L. 151-11).
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les permis de construire accordés pour la transformation de bergeries en zones A et N.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Speculation Sur Le Bati Agricole** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **spéculation sur le bâti agricole** cartographie les acteurs de la filière de valorisation immobilière déguisée en restauration du patrimoine pastoral corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Propriétaires de bergeries et bâti agricole ancien :** Détenteurs du patrimoine pastoral. Soumis à des pressions d'achat de la part d'investisseurs continentaux qui proposent des prix très supérieurs à la valeur agricole réelle.
+- **Maires et conseils municipaux :** Responsables de l'établissement des listes de bâti restaurable (L. 151-11 PLU). Peuvent être influencés pour inscrire des ruines non-éligibles sous la pression d'acquéreurs ou de promoteurs locaux.
+- **DDTM de Haute-Corse et Corse-du-Sud :** Instruisent les permis de construire pour la restauration de bergeries. Manquent de personnel pour contrôler la conformité entre le permis accordé et la réalité des travaux réalisés.
+- **SAFER de Corse :** Dispose du droit de préemption sur les ventes de bâti agricole. Ne l'exerce que rarement sur les bergeries car leur valeur dépasse souvent le budget disponible pour la préemption.
+- **Investisseurs et SCI immobilières :** Acquièrent les bergeries à des prix spéculatifs pour les transformer en résidences d'agrément sous couvert de restauration du patrimoine pastoral. Exploitent les lacunes de contrôle des PLU.
+- **Notaires et agents immobiliers :** Facilitent les transactions. L'absence d'obligation de déclaration de l'usage futur du bâti restauré permet de contourner les règles de changement de destination en zones A et N.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

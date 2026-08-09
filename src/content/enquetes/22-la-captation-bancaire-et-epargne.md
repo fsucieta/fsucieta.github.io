@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les conventions financières signées entre la Collectivité et les réseaux bancaires.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports prudentiels d'audit de l'ACPR sur la fuite des liquidités.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Captation Bancaire Et Epargne** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **captation bancaire et l'épargne** cartographie les acteurs financiers qui organisent la fuite des capitaux hors de l'économie insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Crédit Agricole Mutuel de la Corse (CAMO) :** Principal établissement bancaire de l'île. Son statut coopératif ne l'oblige pas à publier les ratios de réinjection locale de l'épargne collectée.
+- **Caisse d'Épargne CEPAC (direction régionale Corse) :** Collecte une part significative de l'épargne des ménages corses. Réinjecte une fraction insuffisante dans le crédit aux TPE-PME locales.
+- **IEDOM (Institut d'Émission des Départements d'Outre-Mer) :** Produit les statistiques bancaires insulaires. Son rapport annuel ne ventile pas suffisamment les données sur la réinjection locale de l'épargne.
+- **Bpifrance (délégation Corse) :** Devrait pallier les défaillances bancaires privées en matière de financement des PME insulaires. Ses critères de sélection restent inadaptés aux particularités de l'économie informelle et saisonnière corse.
+- **ACPR (Autorité de Contrôle Prudentiel et de Résolution) :** Régulateur prudentiel des banques. Ne publie pas de statistiques régionalisées sur les conditions de crédit en Corse.
+- **Banque de France (Direction Régionale) :** Produit les données de crédit mais ses recommandations sur l'amélioration du financement de l'économie insulaire ne sont pas contraignantes pour les établissements bancaires.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

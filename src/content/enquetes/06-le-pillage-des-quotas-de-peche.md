@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les bordereaux de contrôle de l'IFREMER.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux d'attribution de la Prud'homie de pêche.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Pillage Des Quotas De Peche** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **pillage des quotas de pêche** identifie les acteurs qui captent la ressource halieutique au détriment de la pêche artisanale corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **DPMA (Direction des Pêches Maritimes et de l'Aquaculture, Ministère de la Mer) :** Attribue les quotas nationaux de thon rouge par organisation de producteurs sans mécanisme de réservation territoriale insulaire.
+- **OP (Organisations de Producteurs) des armements sétois et marseillais :** Captent la majorité du quota de thon rouge méditerranéen via des senneurs industriels opérant dans les eaux entourant la Corse.
+- **CICTA (Commission Internationale pour la Conservation des Thonidés de l'Atlantique) :** Instance internationale de fixation des quotas, peu accessible aux lobbies de la petite pêche artisanale insulaire.
+- **IFREMER (Institut Français de Recherche pour l'Exploitation de la Mer) :** Produit les expertises scientifiques sur l'état des stocks. Ses recommandations sont parfois ignorées lors des arbitrages politiques de quota.
+- **CRPMEM de Corse (Comité Régional des Pêches) :** Instance censée représenter les pêcheurs corses. En pratique, sous-représentée dans les négociations nationales d'attribution de quota.
+- **Prud'homies de Pêche corses (Ajaccio, Bastia, Calvi, Porto-Vecchio) :** Instances de régulation locale de la pêche artisanale. Maintenues dans un rôle consultatif sans pouvoir réel d'attribution de droits de pêche.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

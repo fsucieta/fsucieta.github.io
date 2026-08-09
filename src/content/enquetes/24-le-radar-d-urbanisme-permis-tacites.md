@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les extractions de données d'urbanisme de la base Sitadel2 de la DREAL.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux de constatation de défaut d'affichage sur les chantiers.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Radar D Urbanisme Permis Tacites** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **radar de l'urbanisme et les permis tacites** cartographie les acteurs qui bénéficient et organisent l'opacité du système des autorisations implicites :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Communes et maires corses :** Autorité compétente pour les permis de construire dans les communes dotées d'un PLU. Certains maires sont soumis à des pressions pour ne pas instruire dans les délais, laissant naître des permis tacites contestables.
+- **DDTM de Haute-Corse et Corse-du-Sud :** Autorité compétente dans les communes sans PLU (environ 120 communes corses). Délais d'instruction souvent dépassés faute de personnel.
+- **Promoteurs et investisseurs extérieurs :** Exploitent le mécanisme du permis tacite en déposant des dossiers volumineux difficiles à instruire dans les délais légaux, forçant la naissance d'un permis implicite favorable.
+- **SCI pétitionnaires :** Utilisent des prête-noms et des montages societaires pour opacifier l'identité du véritable porteur du projet lors du dépôt du permis de construire.
+- **Tribunaux Administratifs de Bastia :** Confrontés à un afflux de recours contre les permis tacites illégaux. Délais de jugement en première instance pouvant dépasser 3 ans.
+- **Associations environnementales (U Levante, ADEC, collectifs citoyens locaux) :** Seuls acteurs qui intentent systématiquement des recours contre les permis tacites abusifs en zone littorale et en espace remarquable.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

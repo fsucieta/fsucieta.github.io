@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les fiches de calcul de la répartition budgétaire par étudiant.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les bilans d'aide régionale à la recherche et à la mobilité.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Sous Investissement Educatif** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **sous-investissement éducatif** cartographie les institutions qui organisent et maintiennent la sous-dotation de l'Université de Corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **MESR (Ministère de l'Enseignement Supérieur et de la Recherche) :** Fixe les dotations globales de fonctionnement et les créations de postes enseignants-chercheurs par université. La charge d'insularité n'est pas officiellement intégrée dans la clé de répartition nationale (San Remo).
+- **Université Pascal Paoli de Corte :** Seule université de l'île. Dépendante à 85 % des dotations de l'État. Ses projets de développement sont contraints par l'absence de filières de santé et d'ingénierie complètes.
+- **CROUS de Corte :** Gestionnaire des logements étudiants. Capacité insuffisante forçant de nombreux étudiants à se loger au marché privé aux prix touristiques corses.
+- **Collectivité de Corse :** Compétence en matière de lycées mais pas d'enseignement supérieur. Compense partiellement les lacunes de l'État via des bourses de mobilité et des subventions de recherche.
+- **Rectorat de Corse :** Administre l'enseignement primaire et secondaire. Gère les filières bilingues corse-français avec des effectifs d'enseignants bilingues insuffisants.
+- **ANR (Agence Nationale de la Recherche) et CNRS :** Leurs appels à projets favorisent structurellement les grandes universités métropolitaines. L'Université de Corse est sous-représentée dans les projets nationaux financés.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

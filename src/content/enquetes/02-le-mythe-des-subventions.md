@@ -116,14 +116,17 @@ Face au siphonnage des assiettes fiscales majeures par le Trésor Central et la 
 3. **Les bordereaux de collecte et de versement de la TASCOM (Préfectures 2A et 2B) :** Demande de communication des montants réels de la Taxe sur les Surfaces Commerciales acquittée par les enseignes hypermarchés en Corse et de leur clé de redistribution communale.
 4. **Les états récapitulatifs des dotations d'équipement DETR et DSIL (SGAR / Préfecture) :** Injonction de communication des procès-verbaux de la commission d'arbitrage préfectorale fixant la répartition des subventions d'équipement entre les communes rurales et les agglomérations.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-Le système de captation fiscale repose sur une chaîne d'arbitrage défavorable aux finances publiques corses :
+L'enquête sur le **mythe des subventions** identifie les acteurs qui captent ou arbitrent les flux fiscaux et subventionnels au détriment de l'économie résidentielle corse :
 
-- **Bercy / Direction Générale des Finances Publiques (DGFiP) :** Centralise la TVA et l'Impôt sur les Sociétés collectés en Corse et redistribue des dotations globales de fonctionnement inférieures aux recettes réelles générées.
-- **Centrales d'Achat Nationales de la Grande Distribution (Leclerc, Carrefour, Casino) :** Facturent les marges et l'impôt sur les bénéfices au siège parisien, réduisant artificiellement le résultat comptable déclaré dans les filiales corses.
-- **Comité de Direction du CIIC (Préfecture / DRFiP) :** Valide des exonérations fiscales massives pour des projets immobiliers ou commerciaux sans contrôle strict du réinvestissement local.
-- **Chambre Régionale des Comptes (CRC) de Corse :** Note régulièrement les anomalies d'attribution des aides sans pouvoir contraindre l'État à réviser la clé de répartition des recettes fiscales.
+- **Bercy / DRFiP de Corse :** Centralise la TVA touristique collectée en Corse sans publication des statistiques de collecte saisonnière par secteur.
+- **Grande Distribution (Leclerc Porto-Vecchio, Carrefour Ajaccio, U Express) :** Encaisse la TVA estivale puis rapatrie les bénéfices sur le continent via des holdings centralisées.
+- **Armateurs Maritimes (Corsica Linea, La Méridionale, Moby Lines) :** Bénéficient du monopole de la délégation de service public maritime tout en domiciliant leurs profits hors de l'île.
+- **Comité Régional de Validation du CIIC (Art. 244 quater E CGI) :** Instance opaque d'attribution du Crédit d'Impôt pour Investissement en Corse, sans publication nominative des bénéficiaires.
+- **SGAR (Secrétariat Général aux Affaires Régionales) :** Arbitre la répartition des dotations DETR et DSIL entre communes rurales et agglomérations, sans transparence sur les critères.
+- **Préfecture de Région Corse :** Valide les arrêtés d'attribution des aides d'État et des subventions d'équipement sans obligation de consultation citoyenne préalable.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les dossiers d'évaluation d'impact environnemental morcelés par projet.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les avis sanitaires de l'ARS sur les rejets industriels et immobiliers.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Transparence Des Petitionnaires Mrae** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **transparence des pétitionnaires et la MRAe** identifie les acteurs du système d'autorisation environnementale qui permettent l'opacité des porteurs de projets :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **MRAe de Corse (Mission Régionale d'Autorité Environnementale) :** Instance chargée de l'examen au cas par cas et des avis environnementaux sur les projets soumis à évaluation. Dispose de moyens insuffisants pour instruire tous les dossiers avec la rigueur requise.
+- **Préfectures de Haute-Corse et Corse-du-Sud :** Autorités d'instruction des demandes d'autorisation environnementale. Peuvent décider de dispenser un projet d'évaluation d'impact environnementale sans motivation détaillée.
+- **SCI et sociétés pétitionnaires :** Déposent des dossiers de demande d'autorisation en utilisant des montages societaires opaques qui dissimulent l'identité réelle des investisseurs et leurs antécédents de projets similaires.
+- **INPI / Greffes des Tribunaux de Commerce :** Administrent le RBE mais celui-ci n'est pas systématiquement consulté par les services instructeurs lors de l'analyse des dossiers de permis environnementaux.
+- **ARS de Corse :** Émet des avis sanitaires sur les projets susceptibles d'impacter les captages d'eau et les zones baignade. Ses avis ne sont pas toujours intégrés de manière contraignante dans les décisions.
+- **Commissaires enquêteurs et tribunaux administratifs :** Derniers remparts contre les autorisations illégales. Souvent saisis tardivement, après la délivrance de permis, par des associations citoyennes.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

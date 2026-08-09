@@ -115,14 +115,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les délibérations d'attribution de primes de haute responsabilité.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports de la Cour des Comptes sur la gestion de l'État en Corse.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Tutelle De La Haute Fonction Publique** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **tutelle de la haute fonction publique** identifie les réseaux de nomination et de contrôle administratif qui maintiennent la primauté des logiques continentales en Corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **DGAFP (Direction Générale de l'Administration et de la Fonction Publique) :** Gère les corps préfectoraux et les hauts fonctionnaires affectés en Corse. Aucun critère de connaissance du territoire insulaire n'est exigé à la nomination.
+- **Corps Préfectoral (Préfets de Corse-du-Sud et Haute-Corse, SGAR) :** Exercent la tutelle administrative et le contrôle de légalité. Tournent en moyenne tous les 18 à 24 mois, sans ancrage territorial.
+- **Grandes Écoles (ENA/INSP, Polytechnique, HEC) :** Fournissent les cadres dirigeants des services déconcentrés de l'État. Leurs promotions n'intègrent aucun module de formation aux spécificités des territoires insulaires autonomes.
+- **Directions Régionales (DRFIP, DREAL, DRAAF, ARS, DDTM) :** Administrées par des directeurs nommés par les ministères centraux sans avis conforme de la Collectivité de Corse.
+- **Collectivité de Corse (Exécutif + Assemblée) :** Privée de tout droit de regard sur les nominations des directeurs régionaux de l'État, contrairement aux régions autonomes espagnoles (Generalitat, Xunta) et italiennes (Regione Sardegna).
+- **Chambre Régionale des Comptes de Corse :** Instance de contrôle externe. Publie des rapports d'observations sur la gestion des collectivités mais sans pouvoir de sanction directe des directeurs régionaux de l'État.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

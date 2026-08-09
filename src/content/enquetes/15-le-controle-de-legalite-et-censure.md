@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les fiches d'instruction juridique et d'opportunité de la DDTM.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les jugements d'annulation de permis de construire obtenus par les associations.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Controle De Legalite Et Censure** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **contrôle de légalité et la censure administrative** identifie les acteurs du réseau de surveillance préfectorale des délibérations locales :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Préfecture de Haute-Corse et Préfecture de Corse-du-Sud :** Exercent le contrôle de légalité via le système @CTES. Disposent du pouvoir de déférer les actes municipaux et intercommunaux au Tribunal Administratif.
+- **DDTM de Haute-Corse et Corse-du-Sud :** Instruisent les demandes de permis de construire et signalent les actes d'urbanisme illégaux à la Préfecture pour déféré.
+- **Tribunal Administratif de Bastia :** Instance de premier ressort. Juge les déférés préfectoraux et les recours des associations environnementales contre les permis de construire abusifs.
+- **Cour Administrative d'Appel de Marseille :** Juridiction d'appel compétente pour la Corse. Distance géographique limitant l'accessibilité pour les petites communes.
+- **Associations de défense de l'environnement (ADEC, U Levante, PRNC) :** Acteurs citoyens qui intentent des recours contre les permis de construire illégaux en zone littorale. Souvent seules à exercer un contrôle de fait.
+- **Maires des communes rurales corses :** Victimes du double standard du contrôle de légalité : sévère sur leurs délibérations de développement local, plus complaisant face aux grands projets portés par des acteurs extérieurs.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

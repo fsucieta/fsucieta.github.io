@@ -116,14 +116,17 @@ Pour percer l'opacité du patrimoine littoral détenu par des sociétés civiles
 3. **Les conventions de Projet Urbain Partenarial (PUP) et d'extension de réseaux :** Demande de communication des procès-verbaux de prise en charge par les communes des travaux de voirie et d'adduction d'eau desservant des lotissements de SCI privées.
 4. **Les déclarations d'intention d'aliéner (DIA) transmises à la SAFER :** Injonction d'accès aux bordereaux de notification de vente de parts sociales de SCI détentrices de foncier agricole ou littoral.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **L Empire Des Sci Non Residentes** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur l'**empire des SCI non-résidentes** cartographie le réseau d'acteurs qui organisent et bénéficient de l'accaparement foncier littoral :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **SCI non-résidentes (siège social hors Corse ou à l'étranger) :** Véhicules juridiques permettant de contourner les règles de résidence et de démembrer la propriété pour échapper aux droits de mutation.
+- **Cabinets notariaux spécialisés dans les montages SCI :** Facilitent légalement mais opaciement les acquisitions de foncier littoral par des non-résidents via des clauses d'agrément.
+- **INPI / Greffes des Tribunaux de Commerce :** Administrent le Registre des Bénéficiaires Effectifs (RBE) — insuffisamment consulté par les services de contrôle.
+- **DDTM de Haute-Corse et Corse-du-Sud :** Instruisent les permis de construire en zones littorales. Manquent parfois de ressources pour contrôler la réalité des demandeurs derrière les SCI.
+- **SAFER de Corse :** Dispose du droit de préemption sur les cessions de parts de SCI agricoles, mais ne l'exerce que rarement faute de moyens d'investigation sur les montages sociétaires.
+- **DGFiP / Service d'Enregistrement :** Enregistre les cessions de parts de SCI sans obligation de signalement systématique aux services d'urbanisme ou à la SAFER.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

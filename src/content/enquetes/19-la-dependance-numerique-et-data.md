@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les cartes de déclaration ARCEP d'atterrage des câbles sous-marins de télécom.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports d'audit de cybersécurité et de souveraineté numérique de l'ANSSI.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **La Dependance Numerique Et Data** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur la **dépendance numérique et la data** identifie les acteurs qui contrôlent les infrastructures et les données numériques insulaires :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Collectivité de Corse (Mission Numérique) :** Pilote le Réseau d'Initiative Publique (RIP) Corsica Fibra. Dépendante du délégataire privé pour le déploiement et l'exploitation de la fibre optique.
+- **Corsica Fibra (filiale d'Altitude Telecom) :** Délégataire du RIP fibre optique de Corse. Exploite le réseau public sous DSP sans obligation de publication des taux de panne et des délais de rétablissement.
+- **Orange, SFR, Free et Bouygues Telecom :** Opérateurs commerciaux qui louent la fibre du RIP pour offrir leurs services aux particuliers. Peu contraints à couvrir les zones rurales économiquement non rentables.
+- **ARCEP (Autorité de Régulation des Communications Électroniques) :** Régulateur national. Surveille la couverture mais ses indicateurs publics ne distinguent pas suffisamment la situation insulaire.
+- **Hébergeurs cloud nationaux et internationaux (AWS, Google Cloud, Azure) :** Hébergent une grande partie des données des collectivités corses hors du territoire insulaire, posant des questions de souveraineté numérique et de conformité RGPD.
+- **ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information) :** Autorité nationale de cybersécurité. Ses recommandations pour les collectivités territoriales insulaires sont insuffisamment suivies d'effet en Corse.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les déclarations fiscales d'IS des agences Booking et Airbnb.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les conventions d'aide régionale à la promotion touristique.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **L Evasion Des Capitaux Touristiques** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur l'**évasion des capitaux touristiques** identifie les acteurs qui captent et exportent la valeur créée par le tourisme corse :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Plateformes numériques (Airbnb, Booking.com, Expedia) :** Perçoivent des commissions sur toutes les transactions touristiques en Corse sans établissement stable fiscal sur l'île.
+- **Compagnies aériennes low-cost (Ryanair, easyJet) et armateurs :** Captent la valeur du transport des touristes sans réinvestissement proportionnel dans les infrastructures insulaires.
+- **Grande Distribution estivale (hypermarchés U, Leclerc, Intermarché côtiers) :** Encaissent le surcroît de consommation estivale et rapatrient les bénéfices vers des holdings continentales.
+- **Agence du Tourisme de Corse (ATC) :** Financée par la Collectivité pour promouvoir la destination, sans mécanisme de conditionnement des aides à la réinjection locale des revenus des opérateurs.
+- **IEDOM (Institut d'Émission des Départements d'Outre-Mer) :** Mesure les flux CB mais ne publie pas les données de sortie de liquidités en haute saison.
+- **Communes littorales (Bonifacio, Porto-Vecchio, Calvi, L'Île-Rousse) :** Collectent la taxe de séjour mais n'ont pas les leviers juridiques pour exiger la réinjection locale des bénéfices des opérateurs saisonniers.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les registres d'écrou des prévenus corses transférés à Marseille.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports d'inspection de la Chancellerie sur les délais d'instruction.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Dessaisissement Judiciaire Jirs** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **dessaisissement judiciaire et la JIRS** cartographie les instances qui organisent le décentrement de la justice hors du territoire insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **Ministère de la Justice (DACG — Direction des Affaires Criminelles et des Grâces) :** Détermine les compétences territoriales des JIRS et peut décider de les étendre aux affaires corses par simple circulaire.
+- **JIRS de Marseille (Juridiction Interrégionale Spécialisée) :** Exerce une compétence dérogatoire sur les affaires de criminalité organisée, de blanchiment et de corruption touchant la Corse. Distance et délocalisation fragilisent les droits des justiciables corses.
+- **Parquet Général de la Cour d'Appel de Bastia :** Instance qui devrait instruire les affaires complexes corses mais qui voit régulièrement ses dossiers les plus sensibles dessaisis vers Marseille.
+- **Direction de l'Administration Pénitentiaire (DAP) :** Gère les transferts de détenus corses vers les maisons d'arrêt de Marseille, Lyon et Grasse, éloignant les prévenus de leurs familles et avocats.
+- **Barreaux d'Ajaccio et de Bastia :** Protestent régulièrement contre la pratique des dessaisissements qui les excluent de facto de la défense dans les dossiers les plus importants.
+- **Cour de Cassation (Chambre Criminelle) :** Valide jurisprudentiellement les dessaisissements mais n'a pas encore statué sur leur compatibilité avec le droit au procès équitable dans un délai raisonnable (Art. 6 CEDH).
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

@@ -116,14 +116,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les rapports d'audit financier de la Chambre Régionale des Comptes sur le SYVADEC.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les bordereaux de versement de la TGAP sur les ordures ménagères.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Scandale Des Dechets Syvadec** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **scandale des déchets SYVADEC** identifie les acteurs du système de gestion des déchets qui ont conduit à la crise de gouvernance insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **SYVADEC (Syndicat de Valorisation des Déchets de la Corse) :** Syndicat mixte en charge du traitement des déchets ménagers des deux départements corses. Sa gestion a été épinglée par la Chambre Régionale des Comptes.
+- **Collectivité de Corse :** Autorité de tutelle du SYVADEC. A tardé à imposer une refonte de la gouvernance malgré les alertes réitérées de la CRC de Corse.
+- **Transporteurs maritimes de déchets :** Chargés de l'exportation des refus de tri et des déchets résiduels vers les incinérateurs et décharges continentaux. Coûts élevés non maîtrisés dans les marchés publics.
+- **Exploitants des centres d'enfouissement de Tallone et Viggianello :** Gèrent les ISDND corses dans des conditions parfois non conformes aux arrêtés ICPE. Sous contrôle insuffisant de la DREAL.
+- **DREAL de Corse :** Chargée de l'inspection des sites ICPE de traitement des déchets. Sous-dotée pour contrôler efficacement l'ensemble des installations insulaires.
+- **Communes et EPCI collecteurs de déchets :** Contribuent financièrement au SYVADEC via la redevance ou la taxe d'enlèvement des ordures ménagères. Ont longtemps manqué de levier politique pour réformer la gouvernance du syndicat.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

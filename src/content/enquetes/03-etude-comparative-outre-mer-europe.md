@@ -117,14 +117,17 @@ Pour appuyer la légitimité d'un statut de résidence foncière sur le modèle 
 3. **Les études d'impact environnemental et social sur la dépossession foncière (DREAL / Insee Corse) :** Demande de communication des rapports internes mesurant la vitesse d'éviction des ménages corses du marché immobilier littoral sur les 15 dernières années.
 4. **Les notifications d'arbitrage et refus de préemption SAFER :** Injonction d'accès aux délibérations du conseil d'administration de la SAFER de Corse justifiant l'absence de préemption sur les grands domaines littoraux cédés à des acquéreurs extérieurs.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-La résistance institutionnelle à la mise en place d'un statut de résidence foncière fait intervenir plusieurs niveaux décisionnels :
+L'enquête **comparative outre-mer / Europe** identifie les instances décisionnelles qui bloquent ou permettraient la transposition d'un statut de résidence insulaire :
 
-- **Le Conseil d'État & le Conseil Constitutionnel :** Dogmatisme juridique opposant le principe d'indivisibilité du peuple français à toute régulation de l'accès à la propriété foncière.
-- **La SAFER de Corse :** Dispose de moyens budgétaires de préemption très inférieurs aux transactions financières du marché libre, limitant son rôle à un enregistrement passif.
-- **Les Agences Immobilières Internationales et Notaires de Littoral :** Réseau d'intermédiaires qui privilégient les acheteurs à fort pouvoir d'achat extérieur au détriment des jeunes ménages insulaires.
-- **La Commission Européenne (DG REGIO) :** Tolère les régimes restrictifs à Åland et Malte mais refuse d'ouvrir des négociations d'adaptation pour la Corse en l'absence de mandat explicite de l'État français.
+- **Conseil Constitutionnel français :** Verrou juridique principal — ses décisions de 1991 et 2002 ont censuré les tentatives de statut de résidence foncière. Sa jurisprudence doit évoluer.
+- **Ministère des Outre-Mer (DGOM) :** Possède l'expérience des COM (Polynésie, Nouvelle-Calédonie) avec droit de préemption territorial validé constitutionnellement.
+- **Collectivité de Corse (Assemblée + Exécutif) :** Porteuse de la revendication statutaire. Dispose du droit d'initiative législative (Loi du Pays) mais sans autonomie constitutionnelle réelle.
+- **SAFER de Corse :** Droit de préemption rural insuffisamment activé face aux acquisitions foncières extérieures en zones agricoles et littorales.
+- **Parlement Européen / Commission Européenne :** Cadre de référence des statuts insulaires comparés (Jersey, Åland, Açores). Peut être saisi pour reconnaître une dérogation au principe de libre circulation des capitaux.
+- **Gouvernement des Îles Åland (Finlande) :** Modèle de référence — le *Hembygdsrätt* (droit de domicile) restreint l'acquisition foncière aux non-résidents sans violation du droit européen.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 

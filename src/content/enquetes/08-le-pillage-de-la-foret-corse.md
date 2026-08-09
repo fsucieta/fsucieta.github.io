@@ -115,14 +115,17 @@ Pour imposer la transparence et forcer la communication des preuves administrati
 3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les rapports d'inventaire forestier Agreste/DRAAF.
 4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les bilans de subventions régionales aux scieries continentales.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
+## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
 
-L'organisation institutionnelle du secteur de l'enquête **Le Pillage De La Foret Corse** met en évidence une chaîne de décision et d'influence clairement identifiée :
+L'enquête sur le **pillage de la forêt corse** cartographie les acteurs de la filière bois qui organisent l'exportation non transformée de la ressource forestière insulaire :
 
-- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
-- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
-- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
-- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
+- **ONF (Office National des Forêts, Agence Territoriale de Corse) :** Gestionnaire des forêts domaniales et communales. Pratique des adjudications de coupes sans priorité légale aux transformateurs locaux.
+- **Scieries et exploitants forestiers continentaux (principalement italiens et varois) :** Remportent les adjudications et exportent les grumes brutes sans obligation de première transformation sur l'île.
+- **DRAAF de Corse (Direction Régionale de l'Agriculture, de l'Alimentation et de la Forêt) :** Supervise la politique forestière régionale. Produit des bilans d'inventaire insuffisamment opposables aux stratégies d'adjudication de l'ONF.
+- **Direction Régionale des Douanes de Corse :** Enregistre les manifestes d'exportation de bois. Les statistiques d'exportation de grumes brutes sont insuffisamment rendues publiques.
+- **Communes propriétaires de forêts communales :** Perçoivent les revenus des adjudications mais manquent de capacité technique pour exiger des contreparties de transformation locale dans les cahiers des charges.
+- **Collectivité de Corse :** A la compétence en matière de développement économique et pourrait imposer un label de première transformation obligatoire sur le sol corse dans les marchés publics forestiers.
+
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
