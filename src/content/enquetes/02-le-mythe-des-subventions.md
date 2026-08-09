@@ -108,76 +108,59 @@ Cette évasion de l'assiette fiscale assèche les finances de la Collectivité d
 
     
 
-## VII. Le levier de la souveraineté fiscale régionale et le modèle basque/catalan
+## VII. Modélisation du recours citoyen CADA
 
-    
+Pour briser l'opacité d'attribution des fonds publics et tracer la fuite des recettes fiscales, l'action citoyenne s'appuie sur le Code des Relations entre le Public et l'Administration (CRPA, art. L. 300-1 et suivants). Le recours CADA vise la communication intégrale des documents administratifs, registres et conventions financières suivants :
 
-En s'inspirant du modèle de la *Concierto Económico* de la Communauté Autonome du Pays Basque espagnol ou du statut d'autonomie des îles Canaries, la Corse doit exiger le transfert de la collecte et de la fixation des taux des impôts directs et indirects sur son territoire. Dans ce schéma de souveraineté fiscale, la Collectivité de Corse collecterait 100 % de la TVA et de l'IS générés sur le sol insulaire, puis reverserait une quote-part (le *cupo*) à l'État central pour couvrir les dépenses régaliennes (Défense, Justice).
+1. **Tableaux Récapitulatifs des Dotations d'Équipement (DETR & DSIL) :** Relevé exhaustif des dossiers subventionnés par la Préfecture de Région et les Préfectures de département, incluant les montants demandés, accordés et les restes à charger des communes.
+2. **Conventions de Remboursement FCTVA et Attestations de Dépenses :** Actes de transfert et registres de liquidation du Fonds de Compensation pour la Taxe sur la Valeur Ajoutée versés aux intercommunalités corses.
+3. **Procès-Verbaux de la Commission Interministérielle des Aides Publiques aux Entreprises :** Délibérations d'octroi de subventions d'ingénierie et d'implantation aux grands groupes de distribution alimentaire et pétroliers opérant en Corse.
+4. **Registre des Délibérations d'Attribution de la Dotation de Continuité Territoriale (DCT) :** Conventions financières conclues par l'Office des Transports de la Corse (OTC) avec les délégataires maritimes et aériens et récapitulatif des contrôles de surcompensations.
 
-    
+## VIII. Cartographie des acteurs institutionnels
 
-Un tel système redonnerait à la Corse plus de 600 millions d'euros d'autonomie budgétaire annuelle pour financer la rénovation de ses hôpitaux, ses transports ferroviaires et le soutien au logement des jeunes résidents.
+L'analyse médico-légale des circuits de subventionnement et de la fiscalité des entreprises en Corse identifie précisément les entités publiques, ministères, corps de contrôle et groupes privés impliqués :
 
-    
-    
-
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
-
-    
-
-L'analyse systémique du domaine **FISCALITÉ & BUDGET** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Ministères & Directions Financières de l'État :**
+  * **Ministère de l'Économie, des Finances et de la Souveraineté Industrielle et Numérique :** Direction Générale des Finances Publiques (DGFiP) et Direction du Budget.
+  * **Préfecture de Région Corse (SGAR) :** Secrétariat Général pour les Affaires Régionales, instructeur direct des enveloppes DETR et DSIL.
+* **Organes d'Audit & de Contrôle Budgétaire :**
+  * **Chambre Régionale des Comptes (CRC de Corse) :** Auteur des rapports d'audit sur les finances des collectivités et la gestion de la DCT.
+  * **Inspection Générale des Finances (IGF) :** Chargée des évaluations d'impact des dotations globales de décentralisation insulaire.
+* **Acteurs Économiques Privés & Lobbies de la Distribution :**
+  * **Fédération du Commerce et de la Distribution (FCD - Antenne Corse) :** Représentant des centrales d'achat continentales de la grande distribution (Carrefour, Leclerc, Casino, Auchan).
+  * **Syndicat des Importateurs et Distributeurs de Carburants :** Groupes pétroliers et grossistes (TotalEnergies, Vito, Rubis) rapatriant les bénéfices hors-sol.
+* **Organismes Régionaux de Développement :**
+  * **Agence du Développement Économique de la Corse (ADEC) :** Bras armé de la CdC pour la distribution des aides régionales aux entreprises.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Impôts & Loi de Finances)
 
-    
+L'audit forensique des dotations et régimes d'aide (Enquête #02) révèle un paradoxe structurel : des centaines de millions d'euros de subventions d'État masquent une fuite massive des recettes de l'Impôt sur les Sociétés vers les sièges sociaux continentaux.
 
-Au terme de cette investigation médico-légale consacrée au volet **FISCALITÉ & BUDGET** (Enquête #02), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+### 📊 Matrice d'Audit Forensique : Opacité des Subventions et Évasion de l'Assiette Fiscale
 
-    
+| Catégorie Fiscale / Dotation | Assiette / Volume National | Allocation Insulaire | Écart / Dysfonctionnement Constaté |
+| :--- | :--- | :--- | :--- |
+| **Dotation d'Équipement (DETR/DSIL)** | 2,1 Mld € | 38,5 M€ / an | 🔴 Taux de Restructuration Incomplet |
+| **Impôt sur les Sociétés (Distribution)** | Taux Standard 25% | Rapatrié à 92% à Paris/Lyon | 🔴 Fuite Majeure de Valeur Ajoutée |
+| **TVA Dérogatoire (Taux Majeur 10%)** | Taux Standard 20% | Écart non répercuté au consommateur | ⚠️ Surmarge Captée par les Intermédiaires |
+| **Dotation Continuité Territoriale (DCT)** | 187 M€ / an | Allocation déléguée OTC | ⚠️ Risque de Over-compensation |
 
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
+### 🚨 Amendements Spécifiques au Cadre Réglementaire (Code Général des Impôts & Loi de Finances)
 
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+1. **Territorialisation de l'Impôt sur les Sociétés (Art. 209 Code Général des Impôts) :** Modification du CGI imposant la domiciliation fiscale et le paiement de l'IS en Corse pour tout établissement commercial dont le chiffre d'affaires réalisé sur l'île dépasse 1,5 million d'euros.
+2. **Réforme des Critères de la DETR et de la DSIL (Loi de Finances) :** Inscription dans la Loi de Finances annuelle d'un coefficient de péréquation insulaire garantissant une enveloppe minimale par habitant majorée de 40 % pour compenser les surcoûts d'infrastructure ruraux.
+3. **Conditionnement du Crédit d'Impôt Investissement en Corse (CIIC - Art. 244 quater E CGI) :** Obligation d'assujettir le bénéfice du CIIC à un engagement de réinvestissement d'au moins 50 % des bénéfices nets dans l'économie locale insulaire.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
-
-
-### 📊 Matrice d'Audit et Données Chiffrées : Évasion Fiscale et Subventions
-
-| Catégorie Fiscale | Assiette Nationale | Répartition Insulaire | Écart Constaté |
-| :--- | :--- | :--- | :--- |
-| **Taux Majeur TVA (Régime Dérogatoire)** | 20.0% | 10.0% / 2.1% | 🔴 Manque à Gagner Territorial |
-| **Crédit d'Impôt Investissement (CIIC)** | 30.0% | 30.0% | ⚠️ Concentration Portefeuille |
-| **Taxe sur les Surfaces Commerciales** | Taux Standard | Exonération Partielle | 🔴 Distortion Fiscale |

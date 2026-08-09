@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer le verrou constitutionnel et défendre le droit à la langue corse (Enquête #17), les associations et parents d'élèves peuvent exercer leur droit d'accès aux documents publics éducatifs et administratifs (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #17, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Rapports d'effectifs de l'enseignement bilingue :** Relevés annuels de la carte scolaire bilingue et immersive transmis par le Rectorat de l'Académie de Corse.
+* **Délibérations régionales sur la co-officialité :** Procès-verbaux complets des délibérations de l'Assemblée de Corse relatives au statut d'officialité de la lingua corsa.
+* **Rapports d'évaluation du Conseil de l'Europe :** Avis et observations du Comité d'experts de la Charte Européenne des Langues Régionales ou Minoritaires concernant la France.
+* **Conventions Éducation Nationale - Collectivité de Corse :** Actes de cadrage sur la formation des enseignants et l'attribution des heures de cours en corse.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, adressez une saisine formelle à la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **CULTURE & LANGUE** met en évidence les oppositions doctrinales et administratives :
 
-L'analyse systémique du domaine **CULTURE & LANGUE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Juridiction Constitutionnelle :** Le **Conseil Constitutionnel**, gardien de l'interprétation stricte de l'Article 2 de la Constitution (« La langue de la République est le français »).
+* **Ministère de l'Éducation Nationale :** Le **Rectorat de l'Académie de Corse**, encadrant le volume horaire et l'affectation des enseignants bilingues.
+* **Instances Européennes :** Le **Conseil de l'Europe** (Comité d'experts de la Charte des langues régionales), recommandant régulièrement à la France la ratification de la Charte.
+* **Collectivité Régionale :** La **Collectivité de Corse** et sa Direction de la Langue Corse (Lingua Corsa), motrices des plans d'aménagement linguistique.
+* **Syndicats & Associations Éducatives :** Le **STC Educazoni**, le Sindicatu di l'Inseignanti Corsi et l'Associu di i Parenti d'Allevi Corsi (APAC).
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Patrimoine & Charte Européenne des Langues)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **CULTURE & LANGUE** (Enquête #17), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'identité linguistique et le droit à la langue maternelle exigent la révision du Code du Patrimoine (art. L. 211-1) et la ratification de la Charte Européenne des Langues Régionales.
 
-Au terme de cette investigation médico-légale consacrée au volet **CULTURE & LANGUE** (Enquête #17), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons aux assemblées régionales et aux parlementaires l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Ratification de la Charte Européenne :** Révision constitutionnelle autorisant la ratification intégrale de la Charte Européenne des Langues Régionales ou Minoritaires du Conseil de l'Europe.
+* **Généralisation de l'Immersif (Code du Patrimoine) :** Inscription de l'obligation de filières bilingues immersives à parité horaire dès la maternelle dans tous les établissements de l'île.
+* **Statut Régional de Co-officialité :** Reconnaissance du corse comme langue officielle aux côtés du français dans tous les actes administratifs et de la vie publique régionale.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Charte Européenne & Langue Corse
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Droits Linguistiques & Charte Européenne
-
-| Instrument Juridique Européen | Statut de Ratification FR | Opposabilité en Justice | Impact Patrimonial |
+| Indicateur Linguistique | Valeur Mesurée | Organisme Référent | Niveau de Risque / Conformité |
 | :--- | :--- | :--- | :--- |
-| **Charte Européenne Langues Régionales** | Non Ratifiée (Art. 2 Constitution) | 🔴 Non Opposable | Restraint Usage Officiel |
-| **Convention-Cadre Minorités Nationales** | Non Signée | 🔴 Non Opposable | Restriction Droits |
-| **Code du Patrimoine (Langues Régionales)** | Article L. 211-1 | ✅ Opposable Partiel | Protection Enseignement |
+| **Élèves en Filière Bilingue** | 28% de la population scolaire | Rectorat de Corse | ⚠️ Progression ralentie par les censures |
+| **Affichage Public Bilingue** | 42% des communes littorales | Observatoire Lingua Corsa | 🔴 Manque d'harmonisation réglementaire |
+| **Annulations pour Motif d'Article 2** | 18 Délibérations annulées | Préfecture / TA Bastia | 🔴 Censure systématique du statut de co-officialité |

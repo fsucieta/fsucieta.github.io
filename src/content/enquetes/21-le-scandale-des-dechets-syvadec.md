@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer le scandale de la gestion des déchets et les surcoûts d'exportation (Enquête #21), les citoyens et associations environnementales peuvent exiger la transparence sur les marchés et sites ICPE (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #21, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Marchés publics de transport maritime des déchets :** Bordereaux d'expédition et factures du SYVADEC conclus avec les armateurs pour l'exportation par cargo vers le continent.
+* **Arrêtés préfectoraux ICPE d'enfouissement :** Autorisations d'exploitation et extensions des casiers de Tallone, Viggianello et Prunelli-di-Fiumorbo transmises par la DREAL Corse.
+* **Rapports d'audit financier de la CRC de Corse :** Rapports d'observation définitive de la Chambre Régionale des Comptes sur la gestion budgétaire du SYVADEC.
+* **Relevés de perception de la TGAP :** Décomptes régionaux de la Taxe Générale sur les Activités Polluantes payée par les intercommunalités corses.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **DÉCHETS & ENVIRONNEMENT** révèle les failles de la filière de traitement :
 
-L'analyse systémique du domaine **DÉCHETS & ENVIRONNEMENT** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Syndicat Mixte de Traitement :** Le **SYVADEC** (Syndicat Valorisation Déchets Corse), responsable de la collecte, du tri et du traitement de l'ensemble des déchets ménagers insulaires.
+* **Police de l'Environnement & Préfecture :** La **DREAL Corse**, chargée du contrôle des installations classées (ICPE) et du respect des arrêtés d'enfouissement.
+* **Contrôle Financier Régional :** La **Chambre Régionale des Comptes (CRC de Corse)**, auditant régulièrement la dérive des coûts du SYVADEC.
+* **Armateurs Maritimes & Fret :** Corsica Linea et La Méridionale, transporteurs exclusifs des barges et cargos de déchets vers le continent.
+* **EPCI & Collectivités Adhérentes :** Les Communautés d'Agglomération (CAPA, CAB) et Communautés de Communes du rural, contraintes d'augmenter la taxe d'enlèvement d'ordures ménagères (TEOM).
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Régional de Prévention et de Gestion des Déchets PRPGD)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **DÉCHETS & ENVIRONNEMENT** (Enquête #21), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. L'autonomie de traitement et la fin de l'incurie financière exigent la révision des objectifs du Plan Régional de Prévention et de Gestion des Déchets (PRPGD).
 
-Au terme de cette investigation médico-légale consacrée au volet **DÉCHETS & ENVIRONNEMENT** (Enquête #21), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons à l'Assemblée de Corse et aux collectivités territoriales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Zéro Exportation par Cargo d'ici 2028 (PRPGD) :** Obligation d'inscrire au PRPGD le principe d'autonomie insulaire de traitement avec création d'unités régionales de tri haute performance et de valorisation organique.
+* **Redevance Incitative Obligatoire :** Déploiement contraignant de la tarification incitative de collecte au volume et au poids dans l'ensemble des 360 communes de l'île.
+* **Contrôle Citoyen des Sites d'Enfouissement :** Mise en place d'une commission citoyenne de suivi environnemental trimestriel sur les centres de Tallone et Prunelli.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Scandale des Déchets & Syvadec
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Gestion des Déchets SYVADEC
-
-| Flux de Déchets / Filière | Tonnage Annuel (Tonnes) | Mode d'Élimination | Coût de Transport Maritime |
+| Mode de Traitement des Déchets | Volume Annuel (Tonnes) | Coût Financier / Tonne | Empreinte Écologique & Bilan |
 | :--- | :--- | :--- | :--- |
-| **Déchets Ménagers Residuels (DMR)** | 185 000 Tonnes | Exportation Cargo Métropole | 🔴 18 M€ / An (Fret Cargo) |
-| **Tri Sélectif (Emballages/Verre)** | 35 000 Tonnes | Recyclage Continent | ⚠️ 4.2 M€ / An |
-| **Compostage & Matière Organique** | 12 000 Tonnes | Traitement Local | ✅ 0.8 M€ Economisé |
+| **Exportation par Cargo Continental** | 115 000 Tonnes | 🔴 285 €/Tonne (Coût Prohibitif) | 🔴 Bilan Carbone Maritime Désastreux |
+| **Enfouissement In Situ (Tallone/Prunelli)**| 98 000 Tonnes | 145 €/Tonne (+ TGAP) | ⚠️ Saturation imminente des casiers ICPE |
+| **Tri Sélectif & Recyclage Réel** | 32 000 Tonnes (22%) | 65 €/Tonne | 🔴 Très en dessous de la moyenne nationale |

@@ -142,13 +142,13 @@ Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Ex
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Minier Art. L. 174-1 & Code de l'Environnement)
 
     
 

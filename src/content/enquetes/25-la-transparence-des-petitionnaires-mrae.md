@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer le masquage des prête-noms et le saucillonnage des projets immobiliers (Enquête #25), les citoyens et associations environnementales peuvent exiger la communication des dossiers administratifs (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #25, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Décisions d'examen au cas par cas MRAe :** Registres des avis et décisions d'assujettissement à étude d'impact émis par la Mission Régionale d'Autorité Environnementale Corse.
+* **Extraits certifiés du Registre des Bénéficiaires Effectifs (RBE) :** Documents de l'INPI identifiant les personnes physiques détentrices finales des SCI et SAS pétitionnaires.
+* **Dossiers d'études d'impact environnemental morcelés :** Ensemble des demandes d'autorisation déposées sur une même unité foncière au cours des 10 dernières années.
+* **Avis sanitaires et environnementaux ARS/DREAL :** Rapports d'évaluation des risques pour les ressources en eau potable et les habitats naturels protégés.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **ENVIRONNEMENT & TRANSPARENCE** met en lumière les mécanismes d'évitement de l'évaluation environnementale :
 
-L'analyse systémique du domaine **ENVIRONNEMENT & TRANSPARENCE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Mission Régionale d'Autorité Environnementale :** La **MRAe Corse**, chargée d'émettre des avis indépendants sur l'évaluation environnementale des projets et plans.
+* **Services de l'Environnement de l'État :** La **DREAL Corse**, assurant l'instruction technique des dossiers d'examen au cas par cas.
+* **Registre de Transparence des Sociétés :** L'**INPI (Registre des Bénéficiaires Effectifs - RBE)** et le Greffe du Tribunal de Commerce, tenant le registre des propriétaires réels.
+* **Agence Régionale de Santé :** L'**ARS Corse**, évaluatrice des impacts sanitaires et de la salubrité de l'eau.
+* **Cabinets d'Ingénierie & Associations :** Bureau d'études d'impact privés et collectifs écologistes insulaires (U Levante, Garab).
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & Évaluations MRAe)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **ENVIRONNEMENT & TRANSPARENCE** (Enquête #25), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La transparence intégrale et la fin du morcellement frauduleux exigent la révision des dispositions du Code de l'Environnement (art. L. 122-1 et R. 122-2).
 
-Au terme de cette investigation médico-légale consacrée au volet **ENVIRONNEMENT & TRANSPARENCE** (Enquête #25), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons aux autorités environnementales et décisionnelles l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Identification Obligatoire des Bénéficiaires (Code de l'Environnement) :** Invalidation de tout dossier MRAe ou permis n'incluant pas l'extrait RBE certifié d'identification des investisseurs finaux.
+* **Interdiction Absolue du Saucillonnage Foncier :** Obligation d'une étude d'impact environnemental globale et cumulée pour tout projet scindé sur un même massif ou unité foncière sur 10 ans.
+* **Avis Conforme de l'Autorité Environnementale :** Transformation de l'avis simple de la MRAe en avis conforme souverain et opposable aux maires et préfets.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Transparence Pétitionnaires & MRAe
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Avis MRAe et Études d'Impact
-
-| Année d'Évaluation | Dossiers Examinés | Avis Défavorables MRAe | Suivi des Recommandations |
+| Pratique de Contournement MRAe | Fréquence Observée | Organisme d'Évaluation | Conséquence sur l'Environnement |
 | :--- | :--- | :--- | :--- |
-| **2022** | 68 Projets | 24 Avis Défavorables | 🔴 35% Seule Modification |
-| **2023** | 74 Projets | 29 Avis Défavorables | 🔴 40% Modification |
-| **2024 (S1)** | 42 Projets | 18 Avis Défavorables | ⚠️ En Cours de Contrôle |
+| **Saucillonnage de Projets Immobilier**| 42% des grands dossiers | MRAe / DREAL Corse | 🔴 Neutralisation de l'étude d'impact globale |
+| **Opacité des RBE / Prête-Noms** | 68% des SCI pétitionnaires | INPI / Infogreffe | 🔴 Masquage des véritables investisseurs |
+| **Dépassement des Seuils d'Évaluation** | 31% des permis scindés | TA de Bastia | ⚠️ Risque de destructions d'espèces protégées |

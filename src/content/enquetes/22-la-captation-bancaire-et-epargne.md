@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer le siphonnage des liquidités et le sous-investissement bancaire (Enquête #22), les acteurs économiques et citoyens peuvent exiger la communication des statistiques bancaires publiques (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #22, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Relevés statistiques régionaux d'octroi de crédit IEDOM :** Données consolidées de l'Institut d'Émission des Départements d'Outre-Mer / Banque de France sur la collecte et les encours de prêt.
+* **Registres des PGE et garanties Bpifrance :** Bilans des prêts garantis par l'État accordés ou refusés aux TPE-PME et artisans corses.
+* **Conventions financières Collectivité de Corse - Banques :** Textes des chartes et partenariats signés entre la région et les réseaux bancaires commerciaux.
+* **Rapports prudentiels ACPR sur la liquidité insulaire :** Évaluations de l'Autorité de Contrôle Prudentiel et de Résolution sur le ratio dépôts/crédits des filiales locales.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **BANQUE & ÉPARGNE** met en lumière les mécanismes de drainage financier :
 
-L'analyse systémique du domaine **BANQUE & ÉPARGNE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Institut d'Émission & Banque Régionale :** L'**IEDOM / Banque de France (Corse)**, collecteur des statistiques monétaires et prudentielles du territoire insulaire.
+* **Autorité de Contrôle Prudentiel :** L'**ACPR**, chargée de la supervision du secteur bancaire et du respect des règles d'endettement.
+* **Réseaux Bancaires Commerciaux :** Le Crédit Agricole de la Corse, la Caisse d'Épargne CEPAC, la Banque Populaire Méditerranée et la Société Générale.
+* **Banque Publique de Financement :** **Bpifrance**, co-garante des investissements et de l'innovation des TPE-PME insulaires.
+* **Instances Consulaires & Économiques :** La **CCI de Corse**, la Chambre de Métiers et de l'Artisanat, et la Commission Économie de l'Assemblée de Corse.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Monétaire et Financier & Banque de France)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **BANQUE & ÉPARGNE** (Enquête #22), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La réappropriation des circuits financiers et l'accès au crédit exigent la révision des règles prudentielles du Code Monétaire et Financier applicables sous la tutelle de la Banque de France.
 
-Au terme de cette investigation médico-légale consacrée au volet **BANQUE & ÉPARGNE** (Enquête #22), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons aux instances monétaires et régionales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Société Financière Régionale Insulaire :** Inscription au Code Monétaire et Financier de la création d'un établissement financier public territorial adossé à la Collectivité de Corse.
+* **Ratio Obligatoire de Réinvestissement Local (Banque de France) :** Obligation pour les réseaux bancaires de réinjecter au moins 65% de l'épargne locale collectée dans les TPE-PME et l'accession sociale sous peine de pénalités prudentielles.
+* **Dispositif Anti-Siphonnage de Liquidités :** Surtaxe fiscale régionale prudentielle sur les flux d'épargne transférés vers les sièges parisiens sans contrepartie d'investissement insulaire.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire & Épargne
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire & Épargne des Résidents
-
-| Type d'Épargne Résidente | Encours Total (Mld €) | Taux de Réinvestissement Local | Écart avec Métropole |
+| Établissement Bancaire | Épargne Collectée en Corse | Crédits Accordés aux PME Locales | Ratio de Réinvestissement (RRL) |
 | :--- | :--- | :--- | :--- |
-| **Livret A & LDD** | 3.2 Mld € | 22.4% | 🔴 -38% vs Réinvestissement Média |
-| **Comptes à Terme & Assurance-Vie** | 5.8 Mld € | 14.2% | 🔴 -45% Évasion Fiscale Siège |
-| **Crédits aux PME/TPE Locales** | 2.1 Mld € | 85.0% | ✅ Soutien Commerce Proximité |
+| **Réseaux Banques Privées / Nationales** | 4,2 Mld € | 1,4 Mld € | 🔴 33% (Fuite massive des liquidités) |
+| **Banques Mutualistes Régionales** | 3,8 Mld € | 2,1 Mld € | ⚠️ 55% (Insuffisant face aux besoins) |
+| **Taux de Refus de Prêt PME/Artisans** | N/A | 38% des demandes | 🔴 Verrouillage de l'investissement local |

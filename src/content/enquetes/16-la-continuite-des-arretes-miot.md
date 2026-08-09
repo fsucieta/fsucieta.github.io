@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer le démantèlement des arrêtés Miot et la spéculation sur l'indivision foncière (Enquête #16), les ayants droit et collectifs citoyens peuvent faire valoir leurs droits d'accès aux actes administratifs et notariés publics (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #16, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Registres des actes de notoriété prescriptifs GIRTEC :** Relevé des actes de reconstitution de propriété validés par le Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse.
+* **Fichiers de la Publicité Foncière (DGFiP) :** Relevés des matrices cadastrales rénovées et historiques conservés aux Services de la Publicité Foncière d'Ajaccio et de Bastia.
+* **Arrêtés et décisions d'exonération successorale :** Bilan annuel de l'application de l'article 750 bis A du Code Général des Impôts relatif au régime fiscal transitoire corse.
+* **Procès-verbaux de la Commission Foncier de l'Assemblée de Corse :** Rapports d'arbitrage territorial sur les litiges d'indivision sans maître.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, adressez une saisine formelle à la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **SUCCESSIONS & GIRTEC** met en lumière les acteurs clés de la gestion foncière et notariée :
 
-L'analyse systémique du domaine **SUCCESSIONS & GIRTEC** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Groupement d'Intérêt Public Foncier :** Le **GIRTEC** (Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse), chargé de la sécurité juridique des titres et de la résorption de l'indivision.
+* **Instance Notariale Régionale :** La **Chambre des Notaires de Corse** et le Conseil Supérieur du Notariat (CSN), maîtres d'œuvre de la rédaction des actes de notoriété et des partages.
+* **Administration Fiscale & Cadastre :** La **DGFiP** (Direction Générale des Finances Publiques), gestionnaire des services de la publicité foncière et des droits de mutation.
+* **Ministère de l'Économie et des Finances :** Arbitre des prorogations législatives du régime d'exonération successorale de l'article 750 bis A du CGI.
+* **Organismes Fonciers & Régionaux :** La **Commission Foncier de l'Assemblée de Corse**, la SAFER de Corse et le Conservatoire du Littoral.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Civil & Régime de l'Indivision Foncière)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **SUCCESSIONS & GIRTEC** (Enquête #16), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation du patrimoine familial insulaire et la résorption du désordre des titres exigent la révision prioritaire des règles du Code Civil régissant l'indivision foncière et les successions.
 
-Au terme de cette investigation médico-légale consacrée au volet **SUCCESSIONS & GIRTEC** (Enquête #16), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons aux instances notariales et aux assemblées locales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Pérennisation Régionale du Statut Fiscal Miot :** Inscription au Code Général des Impôts et au Code Civil d'un statut fiscal insulaire pérenne exonérant à 100% les transmissions familiales de biens immobiliers ancrés dans le sol corse.
+* **Moratoire sur les Licitations Forcées (Code Civil) :** Modification des règles de licitation pour interdire la vente aux enchères judiciaire de parcelles indivises familiales au profit de holdings ou fonds de placement extérieurs.
+* **Cadastre Titré Insulaire Public :** Transfert direct des compétences de reconstitution des titres du GIRTEC vers un Cadastre Titré Régional placé sous le contrôle de la Collectivité de Corse.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Indivision Foncière
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Titration GIRTEC
-
-| Indicateur Foncier / Succession | Nombre de Dossiers Traités | Surface Sécurisée (Ha) | Taux d'Indivision |
+| Indicateur Foncier & Successoral | Superficie / Nombre de Parcelles | Organisme de Gestion | Statut de Titularisation |
 | :--- | :--- | :--- | :--- |
-| **Dossiers Titrés par GIRTEC** | 11 400 Actes | 38 500 Ha | ⚠️ 45% Restants en Indivision |
-| **Biens Sans Maître Reconnus** | 3 200 Parcels | 8 400 Ha | 🔴 Attribution Communes |
-| **Contestations Notariales** | 850 Procédures | 2 100 Ha | ⚠️ Blocage Succession |
+| **Parcelles sans Titre Notarié** | 185 000 Hectares (32% de l'île) | GIRTEC / DGFiP | 🔴 Indivision complexe non résolue |
+| **Actes de Notoriété Validés** | 4 200 Actes / An | Chambre des Notaires | ⚠️ Délais de reconstitution > 4 ans |
+| **Parcelles Sous Menace de Licitation** | 14 500 Parcelles | Tribunaux d'Ajaccio/Bastia | 🔴 Spéculation par rachat de parts minoritaires |

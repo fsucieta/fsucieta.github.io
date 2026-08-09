@@ -111,74 +111,51 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour contrer la sous-dotation des secours et le sous-dimensionnement des moyens aériens (Enquête #23), les citoyens et représentants du personnel de secours peuvent exiger l'accès aux documents administratifs opérationnels (CRPA, art. L. 300-1 et suivants) :
 
-Pour contrer les abus identifiés dans l'enquête #23, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+* **Ordres de mission et journaux de mouvement des Canadairs :** Registres d'affectation de la flotte aérienne de la DGSCGC stationnée à la Base Aérienne 126 de Solenzara et Ajaccio.
+* **Conventions pluri-annuelles de moyens SIS 2A / SIS 2B :** Budgets et tableaux d'effectifs des Services d'Incendie et de Secours de Corse-du-Sud et de Haute-Corse.
+* **Rapports de dotation globale de fonctionnement (DGF) :** Documents de répartition de la dotation d'État allouée par le Ministère de l'Intérieur aux secours insulaires.
+* **Registres d'intervention du PGHM et de Dragon 20 :** Bilans des heures de vol et missions de secours en montagne du PGHM et de la Sécurité Civile.
 
-                    
-
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
-
-                    
-    
+En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
 
-    
+L'analyse du domaine **SECURITÉ CIVILE & RISQUES** met en lumière la répartition des compétences de secours :
 
-L'analyse systémique du domaine **SECURITÉ CIVILE & RISQUES** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+* **Direction Nationale de la Sécurité Civile :** La **DGSCGC** (Direction Générale de la Sécurité Civile et de la Gestion des Crises), gestionnaire de la flotte aérienne nationale.
+* **Services d'Incendie et de Secours Régionaux :** Le **SIS 2A et le SIS 2B**, financés par les conseils départementaux/Collectivité de Corse et les communes.
+* **Secours Spécialisé en Haute Montagne :** Le **PGHM** (Peloton de Gendarmerie de Haute Montagne) et le détachement d'hélicoptères de la Sécurité Civile (Dragon 20).
+* **Militaires & Base Aérienne :** La **Base Aérienne 126 de Solenzara**, point d'appui stratégique pour le détachement estival des Canadairs et Dash.
+* **Prédictions et Préfectures :** Météo-France (Centre d'Ajaccio) et les Préfectures de Corse, coordinatrices des plans ORSEC.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
 ### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
 | :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
-| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
+| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
+| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
-## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
+## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Départemental d'Analyse et de Couverture des Risques SDACR)
 
-    
+Au terme de cette investigation médico-légale consacrée au volet **SECURITÉ CIVILE & RISQUES** (Enquête #23), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La protection des vies humaines et la défense des massifs forestiers exigent la révision prioritaire des orientations du Schéma Départemental d'Analyse et de Couverture des Risques (SDACR).
 
-Au terme de cette investigation médico-légale consacrée au volet **SECURITÉ CIVILE & RISQUES** (Enquête #23), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
+Nous recommandons aux services d'incendie et de secours et au Ministère de l'Intérieur l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
 
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
+* **Sanctuarisation de la Flotte Aérienne Insulaire (SDACR) :** Inscription au SDACR du stationnement permanent et à l'année de 4 Canadairs CL-415 et 2 avions Dash sur la base de Solenzara.
+* **Majoration Régionale de la Dotation SIS :** Revalorisation de 30% de la dotation d'État attribuée aux SIS 2A et 2B pour compenser les surcoûts du relief montagneux et de la saisonnalité touristique.
+* **Plan Insulaire PGHM & Secours Montagne :** Pérennisation des moyens héliportés du PGHM et de Dragon 20 sur l'ensemble du massif corse.
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
 
+### 📊 Matrice d'Audit et Données Chiffrées : Sous-Dotation de la Sécurité Civile
 
-
-### 📊 Matrice d'Audit et Données Chiffrées : Sécurité Civile & Moyens Anti-Incendie
-
-| Moyen de Secours / Flotte | Nombre d'Unités Positionnées | Temps de Réponse Moyen | Couverture Opérationnelle |
+| Moyen de Secours / Intervention | Effectif / Flotte Disponible | Besoin Théorique SDACR | Statut de Couverture du Risque |
 | :--- | :--- | :--- | :--- |
-| **Canadair CL-415 (Saison)** | 2 Appareils | 35 Minutes | ⚠️ Dépendance Base Nîmes |
-| **Hélicoptères Dragon (Sécurité Civile)**| 2 Appareils | 12 Minutes | ✅ Interventions d'Urgence |
-| **Camions Citerne Feux de Forêt (CCF)**| 240 Véhicules | 18 Minutes | ✅ Maillage Sapeurs-Pompiers |
+| **Avions Canadairs CL-415 (Solenzara)** | 2 Avions en saison | 4 Avions à l'année | 🔴 Risque majeur en début/fin de saison |
+| **Hélicoptères Sécurité Civile (Dragon)** | 2 Appareils (Ajaccio/Bastia) | 3 Appareils | ⚠️ Tension extrême lors des pics estivaux |
+| **Sapeurs-Pompiers Professionnels (SIS)** | 1 200 SPP / SPV | 1 600 SPP / SPV | 🔴 Sous-dotation structurelle du rural |
