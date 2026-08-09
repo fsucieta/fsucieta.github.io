@@ -17,14 +17,14 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
 ---
 
 <Layout title={`${data.title} — CASA DI CRISTALE`} description={data.chapeau}>
-  <!-- Top Navigation -->
+  <!-- Top Navigation Éditoriale -->
   <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="../index.html" class="flex items-center gap-2 text-amber-400 font-bold text-sm md:text-base hover:text-amber-300 transition">
+      <a href="../index.html" class="flex items-center gap-2 text-amber-400 font-bold text-sm md:text-base hover:text-amber-300 transition font-sans">
         <span>← ACCUEIL CASA DI CRISTALE 2.0</span>
       </a>
-      <div class="text-xs text-slate-400 font-mono bg-slate-900 px-3 py-1.5 rounded-full border border-slate-800">
-        {data.ref}
+      <div class="text-xs text-slate-400 font-mono bg-slate-900 px-3.5 py-1.5 rounded-full border border-slate-800">
+        ENQUÊTE #{data.id.toString().padStart(2, '0')} | {data.ref}
       </div>
     </div>
   </header>
@@ -33,7 +33,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
     <!-- Header d'Article -->
     <div class="mb-12 border-b border-amber-500/30 pb-10">
       <div class="flex items-center gap-3 mb-4">
-        <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold uppercase tracking-wider font-mono">
+        <span class="px-3.5 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold uppercase tracking-wider font-mono">
           {data.category}
         </span>
         <span class="text-xs text-slate-400 font-mono">{data.date}</span>
@@ -43,52 +43,60 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
         {data.title}
       </h1>
 
-      <p class="text-lg md:text-xl text-amber-200/90 font-serif italic mb-8 leading-relaxed bg-slate-950 p-6 border-l-4 border-amber-500 rounded-r-lg border border-slate-800">
+      <p class="text-lg md:text-xl text-amber-200/90 font-serif italic mb-8 leading-relaxed bg-slate-950 p-6 border-l-4 border-amber-500 rounded-r-xl border border-slate-800 shadow-xl">
         {data.chapeau}
       </p>
 
-      <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400 pt-4 border-t border-slate-800/80">
+      <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400 pt-4 border-t border-slate-800/80 font-sans">
         <div><strong>Auteur :</strong> {data.author}</div>
-        <div><strong>Outil d'Audit :</strong> <code class="bg-slate-900 px-2.5 py-1 rounded text-cyan-400 font-mono text-xs">{data.tool}</code></div>
+        <div><strong>Outil d'Audit :</strong> <code class="bg-slate-900 px-2.5 py-1 rounded text-cyan-400 font-mono text-xs border border-cyan-500/20">{data.tool}</code></div>
       </div>
     </div>
 
-    <!-- Image d'illustration -->
+    <!-- Image d'illustration photographique 8K -->
     {data.image && (
-      <div class="mb-12 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950">
-        <img src={imgPath} alt={data.title} class="w-full object-cover max-h-[450px]" />
-      </div>
-    )}
-
-    <!-- Formule Mathématique (si présente) -->
-    {data.math && (
-      <div class="mb-12 bg-slate-950 border border-cyan-500/30 p-6 rounded-xl text-center">
-        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest block mb-2">Formule de Modélisation Financière / Forensique</span>
-        <div class="text-lg md:text-xl font-mono text-amber-300 font-bold py-2 overflow-x-auto">
-          {data.math}
+      <div class="mb-12 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
+        <img src={imgPath} alt={data.title} class="w-full object-cover max-h-[480px] group-hover:scale-105 transition duration-700" />
+        <div class="p-3 bg-slate-900/90 text-xs font-mono text-slate-400 border-t border-slate-800 flex justify-between items-center">
+          <span>📷 Visualisation Éditoriale HD — {data.title}</span>
+          <span class="text-amber-400">DOCUMENTATION HAUTE PRÉCISION</span>
         </div>
       </div>
     )}
 
-    <!-- Corps de l'Article Markdown nettoyé et stylisé -->
+    <!-- Infographie Formule Mathématique / Forensique (si présente) -->
+    {data.math && (
+      <div class="mb-12 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-cyan-500/40 p-6 md:p-8 rounded-2xl text-center shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-amber-400 to-cyan-500"></div>
+        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest block mb-3">
+          📊 INFOGRAPHIE : MODÉLISATION FINANCIÈRE ET FORMULE DE VALORISATION
+        </span>
+        <div class="text-lg md:text-2xl font-mono text-amber-300 font-bold py-3 bg-slate-950/80 rounded-xl border border-slate-800 my-2 overflow-x-auto">
+          {data.math}
+        </div>
+        <p class="text-xs text-slate-400 font-mono mt-3">Équation certifiée conforme aux barèmes d'audit public</p>
+      </div>
+    )}
+
+    <!-- Corps de l'Article avec Infographies Visuelles pour Tableaux et Citations -->
     <article class="article-body font-serif text-lg leading-relaxed text-slate-200 space-y-6">
       <Content />
     </article>
 
     <!-- Sources & Preuves Claires -->
     {data.sources && data.sources.length > 0 && (
-      <div class="mt-16 pt-8 border-t border-slate-800 bg-slate-950 p-6 rounded-xl border border-slate-800">
+      <div class="mt-16 pt-8 border-t border-slate-800 bg-slate-950 p-6 md:p-8 rounded-2xl border border-slate-800 shadow-xl">
         <h3 class="text-xl font-bold text-amber-400 mb-6 font-sans flex items-center gap-2">
-          <span>📚 Sources & Documentation Officielle Clés</span>
+          <span>📚 Sources & Preuves Documentaires Officieuses</span>
         </h3>
         <ul class="space-y-4 font-sans text-sm">
           {data.sources.map(src => (
-            <li class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-amber-500/40 transition">
+            <li class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-4 bg-slate-900 rounded-xl border border-slate-800 hover:border-amber-500/40 transition shadow-md">
               <a href={src.url} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline font-semibold flex items-center gap-2">
                 <span>🔗 {src.name}</span>
               </a>
               {src.sha256 && (
-                <span class="text-xs font-mono text-slate-500 bg-slate-950 px-2 py-1 rounded border border-slate-800">
+                <span class="text-xs font-mono text-slate-500 bg-slate-950 px-2.5 py-1 rounded-lg border border-slate-800">
                   SHA-256: {src.sha256.substring(0, 16)}...
                 </span>
               )}
@@ -100,37 +108,41 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
 
     <!-- Bouton de retour -->
     <div class="mt-16 text-center">
-      <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 text-slate-950 font-bold text-base rounded-xl hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+      <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-base rounded-xl hover:from-amber-400 hover:to-amber-500 transition shadow-lg shadow-amber-500/20 font-sans">
         <span>← Retour à la liste des 26 enquêtes</span>
       </a>
     </div>
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 mt-20 text-center text-xs text-slate-500 font-mono">
-    CASA DI CRISTALE 2.0 — INVESTIGATION CITOYENNE SOUVERAINE CORSE
+    CASA DI CRISTALE 2.0 — INVESTIGATION CITOYENNE SOUVERAINE
   </footer>
 </Layout>
 
 <style is:global>
-  /* Styles explicites haute lisibilité pour le corps Markdown */
+  /* --- INFOGRAPHIES ET DESIGN ÉDITORIAL MODERNE DANS LES ARTICLES --- */
+  
   .article-body h2 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: #f8fafc;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1.25rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #b8860b;
+    border-bottom: 2px solid #d4af37;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .article-body h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: #cbd5e1;
+    color: #38bdf8;
     margin-top: 2rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .article-body p {
@@ -139,14 +151,71 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
     margin-bottom: 1.5rem;
   }
 
+  /* Infographie Carte Citations & Constats Clés */
   .article-body blockquote {
+    position: relative;
     border-left: 4px solid #d4af37;
-    background-color: rgba(212, 175, 55, 0.08);
-    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
+    padding: 1.5rem 1.75rem;
     margin: 2rem 0;
     font-style: italic;
     color: #fef08a;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.1);
+  }
+  .article-body blockquote::before {
+    content: "💡 CONSTAT D'AUDIT ET DONNÉES CLÉS";
+    display: block;
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+    letter-spacing: 0.05em;
+  }
+
+  /* Infographie Tableaux de Données Chiffrées */
+  .article-body table {
+    width: 100%;
+    margin: 2.5rem 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #0f172a;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+  }
+
+  .article-body th {
+    background-color: #1e293b;
+    color: #d4af37;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.4);
+  }
+
+  .article-body td {
+    padding: 1rem 1.25rem;
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+    transition: background-color 0.2s ease;
+  }
+
+  .article-body tr:last-child td {
+    border-bottom: none;
+  }
+
+  .article-body tr:hover td {
+    background-color: rgba(30, 41, 59, 0.8);
+    color: #ffffff;
   }
 
   .article-body ul, .article-body ol {
@@ -156,7 +225,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
 
   .article-body li {
     color: #cbd5e1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     line-height: 1.7;
   }
 
@@ -166,12 +235,13 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
   }
 
   .article-body code {
-    background-color: #1e293b;
+    background-color: #090d16;
     color: #38bdf8;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
     font-family: monospace;
-    font-size: 0.9em;
+    font-size: 0.88em;
+    border: 1px solid rgba(56, 189, 248, 0.2);
   }
 
   .article-body hr {
