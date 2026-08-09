@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Monopole Energetiq
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Programmation Pluriannuelle de l'Énergie PPE & Code de l'Énergie)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Mix Énergétique EDF-SEI
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Monopole Energetiq
 | **Production Fossile** | 62% Fioul Lourd | Péréquation CRE | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 260 M€ / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Programmation Pluriannuelle de l'Énergie PPE & Code de l'Énergie) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Interdiction Définitive du Fioul Lourd dans les Centrales Corses :** Fixer une échéance obligatoire à 2028 pour la conversion au gaz naturel et au biocarburant des centrales du Vazzio et Lucciana.
+2. **Fin des Plafonds d'Injection Énergies Renouvelables :** Imposer à EDF-SEI l'absorption prioritaire de 100 % de l'électricité solaire et éolienne produite en Corse.

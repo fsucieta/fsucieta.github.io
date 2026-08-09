@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Sous Dotation De L
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Départemental d'Analyse et de Couverture des Risques SDACR)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Sécurité Civile & Canadairs
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Sous Dotation De L
 | **Secours Annuels** | > 35 000 Interv. | Canadairs Basés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 2 Avions Pointe | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Schéma Départemental d'Analyse et de Couverture des Risques SDACR) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Positionnement Permanent d'un Escadron de 4 Canadairs à Solenzara :** Inscrire dans la Loi de Programmation de la Sécurité Civile la présence d'avions bombardiers d'eau à demeure toute l'année.
+2. **Majoration de 30 % des Dotations d'État aux SIS 2A et 2B :** Compensateur le surcoût opérationnel lié à l'afflux de 3 millions de touristes durant la saison estivale.

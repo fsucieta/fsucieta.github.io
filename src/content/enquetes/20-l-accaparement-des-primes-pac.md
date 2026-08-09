@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **L Accaparement Des Pr
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Stratégique National PSN PAC & Code Rural)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Primes PAC & Élevage
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **L Accaparement Des Pr
 | **Enveloppe PAC** | > 36 M€ / an | Concentration Aides | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 10% Perçoivent 120k€ | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Plan Stratégique National PSN PAC & Code Rural) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Plafonnement Dégressif des Primes PAC à 60 000 € par Exploitation :** Redistribuer les sur-primes d'accaparement vers les jeunes agriculteurs et producteurs fermiers réels.
+2. **Conditionnalité Agro-Pastorale Strictement Contrôlée :** Rendre l'attribution des primes PAC subordonnée à la preuve de transformation locale et de pâturage effectif de l'ensemble du cheptel déclaré.

@@ -137,6 +137,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Pillage De La Fore
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Forestier & Schéma Régional Sylvicole SRAF)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Exploitation et Pillage de la Forêt
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -144,6 +145,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Pillage De La Fore
 | **Filière Bois ONF** | 70 000 m³/an | < 22% Transformés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 75% Exporté Brut | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Forestier & Schéma Régional Sylvicole SRAF) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Interdiction d'Exportation des Grumes Brutes Hors de Corse :** Imposer un taux de transformation locale minimal de 60 % pour tout bois issu des forêts domaniales et territoriales corses.
+2. **Création du Pôle Public Bois & Scieries Régionales :** Développer des scieries en régie publique pour approvisionner prioritairement la filière locale de construction en pin laricio.

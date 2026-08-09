@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Radar D Urbanisme 
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Urbanisme Art. R. 424-1 & PLU)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Permis Tacites (Sitadel2)
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Radar D Urbanisme 
 | **Permis Tacites** | 16% à 22% | Recours Annulés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 35% Déchéance | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code de l'Urbanisme Art. R. 424-1 & PLU) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Suppression des Permis de Construire Tacites en Zone Littorale (Art. R. 424-1) :** Rendre obligatoire un arrêté d'accord explicite pour tout projet immobilier situé à moins de 3 km de la mer.
+2. **Publication Open Data Sous 48h des Récépissés de Dépôt :** Rendre publics en ligne tous les dossiers de permis déposés en mairie dès leur enregistrement pour garantir le droit de recours citoyen.

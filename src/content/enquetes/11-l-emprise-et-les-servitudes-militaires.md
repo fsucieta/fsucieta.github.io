@@ -139,6 +139,7 @@ L'organisation institutionnelle du secteur de l'enquête **L Emprise Et Les Serv
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de la Défense Art. L. 5111-1 & Servitudes Militaires)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Emprise et Servitudes Militaires
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -146,6 +147,6 @@ L'organisation institutionnelle du secteur de l'enquête **L Emprise Et Les Serv
 | **BA 126 Solenzara** | 512 Hectares | Zone Littorale | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Exonération TF | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code de la Défense Art. L. 5111-1 & Servitudes Militaires) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Instauration de la Redevance Foncier Militaire Réparatrice :** Assujettir le Ministère des Armées au paiement d'une contribution compensatoire pour l'occupation des 2 800 ha d'emprises stratégiques.
+2. **Restitution des Terrains Civils Inexploités (BA 126 / Aspretto) :** Rétroculer à l'Office Foncier Régional les parcelles militaires inutilisées pour le développement de logements publics.

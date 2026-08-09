@@ -137,6 +137,7 @@ Le système de captation fiscale repose sur une chaîne d'arbitrage défavorable
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Impôts & Loi de Finances)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Évasion Fiscale et Subventions
 
 | Catégorie Fiscale | Assiette Nationale | Répartition Insulaire | Écart Constaté |
@@ -145,6 +146,7 @@ Le système de captation fiscale repose sur une chaîne d'arbitrage défavorable
 | **Crédit d'Impôt Investissement (CIIC)** | 30.0% | 30.0% | ⚠️ Concentration Portefeuille |
 | **Taxe sur les Surfaces Commerciales** | Taux Standard | Exonération Partielle | 🔴 Distortion Fiscale |
 
-### Amendements Prioritaires au Code Général des Impôts & Loi de Finances :
-1. **Territorialisation de l'IS (Art. 209 CGI) :** Obligation d'imposition des bénéfices au lieu de réalisation effective de l'activité économique pour les filiales et succursales opérant en Corse.
-2. **Attribution Directe de la TVA Touristique en Loi de Finances :** Inscrire dans la Loi de Finances la rétrocession intégrale des recettes de TVA perçues entre juin et septembre au budget de la Collectivité de Corse.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Territorialisation Directe de la TVA Touristique (Art. 256 CGI & Loi de Finances) :** Modifier la Loi de Finances pour attribuer 100 % du produit de la TVA collectée durant la saison estivale (juin-septembre) dans le secteur du tourisme et des transports au budget de la Collectivité de Corse, compensant le déficit fiscal historique.
+2. **Clause d'Établissement Fiscal Économique Réel (Art. 209 CGI) :** Conditionner l'exonération d'Impôt sur les Sociétés (IS) des filiales de grands groupes (grande distribution, énergie, transports) à la domiciliation fiscale effective de leur siège social en Corse et à la tenue des comptes de résultat sur le territoire insulaire.
+3. **Conditionnement Social du Crédit d’Impôt Investissement (Art. 244 quater E CGI) :** Subordonner l'octroi du CIIC à la création d'au moins 80 % d'emplois locaux en CDI et au réinvestissement de 50 % des bénéfices exonérés dans la transition agro-écologique insulaire.

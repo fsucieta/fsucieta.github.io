@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Transparence Des P
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & Évaluations MRAe)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Enquêtes MRAe & Études d'Impact
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Transparence Des P
 | **Réserves MRAe** | > 45% Projets | Fractionnement SCI | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | ~ 18% Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code de l'Environnement & Évaluations MRAe) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Interdiction du Fractionnement Foncier Multi-SCI (Art. L. 122-1) :** Consolider l'ensemble des permis déposés par des SCI liées pour imposer une étude d'impact environnemental globale.
+2. **Caractère Conforme des Avis Défavorables MRAe :** Rendre contraignants les avis de l'Autorité Environnementale empêchant toute délivrance de permis en cas de réserve majeure.

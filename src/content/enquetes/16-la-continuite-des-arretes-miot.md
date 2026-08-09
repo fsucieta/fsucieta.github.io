@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Continuite Des Arr
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Civil & Régime de l'Indivision Foncière)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Titration GIRTEC
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Continuite Des Arr
 | **Parcelles Non Titrées** | > 115 000 Unités | GIRTEC Actes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 12 000 Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Civil & Régime de l'Indivision Foncière) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Pérennisation Intégrale de l'Exonération de Droits de Succession Miot :** Inscrire au Code Civil la pérennité du régime fiscal d'exonération pour la reconstitution des titres de propriété corses.
+2. **Création du Cadastre Titré Insulaire Garanti par l'État :** Conférer valeur d'acte authentique d'État aux titres de notoriété établis par le GIRTEC après 5 ans d'affichage sans contestation.

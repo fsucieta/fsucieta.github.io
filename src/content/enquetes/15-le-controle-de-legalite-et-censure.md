@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Controle De Legali
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Collectivités Territoriales CGCT)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Contrôle de Légalité & Déférés
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Controle De Legali
 | **Communes Rurales** | > 70% Déférés | Annulations Citoyennes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 85% Associations | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Général des Collectivités Territoriales CGCT) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Publication Obligatoire Open Data des Avis de Légalité Préfectoraux :** Rendre publics sous 48h tous les avis transmis par la Préfecture dans le système `@CTES`.
+2. **Inversion du Référé Suspension Urbanisme :** Suspendre d'office tout permis de construire faisant l'objet d'un recours associatif validé par un avis MRAe défavorable.

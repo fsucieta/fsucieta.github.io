@@ -137,6 +137,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Cadastre Minier Se
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Minier Art. L. 174-1 & Code de l'Environnement)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Le Cadastre Minier Secret
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -144,6 +145,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Cadastre Minier Se
 | **District Cap Corse** | 48 Gisements | Antimoine / Cuivre | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Redevances Centralisées | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Minier Art. L. 174-1 & Code de l'Environnement) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Redevance des Substrats Critiques (Art. L. 174-1 Code Minier) :** Instaurer une redevance minière régionale prélevée sur toute prospection de métaux stratégiques au profit du Fonds de Dépollution des Anciens Sites.
+2. **Droit de Veto Communal et Citoyen sur les Permis Exclusifs (PER) :** Rendre obligatoire la consultation référendaire locale avant toute attribution de permis d'exploration géologique.

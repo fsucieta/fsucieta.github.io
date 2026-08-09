@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Captation Bancaire
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Monétaire et Financier & Banque de France)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire de l'Épargne
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Captation Bancaire
 | **Dépôts Collectés** | > 11,2 Mld € | Crédits PME Local | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | < 42% Réinjectés | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Monétaire et Financier & Banque de France) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Instauration de la Charte d'Investissement Territorial Obligatoire :** Assujettir les réseaux bancaires à un taux minimal de réinjection de 65 % des dépôts collectés en Corse sous forme de prêts aux PME insulaires.
+2. **Surtaxe Régionale sur les Évasions de Trésorerie Bancaire :** Appliquer une pénalité fiscale de 2 % sur les liquidités bancaires transférées quotidiennement vers les sièges parisiens.

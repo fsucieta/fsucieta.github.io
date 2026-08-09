@@ -138,13 +138,16 @@ L'organisation institutionnelle du secteur de l'enquête **L Empire Des Sci Non 
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Impôts & Transparence RBE Art. L. 561-46)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : L'Empire des SCI Non-Résidentes
 
-| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
+| Zone Littorale / Secteur | Nombre de SCI Non-Résidentes | Part du Parc Foncier | Bénéficiaire Effectif Maj. |
 | :--- | :--- | :--- | :--- |
-| **Extrême-Sud** | 3 840 SCI | 42.8% Foncier | 🔴 Écart Majeur |
-| **Contrôle & Conformité** | Offshore/Non-Résident | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Extrême-Sud (Porto-Vecchio/Bonifacio)** | 3 840 SCI | 42.8% | Holdings Européennes / Offshore |
+| **Balagne (Calvi/Rousse)** | 2 120 SCI | 38.2% | Sociétés Civiles Métropolitaines |
+| **Golfe d'Ajaccio & Valinco** | 2 950 SCI | 35.1% | Investisseurs Privés |
 
-### Amendements Prioritaires au cadre juridique (Code Général des Impôts & Transparence RBE Art. L. 561-46) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Registre Public d’Open Data Foncier des SCI (Art. L. 561-46 CMF) :** Levée de l'anonymat par l'obligation de publication Open Data géolocalisée de l'identité des bénéficiaires effectifs de toutes les SCI propriétaires d'actifs immobiliers en Corse.
+2. **Taxe Régionale sur la Vacance Foncière des SCI (Art. 1407 bis CGI) :** Soumettre toute résidence secondaire détenue via une SCI et inoccupée plus de 270 jours par an à une taxe annuelle égale à 10 % de la valeur vénale du bien, reversée à l'Office Foncier Régional.
+3. **Extinction du Droit de Démembrement Évasif :** Interdire le recours au démembrement de propriété (usufruit/nue-propriété) au sein des SCI familiales non-résidentes lors des transactions immobilières situées à moins de 2 kilomètres de la mer.

@@ -137,6 +137,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Tutelle De La Haut
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général de la Fonction Publique & Loi HATVP)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Haute Fonction Publique & Préfecture
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -144,6 +145,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Tutelle De La Haut
 | **Corps Préfectoral** | 21 Mois Maintien | < 5% Cadres Locaux | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Paralysie Projets | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Général de la Fonction Publique & Loi HATVP) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Création de la Réserve Cadre Territoriale Insulaire :** Réserver au moins 50 % des postes de direction régionale des services déconcentrés de l'État aux hauts fonctionnaires résidents.
+2. **Charte de Continuité Administrative de 4 ans :** Allonger la durée minimale d'affectation des préfets et directeurs régionaux à 4 années consécutives.

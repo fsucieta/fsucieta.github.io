@@ -138,13 +138,16 @@ L'organisation institutionnelle du secteur de l'enquête **La Marchandisation De
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & CGCT Art. L. 2224-7)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Gestion et Marchandisation de l'Eau
 
-| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
+| Volume Réservoir / Barrage | Capacités de Retenue (Mm³) | Mode de Gestion Majeur | Rendement du Réseau |
 | :--- | :--- | :--- | :--- |
-| **Barrage de Rizzanese** | 1,2 Mm³ | Régie Publique / OEHC | 🔴 Écart Majeur |
-| **Contrôle & Conformité** | 72.4% | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Barrage de Rizzanese** | 1,2 Mm³ | Régie Publique / OEHC | 72.4% |
+| **Barrage de Calacuccia** | 31,5 Mm³ | Concession Hydroélectrique | 84.1% |
+| **Barrage de Sampolo** | 2,8 Mm³ | Production Énergétique | 81.0% |
 
-### Amendements Prioritaires au cadre juridique (Code de l'Environnement & CGCT Art. L. 2224-7) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Création de la Régie Souveraine de l'Eau publique Insulaire (RSEI) :** Résilier progressivement l'ensemble des Délégations de Service Public (DSP) accordées aux multinationales privées pour unifier la distribution sous forme de régie publique régionale gérée par l'OEHC.
+2. **Instauration de la Tarification Éco-Progressive Horizontale :** Garantir la gratuité des 30 premiers mètres cubes d'eau par an et par foyer résident, combinée à une majoration tarifaire de 300 % sur les volumes consommés par les piscines privées et infrastructures touristiques en saison sèche (juillet-août).
+3. **Obligation Régionale de Rénovation des Réseaux Perdants (Art. L. 2224-7-1 CGCT) :** Conditionner l'attribution de subventions régionales aux communes à l'atteinte d'un rendement minimal de réseau de 85 %, sous peine de mise en régie d'office par la Collectivité.

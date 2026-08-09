@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Dessaisissement Ju
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de Procédure Pénale & Carte Judiciaire des JIRS)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Dessaisissement Judiciaire & JIRS
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Dessaisissement Ju
 | **Transferts Marseille** | > 80% Dossiers | Instructions Lentes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 12 M€ Escortes | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code de Procédure Pénale & Carte Judiciaire des JIRS) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Création du Pôle d'Instruction Financier Spécialisé à Bastia :** Rapatrier les compétences de la JIRS de Marseille vers une juridiction financière insulaire autonome.
+2. **Droit d'Alerte et d'Avis du Bâtonnier sur les Déportations :** Soumettre tout transfert de garde à vue ou détention provisoire hors de Corse à l'accord préalable du juge des libertés local.

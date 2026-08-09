@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Verrou De La Chart
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Patrimoine & Charte Européenne des Langues)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Droits Linguistiques & Charte Européenne
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Verrou De La Chart
 | **Filières Bilingues** | ~ 38% Primaire | Chute Collège | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 86% Soutien Populaire | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code du Patrimoine & Charte Européenne des Langues) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Ratification Directe de la Charte Européenne des Langues Régionales :** Inscrire au Code du Patrimoine l'officialisation de la langue corse à égalité avec le français dans les services publics insulaires.
+2. **Obligation d'Enseignement Bilingue Immersif dans le Primaire :** Rendre généralisée et obligatoire la filière bilingue dans toutes les écoles publiques de Corse.

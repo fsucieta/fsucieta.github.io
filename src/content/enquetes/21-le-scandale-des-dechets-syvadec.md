@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Scandale Des Deche
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Régional de Prévention et de Gestion des Déchets PRPGD)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Gestion des Déchets SYVADEC
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Scandale Des Deche
 | **Ratio Déchets/Hab.** | > 640 kg/hab/an | Fret Cargo Déchets | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 70 000 t / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Plan Régional de Prévention et de Gestion des Déchets PRPGD) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Interdiction Totale d'Exportation des Déchets par Cargo d'ici 2028 :** Imposer la construction d'unités de tri haute performance et de valorisation organique sur le territoire corse.
+2. **Généralisation Obligatoire de la Redevance Incitative (TEOMi) :** Rendre obligatoire la facturation des ordures ménagères au poids produit pour pénaliser le gaspillage des grands complexes touristiques.

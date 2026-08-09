@@ -138,6 +138,7 @@ La résistance institutionnelle à la mise en place d'un statut de résidence fo
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Statut Fiscal Insulaire & Traités Européens / CJUE)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Étude Comparative Foncière Insulaire
 
 | Territoire Insulaire | Statut Politique | Condition de Résidence Foncière | Validation Juridique / Jurisprudence |
@@ -147,6 +148,7 @@ La résistance institutionnelle à la mise en place d'un statut de résidence fo
 | **Îles Åland** | Province Autonome Finlandaise | 5 Ans (*Hembygdsrätt*) | Traité d'Adhésion UE 1994 |
 | **Sardaigne** | Région Autonome Italienne | Projets Régionaux 2007 | Arrêt Cour de Justice UE 2009 |
 
-### Amendements Prioritaires aux Traités Européens & à la Constitution :
-1. **Protocoles Derogatoires dans les Traités UE (Art. 349 TFUE) :** Négocier une clause de sauvegarde insulaire permanente autorisant la limitation des acquisitions immobilières aux résidents de plus de 5 ans.
-2. **Loi du Pays Constitutionnelle (Art. 72-4 Modifié) :** Transférer à l'Assemblée de Corse la compétence législative pour fixer les conditions d'accès à la propriété foncière en zone tendue.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Adoption de la Clause d’Équivalence Insulaire Européenne (Art. 349 TFUE) :** Négocier auprès de la Commission Européenne un protocole additionnel sur le modèle des Îles Åland autorisant la Corse à instaurer un droit de résidence préalable de 5 ans pour l'accès à la propriété foncière.
+2. **Création du Statut Régional de Résidence Foncière (Article 72-4 Modifié de la Constitution) :** Inscrire dans la révision constitutionnelle l'habilitation de l'Assemblée de Corse à voter des "Lois du Pays" fixant des quotas d'acquisition immobilière réservés aux résidents permanents en zone tendue.
+3. **Imposition d'un Droit de Mutation Progressif Anti-Spéculatif :** Appliquer une surtaxe fiscale régionale de 25 % sur toute plus-value immobilière réalisée lors de la revente d'un bien acquis par un non-résident moins de 10 ans après son achat.

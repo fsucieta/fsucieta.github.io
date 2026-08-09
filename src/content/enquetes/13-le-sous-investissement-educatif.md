@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Sous Investissemen
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Éducation Art. L. 719-1 & SRESR)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Investissement Éducatif & Université
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Sous Investissemen
 | **Dotation Étudiant** | 8 200 € / étud. | vs 11 500 € (Nat.) | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Sous-Dotation -25% | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code de l'Éducation Art. L. 719-1 & SRESR) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Mise à Niveau Budgétaire de l'Université de Corse (Art. L. 719-1) :** Aligner la dotation par étudiant sur la moyenne des universités insulaires européennes (12 000 €/étudiant).
+2. **Garantie du Logement Étudiant CROUS 100 % Résident :** Construire 2 000 logements étudiants supplémentaires à Corte financés par la taxe sur les résidences secondaires.

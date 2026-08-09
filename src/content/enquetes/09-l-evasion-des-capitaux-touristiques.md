@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **L Evasion Des Capitau
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Tourisme Art. L. 324-1-1 & Taxe de Séjour)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Capitaux Touristiques & IEDOM
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **L Evasion Des Capitau
 | **Télétransmissions CB** | 68% Encaissements | Crédités Continent | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Évasion de Valeur | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code du Tourisme Art. L. 324-1-1 & Taxe de Séjour) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Prélèvement à la Source sur les Plateformes OTA (Airbnb/Booking) :** Imposer la collecte et le reversement direct de la taxe de séjour et de la TVA aux communes corses par les plateformes numériques.
+2. **Licence d'Exploitation Touristique Régionale :** Assujettir l'ouverture de tout meublé de tourisme à une autorisation préalable contingentée par commune.

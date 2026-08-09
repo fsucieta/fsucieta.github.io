@@ -137,6 +137,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Dependance Sanitai
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Projet Régional de Santé PRS & Code de la Santé Publique)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Dépendance Sanitaire et EVASAN
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -144,6 +145,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Dependance Sanitai
 | **Évacuations Sanitaires** | > 25 000 / an | > 90 M€ / an | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Zéro CHU Insulaire | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Projet Régional de Santé PRS & Code de la Santé Publique) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Plan de Création du CHU de Plein Exercice de Corse :** Remplacer le système ruineux des EVASAN par la création d'un Centre Hospitalier Universitaire autonome Bastia-Ajaccio.
+2. **Plafonnement des Dépassements d'Honoraires Cliniques :** Interdire les dépassements d'honoraires pour les consultations spécialisées indisponibles dans le secteur public corse.

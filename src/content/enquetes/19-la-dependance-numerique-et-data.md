@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Dependance Numeriq
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Directeur Régional d'Aménagement Numérique SDRAN & ARCEP)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Télécoms & Souveraineté Data
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Dependance Numeriq
 | **Cables Sous-Marins** | 100% Dépendance | Corsica Fibra | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Fibre Rurale Bloquée | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Schéma Directeur Régional d'Aménagement Numérique SDRAN & ARCEP) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Création du Datacenter Souverain Régional Public :** Implanter un centre de stockage de données sous contrôle de la Collectivité de Corse pour héberger 100 % des données publiques et médicales.
+2. **Obligation de Redondance des Câbles Sous-Marins :** Imposer aux opérateurs télécoms (Orange/SFR) la connexion à au moins 3 câbles sous-marins distincts vers l'Italie et le Continent.

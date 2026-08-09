@@ -137,6 +137,7 @@ L'architecture du verrou financier repose sur un réseau d'acteurs institutionne
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Monétaire et Financier & Comité Régional du Crédit)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Le Grand Verrou Financier
 
 | Indicateur Financier | Valeur / Volume Chiffré | Source / Référence Officielle | Statut de Conformité |
@@ -146,6 +147,7 @@ L'architecture du verrou financier repose sur un réseau d'acteurs institutionne
 | **Volume de Crédits Immobilisés** | 1,8 Mld € | Cadastre / Observatoire Foncier | ⚠️ Taux de Blocage Élevé |
 | **Taux de Recouvrement Hypothécaire** | 94,2% | Chambre des Notaires | ✅ Seuil de Sécurité |
 
-### Amendements Prioritaires au Code Monétaire et Financier :
-1. **Création du Livret de Soutien au Foncier Régional (Art. L. 221-1 CMF) :** Obligation légale pour les établissements bancaires opérant en Corse de réinvestir au moins 65% de l'épargne liquide collectée dans les PME locales et le logement permanent.
-2. **Modulation HCSF pour Primo-Accédants Résidents :** Adapter les ratios d'endettement HCSF à 40% pour les ménages résidant en Corse depuis plus de 5 ans afin de neutraliser le blocage du crédit.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Création du Droit de Préemption Financier et Titrisation Régionale (Art. L. 221-1 CMF) :** Instaurer une obligation légale pour toute banque privée opérant en Corse de réserver au moins 65 % de l'épargne locale collectée à un Fonds Sovereign de Réinvestissement Territorial (FSRT) géré par la Collectivité de Corse pour financer le logement permanent et la souveraineté économique insulaire.
+2. **Mécanisme d’Alerte Prudentielle Anti-Fuite de Liquidités (Art. L. 561-15 CMF) :** Soumettre toute opération d'adossement hypothécaire de plus de 1 M€ réalisée par une SCI non-résidente auprès d'un établissement financier hors-sol à une taxe d'égalisation foncière de 15 % versée à l'Office Foncier Régional.
+3. **Plafonnement Prudentiel HCSF pour l'Accès Résidentiel :** Déroger aux règles centrales du Haut Conseil de Stabilité Financière (HCSF) en portant le taux maximal d'endettement à 40 % uniquement pour les primo-accédants résidant en Corse depuis plus de 5 ans.

@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **La Speculation Sur Le
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Rural & Dispositions L. 151-11 sur le Bâti Agricole)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Spéculation Bergeries (L. 151-11)
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **La Speculation Sur Le
 | **Prix Mètre Carré** | > 8 500 €/m² | Demandes L.151-11 | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 340 Permis 5ans | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Code Rural & Dispositions L. 151-11 sur le Bâti Agricole) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Verrouillage Strict des Restaurations de Bâti Ancien (Art. L. 151-11) :** Interdire l'aménagement de piscines, héliports et équipements de luxe lors de la rénovation des anciennes bergeries en zone A et N.
+2. **Droit de Préemption Prioritaire SAFER-ODARC à la Valeur Agricole :** Permettre à la SAFER de préempter toute bergerie vendue à un prix supérieur au barème foncier agricole moyen.

@@ -138,6 +138,7 @@ L'organisation institutionnelle du secteur de l'enquête **Le Pillage Des Quotas
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Politique Commune de la Pêche & Code de la Pêche)
+
 ### 📊 Matrice d'Audit et Données Chiffrées : Quotas de Pêche et Ressources
 
 | Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
@@ -145,6 +146,6 @@ L'organisation institutionnelle du secteur de l'enquête **Le Pillage Des Quotas
 | **Thon Rouge (ICCAT)** | 6 700 Tonnes (FR) | 130 Tonnes (Corse) | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | < 2% Attribués | Norme Légale Nationale | ⚠️ Vigilance Requis |
 
-### Amendements Prioritaires au cadre juridique (Politique Commune de la Pêche & Code de la Pêche) :
-1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
-2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
+### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
+1. **Rétrocession du Quota Territorial de Thon Rouge :** Réattribuer directement à la flottille artisanale corse 15 % du quota national au titre de l'antériorité historique et de la pêche durable.
+2. **Création de la Zone Économique Exclusive Régionale (ZEER) :** Interdire l'accès aux eaux insulaires (12 milles) aux navires de pêche de plus de 18 mètres non immatriculés en Corse.
