@@ -1,0 +1,71 @@
+---
+---
+<div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="gis-map-section">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+    <div>
+      <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        SIG SOUVERAIN — 360 COMMUNES DE CORSE
+      </span>
+      <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2">
+        🗺️ Cartographie Interactive de la Pression Foncière
+      </h3>
+    </div>
+    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
+      Cliquez sur les communes pour consulter les permis et arrêtés
+    </div>
+  </div>
+
+  <!-- Conteneur Carte Leaflet -->
+  <div class="w-full h-[450px] rounded-xl border border-slate-800 bg-slate-900 relative overflow-hidden" id="gisMapContainer"></div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mapElement = document.getElementById('gisMapContainer');
+    if (!mapElement || typeof L === 'undefined') return;
+
+    // Centrer la carte sur la Corse (Corte / Centre-Corse)
+    const map = L.map('gisMapContainer', {
+      center: [42.15, 9.15],
+      zoom: 9,
+      zoomControl: true
+    });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(map);
+
+    // Communes principales avec marqueurs interactifs
+    const communesData = [
+      { name: "Ajaccio", lat: 41.9267, lng: 8.7369, fiche: "Fiche #01, #05, #15, #24", risk: "Très Élevé — Urbanisme & SCI" },
+      { name: "Bastia", lat: 42.7028, lng: 9.4500, fiche: "Fiche #02, #09, #14, #21", risk: "Très Élevé — Fiscalité & Déchets" },
+      { name: "Corte", lat: 42.3060, lng: 9.1500, fiche: "Fiche #04, #13, #23", risk: "Modéré — Eau & Université" },
+      { name: "Bonifacio", lat: 41.3872, lng: 9.1594, fiche: "Fiche #05, #24, #26", risk: "Critique — Littoral & Bergeries" },
+      { name: "Porto-Vecchio", lat: 41.5912, lng: 9.2794, fiche: "Fiche #01, #05, #24, #26", risk: "Critique — SCI & Spéculation" },
+      { name: "Calvi", lat: 42.5686, lng: 8.7572, fiche: "Fiche #06, #09, #25", risk: "Élevé — Quotas Pêche & Saison" },
+      { name: "Solenzara", lat: 41.8569, lng: 9.3986, fiche: "Fiche #11, #23", risk: "Élevé — Servitudes Militaires" },
+      { name: "Ghisonaccia", lat: 42.0158, lng: 9.4050, fiche: "Fiche #08, #20, #21", risk: "Élevé — PAC & Forêt" }
+    ];
+
+    communesData.forEach(c => {
+      const marker = L.circleMarker([c.lat, c.lng], {
+        radius: 8,
+        fillColor: c.risk.includes('Critique') ? '#ef4444' : (c.risk.includes('Très') ? '#f97316' : '#d4af37'),
+        color: '#0f172a',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.9
+      }).addTo(map);
+
+      marker.bindPopup(`
+        <div style="font-family: sans-serif; padding: 4px;">
+          <strong style="color: #0f172a; font-size: 14px;">${c.name}</strong><br/>
+          <span style="color: #007791; font-size: 12px;">${c.fiche}</span><br/>
+          <span style="color: #b8860b; font-weight: bold; font-size: 11px;">Niveau d'exposition : ${c.risk}</span>
+        </div>
+      `);
+    });
+  });
+</script>
