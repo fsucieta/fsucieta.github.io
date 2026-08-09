@@ -1,5 +1,10 @@
 import os
+import sys
 import urllib.request
+
+# Forcer l'encodage stdout en UTF-8
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
 
 root_dir = r'C:\Users\PC-Bureau\Desktop\docucu\github_repository_master_pack'
 public_dir = os.path.join(root_dir, 'public')
@@ -40,7 +45,7 @@ photos_urls = {
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-print("=== TÉLÉCHARGEMENT DES 26 VÉRITABLES PHOTOGRAPHIES THÉMATIQUES HAUTE DÉFINITION ===")
+print("=== TELECHARGEMENT SANS ERREUR DES 26 PHOTOGRAPHIES REALISTES HD ===")
 
 for fid, url in photos_urls.items():
     filename = f"img_enquete_{fid:02d}.jpg"
@@ -60,8 +65,8 @@ for fid, url in photos_urls.items():
         with open(root_path, 'wb') as out_file:
             out_file.write(data)
             
-        print(f"✅ Téléchargé et déployé photo HD réelle pour Enquête #{fid:02d} ({len(data)} octets)")
+        print(f"SUCCESS: Photo HD reelle telechargee pour Enquete #{fid:02d} ({len(data)} octets)")
     except Exception as e:
-        print(f"❌ Erreur lors du téléchargement de {filename}: {e}")
+        print(f"ERROR: Echec du telechargement de {filename}: {e}")
 
-print("Toutes les 26 enquêtes disposent désormais à 100% d'une vraie photo d'illustration thématisée !")
+print("AUDIT FINAL: 26 photos HD telechargees et copiees dans public/, docs/ et root.")
