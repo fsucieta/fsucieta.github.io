@@ -75,27 +75,30 @@ De même, en Nouvelle-Calédonie, l'Accord de Nouméa et la loi organique de 199
 | **Îles Åland (Finlande)** | Région Autonome UE | 5 Ans (*Hembygdsrätt*) | Protocole Traité d'Adhésion UE |
 | **Corse** | Collectivité Territoriale | 0 Jour (Marché Ouvert) | Refus Central Systématique |
 
-## V. Recommandations pour l'autonomie et l'action citoyenne
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de comparaison statutaire
 
-    
-
-La démonstration de droit comparé prouve que l'inscription de la Corse dans une révision constitutionnelle d'autonomie forte doit impérativement inclure le pouvoir normatif foncier et la régulation du marché immobilier.
-
-    
+L'établissement d'un statut foncier de résidence insulaire sur le modèle des îles autonomes européennes passe d'abord par la reconnaissance des mécanismes administratifs en vigueur chez nos voisins. Quatre démarches CADA permettent d'accéder aux pièces essentielles :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux notes juridiques de la DEXPAR sur les statuts insulaires comparés
+Demandez au Ministère des Outre-Mer (Mission des Collectivités Territoriales) la communication des notes juridiques et diplomatiques comparant le droit de résidence foncière applicable à Jersey (*Entitled Status*), aux îles Åland (*Hembygdsrätt*) et aux Açores avec le statut constitutionnel actuel de la Corse.
 
-### 📌 Action citoyenne préconisée : pétition et saisine des instances européennes
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux rapports d'évaluation des dispositifs de préemption territoriale
+Saisissez la SAFER de Corse et la DDTM de Haute-Corse et de Corse-du-Sud pour obtenir les rapports d'évaluation annuels du nombre de transactions foncières où un droit de préemption territorial aurait pu être exercé et ne l'a pas été, avec les motifs de non-préemption.
 
-Saisissez le Comité des Pétitions du Parlement Européen (PETI) en invoquant la jurisprudence sur le droit à l'habitat décent et la protection de l'environnement insulaire face au sur-développement spéculatif.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux études d'impact INSEE sur l'éviction foncière des ménages corses
+Demandez à l'INSEE Corse et à la DREAL de Corse la communication des études internes mesurant l'évolution du taux de propriété des ménages résidents sur le littoral et en zones PADDUC inconstructibles sur les 15 dernières années.
 
-    
+---
+
+### 📌 Action CADA n°4 : Accès aux bilans d'application des Lois du Pays foncières dans les COM
+Saisissez la DGOM (Direction Générale des Outre-Mer) pour obtenir les bilans d'application du droit de préemption territorial et des conditions de résidence en Polynésie Française et en Nouvelle-Calédonie validés par le Conseil Constitutionnel — documents directement pertinents pour la transposition en Corse.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

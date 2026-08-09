@@ -74,27 +74,30 @@ Le résultat social est un processus d'éviction géographique brutale. Les habi
 | **Taux de Défaillance Local** | Quasi-nul | Restructurations de gré à gré continentales, soustrayant le bien du marché local |
 | **Droits de Mutation & Taxe Foncière** | Évasion systématique | Cession des parts sociales des SCI détentrices au lieu des biens immobiliers |
 
-## V. Préconisations juridiques et démarches CADA d'accès aux actes bancaires publics
+## V. Préconisations juridiques et démarches CADA d'accès aux actes financiers publics
 
-    
-
-Face à ce verrouillage systémique, l'action citoyenne et le droit à l'information publique constituent des leviers puissants de transparence. Conformément au Code des Relations entre le Public et l'Administration (CRPA, articles L. 300-1 et suivants), toute association de défense du foncier ou tout collectif citoyen a le droit d'exiger la communication des délibérations municipales accordant des garanties d'emprunt ou des aides directes d'aménagement aux programmes immobiliers privés.
-
-    
+La lutte contre le verrou financier institutionnalisé impose de rendre publics les mécanismes d'adossement hypothécaire et d'octroi de crédit structurellement défavorables à l'économie résidentielle corse. Quatre démarches complémentaires d'accès aux documents administratifs (Art. L. 311-1 CRPA) permettent de forcer la transparence :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux inscriptions hypothécaires des parcelles littorales
+Saisissez la DGFiP (Service de Publicité Foncière, ex-Conservation des Hypothèques) pour obtenir les états récapitulatifs des privilèges de prêteurs de deniers (PPD) et hypothèques conventionnelles inscrits par des établissements financiers extérieurs sur les communes littorales de Haute-Corse et Corse-du-Sud. **Délai légal : 30 jours.** En cas de refus, saisissez la CADA, puis le tribunal administratif de Bastia.
 
-### 📌 Action CADA Préconisée : Demande de relevé des délibérations foncières
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux garanties d'emprunt votées par les collectivités
+Exigez des conseils municipaux et communautaires la communication des délibérations par lesquelles ils ont accordé leur garantie financière à des SCI ou promoteurs immobiliers continentaux. Ces délibérations sont des actes administratifs de plein droit communicables (Art. L. 2121-26 CGCT). Tout refus de communication est illégal.
 
-Saisissez le maire de votre commune ou le président du conseil communautaire pour obtenir la liste complète des conventions d'aménagement urbain passées avec des SCI promotionnelles. En cas de refus sous 30 jours, adressez une saisine directe à la Commission d'Accès aux Documents Administratifs (CADA) sur `cada.fr`.
+---
 
-    
+### 📌 Action CADA n°3 : Accès au bilan de réinjection de l'épargne locale (Banque de France / IEDOM)
+Demandez à l'IEDOM (Institut d'Émission des Départements d'Outre-Mer, compétent en Corse) la communication du rapport annuel de la Banque de France sur le ratio de réinjection des dépôts bancaires collectés sur l'île dans les crédits aux TPE-PME et aux ménages résidents corses.
 
-    
+---
+
+### 📌 Action CADA n°4 : Demande des déclarations de cessions de parts de SCI auprès des services d'enregistrement
+Saisissez le Service d'Enregistrement de la DGFiP pour obtenir les bordereaux de liquidation des droits de mutation à titre onéreux (DMTO) applicables aux cessions de parts de SCI détenant du foncier ou du bâti en Corse-du-Sud et Haute-Corse. Ces données permettent de cartographier les flux de capitaux extérieurs vers le marché immobilier insulaire.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

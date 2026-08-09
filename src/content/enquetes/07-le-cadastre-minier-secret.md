@@ -73,27 +73,30 @@ Les budgets consacrés par la DREAL à la sécurisation et à la dépollution de
 | **Inventaire Minier BRGM** | > 48 gisements | Antimoine, Cuivre, Fer, Manganese, Amiante | Redevances 100 % captées par le Trésor Central |
 | **Cap Corse (Meria, Luri, Ersa)** | District majeur européen | Antimoine (Sb) hautement concentré | Concessions d'État sans accord des communes |
 
-## V. Actions de défense du sous-sol et recours CADA
+## V. Préconisations juridiques et démarches CADA d'accès aux actes miniers et prospection du sous-sol
 
-    
-
-La protection de la terre corse exige le transfert du sous-sol et du Code Minier à la Collectivité de Corse pour instaurer un droit de veto territorial sur toute concession d'extraction.
-
-    
+La protection du sous-sol insulaire contre l'extraction prédatrice de ses ressources stratégiques passe par la transparence des concessions et des autorisations accordées sans consultation citoyenne. Quatre démarches CADA essentielles :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux rapports d'inventaire géologique et minier du BRGM pour la Corse
+Demandez au Bureau de Recherches Géologiques et Minières (BRGM) la communication des rapports d'inventaire des ressources minérales du Cap Corse et de la Balagne, notamment les études sur l'antimoine, le chrome, l'amiante chrysotile et les terres rares. Ces rapports sont des documents administratifs communicables.
 
-### 📌 Action CADA Préconisée : Accès aux rapports de prospection du BRGM
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux arrêtés préfectoraux d'autorisation de prospection minière
+Saisissez la Préfecture de Haute-Corse pour obtenir les arrêtés préfectoraux d'autorisation de recherches minières accordés ces 20 dernières années sur le territoire insulaire, avec les coordonnées GPS des périmètres concernés et l'identité des sociétés titulaires.
 
-Saisissez la DREAL de Corse pour obtenir la copie intégrale des études d'évaluation des risques miniers et des inventaires de métaux stratégiques réalisés sur le périmètre de votre commune. En cas d'opposition, déposez un recours devant la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux audits DREAL d'exposition à l'amiante chrysotile et à l'antimoine
+Demandez à la DREAL de Corse les rapports d'inspection des sites de mines abandonnées (notamment Cap Corse) présentant des risques d'exposition à l'amiante naturel et aux métaux lourds, ainsi que les mesures de confinement ou de dépollution prescrites.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès au registre des redevances minières perçues par l'État sur le territoire corse
+Saisissez la DGFiP pour obtenir les montants des redevances minières et superficiaires versées à l'État par les titulaires de concessions minières sur le territoire de la Corse-du-Sud et la Haute-Corse depuis 2005 — et le montant redistribué aux communes concernées.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

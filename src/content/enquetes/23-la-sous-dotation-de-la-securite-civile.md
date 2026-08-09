@@ -74,27 +74,30 @@ Le sous-dimensionnement de la flotte d'hélicoptères et l'âge avancé des appa
 | **Canadairs Positionnés** | 2 Avions en moyenne | vs 4 appareils requis à demeure |
 | **Pompiers Volontaires** | 82% des effectifs | Pression sur les casernes du rural profond |
 
-## V. Actions de souveraineté et démarches CADA
+## V. Actions de souveraineté et démarches CADA — Sécurité Civile
 
-    
-
-La protection des personnes et des forêts exige le positionnement permanent d'une escadrille aérienne de Sécurité Civile propre à la Corse et le financement intégrale du surcoût estival par l'État.
-
-    
+La protection des populations et des forêts corses contre l'incendie et les risques naturels exige des moyens propres et la transparence des dotations de l'État. Quatre démarches CADA ciblées :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux journaux de mouvements et de missions des aéronefs de sécurité civile
+Demandez à la Direction Générale de la Sécurité Civile et de la Gestion des Crises (DGSCGC) les journaux de mouvements des Canadair, Tracker et hélicoptères Dragon basés temporairement en Corse pendant la saison estivale : heures de vol, missions effectuées, taux de disponibilité et avaries enregistrées.
 
-### 📌 Action CADA Préconisée : Accès aux bilans opérationnels du CODIS
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux arrêtés de dotation budgétaire des Conseils Départementaux aux SIS 2A et 2B
+Saisissez les Conseils Départementaux de Corse-du-Sud (2A) et de Haute-Corse (2B) pour obtenir les arrêtés annuels de dotation budgétaire aux Services Départementaux d'Incendie et de Secours (SDIS 2A et SDIS 2B), comparés au ratio national de dépenses de sécurité civile par habitant.
 
-Saisissez les SIS de Haute-Corse et de Corse-du-Sud pour obtenir les rapports sur les temps moyens de réponse des secours dans les communes rurales. En cas de refus de transmission, déposez un recours CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux conventions de coordination entre le PGHM, le Dragon 20 et la Sécurité Civile
+Demandez à la Gendarmerie Nationale (Groupement de Gendarmerie de Corse), à la Sécurité Civile et à la Préfecture les conventions opérationnelles organisant la coordination des secours en montagne (PGHM Corse), les missions hélitreuillages (Dragon 20) et les opérations feux de forêt.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports de couverture des risques de la DGSCGC
+Demandez à la DGSCGC le rapport de couverture des risques naturels et technologiques majeurs pour la Corse : analyse de la capacité de réponse aux incendies simultanés, aux tsunamis (risque méditerranéen), aux tempêtes et aux risques sismiques en rapport avec la population et la superficie insulaire.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

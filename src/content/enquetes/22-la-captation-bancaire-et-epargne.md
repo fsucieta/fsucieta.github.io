@@ -74,27 +74,30 @@ Cette numérisation forcée renforce la dépendance envers les DAB (distributeur
 | **Réinjection en Crédits TPE/PME**| < 42% | Fuite de l'épargne vers les marchés continentaux |
 | **Fermeture de Guichets** | - 48 Agences | Désertification bancaire dans le rural intérieur |
 
-## V. Actions pour une Banque Publique Régionale de Développement
+## V. Actions pour une Banque Publique Régionale de Développement — Démarches CADA
 
-    
-
-La souveraineté financière exige la création d'une Banque Publique d'Investissement et de Développement de la Corse (Cassa di Sviluppu) réinjectant 100 % de l'épargne insulaire dans les projets locaux.
-
-    
+La reconquête de la souveraineté financière corse et la création d'un outil de financement territorial autonome (Cassa di Sviluppu) impose d'abord la transparence sur les flux réels de l'épargne insulaire. Quatre démarches CADA :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux statistiques IEDOM sur les dépôts et prêts bancaires en Corse
+Demandez à l'IEDOM (Institut d'Émission des Départements d'Outre-Mer) le rapport annuel détaillant les encours de dépôts bancaires collectés en Corse et les encours de crédits accordés aux ménages et aux entreprises corses : le différentiel révèle le montant du capital quotidiennement exporté vers le continent.
 
-### 📌 Action Citoyenne Préconisée : Exigence d'engagement de réinvestissement
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux registres de garantie accordés par Bpifrance aux entreprises corses
+Saisissez Bpifrance (délégation régionale Corse) pour obtenir les statistiques annuelles de garanties d'emprunt accordées aux TPE-PME corses, comparées aux demandes rejetées et aux raisons invoquées. Vérifiez si le critère d'insularité est correctement valorisé dans les grilles de notation Bpifrance.
 
-Exigez de votre conseiller bancaire des garanties écrites sur le réinvestissement de vos comptes d'épargne dans des projets d'entreprises ou d'installations agricoles locales. Privilégiez les livrets régionaux éthiques.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux conventions financières signées entre la Collectivité de Corse et les réseaux bancaires
+Demandez à la Collectivité de Corse les conventions de partenariat financier conclues avec les banques régionales et nationales pour le financement des projets d'investissement public (infrastructure, logement, transition énergétique) : taux d'intérêt négociés, durées et contreparties de réinvestissement local exigées.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports prudentiels de l'ACPR sur les établissements bancaires actifs en Corse
+Saisissez l'Autorité de Contrôle Prudentiel et de Résolution (ACPR / Banque de France) pour obtenir les statistiques régionales des conditions de crédit appliquées en Corse par les établissements sous sa supervision : taux de refus, taux d'intérêt effectif global et provisions pour créances douteuses.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

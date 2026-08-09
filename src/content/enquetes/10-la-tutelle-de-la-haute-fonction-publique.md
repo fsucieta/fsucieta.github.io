@@ -73,27 +73,30 @@ Cependant, en vertu des règles nationales de classement et d'affectation interr
 | **Corps Préfectoral (Préfets/Sous-Préfets)** | 21 mois (14 préfets / 25 ans) | Inférieure à 5 % | Paralysie des projets et absence de mémoire administrative |
 | **Directions Régionales (DREAL, DRFiP)** | 22 à 24 mois | Moins de 18 % | Décalage avec les réalités juridiques et foncières locales |
 
-## V. Recommandations pour une Fonction Publique Territoriale Insulaire
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de nomination et d'évaluation des hauts fonctionnaires en poste en Corse
 
-    
-
-La souveraineté administrative exige la création d'un statut spécifique de la Fonction Publique Territoriale Corse, avec priorité à la résidence locale et à la maîtrise des enjeux territoriaux pour les postes de direction.
-
-    
+Rompre la tutelle administrative implique de rendre publics les critères de nomination, les durées de mission et les bilans de gestion des directeurs régionaux continentaux. Quatre démarches CADA :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux arrêtés de nomination et décrets de mutation du corps préfectoral
+Demandez à la Direction Générale de l'Administration et de la Fonction Publique (DGAFP) les arrêtés de nomination et de fin de fonctions des préfets, secrétaires généraux et sous-préfets affectés en Corse depuis 2010, avec les durées de mission effectives.
 
-### 📌 Action CADA Préconisée : Demande des arrêtés d'affectation et d'organigrammes
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux fiches d'évaluation des directeurs régionaux
+Saisissez le Secrétaire Général du Gouvernement pour obtenir les critères et les bilans d'évaluation des directeurs régionaux (DRFIP, DREAL, DRAAF, ARS) affectés en Corse : les compétences territoriales requises à la prise de poste y sont-elles évaluées ?
 
-Saisissez la préfecture de région pour obtenir les organigrammes détaillés des directions d'État et les arrêtés de délégation de signature. Exigez la publication des données relatives à la parité et au taux de renouvellement des équipes de direction.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux délibérations d'attribution des primes de haute responsabilité et NBI
+Demandez aux services RH de la Préfecture de Région les délibérations internes d'attribution des primes de haute responsabilité (NBI, PFR, RIFSEEP) versées aux cadres supérieurs de l'État en poste en Corse. Ces informations sont communicables au titre de la transparence de la rémunération des agents publics.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports de la Cour des Comptes sur la gestion des services de l'État en Corse
+Demandez à la Cour des Comptes et à la Chambre Régionale des Comptes de Corse leurs rapports d'observations définitives publiés sur la gestion administrative des préfectures et des services déconcentrés de l'État (DRFIP, DREAL, DDTM) en Corse.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

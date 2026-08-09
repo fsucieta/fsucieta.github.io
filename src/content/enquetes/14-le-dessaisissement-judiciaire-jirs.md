@@ -74,27 +74,30 @@ Cette lenteur de la justice délocalisée favorise l'impunité réelle des déli
 | **Durée Moyenne d'Instruction** | 6,8 Ans | vs 3,2 ans pour les pôles ordinaires |
 | **Coût Annuel des Transfèrements** | > 12 M€ / an | Escortes et déportations pénitentiaires |
 
-## V. Recommandations pour le rapatriement de la justice en Corse
+## V. Recommandations pour le rapatriement de la justice en Corse — Démarches CADA
 
-    
-
-La souveraineté judiciaire exige la création d'un pôle d'instruction financière et criminelle à part entière au sein de la Cour d'Appel de Bastia, redonnant aux magistrats locaux la pleine compétence de juger sur le sol corse.
-
-    
+La réintégration de la pleine compétence judiciaire au sein de la Cour d'Appel de Bastia est une exigence de justice territoriale. Quatre démarches CADA pour forcer la transparence sur le dessaisissement :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux ordonnances de dessaisissement du parquet de Bastia vers la JIRS de Marseille
+Demandez à la Chancellerie (Ministère de la Justice, Direction des Affaires Criminelles et des Grâces) les statistiques annuelles des ordonnances de renvoi et de dessaisissement du parquet général de Bastia vers la JIRS de Marseille : nombre d'affaires, infractions visées et temps écoulé entre la saisine et le dessaisissement.
 
-### 📌 Action CADA Préconisée : Accès aux statistiques judiciaires déclassifiées
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux états de frais de justice et de déportation des escortes pénitentiaires
+Saisissez la Direction de l'Administration Pénitentiaire (DAP) pour obtenir le coût annuel des transferts de prévenus corses vers les maisons d'arrêt de Marseille, Lyon et Grasse : frais d'escorte, de transport, d'hébergement et d'éloignement familial.
 
-Saisissez le Ministère de la Justice pour obtenir la communication des bilans d'activité de la JIRS de Marseille concernant le périmètre des départements de Haute-Corse et de Corse-du-Sud. En cas de refus, saisissez la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux registres d'écrou des prévenus et condamnés corses incarcérés hors de Corse
+Demandez à la DAP les statistiques anonymisées sur le nombre de détenus originaires de Corse incarcérés dans des établissements pénitentiaires hors de l'île, la durée moyenne de détention provisoire et le taux de maintien des liens familiaux.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports d'inspection de la Chancellerie sur les délais d'instruction et les moyens des juridictions corses
+Saisissez l'Inspection Générale de la Justice (IGJ) pour obtenir les rapports d'inspection publiés sur les tribunaux judiciaires d'Ajaccio et de Bastia : effectifs de magistrats, délais moyens d'instruction, taux de classement sans suite et charges de travail comparées.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

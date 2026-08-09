@@ -76,25 +76,28 @@ Pendant ce temps, les projets de câbles d'interconnexion sous-marine (projets S
 
 ## V. Actions pour la souveraineté énergétique et recours CADA
 
-    
-
-La souveraineté énergétique passe par la reconversion immédiate au gaz naturel liquéfié (GNL) à titre de transition, le développement massif des STEP hydroélectriques (station de transfert d'énergie par pompage) et la création d'une Régie Régionale de l'Énergie.
-
-    
+La reconquête de la souveraineté énergétique insulaire face au monopole EDF-SEI passe par la transparence totale des coûts cachés de la Zone Non Interconnectée corse. Quatre démarches CADA ciblées :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux arrêtés d'autorisation ICPE des centrales au fioul du Vazzio et de Lucciana
+Demandez à la DREAL de Corse les arrêtés d'autorisation d'exploitation au titre des Installations Classées pour la Protection de l'Environnement (ICPE) des centrales thermiques au fioul du Vazzio (Ajaccio) et de Lucciana (Haute-Corse), incluant les arrêtés de mise en demeure, les prescriptions de réduction d'émissions et les dérogations accordées.
 
-### 📌 Action CADA Préconisée : Accès aux bilans d'émission du Vazzio
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux contrats d'Obligation d'Achat de l'électricité EDF-SEI en Zone Non Interconnectée
+Saisissez la Commission de Régulation de l'Énergie (CRE) pour obtenir les contrats d'obligation d'achat d'électricité à prix garanti conclus entre EDF-SEI et les producteurs d'énergie renouvelable (photovoltaïque, éolien) en Corse. Vérifiez les tarifs d'achat et les durées d'engagement.
 
-Saisissez la DREAL de Corse et EDF-SEI pour obtenir les relevés de mesures continuelles d'émissions de microparticules (PM10, PM2.5) et de dioxyde de soufre aux abords des centrales du Vazzio et de Lucciana. En cas de refus, déposez un recours CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux bilans de compensation de la péréquation tarifaire en Corse
+Demandez à la CRE les bilans annuels de la Contribution au Service Public de l'Électricité (CSPE) attribuée à la ZNI corse : montant des surcoûts de production compensés par la péréquation nationale et coût unitaire du kWh produit en Corse par rapport au prix moyen continental.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux procès-verbaux d'arbitrage de la Programmation Pluriannuelle de l'Énergie (PPE) de Corse
+Saisissez la Direction de l'Énergie et du Climat (DGEC/Ministère de la Transition Énergétique) pour obtenir les comptes-rendus des commissions d'arbitrage de la PPE insulaire : objectifs de fermeture des centrales au fioul, calendrier de déploiement des renouvelables et investissements prévus dans le stockage d'énergie.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

@@ -74,27 +74,30 @@ De nombreux maires ruraux préfèrent renoncer à élaborer leur document d'urba
 | **Substitution Citoyenne** | > 85% des annulations | Portées par les associations (ex: U Levante) |
 | **Délai Moyen de Jugement TA** | 18 Mois | Poursuite des chantiers en référé suspension |
 
-## V. Actions de vigilance citoyenne et recours CADA
+## V. Actions de vigilance citoyenne et recours CADA contre la censure administrative
 
-    
-
-La défense de la légalité territoriale exige la transparence totale des registres d'urbanisme et le soutien aux maires ruraux bâtisseurs.
-
-    
+La protection des délibérations locales légitimes contre les déférés préfectoraux abusifs passe par la publicité des décisions et la constitution de dossiers de défense juridique solides. Quatre démarches concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès au registre des actes téléchargés via le système @CTES
+Demandez à la Préfecture de Corse le registre chronologique des actes municipaux reçus par voie de télétransmission via le système @CTES et signalés aux fins de contrôle de légalité : délibérations, permis de construire, marchés publics. Ce document permet de mesurer l'intensité du contrôle exercé sur les communes corses.
 
-### 📌 Action CADA Préconisée : Accès au registre des permis tacites
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux registres chronologiques des déférés préfectoraux au TA de Bastia
+Saisissez la Préfecture de Haute-Corse et de Corse-du-Sud pour obtenir les listes des actes municipaux déférés au Tribunal Administratif de Bastia depuis 2014 : nature des actes, commune concernée, motifs juridiques invoqués, issues de la procédure.
 
-Saisissez la mairie de votre commune ou la Préfecture pour obtenir la copie intégrale du registre des permis de construire tacites (nés du silence gardé par l'administration pendant 2 mois). En cas de refus sous 30 jours, déposez une saisine CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux fiches d'instruction juridique de la DDTM sur les urbanisations critiques
+Demandez à la DDTM (Direction Départementale des Territoires et de la Mer) les notes de synthèse juridique établies lors de l'instruction des dossiers d'urbanisme critiques identifiés dans les communes littorales, notamment ceux transmis au parquet pour infraction à la Loi Littoral.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux jugements d'annulation de permis de construire prononcés par le TA de Bastia
+Demandez au greffe du Tribunal Administratif de Bastia la liste des décisions d'annulation de permis de construire rendues depuis 2015 à la requête d'associations de défense de l'environnement : Loi Littoral, PADDUC, espaces remarquables protégés.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

@@ -74,27 +74,30 @@ Le taux de recyclage effectif de la matière plastique et des bio-déchets stagn
 | **Volume Exporté par Cargo** | > 70 000 Tonnes / an | Expédiées vers incinérateurs continentaux |
 | **Hausse de la TEOM** | + 42% en 6 ans | Surtaxe subie par les ménages résidents |
 
-## V. Actions de souveraineté environnementale et démarches CADA
+## V. Actions de souveraineté environnementale et démarches CADA — Déchets SYVADEC
 
-    
-
-La sortie de crise exige la généralisation de la collecte sélective au porte-à-porte avec redevance incitative, la création de régies communales de compostage et la transparence des marchés publics du SYVADEC.
-
-    
+La sortie de la crise des déchets corse passe par la transparence totale des marchés publics du SYVADEC et des conditions d'exportation continentale. Quatre démarches CADA concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Demande des marchés publics de transport maritime des déchets
+Saisissez le SYVADEC (Syndicat de Valorisation des Déchets de la Corse) pour obtenir les marchés publics d'exportation des déchets résiduels et des refus de tri par voie maritime (cargo) vers les sites de traitement continentaux : titulaires, volumes, coûts unitaires et ports de destination. Ces marchés sont des documents administratifs communicables (Art. L. 311-1 CRPA).
 
-### 📌 Action CADA Préconisée : Demande des marchés de transport de déchets
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux arrêtés préfectoraux ICPE des centres d'enfouissement de Tallone et Viggianello
+Demandez à la DREAL de Corse les arrêtés d'autorisation d'exploitation des Installations de Stockage des Déchets Non Dangereux (ISDND) de Tallone et Viggianello, ainsi que les derniers rapports d'inspection et les prescriptions de mise aux normes imposées aux exploitants.
 
-Saisissez le SYVADEC pour obtenir la copie des marchés publics d'exportation de déchets par cargo maritime et les bordereaux de suivi des déchets dangereux. En cas de refus, déposez un recours devant la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès au rapport d'audit financier de la Chambre Régionale des Comptes sur le SYVADEC
+Demandez à la Chambre Régionale des Comptes de Corse les rapports d'observations définitives publiés sur la gestion financière et les marchés publics du SYVADEC depuis 2015. Ces rapports sont publics et directement communicables.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux bordereaux de versement de la TGAP sur les ordures ménagères
+Demandez à la DRFiP de Corse les montants de la Taxe Générale sur les Activités Polluantes (TGAP) acquittés annuellement par le SYVADEC sur les tonnages mis en décharge, ainsi que le montant des pénalités de dépassement de seuil de mise en décharge. Ces données permettent de chiffrer le surcoût de l'inaction en matière de tri.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

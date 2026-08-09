@@ -74,27 +74,30 @@ Des chalutiers industriels de grande taille venant du continent ou d'Italie vien
 | **Manque à Gagner Économique** | - | 45 M€ de valeur ajoutée perdue/an | Exportation directe sans retombée locale |
 | **Démographie de la Flottille** | 450 marins (1990) | 180 marins artisans (2026) | Âge moyen 54 ans, blocage d'installation jeunes |
 
-## V. Actions de souveraineté maritime et recours CADA
+## V. Préconisations juridiques et démarches CADA d'accès aux actes d'attribution des quotas de pêche
 
-    
-
-La réappropriation de la ressource halieutique exige le transfert de la compétence de gestion des maritimes à la Collectivité de Corse et la création d'une bande de réserve exclusive pour la pêche artisanale insulaire.
-
-    
+Le pillage des ressources halieutiques par les armements sétois et marseillais ne peut être stoppé que par la transparence totale des décisions d'attribution. Voici quatre leviers d'action concrète :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux arrêtés DPMA d'attribution du quota de thon rouge
+Demandez à la Direction des Pêches Maritimes et de l'Aquaculture (DPMA, Ministère de la Mer) les arrêtés annuels de répartition du quota national de thon rouge (*Thunnus thynnus*) par organisation de producteurs (OP) et par port d'attache. Vérifiez la part allouée aux pêcheurs artisanaux corses vs les armements industriels continentaux.
 
-### 📌 Action Citoyenne et CADA Préconisée : Demande des registres VMS/AIS
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux journaux de pêche VMS/AIS de géolocalisation des thoniers
+Saisissez le Centre de Surveillance des Pêches (CSP/DPMA) pour obtenir les données anonymisées de géolocalisation VMS (Vessel Monitoring System) et AIS des thoniers senneurs opérant dans les eaux entourant la Corse lors des saisons de pêche. Ces données prouvent les zones de capture effectives.
 
-Adressez une demande formelle à la Direction de la Mer et du Littoral de Corse (DMLM) pour obtenir les données de balisage VMS/AIS des navires de pêche industriels opérant dans la bande des 12 milles insulaires. En cas de refus de transmission sous un mois, saisissez la CADA pour non-respect du droit à l'information environnementale (Code de l'environnement, art. L. 124-1).
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux rapports de contrôle IFREMER sur les stocks de poissons bleus en Méditerranée
+Demandez à l'IFREMER la communication des rapports scientifiques internes concernant l'état des stocks de petits pélagiques (sardines, anchois) et de thons dans le golfe de Gênes et autour de la Corse, utilisés pour calibrer les quotas de la CICTA.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux procès-verbaux d'attribution des droits de la Prud'homie
+Saisissez la DDTM de Haute-Corse et de Corse-du-Sud pour obtenir les procès-verbaux des assemblées de la Prud'homie de pêche (instances de gestion locales) et les registres d'immatriculation des navires de pêche artisanaux corses sur les 10 dernières années.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

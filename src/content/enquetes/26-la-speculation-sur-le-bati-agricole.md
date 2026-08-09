@@ -74,27 +74,30 @@ La SAFER ne dispose pas des budgets nécessaires pour s'aligner sur les prix du 
 | **Demandes Restauration (5 ans)** | > 340 Permis L. 151-11 | Déposés en zones protégées A et N |
 | **Occupation Pastorale Réelle** | < 4% | Détournement en résidence secondaire |
 
-## V. Actions de protection du patrimoine pastoral et recours CADA
+## V. Actions de protection du patrimoine pastoral et recours CADA — Spéculation sur le bâti agricole
 
-    
-
-La préservation du patrimoine pastoral exige la révision stricte des listes de bâti restaurable au titre de l'article L. 151-11 dans les PLU et l'obligation d'un bail rural réel de 9 ans avec un agriculteur actif.
-
-    
+Enrayer la spéculation immobilière déguisée en restauration de patrimoine rural passe par la transparence des listes de bâti restaurable et des conditions d'octroi des permis de construire modificatifs. Quatre démarches CADA concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès à la liste complète des bâtiments identifiés au titre de l'article L. 151-11 du PLU
+Saisissez le service d'urbanisme de votre mairie pour obtenir la liste nominative et cartographique des bâtiments agricoles désignés comme restaurables dans les zones A et N du Plan Local d'Urbanisme (PLU), conformément à l'article L. 151-11 du Code de l'Urbanisme. Cette liste est un document administratif communicable dans son intégralité.
 
-### 📌 Action CADA Préconisée : Accès à la délibération de la liste L. 151-11
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux procès-verbaux de constatation d'infraction à l'urbanisme (Art. L. 480-1)
+Demandez à la DDTM de Haute-Corse et de Corse-du-Sud les procès-verbaux de constatation d'infractions au Code de l'Urbanisme dressés sur votre commune, notamment ceux concernant les travaux réalisés sans permis ou en violation du permis accordé sur des bâtiments agricoles transformés en résidences d'agrément.
 
-Saisissez le service d'urbanisme de votre commune pour obtenir la liste complète des bâtiments identifiés au titre de l'article L. 151-11 du PLU. Vérifiez si des ruines non identifiées font l'objet de permis de construire modificatifs abusifs.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux déclarations d'intention d'aliéner (DIA) transmises à la SAFER
+Saisissez la SAFER de Corse pour obtenir les déclarations d'intention d'aliéner (DIA) reçues pour des ventes de bâtiments agricoles ou de bergeries classifiées L. 151-11 sur les 5 dernières années : prix de vente, identité de l'acquéreur et décision de préemption ou de non-préemption de la SAFER.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux délibérations municipales de révision des listes L. 151-11 dans les PLU
+Demandez au conseil municipal les délibérations de révision simplifiée du PLU ayant conduit à ajouter de nouveaux bâtiments à la liste L. 151-11 depuis 2015 : qui a initié la demande d'ajout, quelle était la motivation urbanistique et qui sont les propriétaires des bâtiments nouvellement inscrits ?
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

@@ -74,27 +74,30 @@ Pendant les mois de sécheresse, les prélèvements d'eau agricole destinés à 
 | **Gestion par DSP Privée** | 68 % de la population | Varié | Sur-tarification (>4,20 €/m³) et manque d'investissement |
 | **Tarification Estivale** | Tarification linéaire | Tarification progressive | Surconsommation des résidences secondaires non pénalisée |
 
-## V. Actions citoyennes et retour en Régie Publique
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de gestion de l'eau
 
-    
-
-La reconquête de la souveraineté hydraulique passe par la remunicipalisation de l'eau (retour en régie publique directe) et l'exigence de transparence de la part des maires et présidents d'intercommunalités.
-
-    
+La reconquête de la souveraineté hydraulique corse impose de rendre publics les contrats de délégation, les bilans de fuite et les tarifs appliqués par les délégataires privés. Quatre démarches CADA concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux contrats originaux de DSP eau potable et à leurs avenants
+Saisissez la présidence de votre EPCI ou de votre syndicat intercommunal des eaux pour obtenir le contrat complet de délégation de service public avec Kyrnolia/Veolia, Saur ou Suez, incluant les grilles tarifaires, les formules d'indexation du prix du m³ et les objectifs de réduction des fuites. Ces contrats sont communicables dans leur intégralité (Art. L. 1411-13 CGCT).
 
-### 📌 Action CADA Préconisée : Demande du rapport RPQS eau potable
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux rapports annuels de délégataire (RPQS Eau)
+Exigez du délégataire le Rapport Annuel sur le Prix et la Qualité du Service de l'Eau (RPQS), document obligatoire (Art. L. 2224-5 CGCT), qui détaille les volumes produits, les fuites en réseau (rendement), les investissements réalisés et les indicateurs de performance contractuels.
 
-En vertu du Code Général des Collectivités Territoriales (article L. 2224-5), exigez de votre mairie ou syndicat d'eau la communication du Rapport Annuel sur le Prix et la Qualité du Service (RPQS). Si la commune refuse de publier le taux de fuite officiel, saisissez immédiatement la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux redevances de prélèvement d'eau brute facturées par l'OEHC
+Demandez à l'Office d'Équipement Hydraulique de Corse (OEHC) les bordereaux de facturation des redevances de prélèvement d'eau brute sur les barrages de Rizzanese, Calacuccia et Sampolo adressés aux distributeurs privés, ainsi que les volumes réels extraits par exercice annuel.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux analyses bactériologiques et arrêtés d'injonction de travaux ARS
+Saisissez l'Agence Régionale de Santé de Corse pour obtenir les résultats des analyses bactériologiques et physico-chimiques des réseaux d'eau potable par commune, ainsi que les arrêtés d'injonction de travaux de mise aux normes des stations d'épuration des collectivités défaillantes.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

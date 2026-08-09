@@ -75,27 +75,30 @@ De même, en Balagne, le Camp Raffalli (base du 2e Régiment Étranger de Parach
 | **Base Navale Aspretto / Ajaccio** | 18 Hectares | Front de mer stratégique dans le golfe | Blocage des projets d'extension portuaire civile |
 | **Ensemble des Emprises Défense** | > 2 800 Hectares | Terres agricoles et littorales de 1er ordre | Zéro compensation fiscale versée aux communes |
 
-## V. Actions de rétrocession et démarches CADA
+## V. Préconisations juridiques et démarches CADA d'accès aux actes immobiliers et cartographiques des emprises militaires
 
-    
-
-La restitution des emprises militaires non inutilisées aux communes et à la Collectivité de Corse est une condition indispensable du rééquilibrage foncier insulaire.
-
-    
+La rétrocession progressive des emprises militaires sous-utilisées au bénéfice de l'île passe par la connaissance précise de leur inventaire et de leur coût fiscal. Quatre démarches CADA essentielles :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès au Tableau Général des Propriétés Immobilières de l'État (TGPIE) pour la Corse
+Demandez à la Direction de l'Immobilier de l'État (DIE / DGFiP) l'extrait du Tableau Général des Propriétés Immobilières de l'État (TGPIE) listant toutes les parcelles militaires détenues par le Ministère des Armées sur le territoire de la Corse-du-Sud et de la Haute-Corse, avec leur superficie, leur affectation et leur état d'utilisation.
 
-### 📌 Action CADA Préconisée : Demande de la carte des servitudes militaires
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux cartes de servitudes militaires d'inconstructibilité
+Saisissez la DDTM de Haute-Corse et de Corse-du-Sud pour obtenir les cartes actualisées des servitudes d'utilité publique militaires (SUP PM1, PM2, PM3) grevant les communes limitrophes des bases de Solenzara, Calvi, Aspretto et San Damiano.
 
-Demandez à la DDTM de votre département la communication intégrale des périmètres de servitudes d'inconstructibilité liées aux installations de la Défense. En cas de refus pour motifs de secret défense exagérés sur des zones civiles, saisissez la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux bilans d'exonération de taxe foncière des emprises militaires
+Demandez à la DRFiP de Corse le montant cumulé annuel des exonérations de taxe foncière sur les propriétés bâties (TFPB) et non bâties (TFPNB) dont bénéficient les emprises militaires en Corse, et le manque à gagner pour les budgets communaux.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux délibérations de concession de la Base Navale d'Aspretto
+Saisissez le Ministère des Armées pour obtenir les termes actuels de la convention de mise à disposition de la base navale d'Aspretto (Ajaccio) à la Marine nationale : superficie concédée, durée, redevance versée à la Collectivité de Corse et clauses de rétrocession.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

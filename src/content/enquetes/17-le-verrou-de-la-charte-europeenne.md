@@ -74,27 +74,30 @@ Aujourd'hui, moins de 15 % des enfants en âge scolaire utilisent le corse au qu
 | **Couverture Audiovisuelle Nationale** | Marginale / Subsidiaire | Absence de sous-titrage et budgets restreints |
 | **Soutien Populaire Co-officialité** | > 86% de la population | Adhésion massive constatée par sondages |
 
-## V. Actions de transmission et souveraineté culturelle
+## V. Actions de transmission et de souveraineté culturelle — Démarches CADA
 
-    
-
-La reconquête de la langue exige l'inscription de la co-officialité dans la révision constitutionnelle d'autonomie et le soutien aux filières d'immersion citoyennes (Scola Corsa).
-
-    
+La défense de la langue corse face au verrou de la Charte Européenne des Langues Régionales non ratifiée implique l'accès aux données réelles de l'enseignement bilingue et aux blocages institutionnels. Quatre démarches :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux rapports d'effectifs de l'enseignement bilingue du Rectorat de Corse
+Saisissez le Rectorat de Corse pour obtenir les statistiques annuelles du nombre d'élèves inscrits dans des sections bilingues français-corse dans le public (primaire, collège, lycée), le nombre d'enseignants bilingues certifiés et les communes où l'offre bilingue fait défaut.
 
-### 📌 Action Citoyenne Préconisée : Inscription des enfants en filière bilingue
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux délibérations de l'Assemblée de Corse sur l'officialisation de la langue
+Demandez à l'Assemblée de Corse les procès-verbaux des délibérations relatives aux propositions de co-officialité de la langue corse, aux motions transmises au gouvernement et aux réponses (ou silences) de la Chancellerie sur la révision constitutionnelle attendue.
 
-Exigez de l'inspection académique de votre secteur l'ouverture d'une section bilingue ou l'accès aux écoles associatives Scola Corsa. Saisissez la CADA pour obtenir les effectifs réels d'enseignants bilingues affectés dans votre commune.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux notes juridiques du Conseil d'État sur la Charte Européenne des Langues
+Saisissez le Secrétariat Général du Gouvernement pour obtenir les avis du Conseil d'État sur la constitutionnalité de la ratification par la France de la Charte Européenne des Langues Régionales ou Minoritaires, notamment les réserves formulées après les arrêts de 1999 et 2015.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux conventions de financement croisé Éducation Nationale / Collectivité
+Demandez au Rectorat de Corse et à la Collectivité de Corse les conventions de cofinancement des postes d'enseignants de langue corse et des dispositifs d'immersion associatifs (Scola Corsa, Cullettività d'Istruzione), avec les engagements pluriannuels et les bilans d'exécution.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

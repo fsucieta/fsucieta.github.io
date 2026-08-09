@@ -73,27 +73,30 @@ Résultat : le Centre Hospitalier de Bastia accumule une dette de structure colo
 | **Évacuations Sanitaires (EVASAN)** | > 25 000 transferts / an | > 90 M€ / an (siphonnés vers PACA) | Éxil médical forcé des familles et malades corses |
 | **Structure CHU de Plein Exercice** | 0 CHU (Seule région métropolitaine) | Manque à gagner d'investissements | Pénurie de spécialistes et délais d'urgence allongés |
 
-## V. Actions de souveraineté sanitaire et recours CADA
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de financement sanitaire
 
-    
-
-La création d'un CHU de Corse (sur deux sites Bastia-Ajaccio) et la médicalisation de plein exercice de la faculté de santé de l'Université de Corse constituent une exigence vitale.
-
-    
+La construction d'une souveraineté sanitaire insulaire passe par la transparence des flux financiers de l'ARS et des conditions d'évacuation des patients. Quatre démarches CADA :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux registres d'ordres de vol et de facturation des EVASAN
+Saisissez l'ARS de Corse pour obtenir les statistiques annuelles des évacuations sanitaires (EVASAN) depuis la Corse vers les CHU continentaux : nombre, destination, pathologies (anonymisées), coût unitaire moyen et financeur (Sécurité Sociale, État, Collectivité).
 
-### 📌 Action CADA Préconisée : Accès aux rapports de sécurité sanitaire ARS
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux arrêtés de dotation budgétaire T2A des hôpitaux de Bastia et Ajaccio
+Demandez à l'ARS de Corse les arrêtés annuels de dotation T2A (Tarification à l'Activité) de l'État aux Centres Hospitaliers de Bastia et d'Ajaccio, incluant les financements des missions d'intérêt général (MIG) et les forfaits de continuité des soins insulaires.
 
-Saisissez l'Agence Régionale de Santé (ARS de Corse) pour obtenir la communication des bilans d'audit sur la sécurité des soins et le taux de vacance des postes de spécialistes aux hôpitaux de Bastia, Ajaccio, Corte, Sartène et Porto-Vecchio.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux conventions de partenariat sanitaire avec l'AP-HM et le CHU de Nice
+Saisissez le Ministère de la Santé pour obtenir les conventions de partenariat médical et de transfert de compétences signées entre les hôpitaux corses et les CHU de Marseille (AP-HM) et de Nice, notamment les clauses de développement de la télémédecine et de formation des médecins spécialistes sur l'île.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports d'audit de sécurité des urgences (DREES / Inspection Générale)
+Demandez à la DREES (Direction de la Recherche, des Études, de l'Évaluation et des Statistiques) les rapports d'inspection des services d'urgences des hôpitaux corses : taux de saturation, délais de prise en charge, risques liés aux délestages de patients et incidents signalés.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

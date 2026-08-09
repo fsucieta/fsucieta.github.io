@@ -74,27 +74,30 @@ De même, les compagnies de location de véhicules et les compagnies maritimes p
 | **Commerces Ruraux Traditionnels** | - 40 % de fermetures | Concurrence des grandes enseignes & plateformes | Désertification commerciale de l'intérieur |
 | **Emplois Saisonniers Touristiques** | 72 % de CDD < 4 mois | Précarisation structurelle | Prise en charge hivernale par l'assurance chômage locale |
 
-## V. Actions de souveraineté économique et circuits courts
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de collecte fiscale touristique
 
-    
-
-La reconquête des bénéfices de la saison passe par la priorité absolue aux circuits courts paysans corses, la taxation des plus-values des plateformes et la création d'un label d'achat local engagé.
-
-    
+Freiner l'évasion des capitaux touristiques suppose de rendre publics les flux de la taxe de séjour, des revenus de plateformes et des aides à la promotion. Quatre démarches concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux registres de collecte de la taxe de séjour par commune
+Saisissez chaque mairie ou EPCI pour obtenir les tableaux de bord annuels de collecte de la taxe de séjour (montants collectés par type d'hébergement, nuitées déclarées par opérateur). Vérifiez le ratio entre les nuitées déclarées sur Airbnb et Booking et les montants réellement reversés.
 
-### 📌 Action Citoyenne Préconisée : Exigence de la Taxe de Séjour réelle
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux données IEDOM/Banque de France sur les flux de cartes bancaires
+Demandez à l'IEDOM le bulletin de suivi des flux de paiement CB en Corse, notamment la comparaison entre les encaissements en haute saison et les réinjections dans les crédits aux professionnels locaux. Ces données permettent de mesurer le siphonnage structurel de la liquidité estivale.
 
-Demandez au conseil municipal de votre commune le registre de collecte de la taxe de séjour payée par les plateformes de location. Exigez la réallocation intégrale de ces recettes vers le soutien aux producteurs locaux et aux transports publics communaux.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux déclarations fiscales d'IS des plateformes numériques (Airbnb, Booking)
+Demandez à la DRFiP de Corse les statistiques agrégées de chiffre d'affaires et d'impôt sur les sociétés déclarés par les plateformes de location touristique opérant en Corse. Ces données sont en partie disponibles via le rapport annuel sur les taxes sur les services numériques (DST/TSN).
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux conventions d'aide régionale à la promotion touristique
+Saisissez l'Agence du Tourisme de Corse (ATC) pour obtenir la liste et le montant des conventions de subvention accordées à des agences de communication et offices du tourisme, avec les obligations de résultats contractuelles et les rapports d'exécution.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

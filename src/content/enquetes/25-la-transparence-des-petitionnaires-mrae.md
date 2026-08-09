@@ -74,27 +74,30 @@ La jurisprudence du Conseil d'État est formelle : en cas de fractionnement inte
 | **Projets Multi-SCI Fractionnés** | ~ 18% des dossiers | Stratégie d'évitement des études d'impact |
 | **Mobilisation Enquêtes Publiques**| + 150% de participation| Vigilance citoyenne accrue via le numérique |
 
-## V. Actions de vérification environnementale et saisine CADA
+## V. Actions de vérification environnementale et saisine CADA — MRAe et Pétitionnaires
 
-    
-
-La protection des espaces naturels exige la vérification systématique de l'identité réelle des gérants de SCI sur la plateforme INPI RBE.
-
-    
+La protection des espaces naturels corses contre les projets d'aménagement portés par des pétitionnaires opacifiés passe par la vérification systématique de leur identité et de la robustesse de leurs études d'impact. Quatre démarches CADA :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Demande des arrêtés d'examen au cas par cas de la MRAe Corse
+Saisissez la Mission Régionale d'Autorité Environnementale (MRAe) de Corse pour obtenir les arrêtés d'examen au cas par cas rendus sur les projets d'aménagement soumis à sa compétence (lotissements, campings, zones d'activité, carrières, parcs éoliens). Vérifiez si l'étude d'impact intégrale a bien été exigée ou si elle a été dispensée sans justification.
 
-### 📌 Action CADA Préconisée : Demande des pièces de l'enquête publique
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux fiches RBE des pétitionnaires (INPI / Infogreffe)
+Exigez via la plateforme inpi.fr ou les greffes des tribunaux de commerce de Bastia et Ajaccio les fiches du Registre des Bénéficiaires Effectifs des sociétés pétitionnaires (SCI, SASU, SAS) portant des projets d'aménagement en zone naturelle ou agricole. L'identité réelle des associés ultimes est un élément essentiel de l'évaluation environnementale.
 
-Exigez de la préfecture ou du commissaire enquêteur la communication intégrale du dossier d'étude d'impact et des avis de la MRAe sur tout projet d'aménagement dans votre commune. En cas de refus, saisissez la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux dossiers d'évaluation d'impact environnemental morcelés (délit de fractionnement)
+Demandez à la Préfecture les dossiers de demandes d'autorisation déposés par le même pétitionnaire ou ses ayants droit sur des parcelles contiguës dans une commune sur une période de 5 ans : le fractionnement des dossiers pour éviter le seuil d'évaluation environnementale est une pratique illégale (Art. L. 122-1 Code de l'Environnement).
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux avis sanitaires de l'ARS sur les rejets liés aux projets d'aménagement
+Saisissez l'ARS de Corse pour obtenir les avis sanitaires rendus sur les projets d'aménagement susceptibles d'impacter les nappes phréatiques, les captages d'eau potable et les zones baignade autour des zones côtières. Ces avis sont obligatoirement intégrés aux dossiers d'enquête publique (Art. R. 123-8 Code de l'Environnement).
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

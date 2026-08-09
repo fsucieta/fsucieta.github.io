@@ -73,27 +73,30 @@ Pendant ce temps, les routes forestières s'dégradent sous le poids des camions
 | **Volume de Bois Abattu (ONF)** | 70 000 m³ / an | Moins de 22 % transformés sur place | > 75 % exportés en grumes brutes (Italie/Continent) |
 | **Balance Commerciale Bois** | Déficit de 85 M€ / an | Importation totale de matériaux finis | Réimportation du bois corse usiné 5 à 8 fois plus cher |
 
-## V. Actions pour une filière forestière souveraine et recours CADA
+## V. Préconisations juridiques et démarches CADA d'accès aux actes de gestion forestière
 
-    
-
-Le développement d'une filière bois souveraine exige l'obligation de première transformation sur le sol corse pour toutes les coupes issues des forêts publiques communales et territoriales.
-
-    
+La mise en lumière du pillage forestier organisé exige l'accès aux registres de coupes, aux manifestes d'exportation et aux bilans de la politique sylvicole conduite par l'État en Corse. Quatre démarches CADA concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux procès-verbaux d'adjudication des coupes de bois domaniales ONF
+Demandez à l'Office National des Forêts (ONF, Agence Territoriale de Corse) les procès-verbaux d'adjudication de toutes les ventes de coupes de bois en forêts domaniales et communales sur les 10 dernières années, avec les volumes vendus, les prix et l'identité des acheteurs.
 
-### 📌 Action CADA Préconisée : Demande des registres d'adjudications ONF
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux manifestes douaniers d'exportation de grumes brutes
+Saisissez la Direction Régionale des Douanes et Droits Indirects de Corse pour obtenir les statistiques d'exportation de bois ronds (grumes) et de bois débités non transformés vers l'Italie, via les ports de Bastia, Ajaccio et Propriano. Ces données sont communicables au titre de la transparence des échanges commerciaux.
 
-Demandez au conseil municipal de votre commune ou à la Direction Régionale de l'ONF la copie des procès-verbaux de vente de coupes de bois forestier décidées sur le territoire communal. En cas de rétention des bordereaux de vente et des prix au m³, déposez un recours CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux rapports d'inventaire forestier Agreste/DRAAF
+Demandez à la DRAAF de Corse les derniers rapports d'inventaire forestier régional (taux de boisement, espèces, volumes sur pied) ainsi que les bilans de sylviculture et de régénération naturelle publiés par le service statistique Agreste.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux conventions et subventions accordées aux scieries et exploitants forestiers
+Saisissez la DRAAF et la Collectivité de Corse pour obtenir la liste des subventions régionales et nationales accordées aux scieries et exploitants forestiers ayant opéré en Corse, avec les contreparties de transformation locale exigées et effectivement respectées.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

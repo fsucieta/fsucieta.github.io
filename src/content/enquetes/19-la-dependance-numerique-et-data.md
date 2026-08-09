@@ -74,27 +74,30 @@ Cette fracture numérique intralocale pénalise l'installation de jeunes télét
 | **Fibre Rurale (Corsica Fibra)** | Déploiement partiel | Blocages abonnés par sous-traitance |
 | **Cloud Souverain Territorial** | 0% (Inexistant) | Données publiques hébergées hors de Corse |
 
-## V. Actions pour la souveraineté numérique insulaire
+## V. Actions pour la souveraineté numérique insulaire — Démarches CADA
 
-    
-
-La souveraineté numérique exige la construction d'un Datacenter Souverain Territorial en Corse et le déploiement d'un câble de fibre optique de secours sous contrôle direct des institutions insulaires.
-
-    
+Reconquérir la souveraineté numérique de la Corse exige de rendre publics les contrats d'hébergement des données publiques et les failles de sécurité du réseau d'infrastructures numériques insulaire. Quatre démarches :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès au cahier des charges du réseau fibre Corsica Fibra
+Demandez à la Collectivité de Corse les documents constitutifs du Réseau d'Initiative Publique (RIP) Corsica Fibra : cahier des charges technique, contrat de DSP avec l'opérateur retenu, carte de déploiement par commune et engagements de couverture des zones blanches.
 
-### 📌 Action CADA Préconisée : Demande des contrats d'hébergement informatique
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux contrats d'hébergement cloud des données publiques des collectivités corses
+Saisissez la Collectivité de Corse, les Conseils Départementaux et les principales intercommunalités pour obtenir les contrats d'hébergement cloud de leurs données sensibles (état civil, données fiscales, SI ressources humaines) et vérifier la conformité RGPD et la localisation physique des serveurs.
 
-Saisissez le président de votre intercommunalité ou votre maire pour obtenir la copie des contrats d'hébergement des serveurs et données d'état civil. Exigez la vérification de la conformité RGPD et du lieu de stockage physique des serveurs.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux déclarations ARCEP des câbles sous-marins de télécommunications
+Demandez à l'ARCEP (Autorité de Régulation des Communications Électroniques et des Postes) la liste des déclarations d'atterrage et d'exploitation des câbles sous-marins de fibre optique reliant la Corse au continent (Marseille, Gênes) et l'état de leurs redondances.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux rapports d'audit de cybersécurité de l'ANSSI
+Saisissez l'Agence Nationale de la Sécurité des Systèmes d'Information (ANSSI) pour obtenir les recommandations publiques et les éventuels incidents déclarés concernant les systèmes d'information critiques des institutions corses (hôpitaux, collectivités, préfectures).
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

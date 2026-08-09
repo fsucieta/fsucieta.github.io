@@ -74,27 +74,30 @@ Les étals de la grande distribution regorgent de clementines espagnoles, de cha
 | **Concentration des Aides** | > 120 000 € / an | Perçus par les 10% de plus grands déclarants |
 | **Évolution des Élevages Réels** | - 30% en 20 ans | Déclin des vrais producteurs insulaires |
 
-## V. Actions de réforme et de transparence citoyenne
+## V. Actions de réforme et de transparence citoyenne — Primes PAC
 
-    
-
-La reconquête de la souveraineté alimentaire exige le conditionnement strict des primes PAC à la production effective livrée sur le marché local et le transfert de l'instruction des aides à l'ODARC.
-
-    
+La reconquête de la souveraineté alimentaire face à l'accaparement des primes PAC impose de forcer la transparence sur les attributaires réels des aides européennes en Corse. Quatre démarches CADA :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès au Registre Parcellaire Graphique (RPG) anonymisé de votre commune
+Demandez à la DRAAF de Corse les cartes anonymisées du Registre Parcellaire Graphique (RPG) des surfaces agricoles déclarées en TéléPAC sur votre territoire : superficie réelle des pâturages déclarés, type de couverture des sols et cohérence avec la réalité visible (maquis, zones urbanisées).
 
-### 📌 Action CADA Préconisée : Accès au Registre Parcellaire Graphique (RPG)
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux procès-verbaux de contrôle sur place du cheptel (ODARC / DRAAF)
+Saisissez l'ODARC (Office de Développement Agricole et Rural de Corse) et la DRAAF pour obtenir les procès-verbaux de contrôle sur place des effectifs de cheptel bovins, ovins et caprins des exploitants déclarant des primes à l'animal sur votre commune. Le taux de fraude constaté par les agents est un indicateur clé.
 
-Saisissez la DRAAF de Corse pour obtenir les cartes anonymisées du Registre Parcellaire Graphique (RPG) des surfaces déclarées sur votre commune. Vérifiez la réalité des pâturages déclarés en zone de maquis inconstructible.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux délibérations de la CDOA sur l'attribution des droits à prime PAC
+Demandez à la Commission Départementale d'Orientation de l'Agriculture (CDOA) de Haute-Corse et de Corse-du-Sud les procès-verbaux des séances ayant statué sur l'attribution, le transfert et la consolidation des droits à prime PAC entre exploitants. Ces délibérations permettent de tracer les transferts entre grandes exploitations et petits éleveurs.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux fiches de signalement de fraudes transmises à l'ASP et au Parquet National Financier
+Saisissez l'Agence de Services et de Paiement (ASP) et les Procureurs de la République de Bastia et Ajaccio pour obtenir les statistiques annuelles des fraudes aux aides PAC détectées en Corse : montants indûment perçus, procédures de recouvrement engagées et affaires transmises au Parquet National Financier (PNF).
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

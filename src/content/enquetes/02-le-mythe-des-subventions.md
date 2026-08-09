@@ -74,27 +74,30 @@ De plus, le Programme Exceptionnel d'Investissement (PEI), mis en place au débu
 | **Impôt sur les Sociétés (IS)** | > 180 M€ / an | Sièges sociaux (Île-de-France) | Spoliation du PIB net et des recettes locales |
 | **Dotations Santé (T2A)** | Déficit structurel | Hôpitaux Bastia / Ajaccio | Calculé sur la population hivernale résiduelle |
 
-## V. Démarches citoyennes et souveraineté d'assiette fiscale
+## V. Préconisations juridiques et démarches CADA d'accès aux actes fiscaux et subventionnels publics
 
-    
-
-La résolution de cette spoliation budgétaire passe par l'instauration d'une autonomie fiscale avec transfert du pouvoir d'assiette et de taux sur les impôts directs et indirects, à l'image du statut des régions autonomes d'Europe (Pays Basque, Catalogne, Baléares, Sardaigne).
-
-    
+La déconstruction du mythe des subventions exige de rendre publics les réels flux financiers entre l'État, la Collectivité de Corse et les opérateurs économiques insulaires. Voici quatre leviers d'action CADA concrets :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux états consolidés de TVA touristique collectée en Corse
+Saisissez la DRFiP de Corse pour obtenir les tableaux anonymisés de TVA collectée par secteur (transport maritime, aérien, hôtellerie, grande distribution) entre juin et septembre. Ces statistiques sont des documents administratifs communicables au titre de l'accès aux données fiscales territoriales agrégées. **Délai légal : 30 jours.**
 
-### 📌 Action CADA Préconisée : Demande de bilan des recettes de TVA locales
+---
 
-        
+### 📌 Action CADA n°2 : Accès au registre d'attribution du Crédit d'Impôt CIIC (Art. 244 quater E CGI)
+Exigez du comité régional de validation le registre nominatif des entreprises bénéficiaires du Crédit d'Impôt pour Investissement en Corse, avec les montants accordés, les secteurs éligibles et la nature des investissements déclarés. Ces données sont communicables au titre de la transparence des aides d'État (Art. R. 311-12 CRPA).
 
-Exigez de la Direction Régionale des Finances Publiques (DRFiP de Corse) la communication du recueil statistique REPAD détaillant le produit net annuel de la TVA collectée par commune et par secteur d'activité dans les deux départements insulaires.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux bordereaux de TASCOM des hypermarchés corses
+Demandez à la Préfecture de Haute-Corse (2B) et de Corse-du-Sud (2A) les montants annuels de Taxe sur les Surfaces Commerciales (TASCOM) acquittés par les surfaces supérieures à 400 m² et leur clé de redistribution communale. Ces recettes sont souvent captées par les établissements publics de coopération intercommunale sans fléchage territorial explicite.
 
-    
+---
+
+### 📌 Action CADA n°4 : Accès aux procès-verbaux de la commission DETR/DSIL
+Saisissez le SGAR (Secrétariat Général aux Affaires Régionales) de la Préfecture de Région pour obtenir les procès-verbaux complets des commissions d'arbitrage préfectorales de la Dotation d'Équipement des Territoires Ruraux (DETR) et de la Dotation de Soutien à l'Investissement Local (DSIL). Vérifiez les critères d'arbitrage entre les communes rurales et les agglomérations.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

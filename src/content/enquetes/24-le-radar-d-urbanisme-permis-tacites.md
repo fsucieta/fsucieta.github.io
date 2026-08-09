@@ -74,27 +74,30 @@ Ce manque de transparence prive les élus territoriaux des outils d'arbitrage r�
 | **Recours Citoyens Rejetés** | > 35% | Pour déchéance de délai d'affichage |
 | **Artificialisation Annuelle** | > 320 Hectares / an | Mitage des zones agricoles et naturelles |
 
-## V. Actions de détection citoyenne et recours CADA
+## V. Actions de détection citoyenne et recours CADA — Permis Tacites
 
-    
-
-La neutralisation des permis tacites spéculatifs exige la publication obligatoire en ligne de toutes les demandes de permis dès leur dépôt en mairie.
-
-    
+Neutraliser les permis de construire tacites utilisés à des fins spéculatives passe par la publicité des registres de dépôts et des procédures de contestation. Quatre démarches CADA concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Demande du registre chronologique de dépôt des permis de construire en mairie
+Saisissez le service d'urbanisme de votre mairie pour obtenir la copie intégrale du registre chronologique de dépôt des demandes de permis de construire (CERFA), d'autorisation de travaux et de déclarations préalables : date de dépôt, nature du projet, demandeur (identité ou dénomination sociale), décision rendue.
 
-### 📌 Action CADA Préconisée : Demande du registre des dépôts d'urbanisme
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux récépissés de délivrance de permis tacites (Art. R. 424-1 CU)
+Demandez à la mairie et à la DDTM les listes des permis de construire nés tacitement du silence gardé par l'administration au-delà du délai d'instruction légal (2 à 5 mois selon les zones). Ces permis sont des décisions implicites d'acceptation communicables dans leur intégralité.
 
-Saisissez le service d'urbanisme de votre mairie pour obtenir la copie intégrale du registre chronologique de dépôt des demandes de permis de construire (CERFA). En cas de rétention, déposez immédiatement une saisine CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès à la base Sitadel2 de la DREAL Corse sur les mises en chantier
+Demandez à la DREAL de Corse les données extraites de la base Sitadel2 concernant les autorisations de construire et les mises en chantier annuelles dans votre commune ou intercommunalité, ventilées par type de logement (résidence principale/secondaire, individuel/collectif).
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux procès-verbaux de constatation de défaut d'affichage sur les chantiers
+Saisissez la DDTM pour obtenir les procès-verbaux de constatation de défaut d'affichage réglementaire sur les chantiers de votre commune (absence du panneau permis de construire obligatoire). Ces infractions raccourcissent artificiellement les délais de recours des tiers et constituent une violation de l'Art. A. 424-15 du Code de l'Urbanisme.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

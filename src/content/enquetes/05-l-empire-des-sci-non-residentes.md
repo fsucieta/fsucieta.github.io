@@ -74,27 +74,30 @@ Un des phénomènes les plus préoccupants mis en lumière par notre audit conce
 | **Taux de Vacance Annuelle** | > 320 jours / an | Biens à usage estival exclusif | Phénomène de "villages fantômes" en hiver |
 | **Parcelles Littorales Remarquables** | > 72 % en Corse-du-Sud | Domiciliation hors de Corse | Éradication de l'accès au logement local |
 
-## V. Actions de contrôle citoyen via la plateforme INPI et le Cadastre
+## V. Préconisations juridiques et démarches CADA d'accès aux actes constitutifs des SCI
 
-    
-
-La transparence des sociétés est désormais un droit garanti par la loi. Tout citoyen peut vérifier la propriété réelle d'une parcelle en croisant les outils publics gratuits.
-
-    
+Démanteler le réseau des SCI écran littorales exige d'accéder aux documents constitutifs et aux registres de propriété effective. Quatre démarches CADA permettent de percer l'opacité :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux fiches RBE du Registre des Bénéficiaires Effectifs (INPI)
+Demandez auprès du greffe du Tribunal de Commerce de Bastia ou d'Ajaccio (ou directement sur inpi.fr) les fiches du Registre des Bénéficiaires Effectifs (RBE) des SCI enregistrées dans les communes littorales. Ces fiches révèlent l'identité réelle des associés détenant plus de 25 % du capital ou des droits de vote. **Obligation légale (Art. L. 561-46 CMF).**
 
-### 📌 Action Citoyenne Préconisée : Identification des Bénéficiaires Effectifs
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux permis de construire accordés aux SCI en zone littorale
+Saisissez le service d'urbanisme de la mairie concernée ou la DDTM pour obtenir les dossiers complets de permis de construire accordés à des SCI non-résidentes dans les zones proches du rivage (bande des 100 m, espaces remarquables). En cas de refus, recours immédiat devant la CADA.
 
-Relevez la référence cadastrale d'un chantier suspect sur votre commune via `cadastre.gouv.fr`, identifiez le nom de la SCI sur l'affichage du permis de construire, puis téléchargez gratuitement l'extrait RBE du gérant sur `data.inpi.fr` pour vérifier la légalité de la déclaration.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux conventions de PUP prenant en charge les travaux desservant les lotissements SCI
+Demandez aux mairies concernées les conventions de Projet Urbain Partenarial (PUP) dans lesquelles la collectivité s'est engagée à financer l'extension des réseaux (eau, voirie, assainissement) desservant des lotissements ou résidences développés par des SCI privées.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux DIA transmises à la SAFER
+Saisissez la SAFER de Corse pour obtenir les déclarations d'intention d'aliéner (DIA) concernant les ventes de parts sociales de SCI détentrices de foncier agricole ou forestier. Le droit de préemption de la SAFER s'applique dès lors qu'une telle cession constitue une prise de contrôle d'une société agricole (Art. L. 141-1 CRPM).
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

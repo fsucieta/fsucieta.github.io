@@ -74,27 +74,30 @@ Cependant, le rythme de reconstitution reste insuffisant face à l'offensive des
 | **Actes de Notoriété GIRTEC** | > 12 000 dossiers | Résolutions foncières opérées |
 | **Impact Fiscal Communal** | Manque à gagner majeur | Perte sur TFNB (Taxe Foncière Non Bâtie) |
 
-## V. Actions de sécurisation patrimoniale et démarches notariales
+## V. Actions de sécurisation patrimoniale et démarches notariales — Arrêtés Miot
 
-    
-
-La preservation de la terre familiale exige la saisine rapide des notaires et l'utilisation de l'acte de notoriété acquisitive pour purger l'indivision.
-
-    
+La protection du patrimoine foncier familial corse dans le contexte spécifique des exonérations fiscales héritées des Arrêtés Miot et du régime CGI 750 bis A passe par quatre démarches concrètes :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux registres des actes de notoriété prescriptifs établis par le GIRTEC
+Demandez au Groupement d'Intérêt Public pour le Remembrement et la Titration en Corse (GIRTEC) les données sur le nombre d'actes de notoriété acquisitive (prescription trentenaire) établis par commune et par année, ainsi que le nombre de dossiers en attente de régularisation.
 
-### 📌 Action Citoyenne Préconisée : Saisine du GIRTEC et Titration
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux arrêtés d'exonération de droits de succession appliqués (DRFiP)
+Saisissez la DRFiP de Corse pour obtenir les statistiques agrégées sur l'application de l'exonération de droits de succession des biens immobiliers corses (Art. 750 bis A CGI), avec les montants d'imposition différée et les risques de rappel en cas de cession avant l'expiration du délai légal.
 
-Si vous possédez des biens familiaux de village non titrés depuis plus de 30 ans, déposez une demande d'accompagnement gratuit auprès du GIRTEC (`girtec.fr`) pour dresser un acte de notoriété prescrit avant l'expiration des exonérations fiscales.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux extraits de la matrice cadastrale pour les parcelles sans maître
+Saisissez la DGFiP pour obtenir les extraits de la matrice cadastrale des parcelles non titrées ou en déshérence susceptibles d'être incorporées au domaine communal ou de faire l'objet de procédures de bornage et d'appropriation par des tiers.
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux procès-verbaux de la Commission Foncière de la Collectivité de Corse
+Demandez à l'Assemblée de Corse les procès-verbaux et comptes-rendus de la Commission Foncière institutionnelle traitant des indivisions successorales, du recensement du foncier non titré et des propositions de simplification de l'acte de notoriété acquisitive.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 

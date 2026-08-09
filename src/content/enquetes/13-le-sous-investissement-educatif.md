@@ -74,27 +74,30 @@ De plus, pour les étudiants qui font le choix de rester étudier à Corte, la c
 | **Capacité d'Hébergement CROUS** | < 1 100 logements | > 4 750 étudiants inscrits | Crise majeure du logement étudiant à Corte |
 | **Fuite des Diplômés (Brain Drain)** | > 60 % des Bac+5 | Poursuite d'études/emploi continent | Perte définitive des jeunes cadres formés |
 
-## V. Recommandations pour une université souveraine et autonome
+## V. Recommandations pour une université souveraine et autonome — Démarches CADA
 
-    
-
-Le renforcement de la souveraineté intellectuelle corse passe par le transfert plein de la compétence de l'enseignement supérieur à la Collectivité de Corse et la création d'un fonds territorial de bourses de recherche d'excellence.
-
-    
+La construction d'une souveraineté intellectuelle et scientifique insulaire passe par le contrôle des flux budgétaires de l'État vers l'Université de Corse et par la transparence des obstacles à son développement. Quatre démarches CADA ciblées :
 
 ---
 
-        
+### 📌 Action CADA n°1 : Accès aux conventions pluri-annuelles de dotation de l'État à l'Université de Corse (MESR)
+Demandez au Ministère de l'Enseignement Supérieur et de la Recherche (MESR) les conventions d'objectifs et de moyens pluriannuelles (COM) signées avec l'Université Pascal Paoli de Corte, incluant les dotations de fonctionnement, les créations de postes enseignants et les financements de recherche alloués.
 
-### 📌 Action CADA Préconisée : Demande des conventions de dotations MESR
+---
 
-        
+### 📌 Action CADA n°2 : Accès aux registres d'attribution des logements étudiants du CROUS de Corte
+Saisissez le CROUS de Corte pour obtenir les données sur la capacité totale des résidences étudiantes, le taux de remplissage et les délais d'attente moyens pour un logement CROUS. En complément, demandez le nombre de dossiers d'aides d'urgence (FSDIE) instruits chaque année.
 
-Saisissez la Présidence de l'Université de Corse ou le MESR pour obtenir la copie de la convention pluriannuelle de moyens et d'objectifs (CPOM) signée avec l'État. En cas de refus de communication des indicateurs de sous-financement, saisissez la CADA.
+---
 
-    
+### 📌 Action CADA n°3 : Accès aux fiches de calcul de la dotation par étudiant
+Demandez au MESR le détail du calcul de la dotation globale de fonctionnement par étudiant inscrit à l'Université de Corse, comparé aux universités continentales de même taille. La charge d'insularité est-elle prise en compte dans la clé de répartition nationale ?
 
-                    
+---
+
+### 📌 Action CADA n°4 : Accès aux bilans d'aide régionale à la recherche et à la mobilité étudiante
+Saisissez la Collectivité de Corse pour obtenir le bilan annuel des bourses de mobilité étudiante, des contrats de recherche territoriaux et des conventions de partenariat université-entreprise financés par les fonds régionaux, avec les taux d'insertion professionnelle des diplômés associés.
+
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
