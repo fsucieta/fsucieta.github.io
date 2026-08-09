@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Spéculation Bâti Agricole & Bergeries
+
+| Type de Bâti Agricole | Nombre de Conversions | Usage Actuel Majoritaire | Prix Moyen m² Converti |
+| :--- | :--- | :--- | :--- |
+| **Anciennes Bergeries en Pierre** | 1 240 Batisses | Villa de Prestige / Saison | 🔴 4 800 € / m² |
+| **Hangars & Chais Vinicoles** | 310 Bâtiments | Locaux Commerciaux | ⚠️ 2 900 € / m² |
+| **Ruines Pastorales Remarquables** | 2 150 Sites | Projets de Reconstruction | 🔴 3 500 € / m² |

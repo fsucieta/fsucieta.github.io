@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Titration GIRTEC
+
+| Indicateur Foncier / Succession | Nombre de Dossiers Traités | Surface Sécurisée (Ha) | Taux d'Indivision |
+| :--- | :--- | :--- | :--- |
+| **Dossiers Titrés par GIRTEC** | 11 400 Actes | 38 500 Ha | ⚠️ 45% Restants en Indivision |
+| **Biens Sans Maître Reconnus** | 3 200 Parcels | 8 400 Ha | 🔴 Attribution Communes |
+| **Contestations Notariales** | 850 Procédures | 2 100 Ha | ⚠️ Blocage Succession |

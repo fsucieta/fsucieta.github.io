@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : L'Empire des SCI Non-Résidentes
+
+| Zone Littorale / Secteur | Nombre de SCI Non-Résidentes | Part du Parc Foncier | Bénéfiate Effectif Maj. |
+| :--- | :--- | :--- | :--- |
+| **Extrême-Sud (Porto-Vecchio/Bonifacio)** | 3 840 SCI | 42.8% | Holdings Européennes / Offshore |
+| **Balagne (Calvi/Rousse)** | 2 120 SCI | 38.2% | Sociétés Civiles Métropolitaines |
+| **Golfe d'Ajaccio & Valinco** | 2 950 SCI | 35.1% | Investisseurs Privés |

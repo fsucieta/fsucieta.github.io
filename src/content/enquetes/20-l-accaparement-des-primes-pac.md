@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Primes PAC & Accaparement Agricole
+
+| Type de Prime PAC | Montant Annuel Versé (M€) | Nombre de Bénéficiaires | Concentration des Aides |
+| :--- | :--- | :--- | :--- |
+| **Droits à Paiement de Base (DPB)** | 28.5 M€ | 1 420 Éleveurs | 🔴 20% Captent 68% des Aides |
+| **Primes Couplées Bovines/Oovines** | 14.2 M€ | 980 Exploitations | ⚠️ Contrôles Élevage Rapprochés |
+| **Aide ICHN (Montagne)** | 18.1 M€ | 1 150 Agriculteurs | ✅ Soutien Zones Difficiles |

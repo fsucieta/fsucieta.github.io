@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Contrôle de Légalité & Déférés Préfectoraux
+
+| Année d'Exercice | Délibérations Transmises | Déférés Préfectoraux | Taux d'Annulation TA |
+| :--- | :--- | :--- | :--- |
+| **2021** | 14 200 Délibérations | 42 Déférés | 78% Annulations |
+| **2022** | 15 100 Délibérations | 58 Déférés | 82% Annulations |
+| **2023** | 14 800 Délibérations | 64 Déférés | 85% Annulations |

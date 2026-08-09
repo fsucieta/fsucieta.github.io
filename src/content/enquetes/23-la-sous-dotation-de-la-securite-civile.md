@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Sécurité Civile & Moyens Anti-Incendie
+
+| Moyen de Secours / Flotte | Nombre d'Unités Positionnées | Temps de Réponse Moyen | Couverture Opérationnelle |
+| :--- | :--- | :--- | :--- |
+| **Canadair CL-415 (Saison)** | 2 Appareils | 35 Minutes | ⚠️ Dépendance Base Nîmes |
+| **Hélicoptères Dragon (Sécurité Civile)**| 2 Appareils | 12 Minutes | ✅ Interventions d'Urgence |
+| **Camions Citerne Feux de Forêt (CCF)**| 240 Véhicules | 18 Minutes | ✅ Maillage Sapeurs-Pompiers |

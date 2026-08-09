@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire & Épargne des Résidents
+
+| Type d'Épargne Résidente | Encours Total (Mld €) | Taux de Réinvestissement Local | Écart avec Métropole |
+| :--- | :--- | :--- | :--- |
+| **Livret A & LDD** | 3.2 Mld € | 22.4% | 🔴 -38% vs Réinvestissement Média |
+| **Comptes à Terme & Assurance-Vie** | 5.8 Mld € | 14.2% | 🔴 -45% Évasion Fiscale Siège |
+| **Crédits aux PME/TPE Locales** | 2.1 Mld € | 85.0% | ✅ Soutien Commerce Proximité |

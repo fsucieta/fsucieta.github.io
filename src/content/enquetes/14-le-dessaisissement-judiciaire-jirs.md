@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Dessaisissement Judiciaire & JIRS
+
+| Type de Procédure Judiciaire | Nombre de Dossiers Délocalisés | Juridiction de Remplacement | Délai Moyen de Jugement |
+| :--- | :--- | :--- | :--- |
+| **Dossiers Économiques & Financiers** | 142 Dossiers | JIRS de Marseille | 🔴 6.8 Ans (Délai Anormal) |
+| **Procédures Foncières & Urbanisme** | 85 Dossiers | Tribunal de Bastia/Ajaccio | ⚠️ 3.2 Ans |
+| **Saisines d'Atteinte à la Probité** | 38 Dossiers | PNF Paris / JIRS | 🔴 5.5 Ans |

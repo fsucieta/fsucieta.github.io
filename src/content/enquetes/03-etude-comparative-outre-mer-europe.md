@@ -216,3 +216,14 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Étude Comparative Foncière Insulaire
+
+| Territoire Insulaire | Statut Politique | Condition de Résidence Foncière | Validation Juridique / Jurisprudence |
+| :--- | :--- | :--- | :--- |
+| **Jersey** | Dépendance de la Couronne | 10 Ans (*Entitled Status*) | Loi Locale Validée 2012 |
+| **Polynésie Française** | COM Art. 74 Constitution | 3 à 5 Ans (*Loi du Pays*) | Conseil Constitutionnel 2009 |
+| **Îles Åland** | Province Autonome Finlandaise | 5 Ans (*Hembygdsrätt*) | Traité d'Adhésion UE 1994 |
+| **Sardaigne** | Région Autonome Italienne | Projets Régionaux 2007 | Arrêt Cour de Justice UE 2009 |

@@ -194,3 +194,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Emprise et Servitudes Militaires
+
+| Zone Militaire / Base | Surface Emprise (Ha) | Statut de Servitude | Impact Foncier Local |
+| :--- | :--- | :--- | :--- |
+| **Base Aérienne 126 Solenzara** | 550 Ha | Zone Défense Restreinte | 🔴 Blocage Urbanisme Communes |
+| **Champ de Tir de Diana / Ghisonaccia** | 1 200 Ha | Zone d'Exclusion Maritime | 🔴 Restriction Pêche & Aquacole |
+| **Citadelle de Calvi (Légion Étrangère)** | 45 Ha | Domaine de la Défense | ⚠️ Usage Touristique Restreint |

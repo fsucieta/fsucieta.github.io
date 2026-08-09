@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Capitaux Touristiques & IEDOM
+
+| Flux Touristique / Secteur | Recettes Estivales (M€) | Fuite de Capitaux Métropole | Retombée Locale Nette |
+| :--- | :--- | :--- | :--- |
+| **Plateformes Réservation (Airbnb/Booking)** | 320 M€ | 85% | 🔴 15% Taxes Locales |
+| **Grandes Enseignes Hôtelières** | 450 M€ | 78% | 🔴 22% Emplois Saisonniers |
+| **Compagnies Maritimes & Aériennes** | 580 M€ | 92% | 🔴 8% Redevances Ports |

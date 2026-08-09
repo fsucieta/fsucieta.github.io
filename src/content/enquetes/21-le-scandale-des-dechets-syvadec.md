@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Gestion des Déchets SYVADEC
+
+| Flux de Déchets / Filière | Tonnage Annuel (Tonnes) | Mode d'Élimination | Coût de Transport Maritime |
+| :--- | :--- | :--- | :--- |
+| **Déchets Ménagers Residuels (DMR)** | 185 000 Tonnes | Exportation Cargo Métropole | 🔴 18 M€ / An (Fret Cargo) |
+| **Tri Sélectif (Emballages/Verre)** | 35 000 Tonnes | Recyclage Continent | ⚠️ 4.2 M€ / An |
+| **Compostage & Matière Organique** | 12 000 Tonnes | Traitement Local | ✅ 0.8 M€ Economisé |

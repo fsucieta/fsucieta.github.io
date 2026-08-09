@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Droits Linguistiques & Charte Européenne
+
+| Instrument Juridique Européen | Statut de Ratification FR | Opposabilité en Justice | Impact Patrimonial |
+| :--- | :--- | :--- | :--- |
+| **Charte Européenne Langues Régionales** | Non Ratifiée (Art. 2 Constitution) | 🔴 Non Opposable | Restraint Usage Officiel |
+| **Convention-Cadre Minorités Nationales** | Non Signée | 🔴 Non Opposable | Restriction Droits |
+| **Code du Patrimoine (Langues Régionales)** | Article L. 211-1 | ✅ Opposable Partiel | Protection Enseignement |

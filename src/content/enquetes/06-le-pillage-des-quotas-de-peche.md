@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Quotas de Pêche et Ressources Maritimes
+
+| Espèce Pêchée / Quota | Quota National (Tonnes) | Attribution Insulaire | Écart d'Attribution |
+| :--- | :--- | :--- | :--- |
+| **Thon Rouge (Thunnus thynnus)** | 6 700 Tonnes | < 1.5% | 🔴 Sous-Allocation Majeure |
+| **Espadon (Xiphias gladius)** | 1 250 Tonnes | 2.1% | ⚠️ Restriction Flottille Local |
+| **Langouste Rouge (Palinurus elephas)** | Gestion Cantonale | 100% Locale | ✅ Pêche Artisanale Régulée |

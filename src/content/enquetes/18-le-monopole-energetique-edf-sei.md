@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Monopole Énergétique EDF-SEI
+
+| Centrale Énergétique | Puissance Installée (MW) | Combustible Majeur | Émissions CO2 / An |
+| :--- | :--- | :--- | :--- |
+| **Centrale du Vazzio (Ajaccio)** | 132 MW | Fioul Lourds / TAC | 🔴 450 000 Tonnes CO2 |
+| **Centrale de Lucciana (Bastia)** | 128 MW | Fioul Léger / Gasoil | 🔴 410 000 Tonnes CO2 |
+| **Énergies Renouvelables (Hydraulique/Solaire)**| 85 MW | Eau & Soleil | ✅ Zero Émission |

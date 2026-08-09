@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Permis de Construire Tacites R. 424-1
+
+| Secteur d'Urbanisme | Permis Tacites Détectés | Surface Plancher Totale | Statut de Recours Préfecture |
+| :--- | :--- | :--- | :--- |
+| **Littoral Extrême-Sud** | 142 Permis Tacites | 48 000 m² | 🔴 12% Seulement Déférés |
+| **Littoral Balagne** | 88 Permis Tacites | 28 500 m² | 🔴 15% Déférés |
+| **Agglomération Bastia/Ajaccio** | 115 Permis Tacites | 62 000 m² | ⚠️ 22% Déférés |

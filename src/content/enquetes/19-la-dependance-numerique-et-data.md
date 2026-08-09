@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Dépendance Numérique & Cables Data
+
+| Câble Sous-Marin / Fibre | Point d'Atterrissement | Débit Maximal (Tbps) | Propriétaire Majeur |
+| :--- | :--- | :--- | :--- |
+| **Câble Corsica-Continent (CC1)** | Ajaccio - Marseille | 1.2 Tbps | Orange / État |
+| **Câble Italo-Corse (CC2)** | Bastia - Livourne | 2.4 Tbps | Consortium Privé |
+| **Réseau Réseau Fibre Départemental** | 360 Communes | 10 Gbps | Concession RIP |

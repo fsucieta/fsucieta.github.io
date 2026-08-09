@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Dépendance Sanitaire et EVASAN
+
+| Indicateur Hospitalier / Santé | Coût / Volume Annuel | Prise en Charge CPAM | Écart d'Équipement |
+| :--- | :--- | :--- | :--- |
+| **Évacuations Sanitaires (EVASAN)** | 8 400 Transferts / An | 100% Secu | 🔴 Manque CHU Territorial |
+| **Transferts Héliportés d'Urgence** | 1 250 Vols / An | Budget ARS | ⚠️ Coût Transport Majeur |
+| **Plateau Technique Cancérologie** | 45 M€ Budget | Partiel | 🔴 Déplacement Obligatoire |

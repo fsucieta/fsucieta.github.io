@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Le Cadastre Minier Secret
+
+| Concession Minière | Matériaux / Ressources | Statut Juridique actuel | Risque Environnemental |
+| :--- | :--- | :--- | :--- |
+| **Site d'Amiante de Canari** | Chrysotile / Amiante | Domanialité Publique | ⚠️ Surveillance Risque Santé |
+| **Mines d'Argent de Argentella** | Plomb, Argent, Zinc | Cadastre Suspendu | 🔴 Pollution Sédimentaire |
+| **Gisement de Kupfer de Linguizzetta** | Cuivre / Pyrite | Exploration Fermée | ⚠️ Infiltration Nappe |

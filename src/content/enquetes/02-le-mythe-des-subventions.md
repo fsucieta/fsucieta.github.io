@@ -191,3 +191,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Évasion Fiscale et Subventions
+
+| Catégorie Fiscale | Assiette Nationale | Répartition Insulaire | Écart Constaté |
+| :--- | :--- | :--- | :--- |
+| **Taux Majeur TVA (Régime Dérogatoire)** | 20.0% | 10.0% / 2.1% | 🔴 Manque à Gagner Territorial |
+| **Crédit d'Impôt Investissement (CIIC)** | 30.0% | 30.0% | ⚠️ Concentration Portefeuille |
+| **Taxe sur les Surfaces Commerciales** | Taux Standard | Exonération Partielle | 🔴 Distortion Fiscale |

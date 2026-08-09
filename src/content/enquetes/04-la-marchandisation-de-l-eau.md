@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Gestion et Marchandisation de l'Eau
+
+| Volume Réservoir / Barrage | Capacités de Retenue (Mm³) | Mode de Gestion Majeur | Rendement du Réseau |
+| :--- | :--- | :--- | :--- |
+| **Barrage de Rizzanese** | 1,2 Mm³ | Régie Publique / OEHC | 72.4% |
+| **Barrage de Calacuccia** | 31,5 Mm³ | Concession Hydroélectrique | 84.1% |
+| **Barrage de Sampolo** | 2,8 Mm³ | Production Énergétique | 81.0% |

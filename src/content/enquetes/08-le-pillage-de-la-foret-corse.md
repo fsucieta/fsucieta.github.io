@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Exploitation et Pillage de la Forêt
+
+| Massif Forestier | Surface Totale (Ha) | Volume de Bois Brut Exporté | Part Transformée Localement |
+| :--- | :--- | :--- | :--- |
+| **Forêt de Marmano / Valdoniello** | 4 500 Ha | 65% | 🔴 12% Seulement |
+| **Forêt de Bavella / Ospedale** | 5 200 Ha | 58% | 🔴 15% Seulement |
+| **Forêt de Tartagine** | 3 100 Ha | 72% | 🔴 8% Seulement |

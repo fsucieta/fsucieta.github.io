@@ -192,3 +192,13 @@ Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 36
     
 
 CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
+
+
+
+### 📊 Matrice d'Audit et Données Chiffrées : Haute Fonction Publique & Préfecture
+
+| Postes de Direction / Préfecture | Origine Affectation | Durée Moyenne de Poste | Taux de Rotation |
+| :--- | :--- | :--- | :--- |
+| **Préfets & Sous-Préfets** | Ministère de l'Intérieur | 1.8 An | 🔴 Rotation Très Élevée |
+| **Directeurs Régionaux (DREAL/DDTM)** | Haute Fonction Publique | 2.2 Ans | ⚠️ Manque de Continuité |
+| **Chefs de Service Judiciaire/JIRS** | Magistrature Nationale | 2.5 Ans | ⚠️ Transfert de Dossiers |
