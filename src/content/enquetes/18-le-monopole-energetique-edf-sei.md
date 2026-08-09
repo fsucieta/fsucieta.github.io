@@ -3,7 +3,7 @@ id: 18
 title: "Enquête 18 : Le Monopole Énergétique EDF-SEI & la Transition Bloquée"
 subtitle: "Radiographie de la dépendance fossile : comment les centrales au fioul lourd du Vazzio et de Lucciana et le tarif PENE bloquent les énergies renouvelables corses"
 category: "ÉNERGIE & TRANSITION"
-ref: "FSUCIETA-AUDIT-AXE-18"
+ref: "FSUCIETA-AUDIT-ENQUETE-18"
 author: "Cellule d'Investigation Énergétique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "EDF SEI / CRE / PPE Corse"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour rompre le monopole énergétique et la dépendance fossile (Enquête #18), les citoyens et associations environnementales peuvent exiger la communication des documents administratifs industriels clés (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Monopole Energetique Edf Sei**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Relevés d'émissions de CO2 et polluants ICPE :** Rapports de contrôles sanitaires des centrales thermiques au fioul lourd du Vazzio et de Lucciana transmis à la DREAL Corse.
-* **Barèmes et contrats d'obligation d'achat EDF-SEI :** Conventions fixant les plafonds d'injection et les tarifs d'achat de l'électricité renouvelable en Zone Non Interconnectée (ZNI).
-* **Bilans de la Péréquation Tarifaire (CRE) :** Rapports détaillés de la Commission de Régulation de l'Énergie sur les surcoûts de production compensés par la contribution au service public (tarif PENE).
-* **Délibérations de validation de la PPE Corse :** Documents de suivi des objectifs de la Programmation Pluriannuelle de l'Énergie co-rédigés par l'AUE et l'État.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Monopole Energetique Edf Sei** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **ÉNERGIE & TRANSITION** révèle le monopole de la gestion de réseau insulaire :
-
-* **Opérateur Historique et Gestionnaire de Réseau :** **EDF-SEI** (Systèmes Énergétiques Insulaires), détenteur du monopole de distribution et de gestion du système électrique corse.
-* **Autorité de Régulation Énergétique :** La **CRE** (Commission de Régulation de l'Énergie), fixant les montants de la péréquation tarifaire nationale compensant le fioul lourd.
-* **Agence Régionale de l'Énergie :** L'**AUE** (Agence de l'Urbanisme et de l'Énergie de Corse / Collectivité de Corse), chargée de la planification et de l'orientation de la PPE.
-* **Police de l'Environnement et de l'Industrie :** La **DREAL Corse**, assurant la tutelle des installations classées pour la protection de l'environnement (ICPE).
-* **Producteurs Indépendants d'ENR :** Syndicats et producteurs solaires/éoliens locaux, confrontés aux limitations d'injection imposées par le réseau d'EDF-SEI.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **ÉNERGIE & TRANSITION** révèle le monopole de la gestio
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Programmation Pluriannuelle de l'Énergie PPE & Code de l'Énergie)
+### 📊 Matrice d'Audit et Données Chiffrées : Mix Énergétique EDF-SEI
 
-Au terme de cette investigation médico-légale consacrée au volet **ÉNERGIE & TRANSITION** (Enquête #18), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. L'autonomie énergétique et la fin de l'overdose carbonée exigent la révision des orientations de la Programmation Pluriannuelle de l'Énergie (PPE) et du Code de l'Énergie.
-
-Nous recommandons à l'Assemblée de Corse et aux acteurs énergétiques l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Sortie Définitive du Fioul Lourd (PPE) :** Reconversion immédiate et contraignante inscrite à la PPE pour fermer les tranches au fioul lourd de Lucciana et du Vazzio au profit du biogaz et du 100% renouvelable.
-* **Suppression des Plafonds d'Injection (Code de l'Énergie) :** Modification de la réglementation ZNI pour obliger EDF-SEI à raccorder et injecter la totalité de l'électricité solaire et hydraulique produite localement.
-* **Régie Publique Régionale de l'Énergie :** Création d'un réseau de distribution insulaire souverain sous tutelle conjointe de l'AUE et du Syndicat Électrique de la Corse (SDEC).
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Monopole EDF-SEI & Transition Bloquée
-
-| Source de Production Électrique | Part dans le Mix Insulaire | Coût de Production / MWh | Empreinte Carbone (gCO₂/kWh) |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Centrales Thermiques (Fioul Lourd)** | 62% de l'électricité | 240 €/MWh (Péréqué PENE) | 🔴 720 gCO₂/kWh (Très Polluant) |
-| **Énergie Hydroélectrique** | 22% de l'électricité | 55 €/MWh | ✅ 15 gCO₂/kWh (Renouvelable) |
-| **Solaire Photovoltaïque & Éolien** | 16% de l'électricité | 85 €/MWh | ⚠️ 40 gCO₂/kWh (Bridé par EDF-SEI) |
+| **Production Fossile** | 62% Fioul Lourd | Péréquation CRE | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | > 260 M€ / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Programmation Pluriannuelle de l'Énergie PPE & Code de l'Énergie) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

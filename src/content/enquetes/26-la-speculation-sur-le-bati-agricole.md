@@ -3,7 +3,7 @@ id: 26
 title: "Enquête 26 : La Spéculation sur le Bâti Agricole & les Bergeries de Prestige"
 subtitle: "Radiographie du détournement de l'article L. 151-11 : la transformation frauduleuse de ruines et bergeries traditionnelles en résidences secondaires de luxe avec piscine et héliport"
 category: "AGRICOLE & BERGERIES"
-ref: "FSUCIETA-AUDIT-AXE-26"
+ref: "FSUCIETA-AUDIT-ENQUETE-26"
 author: "Cellule d'Investigation Foncier-Patrimoine CASA DI CRISTALE"
 date: "Août 2026"
 tool: "DVF / SAFER / Code de l'Urbanisme L. 151-11"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer la transformation frauduleuse des bergeries et pagliaghji en résidences de luxe (Enquête #26), les agriculteurs et riverains peuvent exiger la communication des documents d'urbanisme et fonciers publics (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Speculation Sur Le Bati Agricole**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Procès-verbaux de constat d'infraction à l'urbanisme (Art. L. 480-1) :** Constats d'agents assermentés de la DDTM et mairies sur la construction illégale de piscines, spas et héliports.
-* **Notifications des transactions foncières agricoles SAFER :** Relevés des notifications d'intention d'aliéner (DIA) transmises à la SAFER de Corse sur le bâti pastoral.
-* **Délibérations municipales au titre de l'Art. L. 151-11 :** Délimitation au PLU des bâtiments anciens pouvant faire l'objet d'un changement d'usage ou de restauration.
-* **Permis de construire de restauration en zone A et N :** Copie intégrale des permis accordés pour la réhabilitation de bergeries en zones agricoles et naturelles.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Speculation Sur Le Bati Agricole** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **AGRICOLE & BERGERIES** met en lumière les dérives de la spéculation pastorale :
-
-* **Organisme Foncier Agricole :** La **SAFER de Corse**, détentrice du droit de préemption sur les terres et bâtiments agricoles.
-* **Office Régional Agricole :** L'**ODARC** (Office de Développement Agricole et Rural de Corse), veillant à la préservation du potentiel pastoral.
-* **Police de l'Urbanisme et Parquets :** La **DDTM (2A/2B)** et les Parquets d'Ajaccio et de Bastia (Section Urbanisme), chargés des poursuites pénales au titre de l'art. L. 480-1.
-* **Mairies et Conseils Municipaux :** Les Mairies littorales et de montagne, autorisant ou tolérant les dérives de rénovation de bergeries.
-* **Promoteurs & Agences Immobilières de Prestige :** Acteurs de l'immobilier de luxe commercialisant les bergeries sous forme de "domaines privés d'exception".
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **AGRICOLE & BERGERIES** met en lumière les dérives de la
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Rural & Dispositions L. 151-11 sur le Bâti Agricole)
+### 📊 Matrice d'Audit et Données Chiffrées : Spéculation Bergeries (L. 151-11)
 
-Au terme de cette investigation médico-légale consacrée au volet **AGRICOLE & BERGERIES** (Enquête #26), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation du patrimoine pastoral et la fin de la spéculation sur les bergeries exigent la révision des critères de dérogation de l'article L. 151-11 et des dispositions du Code Rural.
-
-Nous recommandons aux maires, à la SAFER et aux autorités agricoles l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Interdiction des Équipements de Luxe en Zone Pastorale (L. 151-11) :** Prohibition absolue de construction de piscines, spas et héliports sur toute bergerie ou pagliaghju restauré au titre de l'art. L. 151-11 du Code de l'Urbanisme.
-* **Droit de Préemption Prioritaire SAFER/ODARC (Code Rural) :** Attribution d'un droit de préemption prioritaire aux jeunes éleveurs résidents sur toute transaction de bâtiment pastoral au prix agricole réel.
-* **Remise en État d'Office et Démolition :** Obligation de démolition aux frais des contrevenants de tout aménagement de prestige réalisé en dérivation des permis d'urbanisme agricoles.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Spéculation Bâti Agricole & Bergeries
-
-| Type de Bâti Pastoral | Prix Foncier Agricole Réel | Prix de Revente après Luxurisation | Taux d'Infraction Urbanistique |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Pagliaghji / Bergeries Littorales**| 15 000 € à 35 000 € | 🔴 850 000 € à 2,5 M€ | 🔴 78% (Piscines et hélistations illégales) |
-| **Cabanes Pastorales de Montagne**| 8 000 € à 18 000 € | 350 000 € à 750 000 € | ⚠️ 52% (Changements d'usage non déclarés) |
-| **Constats d'Infraction Démolis (L. 480-1)**| N/A | 14 Procédures en cours | 🔴 Less than 5% de démolitions effectives |
+| **Prix Mètre Carré** | > 8 500 €/m² | Demandes L.151-11 | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | > 340 Permis 5ans | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code Rural & Dispositions L. 151-11 sur le Bâti Agricole) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

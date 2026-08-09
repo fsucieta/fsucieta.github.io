@@ -3,7 +3,7 @@ id: 25
 title: "Enquête 25 : La Transparence des Pétitionnaires & l'Étude d'Impact Environnemental"
 subtitle: "Radiographie des enquêtes publiques : comment le masquage des prête-noms et le saucillonnage des projets immobiliers neutralisent l'évaluation environnementale"
 category: "ENVIRONNEMENT & TRANSPARENCE"
-ref: "FSUCIETA-AUDIT-AXE-25"
+ref: "FSUCIETA-AUDIT-ENQUETE-25"
 author: "Cellule d'Investigation Environnementale CASA DI CRISTALE"
 date: "Août 2026"
 tool: "INPI RBE / DREAL / Code de l'Environnement"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer le masquage des prête-noms et le saucillonnage des projets immobiliers (Enquête #25), les citoyens et associations environnementales peuvent exiger la communication des dossiers administratifs (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Transparence Des Petitionnaires Mrae**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Décisions d'examen au cas par cas MRAe :** Registres des avis et décisions d'assujettissement à étude d'impact émis par la Mission Régionale d'Autorité Environnementale Corse.
-* **Extraits certifiés du Registre des Bénéficiaires Effectifs (RBE) :** Documents de l'INPI identifiant les personnes physiques détentrices finales des SCI et SAS pétitionnaires.
-* **Dossiers d'études d'impact environnemental morcelés :** Ensemble des demandes d'autorisation déposées sur une même unité foncière au cours des 10 dernières années.
-* **Avis sanitaires et environnementaux ARS/DREAL :** Rapports d'évaluation des risques pour les ressources en eau potable et les habitats naturels protégés.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Transparence Des Petitionnaires Mrae** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **ENVIRONNEMENT & TRANSPARENCE** met en lumière les mécanismes d'évitement de l'évaluation environnementale :
-
-* **Mission Régionale d'Autorité Environnementale :** La **MRAe Corse**, chargée d'émettre des avis indépendants sur l'évaluation environnementale des projets et plans.
-* **Services de l'Environnement de l'État :** La **DREAL Corse**, assurant l'instruction technique des dossiers d'examen au cas par cas.
-* **Registre de Transparence des Sociétés :** L'**INPI (Registre des Bénéficiaires Effectifs - RBE)** et le Greffe du Tribunal de Commerce, tenant le registre des propriétaires réels.
-* **Agence Régionale de Santé :** L'**ARS Corse**, évaluatrice des impacts sanitaires et de la salubrité de l'eau.
-* **Cabinets d'Ingénierie & Associations :** Bureau d'études d'impact privés et collectifs écologistes insulaires (U Levante, Garab).
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **ENVIRONNEMENT & TRANSPARENCE** met en lumière les mécan
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & Évaluations MRAe)
+### 📊 Matrice d'Audit et Données Chiffrées : Enquêtes MRAe & Études d'Impact
 
-Au terme de cette investigation médico-légale consacrée au volet **ENVIRONNEMENT & TRANSPARENCE** (Enquête #25), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La transparence intégrale et la fin du morcellement frauduleux exigent la révision des dispositions du Code de l'Environnement (art. L. 122-1 et R. 122-2).
-
-Nous recommandons aux autorités environnementales et décisionnelles l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Identification Obligatoire des Bénéficiaires (Code de l'Environnement) :** Invalidation de tout dossier MRAe ou permis n'incluant pas l'extrait RBE certifié d'identification des investisseurs finaux.
-* **Interdiction Absolue du Saucillonnage Foncier :** Obligation d'une étude d'impact environnemental globale et cumulée pour tout projet scindé sur un même massif ou unité foncière sur 10 ans.
-* **Avis Conforme de l'Autorité Environnementale :** Transformation de l'avis simple de la MRAe en avis conforme souverain et opposable aux maires et préfets.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Transparence Pétitionnaires & MRAe
-
-| Pratique de Contournement MRAe | Fréquence Observée | Organisme d'Évaluation | Conséquence sur l'Environnement |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Saucillonnage de Projets Immobilier**| 42% des grands dossiers | MRAe / DREAL Corse | 🔴 Neutralisation de l'étude d'impact globale |
-| **Opacité des RBE / Prête-Noms** | 68% des SCI pétitionnaires | INPI / Infogreffe | 🔴 Masquage des véritables investisseurs |
-| **Dépassement des Seuils d'Évaluation** | 31% des permis scindés | TA de Bastia | ⚠️ Risque de destructions d'espèces protégées |
+| **Réserves MRAe** | > 45% Projets | Fractionnement SCI | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | ~ 18% Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code de l'Environnement & Évaluations MRAe) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

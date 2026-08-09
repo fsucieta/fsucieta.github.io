@@ -3,7 +3,7 @@ id: 21
 title: "Enquête 21 : Le Scandale des Déchets & le Coût de l'Enfouissement — L'impasse environnementale insulaire"
 subtitle: "Radiographie du Syvadec et de la filière poubelles : l'exportation par cargo vers le continent et l'overdose des sites d'enfouissement de Tallone et Prunelli"
 category: "DÉCHETS & ENVIRONNEMENT"
-ref: "FSUCIETA-AUDIT-AXE-21"
+ref: "FSUCIETA-AUDIT-ENQUETE-21"
 author: "Cellule d'Investigation Environnementale CASA DI CRISTALE"
 date: "Août 2026"
 tool: "SYVADEC / DREAL / Cour des Comptes"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer le scandale de la gestion des déchets et les surcoûts d'exportation (Enquête #21), les citoyens et associations environnementales peuvent exiger la transparence sur les marchés et sites ICPE (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Scandale Des Dechets Syvadec**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Marchés publics de transport maritime des déchets :** Bordereaux d'expédition et factures du SYVADEC conclus avec les armateurs pour l'exportation par cargo vers le continent.
-* **Arrêtés préfectoraux ICPE d'enfouissement :** Autorisations d'exploitation et extensions des casiers de Tallone, Viggianello et Prunelli-di-Fiumorbo transmises par la DREAL Corse.
-* **Rapports d'audit financier de la CRC de Corse :** Rapports d'observation définitive de la Chambre Régionale des Comptes sur la gestion budgétaire du SYVADEC.
-* **Relevés de perception de la TGAP :** Décomptes régionaux de la Taxe Générale sur les Activités Polluantes payée par les intercommunalités corses.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Scandale Des Dechets Syvadec** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **DÉCHETS & ENVIRONNEMENT** révèle les failles de la filière de traitement :
-
-* **Syndicat Mixte de Traitement :** Le **SYVADEC** (Syndicat Valorisation Déchets Corse), responsable de la collecte, du tri et du traitement de l'ensemble des déchets ménagers insulaires.
-* **Police de l'Environnement & Préfecture :** La **DREAL Corse**, chargée du contrôle des installations classées (ICPE) et du respect des arrêtés d'enfouissement.
-* **Contrôle Financier Régional :** La **Chambre Régionale des Comptes (CRC de Corse)**, auditant régulièrement la dérive des coûts du SYVADEC.
-* **Armateurs Maritimes & Fret :** Corsica Linea et La Méridionale, transporteurs exclusifs des barges et cargos de déchets vers le continent.
-* **EPCI & Collectivités Adhérentes :** Les Communautés d'Agglomération (CAPA, CAB) et Communautés de Communes du rural, contraintes d'augmenter la taxe d'enlèvement d'ordures ménagères (TEOM).
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **DÉCHETS & ENVIRONNEMENT** révèle les failles de la fil
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Régional de Prévention et de Gestion des Déchets PRPGD)
+### 📊 Matrice d'Audit et Données Chiffrées : Gestion des Déchets SYVADEC
 
-Au terme de cette investigation médico-légale consacrée au volet **DÉCHETS & ENVIRONNEMENT** (Enquête #21), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. L'autonomie de traitement et la fin de l'incurie financière exigent la révision des objectifs du Plan Régional de Prévention et de Gestion des Déchets (PRPGD).
-
-Nous recommandons à l'Assemblée de Corse et aux collectivités territoriales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Zéro Exportation par Cargo d'ici 2028 (PRPGD) :** Obligation d'inscrire au PRPGD le principe d'autonomie insulaire de traitement avec création d'unités régionales de tri haute performance et de valorisation organique.
-* **Redevance Incitative Obligatoire :** Déploiement contraignant de la tarification incitative de collecte au volume et au poids dans l'ensemble des 360 communes de l'île.
-* **Contrôle Citoyen des Sites d'Enfouissement :** Mise en place d'une commission citoyenne de suivi environnemental trimestriel sur les centres de Tallone et Prunelli.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Scandale des Déchets & Syvadec
-
-| Mode de Traitement des Déchets | Volume Annuel (Tonnes) | Coût Financier / Tonne | Empreinte Écologique & Bilan |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Exportation par Cargo Continental** | 115 000 Tonnes | 🔴 285 €/Tonne (Coût Prohibitif) | 🔴 Bilan Carbone Maritime Désastreux |
-| **Enfouissement In Situ (Tallone/Prunelli)**| 98 000 Tonnes | 145 €/Tonne (+ TGAP) | ⚠️ Saturation imminente des casiers ICPE |
-| **Tri Sélectif & Recyclage Réel** | 32 000 Tonnes (22%) | 65 €/Tonne | 🔴 Très en dessous de la moyenne nationale |
+| **Ratio Déchets/Hab.** | > 640 kg/hab/an | Fret Cargo Déchets | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | > 70 000 t / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Plan Régional de Prévention et de Gestion des Déchets PRPGD) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

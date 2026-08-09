@@ -3,7 +3,7 @@ id: 23
 title: "Enquête 23 : La Sous-Dotation de la Sécurité Civile & les Risques Majeurs"
 subtitle: "Radiographie de la prévention des risques : sous-dimensionnement des moyens aériens anti-incendie (Canadairs) et précarité des secours en haute montagne"
 category: "SECURITÉ CIVILE & RISQUES"
-ref: "FSUCIETA-AUDIT-AXE-23"
+ref: "FSUCIETA-AUDIT-ENQUETE-23"
 author: "Cellule d'Investigation Sécurité Civile CASA DI CRISTALE"
 date: "Août 2026"
 tool: "SIS 2A / SIS 2B / DGSCGC / PGHM"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer la sous-dotation des secours et le sous-dimensionnement des moyens aériens (Enquête #23), les citoyens et représentants du personnel de secours peuvent exiger l'accès aux documents administratifs opérationnels (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Sous Dotation De La Securite Civile**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Ordres de mission et journaux de mouvement des Canadairs :** Registres d'affectation de la flotte aérienne de la DGSCGC stationnée à la Base Aérienne 126 de Solenzara et Ajaccio.
-* **Conventions pluri-annuelles de moyens SIS 2A / SIS 2B :** Budgets et tableaux d'effectifs des Services d'Incendie et de Secours de Corse-du-Sud et de Haute-Corse.
-* **Rapports de dotation globale de fonctionnement (DGF) :** Documents de répartition de la dotation d'État allouée par le Ministère de l'Intérieur aux secours insulaires.
-* **Registres d'intervention du PGHM et de Dragon 20 :** Bilans des heures de vol et missions de secours en montagne du PGHM et de la Sécurité Civile.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Sous Dotation De La Securite Civile** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **SECURITÉ CIVILE & RISQUES** met en lumière la répartition des compétences de secours :
-
-* **Direction Nationale de la Sécurité Civile :** La **DGSCGC** (Direction Générale de la Sécurité Civile et de la Gestion des Crises), gestionnaire de la flotte aérienne nationale.
-* **Services d'Incendie et de Secours Régionaux :** Le **SIS 2A et le SIS 2B**, financés par les conseils départementaux/Collectivité de Corse et les communes.
-* **Secours Spécialisé en Haute Montagne :** Le **PGHM** (Peloton de Gendarmerie de Haute Montagne) et le détachement d'hélicoptères de la Sécurité Civile (Dragon 20).
-* **Militaires & Base Aérienne :** La **Base Aérienne 126 de Solenzara**, point d'appui stratégique pour le détachement estival des Canadairs et Dash.
-* **Prédictions et Préfectures :** Météo-France (Centre d'Ajaccio) et les Préfectures de Corse, coordinatrices des plans ORSEC.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **SECURITÉ CIVILE & RISQUES** met en lumière la répartit
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Départemental d'Analyse et de Couverture des Risques SDACR)
+### 📊 Matrice d'Audit et Données Chiffrées : Sécurité Civile & Canadairs
 
-Au terme de cette investigation médico-légale consacrée au volet **SECURITÉ CIVILE & RISQUES** (Enquête #23), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La protection des vies humaines et la défense des massifs forestiers exigent la révision prioritaire des orientations du Schéma Départemental d'Analyse et de Couverture des Risques (SDACR).
-
-Nous recommandons aux services d'incendie et de secours et au Ministère de l'Intérieur l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Sanctuarisation de la Flotte Aérienne Insulaire (SDACR) :** Inscription au SDACR du stationnement permanent et à l'année de 4 Canadairs CL-415 et 2 avions Dash sur la base de Solenzara.
-* **Majoration Régionale de la Dotation SIS :** Revalorisation de 30% de la dotation d'État attribuée aux SIS 2A et 2B pour compenser les surcoûts du relief montagneux et de la saisonnalité touristique.
-* **Plan Insulaire PGHM & Secours Montagne :** Pérennisation des moyens héliportés du PGHM et de Dragon 20 sur l'ensemble du massif corse.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Sous-Dotation de la Sécurité Civile
-
-| Moyen de Secours / Intervention | Effectif / Flotte Disponible | Besoin Théorique SDACR | Statut de Couverture du Risque |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Avions Canadairs CL-415 (Solenzara)** | 2 Avions en saison | 4 Avions à l'année | 🔴 Risque majeur en début/fin de saison |
-| **Hélicoptères Sécurité Civile (Dragon)** | 2 Appareils (Ajaccio/Bastia) | 3 Appareils | ⚠️ Tension extrême lors des pics estivaux |
-| **Sapeurs-Pompiers Professionnels (SIS)** | 1 200 SPP / SPV | 1 600 SPP / SPV | 🔴 Sous-dotation structurelle du rural |
+| **Secours Annuels** | > 35 000 Interv. | Canadairs Basés | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | 2 Avions Pointe | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Schéma Départemental d'Analyse et de Couverture des Risques SDACR) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

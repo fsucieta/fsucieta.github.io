@@ -3,7 +3,7 @@ id: 14
 title: "Enquête 14 : Le Dessaisissement Judiciaire & la Justice Délocalisée"
 subtitle: "Radiographie des procédures pénales : comment la délocalisation systématique des instructions vers la JIRS de Marseille dépossède la Corse de sa justice"
 category: "JUSTICE & LIBERTÉS"
-ref: "FSUCIETA-AUDIT-AXE-14"
+ref: "FSUCIETA-AUDIT-ENQUETE-14"
 author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "JIRS Marseille / Ministère de la Justice / CPP"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrecarrer le dessaisissement judiciaire et l'opacité des procédures pénales délocalisées (Enquête #14), l'action citoyenne et le droit à l'information publique imposent la transparence sur l'activité des juridictions. Conformément aux articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), les collectifs et citoyens peuvent exiger la communication des documents administratifs suivants :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Dessaisissement Judiciaire Jirs**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Registres d'actes d'instruction délocalisés :** Transmissions et avis de dessaisissement émis par le Parquet Général près la Cour d'Appel de Bastia (application de l'article 706-75 du Code de Procédure Pénale).
-* **Tableaux consolidés des frais de justice :** Relevés annuels des dépenses allouées aux transfèrements pénitentiaires et aux déplacements de magistrats entre la Corse et la JIRS de Marseille (Direction des Services Judiciaires du Ministère de la Justice).
-* **Statistiques et bilans d'activité JIRS :** Relevés annuels d'activité de la JIRS de Marseille portant spécifiquement sur les affaires en provenance des départements de Haute-Corse et de Corse-du-Sud.
-* **Procès-verbaux d'extraction et d'écrou :** Registres des transfèrements de prévenus insulaires depuis la maison d'arrêt de Borgo vers les établissements pénitentiaires continentaux (Les Baumettes, Luynes).
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas d'absence de réponse ou de refus explicite sous 30 jours, saisissez directement la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Dessaisissement Judiciaire Jirs** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse systémique du domaine **JUSTICE & LIBERTÉS** met en évidence une architecture institutionnelle fortement centralisée et délocalisée :
-
-* **Juridictions de Spécialité & Parquets Nationaux :** La **JIRS de Marseille** (Juridiction Interrégionale Spécialisée) et le **Parquet National Financier (PNF)**, investis d'une compétence d'éviction quasi-totale sur les dossiers financiers et criminels majeurs de l'île.
-* **Magistrature & Parquet Régional :** Le **Parquet Général près la Cour d me d'Appel de Bastia** ainsi que les Parquets près les Tribunaux Judiciaires de Bastia et d'Ajaccio, régulièrement dépouillés de leurs prérogatives au profit du continent.
-* **Ministère de la Justice & Administration Pénitentiaire :** La **Direction des Services Judiciaires (DSJ)** et la **Direction de l'Administration Pénitentiaire (DAP)**, arbitres de la gestion des moyens et des transferts de détenus.
-* **Barreaux & Représentations de la Défense :** Les **Barreaux d'Avocats de Bastia et d'Ajaccio**, mobilisés contre le renchérissement du coût de la défense et l'affaiblissement des droits des justiciables insulaires.
-* **Instances Consultatives et de Contrôle :** La **Commission Nationale Consultative des Droits de l'Homme (CNCDH)** et la **Conférence des Bâtonniers**, régulièrement saisies sur les dérives des juridictions d'exception.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,22 +138,13 @@ L'analyse systémique du domaine **JUSTICE & LIBERTÉS** met en évidence une ar
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de Procédure Pénale & Carte Judiciaire des JIRS)
-
-Au terme de cette investigation médico-légale consacrée au volet **JUSTICE & LIBERTÉS** (Enquête #14), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le respect des droits fondamentaux des justiciables exigent la révision prioritaire des dispositions du Code de Procédure Pénale (art. 706-75) et de la carte judiciaire.
-
-Nous recommandons aux autorités judiciaires et aux représentants du barreau l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Pôle Judiciaire Régional Spécialisé :** Modification du Code de Procédure Pénale pour créer un Pôle d'Instruction Financière et Criminelle autonome au sein de la Cour d'Appel de Bastia, mettant fin aux délocalisations d'office vers la JIRS de Marseille.
-* **Avis Conforme des Barreaux Insulaires :** Subordination de tout dessaisissement vers le continent à l'avis préalable motivé du Bâtonnier compétent pour garantir les droits de la défense sur place.
-* **Observatoire Territorial des Libertés & Transparence :** Création d'un observatoire public régional chargé d'évaluer le coût annuel des transfèrements et de publier la carte des procédures délocalisées.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
 ### 📊 Matrice d'Audit et Données Chiffrées : Dessaisissement Judiciaire & JIRS
 
-| Indicateur Judiciaire JIRS | Volume / Ratio | Juridiction Concernée | Impact sur la Procédure |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Instructions Financières Délocalisées** | 82% des affaires complexes | JIRS Marseille | 🔴 Allongement des délais à 6,8 ans |
-| **Frais de Transfèrement Pénitentiaire** | 12,4 M€ / an | Administration Pénitentiaire | ⚠️ Surcoût budgétaire et éloignement familial |
-| **Taux d'Annulation pour Vice de Forme** | 14,5% des actes délocalisés | Cour d'Appel d'Aix-en-Provence | 🔴 Erreurs de procédure dues à l'éloignement |
-| **Recours Barreaux Corses Validés** | 35% de requêtes admises | CNCDH / CEDH | ✅ Atteintes avérées aux droits de la défense |
+| **Transferts Marseille** | > 80% Dossiers | Instructions Lentes | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | 12 M€ Escortes | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code de Procédure Pénale & Carte Judiciaire des JIRS) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

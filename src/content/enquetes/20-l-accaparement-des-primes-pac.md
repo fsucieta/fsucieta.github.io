@@ -3,7 +3,7 @@ id: 20
 title: "Enquête 20 : L'Accaparement des Primes PAC & l'Élevage Spéculatif"
 subtitle: "Radiographie des aides agricoles : comment le système de déclaration de la Politique Agricole Commune (PAC) favorise les grands propriétaires fonciers au détriment des vrais producteurs"
 category: "AGRICULTURE & PAC"
-ref: "FSUCIETA-AUDIT-AXE-20"
+ref: "FSUCIETA-AUDIT-ENQUETE-20"
 author: "Cellule d'Investigation Agro-Économique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "ODARC / DRAAF / Registre RPG / TéléPAC"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer l'accaparement des primes de la PAC et l'élevage spéculatif (Enquête #20), les éleveurs producteurs et syndicats agricoles peuvent exiger l'accès aux registres publics agricoles (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **L Accaparement Des Primes Pac**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Registres Parcellaires Graphiques (RPG) TéléPAC :** Cartographie et déclarations de surfaces agricoles souscrites auprès de la DRAAF Corse et de l'ASP.
-* **Procès-verbaux de contrôle sur place ODARC/DRAAF :** Rapports d'audit d'éligibilité des pâturages et de présence réelle du cheptel sur les estives.
-* **Procès-verbaux d'attribution de la CDOA :** Relevés de délibérations des Commissions Départementales d'Orientation de l'Agriculture (2A/2B) sur la répartition des aides à l'installation.
-* **Signalements de fraudes transmis au Parquet National Financier :** Statistiques d'enquêtes pour fausses déclarations de surfaces pastorales ou élevages fictifs.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **L Accaparement Des Primes Pac** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **AGRICULTURE & PAC** met en évidence les dérives du système de subventions :
-
-* **Administration Agricole de l'État :** La **DRAAF Corse** (Direction Régionale de l'Alimentation, de l'Agriculture et de la Forêt), gestionnaire des aides du Premier Pilier TéléPAC.
-* **Office Régional du Développement Agricole :** L'**ODARC** (Office de Développement Agricole et Rural de Corse), opérateur du Second Pilier de la PAC et de l'installation des jeunes éleveurs.
-* **Organisme de Payement National :** L'**ASP** (Agence de Services et de Paiement), chargée du versement effectif des primes aux pétitionnaires.
-* **Pôle Financier & Enquêtes Générales :** Le **Parquet National Financier (PNF)** et le Tribunal de Bastia, instructeurs des dossiers de fraudes aux fausses surfaces pastorales.
-* **Syndicats & Professionnels de la Terre :** La **Via Campagnola**, la FDSEA (2A/2B), les Jeunes Agriculteurs de Corse et la SAFER de Corse.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **AGRICULTURE & PAC** met en évidence les dérives du syst
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Stratégique National PSN PAC & Code Rural)
+### 📊 Matrice d'Audit et Données Chiffrées : Primes PAC & Élevage
 
-Au terme de cette investigation médico-légale consacrée au volet **AGRICULTURE & PAC** (Enquête #20), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La défense du pastoralisme vivant et l'équité des aides exigent la révision des déclinaisons du Plan Stratégique National (PSN PAC) et du Code Rural.
-
-Nous recommandons aux instances agricoles et décisionnelles l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Conditionnalité de Production Réelle (PSN PAC) :** Modification du PSN PAC pour subordonner le versement des aides complémentaires au contrôle de la commercialisation locale de denrées agricoles certifiées.
-* **Plafonnement Dégressif des Primes à la Surface (Code Rural) :** Inscription dans la réglementation de la dégressivité et d'un plafond strict de 60 000 € de primes par exploitation pour stopper les rentes spéculatives.
-* **Redistribution Foncier Pastoral (CDOA) :** Affectation prioritaire des terres pastorales libérées des déclarations frauduleuses aux jeunes producteurs résidents via l'ODARC et la SAFER.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Accaparement des Primes PAC
-
-| Catégorie d'Exploitant Agricole | Volume des Primes PAC Perçues | Part dans la Production Réelle | Statut de Conformité / Risque |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Grands Déclarants de Surface (10%)** | 54% de l'enveloppe PAC | 🔴 < 12% des denrées vendues | 🔴 Élevage spéculatif / Chasse aux primes |
-| **Producteurs Éleveurs Réels Corses** | 32% de l'enveloppe PAC | ✅ 78% du fromage / charcuterie | ⚠️ Sous-dotation chronique par hectare |
-| **Dossiers Sous Enquête PNF / ASP** | 8,2 M€ bloqués | N/A | 🔴 Suspicions de fraudes aux fausses surfaces |
+| **Enveloppe PAC** | > 36 M€ / an | Concentration Aides | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | 10% Perçoivent 120k€ | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Plan Stratégique National PSN PAC & Code Rural) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

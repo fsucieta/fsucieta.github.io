@@ -3,7 +3,7 @@ id: 24
 title: "Enquête 24 : Le Radar d'Urbanisme & les Permis Tacites en Mairie"
 subtitle: "Radiographie de la bétonisation discrète : comment le mécanisme des permis de construire tacites (R. 424-1) contourne l'affichage public et le contrôle citoyen"
 category: "URBANISME & SITADEL"
-ref: "FSUCIETA-AUDIT-AXE-24"
+ref: "FSUCIETA-AUDIT-ENQUETE-24"
 author: "Cellule d'Investigation Urbanistique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "Sitadel2 / DVF / Cadastre / CADA"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer la bétonisation discrète par le biais des permis tacites (Enquête #24), les riverains et associations d'urbanisme peuvent exiger la communication des registres de mairie (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Radar D Urbanisme Permis Tacites**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Extrait certifié du registre chronologique de dépôt :** Registre de la mairie recensant l'intégralité des demandes de permis de construire et d'aménager.
-* **Récépissés de dépôt avec mentions d'acquisition tacite :** Récépissés formels fixant la date de naissance des permis par silence gardé (Article R. 424-1 du Code de l'Urbanisme).
-* **Fichiers d'extraction de la base Sitadel2 :** Relevés transmis par la DREAL et la DDTM listant l'ensemble des autorisations tacites enregistrées sur la commune.
-* **Procès-verbaux de contrôle d'affichage sur le terrain :** Constats d'huissier ou d'agents assermentés relatifs au respect de l'affichage légal du permis.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Radar D Urbanisme Permis Tacites** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **URBANISME & SITADEL** met en lumière l'opacité des procédures tacites :
-
-* **Services d'Urbanisme Municipaux :** Les **Mairies littorales et rurales**, responsables du traitement et des récépissés de dépôt de permis de construire.
-* **Services Instructeurs de l'État :** La **DDTM 2A et la DDTM 2B**, instructrices déléguées des permis pour le compte de nombreuses communes.
-* **Gestionnaire des Données de l'Urbanisme :** La **DREAL Corse**, assurant l'administration de la base de données nationale Sitadel2.
-* **Instance Administrative de Recours :** La **CADA** et le Tribunal Administratif de Bastia, régulièrement saisis contre le masquage des permis tacites.
-* **Associations de Vigilance Citoyenne :** U Levante, Garab et Femu Qui, luttant contre le contournement des recours par l'absence d'affichage.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **URBANISME & SITADEL** met en lumière l'opacité des proc
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Urbanisme Art. R. 424-1 & PLU)
+### 📊 Matrice d'Audit et Données Chiffrées : Permis Tacites (Sitadel2)
 
-Au terme de cette investigation médico-légale consacrée au volet **URBANISME & SITADEL** (Enquête #24), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La transparence absolue et la fin des autorisations clandestines exigent la révision de l'article R. 424-1 du Code de l'Urbanisme et des règles d'affichage des PLU.
-
-Nous recommandons aux maires et aux autorités de l'urbanisme l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Interdiction du Permis Tacite en Zone Sensitive (R. 424-1) :** Modification du Code de l'Urbanisme imposant une décision explicite et motivée pour tout permis situé dans les zones protégées et littorales des PLU.
-* **Publication Numérique sous 48h (PLU) :** Obligation de mise en ligne immédiate sur le Portail Open Data Régional de tout dépôt de permis pour permettre l'exercice des recours citoyens.
-* **Nullité et Démolition pour Défaut d'Affichage :** Annulation automatique et démolition aux frais du promoteur de tout projet réalisé sous couvert d'un permis tacite non affiché.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Radar d'Urbanisme & Permis Tacites
-
-| Zone Foncier / Littoral | Taux de Permis Obtenus Tacitement | Taux de Recours Citoyens Réussis | Niveau de Risque / Bétonisation |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Bande Côtière des 100 Mètres** | 24% des autorisations | 🔴 92% d'annulations si attaqué | 🔴 Contournement délibéré des recours |
-| **Espaces Remarquables (ERC PADDUC)** | 18% des autorisations | 🔴 95% d'illégalité avérée | 🔴 Atteinte grave à la biodiversité |
-| **Zones Périurbaines Tendues** | 35% des autorisations | 54% d'annulations | ⚠️ Opacité administrative généralisée |
+| **Permis Tacites** | 16% à 22% | Recours Annulés | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | > 35% Déchéance | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code de l'Urbanisme Art. R. 424-1 & PLU) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

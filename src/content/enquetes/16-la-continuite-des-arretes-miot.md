@@ -3,7 +3,7 @@ id: 16
 title: "Enquête 16 : La Continuité Cinquantenaire des Arrêtés Miot & l'Indivision Foncière"
 subtitle: "Spoliation et blocage successoral : comment la fin programmée des arrêtés Miot et le désordre des titres favorisent le rachat spéculatif par les capitaux extérieurs"
 category: "SUCCESSIONS & GIRTEC"
-ref: "FSUCIETA-AUDIT-AXE-16"
+ref: "FSUCIETA-AUDIT-ENQUETE-16"
 author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "GIRTEC / Notaires / Code Civil"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer le démantèlement des arrêtés Miot et la spéculation sur l'indivision foncière (Enquête #16), les ayants droit et collectifs citoyens peuvent faire valoir leurs droits d'accès aux actes administratifs et notariés publics (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Continuite Des Arretes Miot**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Registres des actes de notoriété prescriptifs GIRTEC :** Relevé des actes de reconstitution de propriété validés par le Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse.
-* **Fichiers de la Publicité Foncière (DGFiP) :** Relevés des matrices cadastrales rénovées et historiques conservés aux Services de la Publicité Foncière d'Ajaccio et de Bastia.
-* **Arrêtés et décisions d'exonération successorale :** Bilan annuel de l'application de l'article 750 bis A du Code Général des Impôts relatif au régime fiscal transitoire corse.
-* **Procès-verbaux de la Commission Foncier de l'Assemblée de Corse :** Rapports d'arbitrage territorial sur les litiges d'indivision sans maître.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, adressez une saisine formelle à la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Continuite Des Arretes Miot** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **SUCCESSIONS & GIRTEC** met en lumière les acteurs clés de la gestion foncière et notariée :
-
-* **Groupement d'Intérêt Public Foncier :** Le **GIRTEC** (Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse), chargé de la sécurité juridique des titres et de la résorption de l'indivision.
-* **Instance Notariale Régionale :** La **Chambre des Notaires de Corse** et le Conseil Supérieur du Notariat (CSN), maîtres d'œuvre de la rédaction des actes de notoriété et des partages.
-* **Administration Fiscale & Cadastre :** La **DGFiP** (Direction Générale des Finances Publiques), gestionnaire des services de la publicité foncière et des droits de mutation.
-* **Ministère de l'Économie et des Finances :** Arbitre des prorogations législatives du régime d'exonération successorale de l'article 750 bis A du CGI.
-* **Organismes Fonciers & Régionaux :** La **Commission Foncier de l'Assemblée de Corse**, la SAFER de Corse et le Conservatoire du Littoral.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **SUCCESSIONS & GIRTEC** met en lumière les acteurs clés 
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Civil & Régime de l'Indivision Foncière)
+### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Titration GIRTEC
 
-Au terme de cette investigation médico-légale consacrée au volet **SUCCESSIONS & GIRTEC** (Enquête #16), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation du patrimoine familial insulaire et la résorption du désordre des titres exigent la révision prioritaire des règles du Code Civil régissant l'indivision foncière et les successions.
-
-Nous recommandons aux instances notariales et aux assemblées locales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Pérennisation Régionale du Statut Fiscal Miot :** Inscription au Code Général des Impôts et au Code Civil d'un statut fiscal insulaire pérenne exonérant à 100% les transmissions familiales de biens immobiliers ancrés dans le sol corse.
-* **Moratoire sur les Licitations Forcées (Code Civil) :** Modification des règles de licitation pour interdire la vente aux enchères judiciaire de parcelles indivises familiales au profit de holdings ou fonds de placement extérieurs.
-* **Cadastre Titré Insulaire Public :** Transfert direct des compétences de reconstitution des titres du GIRTEC vers un Cadastre Titré Régional placé sous le contrôle de la Collectivité de Corse.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Indivision Foncière
-
-| Indicateur Foncier & Successoral | Superficie / Nombre de Parcelles | Organisme de Gestion | Statut de Titularisation |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Parcelles sans Titre Notarié** | 185 000 Hectares (32% de l'île) | GIRTEC / DGFiP | 🔴 Indivision complexe non résolue |
-| **Actes de Notoriété Validés** | 4 200 Actes / An | Chambre des Notaires | ⚠️ Délais de reconstitution > 4 ans |
-| **Parcelles Sous Menace de Licitation** | 14 500 Parcelles | Tribunaux d'Ajaccio/Bastia | 🔴 Spéculation par rachat de parts minoritaires |
+| **Parcelles Non Titrées** | > 115 000 Unités | GIRTEC Actes | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | > 12 000 Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code Civil & Régime de l'Indivision Foncière) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

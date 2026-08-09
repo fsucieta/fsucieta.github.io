@@ -3,7 +3,7 @@ id: 17
 title: "Enquête 17 : Le Verrou de la Charte Européenne & le Droit à la Langue Corse"
 subtitle: "Analyse du blocage constitutionnel : la censure de la co-officialité de la langue corse et le refus de ratifier la Charte européenne des langues régionales"
 category: "CULTURE & LANGUE"
-ref: "FSUCIETA-AUDIT-AXE-17"
+ref: "FSUCIETA-AUDIT-ENQUETE-17"
 author: "Cellule d'Investigation Culturelle CASA DI CRISTALE"
 date: "Août 2026"
 tool: "Conseil Constitutionnel / Conseil de l'Europe / Education"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer le verrou constitutionnel et défendre le droit à la langue corse (Enquête #17), les associations et parents d'élèves peuvent exercer leur droit d'accès aux documents publics éducatifs et administratifs (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Verrou De La Charte Europeenne**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Rapports d'effectifs de l'enseignement bilingue :** Relevés annuels de la carte scolaire bilingue et immersive transmis par le Rectorat de l'Académie de Corse.
-* **Délibérations régionales sur la co-officialité :** Procès-verbaux complets des délibérations de l'Assemblée de Corse relatives au statut d'officialité de la lingua corsa.
-* **Rapports d'évaluation du Conseil de l'Europe :** Avis et observations du Comité d'experts de la Charte Européenne des Langues Régionales ou Minoritaires concernant la France.
-* **Conventions Éducation Nationale - Collectivité de Corse :** Actes de cadrage sur la formation des enseignants et l'attribution des heures de cours en corse.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, adressez une saisine formelle à la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Verrou De La Charte Europeenne** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **CULTURE & LANGUE** met en évidence les oppositions doctrinales et administratives :
-
-* **Juridiction Constitutionnelle :** Le **Conseil Constitutionnel**, gardien de l'interprétation stricte de l'Article 2 de la Constitution (« La langue de la République est le français »).
-* **Ministère de l'Éducation Nationale :** Le **Rectorat de l'Académie de Corse**, encadrant le volume horaire et l'affectation des enseignants bilingues.
-* **Instances Européennes :** Le **Conseil de l'Europe** (Comité d'experts de la Charte des langues régionales), recommandant régulièrement à la France la ratification de la Charte.
-* **Collectivité Régionale :** La **Collectivité de Corse** et sa Direction de la Langue Corse (Lingua Corsa), motrices des plans d'aménagement linguistique.
-* **Syndicats & Associations Éducatives :** Le **STC Educazoni**, le Sindicatu di l'Inseignanti Corsi et l'Associu di i Parenti d'Allevi Corsi (APAC).
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **CULTURE & LANGUE** met en évidence les oppositions doctr
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Patrimoine & Charte Européenne des Langues)
+### 📊 Matrice d'Audit et Données Chiffrées : Droits Linguistiques & Charte Européenne
 
-Au terme de cette investigation médico-légale consacrée au volet **CULTURE & LANGUE** (Enquête #17), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'identité linguistique et le droit à la langue maternelle exigent la révision du Code du Patrimoine (art. L. 211-1) et la ratification de la Charte Européenne des Langues Régionales.
-
-Nous recommandons aux assemblées régionales et aux parlementaires l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Ratification de la Charte Européenne :** Révision constitutionnelle autorisant la ratification intégrale de la Charte Européenne des Langues Régionales ou Minoritaires du Conseil de l'Europe.
-* **Généralisation de l'Immersif (Code du Patrimoine) :** Inscription de l'obligation de filières bilingues immersives à parité horaire dès la maternelle dans tous les établissements de l'île.
-* **Statut Régional de Co-officialité :** Reconnaissance du corse comme langue officielle aux côtés du français dans tous les actes administratifs et de la vie publique régionale.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Charte Européenne & Langue Corse
-
-| Indicateur Linguistique | Valeur Mesurée | Organisme Référent | Niveau de Risque / Conformité |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Élèves en Filière Bilingue** | 28% de la population scolaire | Rectorat de Corse | ⚠️ Progression ralentie par les censures |
-| **Affichage Public Bilingue** | 42% des communes littorales | Observatoire Lingua Corsa | 🔴 Manque d'harmonisation réglementaire |
-| **Annulations pour Motif d'Article 2** | 18 Délibérations annulées | Préfecture / TA Bastia | 🔴 Censure systématique du statut de co-officialité |
+| **Filières Bilingues** | ~ 38% Primaire | Chute Collège | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | 86% Soutien Populaire | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code du Patrimoine & Charte Européenne des Langues) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

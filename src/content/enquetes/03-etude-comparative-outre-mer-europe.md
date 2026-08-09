@@ -3,7 +3,7 @@ id: 3
 title: "Enquête 03 : Étude Comparative — La Corse face aux régimes fonciers d'Outre-mer et d'Europe"
 subtitle: "Droit comparé et analyse constitutionnelle : Jersey, Polynésie, Nouvelle-Calédonie et Baléares démontrent l'invalidité du dogme de l'uniformité juridique français"
 category: "DROIT COMPARÉ & STATUT"
-ref: "FSUCIETA-AUDIT-AXE-03"
+ref: "FSUCIETA-AUDIT-ENQUETE-03"
 author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "States of Jersey / Loi du Pays Polynésie / Art 74"
@@ -109,35 +109,23 @@ Dans sa jurisprudence constante, la Cour du Luxembourg valide les mécanismes d'
 
     
 
-## VII. Proposition d'amendement constitutionnel pour le statut de résident
+## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-    
+Pour appuyer la légitimité juridique d'un statut d'autonomie et de résidence sur le modèle des îles européennes et des COM françaises, le droit de saisine CADA porte sur :
 
-La révision constitutionnelle relative à la Corse doit comporter l'écriture explicite d'un article additionnel autorisant l'Assemblée de Corse à fixer par *Loi de la Collectivité* les conditions de résidence préalable (de 3 à 5 ans) requises pour toute transaction immobilière en pleine propriété ou en usufruit sur le territoire insulaire.
+1. **Les registres des titres d'habitation des îles Åland et Jersey :** Demande de communication auprès du Ministère des Affaires Étrangères des études comparatives sur l'application des clauses de résidence (*Hembygdsrätt* et *Entitled Status*).
+2. **Les procès-verbaux de la commission mixte sur l'article 74 en Polynésie :** Injonction de communication des bilans d'application des lois du pays de protection du foncier local validées par le Conseil Constitutionnel.
+3. **Les études d'impact sur la soutenabilité foncière en Corse :** Demande de communication des rapports internes de la DREAL et de l'Insee relatifs au rythme de dépossession foncière sur la période 2010-2025.
+4. **Les notifications de préemption SAFER :** Demande de communication des actes de refus de préemption émis par la SAFER sur les biens littoraux acquis par des non-résidents.
 
-    
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-À cet amendement s'ajoute la création d'un Droit de Préemption Prioritaire de la Collectivité (DPPC) s'appliquant sur l'ensemble des cessions de parts de SCI détenant des actifs en zone côtière.
+La résistance institutionnelle à la mise en place d'un statut de résidence foncière fait intervenir plusieurs niveaux décisionnels :
 
-    
-    
-
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
-
-    
-
-L'analyse systémique du domaine **DROIT COMPARÉ & STATUT** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+- **Le Conseil d'État & le Conseil Constitutionnel :** Dogmatisme juridique opposant le principe d'indivisibilité du peuple français à toute régulation de l'accès à la propriété foncière.
+- **La SAFER de Corse :** Dispose de moyens budgétaires de préemption très inférieurs aux transactions financières du marché libre, limitant son rôle à un enregistrement passif.
+- **Les Agences Immobilières Internationales et Notaires de Littoral :** Réseau d'intermédiaires qui privilégient les acheteurs à fort pouvoir d'achat extérieur au détriment des jeunes ménages insulaires.
+- **La Commission Européenne (DG REGIO) :** Tolère les régimes restrictifs à Åland et Malte mais refuse d'ouvrir des négociations d'adaptation pour la Corse en l'absence de mandat explicite de l'État français.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -150,31 +138,6 @@ Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Ex
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Statut Fiscal Insulaire & Traités Européens / CJUE)
-
-    
-
-Au terme de cette investigation médico-légale consacrée au volet **DROIT COMPARÉ & STATUT** (Enquête #03), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
-
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-
-
 ### 📊 Matrice d'Audit et Données Chiffrées : Étude Comparative Foncière Insulaire
 
 | Territoire Insulaire | Statut Politique | Condition de Résidence Foncière | Validation Juridique / Jurisprudence |
@@ -183,3 +146,7 @@ CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre t
 | **Polynésie Française** | COM Art. 74 Constitution | 3 à 5 Ans (*Loi du Pays*) | Conseil Constitutionnel 2009 |
 | **Îles Åland** | Province Autonome Finlandaise | 5 Ans (*Hembygdsrätt*) | Traité d'Adhésion UE 1994 |
 | **Sardaigne** | Région Autonome Italienne | Projets Régionaux 2007 | Arrêt Cour de Justice UE 2009 |
+
+### Amendements Prioritaires aux Traités Européens & à la Constitution :
+1. **Protocoles Derogatoires dans les Traités UE (Art. 349 TFUE) :** Négocier une clause de sauvegarde insulaire permanente autorisant la limitation des acquisitions immobilières aux résidents de plus de 5 ans.
+2. **Loi du Pays Constitutionnelle (Art. 72-4 Modifié) :** Transférer à l'Assemblée de Corse la compétence législative pour fixer les conditions d'accès à la propriété foncière en zone tendue.

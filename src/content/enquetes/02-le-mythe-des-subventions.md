@@ -3,7 +3,7 @@ id: 2
 title: "Enquête 02 : Le Mythe des Subventions — Anatomie de la captation fiscale par le Trésor Public"
 subtitle: "Analyse médico-légale des finances publiques : comment la TVA et l'Impôt sur les Sociétés générés par 3 millions de visiteurs repartent vers Paris sans retour structurel"
 category: "FISCALITÉ & BUDGET"
-ref: "FSUCIETA-AUDIT-AXE-02"
+ref: "FSUCIETA-AUDIT-ENQUETE-02"
 author: "Cellule d'Investigation Financière CASA DI CRISTALE"
 date: "Août 2026"
 tool: "Cour des Comptes / DGFiP / REPAD"
@@ -108,30 +108,23 @@ Cette évasion de l'assiette fiscale assèche les finances de la Collectivité d
 
     
 
-## VII. Modélisation du recours citoyen CADA
+## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour briser l'opacité d'attribution des fonds publics et tracer la fuite des recettes fiscales, l'action citoyenne s'appuie sur le Code des Relations entre le Public et l'Administration (CRPA, art. L. 300-1 et suivants). Le recours CADA vise la communication intégrale des documents administratifs, registres et conventions financières suivants :
+Face à la fuite des assiettes fiscales majeures vers le budget central de l'État, les requêtes CADA s'articulent autour des documents comptables publics suivants :
 
-1. **Tableaux Récapitulatifs des Dotations d'Équipement (DETR & DSIL) :** Relevé exhaustif des dossiers subventionnés par la Préfecture de Région et les Préfectures de département, incluant les montants demandés, accordés et les restes à charger des communes.
-2. **Conventions de Remboursement FCTVA et Attestations de Dépenses :** Actes de transfert et registres de liquidation du Fonds de Compensation pour la Taxe sur la Valeur Ajoutée versés aux intercommunalités corses.
-3. **Procès-Verbaux de la Commission Interministérielle des Aides Publiques aux Entreprises :** Délibérations d'octroi de subventions d'ingénierie et d'implantation aux grands groupes de distribution alimentaire et pétroliers opérant en Corse.
-4. **Registre des Délibérations d'Attribution de la Dotation de Continuité Territoriale (DCT) :** Conventions financières conclues par l'Office des Transports de la Corse (OTC) avec les délégataires maritimes et aériens et récapitulatif des contrôles de surcompensations.
+1. **Les états de consolidation de la TVA touristique :** Demande d'accès auprès du Ministère de l'Économie et des Finances aux données brutes de la TVA collectée en Corse pendant la saison estivale par les grands groupes de distribution et de transport.
+2. **Les dégrèvements et exonérations du Crédit d'Impôt (CIIC) :** Demande de communication du bilan d'attribution de l'article 244 quater E du CGI détaillant les entreprises bénéficiaires et les emplois créés par rapport aux montants déduits.
+3. **Les flux de taxe sur les surfaces commerciales (TASCOM) :** Injonction de communication des bordereaux de collecte de la TASCOM acquittée par la grande distribution en Corse.
+4. **Les états des dotations DETR et DSIL :** Demande de communication des procès-verbaux d'arbitrage de la commission préfectorale d'attribution des subventions d'équipement aux communes.
 
-## VIII. Cartographie des acteurs institutionnels
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-L'analyse médico-légale des circuits de subventionnement et de la fiscalité des entreprises en Corse identifie précisément les entités publiques, ministères, corps de contrôle et groupes privés impliqués :
+Le système de captation fiscale repose sur une chaîne d'arbitrage défavorable aux finances publiques corses :
 
-* **Ministères & Directions Financières de l'État :**
-  * **Ministère de l'Économie, des Finances et de la Souveraineté Industrielle et Numérique :** Direction Générale des Finances Publiques (DGFiP) et Direction du Budget.
-  * **Préfecture de Région Corse (SGAR) :** Secrétariat Général pour les Affaires Régionales, instructeur direct des enveloppes DETR et DSIL.
-* **Organes d'Audit & de Contrôle Budgétaire :**
-  * **Chambre Régionale des Comptes (CRC de Corse) :** Auteur des rapports d'audit sur les finances des collectivités et la gestion de la DCT.
-  * **Inspection Générale des Finances (IGF) :** Chargée des évaluations d'impact des dotations globales de décentralisation insulaire.
-* **Acteurs Économiques Privés & Lobbies de la Distribution :**
-  * **Fédération du Commerce et de la Distribution (FCD - Antenne Corse) :** Représentant des centrales d'achat continentales de la grande distribution (Carrefour, Leclerc, Casino, Auchan).
-  * **Syndicat des Importateurs et Distributeurs de Carburants :** Groupes pétroliers et grossistes (TotalEnergies, Vito, Rubis) rapatriant les bénéfices hors-sol.
-* **Organismes Régionaux de Développement :**
-  * **Agence du Développement Économique de la Corse (ADEC) :** Bras armé de la CdC pour la distribution des aides régionales aux entreprises.
+- **Bercy / Direction Générale des Finances Publiques (DGFiP) :** Centralise la TVA et l'Impôt sur les Sociétés collectés en Corse et redistribue des dotations globales de fonctionnement inférieures aux recettes réelles générées.
+- **Centrales d'Achat Nationales de la Grande Distribution (Leclerc, Carrefour, Casino) :** Facturent les marges et l'impôt sur les bénéfices au siège parisien, réduisant artificiellement le résultat comptable déclaré dans les filiales corses.
+- **Comité de Direction du CIIC (Préfecture / DRFiP) :** Valide des exonérations fiscales massives pour des projets immobiliers ou commerciaux sans contrôle strict du réinvestissement local.
+- **Chambre Régionale des Comptes (CRC) de Corse :** Note régulièrement les anomalies d'attribution des aides sans pouvoir contraindre l'État à réviser la clé de répartition des recettes fiscales.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -144,23 +137,14 @@ L'analyse médico-légale des circuits de subventionnement et de la fiscalité d
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Impôts & Loi de Finances)
+### 📊 Matrice d'Audit et Données Chiffrées : Évasion Fiscale et Subventions
 
-L'audit forensique des dotations et régimes d'aide (Enquête #02) révèle un paradoxe structurel : des centaines de millions d'euros de subventions d'État masquent une fuite massive des recettes de l'Impôt sur les Sociétés vers les sièges sociaux continentaux.
-
-### 📊 Matrice d'Audit Forensique : Opacité des Subventions et Évasion de l'Assiette Fiscale
-
-| Catégorie Fiscale / Dotation | Assiette / Volume National | Allocation Insulaire | Écart / Dysfonctionnement Constaté |
+| Catégorie Fiscale | Assiette Nationale | Répartition Insulaire | Écart Constaté |
 | :--- | :--- | :--- | :--- |
-| **Dotation d'Équipement (DETR/DSIL)** | 2,1 Mld € | 38,5 M€ / an | 🔴 Taux de Restructuration Incomplet |
-| **Impôt sur les Sociétés (Distribution)** | Taux Standard 25% | Rapatrié à 92% à Paris/Lyon | 🔴 Fuite Majeure de Valeur Ajoutée |
-| **TVA Dérogatoire (Taux Majeur 10%)** | Taux Standard 20% | Écart non répercuté au consommateur | ⚠️ Surmarge Captée par les Intermédiaires |
-| **Dotation Continuité Territoriale (DCT)** | 187 M€ / an | Allocation déléguée OTC | ⚠️ Risque de Over-compensation |
+| **Taux Majeur TVA (Régime Dérogatoire)** | 20.0% | 10.0% / 2.1% | 🔴 Manque à Gagner Territorial |
+| **Crédit d'Impôt Investissement (CIIC)** | 30.0% | 30.0% | ⚠️ Concentration Portefeuille |
+| **Taxe sur les Surfaces Commerciales** | Taux Standard | Exonération Partielle | 🔴 Distortion Fiscale |
 
-### 🚨 Amendements Spécifiques au Cadre Réglementaire (Code Général des Impôts & Loi de Finances)
-
-1. **Territorialisation de l'Impôt sur les Sociétés (Art. 209 Code Général des Impôts) :** Modification du CGI imposant la domiciliation fiscale et le paiement de l'IS en Corse pour tout établissement commercial dont le chiffre d'affaires réalisé sur l'île dépasse 1,5 million d'euros.
-2. **Réforme des Critères de la DETR et de la DSIL (Loi de Finances) :** Inscription dans la Loi de Finances annuelle d'un coefficient de péréquation insulaire garantissant une enveloppe minimale par habitant majorée de 40 % pour compenser les surcoûts d'infrastructure ruraux.
-3. **Conditionnement du Crédit d'Impôt Investissement en Corse (CIIC - Art. 244 quater E CGI) :** Obligation d'assujettir le bénéfice du CIIC à un engagement de réinvestissement d'au moins 50 % des bénéfices nets dans l'économie locale insulaire.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
+### Amendements Prioritaires au Code Général des Impôts & Loi de Finances :
+1. **Territorialisation de l'IS (Art. 209 CGI) :** Obligation d'imposition des bénéfices au lieu de réalisation effective de l'activité économique pour les filiales et succursales opérant en Corse.
+2. **Attribution Directe de la TVA Touristique en Loi de Finances :** Inscrire dans la Loi de Finances la rétrocession intégrale des recettes de TVA perçues entre juin et septembre au budget de la Collectivité de Corse.

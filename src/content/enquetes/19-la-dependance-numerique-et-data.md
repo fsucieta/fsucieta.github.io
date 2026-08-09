@@ -3,7 +3,7 @@ id: 19
 title: "Enquête 19 : La Dépendance Numérique & les Atteintes à la Souveraineté des Données"
 subtitle: "Radiographie du réseau de télécommunication : vulnérabilité des câbles sous-marins de fibre optique et hébergement des données publiques corses sur des serveurs parisiens"
 category: "NUMÉRIQUE & DATA"
-ref: "FSUCIETA-AUDIT-AXE-19"
+ref: "FSUCIETA-AUDIT-ENQUETE-19"
 author: "Cellule d'Investigation Numérique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "ARCEP / ANSSI / Corsica Fibra"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer la vulnérabilité des infrastructures et la perte de souveraineté numérique (Enquête #19), les citoyens et professionnels du secteur peuvent exiger l'accès aux documents publics du numérique (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Dependance Numerique Et Data**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Cahier des charges de la DSP Réseau d'Initiative Publique :** Actes de concession de Corsica Fibra signés avec la Collectivité de Corse pour le déploiement du réseau FTTH.
-* **Contrats d'hébergement cloud des collectivités :** Conventions de stockage et d'hébergement des données cadastrales, sanitaires et administratives signées avec des hyperscalers extérieurs.
-* **Cartes de servitudes et points d'atterrage des câbles sous-marins :** Cartographies d'atterrage des 3 câbles de fibre optique sous-marins (Orange, SFR, Telecom Italia) déposées à l'ARCEP.
-* **Rapports d'audit de sécurité ANSSI :** Recommandations de cybersécurité adressées aux collectivités territoriales et centres hospitaliers de Bastia et d'Ajaccio.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Dependance Numerique Et Data** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **NUMÉRIQUE & DATA** met en lumière les dépendances technologiques majeures :
-
-* **Autorités de Régulation et Sécurité Nationale :** L'**ARCEP** (Régulation des communications) et l'**ANSSI** (Sécurité des systèmes d'information), fixant les normes d'infrastructure.
-* **Collectivité & Opérateur Régional :** La **Collectivité de Corse** (Direction du Numérique) et **Corsica Fibra**, concessionnaire du Réseau d'Initiative Publique insulaire.
-* **Opérateurs Télécoms & Maritimes :** Orange, SFR, Telecom Italia et Orange Marine, propriétaires et gestionnaires de la pose des câbles sous-marins de fibre optique.
-* **Fournisseurs Cloud & Hyperscalers :** Les acteurs majeurs du Cloud (AWS, Microsoft Azure, Google Cloud, OVHcloud), hébergeant la majorité des données publiques insulaires sur le continent.
-* **Services d'Information Municipaux & Hospitaliers :** Les DSI des mairies, hôpitaux et conseils communautaires corses, soumis au risque de rupture de liaison.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **NUMÉRIQUE & DATA** met en lumière les dépendances tech
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Directeur Régional d'Aménagement Numérique SDRAN & ARCEP)
+### 📊 Matrice d'Audit et Données Chiffrées : Télécoms & Souveraineté Data
 
-Au terme de cette investigation médico-légale consacrée au volet **NUMÉRIQUE & DATA** (Enquête #19), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La souveraineté numérique et la protection des données publiques exigent la révision prioritaire du Schéma Directeur Régional d'Aménagement Numérique (SDRAN) sous l'égide de l'ARCEP.
-
-Nous recommandons à la Collectivité de Corse et aux autorités de régulation l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Datacenter Public Insulaire Souverain (SDRAN) :** Inscription obligatoire au SDRAN du stockage de 100% des données administratives, foncières et médicales corses au sein d'une infrastructure souveraine sur l'île.
-* **Redondance Sécurisée des Câbles (ARCEP) :** Sécurisation et maîtrise publique des points d'atterrage de fibre optique pour éliminer les risques de rupture physique de réseau.
-* **Charte "Souveraineté Cloud Insulaire" :** Interdiction pour les organismes publics corses d'héberger leurs données auprès d'opérateurs soumis à des réglementations d'extraterritorialité étrangère.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Dépendance Numérique & Souveraineté Data
-
-| Infrastructure Numérique | Opérateur / Titulaire | Localisation des Données | Niveau de Redondance & Risque |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Câbles Sous-Marins (Fibre Optique)** | Orange / SFR / Telecom Italia | Atterrages Ajaccio/Bastia | ⚠️ Risque de coupure physique unique |
-| **Données Cadastrales et Fiscales** | DGFiP / Prestataires extérieurs | Datacenters Région Parisienne | 🔴 Dépendance totale hors territoire |
-| **RIP Corsica Fibra (Fibre Rurale)** | Corsica Fibra / CdC | Nœuds de Raccordement Insulaires | ✅ Couverture en cours (85%) |
+| **Cables Sous-Marins** | 100% Dépendance | Corsica Fibra | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | Fibre Rurale Bloquée | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Schéma Directeur Régional d'Aménagement Numérique SDRAN & ARCEP) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

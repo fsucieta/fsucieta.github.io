@@ -3,7 +3,7 @@ id: 13
 title: "Enquête 13 : Le Sous-Investissement Éducatif & l'Université de Corse"
 subtitle: "Radiographie de l'enseignement supérieur : comment l'Université Pasquale Paoli de Corte subit la sous-dotation ministérielle et la fuite des cerveaux"
 category: "ÉDUCATION & RECHERCHE"
-ref: "FSUCIETA-AUDIT-AXE-13"
+ref: "FSUCIETA-AUDIT-ENQUETE-13"
 author: "Cellule d'Investigation Éducation CASA DI CRISTALE"
 date: "Août 2026"
 tool: "MESR / Université de Corse / Rectorat"
@@ -111,33 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Sous Investissement Educatif**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-Pour contrer les abus identifiés dans l'enquête #13, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-                    
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
+L'organisation institutionnelle du secteur de l'enquête **Le Sous Investissement Educatif** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-                    
-    
-
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
-
-    
-
-L'analyse systémique du domaine **ÉDUCATION & RECHERCHE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -150,35 +138,13 @@ Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Ex
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Éducation Art. L. 719-1 & SRESR)
+### 📊 Matrice d'Audit et Données Chiffrées : Investissement Éducatif & Université
 
-    
-
-Au terme de cette investigation médico-légale consacrée au volet **ÉDUCATION & RECHERCHE** (Enquête #13), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
-
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-
-
-### 📊 Matrice d'Audit et Données Chiffrées : Investissement Éducatif & Université de Corte
-
-| Niveau Éducatif / Recherche | Dotation par Étudiant | Moyenne Nationale | Écart de Financement |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Université de Corse Pasquale Paoli** | 8 200 € / Étudiant | 11 500 € / Étudiant | 🔴 -28.6% sous la moyenne |
-| **Laboratoires de Recherche CNRS/SPE** | 4.2 M€ Budget | 8.5 M€ Budget | 🔴 -50.5% d'Équipement |
-| **Filières Techniques & IUT** | 7 800 € / Élève | 9 800 € / Élève | ⚠️ Sous-Équipement Manuel |
+| **Dotation Étudiant** | 8 200 € / étud. | vs 11 500 € (Nat.) | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | Sous-Dotation -25% | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code de l'Éducation Art. L. 719-1 & SRESR) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

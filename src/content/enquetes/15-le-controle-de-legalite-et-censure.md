@@ -3,7 +3,7 @@ id: 15
 title: "Enquête 15 : Le Contrôle de Légalité & la Censure des Délibérations Locales"
 subtitle: "Radiographie de la tutelle préfectorale : comment les déférés du Préfet annulent les arrêtés des maires ruraux tout en fermant les yeux sur les grands projets spéculatifs"
 category: "URBANISME & PRÉFECTURE"
-ref: "FSUCIETA-AUDIT-AXE-15"
+ref: "FSUCIETA-AUDIT-ENQUETE-15"
 author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "DDTM / Tribunal Administratif de Bastia / CGCT"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer la sélectivité du contrôle de légalité préfectoral (Enquête #15), les citoyens et maires ruraux peuvent exiger l'accès aux documents administratifs clés garantissant l'égalité devant la loi, conformément au Code des Relations entre le Public et l'Administration (CRPA, art. L. 300-1) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Controle De Legalite Et Censure**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Bordereaux d'accusé de réception Télétransmission (`@CTES`) :** Registres horodatés des actes et délibérations transmis en préfecture de Haute-Corse et de Corse-du-Sud.
-* **Registres des déférés préfectoraux d'urbanisme :** Relevé intégral des recours enregistrés par le Préfet devant le Tribunal Administratif de Bastia au titre de l'art. L. 2131-6 du CGCT.
-* **Fiches d'instruction et avis d'opportunité DDTM :** Rapports techniques élaborés par la DDTM (2A/2B) sur les permis de construire littoraux de plus de 1 000 m² comparativement aux permis ruraux déférés.
-* **Correspondances et mises en demeure d'urbanisme :** Échanges administratifs entre les services préfectoraux et les promoteurs immobiliers continentaux lors des phases de recours.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, adressez une saisine formelle à la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **Le Controle De Legalite Et Censure** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **URBANISME & PRÉFECTURE** révèle des rapports de force et des arbitrages à deux vitesses :
-
-* **Haute Administration Préfectorale :** Les **Préfectures de Corse-du-Sud et de Haute-Corse**, dépositaires du pouvoir de déféré devant la juridiction administrative.
-* **Services Instructeurs de l'État :** La **DDTM 2A et DDTM 2B** (Directions Départementales des Territoires et de la Mer), chargées de l'examen technique des documents d'urbanisme et de l'application de la Loi Littoral.
-* **Juridiction Administrative Régionale :** Le **Tribunal Administratif de Bastia**, arbitre ultime des contentieux d'annulation introduits par l'État ou les associations.
-* **Représentation des Élus Locaux :** L'**Association des Maires de France (sections 2A et 2B)** et l'Association des Maires Ruraux de Corse, opposées à la censure disproportionnée des petites communes.
-* **Promoteurs & Lobbies Immobiliers :** La **Fédération Promoteurs Immobiliers (FPI Méditerranée)** et cabinets d'urbanisme continentaux, bénéficiant des failles d'incurie préfectorale.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **URBANISME & PRÉFECTURE** révèle des rapports de force 
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Général des Collectivités Territoriales CGCT)
+### 📊 Matrice d'Audit et Données Chiffrées : Contrôle de Légalité & Déférés
 
-Au terme de cette investigation médico-légale consacrée au volet **URBANISME & PRÉFECTURE** (Enquête #15), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et la fin des discriminations réglementaires exigent la révision des règles d'exercice du contrôle de légalité au titre du CGCT (art. L. 2131-6).
-
-Nous recommandons aux maires et aux représentants des collectivités l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Portail Citoyen du Contrôle de Légalité :** Publication obligatoire et en temps réel sur un portail Open Data de la totalité des actes reçus via `@CTES` et du statut motivé des déférés préfectoraux.
-* **Obligation de Motivation des Renonciations (CGCT) :** Exigence d'une justification publique motivée du Préfet pour toute absence de déféré contre un permis littoral massif ayant fait l'objet d'alertes environnementales.
-* **Garantie Foncier-Rural et Cartes Communales :** Secrétariat d'arbitrage garantissant le droit des communes rurales de fixer leur population par l'approbation garantie de leurs cartes communales face aux blocages abusifs de la DDTM.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Contrôle de Légalité & Censure
-
-| Type de Collectivité | Nombre de Déférés Préfectoraux | Taux d'Annulation au TA | Orientation du Contrôle de Légalité |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Communes Rurales / Intérieur** | 148 Déférés (78%) | 89% | 🔴 Censure stricte des permis locaux et bergeries |
-| **Promotions Littorales Massives** | 12 Déférés (6%) | 42% | ⚠️ Indulgence et dépassement des délais de 2 mois |
-| **Cartes Communales Bloquées** | 45 Dossiers en DDTM | N/A | 🔴 Inconstructibilité appliquée de manière rigide |
+| **Communes Rurales** | > 70% Déférés | Annulations Citoyennes | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | 85% Associations | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code Général des Collectivités Territoriales CGCT) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

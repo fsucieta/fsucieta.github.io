@@ -3,7 +3,7 @@ id: 22
 title: "Enquête 22 : La Captation Bancaire & l'Évasion des Dépôts d'Épargne"
 subtitle: "Radiographie du système bancaire insulaire : comment les banques privées réinjectent moins de 40 % des dépôts des épargnants corses dans l'économie réelle locale"
 category: "BANQUE & ÉPARGNE"
-ref: "FSUCIETA-AUDIT-AXE-22"
+ref: "FSUCIETA-AUDIT-ENQUETE-22"
 author: "Cellule d'Investigation Financière CASA DI CRISTALE"
 date: "Août 2026"
 tool: "IEDOM / Banque de France / ACPR"
@@ -111,24 +111,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour contrer le siphonnage des liquidités et le sous-investissement bancaire (Enquête #22), les acteurs économiques et citoyens peuvent exiger la communication des statistiques bancaires publiques (CRPA, art. L. 300-1 et suivants) :
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Captation Bancaire Et Epargne**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-* **Relevés statistiques régionaux d'octroi de crédit IEDOM :** Données consolidées de l'Institut d'Émission des Départements d'Outre-Mer / Banque de France sur la collecte et les encours de prêt.
-* **Registres des PGE et garanties Bpifrance :** Bilans des prêts garantis par l'État accordés ou refusés aux TPE-PME et artisans corses.
-* **Conventions financières Collectivité de Corse - Banques :** Textes des chartes et partenariats signés entre la région et les réseaux bancaires commerciaux.
-* **Rapports prudentiels ACPR sur la liquidité insulaire :** Évaluations de l'Autorité de Contrôle Prudentiel et de Résolution sur le ratio dépôts/crédits des filiales locales.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-En cas de silence ou de refus de communication sous 30 jours, saisissez directement la CADA (`cada.fr`).
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
+L'organisation institutionnelle du secteur de l'enquête **La Captation Bancaire Et Epargne** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-L'analyse du domaine **BANQUE & ÉPARGNE** met en lumière les mécanismes de drainage financier :
-
-* **Institut d'Émission & Banque Régionale :** L'**IEDOM / Banque de France (Corse)**, collecteur des statistiques monétaires et prudentielles du territoire insulaire.
-* **Autorité de Contrôle Prudentiel :** L'**ACPR**, chargée de la supervision du secteur bancaire et du respect des règles d'endettement.
-* **Réseaux Bancaires Commerciaux :** Le Crédit Agricole de la Corse, la Caisse d'Épargne CEPAC, la Banque Populaire Méditerranée et la Société Générale.
-* **Banque Publique de Financement :** **Bpifrance**, co-garante des investissements et de l'innovation des TPE-PME insulaires.
-* **Instances Consulaires & Économiques :** La **CCI de Corse**, la Chambre de Métiers et de l'Artisanat, et la Commission Économie de l'Assemblée de Corse.
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -141,21 +138,13 @@ L'analyse du domaine **BANQUE & ÉPARGNE** met en lumière les mécanismes de dr
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Monétaire et Financier & Banque de France)
+### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire de l'Épargne
 
-Au terme de cette investigation médico-légale consacrée au volet **BANQUE & ÉPARGNE** (Enquête #22), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La réappropriation des circuits financiers et l'accès au crédit exigent la révision des règles prudentielles du Code Monétaire et Financier applicables sous la tutelle de la Banque de France.
-
-Nous recommandons aux instances monétaires et régionales l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-* **Société Financière Régionale Insulaire :** Inscription au Code Monétaire et Financier de la création d'un établissement financier public territorial adossé à la Collectivité de Corse.
-* **Ratio Obligatoire de Réinvestissement Local (Banque de France) :** Obligation pour les réseaux bancaires de réinjecter au moins 65% de l'épargne locale collectée dans les TPE-PME et l'accession sociale sous peine de pénalités prudentielles.
-* **Dispositif Anti-Siphonnage de Liquidités :** Surtaxe fiscale régionale prudentielle sur les flux d'épargne transférés vers les sièges parisiens sans contrepartie d'investissement insulaire.
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-### 📊 Matrice d'Audit et Données Chiffrées : Captation Bancaire & Épargne
-
-| Établissement Bancaire | Épargne Collectée en Corse | Crédits Accordés aux PME Locales | Ratio de Réinvestissement (RRL) |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Réseaux Banques Privées / Nationales** | 4,2 Mld € | 1,4 Mld € | 🔴 33% (Fuite massive des liquidités) |
-| **Banques Mutualistes Régionales** | 3,8 Mld € | 2,1 Mld € | ⚠️ 55% (Insuffisant face aux besoins) |
-| **Taux de Refus de Prêt PME/Artisans** | N/A | 38% des demandes | 🔴 Verrouillage de l'investissement local |
+| **Dépôts Collectés** | > 11,2 Mld € | Crédits PME Local | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | < 42% Réinjectés | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code Monétaire et Financier & Banque de France) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.

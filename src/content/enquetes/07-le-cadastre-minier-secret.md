@@ -3,7 +3,7 @@ id: 7
 title: "Enquête 07 : Le Cadastre Minier Secret & le Plan IRM 2024 — Les richesses enfouies du sous-sol corse"
 subtitle: "Radiographie des permis d'exploration du BRGM : cuivre, antimoine, terres rares et métaux stratégiques sous contrôle central sans concertation insulaire"
 category: "MINES & ÉNERGIE"
-ref: "FSUCIETA-AUDIT-AXE-07"
+ref: "FSUCIETA-AUDIT-ENQUETE-07"
 author: "Cellule d'Investigation Géologique CASA DI CRISTALE"
 date: "Août 2026"
 tool: "BRGM / SIG Mines / Code Minier"
@@ -110,33 +110,21 @@ En analysant les contentieux portés devant le Tribunal Administratif de Bastia 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-                    
+Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **Le Cadastre Minier Secret**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
 
-Pour contrer les abus identifiés dans l'enquête #07, la réponse citoyenne doit s'appuyer sur la transparence intégrale des documents publics. Conformément aux dispositions des articles L. 300-1 et suivants du Code des Relations entre le Public et l'Administration (CRPA), chaque citoyen peut exiger la transmission sans frais des procès-verbaux de contrôle, des registres fonciers et des rapports d'audit administratif.
+1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
+2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
+3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
+4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
 
-                    
+## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
-En cas de silence ou de refus d'accès opposé par l'autorité publique dans un délai de 30 jours, la saisine de la Commission d'Accès aux Documents Administratifs (CADA sur `cada.fr`) constitue une étape obligatoire préalable au recours en annulation devant le juge administratif. La réappropriation citoyenne de nos droits et de notre sol exige la vigilance quotidienne de chaque habitant de l'île.
+L'organisation institutionnelle du secteur de l'enquête **Le Cadastre Minier Secret** met en évidence une chaîne de décision et d'influence clairement identifiée :
 
-                    
-    
-
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence sur le territoire insulaire
-
-    
-
-L'analyse systémique du domaine **MINES & ÉNERGIE** révèle un écheveau d'intérêts croisés entre décideurs administratifs, cabinets d'ingénierie conseil continentaux et syndicats mixtes locaux. La gouvernance territoriale de la Corse souffre d'un manque d'évaluation indépendante des politiques publiques : les mêmes cabinets d'études parisiens rédigent les schémas directeurs régionaux (PADDUC, Schémas de secteurs) et conseillent simultanément les groupes privés d'aménagement ou de distribution.
-
-    
-
-Cette porosité institutionnelle empêche toute remise en cause des choix de gestion historiques. Les alertes émanant de la Chambre Régionale des Comptes (CRC de Corse) et des rapports d'audit de l'Inspection Générale de l'Administration (IGA) restent trop souvent reléguées dans des tiroirs administratifs sans suites judiciaires ou réglementaires coercitives. La réappropriation de ces arbitrages par la citoyenneté informée constitue le seul rempart efficace contre la perpétuation des monopoles.
-
-    
-
-Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Extrême-Sud, Centre-Corse, Plaine Orientale), des réseaux de vigilance locale doivent se structurer pour surveiller la publication des arrêtés préfectoraux, les délibérations de conseils d'administration des syndicats intercommunaux et les mouvements de titres fonciers au registre de la publicité foncière.
-
-    
-    
+- **Les Administrations Centrales & Préfectures de Corse :** Exercent le contrôle de tutelle, l'attribution des enveloppes budgétaires et la régulation préfectorale.
+- **Les Groupes Privés & Concessionnaires Nationaux :** Captent les marchés d'exploitation et la valeur ajoutée sans réinvestissement suffisant sur le territoire insulaire.
+- **Les Établissements Publics Régionaux de la Collectivité de Corse :** Luttent pour faire prévaloir les orientations stratégiques locales face au centralisme administratif.
+- **Les Associations Citoyennes & Usagers Locaux :** Mènent le combat de la transparence et portent les recours devant les juridictions administratives pour défendre l'intérêt général.
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
@@ -149,35 +137,13 @@ Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Ex
 | **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Minier Art. L. 174-1 & Code de l'Environnement)
-
-    
-
-Au terme de cette investigation médico-légale consacrée au volet **MINES & ÉNERGIE** (Enquête #07), les conclusions de l'audit de la Cellule CASA DI CRISTALE s'imposent avec la force de l'évidence empirique. La préservation de l'intérêt général insulaire et le redressement des équilibres territoriaux exigent l'inscription de dispositions coercitives opposables dans le Schéma Régional d'Aménagement et de Développement Durable de la Corse (PADDUC).
-
-    
-
-Nous recommandons à l'Assemblée de Corse et aux conseils communautaires des 360 communes de l'île l'adoption immédiate des trois mesures d'arbitrage d'urgence suivantes :
-
-    
-
-        * **Moratoire immédiat :** Suspension de toute nouvelle autorisation d'aménagement en zone littorale et agricole tant que la conformité des bilans d'impact environnemental et des registres d'utilité publique n'a pas été certifiée par un audit citoyen indépendant.
-
-        * **Sanctuarisation des compétences :** Transfert effectif des leviers de contrôle foncier, fiscal et hydraulique à la Collectivité de Corse pour mettre fin au mille-feuille administratif et à la tutelle déconcentrée.
-
-        * **Transparence numérique intégrale :** Publication obligatoire en Open Data de l'intégralité des registres des permis de construire, des déclarations de bénéficiaires effectifs RBE et des délibérations d'attribution de subventions publiques sur l'ensemble du territoire insulaire.
-
-    
-
-    
-
-CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre terre et la souveraineté du peuple corse.
-
-
-
 ### 📊 Matrice d'Audit et Données Chiffrées : Le Cadastre Minier Secret
 
-| Concession Minière | Matériaux / Ressources | Statut Juridique actuel | Risque Environnemental |
+| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
-| **Site d'Amiante de Canari** | Chrysotile / Amiante | Domanialité Publique | ⚠️ Surveillance Risque Santé |
-| **Mines d'Argent de Argentella** | Plomb, Argent, Zinc | Cadastre Suspendu | 🔴 Pollution Sédimentaire |
-| **Gisement de Kupfer de Linguizzetta** | Cuivre / Pyrite | Exploration Fermée | ⚠️ Infiltration Nappe |
+| **District Cap Corse** | 48 Gisements | Antimoine / Cuivre | 🔴 Écart Majeur |
+| **Contrôle & Conformité** | Redevances Centralisées | Norme Légale Nationale | ⚠️ Vigilance Requis |
+
+### Amendements Prioritaires au cadre juridique (Code Minier Art. L. 174-1 & Code de l'Environnement) :
+1. **Renforcement des Contrôles d'État et Régionaux :** Inscrire l'obligation d'un audit public annuel indépendant publié en Open Data sur le portail de la Collectivité de Corse.
+2. **Sanctions & Restitution des Fonds Publics :** Conditionner l'octroi de toute aide ou concession publique au respect d'un cahier des charges strict protégeant l'intérêt des résidents corses.
