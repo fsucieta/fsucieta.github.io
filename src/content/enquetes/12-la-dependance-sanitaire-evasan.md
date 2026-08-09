@@ -140,25 +140,13 @@ Dans chaque micro-région corse (Balagne, Cap Corse, Castagniccia, Sartenais, Ex
 
 ## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
 
-    
+### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-Pour permettre à chaque citoyen, association ou collectif d'agir efficacement sur le terrain de la légalité pour l'enquête **#12**, la Cellule d'Investigation CASA DI CRISTALE met à disposition ce protocole d'action en trois étapes juridiques d'accès aux documents administratifs :
-
-    <ol style="line-height: 2; margin-bottom: 2rem;">
-        * **Étape 1 : Demande formelle par lettre recommandée avec accusé de réception (LRAR) ou courriel certifié** adressée à l'autorité compétente (Maire, Préfet de Département, Président du Syndicat Mixte ou Directeur d'Établissement Public). Exigez la transmission de la copie intégrale des bordereaux de prix, conventions de délégation et audits environnementaux en citant l'article L. 311-1 du Code des Relations entre le Public et l'Administration.
-
-        * **Étape 2 : Décompte du délai de silence raisonnable (30 jours).** Si l'administration ne répond pas ou oppose un refus partiel ou total sous un mois, le silence équivaut à une décision implicite de rejet.
-
-        * **Étape 3 : Saisine gratuite en ligne de la CADA (Commission d'Accès aux Documents Administratifs)** via le formulaire sécurisé sur `cada.fr`. Joignez la copie de votre demande initiale et du récépissé. La CADA émettra un avis contraignant sous 30 jours enjoignant l'administration de vous délivrer les pièces demandées sous peine d'astreinte financière.
-
-    </ol>
-
-    
-
-Note de rigueur juridique : L'ensemble des pièces réunies par les citoyens via ce protocole CADA alimentera directement la base Open Data de la plateforme CASA DI CRISTALE 2.0 pour certifier l'audit souverain du territoire corse.
-
-    
-    
+| Étape du Recours CRPA | Action Juridique Officielle | Délais Légal & Modalités d'Exécution |
+| :--- | :--- | :--- |
+| **Étape 1 : Saisine Initiale** | Demande formelle adressée à l'autorité publique (Préfecture / Mairie / DREAL / DGFiP) pour la communication intégrale du document. | **1 Mois** à compter de la réception. *L'absence de réponse vaut refus implicite.* |
+| **Étape 2 : Saisine CADA** | Recours gracieux préalable obligatoire devant la Commission d'Accès aux Documents Administratifs. | **2 Mois** à compter de la notification du refus ou du silence gardé par l'administration. |
+| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation de la décision implicite/explicite de refus. | **2 Mois** à compter de la notification de l'avis CADA (*Référé-suspension sous 48h*). |
 
 ## X. Synthèse d'analyse forensique & recommandations d'arbitrage pour le Schéma Régional d'Aménagement (PADDUC)
 
