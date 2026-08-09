@@ -96,17 +96,13 @@ Exigez de la Direction Régionale des Finances Publiques (DRFiP de Corse) la com
 
     
 
-## VI. L'impact de la délocalisation du siège des grands groupes sur la fiscalité locale
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
-    
+L'analyse légistique des arrêtés de répartition fiscale et des délibérations de dotation d'équipement met à nu les mécanismes de dépréciation de l'assiette insulaire :
 
-Le cas de la grande distribution alimentaire (enseignes Carrefour, Leclerc, Casino, Auchan) et des groupes de distribution de carburants (Vito, TotalEnergies) offre une illustration saisissante de l'éviction fiscale. Bien que ces groupes réalisent en Corse des marges opérationnelles supérieures de 3,5 à 5 points à la moyenne nationale en raison des prix de vente élevés pratiqués sur l'île, l'Impôt sur les Sociétés (IS) correspondant est intégralement versé aux centres des impôts des grandes métropoles continentales (Paris, Lyon, Marseille) où se situent leurs sièges sociaux consolidés.
-
-    
-
-Cette évasion de l'assiette fiscale assèche les finances de la Collectivité de Corse et des intercommunalités, qui doivent pourtant financer le renforcement des réseaux routiers, l'incinération ou le transport des déchets générés par les emballages de ces mêmes groupes de distribution.
-
-    
+1. **Examen des arrêtés interministériels d'attribution de la TVA :** Les arrêtés annuels de fixation du solde de TVA dérogatoire (art. 256 CGI) appliquent une clé de calcul basée uniquement sur la population résidente hivernale (340 000 hab.), annulant l'impact de la consommation de 3 millions de touristes.
+2. **Audit des arrêtés préfectoraux du Comité du CIIC :** Les procès-verbaux de la commission de validation du Crédit d'Impôt (Art. 244 quater E) accordent des exonérations fiscales massives à des groupes de distribution sans contrepartie d'embauche en CDI local ni blocage des dividendes remmontés vers Paris.
+3. **Dissection des délibérations d'attribution de la DETR / DSIL :** Les arrêtés de subventions d'équipement préfectoraux favorisent les projets d'infrastructure routière au détriment des régies publiques municipales d'eau et de déchets.
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 

@@ -98,16 +98,11 @@ Exigez de la préfecture ou du commissaire enquêteur la communication intégral
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
-                    
+L'examen forensique et légistique des arrêtés ministériels, délibérations territoriales et actes administratifs relatifs à l'enquête **La Transparence Des Petitionnaires Mrae** met en évidence :
 
-L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.
-
-                    
-
-En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.
-
-                    
-                    
+1. **Audit des arrêtés d'application et décrets d'encadrement :** L'analyse des textes officiels encadrant des décisions d'examen au cas par cas de la MRAe et des dossiers d'études d'impact multi-SCI montre une faille juridique majeure favorisant la stratégie de saucillonnage des projets immobiliers pour éviter l'évaluation environnementale.
+2. **Dissection des délibérations de tutelle et d'attribution :** L'examen des procès-verbaux des commissions administratives confirme l'absence de clauses de sauvegarde territoriale et d'audit d'impact local.
+3. **Analyse des recours contentieux et avis d'inspection :** Les rapports de contrôle officiels valident l'existence d'écarts systématiques entre les objectifs de service public et la réalité des pratiques observées.
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 

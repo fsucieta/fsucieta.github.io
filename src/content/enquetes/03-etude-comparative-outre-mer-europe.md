@@ -97,17 +97,13 @@ Saisissez le Comité des Pétitions du Parlement Européen (PETI) en invoquant l
 
     
 
-## VI. Analyse de la jurisprudence européenne (CJUE) et des exceptions insulaires
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
-    
+L'examen juridique comparé des avis du Conseil d'État et des délibérations régionales sur le statut de résident démontre un verrouillage constitutionnel asymétrique :
 
-Contrairement aux affirmations du gouvernement central français, la Cour de Justice de l'Union Européenne (CJUE) admet des restrictions à la libre circulation des capitaux et des acquisitions immobilières dès lors que ces mesures sont justifiées par des **raisons impérieuses d'intérêt général (RIIG)**, telles que la préservation du patrimoine naturel, la cohésion sociale de populations insulaires fragiles et la lutte contre la spéculation foncière évinçante (arrêts *Kononova*, *Osterbecke* et *Ålands vindkraft*).
-
-    
-
-Dans sa jurisprudence constante, la Cour du Luxembourg valide les mécanismes d'accréditation préalable et de plafonnement des résidences secondaires dans des zones de tension insulaire où le logement principal est menacé de disparition.
-
-    
+1. **Dissection des avis contentieux du Conseil d'État sur la délibération de 2014 :** L'analyse du mémoire en annulation de l'arrêté de l'Assemblée de Corse instaurant le statut de résident foncier montre l'utilisation d'une interprétation rigide de l'article 1er de la Constitution pour censurer la protection du foncier insulaire.
+2. **Audit comparatif des décrets d'application de la Loi du Pays Polynésienne :** L'examen des décrets validés par le Conseil Constitutionnel pour la Polynésie (Loi du Pays 2009-19) prouve que l'exigence d'une résidence de 3 à 5 ans est parfaitement compatible avec la République lorsqu'un statut d'autonomie est reconnu.
+3. **Analyse des traités d'adhésion de la Finlande (Îles Åland) :** Le protocole no 2 du traité de 1994 consacre l'exonération permanente du marché unique européen pour le droit de propriété insulaire (*Hembygdsrätt*).
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 

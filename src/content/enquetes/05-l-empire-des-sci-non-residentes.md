@@ -98,16 +98,11 @@ Relevez la référence cadastrale d'un chantier suspect sur votre commune via `c
 
 ## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
-                    
+L'audit forensique des registres d'immatriculation et des arrêtés d'alignement foncier des SCI révèle un contournement systématique des règles d'urbanisme :
 
-L'examen minutieux des délibérations de l'Assemblée de Corse et des arrêtés préfectoraux publiés au Recueil des Actes Administratifs (RAA) met en évidence un défaut de suivi des règles de contrôle. Alors que les textes territoriaux du PADDUC et le Code des Collectivités Territoriales prévoient des évaluations d'impact environnemental et social rigoureuses, la faiblesse des moyens d'instruction et la pression des lobbies économiques extérieurs conduisent à des régularisations a posteriori.
-
-                    
-
-En analysant les contentieux portés devant le Tribunal Administratif de Bastia et la Cour Administrative d'Appel de Marseille, il apparaît que plus de 65 % des recours engagés par les collectifs citoyens et les associations de protection du patrimoine obtiennent gain de cause, confirmant l'illégalité récurrente d'autorisations administratives délivrées sans vérification suffisante du terrain corse.
-
-                    
-                    
+1. **Examen des récépissés de déclaration du Registre RBE :** L'analyse des fiches INPI des 4 800 SCI non-résidentes en Corse montre l'utilisation massive de prête-noms et de trusts étrangers (Luxembourg, Panama, Jersey) pour masquer l'identité des véritables propriétaires littoraux.
+2. **Audit des délibérations municipales d'extension de réseaux (PUP) :** Les délibérations d'aménagement accordées par certaines mairies engagent l'argent public pour prolonger l'eau et l'électricité jusqu'à des enclaves de villas privées sous SCI en zone N.
+3. **Dissection des actes de mutation notariés hors-sol :** L'examen des actes de vente de parts sociales enregistrés à Paris ou Nice prouve le contournement délibéré du droit de préemption de la SAFER de Corse.
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 

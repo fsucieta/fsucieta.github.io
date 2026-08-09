@@ -96,17 +96,13 @@ Saisissez le maire de votre commune ou le président du conseil communautaire po
 
     
 
-## VI. Jurisprudence du Conseil d'État et délibérations territoriales sur les sûretés foncières
+## VI. Analyse médico-légale des textes administratifs et délibérations régionales
 
-    
+L'examen médico-légal des arrêtés de garantie budgétaire et des délibérations territoriales sur les flux financiers révèle un vice de consentement systémique :
 
-L'analyse approfondie de la jurisprudence administrative (notamment l'arrêt du Conseil d'État du 14 mars 2021 relatif aux garanties hypothécaires octroyées sur des biens insulaires) démontre une faille majeure dans le contrôle de l'origine des fonds. Alors que le Code Monétaire et Financier (articles L. 561-1 et suivants) impose une obligation de vigilance renforcée aux établissements bancaires concernant le blanchiment de capitaux et l'évasion fiscale, l'utilisation de filiales de crédit banques privées basées au Luxembourg ou en Suisse permet de contourner les déclarations TRACFIN directes.
-
-    
-
-En croisant les délibérations de l'Assemblée de Corse relatives au Schéma Régional de Développement Économique et d'Innovation (SRDEII) et les données du registre des privilèges de prêteurs de deniers, on constate que pas moins de 142 Sociétés Civiles Immobilières privées détiennent à elles seules plus de 1 200 hectares de littoral dans les micro-régions de l'Extrême-Sud et de la Balagne, sans qu'aucun contrôle de résidence fiscale préalable n'ait été effectué par les services de l'État.
-
-    
+1. **Analyse des délibérations de garantie d'emprunt (CdC / EPCI) :** L'étude des délibérations régionales accordant la caution de la Collectivité de Corse à des projets de promotion révèle l'absence systématique de clause d'audit de la nationalité ou de la résidence des bénéficiaires effectifs des SCI cautionnées.
+2. **Dissection des arrêtés de la Direction Régionale des Finances Publiques (DRFiP) :** Les arrêtés de constatation des droits de mutation (DMTO) appliquent un contrôle purement formel aux cessions de parts de SCI, fermant les yeux sur le démembrement de propriété utilisé pour dissimuler l'assiette foncière sous-jacente.
+3. **Audit des conventions bilatérales Banque de France / Collectivité :** Les avis du Comité Régional du Crédit n'intègrent aucun indicateur de territorialité des crédits à l'habitat, autorisant la fuite des plus-values vers les banques continentales.
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
