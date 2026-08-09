@@ -128,15 +128,26 @@ L'enquête sur la **captation bancaire et l'épargne** cartographie les acteurs 
 - **Banque de France (Direction Régionale) :** Produit les données de crédit mais ses recommandations sur l'amélioration du financement de l'économie insulaire ne sont pas contraignantes pour les établissements bancaires.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Captation Bancaire Et L'Épargne Insulaire*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **IEDOM** | Rapport annuel : encours dépôts vs encours crédits résidents corses (différentiel exporté) | `Art. L. 311-1 CRPA` |
+| **Bpifrance délégation Corse** | Statistiques de garanties accordées aux TPE-PME corses vs dossiers refusés | `Art. L. 311-1 CRPA` |
+| **Collectivité de Corse** | Conventions de partenariat financier avec les réseaux bancaires (taux, durées, contreparties) | `Art. L. 311-1 CRPA` |
+| **ACPR / Banque de France** | Statistiques régionales des conditions de crédit appliquées en Corse | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Monétaire et Financier & Banque de France)
 

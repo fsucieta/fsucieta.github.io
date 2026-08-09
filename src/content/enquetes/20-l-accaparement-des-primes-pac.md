@@ -128,15 +128,26 @@ L'enquête sur l'**accaparement des primes PAC** identifie les acteurs de la fil
 - **Parquet National Financier (PNF) :** Compétent pour les fraudes aux subventions européennes. A été saisi de plusieurs dossiers corses mais les poursuites restent rares face à l'ampleur présumée des fraudes.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d me'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *L'Accaparement Des Primes Pac*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **DRAAF de Corse** | Cartes anonymisées du RPG (Registre Parcellaire Graphique) TéléPAC par commune | `Art. L. 311-1 CRPA` |
+| **ODARC + DRAAF** | PV de contrôle sur place du cheptel (bovins, ovins, caprins) par exploitant | `Art. L. 311-1 CRPA` |
+| **CDOA 2A et 2B** | PV des séances sur l'attribution et transferts de droits à prime PAC | `Art. L. 311-1 CRPA` |
+| **ASP + Parquets Bastia/Ajaccio** | Statistiques annuelles de fraudes PAC détectées et transmises au PNF | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Stratégique National PSN PAC & Code Rural)
 

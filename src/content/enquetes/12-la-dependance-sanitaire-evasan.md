@@ -127,15 +127,26 @@ L'enquête sur la **dépendance sanitaire et les EVASAN** identifie les acteurs 
 - **Assurance Maladie / CPAM de Corse-du-Sud et Haute-Corse :** Finance les EVASAN sans publication du coût annuel total, opacifiant l'ampleur réelle de la dépendance sanitaire.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Dépendance Sanitaire Et Les Evasan*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **ARS de Corse** | Statistiques annuelles EVASAN (nombre, destination, coût unitaire, financeur) | `Art. L. 311-1 CRPA` |
+| **ARS de Corse** | Arrêtés annuels de dotation T2A aux CH Bastia et Ajaccio (MIG incluses) | `Art. L. 311-1 CRPA` |
+| **Ministère de la Santé** | Conventions de partenariat médical CH Corse / AP-HM / CHU Nice | `Art. L. 311-1 CRPA` |
+| **DREES / Inspection Générale** | Rapports d'inspection des urgences corses (saturation, délais, incidents) | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Projet Régional de Santé PRS & Code de la Santé Publique)
 

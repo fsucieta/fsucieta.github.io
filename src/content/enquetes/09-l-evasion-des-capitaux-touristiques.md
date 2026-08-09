@@ -128,15 +128,26 @@ L'enquête sur l'**évasion des capitaux touristiques** identifie les acteurs qu
 - **Communes littorales (Bonifacio, Porto-Vecchio, Calvi, L'Île-Rousse) :** Collectent la taxe de séjour mais n'ont pas les leviers juridiques pour exiger la réinjection locale des bénéfices des opérateurs saisonniers.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *L'Évasion Des Capitaux Touristiques*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **Mairies / EPCI** | Tableaux de bord de collecte de la taxe de séjour par opérateur | `Art. L. 2121-26 CGCT` |
+| **IEDOM** | Bulletin de suivi des flux de paiement CB estivaux en Corse | `Art. L. 311-1 CRPA` |
+| **DRFiP de Corse** | Statistiques agrégées d'IS déclarés par plateformes numériques (Airbnb, Booking) | `Art. L. 311-1 CRPA` |
+| **ATC (Agence du Tourisme de Corse)** | Conventions de subvention avec les agences de communication + rapports d'exécution | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Tourisme Art. L. 324-1-1 & Taxe de Séjour)
 

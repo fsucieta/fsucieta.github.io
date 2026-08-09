@@ -128,15 +128,26 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 - **OFB (Office Français de la Biodiversité) :** Compétent sur les débits réservés et les prélèvements en milieu naturel. Sous-doté en agents de terrain en Corse.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Marchandisation De L'Eau Et Les Dsp*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **EPCI / Syndicat Intercommunal des Eaux** | Contrats DSP complets avec Kyrnolia/Veolia/Saur (Art. L. 1411-13 CGCT) | `Art. L. 1411-13 CGCT` |
+| **Délégataire (Kyrnolia/Veolia)** | RPQS annuel : rendement réseau, volumes perdus, investissements | `Art. L. 2224-5 CGCT` |
+| **OEHC** | Bordereaux de facturation des redevances de prélèvement sur les barrages | `Art. L. 311-1 CRPA` |
+| **ARS de Corse** | Analyses bactériologiques et arrêtés d'injonction de travaux | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & CGCT Art. L. 2224-7)
 

@@ -129,15 +129,26 @@ L'enquête sur l'**emprise et les servitudes militaires** cartographie les insti
 - **Collectivité de Corse et Communes riveraines :** N'ont aucun droit de regard sur le maintien ou la levée des servitudes militaires, contrairement à ce que prévoient les accords de statut des régions autonomes italiennes pour les bases de l'OTAN sur leur territoire.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *L'Emprise Et Les Servitudes Militaires*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **DIE / DGFiP** | Extrait TGPIE des parcelles militaires en Corse (superficie, affectation, utilisation) | `Art. L. 311-1 CRPA` |
+| **DDTM 2A et 2B** | Cartes actualisées des servitudes militaires (SUP PM1, PM2, PM3) | `Art. L. 311-1 CRPA` |
+| **DRFiP de Corse** | Montant cumulé des exonérations de taxe foncière des emprises militaires | `Art. L. 311-1 CRPA` |
+| **Ministère des Armées** | Termes de la convention de mise à disposition de la base navale d'Aspretto | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de la Défense Art. L. 5111-1 & Servitudes Militaires)
 

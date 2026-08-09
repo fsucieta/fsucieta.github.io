@@ -127,15 +127,26 @@ L'enquête sur le **cadastre minier secret** identifie les institutions et opér
 - **Collectivité de Corse :** Ne dispose d'aucun droit de veto sur les attributions de titres miniers, contrairement aux régions autonomes espagnoles ou aux COM françaises.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *Le Cadastre Minier Secret*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **BRGM** | Rapports d'inventaire des ressources minérales du Cap Corse (antimoine, chrome) | `Art. L. 311-1 CRPA` |
+| **Préfecture de Haute-Corse** | Arrêtés préfectoraux d'autorisation de recherches minières (2005-2025) | `Art. L. 311-1 CRPA` |
+| **DREAL de Corse** | Rapports d'inspection des sites miniers abandonnés (amiante, métaux lourds) | `Art. L. 311-1 CRPA` |
+| **DGFiP** | Montants des redevances minières perçues et redistribuées aux communes | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Minier Art. L. 174-1 & Code de l'Environnement)
 

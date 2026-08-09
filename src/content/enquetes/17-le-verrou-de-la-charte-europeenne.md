@@ -128,15 +128,26 @@ L'enquête sur le **verrou de la Charte Européenne des Langues Régionales** id
 - **Conseil de l'Europe / Comité d'Experts de la Charte :** Surveille l'application de la Charte par les États signataires. A régulièrement épinglé la France pour son non-respect des engagements envers les langues régionales.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *Le Verrou De La Charte Européenne Des Langues Régionales*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **Rectorat de Corse** | Statistiques annuelles des élèves en section bilingue et effectifs enseignants certifiés | `Art. L. 311-1 CRPA` |
+| **Assemblée de Corse** | PV des délibérations relatives à la co-officialité et réponses du Gouvernement | `Art. L. 2121-26 CGCT` |
+| **SGG (Secrétariat Général du Gouvernement)** | Avis du Conseil d'État sur la constitutionnalité de la ratification de la Charte | `Art. L. 311-1 CRPA` |
+| **Rectorat + Collectivité de Corse** | Conventions de cofinancement des postes d'enseignants de langue corse + bilans | `Art. L. 311-1 CRPA` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code du Patrimoine & Charte Européenne des Langues)
 

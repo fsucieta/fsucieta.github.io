@@ -128,15 +128,26 @@ L'enquête sur la **transparence des pétitionnaires et la MRAe** identifie les 
 - **Commissaires enquêteurs et tribunaux administratifs :** Derniers remparts contre les autorisations illégales. Souvent saisis tardivement, après la délivrance de permis, par des associations citoyennes.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine intercommunale
+## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
 
-### ⚖️ Tableau de Saisine et Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
+### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
-| Étape du Recours CRPA | Action Juridique (Art. L. 311-1 CRPA) | Délais & Modalités d'Exécution |
+| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
 | :--- | :--- | :--- |
 | **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours gracieux obligatoire auprès de la Commission d'Accès aux Documents (CADA) | 2 Mois à compter du refus explicite ou implicite |
-| **Étape 3 : Recours Contentieux** | Saisine du Tribunal Administratif de Bastia en annulation du refus | Référé-suspension sous 2 mois avec avis CADA |
+| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
+| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
+| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
+
+### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Transparence Des Pétitionnaires Et La Mrae*
+
+| Administration à Saisir | Document Officiel à Demander | Base Légale |
+| :--- | :--- | :--- |
+| **MRAe de Corse** | Arrêtés d'examen au cas par cas rendus sur les projets soumis à évaluation | `Art. L. 311-1 CRPA` |
+| **INPI / Greffes Tribunaux de Commerce** | Fiches RBE des sociétés pétitionnaires de projets en zones N et A | `Art. L. 561-46 CMF` |
+| **Préfecture** | Dossiers de demandes d'autorisation sur parcelles contiguës (délit de fractionnement) | `Art. L. 122-1 Code Envir.` |
+| **ARS de Corse** | Avis sanitaires rendus sur les projets impactant les captages et zones baignade | `Art. R. 123-8 Code Envir.` |
+
 
 ## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & Évaluations MRAe)
 
