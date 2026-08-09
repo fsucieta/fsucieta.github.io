@@ -106,12 +106,12 @@ L'examen forensique et légistique des arrêtés ministériels, délibérations 
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Continuite Des Arretes Miot**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
+Pour imposer la transparence et forcer la communication des preuves administratives cachées dans l'enquête **La Continuite Des Arretes Miot**, la saisine de la CADA (Art. L. 311-1 CRPA) permet d'exiger les 4 séries de documents officiels suivants :
 
-1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
-2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
-3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
-4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
+1. **Les registres d'arbitrage et arrêtés préfectoraux :** Demande de communication formelle de les registres des actes de notoriété prescriptifs établis par le GIRTEC.
+2. **Les procès-verbaux de contrôle et bilans techniques :** Injonction d'accès à les arrêtés d'exonération de droits de succession au titre du CGI 750 bis A.
+3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les extraits de la matrice cadastrale de la DGFiP des parcelles sans maître.
+4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux de la Commission Foncier de la Collectivité de Corse.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 

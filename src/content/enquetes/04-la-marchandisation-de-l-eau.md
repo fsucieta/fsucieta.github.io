@@ -106,12 +106,12 @@ L'analyse forensique des contrats de Délégation de Service Public (DSP) et des
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **La Marchandisation De L Eau**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
+Pour stopper le gaspillage de l'eau publique et la sur-tarification pratiquée par les multinationales de la distribution, la saisine CADA exige la transparence intégrale sur :
 
-1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
-2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
-3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
-4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
+1. **Les contrats originaux et avenants de Délégation de Service Public (DSP Eau / EPCI) :** Demande de communication de l'ensemble des conventions de concession conclues avec Kyrnolia/Veolia, Saur et Suez, incluant les grilles tarifaires et les formules d'indexation du prix du m³.
+2. **Les rapports annuels d'étanchéité des réseaux (RADP / RPQS Eau) :** Injonction d'accès aux bilans techniques certifiés indiquant les volumes d'eau potable perdus par fuite en millions de m³ sur les réseaux intercommunaux.
+3. **Les redevances d'extraction d'eau brute sur les barrages (OEHC) :** Demande de communication des bordereaux de facturation de l'Office d'Équipement Hydraulique de Corse aux distributeurs privés pour les prélèvements sur le Rizzanese, Calacuccia et Sampolo.
+4. **Les procès-verbaux de contrôle de qualité et de conformité des réseaux (ARS Corse / OFB) :** Injonction de communication des analyses bactériologiques et des arrêtés d'injonction de travaux de mise aux normes des stations d'épuration.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 

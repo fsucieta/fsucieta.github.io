@@ -106,12 +106,12 @@ L'analyse légistique des arrêtés de répartition fiscale et des délibératio
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Face à la fuite des assiettes fiscales majeures vers le budget central de l'État, les requêtes CADA s'articulent autour des documents comptables publics suivants :
+Face au siphonnage des assiettes fiscales majeures par le Trésor Central et la grande distribution, le recours CADA s'articule autour de la demande formelle des documents comptables publics suivants :
 
-1. **Les états de consolidation de la TVA touristique :** Demande d'accès auprès du Ministère de l'Économie et des Finances aux données brutes de la TVA collectée en Corse pendant la saison estivale par les grands groupes de distribution et de transport.
-2. **Les dégrèvements et exonérations du Crédit d'Impôt (CIIC) :** Demande de communication du bilan d'attribution de l'article 244 quater E du CGI détaillant les entreprises bénéficiaires et les emplois créés par rapport aux montants déduits.
-3. **Les flux de taxe sur les surfaces commerciales (TASCOM) :** Injonction de communication des bordereaux de collecte de la TASCOM acquittée par la grande distribution en Corse.
-4. **Les états des dotations DETR et DSIL :** Demande de communication des procès-verbaux d'arbitrage de la commission préfectorale d'attribution des subventions d'équipement aux communes.
+1. **Les fiches de consolidation de la TVA touristique estivale (Bercy / DRFiP Corse) :** Demande de communication des états de recettes brutes de TVA collectées entre juin et septembre par les secteurs du transport maritime/aérien, de la grande distribution et de l'hôtellerie en Corse.
+2. **Le registre nominatif d'attribution du Crédit d'Impôt CIIC (Art. 244 quater E CGI) :** Injonction d'accès auprès du Comité Régional de validation des arrêtés de dégrèvement d'impôt sur les sociétés accordés aux grands groupes et holdings.
+3. **Les bordereaux de collecte et de versement de la TASCOM (Préfectures 2A et 2B) :** Demande de communication des montants réels de la Taxe sur les Surfaces Commerciales acquittée par les enseignes hypermarchés en Corse et de leur clé de redistribution communale.
+4. **Les états récapitulatifs des dotations d'équipement DETR et DSIL (SGAR / Préfecture) :** Injonction de communication des procès-verbaux de la commission d'arbitrage préfectorale fixant la répartition des subventions d'équipement entre les communes rurales et les agglomérations.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 

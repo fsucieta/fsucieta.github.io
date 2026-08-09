@@ -106,12 +106,12 @@ L'examen médico-légal des arrêtés de garantie budgétaire et des délibérat
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour faire toute la lumière sur le verrou financier et l'adossement hypothécaire des banques hors-sol sur le patrimoine insulaire, le recours CADA s'appuie sur l'article L. 311-1 du CRPA pour exiger la communication des pièces administratives suivantes :
+Pour faire sauter le verrou financier et lever le secret bancaire entourant l'adossement hypothécaire des banques hors-sol sur le foncier insulaire, le droit de saisine CADA (Art. L. 311-1 CRPA) permet d'exiger la communication administrative des 4 séries de pièces justificatives suivantes :
 
-1. **Les fiches du Fichier FIER et du Service de la Publicité Foncière :** Demande auprès de la DGFiP des relevés anonymisés des sûretés et privilèges de prêteurs de deniers enregistrés au profit d'établissements bancaires extérieurs à la Corse.
-2. **Les registres des garanties d'emprunt publiques :** Demande de communication des délibérations de la Collectivité de Corse et des conseils communautaires accordant des cautions aux opérations de promotion immobilière menées par des SCI de non-résidents.
-3. **Les procès-verbaux du Comité Régional du Crédit :** Injonction de communication des rapports annuels d'évaluation de la Banque de France et de l'IEDOM relatifs à la répartition géographique des crédits à l'habitat accordés en Corse par rapport au volume d'épargne locale collecté.
-4. **Les déclarations de cession de parts de SCI (DMTO) :** Demande auprès de la DGFiP des états statistiques des mutations de parts sociales de SCI enregistrées en Corse sur les cinq derniers exercices.
+1. **Les états statistiques anonymisés du Fichier FIER et de la Publicité Foncière (DGFiP) :** Injonction de communication des bordereaux de privilèges de prêteurs de deniers (PPD) et hypothèques inscrits par des établissements financiers continentaux et étrangers sur les parcelles des communes littorales.
+2. **Les délibérations d'octroi de garanties d'emprunt et de cautionnement public (CdC / EPCI) :** Demande d'accès aux comptes-rendus complets des conseils communautaires accordant la garantie morale ou financière de la collectivité à des programmes immobiliers portés par des SCI non-résidentes.
+3. **Les compte-rendus annuels d'évaluation du Comité Régional du Crédit (Banque de France / IEDOM) :** Demande de communication des ratios confidentiels de réinjection de l'épargne locale corse dans les crédits à l'habitat résidentiel et les prêts aux PME.
+4. **Les déclarations d'enregistrement des cessions de parts de SCI (Services d'Enregistrement DGFiP) :** Injonction d'accès aux bordereaux de liquidation des droits de mutation à titre onéreux (DMTO) des SCI immobilières enregistrées en Corse-du-Sud et Haute-Corse.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 

@@ -107,12 +107,12 @@ L'examen juridique comparé des avis du Conseil d'État et des délibérations r
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour appuyer la légitimité juridique d'un statut d'autonomie et de résidence sur le modèle des îles européennes et des COM françaises, le droit de saisine CADA porte sur :
+Pour appuyer la légitimité d'un statut de résidence foncière sur le modèle des îles autonomes européennes, la démarche d'accès aux documents administratifs CADA vise à obtenir :
 
-1. **Les registres des titres d'habitation des îles Åland et Jersey :** Demande de communication auprès du Ministère des Affaires Étrangères des études comparatives sur l'application des clauses de résidence (*Hembygdsrätt* et *Entitled Status*).
-2. **Les procès-verbaux de la commission mixte sur l'article 74 en Polynésie :** Injonction de communication des bilans d'application des lois du pays de protection du foncier local validées par le Conseil Constitutionnel.
-3. **Les études d'impact sur la soutenabilité foncière en Corse :** Demande de communication des rapports internes de la DREAL et de l'Insee relatifs au rythme de dépossession foncière sur la période 2010-2025.
-4. **Les notifications de préemption SAFER :** Demande de communication des actes de refus de préemption émis par la SAFER sur les biens littoraux acquis par des non-résidents.
+1. **Les registres des cartes de résidence foncière de Jersey et Åland (Ministère des Affaires Étrangères) :** Demande de communication des notes juridiques et diplomatiques analysant l'application du statut *Entitled* (Jersey) et de la clause *Hembygdsrätt* (Åland) compatibles avec les traités européens.
+2. **Les bilans d'application des Lois du Pays foncières en Polynésie Française (DEXPAR / COM) :** Injonction d'accès aux rapports d'évaluation du Ministère des Outre-Mer relatifs au droit de préemption territorial et à la condition de 3 à 5 ans de résidence validée par le Conseil Constitutionnel.
+3. **Les études d'impact environnemental et social sur la dépossession foncière (DREAL / Insee Corse) :** Demande de communication des rapports internes mesurant la vitesse d'éviction des ménages corses du marché immobilier littoral sur les 15 dernières années.
+4. **Les notifications d'arbitrage et refus de préemption SAFER :** Injonction d'accès aux délibérations du conseil d'administration de la SAFER de Corse justifiant l'absence de préemption sur les grands domaines littoraux cédés à des acquéreurs extérieurs.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 

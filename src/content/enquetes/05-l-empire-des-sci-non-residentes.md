@@ -106,12 +106,12 @@ L'audit forensique des registres d'immatriculation et des arrêtés d'alignement
 
 ## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
 
-Pour faire toute la lumière sur les irrégularités documentées dans l'enquête **L Empire Des Sci Non Residentes**, le recours citoyen fondé sur l'article L. 311-1 du CRPA permet d'exiger la communication prioritaire des documents administratifs publics suivants :
+Pour percer l'opacité du patrimoine littoral détenu par des sociétés civiles immobilières écran, le droit de saisine CADA porte sur :
 
-1. **Les fiches d'audit et rapports d'inspection généraux :** Demande de communication des rapports d'audit comptables et des procès-verbaux de contrôle établis par les services de l'État et la Collectivité de Corse.
-2. **Les délibérations budgétaires et conventions d'attribution :** Injonction d'accès aux conventions de partenariat et aux actes de concession passés avec des opérateurs privés.
-3. **Les registres des procès-verbaux d'infraction et de contrôle :** Demande de communication des relevés statistiques de contrôle et des arrêtés préfectoraux d'injonction.
-4. **Les arrêtés d'attribution de subventions et marchés publics :** Demande de communication des cahiers des charges et bordereaux d'exécution des marchés publics du secteur.
+1. **Les déclarations nominatives du Registre des Bénéficiaires Effectifs (INPI / RBE) :** Demande de communication auprès des greffes des tribunaux de commerce de Bastia et d'Ajaccio des fiches RBE révélant les ayants droit réels des SCI situées en bande littorale.
+2. **Les permis de construire et autorisations de défrichement accordés aux SCI (Mairies / DDTM) :** Injonction d'accès aux dossiers complets de permis de construire délivrés sous prête-noms dans les espaces remarquables de la Loi Littoral.
+3. **Les conventions de Projet Urbain Partenarial (PUP) et d'extension de réseaux :** Demande de communication des procès-verbaux de prise en charge par les communes des travaux de voirie et d'adduction d'eau desservant des lotissements de SCI privées.
+4. **Les déclarations d'intention d'aliéner (DIA) transmises à la SAFER :** Injonction d'accès aux bordereaux de notification de vente de parts sociales de SCI détentrices de foncier agricole ou littoral.
 
 ## VIII. Cartographie des acteurs institutionnels et des réseaux d’influence sur le territoire insulaire
 
