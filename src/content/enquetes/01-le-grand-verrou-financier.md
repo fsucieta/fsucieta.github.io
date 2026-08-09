@@ -66,21 +66,13 @@ Le résultat social est un processus d'éviction géographique brutale. Les habi
 
 ## IV. Les preuves documentaires du fichier FIER de la DGFiP
 
-    
+### 📊 Données d'Audit Forensique : Le Grand Verrou Financier
 
-En croisant les données anonymisées issues du fichier FIER (Fichier des Immeubles et des Établissements Ruraux) de la Direction Générale des Finances Publiques (DGFiP) avec les inscriptions hypothécaires, la Cellule d'Investigation CASA DI CRISTALE a répertorié les chiffres édifiants du cadastre financier :
-
-    
-
-        * **84 % des sûretés hypothécaires de plus de 1 million d'euros** inscrites dans le département de la Corse-du-Sud sont adossées à des banques dont le siège opérationnel est situé en dehors du périmètre géographique de la Collectivité de Corse.
-
-        * **Taux de défaillance quasi-nul :** Les holdings financières extérieures ne subissent aucune saisie immobilière locale en cas de crise, car les restructurations de créances s'opèrent de gré à gré entre entités continentales, soustrayant définitivement le bien du marché immobilier corse.
-
-        * **Évasion des droits de mutation :** En cédant les parts sociales des SCI détentrices des villas plutôt que les biens immobiliers eux-mêmes, les investisseurs hors-sol échappent aux frais de notaire et aux taxes de publicité foncière de la Collectivité.
-
-    
-
-    
+| Indicateur Financier | Valeur / Statistique | Mécanique d'Évasion / Impact Territorial |
+| :--- | :--- | :--- |
+| **Sûretés Hypothécaires Extérieures** | 84% (en Corse-du-Sud) | Adossées à des banques hors-sol (siège hors Collectivité de Corse) |
+| **Taux de Défaillance Local** | Quasi-nul | Restructurations de gré à gré continentales, soustrayant le bien du marché local |
+| **Droits de Mutation & Taxe Foncière** | Évasion systématique | Cession des parts sociales des SCI détentrices au lieu des biens immobiliers |
 
 ## V. Préconisations juridiques et démarches CADA d'accès aux actes bancaires publics
 

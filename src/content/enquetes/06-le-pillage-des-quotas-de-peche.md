@@ -66,21 +66,13 @@ Des chalutiers industriels de grande taille venant du continent ou d'Italie vien
 
 ## IV. Données IFREMER et CRPMEM sur la spoliation des quotas
 
-    
+### 📊 Données d'Audit Forensique : Quotas de Pêche et Ressources Maritimes
 
-L'analyse comparative menée par CASA DI CRISTALE à partir des arrêtés ministériels de répartition de la DPMA met en lumière les décalages abyssaux :
-
-    
-
-        * **Quota Thon Rouge 2024-2025 :** Sur un quota national français de plus de 6 700 tonnes, la réserve régionale corse ne dépasse pas 130 tonnes pour l'ensemble des bateaux de l'île.
-
-        * **Valorisation économique manquée :** L'exportation directe de thon brut vers les marchés asiatiques par les armements extérieurs prive la Corse de plus de 45 millions d'euros de valeur ajoutée annuelle dans la filière halieutique locale.
-
-        * **Âge moyen des pêcheurs corses :** Plus de 54 ans. L'impossibilité d'obtenir un quota d'installation décourage toute transmission d'entreprise de pêche aux jeunes générations.
-
-    
-
-    
+| Ressource / Métrique Pêche | Volume / Valeur Nationale | Quote-Part Attribuée à la Corse | Impact / Part Armements Extérieurs |
+| :--- | :--- | :--- | :--- |
+| **Quota Thon Rouge (ICCAT/DPMA)** | 6 700 Tonnes (France) | 130 Tonnes (< 2 %) | > 90 % confisqués par les thoniers sétois |
+| **Manque à Gagner Économique** | - | 45 M€ de valeur ajoutée perdue/an | Exportation directe sans retombée locale |
+| **Démographie de la Flottille** | 450 marins (1990) | 180 marins artisans (2026) | Âge moyen 54 ans, blocage d'installation jeunes |
 
 ## V. Actions de souveraineté maritime et recours CADA
 

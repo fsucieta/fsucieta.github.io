@@ -66,21 +66,12 @@ Les budgets consacrés par la DREAL à la sécurisation et à la dépollution de
 
 ## IV. Données du Cadastre Minier BRGM en Corse
 
-    
+### 📊 Données d'Audit Forensique : Le Cadastre Minier Secret
 
-La cartographie des ressources enfouies répertoriées par le BRGM comprend :
-
-    
-
-        * **Plus de 48 gisements minéraux identifiés** (antimoine, cuivre, fer, manganèse, plomb, zinc, amiante).
-
-        * **Concentrations exceptionnelles en antimoine (Sb) :** Le Cap Corse détient l'un des districts antimonifères les plus concentrés d'Europe continentale.
-
-        * **Absence de redevance minière locale :** En l'état du droit, le produit d'éventuelles redevances d'extraction irait au Trésor Central sans retombée pour les finances communales insulaires.
-
-    
-
-    
+| Ressource / District Géologique | Nombre de Gisements Identifiés | Substrats & Métaux Critiques | Régime Fiscal / Redevances |
+| :--- | :--- | :--- | :--- |
+| **Inventaire Minier BRGM** | > 48 gisements | Antimoine, Cuivre, Fer, Manganese, Amiante | Redevances 100 % captées par le Trésor Central |
+| **Cap Corse (Meria, Luri, Ersa)** | District majeur européen | Antimoine (Sb) hautement concentré | Concessions d'État sans accord des communes |
 
 ## V. Actions de défense du sous-sol et recours CADA
 

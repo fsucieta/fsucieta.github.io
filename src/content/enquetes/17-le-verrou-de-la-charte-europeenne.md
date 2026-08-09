@@ -66,21 +66,13 @@ Aujourd'hui, moins de 15 % des enfants en âge scolaire utilisent le corse au qu
 
 ## IV. Données INSEE et éducation sur la langue corse
 
-    
+### 📊 Données d'Audit Forensique : Droits Linguistiques & Charte Européenne
 
-L'audit de la situation linguistique indique :
-
-    
-
-        * **Taux d'élèves en filières bilingues :** Environ 38 % des élèves du primaire inscrits en classes bilingues, mais une chute drastique au collège et au lycée.
-
-        * **Temps d'antenne audiovisuel public :** France 3 ViaStella réserve une part de ses programmes au corse, mais le réseau de télévision nationale ne consacre aucun sous-titrage ou budget significatif.
-
-        * **Attachement populaire :** Plus de 86 % de la population corse se déclare favorable à la co-officialité de la langue corse dans les sondages d'opinion.
-
-    
-
-    
+| Domaine d'Audit Linguistique | Statistique / Proportion | Observation Clé |
+| :--- | :--- | :--- |
+| **Filières Bilingues Primaire** | ~ 38% des élèves | Chute brutale constatée dans le secondaire |
+| **Couverture Audiovisuelle Nationale** | Marginale / Subsidiaire | Absence de sous-titrage et budgets restreints |
+| **Soutien Populaire Co-officialité** | > 86% de la population | Adhésion massive constatée par sondages |
 
 ## V. Actions de transmission et souveraineté culturelle
 

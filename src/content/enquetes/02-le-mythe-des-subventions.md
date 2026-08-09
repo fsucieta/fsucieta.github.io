@@ -66,21 +66,13 @@ De plus, le Programme Exceptionnel d'Investissement (PEI), mis en place au débu
 
 ## IV. La preuve par la Balance Fiscale Nette
 
-    
+### 📊 Données d'Audit Forensique : Évasion Fiscale et Subventions
 
-Pour rétablir la vérité comptable, la Cellule d'Investigation CASA DI CRISTALE a modélisé la Balance Fiscale Nette de la Corse en intégrant les estimations réelles de la TVA touristique et de l'IS délocalisé :
-
-    
-
-        * **TVA touristique non récompensée :** Plus de 420 millions d'euros perçus chaque été par l'État sur la consommation des non-résidents.
-
-        * **IS délocalisé :** Estimé à plus de 180 millions d'euros par an payés aux sièges parisiens des grandes chaînes de la distribution et des services.
-
-        * **Déficit de retour d'infrastructure :** Les hôpitaux de Bastia et d'Ajaccio accumulent des dettes de structure et des sous-équipements critiques en raison de dotations d'assurance maladie (T2A) calculées sur la population résiduelle de l'hiver.
-
-    
-
-    
+| Flux Fiscal / Poste | Assiette / Montant Annuel Estimé | Destinataire Effectif | Impact sur le Budget Insulaire |
+| :--- | :--- | :--- | :--- |
+| **TVA Touristique Estivale** | > 420 M€ / été | Trésor Public (Paris) | Aucun retour direct à la Collectivité de Corse |
+| **Impôt sur les Sociétés (IS)** | > 180 M€ / an | Sièges sociaux (Île-de-France) | Spoliation du PIB net et des recettes locales |
+| **Dotations Santé (T2A)** | Déficit structurel | Hôpitaux Bastia / Ajaccio | Calculé sur la population hivernale résiduelle |
 
 ## V. Démarches citoyennes et souveraineté d'assiette fiscale
 

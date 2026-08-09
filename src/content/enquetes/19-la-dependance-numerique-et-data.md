@@ -66,21 +66,13 @@ Cette fracture numérique intralocale pénalise l'installation de jeunes télét
 
 ## IV. Données ARSEP et audit du réseau en Corse
 
-    
+### 📊 Données d'Audit Forensique : Télécoms & Souveraineté Data
 
-L'audit des infrastructures de communication indique :
-
-    
-
-        * **Dépendance totale :** 100 % du trafic Internet entrant et sortant de Corse transite par les câbles sous-marins sous contrôle d'opérateurs extérieurs.
-
-        * **Couverture fibre optique rurale :** Le Réseau d'Initiative Publique (Corsica Fibra) a permis de déployer la fibre, mais de nombreux raccordements d'abonnés restent bloqués par des sous-traitants défaillants.
-
-        * **Zéro cloud public régional :** Aucune infrastructure publique de stockage de données souveraines n'est gérée en régie directe par la Collectivité de Corse.
-
-    
-
-    
+| Composante Télécom & Data | Taux / Statut | Vulnérabilité Stratégique |
+| :--- | :--- | :--- |
+| **Trafic Câbles Sous-marins** | 100% | Dépendance totale à Orange / Consortia extérieurs |
+| **Fibre Rurale (Corsica Fibra)** | Déploiement partiel | Blocages abonnés par sous-traitance |
+| **Cloud Souverain Territorial** | 0% (Inexistant) | Données publiques hébergées hors de Corse |
 
 ## V. Actions pour la souveraineté numérique insulaire
 

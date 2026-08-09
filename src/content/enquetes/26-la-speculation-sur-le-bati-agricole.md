@@ -66,21 +66,13 @@ La SAFER ne dispose pas des budgets nécessaires pour s'aligner sur les prix du 
 
 ## IV. Données DVF et SAFER sur les bergeries de luxe en Corse
 
-    
+### 📊 Données d'Audit Forensique : Spéculation Bergeries (L. 151-11)
 
-L'audit des transactions rurales et notariales indique :
-
-    
-
-        * **Prix au mètre carré du bâti ancien rénové sur le littoral :** Plus de 8 500 €/m² pour des bergeries d'architecte rénovées avec piscine.
-
-        * **Nombre de permis L. 151-11 déposés :** Plus de 340 demandes de restauration de bâti ancien enregistrées en zone A et N sur les 5 dernières années en Corse.
-
-        * **Taux d'occupation pastorale réelle :** Moins de 4 % des bergeries ainsi rénovées sont effectivement occupées par des agriculteurs ou bergers en activité.
-
-    
-
-    
+| Métrique Foncier Pastoral (L. 151-11) | Valeur / Chiffre | Impact Pastoral / Spéculatif |
+| :--- | :--- | :--- |
+| **Prix Mètre Carré (Rénové Prestige)** | > 8 500 € / m² | Déconnexion des barèmes fonciers SAFER |
+| **Demandes Restauration (5 ans)** | > 340 Permis L. 151-11 | Déposés en zones protégées A et N |
+| **Occupation Pastorale Réelle** | < 4% | Détournement en résidence secondaire |
 
 ## V. Actions de protection du patrimoine pastoral et recours CADA
 

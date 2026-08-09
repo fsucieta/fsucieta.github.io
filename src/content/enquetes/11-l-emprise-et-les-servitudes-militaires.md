@@ -66,23 +66,14 @@ De même, en Balagne, le Camp Raffalli (base du 2e Régiment Étranger de Parach
 
 ## IV. Données cadastrales de l'emprise militaire en Corse
 
-    
+### 📊 Données d'Audit Forensique : Emprise et Servitudes Militaires
 
-L'audit foncier du Ministère des Armées répertorie la répartition suivante :
-
-    
-
-        * **BA 126 Solenzara / Ventiseri :** 512 hectares en bordure immédiate de mer.
-
-        * **Camp Raffalli / Calvi :** 340 hectares dans la plaine de Balagne.
-
-        * **Aspretto / Ajaccio :** 18 hectares de front de mer stratégique.
-
-        * **Exemption fiscale :** Les emprises militaires d'État sont exonérées de taxe foncière sur les propriétés bâties et non bâties au profit des communes d'accueil.
-
-    
-
-    
+| Emprise Militaire / Site | Superficie Cadastrée | Implantation & Stratégie | Régime Fiscal Communal |
+| :--- | :--- | :--- | :--- |
+| **BA 126 Solenzara / Ventiseri** | 512 Hectares | Plaine littorale côtière / Entraînement OTAN | Exonération totale de taxe foncière |
+| **Camp Raffalli / Calvi (2e REP)** | 340 Hectares | Plaine urbaine de Balagne | Servitudes d'inconstructibilité riveraines |
+| **Base Navale Aspretto / Ajaccio** | 18 Hectares | Front de mer stratégique dans le golfe | Blocage des projets d'extension portuaire civile |
+| **Ensemble des Emprises Défense** | > 2 800 Hectares | Terres agricoles et littorales de 1er ordre | Zéro compensation fiscale versée aux communes |
 
 ## V. Actions de rétrocession et démarches CADA
 

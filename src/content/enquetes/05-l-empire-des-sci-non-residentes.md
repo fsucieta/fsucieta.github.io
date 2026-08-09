@@ -66,21 +66,13 @@ Un des phénomènes les plus préoccupants mis en lumière par notre audit conce
 
 ## IV. Données de cadrage du Registre des Bénéficiaires Effectifs
 
-    
+### 📊 Données d'Audit Forensique : L'Empire des SCI Non-Résidentes
 
-Les données extraites de notre audit sur 5 communes phares du littoral corse révèlent la cartographie suivante :
-
-    
-
-        * **Plus de 4 800 SCI non-résidentes** immatriculées détenant au moins un actif immobilier résidentiel ou foncier en Corse.
-
-        * **Résidence fiscale des gérants :** 62 % en Île-de-France, 18 % dans la région Auvergne-Rhône-Alpes, 14 % à l'étranger (Suisse, Belgique, Luxembourg, Royaume-Uni).
-
-        * **Durée moyenne d'occupation annuelle :** Les biens détenus par ces structures sont fermés et inoccupés plus de 320 jours par an, créant des "villages fantômes" en saison hivernale.
-
-    
-
-    
+| Métrique RBE / Cadastre | Donnée Chiffrée | Répartition Géographique / Fiscale | Impact Territorial |
+| :--- | :--- | :--- | :--- |
+| **Nombre de SCI Non-Résidentes** | > 4 800 structures | 62% Île-de-France, 18% AURA, 14% Étranger | Accaparement du bâti et foncier littoraux |
+| **Taux de Vacance Annuelle** | > 320 jours / an | Biens à usage estival exclusif | Phénomène de "villages fantômes" en hiver |
+| **Parcelles Littorales Remarquables** | > 72 % en Corse-du-Sud | Domiciliation hors de Corse | Éradication de l'accès au logement local |
 
 ## V. Actions de contrôle citoyen via la plateforme INPI et le Cadastre
 

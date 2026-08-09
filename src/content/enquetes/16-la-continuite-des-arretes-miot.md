@@ -66,21 +66,13 @@ Cependant, le rythme de reconstitution reste insuffisant face à l'offensive des
 
 ## IV. Données GIRTEC et cadastre sur l'indivision corse
 
-    
+### 📊 Données d'Audit Forensique : Arrêtés Miot & Titration GIRTEC
 
-Les chiffres compilés par notre audit foncier mettent en lumière l'ampleur du blocage :
-
-    
-
-        * **Plus de 115 000 parcelles cadastrées** en Corse ne possèdent pas de propriétaire identifié de manière certaine dans les fichiers de la DGFiP.
-
-        * **Nombre d'actes créés par le GIRTEC :** Plus de 12 000 dossiers d'indivision résolus depuis sa création, mais un stock de dossiers restants colossal.
-
-        * **Perte fiscale pour les communes :** L'indivision non titrée engendre un manque à gagner important sur la taxe foncière non bâtie.
-
-    
-
-    
+| Indicateur Foncier & Cadastral | Chiffre / Volume | Conséquence Financière / Statut |
+| :--- | :--- | :--- |
+| **Parcelles Sans Propriétaire Identifié** | > 115 000 parcelles | Absence de titres DGFiP valides |
+| **Actes de Notoriété GIRTEC** | > 12 000 dossiers | Résolutions foncières opérées |
+| **Impact Fiscal Communal** | Manque à gagner majeur | Perte sur TFNB (Taxe Foncière Non Bâtie) |
 
 ## V. Actions de sécurisation patrimoniale et démarches notariales
 

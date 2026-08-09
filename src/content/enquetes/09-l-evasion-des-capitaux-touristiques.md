@@ -66,21 +66,13 @@ De même, les compagnies de location de véhicules et les compagnies maritimes p
 
 ## IV. Données bancaires de l'IEDOM sur la fuite des devises
 
-    
+### 📊 Données d'Audit Forensique : Capitaux Touristiques & IEDOM
 
-Les indicateurs monétaires de l'IEDOM / Banque de France révèlent les lignes de fuite :
-
-    
-
-        * **Télétransmissions carte bancaire (CB) :** Plus de 68 % des flux d'encaissement CB enregistrés pendant l'été en Corse sont directement crédités sur des comptes bancaires ouverts en dehors du périmètre des agences insulaires.
-
-        * **Destruction du commerce traditionnel de village :** La captation par les grandes enseignes et les plateformes a provoqué la fermeture de plus de 40 % des commerces de proximité dans le rural intérieur sur les 15 dernières années.
-
-        * **Précarisation de l'emploi :** 72 % des contrats de travail créés pendant la saison sont des CDD de moins de 4 mois, générant un coût social important pris en charge par l'assurance chômage locale l'hiver.
-
-    
-
-    
+| Circuit Financier / Emploi | Statistique Mesurée (IEDOM/INSEE) | Mécanique d'Évasion | Conséquence Territoriale |
+| :--- | :--- | :--- | :--- |
+| **Télétransmissions Carte Bancaire** | 68 % des encaissements estivaux | Crédités sur des comptes continentaux/étrangers | Valeur ajoutée siphonnée hors de l'île |
+| **Commerces Ruraux Traditionnels** | - 40 % de fermetures | Concurrence des grandes enseignes & plateformes | Désertification commerciale de l'intérieur |
+| **Emplois Saisonniers Touristiques** | 72 % de CDD < 4 mois | Précarisation structurelle | Prise en charge hivernale par l'assurance chômage locale |
 
 ## V. Actions de souveraineté économique et circuits courts
 

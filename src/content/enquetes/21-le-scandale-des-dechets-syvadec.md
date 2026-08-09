@@ -66,21 +66,13 @@ Le taux de recyclage effectif de la matière plastique et des bio-déchets stagn
 
 ## IV. Données comptables du SYVADEC et de la DREAL
 
-    
+### 📊 Données d'Audit Forensique : Gestion des Déchets SYVADEC
 
-L'audit de la filière déchets fait apparaître :
-
-    
-
-        * **Production de déchets par habitant :** Plus de 640 kg/habitant/an (contre 480 kg en moyenne nationale), tirée vers le haut par la sur-fréquentation touristique.
-
-        * **Volume annuel expédié par cargo :** Plus de 70 000 tonnes de ordures ménagères envoyées hors de Corse chaque année.
-
-        * **Explosion de la TEOM :** La taxe d'enlèvement des ordures ménagères a augmenté de plus de 42 % pour les ménages corses sur les 6 dernières années.
-
-    
-
-    
+| Indicateur Déchets / TEOM | Statistique Observée | Comparaison / Impact Financier |
+| :--- | :--- | :--- |
+| **Ratio Déchets / Habitant** | > 640 kg / hab / an | vs 480 kg (Moyenne nationale française) |
+| **Volume Exporté par Cargo** | > 70 000 Tonnes / an | Expédiées vers incinérateurs continentaux |
+| **Hausse de la TEOM** | + 42% en 6 ans | Surtaxe subie par les ménages résidents |
 
 ## V. Actions de souveraineté environnementale et démarches CADA
 

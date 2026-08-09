@@ -66,21 +66,13 @@ Le sous-dimensionnement de la flotte d'hélicoptères et l'âge avancé des appa
 
 ## IV. Données comptables et statistiques de la Sécurité Civile
 
-    
+### 📊 Données d'Audit Forensique : Sécurité Civile & Canadairs
 
-L'audit des moyens de secours en Corse indique :
-
-    
-
-        * **Plus de 35 000 interventions de secours** effectuées chaque année par les pompiers des deux départements insulaires.
-
-        * **Nombre moyen d'avions bombardiers d'eau basés sur l'île :** 2 Canadairs en moyenne en pointe estivale (contre une demande minimale de 4 appareils à demeure).
-
-        * **Part des pompiers volontaires :** 82 % des effectifs opérationnels des centres de secours ruraux.
-
-    
-
-    
+| Moyen de Secours / Indicateur | Valeur Constatée | Écart de Couverture / Besoins |
+| :--- | :--- | :--- |
+| **Interventions Annuelles SIS** | > 35 000 secours | Pression accrue par le flux touristique |
+| **Canadairs Positionnés** | 2 Avions en moyenne | vs 4 appareils requis à demeure |
+| **Pompiers Volontaires** | 82% des effectifs | Pression sur les casernes du rural profond |
 
 ## V. Actions de souveraineté et démarches CADA
 

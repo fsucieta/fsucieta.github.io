@@ -66,21 +66,13 @@ Les étals de la grande distribution regorgent de clementines espagnoles, de cha
 
 ## IV. Données de l'audit agricole DRAAF / ODARC
 
-    
+### 📊 Données d'Audit Forensique : Primes PAC & Élevage
 
-L'audit des aides PAC en Corse met en évidence :
-
-    
-
-        * **Montant global de la PAC en Corse :** Plus de 36 millions d'euros d'aides directes versées chaque année.
-
-        * **Concentration des aides :** 10 % des déclarants perçoivent des montants annuels supérieurs à 120 000 € par exploitation.
-
-        * **Chute du nombre d'exploitations réelles :** Perte de plus de 30 % des vraies exploitations d'élevage en 20 ans malgré la hausse des budgets d'aide.
-
-    
-
-    
+| Métrique des Primes PAC | Chiffre Clé | Effet Distorsif Constaté |
+| :--- | :--- | :--- |
+| **Enveloppe Globale PAC** | > 36 M€ / an | Aides directes aux surfaces déclarées |
+| **Concentration des Aides** | > 120 000 € / an | Perçus par les 10% de plus grands déclarants |
+| **Évolution des Élevages Réels** | - 30% en 20 ans | Déclin des vrais producteurs insulaires |
 
 ## V. Actions de réforme et de transparence citoyenne
 

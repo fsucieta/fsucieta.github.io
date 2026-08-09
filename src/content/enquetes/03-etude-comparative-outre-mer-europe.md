@@ -66,46 +66,14 @@ De même, en Nouvelle-Calédonie, l'Accord de Nouméa et la loi organique de 199
 
 ## IV. Tableau synthétique de droit comparé foncier
 
-    <div style="overflow-x: auto; margin-bottom: 2rem;">
-        <table style="width: 100%; border-collapse: collapse; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.95rem;">
-            <thead>
-                <tr style="background: #0f172a; color: #ffffff;">
-                    <th style="padding: 10px; border: 1px solid #cbd5e1;">Territoire Insulaire</th>
-                    <th style="padding: 10px; border: 1px solid #cbd5e1;">Statut Politique</th>
-                    <th style="padding: 10px; border: 1px solid #cbd5e1;">Condition de Résidence Foncière</th>
-                    <th style="padding: 10px; border: 1px solid #cbd5e1;">Validation Juridique</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700;">Jersey</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Dépendance de la Couronne</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; color: #27ae60; font-weight: 700;">10 Ans (Entitled Status)</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Loi locale validée 2012</td>
-                </tr>
-                <tr style="background: #f8fafc;">
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700;">Polynésie Française</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">COM Art. 74 Constitution FR</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; color: #27ae60; font-weight: 700;">3 à 5 Ans (Loi du Pays)</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Conseil Constitutionnel 2009</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700;">Îles Åland (Finlande)</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Région Autonome UE</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; color: #27ae60; font-weight: 700;">5 Ans (Hembygdsrätt)</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Protocole Traité d'Adhésion UE</td>
-                </tr>
-                <tr style="background: #fff5f5;">
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700; color: #c0392b;">Corse</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1;">Collectivité Région CGCT</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; color: #c0392b; font-weight: 700;">0 Jour (Marché Ouvert)</td>
-                    <td style="padding: 10px; border: 1px solid #cbd5e1; color: #c0392b;">Refus Central Systématique</td>
-                </tr>
-            </tbody>
-        </table>
-    
+### 📊 Données d'Audit Forensique : Étude Comparative Foncière Insulaire
 
-    
+| Territoire Insulaire | Statut Politique | Condition de Résidence Foncière | Validation Juridique |
+| :--- | :--- | :--- | :--- |
+| **Jersey** | Dépendance de la Couronne | 10 Ans (*Entitled Status*) | Loi locale validée (2012) |
+| **Polynésie Française** | COM Art. 74 Constitution FR | 3 à 5 Ans (*Loi du Pays*) | Conseil Constitutionnel (2009) |
+| **Îles Åland (Finlande)** | Région Autonome UE | 5 Ans (*Hembygdsrätt*) | Protocole Traité d'Adhésion UE |
+| **Corse** | Collectivité Territoriale | 0 Jour (Marché Ouvert) | Refus Central Systématique |
 
 ## V. Recommandations pour l'autonomie et l'action citoyenne
 

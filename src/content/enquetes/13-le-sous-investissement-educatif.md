@@ -66,21 +66,13 @@ De plus, pour les étudiants qui font le choix de rester étudier à Corte, la c
 
 ## IV. Chiffres clés de l'audit enseignement supérieur MESR / INSEE
 
-    
+### 📊 Données d'Audit Forensique : Investissement Éducatif & Université
 
-Les indicateurs de la situation éducative en Corse révèlent :
-
-    
-
-        * **Nombre d'étudiants à l'Université de Corse :** 4 750 étudiants (dont 82 % de résidents insulaires).
-
-        * **Déficit de logements CROUS :** Moins de 1 100 chambres et logements sociaux étudiants gérés par le CROUS de Corse pour l'ensemble des campus.
-
-        * **Taux de fuite des diplômés de Master :** Plus de 60 % des jeunes corses titulaires d'un Bac+5 travaillent hors de Corse 3 ans après leur diplôme.
-
-    
-
-    
+| Domaine Éducatif / Université | Statistique / Volume | Comparatif National / Écart | Conséquence sur la Jeunesse |
+| :--- | :--- | :--- | :--- |
+| **Dotation Budgétaire par Étudiant** | 8 200 € / étudiant | 11 500 € (Moyenne nationale) | Sous-dotation de - 25 % du Ministère (MESR) |
+| **Capacité d'Hébergement CROUS** | < 1 100 logements | > 4 750 étudiants inscrits | Crise majeure du logement étudiant à Corte |
+| **Fuite des Diplômés (Brain Drain)** | > 60 % des Bac+5 | Poursuite d'études/emploi continent | Perte définitive des jeunes cadres formés |
 
 ## V. Recommandations pour une université souveraine et autonome
 
@@ -195,7 +187,7 @@ CASA DI CRISTALE 2.0 — Pour la vérité des chiffres, la protection de notre t
 
 
 
-### 📊 Matrice d me Données Chiffrées : Investissement Éducatif & Université de Corte
+### 📊 Matrice d'Audit et Données Chiffrées : Investissement Éducatif & Université de Corte
 
 | Niveau Éducatif / Recherche | Dotation par Étudiant | Moyenne Nationale | Écart de Financement |
 | :--- | :--- | :--- | :--- |

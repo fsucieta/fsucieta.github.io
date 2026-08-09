@@ -66,21 +66,13 @@ Cette lenteur de la justice délocalisée favorise l'impunité réelle des déli
 
 ## IV. Données statistiques du dessaisissement judiciaire
 
-    
+### 📊 Données d'Audit Forensique : Dessaisissement Judiciaire & JIRS
 
-L'audit de la justice en Corse fait apparaître les chiffres suivants :
-
-    
-
-        * **Plus de 80 % des dossiers d'instruction financière majeurs** ouverts en Corse sont transférés à la JIRS de Marseille.
-
-        * **Durée moyenne des instructions à la JIRS de Marseille :** 6,8 ans (contre 3,2 ans pour les pôles d'instruction régionaux ordinaires).
-
-        * **Coût des déportations de gardes à vue :** Plus de 12 millions d'euros par an consacrés aux transferts d'escortess et de transfèrements pénitentiaires inter-régionaux.
-
-    
-
-    
+| Indicateur / Métrique | Valeur Observée | Élément de Comparaison / Impact |
+| :--- | :--- | :--- |
+| **Transferts JIRS Marseille** | > 80% des dossiers | Instructions financières majeures délocalisées |
+| **Durée Moyenne d'Instruction** | 6,8 Ans | vs 3,2 ans pour les pôles ordinaires |
+| **Coût Annuel des Transfèrements** | > 12 M€ / an | Escortes et déportations pénitentiaires |
 
 ## V. Recommandations pour le rapatriement de la justice en Corse
 

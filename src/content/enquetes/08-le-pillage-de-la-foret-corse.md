@@ -66,21 +66,12 @@ Pendant ce temps, les routes forestières s'dégradent sous le poids des camions
 
 ## IV. Chiffres clés de l'audit forestier Agreste / ONF
 
-    
+### 📊 Données d'Audit Forensique : Exploitation et Pillage de la Forêt
 
-Les données compilées par la Cellule d'Investigation CASA DI CRISTALE mettent en évidence l'incohérence de la filière :
-
-    
-
-        * **Volume annuel coupé :** Environ 70 000 m³ de bois d'œuvre résineux et feuillu abattus chaque année dans les massifs insulaires.
-
-        * **Taux de transformation locale :** Moins de 22 % du bois coupé est transformé sur place par les rares scieries artisanales corses restantes.
-
-        * **Déficit de la balance commerciale bois :** La Corse importe pour plus de 85 millions d'euros par an de matériaux de construction en bois transformé.
-
-    
-
-    
+| Étape de la Filière Bois | Volume / Valeur Chiffrée | Proportion Transformée en Corse | Destination des Flux |
+| :--- | :--- | :--- | :--- |
+| **Volume de Bois Abattu (ONF)** | 70 000 m³ / an | Moins de 22 % transformés sur place | > 75 % exportés en grumes brutes (Italie/Continent) |
+| **Balance Commerciale Bois** | Déficit de 85 M€ / an | Importation totale de matériaux finis | Réimportation du bois corse usiné 5 à 8 fois plus cher |
 
 ## V. Actions pour une filière forestière souveraine et recours CADA
 

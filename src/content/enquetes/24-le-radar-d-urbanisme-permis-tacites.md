@@ -66,21 +66,13 @@ Ce manque de transparence prive les élus territoriaux des outils d'arbitrage r�
 
 ## IV. Chiffres de l'audit d'urbanisme Sitadel2 en Corse
 
-    
+### 📊 Données d'Audit Forensique : Permis Tacites (Sitadel2)
 
-L'audit des autorisations d'urbanisme révèle :
-
-    
-
-        * **Proportion de permis tacites :** Estimée entre 16 % et 22 % des autorisations résidentielles délivrées sur les communes côtières sous RNU.
-
-        * **Taux de recours annulés pour déchéance de délai :** Plus de 35 % des recours citoyens contre des permis tacites sont rejetés pour dépassement du délai de 2 mois post-affichage.
-
-        * **Artificialisation des sols :** Plus de 320 hectares de terres agricoles et naturelles consommés chaque année par le mitage des permis individuels.
-
-    
-
-    
+| Métrique Urbanistique (Sitadel2) | Taux / Volume | Conséquence Foncier / Citoyenne |
+| :--- | :--- | :--- |
+| **Permis de Construire Tacites** | 16% à 22% | Délivrés par simple écoulement de délai (RNU) |
+| **Recours Citoyens Rejetés** | > 35% | Pour déchéance de délai d'affichage |
+| **Artificialisation Annuelle** | > 320 Hectares / an | Mitage des zones agricoles et naturelles |
 
 ## V. Actions de détection citoyenne et recours CADA
 

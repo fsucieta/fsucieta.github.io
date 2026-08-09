@@ -66,21 +66,13 @@ La jurisprudence du Conseil d'État est formelle : en cas de fractionnement inte
 
 ## IV. Données de l'audit MRAe et enquêtes publiques en Corse
 
-    
+### 📊 Données d'Audit Forensique : Enquêtes MRAe & Études d'Impact
 
-L'audit de la transparence environnementale révèle :
-
-    
-
-        * **Avis défavorables MRAe :** Plus de 45 % des projets immobiliers examinés au cas par cas en Corse reçoivent des réserves majeures pour inventaires faune-flore insuffisants.
-
-        * **Taux de projets fractionnés identifiés :** Environ 18 % des programmes d'aménagement littoraux présentent des indices de découpage multi-SCI.
-
-        * **Participation aux enquêtes publiques :** La participation citoyenne aux enquêtes d'impact environnemental a progressé de plus de 150 % grâce à la diffusion des avis sur le web.
-
-    
-
-    
+| Domaine d'Audit Environnemental | Statistique Clé | Observation Forensique |
+| :--- | :--- | :--- |
+| **Réserves Majeures MRAe** | > 45% des projets | Inventaires faune-flore incomplets |
+| **Projets Multi-SCI Fractionnés** | ~ 18% des dossiers | Stratégie d'évitement des études d'impact |
+| **Mobilisation Enquêtes Publiques**| + 150% de participation| Vigilance citoyenne accrue via le numérique |
 
 ## V. Actions de vérification environnementale et saisine CADA
 

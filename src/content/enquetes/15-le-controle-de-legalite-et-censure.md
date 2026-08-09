@@ -66,21 +66,13 @@ De nombreux maires ruraux préfèrent renoncer à élaborer leur document d'urba
 
 ## IV. Statistiques des déférés au Tribunal Administratif de Bastia
 
-    
+### 📊 Données d'Audit Forensique : Contrôle de Légalité & Déférés
 
-L'audit des jugements rendus par le Tribunal Administratif de Bastia met en lumière :
-
-    
-
-        * **Plus de 70 % des déférés préfectoraux d'urbanisme** ciblent des délibérations ou permis délivrés par des communes de moins de 1 000 habitants.
-
-        * **Taux de substitution citoyenne :** Plus de 85 % des annulations de permis de construire illégaux sur le littoral corse sont obtenues à l'initiative d'associations citoyennes et non de la Préfecture.
-
-        * **Délais moyen de jugement :** 18 mois d'attente, pendant lesquels certains chantiers illégaux se poursuivent en toute impunité.
-
-    
-
-    
+| Indicateur du Contrôle | Valeur Constatée | Impact Territorial / Juridique |
+| :--- | :--- | :--- |
+| **Ciblage Communes Rurales** | > 70% des déférés | Communes de moins de 1 000 habitants |
+| **Substitution Citoyenne** | > 85% des annulations | Portées par les associations (ex: U Levante) |
+| **Délai Moyen de Jugement TA** | 18 Mois | Poursuite des chantiers en référé suspension |
 
 ## V. Actions de vigilance citoyenne et recours CADA
 

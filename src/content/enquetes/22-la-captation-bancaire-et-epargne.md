@@ -66,21 +66,13 @@ Cette numérisation forcée renforce la dépendance envers les DAB (distributeur
 
 ## IV. Données IEDOM de l'audit financier bancaire
 
-    
+### 📊 Données d'Audit Forensique : Captation Bancaire de l'Épargne
 
-L'audit des flux d'épargne en Corse révèle :
-
-    
-
-        * **Volume global des dépôts collectés :** Plus de 11,2 milliards d'euros déposés sur les comptes des résidents corses.
-
-        * **Taux d'encours de crédit TPE/PME :** Moins de 42 % du montant de l'épargne liquide collectée est réinjecté sous forme de prêt à l'économie productive réelle locale.
-
-        * **Fermeture d'agences :** Suppression de 48 guichets bancaires physiques sur l'ensemble du territoire insulaire depuis 2010.
-
-    
-
-    
+| Indicateur Monétaire & Bancaire | Volume / Chiffre | Conséquence pour l'Économie Locale |
+| :--- | :--- | :--- |
+| **Épargne Globale Collectée** | > 11,2 Mld € | Réservoir de liquidités pour les réseaux bancaires |
+| **Réinjection en Crédits TPE/PME**| < 42% | Fuite de l'épargne vers les marchés continentaux |
+| **Fermeture de Guichets** | - 48 Agences | Désertification bancaire dans le rural intérieur |
 
 ## V. Actions pour une Banque Publique Régionale de Développement
 

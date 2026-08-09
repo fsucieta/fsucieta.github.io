@@ -66,21 +66,13 @@ Pendant ce temps, les projets de câbles d'interconnexion sous-marine (projets S
 
 ## IV. Chiffres clés de l'audit énergétique CRE / AUE
 
-    
+### 📊 Données d'Audit Forensique : Mix Énergétique EDF-SEI
 
-L'audit de la situation énergétique corse révèle :
-
-    
-
-        * **Part des énergies fossiles :** 62 % de l'électricité produite sur l'île provient de la combustion du fioul lourd ou du fioul léger.
-
-        * **Montant annuel de la péréquation CRE :** Plus de 260 millions d'euros versés chaque année à EDF-SEI pour compenser le surcoût de production corse.
-
-        * **Part du solaire et de l'éolien :** Moins de 14 % de la production globale injectée dans le réseau insulaire.
-
-    
-
-    
+| Indicateur du Mix Énergétique | Valeur Chiffrée | Impact Financier / Écologique |
+| :--- | :--- | :--- |
+| **Part de Production Fossile** | 62% | Centrales au fioul lourd Vazzio/Lucciana |
+| **Péréquation Tarifaire CRE** | > 260 M€ / an | Rente versée à EDF-SEI pour compensation |
+| **Injecté Solaire & Éolien** | < 14% | Blocage d'injection du réseau insulaire |
 
 ## V. Actions pour la souveraineté énergétique et recours CADA
 

@@ -66,21 +66,13 @@ Pendant les mois de sécheresse, les prélèvements d'eau agricole destinés à 
 
 ## IV. Données SISPEA et tarification asymétrique
 
-    
+### 📊 Données d'Audit Forensique : Gestion et Marchandisation de l'Eau
 
-La Cellule d'Investigation CASA DI CRISTALE a compilé les données de performance de la gestion de l'eau sur 12 intercommunalités corses :
-
-    
-
-        * **Rendement moyen régional :** 58,4 % (contre une moyenne nationale de 80,5 %). 42 millions de m³ d'eau potable sont perdus chaque année.
-
-        * **Absence de tarification progressive saisonnière :** La grande majorité des régies de distribution appliquent un tarif linéaire au m³, sans surtaxer la surconsommation estivale des grandes demeures touristiques.
-
-        * **Mainmise des multinationales :** Plus de 68 % de la population corse est desservie par des contrats de DSP conclues avec Veolia ou la Saur, limitant le pouvoir de contrôle direct des maires ruraux.
-
-    
-
-    
+| Indicateur de Gestion Hydraulique | Valeur Constatée en Corse | Moyenne Nationale / Norme | Conséquence Structurelle |
+| :--- | :--- | :--- | :--- |
+| **Rendement Moyen des Réseaux** | 58,4 % | 80,5 % | 42 millions de m³ d'eau potable perdus/an |
+| **Gestion par DSP Privée** | 68 % de la population | Varié | Sur-tarification (>4,20 €/m³) et manque d'investissement |
+| **Tarification Estivale** | Tarification linéaire | Tarification progressive | Surconsommation des résidences secondaires non pénalisée |
 
 ## V. Actions citoyennes et retour en Régie Publique
 

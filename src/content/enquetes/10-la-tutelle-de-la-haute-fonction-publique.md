@@ -66,21 +66,12 @@ Cependant, en vertu des règles nationales de classement et d'affectation interr
 
 ## IV. Données DGAFP sur la tutelle administrative
 
-    
+### 📊 Données d'Audit Forensique : Haute Fonction Publique & Préfecture
 
-L'audit de la haute fonction publique en Corse révèle les indicateurs suivants :
-
-    
-
-        * **Durée moyenne de maintien d'un Préfet de Corse :** 21 mois sur les 25 dernières années (14 préfets successifs).
-
-        * **Pourcentage de cadres A de l'État d'origine locale :** Moins de 18 % dans les directions régionales déconcentrées de l'État (DREAL, DRAAF, DRFiP).
-
-        * **Coût du sur-encadrement préfectoral :** La Corse détient le ratio de fonctionnaires préfectoraux d'État par habitant le plus élevé de France métropolitaine, sans aucun gain d'efficacité mesurable.
-
-    
-
-    
+| Corps & Services d'État en Corse | Durée Moyenne de Maintien | Part de Cadres A d'Origine Locale | Effet sur la Gouvernance |
+| :--- | :--- | :--- | :--- |
+| **Corps Préfectoral (Préfets/Sous-Préfets)** | 21 mois (14 préfets / 25 ans) | Inférieure à 5 % | Paralysie des projets et absence de mémoire administrative |
+| **Directions Régionales (DREAL, DRFiP)** | 22 à 24 mois | Moins de 18 % | Décalage avec les réalités juridiques et foncières locales |
 
 ## V. Recommandations pour une Fonction Publique Territoriale Insulaire
 

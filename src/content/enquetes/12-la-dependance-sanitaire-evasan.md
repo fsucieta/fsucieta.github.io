@@ -66,21 +66,12 @@ Résultat : le Centre Hospitalier de Bastia accumule une dette de structure colo
 
 ## IV. Données de cadrage ARS / CNAM de la santé en Corse
 
-    
+### 📊 Données d'Audit Forensique : Dépendance Sanitaire et EVASAN
 
-L'audit de la santé publique en Corse établit les chiffres suivants :
-
-    
-
-        * **Plus de 25 000 évacuations sanitaires (EVASAN)** enregistrées chaque année vers les hôpitaux de Nice et Marseille.
-
-        * **Zéro CHU :** La Corse est la seule région métropolitaine française sans faculté de médecine de plein exercice ni CHU rattaché.
-
-        * **Sur-mortalité par pathologies spécifiques :** Les délais d'accès aux soins de spécialité engendrent une sur-mortalité mesurée par l'INSEE pour les maladies cardiovasculaires et les cancers.
-
-    
-
-    
+| Indicateur Hospitalier & Santé | Donnée Chiffrée / Volume | Coût Annuel pour la CPAM | Conséquence Sanitaire & Humaine |
+| :--- | :--- | :--- | :--- |
+| **Évacuations Sanitaires (EVASAN)** | > 25 000 transferts / an | > 90 M€ / an (siphonnés vers PACA) | Éxil médical forcé des familles et malades corses |
+| **Structure CHU de Plein Exercice** | 0 CHU (Seule région métropolitaine) | Manque à gagner d'investissements | Pénurie de spécialistes et délais d'urgence allongés |
 
 ## V. Actions de souveraineté sanitaire et recours CADA
 
