@@ -157,6 +157,9 @@ L'enquête sur la **continuité des arrêtés Miot et la fiscalité successorale
 | :--- | :--- | :--- | :--- |
 | **Parcelles Non Titrées** | > 115 000 Unités | GIRTEC Actes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 12 000 Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Parcelles Non Titrées Corse** | > 115 000 (estimation GIRTEC 2023) | GIRTEC / Collectivité | 🔴 Blocage Foncier |
+| **Coût Acte Notarial Titration** | 1 800 à 4 500 € (prohibitif pour familles) | Chambres Notaires 2A+2B | 🔴 Inégalité d'Accès |
+| **Durée Prescription Trentenaire** | Requiert preuves 30 ans impossibles à réunir | Art. 2258 Code Civil | 🔴 Complexité Bloquante |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Pérennisation Intégrale de l'Exonération de Droits de Succession Miot :** Inscrire au Code Civil la pérennité du régime fiscal d'exonération pour la reconstitution des titres de propriété corses.

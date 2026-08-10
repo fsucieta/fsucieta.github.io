@@ -157,6 +157,9 @@ L'enquête sur la **transparence des pétitionnaires et la MRAe** identifie les 
 | :--- | :--- | :--- | :--- |
 | **Réserves MRAe** | > 45% Projets | Fractionnement SCI | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | ~ 18% Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Projets Dispensés EIE** | > 45% dispensés sans motivation écrite | MRAe de Corse 2023 | 🔴 Contournement Légal |
+| **Fractionnement SCI Détecté** | ~ 18% dossiers contiguës suspects | MRAe / Préfectures | 🔴 Délit Présumé |
+| **RBE Consulté par Instructeurs** | < 15% des dossiers (pratique informelle) | INPI / DDTM 2A+2B | 🔴 Lacune Procédurale |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Interdiction du Fractionnement Foncier Multi-SCI (Art. L. 122-1) :** Consolider l'ensemble des permis déposés par des SCI liées pour imposer une étude d'impact environnemental globale.

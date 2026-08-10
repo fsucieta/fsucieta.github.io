@@ -159,6 +159,9 @@ L'enquête sur le **verrou financier** révèle une constellation d'acteurs pré
 | **Capitaux Résidents Réinvestis** | 18% | Rapport BCE / ACPR | 🔴 Sous-Investissement Régional |
 | **Volume de Crédits Immobilisés** | 1,8 Mld € | Cadastre / Observatoire Foncier | ⚠️ Taux de Blocage Élevé |
 | **Taux de Recouvrement Hypothécaire** | 94,2% | Chambre des Notaires | ✅ Seuil de Sécurité |
+| **Taux de Réinjection Épargne** | < 42% localement | Norme IEDOM 65% | 🔴 Écart Majeur |
+| **Publicité Hypothécaire** | Opacité SCI non-résidentes | Art. 710-1 Code Civil | 🔴 Écart Majeur |
+| **Transparence DMTO** | 0 statistique publiée par DRFiP | Art. L. 311-1 CRPA | 🔴 Non Conforme |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Création du Droit de Préemption Financier et Titrisation Régionale (Art. L. 221-1 CMF) :** Instaurer une obligation légale pour toute banque privée opérant en Corse de réserver au moins 65 % de l'épargne locale collectée à un Fonds Sovereign de Réinvestissement Territorial (FSRT) géré par la Collectivité de Corse pour financer le logement permanent et la souveraineté économique insulaire.

@@ -158,6 +158,9 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 | **Barrage de Rizzanese** | 1,2 Mm³ | Régie Publique / OEHC | 72.4% |
 | **Barrage de Calacuccia** | 31,5 Mm³ | Concession Hydroélectrique | 84.1% |
 | **Barrage de Sampolo** | 2,8 Mm³ | Production Énergétique | 81.0% |
+| **Rendement Réseau Eau** | < 62% (vs 80% réglementaire) | Art. L. 2224-5 CGCT | 🔴 Écart Majeur |
+| **Fuites Réseau (m³/an)** | > 18 M m³ perdus/an | RPQS Délégataires | 🔴 Non Conforme |
+| **Prix Eau Potable m³** | 3,8 à 5,2 €/m³ (parmi les plus chers) | Benchmark Eau France | 🔴 Surtarification |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Création de la Régie Souveraine de l'Eau publique Insulaire (RSEI) :** Résilier progressivement l'ensemble des Délégations de Service Public (DSP) accordées aux multinationales privées pour unifier la distribution sous forme de régie publique régionale gérée par l'OEHC.

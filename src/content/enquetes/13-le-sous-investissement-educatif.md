@@ -157,6 +157,9 @@ L'enquête sur le **sous-investissement éducatif** cartographie les institution
 | :--- | :--- | :--- | :--- |
 | **Dotation Étudiant** | 8 200 € / étud. | vs 11 500 € (Nat.) | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Sous-Dotation -25% | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Dotation Étudiante Gap** | -3 300 €/étud./an vs moyenne nationale | MESR Répartition Sanremo | 🔴 Discrimination Insulaire |
+| **Capacité CROUS** | < 650 places pour 5 800 étudiants | CROUS Corte 2024 | 🔴 Sous-Dotation |
+| **Postes Enseignants Manquants** | > 45 postes ECF non pourvus | CNU / MESR Corse | 🔴 Déficit Structurel |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Mise à Niveau Budgétaire de l'Université de Corse (Art. L. 719-1) :** Aligner la dotation par étudiant sur la moyenne des universités insulaires européennes (12 000 €/étudiant).

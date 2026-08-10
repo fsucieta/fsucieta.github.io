@@ -157,6 +157,9 @@ L'enquête sur l'**évasion des capitaux touristiques** identifie les acteurs qu
 | :--- | :--- | :--- | :--- |
 | **Télétransmissions CB** | 68% Encaissements | Crédités Continent | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Évasion de Valeur | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Fuite Capitaux Haute Saison** | > 3,2 Mld €/saison exportés | IEDOM Bilans CB | 🔴 Écart Majeur |
+| **IS Plateformes Numériques** | 0 € déclaré en Corse (siège hors île) | Art. 209 CGI | 🔴 Optimisation Fiscale |
+| **Taxe de Séjour Collectée** | Seulement 40% versée à la Collectivité | Art. L. 2333-26 CGCT | 🔴 Sous-Collecte |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Prélèvement à la Source sur les Plateformes OTA (Airbnb/Booking) :** Imposer la collecte et le reversement direct de la taxe de séjour et de la TVA aux communes corses par les plateformes numériques.

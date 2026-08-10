@@ -158,6 +158,9 @@ L'enquête sur l'**empire des SCI non-résidentes** cartographie le réseau d'ac
 | **Extrême-Sud (Porto-Vecchio/Bonifacio)** | 3 840 SCI | 42.8% | Holdings Européennes / Offshore |
 | **Balagne (Calvi/Rousse)** | 2 120 SCI | 38.2% | Sociétés Civiles Métropolitaines |
 | **Golfe d'Ajaccio & Valinco** | 2 950 SCI | 35.1% | Investisseurs Privés |
+| **Registre Bénéficiaires SCI** | Accès restreint non-systématisé | Art. L. 561-46 CMF | 🔴 Non Conforme |
+| **DIA SCI Agricoles Reçues** | < 40% transmises à SAFER | Art. L. 141-1 CRPM | 🔴 Sous-Déclaration |
+| **Cessions Parts SCI Littoral** | > 60% sans contrôle urbanisme | Art. L. 122-1 Code Urb. | 🔴 Lacune Contrôle |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Registre Public d’Open Data Foncier des SCI (Art. L. 561-46 CMF) :** Levée de l'anonymat par l'obligation de publication Open Data géolocalisée de l'identité des bénéficiaires effectifs de toutes les SCI propriétaires d'actifs immobiliers en Corse.

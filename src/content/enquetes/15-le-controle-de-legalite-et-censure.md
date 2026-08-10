@@ -157,6 +157,9 @@ L'enquête sur le **contrôle de légalité et la censure administrative** ident
 | :--- | :--- | :--- | :--- |
 | **Communes Rurales** | > 70% Déférés | Annulations Citoyennes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 85% Associations | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Déférés Préfectoraux/an** | > 85 actes déférés par les 2 Préfectures | TA Bastia Registre | 🔴 Suractivisme Sélectif |
+| **Communes Rurales Visées** | > 70% des déférés touchent communes < 500 hab. | Préfectures 2A + 2B | 🔴 Double Standard |
+| **Grandes Zones Touristiques** | < 5% déférés sur projets > 1 M€ | Associations Env. Corse | 🔴 Contrôle Asymétrique |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Publication Obligatoire Open Data des Avis de Légalité Préfectoraux :** Rendre publics sous 48h tous les avis transmis par la Préfecture dans le système `@CTES`.

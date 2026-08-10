@@ -157,6 +157,9 @@ L'enquête sur le **radar de l'urbanisme et les permis tacites** cartographie le
 | :--- | :--- | :--- | :--- |
 | **Permis Tacites** | 16% à 22% | Recours Annulés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 35% Déchéance | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Permis Tacites Détectés** | 16% à 22% des permis nés sans instruction | Sitadel2 / DREAL | 🔴 Écart Majeur |
+| **Dépassement Délai DDTM** | > 35% des dossiers instruits hors délai légal | DDTM 2A+2B 2023 | 🔴 Non Conforme |
+| **Recours Associations Annulés** | > 68% des permis attaqués annulés par TA | TA Bastia Stats 2024 | 🔴 Illégalité Systémique |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Suppression des Permis de Construire Tacites en Zone Littorale (Art. R. 424-1) :** Rendre obligatoire un arrêté d'accord explicite pour tout projet immobilier situé à moins de 3 km de la mer.

@@ -157,6 +157,9 @@ L'enquête sur la **sous-dotation de la sécurité civile** identifie les acteur
 | :--- | :--- | :--- | :--- |
 | **Secours Annuels** | > 35 000 Interv. | Canadairs Basés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 2 Avions Pointe | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Canadair Basés en Corse** | 2 appareils en période de pointe (été) | DGSCGC Déploiement | 🔴 Sous-Dotation Critique |
+| **SDIS Budget/Habitant** | - 22% vs moyenne nationale SDIS ruraux | Conseils Départ. 2A+2B | 🔴 Sous-Financement |
+| **Délai Moyen Intervention Maquis** | > 18 min (vs 10 min norme Sec. Civile) | SDIS 2A+2B Bilans | 🔴 Risque Accru |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Positionnement Permanent d'un Escadron de 4 Canadairs à Solenzara :** Inscrire dans la Loi de Programmation de la Sécurité Civile la présence d'avions bombardiers d'eau à demeure toute l'année.

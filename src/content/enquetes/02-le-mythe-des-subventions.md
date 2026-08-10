@@ -158,6 +158,9 @@ L'enquête sur le **mythe des subventions** identifie les acteurs qui captent ou
 | **Taux Majeur TVA (Régime Dérogatoire)** | 20.0% | 10.0% / 2.1% | 🔴 Manque à Gagner Territorial |
 | **Crédit d'Impôt Investissement (CIIC)** | 30.0% | 30.0% | ⚠️ Concentration Portefeuille |
 | **Taxe sur les Surfaces Commerciales** | Taux Standard | Exonération Partielle | 🔴 Distortion Fiscale |
+| **TVA Touristique Réinjectée** | < 8% retournée localement | Principe Péréquation | 🔴 Écart Majeur |
+| **CIIC Bénéficiaires** | Aucune liste nominative publique | Art. R. 311-12 CRPA | 🔴 Non Conforme |
+| **DETR/DSIL Corse** | Critères d'arbitrage non publiés | Art. L. 2334-36 CGCT | 🔴 Non Conforme |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Territorialisation Directe de la TVA Touristique (Art. 256 CGI & Loi de Finances) :** Modifier la Loi de Finances pour attribuer 100 % du produit de la TVA collectée durant la saison estivale (juin-septembre) dans le secteur du tourisme et des transports au budget de la Collectivité de Corse, compensant le déficit fiscal historique.

@@ -158,6 +158,9 @@ L'enquête sur l'**emprise et les servitudes militaires** cartographie les insti
 | :--- | :--- | :--- | :--- |
 | **BA 126 Solenzara** | 512 Hectares | Zone Littorale | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Exonération TF | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Surface Emprises Militaires** | > 15% territoire terrestre insulaire | TGPIE / DIE | 🔴 Surdimensionnement |
+| **Redevance BA 126 Solenzara** | < 50k€/an versée à la Collectivité | Convention Armées/Corse | 🔴 Sous-Compensation |
+| **Servitudes SUP Agricoles** | > 8 000 ha hors production agricole | DDTM 2A + 2B | 🔴 Perte Économique |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Instauration de la Redevance Foncier Militaire Réparatrice :** Assujettir le Ministère des Armées au paiement d'une contribution compensatoire pour l'occupation des 2 800 ha d'emprises stratégiques.

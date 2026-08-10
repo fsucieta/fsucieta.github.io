@@ -157,6 +157,9 @@ L'enquête sur l'**accaparement des primes PAC** identifie les acteurs de la fil
 | :--- | :--- | :--- | :--- |
 | **Enveloppe PAC** | > 36 M€ / an | Concentration Aides | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 10% Perçoivent 120k€ | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Concentration Aides PAC** | 10% exploitants perçoivent > 120k€/an | DRAAF / ASP Corse 2023 | 🔴 Distorsion Majeure |
+| **Maquis Déclaré Pâturage** | > 35% surfaces TéléPAC non vérifiables | Rapport CRC Corse 2022 | 🔴 Fraude Présumée |
+| **Contrôles Sur Place ODARC** | < 8% des dossiers contrôlés physiquement | ODARC Bilan Annuel | 🔴 Sous-Contrôle |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Plafonnement Dégressif des Primes PAC à 60 000 € par Exploitation :** Redistribuer les sur-primes d'accaparement vers les jeunes agriculteurs et producteurs fermiers réels.

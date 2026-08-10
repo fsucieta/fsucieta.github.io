@@ -156,6 +156,9 @@ L'enquête sur la **tutelle de la haute fonction publique** identifie les résea
 | :--- | :--- | :--- | :--- |
 | **Corps Préfectoral** | 21 Mois Maintien | < 5% Cadres Locaux | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Paralysie Projets | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Durée Moyenne Préfet Corse** | 18 à 24 mois (vs 3-5 ans région autonome) | DGAFP Nominations | 🔴 Instabilité Structurelle |
+| **Connaissance Territoire** | Aucun critère insulaire à la nomination | Décret Préfets 1964 | 🔴 Lacune Réglementaire |
+| **Droit de Regard Collectivité** | 0% sur nominations DRFiP, DREAL, ARS | Statuts Régions Autonomes | 🔴 Vide Statutaire |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Création de la Réserve Cadre Territoriale Insulaire :** Réserver au moins 50 % des postes de direction régionale des services déconcentrés de l'État aux hauts fonctionnaires résidents.

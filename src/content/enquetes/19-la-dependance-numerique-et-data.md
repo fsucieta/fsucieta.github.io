@@ -157,6 +157,9 @@ L'enquête sur la **dépendance numérique et la data** identifie les acteurs qu
 | :--- | :--- | :--- | :--- |
 | **Cables Sous-Marins** | 100% Dépendance | Corsica Fibra | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Fibre Rurale Bloquée | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Câbles Sous-Marins** | 100% dépendance — aucune redondance terrestre | ARCEP / Corsica Fibra | 🔴 Point de Défaillance Unique |
+| **Hébergement Cloud Hors Île** | > 80% SI collectivités corses hors territoire | ANSSI / RGPD | 🔴 Risque Souveraineté |
+| **Fibre Rurale Bloquée** | > 120 communes < 30 Mbit/s effectif | ARCEP Observatoire 2024 | 🔴 Fracture Numérique |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Création du Datacenter Souverain Régional Public :** Implanter un centre de stockage de données sous contrôle de la Collectivité de Corse pour héberger 100 % des données publiques et médicales.

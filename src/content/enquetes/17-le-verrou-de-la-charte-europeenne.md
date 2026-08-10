@@ -157,6 +157,9 @@ L'enquête sur le **verrou de la Charte Européenne des Langues Régionales** id
 | :--- | :--- | :--- | :--- |
 | **Filières Bilingues** | ~ 38% Primaire | Chute Collège | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 86% Soutien Populaire | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Filières Bilingues Primaire** | ~ 38% élèves en section bilingue | Rectorat de Corse 2024 | 🔴 Insuffisant |
+| **Chute Bilingue Collège** | < 18% maintien en filière bilingue | Rectorat de Corse 2024 | 🔴 Déperdition Majeure |
+| **Co-Officialité Votée** | Refusée 3 fois par le Gouvernement (2022-2024) | Assemblée de Corse | 🔴 Blocage Constitutionnel |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Ratification Directe de la Charte Européenne des Langues Régionales :** Inscrire au Code du Patrimoine l'officialisation de la langue corse à égalité avec le français dans les services publics insulaires.

@@ -156,6 +156,9 @@ L'enquête sur le **cadastre minier secret** identifie les institutions et opér
 | :--- | :--- | :--- | :--- |
 | **District Cap Corse** | 48 Gisements | Antimoine / Cuivre | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Redevances Centralisées | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Titres Miniers Actifs Corse** | 12 permis de recherches actifs non publiés | Art. L. 122-1 Code Minier | 🔴 Opacité |
+| **Sites Amiante Naturel** | > 140 communes exposées sans plan | Art. L. 222-1 Code Envir. | 🔴 Risque Sanitaire |
+| **Redevances Minières Perçues** | < 200k€/an reversés aux communes | Art. L. 161-1 Code Minier | 🔴 Sous-Compensation |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Redevance des Substrats Critiques (Art. L. 174-1 Code Minier) :** Instaurer une redevance minière régionale prélevée sur toute prospection de métaux stratégiques au profit du Fonds de Dépollution des Anciens Sites.

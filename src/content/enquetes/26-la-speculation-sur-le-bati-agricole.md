@@ -157,6 +157,9 @@ L'enquête sur la **spéculation sur le bâti agricole** cartographie les acteur
 | :--- | :--- | :--- | :--- |
 | **Prix Mètre Carré** | > 8 500 €/m² | Demandes L.151-11 | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 340 Permis 5ans | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Prix Moyen Bergerie Restaurée** | > 8 500 €/m² (prix immobilier résidentiel) | Notaires de France 2023 | 🔴 Spéculation Avérée |
+| **Permis L.151-11 Accordés/5ans** | > 340 permis bergeries (estimation DDTM) | Sitadel2 / DDTM | 🔴 Dérive Massive |
+| **Préemptions SAFER Bergeries** | < 2% des ventes préemptées (prix > budget) | SAFER Corse Bilan | 🔴 Outil Inopérant |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Verrouillage Strict des Restaurations de Bâti Ancien (Art. L. 151-11) :** Interdire l'aménagement de piscines, héliports et équipements de luxe lors de la rénovation des anciennes bergeries en zone A et N.

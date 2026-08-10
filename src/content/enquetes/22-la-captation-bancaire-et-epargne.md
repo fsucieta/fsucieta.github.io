@@ -157,6 +157,9 @@ L'enquête sur la **captation bancaire et l'épargne** cartographie les acteurs 
 | :--- | :--- | :--- | :--- |
 | **Dépôts Collectés** | > 11,2 Mld € | Crédits PME Local | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | < 42% Réinjectés | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Dépôts Collectés vs Crédits** | > 11,2 Mld € collectés / < 4,7 Mld prêtés | IEDOM Bilan 2023 | 🔴 Écart Structurel |
+| **PME Corses Refus Bancaire** | > 38% de demandes de crédit refusées | Bpifrance Corse 2024 | 🔴 Asphyxie Économique |
+| **Taux Usure TPE Corse** | + 1,8 pts vs régions continentales comparables | Banque de France | 🔴 Surprime Insulaire |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Instauration de la Charte d'Investissement Territorial Obligatoire :** Assujettir les réseaux bancaires à un taux minimal de réinjection de 65 % des dépôts collectés en Corse sous forme de prêts aux PME insulaires.

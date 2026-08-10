@@ -157,6 +157,9 @@ L'enquête sur le **scandale des déchets SYVADEC** identifie les acteurs du sys
 | :--- | :--- | :--- | :--- |
 | **Ratio Déchets/Hab.** | > 640 kg/hab/an | Fret Cargo Déchets | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 70 000 t / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Coût Export Déchets/an** | > 45 M€/an en fret maritime | SYVADEC Marché Public | 🔴 Surcoût Structurel |
+| **Ratio Recyclage Corse** | < 22% (vs 48% national) | PRPGD Corse 2023 | 🔴 Retard Majeur |
+| **Injonctions DREAL Non Suivies** | > 60% des arrêtés ICPE non conformes | DREAL Insp. 2022-2024 | 🔴 Déficit Contrôle |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Interdiction Totale d'Exportation des Déchets par Cargo d'ici 2028 :** Imposer la construction d'unités de tri haute performance et de valorisation organique sur le territoire corse.

@@ -160,6 +160,9 @@ L'enquête **comparative outre-mer / Europe** identifie les instances décisionn
 | **Polynésie Française** | COM Art. 74 Constitution | 3 à 5 Ans (*Loi du Pays*) | Conseil Constitutionnel 2009 |
 | **Îles Åland** | Province Autonome Finlandaise | 5 Ans (*Hembygdsrätt*) | Traité d'Adhésion UE 1994 |
 | **Sardaigne** | Région Autonome Italienne | Projets Régionaux 2007 | Arrêt Cour de Justice UE 2009 |
+| **Droit de Résidence Foncière** | Inexistant en droit français | Modèle Åland / COM FR | 🔴 Vide Juridique |
+| **Préemption SAFER Littorale** | < 3% des ventes préemptées | Art. L. 141-1 CRPM | 🔴 Sous-Utilisé |
+| **Insularité Foncière Reconnue** | Non reconnue constitutionnellement | Art. 72-3 Constitution | 🔴 Blocage Constitutionnel |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Adoption de la Clause d’Équivalence Insulaire Européenne (Art. 349 TFUE) :** Négocier auprès de la Commission Européenne un protocole additionnel sur le modèle des Îles Åland autorisant la Corse à instaurer un droit de résidence préalable de 5 ans pour l'accès à la propriété foncière.

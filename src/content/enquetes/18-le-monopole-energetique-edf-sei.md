@@ -157,6 +157,9 @@ L'enquête sur le **monopole énergétique EDF-SEI** identifie les acteurs qui c
 | :--- | :--- | :--- | :--- |
 | **Production Fossile** | 62% Fioul Lourd | Péréquation CRE | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | > 260 M€ / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Part Fioul dans Mix Corse** | > 62% de la production (2023) | PPE Insulaire CRE | 🔴 Retard Transition |
+| **Coût CSPE Corse** | > 260 M€/an de péréquation tarifaire | CRE Bilans ZNI 2023 | 🔴 Surcoût Structurel |
+| **ENR Bloquées** | > 180 MW de projets ENR en attente de raccordement | DREAL Corse 2024 | 🔴 Blocage Réseau |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Interdiction Définitive du Fioul Lourd dans les Centrales Corses :** Fixer une échéance obligatoire à 2028 pour la conversion au gaz naturel et au biocarburant des centrales du Vazzio et Lucciana.

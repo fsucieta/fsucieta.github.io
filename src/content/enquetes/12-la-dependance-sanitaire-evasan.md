@@ -156,6 +156,9 @@ L'enquête sur la **dépendance sanitaire et les EVASAN** identifie les acteurs 
 | :--- | :--- | :--- | :--- |
 | **Évacuations Sanitaires** | > 25 000 / an | > 90 M€ / an | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | Zéro CHU Insulaire | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Coût Annuel EVASAN** | > 28 M€/an (estimation CPAM) | Budget ARS Corse | 🔴 Dépendance Structurelle |
+| **Spécialistes Manquants** | Neurochirurgie, Cardiologie Interv., Oncologie | Carte Hospitalière ARS | 🔴 Sous-Dotation |
+| **Délai Moyen EVASAN** | 3h45 médiane transport-arrivée CHU | SAMU de Corse | 🔴 Risque Vital |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Plan de Création du CHU de Plein Exercice de Corse :** Remplacer le système ruineux des EVASAN par la création d'un Centre Hospitalier Universitaire autonome Bastia-Ajaccio.

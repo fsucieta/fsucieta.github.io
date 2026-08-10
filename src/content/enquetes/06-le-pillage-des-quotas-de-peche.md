@@ -157,6 +157,9 @@ L'enquête sur le **pillage des quotas de pêche** identifie les acteurs qui cap
 | :--- | :--- | :--- | :--- |
 | **Thon Rouge (ICCAT)** | 6 700 Tonnes (FR) | 130 Tonnes (Corse) | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | < 2% Attribués | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Quota Thon Rouge Corse** | < 4% pour la pêche artisanale insulaire | CICTA Méditerranée | 🔴 Écart Majeur |
+| **Pêche Industrielle Sétoise** | > 78% quota capturé hors île | CRPMEM de Corse | 🔴 Déséquilibre |
+| **Effectifs CRPMEM Corse** | Non représentés aux négociations CICTA | Art. L. 912-1 Code Rural | 🔴 Sous-Représentation |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Rétrocession du Quota Territorial de Thon Rouge :** Réattribuer directement à la flottille artisanale corse 15 % du quota national au titre de l'antériorité historique et de la pêche durable.

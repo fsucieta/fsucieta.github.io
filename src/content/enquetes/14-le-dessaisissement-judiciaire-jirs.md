@@ -157,6 +157,9 @@ L'enquête sur le **dessaisissement judiciaire et la JIRS** cartographie les ins
 | :--- | :--- | :--- | :--- |
 | **Transferts Marseille** | > 80% Dossiers | Instructions Lentes | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 12 M€ Escortes | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Coût Escortes Pénitentiaires** | > 12 M€/an (transferts corses → continent) | DAP / Min. Justice | 🔴 Surcoût Injustifié |
+| **Délai Moyen Instruction JIRS** | > 4 ans (vs 28 mois national) | Stats Casier Judiciaire | 🔴 Atteinte Art. 6 CEDH |
+| **Dessaisissements Annuels** | > 35 dossiers/an parquet Bastia → Marseille | DACG / Min. Justice | 🔴 Décentrement Systémique |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Création du Pôle d'Instruction Financier Spécialisé à Bastia :** Rapatrier les compétences de la JIRS de Marseille vers une juridiction financière insulaire autonome.

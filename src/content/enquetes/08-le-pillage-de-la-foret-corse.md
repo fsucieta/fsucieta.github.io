@@ -156,6 +156,9 @@ L'enquête sur le **pillage de la forêt corse** cartographie les acteurs de la 
 | :--- | :--- | :--- | :--- |
 | **Filière Bois ONF** | 70 000 m³/an | < 22% Transformés | 🔴 Écart Majeur |
 | **Contrôle & Conformité** | 75% Exporté Brut | Norme Légale Nationale | ⚠️ Vigilance Requis |
+| **Taux Transformation Locale** | < 15% des grumes abattues | Art. L. 121-1 Code Forestier | 🔴 Écart Majeur |
+| **Exportation Grumes Brutes** | > 85% vers Italie et PACA | Stats Douanes Bastia/Ajaccio | 🔴 Externalisation |
+| **Adjudications ONF Corse** | Sans clause transformation obligatoire | Cahiers des Charges ONF | 🔴 Lacune Marché |
 
 ### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
 1. **Interdiction d'Exportation des Grumes Brutes Hors de Corse :** Imposer un taux de transformation locale minimal de 60 % pour tout bois issu des forêts domaniales et territoriales corses.
