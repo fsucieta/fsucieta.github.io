@@ -4,7 +4,7 @@ title: "Enquête 12 : La Dépendance Sanitaire & le Coût du Sous-Équipement Ho
 subtitle: "Radiographie de la santé publique : comment le tarification à l'activité (T2A) et le manque de CHU étouffent les hôpitaux de Bastia et d'Ajaccio et forcent les évacuations sanitaires"
 category: "SANTÉ & HÔPITAL"
 ref: "FSUCIETA-AUDIT-ENQUETE-12"
-author: "Cellule d'Investigation Santé CASA DI CRISTALE"
+author: "Cellule d'Investigation Santé L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "ARS Corse / DREES / CNAM / CHU Audit"
 chapeau: "Seul territoire métropolitain dépourvu de Centre Hospitalier Universitaire (CHU) de plein exercice, la Corse subit un sous-équipement sanitaire chronique. Enquête sur le coût humain et financier des 25 000 évacuations sanitaires (EVASAN) annuelles vers Marseille et Nice, financées au prix fort par l'assurance maladie insulaire."

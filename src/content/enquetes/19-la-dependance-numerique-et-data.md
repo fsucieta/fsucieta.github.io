@@ -4,7 +4,7 @@ title: "Enquête 19 : La Dépendance Numérique & les Atteintes à la Souveraine
 subtitle: "Radiographie du réseau de télécommunication : vulnérabilité des câbles sous-marins de fibre optique et hébergement des données publiques corses sur des serveurs parisiens"
 category: "NUMÉRIQUE & DATA"
 ref: "FSUCIETA-AUDIT-ENQUETE-19"
-author: "Cellule d'Investigation Numérique CASA DI CRISTALE"
+author: "Cellule d'Investigation Numérique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "ARCEP / ANSSI / Corsica Fibra"
 chapeau: "Totalement dépendante de trois câbles de fibre optique sous-marins reliant l'île au continent, la Corse subit une fragilité numérique stratégique. Enquête sur le transfert des données administratives et cadastrales des résidents corses vers des datacenters continentaux et américains."

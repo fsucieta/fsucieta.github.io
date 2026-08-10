@@ -4,7 +4,7 @@ title: "Enquête 10 : La Tutelle de la Haute Fonction Publique & le Gel des Comp
 subtitle: "Analyse de la gouvernance administrative : comment la rotation permanente des corps d'État (Préfets, DREAL, Rectorat) bloque le développement des compétences locales"
 category: "INSTITUTIONS & TUTELLE"
 ref: "FSUCIETA-AUDIT-ENQUETE-10"
-author: "Cellule d'Investigation Institutionnelle CASA DI CRISTALE"
+author: "Cellule d'Investigation Institutionnelle L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "DGAFP / CGCT / Cour des Comptes"
 chapeau: "Terre de sur-administration d'État et de sous-administration locale, la Corse subit la rotation continuelle de hauts fonctionnaires parisiens en quête d'avancement de carrière. Enquête sur le blocage des dossiers d'aménagement et le refus de former des cadres territoriaux insulaires souverains."

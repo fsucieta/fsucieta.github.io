@@ -4,7 +4,7 @@ title: "Enquête 05 : L'Empire des SCI Non-Résidentes — La mainmise opaque su
 subtitle: "Radiographie des bénéficiaires effectifs : comment les données croisées de l'INPI RBE et de DVF démasquent l'accaparement de la terre par des sociétés hors-sol"
 category: "TRANSPARENCE & INPI"
 ref: "FSUCIETA-AUDIT-ENQUETE-05"
-author: "Cellule d'Investigation Financière CASA DI CRISTALE"
+author: "Cellule d'Investigation Financière L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "INPI RBE / DVF / Sitadel2 / Cadastre"
 chapeau: "Derrière les volets clos des villas qui jalonnent le littoral insulaire se cache une architecture de sociétés civiles immobilières (SCI) d'une opacité calculée. Grâce à l'exploitation des Open Data du Registre des Bénéficiaires Effectifs (RBE), nous révélons l'ampleur du transfert de propriété foncière."
@@ -42,7 +42,7 @@ Jusqu'à une date récente, percer le secret de ces entités morales relevait du
 
     
 
-En croisant les fichiers géolocalisés de la base DVF (Demande de Valeurs Foncières), du cadastre public et des enregistrements du RBE, la Cellule d'Investigation CASA DI CRISTALE a mené un travail de décodage inédit. Les résultats révèlent l'ampleur de la prise de contrôle : sur certaines fractions littorales de la Corse-du-Sud, **plus de 72 % des parcelles situées en zone remarques ou espaces remarquables (Bande des 100 mètres et PADDUC) appartiennent à des entités morales dont les bénéficiaires effectifs sont domiciliés hors de Corse**.
+En croisant les fichiers géolocalisés de la base DVF (Demande de Valeurs Foncières), du cadastre public et des enregistrements du RBE, la Cellule d'Investigation L'OCHJU — FSUCIETÀ a mené un travail de décodage inédit. Les résultats révèlent l'ampleur de la prise de contrôle : sur certaines fractions littorales de la Corse-du-Sud, **plus de 72 % des parcelles situées en zone remarques ou espaces remarquables (Bande des 100 mètres et PADDUC) appartiennent à des entités morales dont les bénéficiaires effectifs sont domiciliés hors de Corse**.
 
     
 

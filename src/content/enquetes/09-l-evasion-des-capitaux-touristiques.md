@@ -4,7 +4,7 @@ title: "Enquête 09 : L'Évasion des Capitaux de la Saison Touristique — Le vo
 subtitle: "Enquête sur la fuite des devises estivales : comment la grande distribution, les enseignes nationales et les plateformes de location vident la Corse de ses gains de saison"
 category: "ÉCONOMIE & CAPITAL"
 ref: "FSUCIETA-AUDIT-ENQUETE-09"
-author: "Cellule d'Investigation Économique CASA DI CRISTALE"
+author: "Cellule d'Investigation Économique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "INSEE / Banque de France / DGFiP"
 chapeau: "Présenté comme le moteur de l'économie corse, le tourisme produit chaque été un chiffre d'affaires colossal se comptant en milliards d'euros. Cependant, une analyse médico-légale des flux monétaires démontre que plus de 65 % de cette valeur ajoutée quitte l'île dès la fin de la saison."

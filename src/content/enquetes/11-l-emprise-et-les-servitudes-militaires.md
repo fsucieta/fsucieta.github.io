@@ -4,7 +4,7 @@ title: "Enquête 11 : L'Emprise & les Servitudes Militaires — Le cadastre occu
 subtitle: "Analyse de la souveraineté foncière : comment les bases militaires et zones d'entraînement (Solenzara, Calvi, Aspretto) gèlent des milliers d'hectares stratégiques"
 category: "DÉFENSE & TERRITOIRE"
 ref: "FSUCIETA-AUDIT-ENQUETE-11"
-author: "Cellule d'Investigation Foncier-Défense CASA DI CRISTALE"
+author: "Cellule d'Investigation Foncier-Défense L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "Ministère des Armées / CGCT / Servitudes DGF"
 chapeau: "Alors que la Corse souffre d'une pénurie aiguë de foncier pour le logement social et les infrastructures publiques, l'État conserve sous la main-mise de la Défense des domaines côtiers d'une valeur patrimoniale inestimable. Enquête sur les emprises de la Base Aérienne 126 de Solenzara, du 2e REP à Calvi et de la baie d'Aspretto à Ajaccio."

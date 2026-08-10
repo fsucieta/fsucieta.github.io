@@ -4,7 +4,7 @@ title: "Enquête 06 : Le Pillage des Quotas de Pêche — Pourquoi nos marins-p�
 subtitle: "Analyse de la répartition de l'ICCAT et de la DPMA : 90 % du quota national de thon rouge attribué aux armements industriels continentaux au détriment de la pêche artisanale corse"
 category: "MER & PÊCHE"
 ref: "FSUCIETA-AUDIT-ENQUETE-06"
-author: "Cellule d'Investigation Maritime CASA DI CRISTALE"
+author: "Cellule d'Investigation Maritime L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "DPMA / IFREMER / CRPMEM Corse"
 chapeau: "Alors que la Corse possède plus de 1 000 kilomètres de côtes et une tradition de pêche artisanale séculaire, ses prud'homies et marins-pêcheurs subissent une spoliation administrative systématique des droits de pêche. Enquête sur la monopolisation des quotas de thon rouge et d'espadon par les thoniers-senneurs sétois et méditerranéens continentaux."

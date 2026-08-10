@@ -4,7 +4,7 @@ title: "Enquête 24 : Le Radar d'Urbanisme & les Permis Tacites en Mairie"
 subtitle: "Radiographie de la bétonisation discrète : comment le mécanisme des permis de construire tacites (R. 424-1) contourne l'affichage public et le contrôle citoyen"
 category: "URBANISME & SITADEL"
 ref: "FSUCIETA-AUDIT-ENQUETE-24"
-author: "Cellule d'Investigation Urbanistique CASA DI CRISTALE"
+author: "Cellule d'Investigation Urbanistique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "Sitadel2 / DVF / Cadastre / CADA"
 chapeau: "Pour éviter les recours des associations environnementales et la contestation des riverains, une part croissante des projets immobiliers spéculatifs sur le littoral corse naissent dans l'ombre du mécanisme du permis tacite. Enquête sur l'exploitation des failles du Code de l'Urbanisme."
@@ -56,7 +56,7 @@ Une fois le permis tacite acquis par le simple écoulement du temps, le pétitio
 
     
 
-L'exploitation de la base nationale Sitadel2 menée par CASA DI CRISTALE montre que les permis tacites souffrent d'une sous-déclaration statistique constante. Les mairies omettent régulièrement de transmettre les arrêtés d'attestation de permis tacites à la banque de données du Ministère de la Transition Écologique, rendant le suivi de l'artificialisation des sols par le PADDUC particulièrement difficile.
+L'exploitation de la base nationale Sitadel2 menée par L'OCHJU — FSUCIETÀ montre que les permis tacites souffrent d'une sous-déclaration statistique constante. Les mairies omettent régulièrement de transmettre les arrêtés d'attestation de permis tacites à la banque de données du Ministère de la Transition Écologique, rendant le suivi de l'artificialisation des sols par le PADDUC particulièrement difficile.
 
     
 

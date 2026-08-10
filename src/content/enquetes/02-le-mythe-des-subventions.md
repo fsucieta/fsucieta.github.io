@@ -4,7 +4,7 @@ title: "Enquête 02 : Le Mythe des Subventions — Anatomie de la captation fisc
 subtitle: "Analyse médico-légale des finances publiques : comment la TVA et l'Impôt sur les Sociétés générés par 3 millions de visiteurs repartent vers Paris sans retour structurel"
 category: "FISCALITÉ & BUDGET"
 ref: "FSUCIETA-AUDIT-ENQUETE-02"
-author: "Cellule d'Investigation Financière CASA DI CRISTALE"
+author: "Cellule d'Investigation Financière L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "Cour des Comptes / DGFiP / REPAD"
 chapeau: "Accusée depuis des décennies de vivre d'assistanat budgétaire et de générosité nationale, la Corse subit en réalité une ponction fiscale directe sur les richesses qu'elle produit. Radiographie des flux fiscaux démontrant que les transferts de l'État ne sont que la restitution très partielle des taxes collectées sur l'île."

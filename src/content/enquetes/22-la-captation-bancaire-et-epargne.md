@@ -4,7 +4,7 @@ title: "Enquête 22 : La Captation Bancaire & l'Évasion des Dépôts d'Épargne
 subtitle: "Radiographie du système bancaire insulaire : comment les banques privées réinjectent moins de 40 % des dépôts des épargnants corses dans l'économie réelle locale"
 category: "BANQUE & ÉPARGNE"
 ref: "FSUCIETA-AUDIT-ENQUETE-22"
-author: "Cellule d'Investigation Financière CASA DI CRISTALE"
+author: "Cellule d'Investigation Financière L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "IEDOM / Banque de France / ACPR"
 chapeau: "Considérée par les directions des grands groupes bancaires français comme un bassin de collecte d'épargne liquide particulièrement rentable, la Corse subit un sous-investissement bancaire local. Enquête sur le siphonnage des livrets et comptes d'épargne vers les marchés financiers internationaux."

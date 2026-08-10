@@ -4,7 +4,7 @@ title: "Enquête 16 : La Continuité Cinquantenaire des Arrêtés Miot & l'Indiv
 subtitle: "Spoliation et blocage successoral : comment la fin programmée des arrêtés Miot et le désordre des titres favorisent le rachat spéculatif par les capitaux extérieurs"
 category: "SUCCESSIONS & GIRTEC"
 ref: "FSUCIETA-AUDIT-ENQUETE-16"
-author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
+author: "Cellule d'Investigation Juridique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "GIRTEC / Notaires / Code Civil"
 chapeau: "Instaurés en 1798 par le comte André-François Miot de Melito pour adapter le droit de succession aux réalités de la propriété familiale corse, les arrêtés Miot ont été progressivement démantelés par le Législateur. Enquête sur le piège de l'indivision et le rôle clé du GIRTEC."

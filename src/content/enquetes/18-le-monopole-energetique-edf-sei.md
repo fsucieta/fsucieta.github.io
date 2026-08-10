@@ -4,7 +4,7 @@ title: "Enquête 18 : Le Monopole Énergétique EDF-SEI & la Transition Bloquée
 subtitle: "Radiographie de la dépendance fossile : comment les centrales au fioul lourd du Vazzio et de Lucciana et le tarif PENE bloquent les énergies renouvelables corses"
 category: "ÉNERGIE & TRANSITION"
 ref: "FSUCIETA-AUDIT-ENQUETE-18"
-author: "Cellule d'Investigation Énergétique CASA DI CRISTALE"
+author: "Cellule d'Investigation Énergétique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "EDF SEI / CRE / PPE Corse"
 chapeau: "Non connectée au réseau électrique continental européen et classée comme Zone Non Interconnectée (ZNI), la Corse dépend à plus de 60 % de la combustion de fioul lourd pour sa production d'électricité. Enquête sur le monopole d'EDF-SEI et la rentabilité du système de péréquation nationale."

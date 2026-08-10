@@ -4,7 +4,7 @@ title: "Enquête 21 : Le Scandale des Déchets & le Coût de l'Enfouissement —
 subtitle: "Radiographie du Syvadec et de la filière poubelles : l'exportation par cargo vers le continent et l'overdose des sites d'enfouissement de Tallone et Prunelli"
 category: "DÉCHETS & ENVIRONNEMENT"
 ref: "FSUCIETA-AUDIT-ENQUETE-21"
-author: "Cellule d'Investigation Environnementale CASA DI CRISTALE"
+author: "Cellule d'Investigation Environnementale L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "SYVADEC / DREAL / Cour des Comptes"
 chapeau: "Face au saturation des rares sites d'enfouissement de l'île (Tallone, Viggianello, Prunelli-di-Fiumorbo), la Corse subit un scandale environnemental et financier de première grandeur. Enquête sur l'échec du tri sélectif à la source et le coût exorbitant de l'exportation des déchets ménagers par cargos maritimes."

@@ -4,7 +4,7 @@ title: "Enquête 17 : Le Verrou de la Charte Européenne & le Droit à la Langue
 subtitle: "Analyse du blocage constitutionnel : la censure de la co-officialité de la langue corse et le refus de ratifier la Charte européenne des langues régionales"
 category: "CULTURE & LANGUE"
 ref: "FSUCIETA-AUDIT-ENQUETE-17"
-author: "Cellule d'Investigation Culturelle CASA DI CRISTALE"
+author: "Cellule d'Investigation Culturelle L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "Conseil Constitutionnel / Conseil de l'Europe / Education"
 chapeau: "Langue maternelle d'un peuple et véhicule de son histoire et de son patrimoine (la culture orale, les paghjelle, la toponymie), le corse subit une érosion linguistique accélérée. Enquête sur le refus de l'État d'accorder un statut de co-officialité et d'instaurer l'enseignement bilingue immersif obligatoire."

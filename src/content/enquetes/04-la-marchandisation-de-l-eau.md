@@ -4,7 +4,7 @@ title: "Enquête 04 : La Marchandisation de l'Eau — Quand le château d'eau de
 subtitle: "Spoliation de la ressource hydraulique : délégations de service public, fuites de réseaux et sur-tarification de la population locale au profit des multinationales"
 category: "EAU & RESSOURCES"
 ref: "FSUCIETA-AUDIT-ENQUETE-04"
-author: "Cellule d'Investigation Environnementale CASA DI CRISTALE"
+author: "Cellule d'Investigation Environnementale L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "SISPEA / Data.gouv / OEHC / OFB"
 chapeau: "Qualifiée historiquement de château d'eau de la Méditerranée en raison de ses sommets enneigés et de ses fleuves abondants, la Corse fait face chaque été à des arrêtés préfectoraux de restriction d'eau potable. Enquête sur la gestion opaque de l'eau, les réseaux défaillants et la captation commerciale de la ressource."

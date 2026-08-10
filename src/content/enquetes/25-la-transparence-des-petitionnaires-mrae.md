@@ -4,7 +4,7 @@ title: "Enquête 25 : La Transparence des Pétitionnaires & l'Étude d'Impact En
 subtitle: "Radiographie des enquêtes publiques : comment le masquage des prête-noms et le saucillonnage des projets immobiliers neutralisent l'évaluation environnementale"
 category: "ENVIRONNEMENT & TRANSPARENCE"
 ref: "FSUCIETA-AUDIT-ENQUETE-25"
-author: "Cellule d'Investigation Environnementale CASA DI CRISTALE"
+author: "Cellule d'Investigation Environnementale L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "INPI RBE / DREAL / Code de l'Environnement"
 chapeau: "Pour franchir l'obstacle des études d'impact environnemental obligatoires devant la MRAe (Mission Régionale d'Autorité Environnementale), certains promoteurs utilisent la technique du « saucillonnage » des projets. Enquête sur le décryptage des véritables pétitionnaires."

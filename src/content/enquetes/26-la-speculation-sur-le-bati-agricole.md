@@ -4,7 +4,7 @@ title: "Enquête 26 : La Spéculation sur le Bâti Agricole & les Bergeries de P
 subtitle: "Radiographie du détournement de l'article L. 151-11 : la transformation frauduleuse de ruines et bergeries traditionnelles en résidences secondaires de luxe avec piscine et héliport"
 category: "AGRICOLE & BERGERIES"
 ref: "FSUCIETA-AUDIT-ENQUETE-26"
-author: "Cellule d'Investigation Foncier-Patrimoine CASA DI CRISTALE"
+author: "Cellule d'Investigation Foncier-Patrimoine L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "DVF / SAFER / Code de l'Urbanisme L. 151-11"
 chapeau: "Éléments emblématiques du patrimoine pastoral corse, les bergeries et cabanes de pierre (i pagliaghji) situées dans les espaces remarquables du littoral et de la montagne font l'objet d'un détournement spéculatif à grande échelle. Enquête sur le contournement de la Loi Littoral."

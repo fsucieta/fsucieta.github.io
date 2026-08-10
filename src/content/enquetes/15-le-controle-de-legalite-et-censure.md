@@ -4,7 +4,7 @@ title: "Enquête 15 : Le Contrôle de Légalité & la Censure des Délibération
 subtitle: "Radiographie de la tutelle préfectorale : comment les déférés du Préfet annulent les arrêtés des maires ruraux tout en fermant les yeux sur les grands projets spéculatifs"
 category: "URBANISME & PRÉFECTURE"
 ref: "FSUCIETA-AUDIT-ENQUETE-15"
-author: "Cellule d'Investigation Juridique CASA DI CRISTALE"
+author: "Cellule d'Investigation Juridique L'OCHJU — FSUCIETÀ"
 date: "Août 2026"
 tool: "DDTM / Tribunal Administratif de Bastia / CGCT"
 chapeau: "Garants théoriques du contrôle de légalité des actes des collectivités, les services préfectoraux de Corse appliquent une justice administrative à deux vitesses. Enquête sur la censure systématique des arrêtés de maires de petits villages et la tolérance accordée aux grands permis de construire douteux du littoral."
