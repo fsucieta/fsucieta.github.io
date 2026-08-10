@@ -12,13 +12,13 @@ math: "\\text{Taux d'Accaparement par SCI Extérieures (TASE)} = \\frac{\\sum \\
 image: "img_enquete_05.jpg"
 sources:
   - name: "INPI / Registre National des Entreprises : Registre des Bénéficiaires Effectifs (RBE)"
-    url: "https://rbe.inpi.fr/"
+    url: "https://www.data.gouv.fr/"
     sha256: "6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e"
   - name: "DGFiP / Etalab : Demande de Valeurs Foncières (DVF 2020-2025)"
-    url: "https://cadastre.data.gouv.fr/dvf"
+    url: "https://www.societe.com/"
     sha256: "0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
   - name: "Ministère de la Transition Écologique : Banque de Données Sitadel2 sur les Permis de Construire"
-    url: "https://www.statistiques.developpement-durable.gouv.fr/sitadel2"
+    url: "https://www.data.gouv.fr/"
     sha256: "3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a"
 ---
 

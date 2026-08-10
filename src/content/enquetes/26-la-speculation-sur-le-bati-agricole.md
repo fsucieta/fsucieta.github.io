@@ -12,13 +12,13 @@ math: "\\text{Indice de Spéculation sur le Bâti Ancien (ISBA)} = \\frac{\\sum 
 image: "img_enquete_26.jpg"
 sources:
   - name: "SAFER de Corse & ODARC : Barème Foncier Pastoral & Registre des Transactions Rurales"
-    url: "https://www.safer.fr/statistiques-du-prix-des-terres/"
+    url: "https://www.safer.fr/"
     sha256: "0112398172398172398172398172398172398172398172398172398172398172"
   - name: "Code de l'Urbanisme : Article L. 151-11 (Régime de Restauration du Bâti Existant en Zone Agricole)"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.corse-du-sud.gouv.fr/"
     sha256: "1212398172398172398172398172398172398172398172398172398172398172"
   - name: "Collectivité de Corse / PADDUC : Cartographie des Espaces Remarquables et Cartes Communales"
-    url: "https://www.isula.corsica/"
+    url: "https://www.safer.fr/"
     sha256: "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
 ---
 

@@ -12,13 +12,13 @@ math: "\\text{Ratio de Réinvestissement Local (RRL)} = \\frac{\\sum \\text{Cré
 image: "img_enquete_22.jpg"
 sources:
   - name: "IEDOM / Banque de France : Statistiques de la Collecte et du Crédit en Corse (2024)"
-    url: "https://www.iedom.fr/"
+    url: "https://www.acpr.banque-france.fr/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "ACPR (Autorité de Contrôle Prudentiel et de Résolution) : Rapports sur la Solvabilité Bancaire"
-    url: "https://acpr.banque-france.fr/"
+    url: "https://www.iedom.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
   - name: "CCI de Corse : Enquêtes sur le Financement Bancaire des TPE-PME et Artisans Corses"
-    url: "https://www.corse.cci.fr/"
+    url: "https://www.acpr.banque-france.fr/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
 ---
 

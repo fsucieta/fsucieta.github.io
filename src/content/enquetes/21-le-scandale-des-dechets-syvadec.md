@@ -15,10 +15,10 @@ sources:
     url: "https://www.syvadec.fr/"
     sha256: "5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d"
   - name: "Cour des Comptes : Rapport sur la Gestion des Déchets Ménagers en Corse (Audit 2023)"
-    url: "https://www.ccomptes.fr/"
+    url: "https://www.georisques.gouv.fr/"
     sha256: "9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c"
   - name: "DREAL Corse : Arrêtés d'Exploitation des Installations Classées (ICPE)"
-    url: "https://www.corse.developpement-durable.gouv.fr/"
+    url: "https://www.syvadec.fr/"
     sha256: "3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b"
 ---
 

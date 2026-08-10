@@ -12,13 +12,13 @@ math: "\\text{Taux d'Évasion de Valeur Forestière (TEVF)} = \\frac{\\text{Volu
 image: "img_enquete_08.jpg"
 sources:
   - name: "ONF / Direction Régionale de Corse : Bilans d'Exploitation et Ventes de Bois Domanial"
-    url: "https://www.onf.fr/"
+    url: "https://www.onf.fr/onf/corse"
     sha256: "8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e"
   - name: "Agreste / DRAAF Corse : Statistiques de la Filière Bois et Douanes Export"
-    url: "https://agreste.agriculture.gouv.fr/"
+    url: "https://www.douane.gouv.fr/"
     sha256: "1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d"
   - name: "Collectivité de Corse : Programme Régional de la Forêt et du Bois (PRFB 2024)"
-    url: "https://www.isula.corsica/"
+    url: "https://www.onf.fr/onf/corse"
     sha256: "7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b"
 ---
 

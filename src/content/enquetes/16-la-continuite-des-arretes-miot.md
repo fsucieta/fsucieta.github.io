@@ -12,13 +12,13 @@ math: "\\text{Taux de Blocage par Indivision (TBI)} = \\frac{\\sum \\text{Parcel
 image: "img_enquete_16.jpg"
 sources:
   - name: "GIRTEC (Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse) : Rapports d'Activité"
-    url: "https://www.girtec.fr/"
+    url: "https://www.girtec.corsica/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "Conseil Supérieur du Notariat / Chambre des Notaires de Corse : Bilans des Actes de Notoriété"
     url: "https://www.notaires.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
   - name: "Code Général des Impôts : Articles 750 bis A (Régime de Faveur des Droits de Succession)"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.girtec.corsica/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
 ---
 

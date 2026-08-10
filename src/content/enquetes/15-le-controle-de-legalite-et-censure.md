@@ -12,13 +12,13 @@ math: "\\text{Taux de Sélectivité Préfectorale (TSP)} = \\frac{\\sum \\text{D
 image: "img_enquete_15.jpg"
 sources:
   - name: "Tribunal Administratif de Bastia : Rôle des Jugements et Déférés Préfectoraux d'Urbanisme"
-    url: "http://bastia.tribunal-administratif.fr/"
+    url: "https://bastia.tribunal-administratif.fr/"
     sha256: "4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c"
   - name: "Code Général des Collectivités Territoriales (CGCT) : Articles L. 2131-6 (Déféré Préfectoral)"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.haute-corse.gouv.fr/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "Collectivité de Corse / PADDUC : Observatoire Foncier et Suivi des Cartes Communales"
-    url: "https://www.isula.corsica/"
+    url: "https://bastia.tribunal-administratif.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
 ---
 

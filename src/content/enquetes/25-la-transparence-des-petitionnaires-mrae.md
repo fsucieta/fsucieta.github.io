@@ -12,13 +12,13 @@ math: "\\text{Indice de Fractionnement des Projets (IFP)} = \\frac{\\sum \\text{
 image: "img_enquete_25.jpg"
 sources:
   - name: "MRAe Corse (Mission Régionale d'Autorité Environnementale) : Avis et Décisions de Soumission à Étude d'Impact"
-    url: "https://www.mrae.developpement-durable.gouv.fr/corse-r10.html"
+    url: "https://www.mrae.developpement-durable.gouv.fr/"
     sha256: "4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c"
   - name: "Code de l'Environnement : Articles L. 122-1 et R. 122-2 (Évaluation Environnementale des Projets)"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.georisques.gouv.fr/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "INPI RBE : Registre des Bénéficiaires Effectifs des Sociétés Civiles d'Aménagement"
-    url: "https://rbe.inpi.fr/"
+    url: "https://www.mrae.developpement-durable.gouv.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
 ---
 

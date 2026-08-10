@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
-import NetworkGraph from '../components/NetworkGraph.astro';
+import MatriceImpact from '../components/MatriceImpact.astro';
 import GisMap from '../components/GisMap.astro';
 import CadaGenerator from '../components/CadaGenerator.astro';
 import WhistleblowerVault from '../components/WhistleblowerVault.astro';
@@ -10,30 +10,40 @@ import WhistleblowerVault from '../components/WhistleblowerVault.astro';
 const allEnquetes = await getCollection('enquetes');
 // Trier par ID (1 à 26)
 const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
+const uneEnquete = enquetes[0]; // Dossier majeur à la Une (#01)
 ---
 
-<Layout title="CASA DI CRISTALE 2.0 — Plateforme d'Investigation Souveraine (ICIJ / Mediapart Grade)">
-  <!-- En-tête / Header Éditorial -->
-  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-40 py-4 px-6">
+<Layout title="L'OCHJU — Média Citoyen d'Investigation & Open Data (L'aveti ?)">
+  <!-- En-tête / Header Éditorial L'OCHJU -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-3.5 px-6 shadow-xl">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-4">
-        <div class="w-12 h-12 rounded-full border border-amber-500/50 p-1 flex items-center justify-center bg-slate-900 shadow-md shadow-amber-500/20">
-          <span class="text-amber-400 font-bold text-xl">🏛️</span>
-        </div>
+      
+      <!-- Brand Logo + Slogan -->
+      <a href="./" class="flex items-center gap-4 group">
+        <img 
+          src="./logo_l_ochju.jpg" 
+          alt="L'OCHJU — Média Citoyen" 
+          class="h-12 w-auto object-contain rounded-lg border border-amber-500/30 group-hover:border-amber-400 transition duration-300 shadow-md shadow-amber-500/10"
+        />
         <div>
-          <h1 class="text-xl md:text-2xl font-black text-amber-400 font-serif tracking-wider">CASA DI CRISTALE 2.0</h1>
-          <p class="text-xs text-slate-400 font-mono">PORTAIL D'INVESTIGATION ET FORENSIC DATA</p>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+              MÉDIA CITOYEN
+            </span>
+            <span class="text-xs font-serif italic text-slate-400">"L'aveti ?"</span>
+          </div>
+          <p class="text-[11px] text-slate-400 font-mono mt-0.5">INVESTIGATION • PARTICIPATIF • OPEN DATA</p>
         </div>
-      </div>
+      </a>
 
-      <!-- Actions Header : Recherche & Sélecteur de Thème -->
-      <div class="flex items-center gap-4 w-full md:w-auto">
-        <div class="w-full md:w-80">
+      <!-- Navigation & Actions Header -->
+      <div class="flex items-center gap-4 w-full md:w-auto justify-end">
+        <div class="w-full md:w-72">
           <input 
             type="text" 
             id="searchInput" 
             placeholder="🔍 Rechercher dans les 26 enquêtes..." 
-            class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400 transition"
+            class="w-full px-3.5 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-amber-400 transition font-sans"
           />
         </div>
 
@@ -42,47 +52,79 @@ const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
     </div>
   </header>
 
-  <!-- Hero Éditorial Mediapart / ProPublica Grade -->
-  <section class="max-w-7xl mx-auto px-6 py-10">
-    <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-amber-500/30 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- Hero Éditorial / "À LA UNE" -->
+  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4">
+    <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
       
-      <span class="px-3.5 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold uppercase tracking-wider mb-6 inline-block font-mono">
-        ★ PORTAIL SOUVERAIN D'INVESTIGATION CITOYENNE ET DE DONNÉES OUVERTES
-      </span>
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono">
+          ★ ÉDITION INAUGURALE — 26 ENQUÊTES EXCLUSIVES (+40 000 MOTS)
+        </span>
+        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono">
+          OPEN DATA SOUVERAINE
+        </span>
+      </div>
 
-      <h2 class="text-3xl md:text-5xl font-black font-serif text-slate-100 mb-6 leading-tight">
-        L'Audit Médico-Légal & Financier du Territoire Corse
-      </h2>
+      <!-- Dossier à la Une -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
+        <div class="lg:col-span-7">
+          <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider block mb-2">
+            GRAND DOSSIER D'INVESTIGATION #{uneEnquete.data.id.toString().padStart(2, '0')}
+          </span>
+          <h1 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
+            <a href={`./enquetes/${uneEnquete.slug}.html`}>
+              {uneEnquete.data.title}
+            </a>
+          </h1>
+          <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
+            {uneEnquete.data.chapeau}
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a 
+              href={`./enquetes/${uneEnquete.slug}.html`} 
+              class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
+            >
+              Lire le Grand Dossier (1500w) →
+            </a>
+            <a 
+              href="#fiches-grid-section" 
+              class="bg-slate-900 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
+            >
+              📂 Découvrir les 26 Enquêtes
+            </a>
+          </div>
+        </div>
 
-      <p class="text-slate-300 text-lg md:text-xl font-serif max-w-3xl mb-8 leading-relaxed">
-        Accédez aux 26 dossiers d'enquêtes massifs (40 088 mots nets), à l'explorateur de réseaux d'influence ICIJ, au générateur de saisine CADA et à la cartographie SIG des 360 communes.
-      </p>
-
-      <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400">
-        <a href="#fiches-grid-section" class="bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-2 rounded-lg hover:bg-amber-500/20 transition font-bold">
-          📂 Explorer les 26 Enquêtes
-        </a>
-        <a href="#network-section" class="bg-slate-900 border border-slate-800 text-cyan-400 px-4 py-2 rounded-lg hover:bg-slate-800 transition">
-          🌐 Graphe ICIJ
-        </a>
-        <a href="#gis-map-section" class="bg-slate-900 border border-slate-800 text-slate-300 px-4 py-2 rounded-lg hover:bg-slate-800 transition">
-          🗺️ Carte SIG 360 Communes
-        </a>
-        <a href="#cada-generator" class="bg-slate-900 border border-slate-800 text-amber-300 px-4 py-2 rounded-lg hover:bg-slate-800 transition">
-          ⚖️ Générateur CADA
-        </a>
+        <div class="lg:col-span-5">
+          <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
+            <img 
+              src={`./img_enquete_${uneEnquete.data.id.toString().padStart(2, '0')}.jpg`} 
+              alt={uneEnquete.data.title} 
+              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-xs font-mono text-amber-300 bg-slate-950/90 p-3 rounded-lg border border-amber-500/30 backdrop-blur">
+              💡 <span class="font-bold">L'OCHJU Citoyen</span> : Visualisez l'audit médico-légal et les saisines CADA associées.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 1 : Grille des 26 cartes d'enquêtes -->
+  <!-- Section 1 : Le Kiosque des 26 Dossiers d'Enquête -->
   <section class="max-w-7xl mx-auto px-6 py-8" id="fiches-grid-section">
     <div class="flex justify-between items-center mb-8 border-b border-slate-800 pb-4">
-      <h3 class="text-2xl font-bold font-serif text-slate-100 flex items-center gap-2">
-        <span>📂 Les 26 Dossiers d'Enquête d'Investigation</span>
-      </h3>
-      <span class="text-sm font-mono text-amber-400" id="cardsCount">26 / 26 Dossiers Visibles</span>
+      <div>
+        <span class="text-xs font-mono text-amber-400 font-bold uppercase tracking-wider block mb-1">KIOSQUE D'INVESTIGATION</span>
+        <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 flex items-center gap-2">
+          <span>📂 Catalogue des 26 Enquêtes d'Impact</span>
+        </h2>
+      </div>
+      <span class="text-xs font-mono bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 text-amber-400 font-bold" id="cardsCount">
+        26 / 26 Dossiers Visibles
+      </span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGrid">
@@ -90,109 +132,99 @@ const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
         const d = enquete.data;
         const imgPath = `./img_enquete_${d.id.toString().padStart(2, '0')}.jpg`;
         return (
-          <article 
-            class="fiche-card bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col shadow-lg hover:shadow-amber-500/10 group"
+          <a 
+            href={`./enquetes/${enquete.slug}.html`}
+            class="fiche-card bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/60 transition duration-300 flex flex-col shadow-lg hover:shadow-amber-500/10 group cursor-pointer block"
             data-title={d.title.toLowerCase()}
             data-category={d.category.toLowerCase()}
             data-chapeau={d.chapeau.toLowerCase()}
           >
-            <!-- Visuel carte -->
+            <!-- Visuel carte cliquable -->
             <div class="h-48 bg-slate-900 overflow-hidden relative">
               <img 
                 src={imgPath} 
                 alt={d.title} 
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
               />
-              <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-400 border border-amber-500/30 font-mono">
+              <div class="absolute top-3 left-3 bg-slate-950/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-400 border border-amber-500/30 font-mono">
                 Enquête #{d.id.toString().padStart(2, '0')}
               </div>
             </div>
 
-            <!-- Contenu carte -->
+            <!-- Contenu carte cliquable -->
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
                 <span class="text-xs font-mono text-cyan-400 font-bold block mb-2">{d.category}</span>
-                <h4 class="text-lg font-bold font-serif text-slate-100 mb-3 group-hover:text-amber-400 transition leading-snug">
+                <h3 class="text-lg font-bold font-serif text-slate-100 mb-3 group-hover:text-amber-400 transition leading-snug">
                   {d.title}
-                </h4>
+                </h3>
                 <p class="text-slate-400 text-sm line-clamp-3 mb-4 leading-relaxed font-serif">
                   {d.chapeau}
                 </p>
               </div>
 
               <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <a 
-                  href={`./enquetes/${enquete.slug}.html`}
-                  class="text-xs font-bold text-amber-400 hover:text-amber-300 uppercase tracking-wider flex items-center gap-1 font-sans"
-                >
+                <span class="text-xs font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1 font-sans">
                   Consulter l'enquête (1500w) →
-                </a>
+                </span>
               </div>
             </div>
-          </article>
+          </a>
         );
       })}
     </div>
   </section>
 
-  <!-- Section 2 : Graphe de Réseaux d'Influence ICIJ -->
+  <!-- Section 2 : Matrice d'Impact des 26 Enquêtes par Pôles -->
   <section class="max-w-7xl mx-auto px-6 py-4" id="network-section">
-    <NetworkGraph />
+    <MatriceImpact />
   </section>
 
   <!-- Section 3 : Cartographie SIG 360 Communes -->
-  <section class="max-w-7xl mx-auto px-6 py-4">
+  <section class="max-w-7xl mx-auto px-6 py-4" id="gis-map-section">
     <GisMap />
   </section>
 
-  <!-- Section 4 : Boîte à Outils CADA -->
-  <section class="max-w-7xl mx-auto px-6 py-4">
+  <!-- Section 4 : Boîte à Outils CADA (Action Citoyenne) -->
+  <section class="max-w-7xl mx-auto px-6 py-4" id="cada-generator">
     <CadaGenerator />
   </section>
 
-  <!-- Section 5 : Coffre-Fort PGP Whistleblower -->
-  <section class="max-w-7xl mx-auto px-6 py-4">
+  <!-- Section 5 : Coffre-Fort Lanceurs d'Alerte -->
+  <section class="max-w-7xl mx-auto px-6 py-4" id="whistleblower-section">
     <WhistleblowerVault />
   </section>
 
-  <!-- Pied de page -->
-  <footer class="border-t border-slate-800 bg-slate-950 py-12 px-6 mt-20 text-center">
-    <div class="max-w-4xl mx-auto space-y-4">
-      <p class="text-amber-400 font-serif font-bold text-lg">CASA DI CRISTALE 2.0</p>
-      <p class="text-xs text-slate-500 font-mono max-w-2xl mx-auto">
-        Plateforme d'investigation souveraine et de transparence citoyenne conformément au Code des Relations entre le Public et l'Administration (CRPA).
-      </p>
-    </div>
-  </footer>
+  <!-- Script de Recherche Temps Réel -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
+      const cards = document.querySelectorAll<HTMLElement>('#fichesGrid .fiche-card');
+      const cardsCount = document.getElementById('cardsCount');
 
-  <!-- Script de recherche interactive -->
-  <script is:inline>
-    const searchInput = document.getElementById('searchInput');
-    const cards = document.querySelectorAll('.fiche-card');
-    const cardsCount = document.getElementById('cardsCount');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const term = (e.target as HTMLInputElement).value.toLowerCase().trim();
+          let visibleCount = 0;
 
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
-        let visibleCount = 0;
+          cards.forEach((card) => {
+            const title = card.getAttribute('data-title') || '';
+            const category = card.getAttribute('data-category') || '';
+            const chapeau = card.getAttribute('data-chapeau') || '';
 
-        cards.forEach(card => {
-          const title = card.getAttribute('data-title') || '';
-          const category = card.getAttribute('data-category') || '';
-          const chapeau = card.getAttribute('data-chapeau') || '';
+            if (title.includes(term) || category.includes(term) || chapeau.includes(term)) {
+              card.style.display = 'flex';
+              visibleCount++;
+            } else {
+              card.style.display = 'none';
+            }
+          });
 
-          if (title.includes(query) || category.includes(query) || chapeau.includes(query)) {
-            card.style.display = 'flex';
-            visibleCount++;
-          } else {
-            card.style.display = 'none';
+          if (cardsCount) {
+            cardsCount.textContent = `${visibleCount} / 26 Dossiers Visibles`;
           }
         });
-
-        if (cardsCount) {
-          cardsCount.textContent = `${visibleCount} / ${cards.length} Dossiers Visibles`;
-        }
-      });
-    }
+      }
+    });
   </script>
 </Layout>

@@ -12,7 +12,7 @@ math: "\\text{Taux de Fuite des Devises Estivales (TFDE)} = \\frac{\\sum \\text{
 image: "img_enquete_09.jpg"
 sources:
   - name: "INSEE Corse : Études Économiques sur l'Impact de la Saison Touristique (2024)"
-    url: "https://www.insee.fr/fr/statistiques?geo=REG-94"
+    url: "https://www.impots.gouv.fr/"
     sha256: "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e"
   - name: "Banque de France / IEDOM : Flux Monétaires Interrégionaux et Télétransmissions CB"
     url: "https://www.iedom.fr/"

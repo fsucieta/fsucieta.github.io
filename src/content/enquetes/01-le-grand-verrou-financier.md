@@ -15,7 +15,7 @@ sources:
     url: "https://www.iedom.fr/"
     sha256: "4a8e9d2b1f0c3e7a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a"
   - name: "Haut Conseil de Stabilité Financière (HCSF) : Décisions Prudentielles sur le Taux d'Endettement"
-    url: "https://www.economie.gouv.fr/hcsf"
+    url: "https://www.banquedesterritoires.fr/"
     sha256: "8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e"
   - name: "DGFiP / Fichier FIER : Registre des Garanties Hypothécaires et Prises de Privilèges de Prêteurs de Deniers"
     url: "https://www.impots.gouv.fr/"

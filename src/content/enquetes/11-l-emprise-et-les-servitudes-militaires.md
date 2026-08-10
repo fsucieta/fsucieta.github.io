@@ -12,13 +12,13 @@ math: "\\text{Taux de Servitude Militaire Littorale (TSML)} = \\frac{\\sum \\tex
 image: "img_enquete_11.jpg"
 sources:
   - name: "Ministère des Armées / DGA : Tableau Général des Propriétés Immobilières de la Défense"
-    url: "https://www.defense.gouv.fr/"
+    url: "https://www.geoportail.gouv.fr/carte?c=8.7369,41.9267&z=12&l0=GEOGRAPHICALGRIDSSYSTEMS.MAPS.SCAN25TOUR::GEOPORTAIL:OGC:WMTS(1)&l1=TRANSPORTNETWORKS.ROADS::GEOPORTAIL:OGC:WMTS(1)&permalink=no"
     sha256: "4c3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d"
   - name: "Direction Départementale des Territoires et de la Mer (DDTM) : Plan des Servitudes d'Utilité Publique"
-    url: "https://www.corse-du-sud.gouv.fr/"
+    url: "https://www.cadastre.gouv.fr/"
     sha256: "8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c"
   - name: "Collectivité de Corse : Évaluations Foncières de la Plaine d'Aléria et Solenzara"
-    url: "https://www.isula.corsica/"
+    url: "https://www.geoportail.gouv.fr/carte?c=8.7369,41.9267&z=12&l0=GEOGRAPHICALGRIDSSYSTEMS.MAPS.SCAN25TOUR::GEOPORTAIL:OGC:WMTS(1)&l1=TRANSPORTNETWORKS.ROADS::GEOPORTAIL:OGC:WMTS(1)&permalink=no"
     sha256: "2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d"
 ---
 

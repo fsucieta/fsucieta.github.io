@@ -12,13 +12,13 @@ math: "\\text{Indice de Concentration des Primes (ICP)} = \\frac{\\sum \\text{Mo
 image: "img_enquete_20.jpg"
 sources:
   - name: "DRAAF / Agreste Corse : Bilans de la Campagne TéléPAC et Cartographie RPG"
-    url: "https://agreste.agriculture.gouv.fr/"
+    url: "https://www.asp-public.fr/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "ODARC (Office de Développement Agricole et Rural de Corse) : Rapports sur l'Installation des Jeunes Agriculteurs"
-    url: "https://www.odarc.corsica/"
+    url: "https://www.franceagrimer.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
   - name: "Parquet National Financier (PNF) / Parquet de Bastia : Procédures de Contrôle de la Fraude aux Primes PAC"
-    url: "https://www.justice.gouv.fr/"
+    url: "https://www.asp-public.fr/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
 ---
 

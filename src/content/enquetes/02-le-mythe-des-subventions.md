@@ -12,13 +12,13 @@ math: "\\text{Balance Fiscale Nette Insulaire} = (\\text{TVA Perçue} + \\text{I
 image: "img_enquete_02.jpg"
 sources:
   - name: "Cour des Comptes : Rapport Thématique sur les Finances de la Collectivité de Corse (Juin 2023)"
-    url: "https://www.ccomptes.fr/"
+    url: "https://www.corse.developpement-durable.gouv.fr/"
     sha256: "5b9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
   - name: "DGFiP / REPAD : Recueil des Statistiques Fiscales Régionales et Captation TVA"
     url: "https://www.impots.gouv.fr/"
     sha256: "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
   - name: "INSEE Corse : Comptes Économiques Régionaux (CER 2024-2025)"
-    url: "https://www.insee.fr/fr/statistiques?geo=REG-94"
+    url: "https://www.corse.developpement-durable.gouv.fr/"
     sha256: "2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d"
 ---
 

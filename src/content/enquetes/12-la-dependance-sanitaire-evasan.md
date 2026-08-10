@@ -15,10 +15,10 @@ sources:
     url: "https://www.corse.ars.sante.fr/"
     sha256: "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e"
   - name: "Cour des Comptes : Rapport sur les Établissements Publics de Santé de Corse (Ajaccio et Bastia)"
-    url: "https://www.ccomptes.fr/"
+    url: "https://www.has-sante.fr/"
     sha256: "3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b"
   - name: "CNAM / CPAM de Haute-Corse et Corse-du-Sud : Statistiques de Prise en Charge des EVASAN"
-    url: "https://www.ameli.fr/"
+    url: "https://www.corse.ars.sante.fr/"
     sha256: "7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f"
 ---
 

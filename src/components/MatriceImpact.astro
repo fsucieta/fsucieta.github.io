@@ -1,0 +1,258 @@
+---
+import { getCollection } from 'astro:content';
+import exactCadaDocs from '../data/exact_cada_docs.json';
+
+const allEnquetes = await getCollection('enquetes');
+const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
+
+// Cartographie Thermique des 26 Enquêtes basée sur les audits factuels (Section IX de chaque enquête)
+const heatmapEnquetesData = enquetes.map((e) => {
+  const id = e.data.id;
+  
+  // Classification factuelle basée sur les verrous CADA/Open Data audités
+  let statusKey = 'red';
+  let statusLabel = '🔴 Document Dissimulé (Refus / Silence +30j)';
+  let badgeClass = 'bg-red-500/20 text-red-400 border-red-500/40';
+  let chipClass = 'bg-red-500/10 border-red-500/40 text-red-400 hover:bg-red-500/20';
+
+  if ([3, 6, 13, 18, 19, 23, 25].includes(id)) {
+    statusKey = 'green';
+    statusLabel = '🟢 Transparence Obtenue (Données Publiques Accessibles)';
+    badgeClass = 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40';
+    chipClass = 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/20';
+  } else if ([2, 4, 7, 10, 12, 16, 20, 26].includes(id)) {
+    statusKey = 'amber';
+    statusLabel = '🟠 Procédure CADA Engagée (Instruction / Droit de Savoir)';
+    badgeClass = 'bg-amber-500/20 text-amber-400 border-amber-500/40';
+    chipClass = 'bg-amber-500/10 border-amber-500/40 text-amber-400 hover:bg-amber-500/20';
+  }
+
+  // Pôles d'investigation
+  let poleKey = 'foncier';
+  let poleLabel = 'Foncier & Spéculation';
+  if ([2, 3, 4, 9, 18, 20, 21, 22].includes(id)) {
+    poleKey = 'finance';
+    poleLabel = 'Finances & Services Publics';
+  } else if ([6, 10, 12, 13, 14, 15, 16, 17, 19, 23, 25].includes(id)) {
+    poleKey = 'gouvernance';
+    poleLabel = 'Transparence & Souveraineté';
+  }
+
+  // Extraction EXACTE et ULTRA-PRÉCISE des pièces d'audit de la Section IX du dossier
+  const docsArray = exactCadaDocs[id.toString()] || [];
+  const pieceAExiger = docsArray.length > 0 ? docsArray.join(" • ") : "Acte administratif et pièces brutes d'audit de la saisine";
+
+  return {
+    id,
+    slug: e.slug,
+    title: e.data.title,
+    category: e.data.category,
+    chapeau: e.data.chapeau,
+    statusKey,
+    statusLabel,
+    badgeClass,
+    chipClass,
+    poleKey,
+    poleLabel,
+    pieceAExiger,
+    sourcesList: e.data.sources || []
+  };
+});
+
+// Compteurs Factuels du Baromètre Global
+const countRed = heatmapEnquetesData.filter(d => d.statusKey === 'red').length;
+const countAmber = heatmapEnquetesData.filter(d => d.statusKey === 'amber').length;
+const countGreen = heatmapEnquetesData.filter(d => d.statusKey === 'green').length;
+const tauxTransparence = Math.round((countGreen / 26) * 100);
+---
+
+<div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl my-10" id="radar-thermique-section">
+  <!-- En-tête du Radar Thermique -->
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+    <div>
+      <span class="px-3 py-1 bg-red-500/10 text-red-400 border border-red-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        BAROMÈTRE RECTEUR — 26 DOSSIERS AUDITÉS
+      </span>
+      <h3 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2 flex items-center gap-2">
+        <span>🔥 Radar Thermique du Droit de Savoir & Transparence</span>
+      </h3>
+    </div>
+    
+    <!-- Baromètre Global de l'Île -->
+    <div class="flex items-center gap-3 bg-slate-900 px-4 py-2 rounded-xl border border-slate-800 text-xs font-mono">
+      <div>
+        <span class="text-slate-400 block">Taux de Transparence :</span>
+        <span class="text-emerald-400 font-bold text-sm">{tauxTransparence}% Libéré</span>
+      </div>
+      <div class="h-8 w-px bg-slate-800"></div>
+      <div>
+        <span class="text-slate-400 block">Pièces Dissimulées :</span>
+        <span class="text-red-400 font-bold text-sm">{countRed} Dossiers</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barre de Filtres par Statuts d'Opacité -->
+  <div class="flex flex-wrap items-center justify-between gap-4 mb-6 bg-slate-900 p-4 rounded-xl border border-slate-800">
+    <div class="flex flex-wrap gap-2" id="radarFilters">
+      <button class="radar-filter-btn active px-3 py-1.5 rounded-lg text-xs font-mono border bg-amber-500 text-slate-950 border-amber-400 font-bold" data-filter="all">
+        🌐 TOUS (26)
+      </button>
+      <button class="radar-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono border bg-slate-950 text-red-400 border-slate-800 hover:border-red-500/50" data-filter="red">
+        🔴 DISSIMULÉS ({countRed})
+      </button>
+      <button class="radar-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono border bg-slate-950 text-amber-400 border-slate-800 hover:border-amber-500/50" data-filter="amber">
+        🟠 PROCÉDURES EN COURS ({countAmber})
+      </button>
+      <button class="radar-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono border bg-slate-950 text-emerald-400 border-slate-800 hover:border-emerald-500/50" data-filter="green">
+        🟢 LIBÉRÉS ({countGreen})
+      </button>
+    </div>
+
+    <span class="text-xs font-mono text-slate-400">💡 Cliquez sur une puce pour inspecter le dossier</span>
+  </div>
+
+  <!-- Grille des 26 Puces Thermiques -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3 mb-8" id="radarGrid">
+    {heatmapEnquetesData.map((e, idx) => (
+      <div 
+        class={`radar-chip p-3 rounded-xl border text-center cursor-pointer transition duration-300 hover:scale-105 ${e.chipClass} ${idx === 0 ? 'ring-2 ring-amber-400 scale-105' : ''}`}
+        data-id={e.id}
+        data-title={e.title}
+        data-chapeau={e.chapeau}
+        data-slug={e.slug}
+        data-status-key={e.statusKey}
+        data-status-label={e.statusLabel}
+        data-badge-class={e.badgeClass}
+        data-piece={e.pieceAExiger}
+        data-pole={e.poleLabel}
+      >
+        <div class="text-xs font-mono font-bold">#Dossier {e.id.toString().padStart(2, '0')}</div>
+        <div class="text-[10px] font-mono mt-1 opacity-90 font-bold">
+          {e.statusKey === 'red' ? 'Dissimulé' : (e.statusKey === 'amber' ? 'Procédure' : 'Libéré')}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Inspecteur Thermique de Dossier (Panneau de Détails) -->
+  <div class="bg-slate-900 border border-amber-500/30 rounded-xl p-6 md:p-8 shadow-2xl" id="radarInspectorPanel">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 border-b border-slate-800 pb-4 mb-4">
+      <div>
+        <span class="text-xs font-mono font-bold px-3 py-1 rounded border uppercase tracking-wider inline-block mb-1" id="inspectorStatusBadge" class={heatmapEnquetesData[0].badgeClass}>
+          {heatmapEnquetesData[0].statusLabel}
+        </span>
+        <span class="text-xs font-mono text-slate-400 block" id="inspectorPole">Pôle : {heatmapEnquetesData[0].poleLabel}</span>
+      </div>
+      <span class="text-xs font-mono text-amber-400 font-bold bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800" id="inspectorDossierId">
+        Dossier d'Investigation #01
+      </span>
+    </div>
+
+    <h4 class="text-xl md:text-2xl font-serif font-bold text-slate-100 mb-3" id="inspectorTitle">
+      {heatmapEnquetesData[0].title}
+    </h4>
+
+    <p class="text-sm font-serif text-slate-300 leading-relaxed mb-6" id="inspectorChapeau">
+      {heatmapEnquetesData[0].chapeau}
+    </p>
+
+    <!-- Pièce d'audit essentielle à exiger -->
+    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 mb-6">
+      <span class="text-xs font-mono text-amber-400 font-bold uppercase block mb-1">📄 Document Public Clé à Exiger (Droit de Savoir) :</span>
+      <p class="text-xs font-mono text-slate-200" id="inspectorPiece">
+        {heatmapEnquetesData[0].pieceAExiger}
+      </p>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-800/80">
+      <a 
+        href={`./enquetes/${heatmapEnquetesData[0].slug}.html`} 
+        id="inspectorArticleBtn"
+        class="px-5 py-2.5 bg-slate-800 border border-slate-700 text-slate-200 font-bold rounded-lg text-xs font-sans uppercase tracking-wider hover:bg-slate-700 transition"
+      >
+        📖 Lire l'Enquête Complète (1500w) →
+      </a>
+
+      <a 
+        href="#cada-generator" 
+        id="inspectorActionBtn"
+        class="px-5 py-2.5 bg-amber-500 text-slate-950 font-bold rounded-lg text-xs font-mono uppercase tracking-wider hover:bg-amber-400 transition shadow-lg shadow-amber-500/20"
+      >
+        ⚖️ Exiger ce document (Générer le courrier officiel) →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Script d'interactivité du Radar Thermique -->
+<script is:inline define:vars={{ heatmapEnquetesData }}>
+  document.addEventListener('DOMContentLoaded', function() {
+    const chips = document.querySelectorAll('#radarGrid .radar-chip');
+    const filterBtns = document.querySelectorAll('#radarFilters .radar-filter-btn');
+
+    // 1. Clic sur une puce thermique
+    chips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        const id = parseInt(chip.getAttribute('data-id'));
+        const item = heatmapEnquetesData.find(function(d) { return d.id === id; });
+        if (!item) return;
+
+        // Mise à jour de l'inspecteur
+        document.getElementById('inspectorDossierId').textContent = `Dossier d'Investigation #${item.id.toString().padStart(2, '0')}`;
+        document.getElementById('inspectorTitle').textContent = item.title;
+        document.getElementById('inspectorChapeau').textContent = item.chapeau;
+        document.getElementById('inspectorPole').textContent = `Pôle : ${item.poleLabel}`;
+        document.getElementById('inspectorPiece').textContent = item.pieceAExiger;
+
+        const badgeEl = document.getElementById('inspectorStatusBadge');
+        if (badgeEl) {
+          badgeEl.textContent = item.statusLabel;
+          badgeEl.className = `text-xs font-mono font-bold px-3 py-1 rounded border uppercase tracking-wider inline-block mb-1 ${item.badgeClass}`;
+        }
+
+        const articleBtn = document.getElementById('inspectorArticleBtn');
+        if (articleBtn) articleBtn.setAttribute('href', `./enquetes/${item.slug}.html`);
+
+        // Mise à jour dynamique des liens vers les documents sources directs
+        const sourcesContainer = document.getElementById('inspectorSourcesContainer');
+        if (sourcesContainer && item.sourcesList) {
+          sourcesContainer.innerHTML = item.sourcesList.map(function(src) {
+            return `<a href="${src.url}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 hover:underline flex items-center gap-1.5 truncate">
+              <span>🔗 ${src.name}</span>
+              <span class="text-[10px] text-amber-400 opacity-75">↗ (Document Direct)</span>
+            </a>`;
+          }).join('');
+        }
+
+        // Style actif sur la puce
+        chips.forEach(function(c) { c.classList.remove('ring-2', 'ring-amber-400', 'scale-105'); });
+        chip.classList.add('ring-2', 'ring-amber-400', 'scale-105');
+      });
+    });
+
+    // 2. Filtres par Statuts (Tous, Dissimulés, Procédures, Libérés)
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const filter = btn.getAttribute('data-filter');
+
+        // Style des boutons
+        filterBtns.forEach(function(b) {
+          b.className = 'radar-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono border bg-slate-950 text-slate-300 border-slate-800';
+        });
+        btn.className = 'radar-filter-btn active px-3 py-1.5 rounded-lg text-xs font-mono border bg-amber-500 text-slate-950 border-amber-400 font-bold';
+
+        // Filtrage des puces
+        chips.forEach(function(chip) {
+          const key = chip.getAttribute('data-status-key');
+          if (filter === 'all' || key === filter) {
+            chip.style.display = 'block';
+          } else {
+            chip.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

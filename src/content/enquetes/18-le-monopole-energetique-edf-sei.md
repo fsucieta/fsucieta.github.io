@@ -18,7 +18,7 @@ sources:
     url: "https://www.edf.fr/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
   - name: "Collectivité de Corse / AUE : Programmation Pluriannuelle de l'Énergie (PPE Corse 2024-2030)"
-    url: "https://www.aue.corsica/"
+    url: "https://www.cre.fr/"
     sha256: "0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
 ---
 

@@ -12,13 +12,13 @@ math: "\\text{Taux de Permis Tacites Littoraux (TPTL)} = \\frac{\\sum \\text{Per
 image: "img_enquete_24.jpg"
 sources:
   - name: "Ministère de la Transition Écologique / Sitadel2 : Base Nationale des Permis de Construire"
-    url: "https://www.statistiques.developpement-durable.gouv.fr/"
+    url: "https://www.geoportail-urbanisme.gouv.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
   - name: "Code de l'Urbanisme : Article R. 424-1 (Régime du Permis de Construire Tacite)"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.cadastre.gouv.fr/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
   - name: "Collectivité de Corse / Observatoire Foncier : Suivi de l'Artificialisation des Sols en Corse"
-    url: "https://www.isula.corsica/"
+    url: "https://www.geoportail-urbanisme.gouv.fr/"
     sha256: "0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
 ---
 

@@ -12,13 +12,13 @@ math: "\\text{Indice de Risque d'Exploitation Extérieure (IREE)} = \\frac{\\sum
 image: "img_enquete_07.jpg"
 sources:
   - name: "BRGM / Ministère de la Transition Énergétique : Carte des Gîtes Minéraux et Inventaire Minier de la Corse"
-    url: "https://www.brgm.fr/"
+    url: "https://infoterre.brgm.fr/"
     sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
   - name: "Code Minier (Articles L. 121-1 et suivants) : Régime des Titres d'Exploration et Concessions"
-    url: "https://www.legifrance.gouv.fr/"
+    url: "https://www.haute-corse.gouv.fr/"
     sha256: "0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e"
   - name: "DREAL Corse : Inventaire des Anciens Sites Miniers et Pollution aux Métaux Lourds (Meria, Canari, Ersa)"
-    url: "https://www.corse.developpement-durable.gouv.fr/"
+    url: "https://infoterre.brgm.fr/"
     sha256: "4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d"
 ---
 

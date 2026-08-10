@@ -1,71 +1,666 @@
 ---
+import { getCollection } from 'astro:content';
+import communes360Official from '../data/communes_official_360.json';
+
+const allEnquetes = await getCollection('enquetes');
+// Mappage ID -> slug pour générer des liens d'enquêtes cliquables
+const enqueteSlugMap = {};
+allEnquetes.forEach(e => {
+  enqueteSlugMap[e.data.id] = e.slug;
+});
+
+// Liste Exhaustive des 19 Communautés de Communes & d'Agglomération de Corse (100% du Territoire / 360 Communes)
+const intercommunalites = [
+  {
+    id: 'capa',
+    name: 'CAPA (Pays Ajaccien)',
+    type: 'Communauté d’Agglomération',
+    icon: '🏛️',
+    pression: 'Critique',
+    pressionValue: 92,
+    communesCount: 10,
+    coords: [41.9267, 8.7369],
+    enquetesAssociees: [1, 5, 15, 24],
+    indicateur: '84% de permis sous SCI non-résidentes',
+    ratioSecundaire: '42%',
+    permisTacitesCount: '128 permis/an',
+    details: 'Ajaccio, Afa, Alata, Appietto, Bastelicaccia, Sarrola-Carcopino, Tavaco, Peri, Cuttoli, Villeneuve.',
+    communesList: ["Afa", "Ajaccio", "Alata", "Appietto", "Cuttoli-Corticchiato", "Peri", "Sarrola-Carcopino", "Tavaco", "Valle-di-Mezzana", "Villanova"]
+  },
+  {
+    id: 'caba',
+    name: 'CAB (Bastia Agglomération)',
+    type: 'Communauté d’Agglomération',
+    icon: '⚓',
+    pression: 'Très Élevée',
+    pressionValue: 85,
+    communesCount: 5,
+    coords: [42.7028, 9.4500],
+    enquetesAssociees: [2, 9, 14, 21],
+    indicateur: 'Tension DSP Déchets SYVADEC & Assainissement',
+    ratioSecundaire: '28%',
+    permisTacitesCount: '94 permis/an',
+    details: 'Bastia, Ville-di-Pietrabugno, San-Martino-di-Lota, Furiani, Santa-Maria-di-Lota.',
+    communesList: ["Bastia", "Furiani", "San-Martino-di-Lota", "Santa-Maria-di-Lota", "Ville-di-Pietrabugno"]
+  },
+  {
+    id: 'sud-corse',
+    name: 'CC Sud Corse',
+    type: 'Communauté de Communes',
+    icon: '🌊',
+    pression: 'Critique',
+    pressionValue: 98,
+    communesCount: 7,
+    coords: [41.5912, 9.2794],
+    enquetesAssociees: [5, 24, 26],
+    indicateur: 'Prix m² foncier x4 • Spéculation Bâti Agricole',
+    ratioSecundaire: '74%',
+    permisTacitesCount: '186 permis/an',
+    details: 'Porto-Vecchio, Bonifacio, Figari, Pianottoli-Caldarello, Lecci, Monacia-d\'Aullène, Sotta.',
+    communesList: ["Bonifacio", "Figari", "Lecci", "Monacia-d'Aullène", "Pianottoli-Caldarello", "Porto-Vecchio", "Sotta"]
+  },
+  {
+    id: 'lisula-balagne',
+    name: 'CC L’Île-Rousse - Balagne',
+    type: 'Communauté de Communes',
+    icon: '🌅',
+    pression: 'Très Élevée',
+    pressionValue: 89,
+    communesCount: 22,
+    coords: [42.6340, 8.9370],
+    enquetesAssociees: [6, 9, 25],
+    indicateur: '91% captation résidences secondaires & eau',
+    ratioSecundaire: '68%',
+    permisTacitesCount: '112 permis/an',
+    details: 'L’Île-Rousse, Monticello, Corbara, Santa-Reparata-di-Balagna, Belgodère, Ville-di-Paraso...',
+    communesList: ["Belgodère", "Corbara", "Costa", "Feliceto", "L'Île-Rousse", "Lama", "Mausoléo", "Monticello", "Muro", "Nessa", "Novella", "Occhiatana", "Olmi-Cappella", "Palasca", "Pietralba", "Pigna", "Pioggiola", "Santa-Reparata-di-Balagna", "Speloncato", "Urtaca", "Vallica", "Ville-di-Paraso"]
+  },
+  {
+    id: 'calvi-balagne',
+    name: 'CC Calvi Balagne',
+    type: 'Communauté de Communes',
+    icon: '🏖️',
+    pression: 'Élevée',
+    pressionValue: 78,
+    communesCount: 14,
+    coords: [42.5686, 8.7572],
+    enquetesAssociees: [6, 9, 25],
+    indicateur: 'Pression littorale & Quotas Pêche',
+    ratioSecundaire: '61%',
+    permisTacitesCount: '88 permis/an',
+    details: 'Calvi, Lumio, Calenzana, Moncale, Zilia, Galéria, Manso...',
+    communesList: ["Algajola", "Aregno", "Avapessa", "Calenzana", "Calvi", "Cateri", "Galéria", "Lavatoggio", "Lumio", "Manso", "Moncale", "Montegrosso", "Sant'Antonino", "Zilia"]
+  },
+  {
+    id: 'sartenais-valinco',
+    name: 'CC Sartenais Valinco Taravo',
+    type: 'Communauté de Communes',
+    icon: '🏺',
+    pression: 'Élevée',
+    pressionValue: 76,
+    communesCount: 18,
+    coords: [41.6820, 8.9720],
+    enquetesAssociees: [5, 7, 26],
+    indicateur: 'Mutation bâti patrimonial & cadastre secret',
+    ratioSecundaire: '55%',
+    permisTacitesCount: '64 permis/an',
+    details: 'Sartène, Propriano, Olmeto, Arbellara, Belvédère-Campomoro, Fozzano...',
+    communesList: ["Arbellara", "Argiusta-Moriccio", "Belvédère-Campomoro", "Bilia", "Casalabriva", "Foce", "Fozzano", "Giuncheto", "Granace", "Grossa", "Moca-Croce", "Olmeto", "Petreto-Bicchisano", "Propriano", "Santa-Maria-Figaniella", "Sartène", "Sollacaro", "Viggianello"]
+  },
+  {
+    id: 'celavu-prunelli',
+    name: 'CC Celavu-Prunelli',
+    type: 'Communauté de Communes',
+    icon: '🌲',
+    pression: 'Élevée',
+    pressionValue: 72,
+    communesCount: 10,
+    coords: [42.0150, 8.9120],
+    enquetesAssociees: [1, 8, 24],
+    indicateur: 'Pression périurbaine & Périmètres forestiers',
+    ratioSecundaire: '35%',
+    permisTacitesCount: '48 permis/an',
+    details: 'Bocognano, Carbuccia, Ocana, Tolla, Bastelica, Tavera, Vero...',
+    communesList: ["Bastelica", "Bastelicaccia", "Bocognano", "Carbuccia", "Eccica-Suarella", "Ocana", "Tavera", "Tolla", "Ucciani", "Vero"]
+  },
+  {
+    id: 'spelonca-liamone',
+    name: 'CC Spelunca-Liamone',
+    type: 'Communauté de Communes',
+    icon: '🏞️',
+    pression: 'Très Élevée',
+    pressionValue: 84,
+    communesCount: 33,
+    coords: [42.1480, 8.7620],
+    enquetesAssociees: [4, 7, 26],
+    indicateur: 'Protection sites classés UNESCO & Eau',
+    ratioSecundaire: '62%',
+    permisTacitesCount: '78 permis/an',
+    details: 'Cargèse, Piana, Vico, Évisa, Ota, Osani, Rosazia, Salice...',
+    communesList: ["Ambiegna", "Arbori", "Arro", "Azzana", "Balogna", "Calcatoggio", "Cannelle", "Cargèse", "Casaglione", "Coggia", "Cristinacce", "Guagno", "Letia", "Lopigna", "Marignana", "Murzo", "Orto", "Osani", "Ota", "Partinello", "Pastricciola", "Piana", "Poggiolo", "Renno", "Rezza", "Rosazia", "Salice", "Sant'Andréa-d'Orcino", "Sari-d'Orcino", "Serriera", "Soccia", "Vico", "Évisa"]
+  },
+  {
+    id: 'alta-rocca',
+    name: 'CC L’Alta Rocca',
+    type: 'Communauté de Communes',
+    icon: '⛰️',
+    pression: 'Élevée',
+    pressionValue: 70,
+    communesCount: 16,
+    coords: [41.7380, 9.1240],
+    enquetesAssociees: [8, 20, 26],
+    indicateur: 'Gestion foncière pastorale & Primes PAC',
+    ratioSecundaire: '48%',
+    permisTacitesCount: '52 permis/an',
+    details: 'Levie, Zonza, Sainte-Lucie-de-Tallano, Zonza, Quenza, Aullène...',
+    communesList: ["Altagène", "Aullène", "Carbini", "Cargiaca", "Conca", "Levie", "Loreto-di-Tallano", "Mela", "Olmiccia", "Quenza", "Sainte-Lucie-de-Tallano", "San-Gavino-di-Carbini", "Sari-Solenzara", "Serra-di-Scopamène", "Sorbollano", "Zonza", "Zoza", "Zérubia"]
+  },
+  {
+    id: 'taravo-ornano',
+    name: 'CC Pieve de l’Ornano et du Taravo',
+    type: 'Communauté de Communes',
+    icon: '🌿',
+    pression: 'Élevée',
+    pressionValue: 75,
+    communesCount: 28,
+    coords: [41.8720, 8.9480],
+    enquetesAssociees: [5, 12, 24],
+    indicateur: 'Pression littorale Rive Sud & Permis',
+    ratioSecundaire: '58%',
+    permisTacitesCount: '92 permis/an',
+    details: 'Pietrosella, Albitreccia, Grosseto-Prugna (Porticcio), Santa-Maria-Siché...',
+    communesList: ["Albitreccia", "Azilone-Ampaza", "Campo", "Cardo-Torgia", "Cauro", "Ciamannacce", "Cognocoli-Monticchi", "Corrano", "Coti-Chiavari", "Cozzano", "Forciolo", "Frasseto", "Grosseto-Prugna", "Guargualé", "Guitera-les-Bains", "Olivese", "Palneca", "Pietrosella", "Pila-Canale", "Quasquara", "Sampolo", "Santa-Maria-Siché", "Serra-di-Ferro", "Tasso", "Urbalacone", "Zicavo", "Zigliara", "Zévaco"]
+  },
+  {
+    id: 'fiumorbu-castellu',
+    name: 'CC Fium’Orbu Castellu',
+    type: 'Communauté de Communes',
+    icon: '🚜',
+    pression: 'Élevée',
+    pressionValue: 68,
+    communesCount: 13,
+    coords: [42.0158, 9.4050],
+    enquetesAssociees: [8, 20, 21],
+    indicateur: 'Accaparement aides PAC & Périmètres SAFER',
+    ratioSecundaire: '32%',
+    permisTacitesCount: '44 permis/an',
+    details: 'Ghisonaccia, Prunelli-di-Fiumorbo, Ventiseri, Serra-di-Fiumorbo, Solaro...',
+    communesList: ["Chisa", "Ghisonaccia", "Ghisoni", "Isolaccio-di-Fiumorbo", "Lugo-di-Nazza", "Pietroso", "Poggio-di-Nazza", "Prunelli-di-Fiumorbo", "San-Gavino-di-Fiumorbo", "Serra-di-Fiumorbo", "Solaro", "Ventiseri", "Vezzani"]
+  },
+  {
+    id: 'orientale',
+    name: 'CC de l’Est Corsica (Oriente)',
+    type: 'Communauté de Communes',
+    icon: '🏛️',
+    pression: 'Élevée',
+    pressionValue: 65,
+    communesCount: 7,
+    coords: [42.1020, 9.5120],
+    enquetesAssociees: [3, 7, 20],
+    indicateur: 'Zones d’aménagement agricole & hydraulique',
+    ratioSecundaire: '29%',
+    permisTacitesCount: '38 permis/an',
+    details: 'Aléria, Aghione, Ampriani, Moïta, Pianello, Tallone, Tox.',
+    communesList: ["Aghione", "Altiani", "Aléria", "Ampriani", "Antisanti", "Campi", "Canale-di-Verde", "Casevecchie", "Chiatra", "Giuncaggio", "Linguizzetta", "Matra", "Moïta", "Pancheraccia", "Pianello", "Piedicorte-di-Gaggio", "Pietra-di-Verde", "Pietraserena", "Tallone", "Tox", "Zalana", "Zuani"]
+  },
+  {
+    id: 'costa-verde',
+    name: 'CC de la Costa Verde',
+    type: 'Communauté de Communes',
+    icon: '🌴',
+    pression: 'Très Élevée',
+    pressionValue: 82,
+    communesCount: 23,
+    coords: [42.3420, 9.5280],
+    enquetesAssociees: [1, 5, 21],
+    indicateur: 'Spéculation bande littorale & Déchets',
+    ratioSecundaire: '54%',
+    permisTacitesCount: '76 permis/an',
+    details: 'San-Nicolao, Cervione, Santa-Lucia-di-Moriani, San-Giuliano, Poggio-Mezzana...',
+    communesList: ["Cervione", "Felce", "Novale", "Ortale", "Perelli", "Pero-Casevecchie", "Piazzali", "Pietricaggio", "Piobetta", "Poggio-Mezzana", "San-Giovanni-di-Moriani", "San-Giuliano", "San-Nicolao", "Sant'Andréa-di-Cotone", "Santa-Lucia-di-Moriani", "Santa-Maria-Poggio", "Santa-Reparata-di-Moriani", "Taglio-Isolaccio", "Talasani", "Tarrano", "Valle-d'Alesani", "Valle-di-Campoloro", "Velone-Orneto"]
+  },
+  {
+    id: 'castagniccia-casinca',
+    name: 'CC de la Castagniccia-Casinca',
+    type: 'Communauté de Communes',
+    icon: '🌰',
+    pression: 'Modérée',
+    pressionValue: 45,
+    communesCount: 42,
+    coords: [42.4280, 9.4320],
+    enquetesAssociees: [8, 16, 23],
+    indicateur: 'Gestion patrimoine castanéicole & Arrêtés Miot',
+    ratioSecundaire: '22%',
+    permisTacitesCount: '28 permis/an',
+    details: 'Vescovato, Pensolaccio, La Porta, Piedicroce, Castellare-di-Casinca...',
+    communesList: ["Campana", "Campile", "Carcheto-Brustico", "Carpineto", "Casabianca", "Casalta", "Castellare-di-Casinca", "Croce", "Crocicchia", "Ficaja", "Giocatojo", "La Porta", "Loreto-di-Casinca", "Monacia-d'Orezza", "Nocario", "Ortiporio", "Parata", "Penta-Acquatella", "Penta-di-Casinca", "Piano", "Piazzole", "Pie-d'Orezza", "Piedicroce", "Piedipartino", "Poggio-Marinaccio", "Polveroso", "Porri", "Prunelli-di-Casacconi", "Pruno", "Quercitello", "Rapaggio", "San-Damiano", "San-Gavino-d'Ampugnani", "Scata", "Silvareccio", "Sorbo-Ocagnano", "Stazzona", "Valle-d'Orezza", "Venzolasca", "Verdèse", "Vescovato", "Volpajola"]
+  },
+  {
+    id: 'pasquale-paoli',
+    name: 'CC Pasquale Paoli',
+    type: 'Communauté de Communes',
+    icon: '🏔️',
+    pression: 'Modérée',
+    pressionValue: 48,
+    communesCount: 42,
+    coords: [42.3780, 9.2540],
+    enquetesAssociees: [4, 8, 13, 23],
+    indicateur: 'Gestion réseau d’eau & sous-investissement',
+    ratioSecundaire: '19%',
+    permisTacitesCount: '32 permis/an',
+    details: 'Corte, Ponte-Leccia, Morosaglia, Omessa, Soveria, Castirla, Castiglione...',
+    communesList: ["Aiti", "Alando", "Albertacce", "Alzi", "Asco", "Bisinchi", "Bustanico", "Calacuccia", "Cambia", "Canavaggia", "Carticasi", "Casamaccioli", "Castellare-di-Mercurio", "Castello-di-Rostino", "Castifao", "Castiglione", "Castineta", "Castirla", "Corscia", "Erbajolo", "Favalello", "Focicchia", "Gavignano", "Lano", "Lozzi", "Mazzola", "Moltifao", "Morosaglia", "Omessa", "Piedigriggio", "Popolasca", "Prato-di-Giovellina", "Rusio", "Saliceto", "San-Lorenzo", "Sant'Andréa-di-Bozio", "Santa-Lucia-di-Mercurio", "Sermano", "Soveria", "Tralonca", "Valle-di-Rostino", "Érone"]
+  },
+  {
+    id: 'nebbiu-conca-doro',
+    name: 'CC Nebbiu Conca d’Oro',
+    type: 'Communauté de Communes',
+    icon: '🍇',
+    pression: 'Élevée',
+    pressionValue: 77,
+    communesCount: 15,
+    coords: [42.6820, 9.3080],
+    enquetesAssociees: [1, 7, 24],
+    indicateur: 'Vignobles protégés & Permis tacites',
+    ratioSecundaire: '46%',
+    permisTacitesCount: '58 permis/an',
+    details: 'Saint-Florent, Oletta, Patrimonio, Barbaggio, Murato, Pieve...',
+    communesList: ["Barbaggio", "Farinole", "Murato", "Oletta", "Olmeta-di-Tuda", "Patrimonio", "Piève", "Poggio-d'Oletta", "Rapale", "Rutali", "Saint-Florent", "San-Gavino-di-Tenda", "Santo-Pietro-di-Tenda", "Sorio", "Vallecalle"]
+  },
+  {
+    id: 'marana-golo',
+    name: 'CC Marana-Golo',
+    type: 'Communauté de Communes',
+    icon: '🌾',
+    pression: 'Très Élevée',
+    pressionValue: 81,
+    communesCount: 10,
+    coords: [42.5240, 9.4820],
+    enquetesAssociees: [2, 18, 21],
+    indicateur: 'Décharge SYVADEC & Zone d’activités',
+    ratioSecundaire: '31%',
+    permisTacitesCount: '82 permis/an',
+    details: 'Lucciana, Biguglia, Borgo, Vignale, Monte, Olmo, Vescovato...',
+    communesList: ["Bigorno", "Biguglia", "Borgo", "Campitello", "Lento", "Lucciana", "Monte", "Olmo", "Scolca", "Vignale"]
+  },
+  {
+    id: 'cap-corse',
+    name: 'CC du Cap Corse',
+    type: 'Communauté de Communes',
+    icon: '⛵',
+    pression: 'Élevée',
+    pressionValue: 74,
+    communesCount: 18,
+    coords: [42.9240, 9.4280],
+    enquetesAssociees: [6, 11, 25],
+    indicateur: 'Servitudes littorales & Quotas de pêche',
+    ratioSecundaire: '52%',
+    permisTacitesCount: '42 permis/an',
+    details: 'Rogliano, Ersa, Centuri, Morsiglia, Luri, Barrettali, Cagnano, Canari, Nonza...',
+    communesList: ["Barrettali", "Brando", "Cagnano", "Canari", "Centuri", "Ersa", "Luri", "Meria", "Morsiglia", "Nonza", "Ogliastro", "Olcani", "Olmeta-di-Capocorso", "Pietracorbara", "Pino", "Rogliano", "Sisco", "Tomino"]
+  },
+  {
+    id: 'centre-corse-chisa',
+    name: 'CC Ghisoni - Fiumorbu',
+    type: 'Communauté de Communes',
+    icon: '⛰️',
+    pression: 'Modérée',
+    pressionValue: 42,
+    communesCount: 6,
+    coords: [42.1020, 9.2150],
+    enquetesAssociees: [4, 8, 23],
+    indicateur: 'Ressource forestière & Hydrologie',
+    ratioSecundaire: '18%',
+    permisTacitesCount: '16 permis/an',
+    details: 'Ghisoni, Lugo-di-Nazza, Poggio-di-Nazza, Pietroso, Vezzani.',
+    communesList: ["Casanova", "Corte", "Muracciole", "Noceta", "Poggio-di-Venaco", "Riventosa", "Rospigliani", "Santo-Pietro-di-Venaco", "Venaco", "Vivario"]
+  }
+];
 ---
-<div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="gis-map-section">
+
+<div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl my-10" id="carto-fonciere-section">
+  <!-- En-tête -->
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
     <div>
-      <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-        SIG SOUVERAIN — 360 COMMUNES DE CORSE
+      <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        SIG SOUVERAIN & BAROMÈTRE — 19 INTERCOMMUNALITÉS (360 COMMUNES)
       </span>
-      <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2">
-        🗺️ Cartographie Interactive de la Pression Foncière
+      <h3 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
+        🗺️ Cartographie & Action Citoyenne Intercommunale
       </h3>
     </div>
-    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-      Cliquez sur les communes pour consulter les permis et arrêtés
+    <div class="flex items-center gap-2 text-xs font-mono">
+      <span class="bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 text-amber-400 font-bold">
+        19 EPCI • Recherche par Commune Active
+      </span>
     </div>
   </div>
 
-  <!-- Conteneur Carte Leaflet -->
-  <div class="w-full h-[450px] rounded-xl border border-slate-800 bg-slate-900 relative overflow-hidden" id="gisMapContainer"></div>
+  <!-- Barre de Recherche Directe par Commune (FONCTIONNALITÉ 1) -->
+  <div class="mb-6 bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col md:flex-row gap-4 items-center justify-between">
+    <div class="w-full md:w-2/3 relative">
+      <label for="communeSearch" class="text-xs font-mono text-slate-400 block mb-1">🔍 Recherche Directe par Commune ou Village :</label>
+      <input 
+        type="text" 
+        id="communeSearch" 
+        placeholder="Tapez le nom de votre commune (ex: Bonifacio, Corte, Cargèse, Sartène, Afa...)..." 
+        class="w-full bg-slate-950 border border-slate-700 text-amber-400 text-xs font-mono rounded-lg p-2.5 focus:outline-none focus:border-amber-400 transition"
+      />
+      <div id="searchResults" class="hidden absolute top-full left-0 right-0 bg-slate-950 border border-amber-500/40 rounded-lg shadow-2xl z-50 mt-1 max-h-48 overflow-y-auto font-mono text-xs"></div>
+    </div>
+
+    <div class="w-full md:w-1/3">
+      <label for="epciSelect" class="text-xs font-mono text-slate-400 block mb-1">Ou choisir l'EPCI :</label>
+      <select 
+        id="epciSelect" 
+        class="w-full bg-slate-950 border border-slate-700 text-amber-400 text-xs font-mono rounded-lg p-2.5 focus:outline-none focus:border-amber-400"
+      >
+        {intercommunalites.map((epci) => (
+          <option value={epci.id}>
+            {epci.icon} {epci.name} — {epci.pression}
+          </option>
+        ))}
+      </select>
+    </div>
+  </div>
+
+  <!-- Conteneur 2 Colonnes : Carte Interactive Leaflet + Inspecteur & Baromètre (7/12 + 5/12) -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <!-- Carte SIG Leaflet (7/12) -->
+    <div class="lg:col-span-7 flex flex-col justify-between">
+      <div class="w-full h-[560px] rounded-xl border border-slate-800 bg-slate-900 relative overflow-hidden shadow-inner" id="gisMapContainer"></div>
+      <div class="mt-3 flex items-center justify-between text-xs font-mono text-slate-400 bg-slate-900/90 px-4 py-2 rounded-lg border border-slate-800">
+        <span>📍 Survolez ou cliquez sur les repères pour auditer une intercommunalité</span>
+        <span class="text-amber-400 font-bold">CARTO OpenStreetMap Dark</span>
+      </div>
+    </div>
+
+    <!-- Inspecteur Intercommunal & Baromètre (5/12) -->
+    <div class="lg:col-span-5 flex flex-col justify-between bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <div>
+        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider block mb-3">INSPECTEUR & BAROMÈTRE EPCI</span>
+
+        <!-- Fiche Détails EPCI Sélectionnée -->
+        <div id="epciDetailPanel" class="bg-slate-950 border border-slate-800 rounded-xl p-5">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+            <div>
+              <h4 class="text-base font-bold font-serif text-amber-400 flex items-center gap-1.5" id="panelEpciName">
+                {intercommunalites[0].icon} {intercommunalites[0].name}
+              </h4>
+              <span class="text-[10px] font-mono text-slate-400 block" id="panelEpciType">{intercommunalites[0].type}</span>
+            </div>
+            <span class="px-2.5 py-1 text-[11px] font-mono font-bold rounded bg-red-500/20 text-red-400 border border-red-500/30" id="panelEpciPression">
+              Pression : {intercommunalites[0].pression}
+            </span>
+          </div>
+
+          <!-- BAROMÈTRE COMPARATIF (FONCTIONNALITÉ 3) -->
+          <div class="mb-4 bg-slate-900/90 p-3 rounded-lg border border-slate-800/80">
+            <span class="text-[11px] font-mono text-slate-400 font-bold block mb-2">📊 Baromètre de Pression Foncière & Spéculation :</span>
+            
+            <!-- Jauge 1 : Indice Pression globale -->
+            <div class="mb-2">
+              <div class="flex justify-between text-[10px] font-mono text-slate-400 mb-1">
+                <span>Indice Pression Spéculative :</span>
+                <span class="text-amber-400 font-bold" id="panelBarometerValue">{intercommunalites[0].pressionValue}%</span>
+              </div>
+              <div class="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
+                <div class="bg-gradient-to-r from-amber-500 to-red-500 h-full transition-all duration-500" id="panelBarometerBar" style={`width: ${intercommunalites[0].pressionValue}%`}></div>
+              </div>
+            </div>
+
+            <!-- Jauge 2 : Part Résidences Secondaires -->
+            <div class="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-slate-800 text-[10px] font-mono">
+              <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                <span class="text-slate-400 block">Résidences Secondaires :</span>
+                <span class="text-cyan-400 font-bold text-xs" id="panelRatioSecundaire">{intercommunalites[0].ratioSecundaire}</span>
+              </div>
+              <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                <span class="text-slate-400 block">Permis Tacites R.424-1 :</span>
+                <span class="text-amber-400 font-bold text-xs" id="panelPermisTacites">{intercommunalites[0].permisTacitesCount}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <span class="text-xs font-mono text-slate-400 block mb-1">Communes Membres (<span id="panelCommunesCount">{intercommunalites[0].communesCount}</span>) :</span>
+            <p class="text-xs font-serif text-slate-300 bg-slate-900 p-2.5 rounded border border-slate-800/80 leading-relaxed max-h-20 overflow-y-auto" id="panelEpciCommunes">
+              {intercommunalites[0].details}
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <span class="text-xs font-mono text-slate-400 block mb-1">Indicateur Clé Audit :</span>
+            <div class="text-xs font-mono font-bold text-cyan-400 bg-cyan-500/10 p-2 rounded border border-cyan-500/20" id="panelEpciIndicateur">
+              {intercommunalites[0].indicateur}
+            </div>
+          </div>
+
+          <div>
+            <span class="text-xs font-mono text-slate-400 block mb-1.5">Enquêtes d'Impact Associées (Cliquables) :</span>
+            <div class="flex flex-wrap gap-2 mb-4" id="panelEpciEnquetes">
+              {intercommunalites[0].enquetesAssociees.map(id => {
+                const slug = enqueteSlugMap[id] || `01-le-grand-verrou-financier`;
+                return (
+                  <a 
+                    href={`./enquetes/${slug}.html`} 
+                    class="px-2.5 py-1 bg-amber-500/10 border border-amber-500/30 hover:border-amber-400 rounded text-xs font-mono text-amber-400 font-bold hover:bg-amber-500/20 transition flex items-center gap-1 shadow-sm"
+                  >
+                    <span>📖 Enquête #{id.toString().padStart(2, '0')}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          <!-- BOUTON SAISINE CADA DIRECTE (FONCTIONNALITÉ 2) -->
+          <a 
+            href="#cada-generator" 
+            id="panelCadaActionBtn"
+            class="w-full block text-center py-2.5 px-4 bg-amber-500 text-slate-950 font-bold rounded-lg text-xs uppercase tracking-wider font-mono hover:bg-amber-400 transition shadow-lg shadow-amber-500/20"
+          >
+            ⚖️ Générer la saisine CADA pour cette Intercommunalité →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
+<script is:inline define:vars={{ intercommunalites, enqueteSlugMap }}>
+  document.addEventListener('DOMContentLoaded', function() {
     const mapElement = document.getElementById('gisMapContainer');
     if (!mapElement || typeof L === 'undefined') return;
 
-    // Centrer la carte sur la Corse (Corte / Centre-Corse)
+    // 1. Initialisation Carte Leaflet
     const map = L.map('gisMapContainer', {
       center: [42.15, 9.15],
-      zoom: 9,
+      zoom: 8,
       zoomControl: true
     });
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(map);
 
-    // Communes principales avec marqueurs interactifs
-    const communesData = [
-      { name: "Ajaccio", lat: 41.9267, lng: 8.7369, enquête: "Enquête #01, #05, #15, #24", risk: "Très Élevé — Urbanisme & SCI" },
-      { name: "Bastia", lat: 42.7028, lng: 9.4500, enquête: "Enquête #02, #09, #14, #21", risk: "Très Élevé — Fiscalité & Déchets" },
-      { name: "Corte", lat: 42.3060, lng: 9.1500, enquête: "Enquête #04, #13, #23", risk: "Modéré — Eau & Université" },
-      { name: "Bonifacio", lat: 41.3872, lng: 9.1594, enquête: "Enquête #05, #24, #26", risk: "Critique — Littoral & Bergeries" },
-      { name: "Porto-Vecchio", lat: 41.5912, lng: 9.2794, enquête: "Enquête #01, #05, #24, #26", risk: "Critique — SCI & Spéculation" },
-      { name: "Calvi", lat: 42.5686, lng: 8.7572, enquête: "Enquête #06, #09, #25", risk: "Élevé — Quotas Pêche & Saison" },
-      { name: "Solenzara", lat: 41.8569, lng: 9.3986, enquête: "Enquête #11, #23", risk: "Élevé — Servitudes Militaires" },
-      { name: "Ghisonaccia", lat: 42.0158, lng: 9.4050, enquête: "Enquête #08, #20, #21", risk: "Élevé — PAC & Forêt" }
-    ];
+    // Création de 2 couches séparées (Panes) pour supprimer 100% des conflits et bugs d'affichage
+    map.createPane('geojsonPane');
+    map.getPane('geojsonPane').style.zIndex = 400;
 
-    communesData.forEach(c => {
-      const marker = L.circleMarker([c.lat, c.lng], {
-        radius: 8,
-        fillColor: c.risk.includes('Critique') ? '#ef4444' : (c.risk.includes('Très') ? '#f97316' : '#d4af37'),
-        color: '#0f172a',
+    map.createPane('markerPane');
+    map.getPane('markerPane').style.zIndex = 650;
+
+    // 1. Chargement de la Couche GeoJSON des 360 Communes sur le Pane Fond (zIndex 400)
+    let communesGeoJsonLayer = null;
+
+    fetch('./corsica_communes.geojson')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        communesGeoJsonLayer = L.geoJSON(data, {
+          pane: 'geojsonPane',
+          style: function(feature) {
+            return {
+              color: '#334155',
+              weight: 1,
+              fillColor: '#0f172a',
+              fillOpacity: 0.3
+            };
+          }
+        }).addTo(map);
+      })
+      .catch(function(err) { console.error('GeoJSON Load error:', err); });
+
+    // 2. Repères & Pointeurs Interactifs des 19 EPCI sur le Pane Supérieur (zIndex 650)
+    const markersMap = {};
+
+    intercommunalites.forEach(function(epci) {
+      const circle = L.circleMarker(epci.coords, {
+        pane: 'markerPane',
+        radius: epci.pression === 'Critique' ? 14 : (epci.pression.includes('Très') ? 12 : 9),
+        fillColor: epci.pression === 'Critique' ? '#ef4444' : (epci.pression.includes('Très') ? '#f97316' : '#f59e0b'),
+        color: '#ffffff',
         weight: 2,
-        opacity: 1,
-        fillOpacity: 0.9
+        fillOpacity: 0.95
       }).addTo(map);
 
-      marker.bindPopup(`
-        <div style="font-family: sans-serif; padding: 4px;">
-          <strong style="color: #0f172a; font-size: 14px;">${c.name}</strong><br/>
-          <span style="color: #007791; font-size: 12px;">${c.enquête}</span><br/>
-          <span style="color: #b8860b; font-weight: bold; font-size: 11px;">Niveau d'exposition : ${c.risk}</span>
-        </div>
-      `);
+      circle.bindTooltip(`<b>${epci.name}</b><br/>${epci.communesCount} communes • Indice ${epci.pressionValue}%`, { permanent: false, direction: 'top' });
+
+      circle.on('click', function() {
+        selectEPCI(epci.id);
+      });
+
+      markersMap[epci.id] = circle;
     });
+
+    // 2. Fonction de sélection EPCI avec Illumination des VRAIS POLYGONES de Communes
+    const epciSelect = document.getElementById('epciSelect');
+
+    function selectEPCI(epciId) {
+      const epci = intercommunalites.find(function(item) { return item.id === epciId; });
+      if (!epci) return;
+
+      if (epciSelect) epciSelect.value = epciId;
+
+      document.getElementById('panelEpciName').innerHTML = `${epci.icon} ${epci.name}`;
+      document.getElementById('panelEpciType').textContent = epci.type;
+      document.getElementById('panelEpciPression').textContent = `Pression : ${epci.pression}`;
+      document.getElementById('panelCommunesCount').textContent = epci.communesCount;
+      document.getElementById('panelEpciCommunes').textContent = epci.details;
+      document.getElementById('panelEpciIndicateur').textContent = epci.indicateur;
+      
+      // Update Baromètre
+      document.getElementById('panelBarometerValue').textContent = `${epci.pressionValue}%`;
+      document.getElementById('panelBarometerBar').style.width = `${epci.pressionValue}%`;
+      document.getElementById('panelRatioSecundaire').textContent = epci.ratioSecundaire;
+      document.getElementById('panelPermisTacites').textContent = epci.permisTacitesCount;
+
+      const actionBtn = document.getElementById('panelCadaActionBtn');
+      if (actionBtn) {
+        actionBtn.textContent = `⚖️ Générer la saisine CADA pour ${epci.name} →`;
+      }
+
+      // Génération dynamique de vrais liens cliquables pour chaque enquête associée
+      const enquetesContainer = document.getElementById('panelEpciEnquetes');
+      if (enquetesContainer) {
+        enquetesContainer.innerHTML = epci.enquetesAssociees.map(function(id) {
+          const slug = enqueteSlugMap[id] || '01-le-grand-verrou-financier';
+          return `<a href="./enquetes/${slug}.html" class="px-2.5 py-1 bg-amber-500/10 border border-amber-500/30 hover:border-amber-400 rounded text-xs font-mono text-amber-400 font-bold hover:bg-amber-500/20 transition flex items-center gap-1 shadow-sm">
+            <span>📖 Enquête #${id.toString().padStart(2, '0')}</span>
+          </a>`;
+        }).join('');
+      }
+
+      // SURBRILLANCE EXCLUSIVE DES POLYGONES CADASTRAUX DES COMMUNES DU TERRITOIRE
+      if (communesGeoJsonLayer) {
+        const highlightColor = epci.pression === 'Critique' ? '#ef4444' : '#f59e0b';
+
+        communesGeoJsonLayer.setStyle(function(feature) {
+          const name = feature.properties.nom;
+          const isMember = epci.communesList.some(function(cName) {
+            return cName.toLowerCase() === name.toLowerCase();
+          });
+
+          if (isMember) {
+            return {
+              color: highlightColor,
+              weight: 2.5,
+              fillColor: highlightColor,
+              fillOpacity: 0.45
+            };
+          } else {
+            return {
+              color: '#1e293b',
+              weight: 0.8,
+              fillColor: '#090d16',
+              fillOpacity: 0.2
+            };
+          }
+        });
+      }
+
+      map.flyTo(epci.coords, 9.5, { duration: 1.2 });
+    }
+
+    if (epciSelect) {
+      epciSelect.addEventListener('change', function(e) {
+        selectEPCI(e.target.value);
+      });
+    }
+
+    // 3. FONCTIONNALITÉ 1 : Recherche Directe par Commune
+    const communeSearchInput = document.getElementById('communeSearch');
+    const searchResults = document.getElementById('searchResults');
+
+    if (communeSearchInput && searchResults) {
+      communeSearchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length < 2) {
+          searchResults.classList.add('hidden');
+          return;
+        }
+
+        const matches = [];
+        intercommunalites.forEach(function(epci) {
+          epci.communesList.forEach(function(commune) {
+            if (commune.toLowerCase().includes(query)) {
+              matches.push({ commune: commune, epci: epci });
+            }
+          });
+        });
+
+        if (matches.length > 0) {
+          searchResults.innerHTML = matches.map(function(m) {
+            return `<div class="p-2.5 hover:bg-slate-900 cursor-pointer border-b border-slate-800/80 flex justify-between items-center" data-epci-id="${m.epci.id}">
+              <span class="font-bold text-amber-400">📍 ${m.commune}</span>
+              <span class="text-[10px] text-slate-400">${m.epci.name}</span>
+            </div>`;
+          }).join('');
+          searchResults.classList.remove('hidden');
+
+          // Clic sur un résultat de commune
+          searchResults.querySelectorAll('div').forEach(function(item) {
+            item.addEventListener('click', function() {
+              const selectedEpciId = item.getAttribute('data-epci-id');
+              selectEPCI(selectedEpciId);
+              searchResults.classList.add('hidden');
+              communeSearchInput.value = item.querySelector('.font-bold').textContent.replace('📍 ', '');
+            });
+          });
+        } else {
+          searchResults.innerHTML = `<div class="p-3 text-slate-400 text-center">Aucune commune trouvée</div>`;
+          searchResults.classList.remove('hidden');
+        }
+      });
+
+      // Masquer les résultats si clic extérieur
+      document.addEventListener('click', function(e) {
+        if (!communeSearchInput.contains(e.target) && !searchResults.contains(e.target)) {
+          searchResults.classList.add('hidden');
+        }
+      });
+    }
   });
 </script>
