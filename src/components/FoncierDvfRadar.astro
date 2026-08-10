@@ -1,0 +1,127 @@
+---
+import dvfData from '../data/corsica_dvf_360.json';
+---
+
+<div class="bg-slate-950 border border-cyan-500/30 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="foncier-dvf-section">
+  <!-- En-tête de Section -->
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+    <div>
+      <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        OPEN DATA DGFIP / INSEE — 360 COMMUNES DE CORSE (DVF TRANSACTIONS)
+      </span>
+      <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2 flex items-center gap-2">
+        <span>🤝 Radar des Transactions & Valeurs Foncières (360 Communes)</span>
+      </h3>
+    </div>
+    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
+      Couverture : 100% des 360 Communes Corses
+    </div>
+  </div>
+
+  <!-- Explication Pédagogique -->
+  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6">
+    <h4 class="text-sm font-bold font-serif text-cyan-400 mb-1 flex items-center gap-2">
+      💡 Pourquoi consulter le registre DVF (Demandes de Valeurs Foncières) ?
+    </h4>
+    <p class="text-xs text-slate-300 font-serif leading-relaxed">
+      Ce registre officiel de la Direction Générale des Finances Publiques (DGFiP) répertorie l'intégralité des ventes de terrains et biens immobiliers réelles conclues en Corse. Il permet de repérer la <strong>spéculation foncière</strong>, les <strong>acquisitions massives par des holdings ou SCI extérieures</strong> et de comparer le prix réel au m² avec les revenus locaux sur chacune des 360 communes.
+    </p>
+  </div>
+
+  <!-- Chiffres Clés Insulaires -->
+  <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Communes Couvertes</span>
+      <span class="text-xl font-bold font-mono text-amber-400">360 / 360</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Total Transactions Auditées</span>
+      <span class="text-xl font-bold font-mono text-slate-200">{dvfData.statistiques_globales.total_transactions_enregistrees.toLocaleString()} actes</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Prix Moyen M² Corse</span>
+      <span class="text-xl font-bold font-mono text-cyan-400">{dvfData.statistiques_globales.prix_moyen_m2_corse} € / m²</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Part SCI & Non-Résidents</span>
+      <span class="text-xl font-bold font-mono text-red-400">{dvfData.statistiques_globales.part_acquisitions_sci_non_residents} %</span>
+    </div>
+  </div>
+
+  <!-- Explorateur de Communes avec Recherche Instantanée -->
+  <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+    <div class="mb-4">
+      <label class="block text-xs font-mono text-slate-400 mb-1">RECHERCHER OU SÉLECTIONNER PARMI LES 360 COMMUNES CORSES :</label>
+      <select id="dvfCommuneSelect" class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-mono">
+        {dvfData.communes.map(c => (
+          <option value={c.code_insee}>{c.commune} — {c.epci} — {c.prix_m2_moyen} €/m² — Tension {c.niveau_tension}</option>
+        ))}
+      </select>
+    </div>
+
+    <!-- Fiche de Détail Dynamique -->
+    <div id="dvfDetailPanel" class="bg-slate-950 p-5 rounded-lg border border-slate-800 space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <div>
+          <h4 id="dvfCommuneName" class="text-lg font-bold font-serif text-slate-100">
+            {dvfData.communes[0].commune}
+          </h4>
+          <span id="dvfEpciName" class="text-xs font-mono text-slate-400">
+            EPCI : {dvfData.communes[0].epci}
+          </span>
+        </div>
+        <span id="dvfTensionBadge" class="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/40 rounded-full text-xs font-mono font-bold">
+          Tension {dvfData.communes[0].niveau_tension}
+        </span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Prix m² Moyen :</span>
+          <span id="dvfPrixM2" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].prix_m2_moyen} €</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Évol. (5 ans) :</span>
+          <span id="dvfEvol" class="text-amber-400 font-bold text-sm">+{dvfData.communes[0].evolution_5ans_pct}%</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Actes / an :</span>
+          <span id="dvfActes" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].transactions_annee}</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Part SCI Ext. :</span>
+          <span id="dvfPctSci" class="text-red-400 font-bold text-sm">{dvfData.communes[0].pct_non_residents_sci}%</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/90 p-3 rounded border border-cyan-500/30 text-xs font-mono">
+        <span class="text-cyan-400 font-bold block mb-1">🔗 Preuve & Dossier d'Investigation Associé :</span>
+        <span id="dvfPieceAssociee" class="text-slate-300">
+          {dvfData.communes[0].piece_cada_associee}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ communesList: dvfData.communes }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('dvfCommuneSelect');
+    if (!select) return;
+
+    select.addEventListener('change', (e) => {
+      const code = e.target.value;
+      const c = communesList.find(item => item.code_insee === code);
+      if (!c) return;
+
+      document.getElementById('dvfCommuneName').textContent = c.commune;
+      document.getElementById('dvfEpciName').textContent = `EPCI : ${c.epci}`;
+      document.getElementById('dvfTensionBadge').textContent = `Tension ${c.niveau_tension}`;
+      document.getElementById('dvfPrixM2').textContent = `${c.prix_m2_moyen} €`;
+      document.getElementById('dvfEvol').textContent = `+${c.evolution_5ans_pct}%`;
+      document.getElementById('dvfActes').textContent = c.transactions_annee;
+      document.getElementById('dvfPctSci').textContent = `${c.pct_non_residents_sci}%`;
+      document.getElementById('dvfPieceAssociee').textContent = c.piece_cada_associee;
+    });
+  });
+</script>
