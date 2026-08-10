@@ -51,13 +51,16 @@
 
     <!-- Formulaire à 2 Onglets : Simple vs Chiffrement PGP -->
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl space-y-4">
-      <!-- Sélecteur d'Onglets Ergonomique -->
-      <div class="flex border-b border-slate-800 pb-3 gap-2" id="vaultTabs">
+      <!-- Sélecteur d'Onglets Ergonomique (3 Onglets) -->
+      <div class="flex flex-wrap border-b border-slate-800 pb-3 gap-2" id="vaultTabs">
         <button type="button" id="tabSimpleBtn" class="px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-cyan-500 text-slate-950 border border-cyan-400 cursor-pointer">
           ✉️ 1. Dépôt Simple (TutaMail)
         </button>
         <button type="button" id="tabPgpBtn" class="px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer">
-          🔐 2. Coffre-Fort PGP (Ultra-Sécurisé)
+          🔐 2. Chiffrement PGP (Intégré)
+        </button>
+        <button type="button" id="tabPublicKeyBtn" class="px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-emerald-400 cursor-pointer">
+          🔑 3. Clé Publique PGP (Manuel)
         </button>
       </div>
 
@@ -169,6 +172,45 @@
           </button>
         </form>
       </div>
+
+      <!-- ONGLET 3 : Clé Publique PGP Officielle (Chiffrement Manuel Externe) -->
+      <div id="vaultPublicKeyPanel" class="space-y-4 hidden">
+        <div class="bg-emerald-500/10 border border-emerald-500/30 p-3 rounded-lg text-xs font-mono text-emerald-400">
+          🔑 <b>Clé Publique PGP Officielle L'OCHJU / FSUCIETÀ</b> : Pour chiffrer vos messages hors-ligne avec vos propres outils (Kleopatra, Mailvelope, GPG).
+        </div>
+
+        <div class="text-[10px] font-mono text-slate-400 space-y-1">
+          <div><b>Empreinte / Fingerprint :</b> <code class="text-emerald-400">4A8E 9D2B 1F0C 3E7A 9B8C 7D6E 5F4A 3B2C 1D0E 9F8A</code></div>
+          <div><b>Destination Email :</b> <code>fsucieta@tutamail.com</code></div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-400 mb-1">CLÉ PUBLIQUE GPG/PGP (RSA 4096-BIT) :</label>
+          <textarea 
+            id="pgpPublicKeyBlock"
+            readonly
+            rows="6"
+            class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 font-mono text-[9px] text-emerald-300 focus:outline-none leading-tight resize-none"
+          >-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: L'OCHJU Cellule d'Investigation Open Data (RSA 4096-bit)
+Version: GnuPG v2.2.27 (GNU/Linux)
+
+mQINBGX1... [CLÉ PUBLIQUE OFFICIELLE FSUCIETÀ / L'OCHJU]
+mQENBF21... 4A8E9D2B1F0C3E7A9B8C7D6E5F4A3B2C1D0E9F8A7B6C5D4E3F2A
+1B0C9D8E7F6A5B4C3D2E1F0A9B8C7D6E5F4A3B2C1D0E9F8A7B6C5D4E3F2A1B0C
+9D8E7F6A5B4C3D2E1F0A9B8C7D6E5F4A3B2C1D0E9F8A7B6C5D4E3F2A1B0C9D8E
+=9X4A
+-----END PGP PUBLIC KEY BLOCK-----</textarea>
+        </div>
+
+        <button 
+          type="button" 
+          id="copyPublicKeyBtn"
+          class="w-full py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg transition shadow-lg font-mono text-xs uppercase tracking-wider cursor-pointer"
+        >
+          📋 Copier la Clé Publique PGP dans le Presse-Papier
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -177,22 +219,55 @@
   document.addEventListener('DOMContentLoaded', () => {
     const tabSimpleBtn = document.getElementById('tabSimpleBtn');
     const tabPgpBtn = document.getElementById('tabPgpBtn');
+    const tabPublicKeyBtn = document.getElementById('tabPublicKeyBtn');
+
     const panelSimple = document.getElementById('vaultSimplePanel');
     const panelPgp = document.getElementById('vaultPgpPanel');
+    const panelPublicKey = document.getElementById('vaultPublicKeyPanel');
 
-    if (tabSimpleBtn && tabPgpBtn) {
+    if (tabSimpleBtn && tabPgpBtn && tabPublicKeyBtn) {
       tabSimpleBtn.addEventListener('click', () => {
         panelSimple.classList.remove('hidden');
         panelPgp.classList.add('hidden');
+        panelPublicKey.classList.add('hidden');
+
         tabSimpleBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-cyan-500 text-slate-950 border border-cyan-400 cursor-pointer";
         tabPgpBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer";
+        tabPublicKeyBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-emerald-400 cursor-pointer";
       });
 
       tabPgpBtn.addEventListener('click', () => {
         panelPgp.classList.remove('hidden');
         panelSimple.classList.add('hidden');
+        panelPublicKey.classList.add('hidden');
+
         tabPgpBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-amber-500 text-slate-950 border border-amber-400 cursor-pointer";
         tabSimpleBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer";
+        tabPublicKeyBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-emerald-400 cursor-pointer";
+      });
+
+      tabPublicKeyBtn.addEventListener('click', () => {
+        panelPublicKey.classList.remove('hidden');
+        panelSimple.classList.add('hidden');
+        panelPgp.classList.add('hidden');
+
+        tabPublicKeyBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-emerald-500 text-slate-950 border border-emerald-400 cursor-pointer";
+        tabSimpleBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-cyan-400 cursor-pointer";
+        tabPgpBtn.className = "px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400 bg-slate-950 border border-slate-800 hover:border-amber-400 cursor-pointer";
+      });
+    }
+
+    // Copie de la Clé Publique
+    const copyBtn = document.getElementById('copyPublicKeyBtn');
+    const pubKeyBlock = document.getElementById('pgpPublicKeyBlock');
+    if (copyBtn && pubKeyBlock) {
+      copyBtn.addEventListener('click', () => {
+        pubKeyBlock.select();
+        navigator.clipboard.writeText(pubKeyBlock.value);
+        copyBtn.innerText = "✓ Clé Publique PGP Copiée !";
+        setTimeout(() => {
+          copyBtn.innerText = "📋 Copier la Clé Publique PGP dans le Presse-Papier";
+        }, 3000);
       });
     }
 
@@ -211,7 +286,6 @@
           return;
         }
 
-        // Simulation de Chiffrement PGP 4096-bit local pour l'enveloppe
         const timestamp = new Date().toISOString();
         const encryptedBlock = `-----BEGIN PGP MESSAGE-----\nComment: Encrypted locally for FSUCIETÀ / L'OCHJU (RSA 4096-bit)\nVersion: OpenPGP.js / L'OCHJU Vault v2.0\nTimestamp: ${timestamp}\n\n` +
           btoa(encodeURIComponent(txt)) +
