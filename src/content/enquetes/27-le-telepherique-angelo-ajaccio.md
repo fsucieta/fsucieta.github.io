@@ -51,7 +51,7 @@ L'institution financière d'État se trouve ainsi des deux côtés de la table :
 
 ---
 
-## III. Le "diable dans les détails" : Pylônes, héliportage et expropriations parcellaires
+## III. Le diable dans les coulisses : Derrière les pylônes, l'ombre du Préfet, de la CRC et le drame Muvitarra
 
 Sur le terrain, l'exécution du tracé a donné lieu à une cascade de surcoûts et de contraintes foncières passées sous silence :
 
