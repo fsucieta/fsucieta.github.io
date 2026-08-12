@@ -70,8 +70,6 @@ Le contrat signé avec la **SECA (Société d'Exploitation du Câble Ajaccien, f
 
 Avec des recettes de billetterie réelles estimées à moins de 400 000 euros par an en raison d'un taux de remplissage effectif inférieur à **18 %** (les usagers refusant la rupture de correspondance en bus vers le centre-ville), le déficit net d'exploitation dépasse **1,98 million d'euros par an**.
 
-$$\text{Effet Spoliation Fiscale Citoyenne (ESFC)} = \frac{\text{Part CAPA Non-Subventionnée} + \sum_{t=1}^{10} \text{Déficit SECA}_t}{\text{Nombre de Foyers Fiscaux CAPA (38 500)}} = \mathbf{815,50 \text{ € / foyer}}$$
-
 Chaque foyer fiscal de l'agglomération d'Ajaccio paie ainsi indirectement **815,50 euros** pour financer les surcoûts et la rente d'exploitation garantie du téléphérique "Angelo".
 
 ---
