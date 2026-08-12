@@ -33,12 +33,9 @@ sources:
     sha256: "5b9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
 ---
 
-## I. La génèse du projet : Le marqueur vert d'une alliance politique d'État
+## I. L'alliance d'État & la fiche technique sans usagers
 
-Sur le papier, le téléphérique urbain "Angelo" est présenté comme un chef-d'œuvre de mobilité décarbonée : 2,9 km de câble, 4 stations (Saint-Joseph, Mont Sant’Anghjulu, Stiletto, Mezzavia) et une promesse de relier l'entrée nord au bassin d'emploi en 12 minutes pour désengorger la RT 21.
-
-> **[Éclairage Technique d'État — Arrêté Préfectoral du 10 mai 2023]**  
-> L'examen du dossier officiel visé par l'arrêté préfectoral de DUP précise la fiche technique exacte validée par l'État : une ligne monocâble débrayable à propulsion électrique de **2,9 km**, la pose de **19 pylônes d'ancrage en milieu naturel** (d'une hauteur variant de 5 à 30 mètres, dont 6 implantés à proximité immédiate des gares) et l'aménagement de **4 stations au total**. Outre les gares urbaines de Saint-Joseph, Stiletto et Mezzavia, une 4ème station intermédiaire a été spécialement créée au lieu-dit « Château d'eau » pour desservir la partie haute du terrain militaire et le projet de parc urbain public.
+Sur le papier, le téléphérique urbain "Angelo" est présenté comme un chef-d'œuvre de mobilité décarbonée. L'examen du dossier officiel visé par l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001 en fixe le périmètre exact : une ligne monocâble débrayable à propulsion électrique de **2,9 km**, la pose de **19 pylônes d'ancrage en milieu naturel** (d'une hauteur variant de 5 à 30 mètres, dont 6 implantés à proximité immédiate des gares) et l'aménagement de **4 stations au total** (Saint-Joseph, Stiletto, Mezzavia et une 4ème station intermédiaire créée au lieu-dit « Château d'eau » pour desservir la partie haute du terrain militaire et le projet de parc urbain public).
 
 Cependant, l'examen médico-légal des arbitrages parisiens et des comptes de la Communauté d'Agglomération du Pays Ajaccien (CAPA) révèle une tout autre réalité. Le projet d'Angelo est avant tout **le marqueur politique d'une alliance d'État entre Édouard Philippe et Laurent Marcangeli**. Pour imposer le parti Horizons comme le pôle de stabilité de la majorité présidentielle, il fallait doter son homme fort en Corse d'une "vitrine d'ingénierie moderne".
 
@@ -46,23 +43,22 @@ C'est ainsi que l'État central accorde un taux de subvention inédit de **70 % 
 
 ---
 
-## II. La triangulation régalienne : Le conflit d'ingénierie de la Caisse des Dépôts
+## II. La triangulation régalienne & la rente Caisse des Dépôts / POMA
 
-Comment ce projet de 35 millions d'euros HT à l'origine a-t-il pu franchir la barre des **52,4 millions d'euros TTC**, assorti d'un contrat d'exploitation de 23,89 millions d'euros sur 10 ans ? La réponse réside dans la typologie du groupement retenu et dans la position de la Caisse des Dépôts et Consignations (CDC).
+Comment ce projet de 35 millions d'euros HT à l'origine a-t-il pu franchir la barre des **52,4 millions d'euros TTC**, assorti d'un contrat d'exploitation de 23,89 millions d'euros sur 10 ans ? 
 
-> **[Instruction Judiciaire & Enquête Publique]**  
-> Le rapport d'enquête publique de 86 pages répertorié au registre préfectoral confirme que l'instruction a été conduite durant 32 jours consécutifs (du 30 mai au 30 juin 2023) par **M. Gérard PERFETTINI**, Commissaire Enquêteur titulaire désigné par le Président du Tribunal Administratif de Bastia. Si l'avis rendu a été favorable à la DUP, le Commissaire Enquêteur l'a assorti de deux réserves administratives strictes et de trois recommandations relatives à la sécurité et à la stricte continuité d'intermodalité avec les transports de surface.
+Le rapport d'enquête publique de 86 pages répertorié au registre préfectoral confirme que l'instruction a été conduite durant 32 jours consécutifs (du 30 mai au 30 juin 2023) par **M. Gérard PERFETTINI**, Commissaire Enquêteur titulaire désigné par le Président du Tribunal Administratif de Bastia. Si l'avis rendu a été favorable à la DUP, le Commissaire Enquêteur l'a assorti de deux réserves administratives strictes et de trois recommandations relatives à la sécurité et à la stricte continuité d'intermodalité avec les transports de surface.
 
 Le marché attribué en **Conception-Réalisation-Exploitation-Maintenance (CREM)** réunit le constructeur grenoblois **POMA** et la société d'ingénierie **Egis Rail**. Or, l'analyse des registres d'actionnariat révèle un conflit d'intérêts institutionnel majeur :
 
 1. **La Caisse des Dépôts (via la Banque des Territoires)** conseille, prête et subventionne la collectivité d'Ajaccio (CAPA).
 2. **La même Caisse des Dépôts est l'actionnaire majoritaire à 75 % d'Egis Rail**, le co-traitant privé qui rédige les spécifications, conçoit le projet et perçoit les honoraires d'ingénierie aux côtés de POMA !
 
-L'institution financière d'État se trouve ainsi des deux côtés de la table : elle valide les prêts publics d'un côté tout en encaissant les bénéfices de la maîtrise d’œuvre privée de l'autre.
+L'institution financière d'État se trouve ainsi des deux côtés de la table : elle valide les prêts publics d'un côté tout en encaissant les bénéfices de la maîtrise d’œuvre privée de l'autre. Le contrat signé garantit à la **SECA** (filiale à 100 % de POMA) une redevance fixe annuelle de **2,38 millions d'euros par an pendant 10 ans (23,89 M€ HT)**. Avec un taux de remplissage effectif qui plafonne sous les **18 %** (les usagers refusant la rupture de correspondance en bus), le déficit net d'exploitation dépasse **1,98 million d'euros par an**, soit une facture indirecte de **815,50 euros par foyer fiscal ajaccien**.
 
 ---
 
-## III. Le diable dans les coulisses : Derrière les pylônes, l'ombre du Préfet, de la CRC et le drame Muvitarra
+## III. Les coulisses du tracé : Surcoûts, foncier & verrou administratif
 
 Sur le terrain, l'exécution du tracé a donné lieu à une cascade de surcoûts et de contraintes foncières passées sous silence :
 
@@ -70,32 +66,29 @@ Sur le terrain, l'exécution du tracé a donné lieu à une cascade de surcoûts
 - **L'héliportage du Mont Sant’Anghjulu** : Pour ancrer les pylônes P5 à P12 dans le massif escarpé dépourvu d'accès routier, le groupement a dû mobiliser des hélicoptères bi-turbines lourds (Super Puma), générant un surcoût d'acheminement aérien supérieur à **450 000 euros**.
 - **L'acquisition d'urgence de la Scierie Viguier** : Au Stiletto, le déblocage de la station intermédiaire a nécessité le rachat précipité du terrain privé de la scierie Viguier pour éviter un blocage judiciaire, créant une **dette foncière d'urgence de 3 millions d'euros**.
 - **Le piège des servitudes SUP de survol** : Par arrêté du 4 décembre 2023, la Préfecture a imposé des Servitudes d'Utilité Publique de survol autorisant le passage permanent des cabines au-dessus des villas privées. Les riverains subissent un vis-à-vis permanent et des restrictions de hauteur au PLU sans indemnisation décente.
-- **La faillite du contrôle de légalité : Le Préfet Lelarge et la CRC** : Durant son mandat (2020-2022), le Préfet de Corse Pascal Lelarge s'est illustré par un contrôle de légalité d'une sévérité extrême sur les affaires locales. Pourtant, c'est sous sa signature que les conventions d'adossement des 70 % de subventions d'État du PTIC ont été validées sans la moindre objection sur le risque financier. En parallèle, la Chambre Régionale des Comptes (CRC) de la Corse est restée silencieuse durant la phase de montage, n'émettant aucune alerte préventive sur le glissement budgétaire (de 35 M€ HT à 52,4 M€ TTC) ni sur le transfert de charge des 23,89 M€ dus au concessionnaire privé.
-- **L'asphyxie de la SPL Muvitarra et le piège de la DSP privée (Le précédent Transdev)** : Historiquement à l'équilibre financier, la Société Publique Locale (SPL) Muvitarra est aujourd'hui délibérément étouffée par la CAPA. Pour absorber la redevance fixe de 2,38 M€/an due au concessionnaire POMA/SECA, la collectivité applique des retenues financières arbitraires et prétexte des motifs injustifiés pour plonger artificiellement la régie publique dans le déficit. Pour réduire les coûts de fonctionnement, la CAPA s'est servie directement dans les poches des salariés, n'hésitant pas à précariser le personnel historique. Cette manœuvre vise à justifier la dissolution de la régie pour basculer vers une **Délégation de Service Public (DSP) privée**. Si ce marché est emporté par un géant continental du transport, **l'argent des contribuables ajacciens repartira massivement sur le continent** pour engraisser ces grands groupes privatiseurs. L'histoire ne fait que se répéter : Ajaccio a déjà connu ce désastre avec la gestion du groupe **Transdev**, qui était reparti avec pertes et fracas grâce à la mobilisation exemplaire des syndicalistes de l'époque qui s'étaient battus pour préserver la maîtrise publique.
-
-> **[L'Engagement Préfectoral sur le Site Propre]**  
-> L'Arrêté Préfectoral du 4 décembre 2023 (page 6) atteste d'ailleurs que l'État avait formellement acté l'engagement de la CAPA de proposer une solution technique garantissant une voie de bus en site propre en symétrie du téléphérique. Si cet aménagement de voie réservée a été effectivement achevé et mis en service récemment, le basculement prioritaire des financements vers les infrastructures lourdes du câble s'est opéré au détriment des capacités de fonctionnement quotidien de la régie publique.
-
-> **[Révélation d'Investigation : Le Crash Social de Décembre 2025]**  
-> La démonstration matérielle de cette asphyxie budgétaire a éclaté au grand jour le **2 décembre 2025** lors de la grève générale et illimitée qui a paralysé le réseau Muvistrada. Dès septembre 2024, la CAPA avait dénoncé unilatéralement les accords d'entreprise des salariés de la SPL Muvitarra, imposant un ultimatum couperet au 27 décembre 2025 pour sabrer les avantages sociaux des conducteurs et agents de maintenance, qualifiés d'« insoutenables financièrement » par la collectivité.  
-> Or, au moment exact où la CAPA prétextait une rigueur budgétaire pour imposer une baisse de pouvoir d'achat aux salariés de la régie publique, elle versait sans sourciller la rente garantie de **2,38 M€/an au concessionnaire privé POMA/SECA** pour des cabines aériennes tournant quasi à vide (18 % de remplissage). Après des semaines d'occupation du dépôt du Vazzio et de barrages filtrants menés par le STC, la CGT et FO, la CAPA décrétera en urgence la gratuité du réseau jusqu'au 5 janvier 2026.  
-> *L'analyse juridique d'investigation* : Si la collectivité a le droit formel d'indemniser un préjudice d'usagers, l'octroi d'une telle gratuité massive financée sur les deniers publics à quelques mois des échéances municipales de mars 2026 frôle la frontière de l'**Article L. 52-1 (alinéa 2) du Code électoral**, qui interdit l'utilisation des moyens publics à des fins de promotion de l'exécutif en période pré-électorale. Une manœuvre d'apaisement budgétaire servant à masquer la préparation d'une privatisation (DSP).
-
-> **[Le Volet Environnemental & L'Imbrication Foncière Stiletto]**  
-> Sur le plan environnemental et foncier, l'Article 5 de l'Arrêté Préfectoral de DUP a imposé à la CAPA des mesures d'évitement strictes concernant la **Tortue d'Hermann**, espèce protégée peuplant le vallon de Saint-Joseph. Mais le document révèle également (page 3) que le tracé s'interconnecte directement avec les intérêts immobiliers majeurs du secteur : l'arrêté préfectoral du 27 janvier 2021 avait ainsi accordé une dérogation de destruction/déplacement d'espèces animales protégées pour le programme de la SCCV « Les Terrasses du Stiletto », porté par **un grand groupe BTP et promoteur immobilier privé très influent au niveau régional**.
-
-> **[La Stratégie d'Étanchéité des Registres Publics]**  
-> Enfin, l'arrêté d'ouverture d'enquête du 10 mai 2023 met en lumière la stratégie de découpage administratif employée par la Préfecture : l'ouverture de **deux registres dématérialisés étanches**. Le registre **n° 4664** était dédié aux remarques générales sur l'utilité publique du téléphérique et le PLU, tandis que le registre **n° 4665** traitait à part des expropriations et des servitudes de survol (SUP). Ce cloisonnement visait à traiter séparément la contestation des propriétaires fonciers survolés et celle des usagers des transports.
+- **La stratégie d'étanchéité des registres citoyens** : L'arrêté d'ouverture du 10 mai 2023 met en lumière la stratégie de découpage administratif employée par la Préfecture : l'ouverture de **deux registres dématérialisés étanches**. Le registre **n° 4664** était dédié aux remarques générales sur l'utilité publique du téléphérique et le PLU, tandis que le registre **n° 4665** traitait à part des expropriations et des servitudes de survol (SUP). Ce cloisonnement visait à traiter séparément la contestation des propriétaires fonciers survolés et celle des usagers des transports.
+- **L'imbrication foncière du Stiletto** : Sur le plan environnemental et foncier, l'Article 5 de l'Arrêté Préfectoral de DUP a imposé à la CAPA des mesures d'évitement strictes concernant la **Tortue d'Hermann**, espèce protégée peuplant le vallon de Saint-Joseph. Mais le document révèle également (page 3) que le tracé s'interconnecte directement avec les intérêts immobiliers majeurs du secteur : l'arrêté préfectoral du 27 janvier 2021 avait ainsi accordé une dérogation de destruction/déplacement d'espèces animales protégées pour le programme de la SCCV « Les Terrasses du Stiletto », porté par **un grand groupe BTP et promoteur immobilier privé très influent au niveau régional**.
 
 ---
 
-## IV. La rente d'exploitation et la facture finale pour le citoyen
+## IV. La faillite du contrôle de légalité et le cheval de troie sur la Muvitarra
 
-Le contrat signé avec la **SECA (Société d'Exploitation du Câble Ajaccien, filiale à 100 % de POMA)** est un modèle de transfert d'argent public vers le secteur privé. L'accord garantit au concessionnaire une redevance fixe annuelle de **2,38 millions d'euros par an pendant 10 ans (23,89 M€ HT)**.
+Comment un tel engrenage a-t-il pu être validé par les autorités de tutelle ?
+Durant son mandat (2020-2022), le Préfet de Corse **Pascal Lelarge** s'est illustré par un contrôle de légalité d'une sévérité extrême sur les affaires locales. Pourtant, c'est sous sa signature que les conventions d'adossement des 70 % de subventions d'État du PTIC ont été validées sans la moindre objection sur le risque financier. En parallèle, la **Chambre Régionale des Comptes (CRC)** de la Corse est restée silencieuse durant la phase de montage, n'émettant aucune alerte préventive sur le glissement budgétaire (de 35 M€ HT à 52,4 M€ TTC) ni sur le transfert de charge vers la SECA.
 
-Avec des recettes de billetterie réelles estimées à moins de 400 000 euros par an en raison d'un taux de remplissage effectif inférieur à **18 %** (les usagers refusant la rupture de correspondance en bus vers le centre-ville), le déficit net d'exploitation dépasse **1,98 million d'euros par an**.
+C'est sur ce terrain fragilisé qu'a été orchestrée l'asphyxie de la **Société Publique Locale (SPL) Muvitarra**. Historiquement à l'équilibre financier, la régie publique est aujourd'hui délibérément étouffée par la CAPA. Pour absorber la redevance fixe de 2,38 M€/an due au concessionnaire POMA/SECA et financer les obligations de l'arrêté préfectoral (notamment la création d'une voie de bus en site propre achevée récemment), la collectivité applique des retenues financières arbitraires et prétexte des motifs injustifiés pour plonger artificiellement la régie publique dans le déficit.
 
-Chaque foyer fiscal de l'agglomération d'Ajaccio paie ainsi indirectement **815,50 euros** pour financer les surcoûts et la rente d'exploitation garantie du téléphérique "Angelo".
+---
+
+## V. Le crash social de décembre 2025 et le piège de la privatisation
+
+La démonstration matérielle de cette asphyxie budgétaire a éclaté au grand jour le **2 décembre 2025** lors de la grève générale et illimitée qui a paralysé le réseau Muvistrada. Dès septembre 2024, la CAPA avait dénoncé unilatéralement les accords d'entreprise des salariés de la SPL Muvitarra, imposant un ultimatum couperet au 27 décembre 2025 pour sabrer les avantages sociaux des conducteurs et agents de maintenance, qualifiés d'« insoutenables financièrement » par la collectivité.
+
+Or, au moment exact où la CAPA prétextait une rigueur budgétaire pour imposer une baisse de pouvoir d'achat aux salariés de la régie publique, elle versait sans sourciller la rente garantie de **2,38 M€/an au concessionnaire privé POMA/SECA** pour des cabines aériennes tournant quasi à vide. Après des semaines d'occupation du dépôt du Vazzio et de barrages filtrants menés par le STC, la CGT et FO, la CAPA décrétera en urgence la gratuité du réseau jusqu'au 5 janvier 2026.
+
+*L'analyse juridique d'investigation* : Si la collectivité a le droit formel d'indemniser un préjudice d'usagers, l'octroi d'une telle gratuité massive financée sur les deniers publics à quelques mois des échéances municipales de mars 2026 frôle la frontière de l'**Article L. 52-1 (alinéa 2) du Code électoral**, qui interdit l'utilisation des moyens publics à des fins de promotion de l'exécutif en période pré-électorale.
+
+Cette manœuvre d'apaisement vise à masquer la véritable feuille de route : dissoudre la régie publique pour basculer vers une **Délégation de Service Public (DSP) privée**. Si ce marché est emporté par un **géant privé national** du transport, **l'argent des contribuables ajacciens repartira massivement sur le continent** pour engraisser ces grands groupes privatiseurs. L'histoire ne fait que se répéter : Ajaccio a déjà connu ce désastre avec la gestion du groupe **Transdev**, qui était reparti avec pertes et fracas grâce à la mobilisation exemplaire des syndicalistes de l'époque qui s'étaient battus pour préserver la maîtrise publique.
 
 ---
 
