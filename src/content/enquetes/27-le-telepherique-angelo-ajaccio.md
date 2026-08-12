@@ -1,7 +1,7 @@
 ---
 id: 27
-title: "Enquête 27 : Le Téléphérique 'Angelo' — Anatomie du pouvoir d'État et de la rente privée"
-subtitle: "Radiographie financière, politique et foncière du transport par câble d'Ajaccio : de l'axe Marcangeli-Philippe à la rente POMA/Egis"
+title: "Enquête 27 : Téléphérique 'Angelo' — Le cheval de Troie pour détruire la SPL Muvitarra et privatiser le transport ajaccien"
+subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
 category: "INFRASTRUCTURES & POUVOIR"
 ref: "FSUCIETA-AUDIT-ENQUETE-27"
 author: "Cellule d'Investigation L'OCHJU — FSUCIETÀ"
