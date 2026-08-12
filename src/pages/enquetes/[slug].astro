@@ -132,6 +132,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
                 data-doc-name={src.name}
                 data-doc-sha={src.sha256}
                 data-doc-url={src.url}
+                data-doc-pdf-direct={src.pdfDirect || ''}
                 class="view-doc-btn shrink-0 w-full md:w-auto px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg font-mono text-xs transition cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>👁️ Consulter la Pièce</span>
@@ -165,7 +166,25 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
           <div class="space-y-1 bg-slate-900 p-3 rounded-lg border border-slate-800">
             <div><b>Pièce Officielle :</b> <span id="modalDocTitleSpan" class="text-slate-200 font-bold"></span></div>
             <div><b>Empreinte Certifiée SHA-256 :</b> <span id="modalDocSha" class="text-emerald-300 font-bold break-all"></span></div>
-            <div><b>Autorité Émettrice / Source :</b> <span id="modalDocUrl" class="text-cyan-400"></span></div>
+            <div><b>Autorité Émettrice / Source :</b> <a id="modalDocUrl" href="#" target="_blank" class="text-cyan-400 hover:underline break-all"></a></div>
+          </div>
+
+          <!-- Zone d'Accès Direct au PDF Officiel (si disponible) -->
+          <div id="modalPdfDirectBox" class="bg-emerald-950/40 border border-emerald-500/50 p-4 rounded-xl space-y-2 hidden">
+            <div class="text-emerald-300 font-bold flex items-center gap-2 text-xs">
+              <span>📥 DOCUMENT PDF OFFICIEL DISPONIBLE EN TÉLÉCHARGEMENT DIRECT</span>
+            </div>
+            <p class="text-[11px] text-slate-300 font-mono">
+              Le fichier PDF original scanné par la Préfecture (Arrêté de DUP & MEC PLU de 19,1 Mo) est archivé et directement téléchargeable ci-dessous :
+            </p>
+            <a 
+              id="modalPdfDirectLink" 
+              href="#" 
+              target="_blank" 
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg text-xs font-sans shadow-lg transition"
+            >
+              <span>📄 Télécharger / Consulter le PDF Officiel Intégral (19,1 Mo) →</span>
+            </a>
           </div>
 
           <div class="border-t border-slate-800 pt-4 space-y-3">
@@ -177,7 +196,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
                 Conformément au Code des Relations entre le Public et l'Administration (CRPA), l'empreinte SHA-256 ci-dessus garantit l'intégrité de l'acte certifié au registre des affaires publiques.
               </p>
               <p class="text-slate-400">
-                <i>Note d'accès citoyen : Pour obtenir la copie numérique intégrale (PDF de 50+ pages) transmise directement par la Préfecture de Corse-du-Sud ou la CAPA, vous pouvez utiliser notre générateur CADA d'un simple clic ci-dessous.</i>
+                <i>Note d'accès citoyen : Si vous souhaitez obtenir un acte d'État complémentaire non hébergé directement, vous pouvez utiliser notre générateur CADA d'un simple clic ci-dessous pour transmettre votre demande officielle à la Préfecture.</i>
               </p>
             </div>
           </div>
@@ -189,7 +208,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
             📋 Copier l'Empreinte SHA-256
           </button>
           <a href="../#cada-generator" class="w-full sm:w-auto px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs rounded-lg transition text-center">
-            ⚖️ Générer une Demande CADA (1-Clic)
+            ⚖️ Demande CADA (1-Clic)
           </a>
           <button id="closeDocModalBtn2" class="w-full sm:w-auto px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-mono text-xs rounded-lg transition border border-slate-700">
             Fermer
@@ -206,6 +225,8 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
         const modalTitleSpan = document.getElementById('modalDocTitleSpan');
         const modalSha = document.getElementById('modalDocSha');
         const modalUrl = document.getElementById('modalDocUrl');
+        const modalPdfBox = document.getElementById('modalPdfDirectBox');
+        const modalPdfLink = document.getElementById('modalPdfDirectLink');
         const closeBtn = document.getElementById('closeDocModalBtn');
         const closeBtn2 = document.getElementById('closeDocModalBtn2');
         const copyShaBtn = document.getElementById('copyDocShaBtn');
@@ -217,11 +238,22 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
             const name = btn.getAttribute('data-doc-name') || '';
             const sha = btn.getAttribute('data-doc-sha') || '';
             const url = btn.getAttribute('data-doc-url') || '';
+            const pdfDirect = btn.getAttribute('data-doc-pdf-direct') || '';
 
             if (modalTitle) modalTitle.textContent = name;
             if (modalTitleSpan) modalTitleSpan.textContent = name;
             if (modalSha) modalSha.textContent = sha;
-            if (modalUrl) modalUrl.textContent = url;
+            if (modalUrl) {
+              modalUrl.textContent = url;
+              modalUrl.setAttribute('href', url);
+            }
+
+            if (pdfDirect && modalPdfBox && modalPdfLink) {
+              modalPdfLink.setAttribute('href', pdfDirect);
+              modalPdfBox.classList.remove('hidden');
+            } else if (modalPdfBox) {
+              modalPdfBox.classList.add('hidden');
+            }
 
             if (modal) modal.classList.remove('hidden');
           });
