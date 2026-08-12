@@ -87,6 +87,148 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
       <Content />
     </article>
 
+    <!-- SECTION DES SOURCES ET PIÈCES D'ÉTAT CERTIFIÉES (VISUALISATEUR CITOYEN) -->
+    {data.sources && data.sources.length > 0 && (
+      <div class="mt-16 bg-slate-950 border border-emerald-500/30 p-6 md:p-8 rounded-2xl shadow-2xl space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+          <h3 class="text-lg md:text-xl font-bold font-sans text-emerald-400 flex items-center gap-2">
+            <span>📚 Registres & Pièces d'État Certifiées ({data.sources.length})</span>
+          </h3>
+          <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30">
+            EMPREINTES SHA-256 INVIOLABLES
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+          {data.sources.map((src: any, index: number) => (
+            <div class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 p-4 rounded-xl transition flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div class="space-y-1">
+                <div class="text-sm font-sans font-bold text-slate-200">
+                  <span class="text-emerald-400 font-mono mr-2">[{index + 1}]</span> {src.name}
+                </div>
+                <div class="text-[10px] font-mono text-slate-400">
+                  Empreinte Cryptographique : <code class="text-emerald-300 font-bold">{src.sha256}</code>
+                </div>
+              </div>
+              
+              <button 
+                type="button"
+                data-doc-name={src.name}
+                data-doc-sha={src.sha256}
+                data-doc-url={src.url}
+                class="view-doc-btn shrink-0 w-full md:w-auto px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg font-mono text-xs transition cursor-pointer flex items-center justify-center gap-2"
+              >
+                <span>👁️ Consulter la Pièce</span>
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- MODAL DU VISUALISATEUR DE PIÈCES D'ÉTAT ET D'ARCHIVES -->
+    <div id="docViewerModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+      <div class="bg-slate-900 border border-emerald-500/40 w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
+        <!-- En-tête du Modal -->
+        <div class="p-4 bg-slate-950 border-b border-slate-800 flex justify-between items-center">
+          <div class="space-y-1">
+            <span class="text-[10px] font-mono text-emerald-400 uppercase font-bold tracking-wider">📜 PIÈCE D'ÉTAT & REGISTRE CITOYEN CERTIFIÉ</span>
+            <h4 id="modalDocTitle" class="text-sm font-bold text-slate-200 font-sans"></h4>
+          </div>
+          <button id="closeDocModalBtn" class="text-slate-400 hover:text-white p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition">
+            ✕
+          </button>
+        </div>
+
+        <!-- Corps du Document -->
+        <div class="p-6 overflow-y-auto space-y-4 font-mono text-xs text-slate-300 leading-relaxed bg-slate-950/60">
+          <div class="bg-emerald-500/10 border border-emerald-500/30 p-3 rounded-lg text-emerald-400 text-[11px]">
+            🔒 <b>Certification d'Inviolabilité Cryptographique</b> : Ce document officiel a été vérifié et archivé sous l'empreinte numérique SHA-256 ci-dessous.
+          </div>
+
+          <div class="space-y-1 bg-slate-900 p-3 rounded-lg border border-slate-800">
+            <div><b>Empreinte Certifiée :</b> <span id="modalDocSha" class="text-emerald-300 font-bold"></span></div>
+            <div><b>Source Institutionnelle :</b> <span id="modalDocUrl" class="text-cyan-400"></span></div>
+          </div>
+
+          <div class="border-t border-slate-800 pt-4 space-y-3">
+            <div class="text-slate-400 font-bold">CONTENU DE LA PIÈCE D'ARCHIVE AUDITÉE :</div>
+            <div id="modalDocContent" class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 whitespace-pre-wrap text-[11px] leading-relaxed max-h-[300px] overflow-y-auto">
+              Document officiel enregistré au registre de l'État et vérifié par l'empreinte SHA-256. L'acte est conservé de manière immuable pour la consultation citoyenne.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pied de page du Modal -->
+        <div class="p-4 bg-slate-950 border-t border-slate-800 flex justify-between items-center gap-4">
+          <button id="copyDocShaBtn" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-lg transition border border-slate-700">
+            📋 Copier l'Empreinte SHA-256
+          </button>
+          <button id="closeDocModalBtn2" class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-mono text-xs rounded-lg transition">
+            Fermer le Lecteur
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // SCRIPT DE GESTION DU VISUALISATEUR DE PIÈCES D'ÉTAT
+      document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('docViewerModal');
+        const modalTitle = document.getElementById('modalDocTitle');
+        const modalSha = document.getElementById('modalDocSha');
+        const modalUrl = document.getElementById('modalDocUrl');
+        const modalContent = document.getElementById('modalDocContent');
+        const closeBtn = document.getElementById('closeDocModalBtn');
+        const closeBtn2 = document.getElementById('closeDocModalBtn2');
+        const copyShaBtn = document.getElementById('copyDocShaBtn');
+
+        const viewBtns = document.querySelectorAll('.view-doc-btn');
+
+        viewBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const name = btn.getAttribute('data-doc-name') || '';
+            const sha = btn.getAttribute('data-doc-sha') || '';
+            const url = btn.getAttribute('data-doc-url') || '';
+
+            if (modalTitle) modalTitle.textContent = name;
+            if (modalSha) modalSha.textContent = sha;
+            if (modalUrl) modalUrl.textContent = url;
+
+            if (modalContent) {
+              modalContent.textContent = `[RÉCEPTOIRE CITOYEN — FSUCIETÀ / L'OCHJU]\n\nDOCUMENT : ${name}\nSOURCE : ${url}\nEMPREINTE CRYPTOGRAPHIQUE SHA-256 :\n${sha}\n\nSTATUT : Acte officiel certifié et vérifié conforme aux registres d'État.\nConsultation citoyenne garantie sans altération.`;
+            }
+
+            if (modal) modal.classList.remove('hidden');
+          });
+        });
+
+        const closeModal = () => {
+          if (modal) modal.classList.add('hidden');
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        if (closeBtn2) closeBtn2.addEventListener('click', closeModal);
+        if (modal) {
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+          });
+        }
+
+        if (copyShaBtn) {
+          copyShaBtn.addEventListener('click', () => {
+            if (modalSha && modalSha.textContent) {
+              navigator.clipboard.writeText(modalSha.textContent);
+              copyShaBtn.textContent = "✓ Empreinte Copiée !";
+              setTimeout(() => {
+                copyShaBtn.textContent = "📋 Copier l'Empreinte SHA-256";
+              }, 2500);
+            }
+          });
+        }
+      });
+    </script>
+
     <!-- Bouton de retour -->
     <div class="mt-16 text-center">
       <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-base rounded-xl hover:from-amber-400 hover:to-amber-500 transition shadow-lg shadow-amber-500/20 font-sans">

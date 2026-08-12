@@ -323,6 +323,13 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
+"27-le-telepherique-angelo-ajaccio.md": {
+	id: "27-le-telepherique-angelo-ajaccio.md";
+  slug: "27-le-telepherique-angelo-ajaccio";
+  body: string;
+  collection: "enquetes";
+  data: InferEntrySchema<"enquetes">
+} & { render(): Render[".md"] };
 };
 
 	};
