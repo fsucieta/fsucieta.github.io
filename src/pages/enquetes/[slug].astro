@@ -143,29 +143,40 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
         <!-- Corps du Document -->
         <div class="p-6 overflow-y-auto space-y-4 font-mono text-xs text-slate-300 leading-relaxed bg-slate-950/60">
           <div class="bg-emerald-500/10 border border-emerald-500/30 p-3 rounded-lg text-emerald-400 text-[11px]">
-            🔒 <b>Certification d'Inviolabilité Cryptographique</b> : Ce document officiel a été vérifié et archivé sous l'empreinte numérique SHA-256 ci-dessous.
+            🔒 <b>Fiche de Registre & Certification Cryptographique SHA-256</b> : Cet acte d'État est répertorié et certifié sous l'empreinte immuable ci-dessous.
           </div>
 
           <div class="space-y-1 bg-slate-900 p-3 rounded-lg border border-slate-800">
-            <div><b>Empreinte Certifiée :</b> <span id="modalDocSha" class="text-emerald-300 font-bold"></span></div>
-            <div><b>Source Institutionnelle :</b> <span id="modalDocUrl" class="text-cyan-400"></span></div>
+            <div><b>Pièce Officielle :</b> <span id="modalDocTitleSpan" class="text-slate-200 font-bold"></span></div>
+            <div><b>Empreinte Certifiée SHA-256 :</b> <span id="modalDocSha" class="text-emerald-300 font-bold break-all"></span></div>
+            <div><b>Autorité Émettrice / Source :</b> <span id="modalDocUrl" class="text-cyan-400"></span></div>
           </div>
 
           <div class="border-t border-slate-800 pt-4 space-y-3">
-            <div class="text-slate-400 font-bold">CONTENU DE LA PIÈCE D'ARCHIVE AUDITÉE :</div>
-            <div id="modalDocContent" class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 whitespace-pre-wrap text-[11px] leading-relaxed max-h-[300px] overflow-y-auto">
-              Document officiel enregistré au registre de l'État et vérifié par l'empreinte SHA-256. L'acte est conservé de manière immuable pour la consultation citoyenne.
+            <div class="text-amber-400 font-bold flex items-center gap-2">
+              <span>🏛️ TRANSPARENCE & DROIT D'ACCÈS AUX DOCUMENTS PUBLICS (CADA)</span>
+            </div>
+            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 text-[11px] leading-relaxed space-y-3">
+              <p>
+                Conformément au Code des Relations entre le Public et l'Administration (CRPA), l'empreinte SHA-256 ci-dessus garantit l'intégrité de l'acte certifié au registre des affaires publiques.
+              </p>
+              <p class="text-slate-400">
+                <i>Note d'accès citoyen : Pour obtenir la copie numérique intégrale (PDF de 50+ pages) transmise directement par la Préfecture de Corse-du-Sud ou la CAPA, vous pouvez utiliser notre générateur CADA d'un simple clic ci-dessous.</i>
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Pied de page du Modal -->
-        <div class="p-4 bg-slate-950 border-t border-slate-800 flex justify-between items-center gap-4">
-          <button id="copyDocShaBtn" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-lg transition border border-slate-700">
+        <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <button id="copyDocShaBtn" class="w-full sm:w-auto px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs rounded-lg transition border border-slate-700">
             📋 Copier l'Empreinte SHA-256
           </button>
-          <button id="closeDocModalBtn2" class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-mono text-xs rounded-lg transition">
-            Fermer le Lecteur
+          <a href="../#cada-generator" class="w-full sm:w-auto px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs rounded-lg transition text-center">
+            ⚖️ Générer une Demande CADA (1-Clic)
+          </a>
+          <button id="closeDocModalBtn2" class="w-full sm:w-auto px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-mono text-xs rounded-lg transition border border-slate-700">
+            Fermer
           </button>
         </div>
       </div>
@@ -176,9 +187,9 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
       document.addEventListener('DOMContentLoaded', () => {
         const modal = document.getElementById('docViewerModal');
         const modalTitle = document.getElementById('modalDocTitle');
+        const modalTitleSpan = document.getElementById('modalDocTitleSpan');
         const modalSha = document.getElementById('modalDocSha');
         const modalUrl = document.getElementById('modalDocUrl');
-        const modalContent = document.getElementById('modalDocContent');
         const closeBtn = document.getElementById('closeDocModalBtn');
         const closeBtn2 = document.getElementById('closeDocModalBtn2');
         const copyShaBtn = document.getElementById('copyDocShaBtn');
@@ -192,12 +203,9 @@ const imgPath = data.image.startsWith('http') ? data.image : `../${data.image.re
             const url = btn.getAttribute('data-doc-url') || '';
 
             if (modalTitle) modalTitle.textContent = name;
+            if (modalTitleSpan) modalTitleSpan.textContent = name;
             if (modalSha) modalSha.textContent = sha;
             if (modalUrl) modalUrl.textContent = url;
-
-            if (modalContent) {
-              modalContent.textContent = `[RÉCEPTOIRE CITOYEN — FSUCIETÀ / L'OCHJU]\n\nDOCUMENT : ${name}\nSOURCE : ${url}\nEMPREINTE CRYPTOGRAPHIQUE SHA-256 :\n${sha}\n\nSTATUT : Acte officiel certifié et vérifié conforme aux registres d'État.\nConsultation citoyenne garantie sans altération.`;
-            }
 
             if (modal) modal.classList.remove('hidden');
           });
