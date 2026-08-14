@@ -38,32 +38,42 @@ L'investigation croise obligatoirement 4 disciplines d'intelligence :
 - **Test du Code Électoral (Art. L. 52-1)** : Évaluer le risque d'illégalité électorale pour toute décision budgétaire ou tarifaire d'urgence d'une collectivité en période pré-électorale.
 - **Test de Proportionnalité "PLANE"** : S'assurer que les faits révélés sont Justifiables, Autorisés, Proportionnés, Traçables et Nécessaires à l'intérêt public citoyen.
 
+
 ---
 
-## 🎨 PARTIE III. LIGNE ÉDITORIALE, TON & ADN UNIQUE
+## 🧠 PARTIE III. INGÉNIERIE COGNITIVE & PSYCHOLOGIE SOCIALE
 
-### 7. RÈGLE ANTI-RÉCURRENCE & ADN UNIQUE (`RULE[anti_repetition_dna]`)
+### 7. RÈGLE D'ENGAGEMENT PSYCHOLOGIQUE CITOYEN (`RULE[cognitive_psychology_impact]`)
+- **Lutte contre la Résignation ("Compassion Fatigue")** : Toute révélation d'une défaillance ou d'un scandale public doit être impérativement et immédiatement suivie d'une **solution concrète, crédible et désirable** (ingénierie, gouvernance publique, feuille de route), pour éviter le sentiment d'impuissance et transformer l'indignation en action constructive.
+- **Ancrage Cognitif de Crédibilité ("Psychologie de la Preuve")** : Structurer la preuve par paliers d'évidence (Faits vérifiables $\rightarrow$ Preuve visuelle/cartographique $\rightarrow$ Formule de calcul $\rightarrow$ Traduction citoyenne) pour activer l'adhésion logique et désarmer le scepticisme.
+- **Déclenchement d'Empowerment Citoyen** : Rédiger avec un ton qui redonne le pouvoir d'agir au lecteur (*"Ce n'est pas une fatalité mais un choix modifiable"*), en évitant le cynisme ou le défaitisme.
+
+---
+
+## 🎨 PARTIE IV. LIGNE ÉDITORIALE, TON & ADN UNIQUE
+
+### 8. RÈGLE ANTI-RÉCURRENCE & ADN UNIQUE (`RULE[anti_repetition_dna]`)
 - **Bannissement des "Mots-Tics"** : Proscrire l'utilisation répétée de formules génériques (*"Anatomie de..."*, *"Radiographie..."*, *"Capitalisme d'État"*, *"Au moment exact où"*) d'un article à l'autre. Adapter impérativement le champ lexical à la matière exacte du sujet (maritime, foncier, transport, forêt, eau, déchets).
 - **Variation de la Porte d'Entrée Narrative** : Varier la structure d'ouverture selon l'angle le plus percutant (*tantôt l'histoire d'usager/terrain, tantôt une anomalie budgétaire cachée, tantôt un arrêté préfectoral, tantôt un conflit social*).
 - **Zéro Impression de "Texte Pré-écrit"** : Garantir que chaque enquête possède sa propre identité narrative, stylistique et conceptuelle, sans aucun effet de gabarit ou de moule récurrent.
 
-### 8. RÈGLE DU TON : "LE DOUBLE ÉTAGÈRE" (`RULE[editorial_balance]`)
+### 9. RÈGLE DU TON : "LE DOUBLE ÉTAGÈRE" (`RULE[editorial_balance]`)
 - **Technique + Vulgarisation** : Énoncer chaque concept juridique, financier ou technique avec sa rigueur officielle (*Étagère Technique*), puis le **traduire immédiatement en langage citoyen limpide** (*Étagère Vulgarisée*) avec une image concrète, une analogie simple ou un coût ramené par foyer fiscal.
 
 ---
 
-## 📜 PARTIE IV. ARCHITECTURE NARRATIVE & ENGAGEMENT
+## 📜 PARTIE V. ARCHITECTURE NARRATIVE & ENGAGEMENT
 
-### 9. RÈGLE D'ARCHITECTURE NARRATIVE PULITZER (`RULE[pulitzer_structure]`)
+### 10. RÈGLE D'ARCHITECTURE NARRATIVE PULITZER (`RULE[pulitzer_structure]`)
 - **Progression Dramatique en 5 Actes** : Découpage fluide adaptatif (*Génèse & Décor / Triangulation Financière / Coulisses du Terrain / Faillite des Tutelles / Choc Social & Enjeu Citoyen*).
 - **Sanctuarisation Factuelle (Zéro Élagage)** : Interdiction de couper ou de résumer de la matière factuelle ou des preuves lors des réorganisations. Conserver 100% de la densité des faits.
 
-### 10. RÈGLE DE PROMOTION SOCIALE & ENGAGEMENT (`RULE[social_engagement]`)
+### 11. RÈGLE DE PROMOTION SOCIALE & ENGAGEMENT (`RULE[social_engagement]`)
 - **Post Facebook en 4 Cartouches** :
   1. *Alerte Citoyenne* (accroche d'urgence avec titre révisé).
   2. *Révélations Factuelles* (puces courtes et concrètes).
   3. *Impact Citoyen Direct* (ce que ça change dans les impôts ou la vie quotidienne).
   4. *Appel à l'Action* (Lien direct vers l'article + incitation au partage citoyen pour préserver l'indépendance).
 
-### 11. RÈGLE DE GUIDAGE PÉDAGOGIQUE (`RULE[user_pedagogy]`)
+### 12. RÈGLE DE GUIDAGE PÉDAGOGIQUE (`RULE[user_pedagogy]`)
 - **Explication & Accord Étape par Étape** : Expliquer clairement en français simple ce que fait chaque script ou commande avant d'agir, et demander systématiquement l'accord préalable de l'utilisateur.
