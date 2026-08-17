@@ -423,7 +423,18 @@ const uneEnquete = enquetes[0]; // Dossier majeur à la Une (#01)
     <WhistleblowerVault />
   </section>
 
-  <!-- Script de Recherche Temps Réel -->
+  <!-- Bouton Flottant de Retour en Haut de Page ("Back to Top") -->
+  <button 
+    id="backToTopBtn" 
+    title="Retourner en haut de page"
+    class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 shadow-2xl hover:bg-amber-500 hover:text-slate-950 hover:border-amber-400 transition-all duration-300 opacity-0 pointer-events-none translate-y-4 group backdrop-blur flex items-center justify-center cursor-pointer"
+  >
+    <svg class="w-6 h-6 group-hover:-translate-y-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <!-- Script de Recherche Temps Réel & Bouton Retour Haut -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
@@ -451,6 +462,27 @@ const uneEnquete = enquetes[0]; // Dossier majeur à la Une (#01)
           if (cardsCount) {
             cardsCount.textContent = `${visibleCount} / 26 Dossiers Visibles`;
           }
+        });
+      }
+
+      // Gestion du Bouton Retour en Haut de Page
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+          } else {
+            backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+          }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
         });
       }
     });
