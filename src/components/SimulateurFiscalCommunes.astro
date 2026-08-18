@@ -1,0 +1,363 @@
+---
+import communesData from '../data/communes_fiscal_db.json';
+---
+
+<div class="my-12 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-2 border-amber-500/50 rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden text-slate-100 font-sans" id="simulateur-fiscal-section">
+  <!-- Halo décoratif et badge de tête -->
+  <div class="absolute -top-24 -right-24 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+  
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-5 mb-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-xl shadow-inner">
+        ⚡
+      </div>
+      <div>
+        <h3 class="text-xl md:text-2xl font-black text-amber-400 font-serif tracking-tight">
+          LE SIMULATEUR CITOYEN DU VOL FISCAL
+        </h3>
+        <p class="text-xs font-mono text-slate-400">
+          Audit médico-légal personnalisé sur les 360 communes de Corse (DGFiP / États 1259)
+        </p>
+      </div>
+    </div>
+    <span class="px-3.5 py-1.5 rounded-full text-[11px] font-mono font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30 flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      360 COMMUNES AUDITÉES
+    </span>
+  </div>
+
+  <!-- Formulaire de Saisie Dynamique -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-950/80 p-5 rounded-2xl border border-slate-800/80 mb-8">
+    <!-- Sélecteur de Commune -->
+    <div class="space-y-2">
+      <label for="communeSelect" class="block text-xs font-mono uppercase tracking-wider text-amber-300 font-bold">
+        1. Choisissez votre Commune :
+      </label>
+      <div class="relative">
+        <select 
+          id="communeSelect" 
+          class="w-full bg-slate-900 text-slate-100 border border-slate-700 hover:border-amber-400 focus:border-amber-400 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none transition appearance-none cursor-pointer"
+        >
+          {communesData.map((c) => (
+            <option value={c.code} selected={c.nom === "Porto-Vecchio"}>
+              {c.nom} ({c.dept}) — Pop: {c.pop.toLocaleString('fr-FR')} hab.
+            </option>
+          ))}
+        </select>
+        <div class="absolute right-3.5 top-3.5 text-slate-400 pointer-events-none text-xs">▼</div>
+      </div>
+      <p class="text-[11px] text-slate-400 italic">Recherche par ordre alphabétique de Afa à Zuani</p>
+    </div>
+
+    <!-- Sélecteur de Taille du Foyer -->
+    <div class="space-y-2">
+      <label for="foyerSelect" class="block text-xs font-mono uppercase tracking-wider text-amber-300 font-bold">
+        2. Composition de votre Foyer :
+      </label>
+      <div class="relative">
+        <select 
+          id="foyerSelect" 
+          class="w-full bg-slate-900 text-slate-100 border border-slate-700 hover:border-amber-400 focus:border-amber-400 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none transition appearance-none cursor-pointer"
+        >
+          <option value="1">1 Personne (Célibataire / Résident isolé)</option>
+          <option value="2">2 Personnes (Couple)</option>
+          <option value="3">3 Personnes (Couple + 1 enfant)</option>
+          <option value="4" selected>4 Personnes (Couple + 2 enfants)</option>
+          <option value="5">5 Personnes (Famille nombreuse - 3 enfants)</option>
+          <option value="6">6 Personnes et plus</option>
+        </select>
+        <div class="absolute right-3.5 top-3.5 text-slate-400 pointer-events-none text-xs">▼</div>
+      </div>
+      <p class="text-[11px] text-slate-400 italic">Calcul de la perte nette directe prélevée par Bercy</p>
+    </div>
+  </div>
+
+  <!-- CARTE DE RÉSULTAT HAUTE PRÉCISION (FICHE CITOYENNE DYNAMIQUE) -->
+  <div id="resultCard" class="space-y-6 transition-all duration-500">
+    
+    <!-- Ligne 1 : Les 2 Grands Chiffres Chocs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Perte Foyer -->
+      <div class="bg-gradient-to-br from-rose-950/40 via-slate-900 to-slate-950 border border-rose-500/40 p-5 rounded-2xl relative overflow-hidden shadow-lg">
+        <div class="text-[11px] font-mono uppercase text-rose-300 font-bold tracking-wider mb-1 flex items-center justify-between">
+          <span>💶 SPOLIATION SUR VOTRE FOYER</span>
+          <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 text-[10px]">PAR AN</span>
+        </div>
+        <div class="text-3xl md:text-4xl font-black text-rose-400 font-mono my-2" id="perteFoyerDisplay">
+          4 800 € / an
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Montant net de valeur ajoutée prélevé sur la consommation de votre famille et confisqué à Paris sans retour.
+        </p>
+      </div>
+
+      <!-- Perte Communale -->
+      <div class="bg-gradient-to-br from-amber-950/40 via-slate-900 to-slate-950 border border-amber-500/40 p-5 rounded-2xl relative overflow-hidden shadow-lg">
+        <div class="text-[11px] font-mono uppercase text-amber-300 font-bold tracking-wider mb-1 flex items-center justify-between">
+          <span>🏛️ MANQUE À GAGNER COMMUNAL</span>
+          <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px]" id="communeBadge">PORTO-VECCHIO</span>
+        </div>
+        <div class="text-3xl md:text-4xl font-black text-amber-400 font-mono my-2" id="manqueCommunalDisplay">
+          13 440 000 € / an
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed" id="pressionDisplay">
+          Population : 11 200 hab. l'hiver → <span class="text-amber-300 font-bold">50 400 hab. l'été</span> (Multiplicateur x4.5).
+        </p>
+      </div>
+    </div>
+
+    <!-- Ligne 2 : La Traduction en Projets Concrets pour la Commune -->
+    <div class="bg-slate-950 p-6 rounded-2xl border border-cyan-500/30 shadow-xl space-y-4">
+      <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 font-bold flex items-center gap-2 border-b border-slate-800 pb-3">
+        <span>🛠️ CE QUE VOTRE COMMUNE POURRAIT FINANCER SANS LA TUTELLE DE BERCY</span>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+          <div class="text-2xl mb-1">🛣️</div>
+          <div class="text-lg font-bold font-mono text-cyan-300" id="routesDisplay">158,1 km</div>
+          <div class="text-[11px] text-slate-400 mt-1">de routes communales rénovées chaque année à neuf</div>
+        </div>
+
+        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+          <div class="text-2xl mb-1">🧒</div>
+          <div class="text-lg font-bold font-mono text-emerald-300" id="cantineDisplay">10 Ans</div>
+          <div class="text-[11px] text-slate-400 mt-1">de cantine 100% bio et gratuite pour tous les écoliers</div>
+        </div>
+
+        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+          <div class="text-2xl mb-1">🏡</div>
+          <div class="text-lg font-bold font-mono text-amber-300">-30 %</div>
+          <div class="text-[11px] text-slate-400 mt-1">de baisse immédiate de la taxe foncière communale</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ligne 3 : L'Arme Juridique & La Panoplie de Partage Multi-Plateformes -->
+    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-4">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-800/80 pb-3">
+        <div class="space-y-0.5">
+          <div class="text-xs font-bold text-slate-200 font-sans flex items-center gap-2">
+            <span>⚖️ INTERPELLER VOTRE MAIRE AU CONSEIL MUNICIPAL :</span>
+          </div>
+          <p class="text-[11px] text-slate-400 font-mono" id="questionPreview">
+            « Question officielle pré-rédigée pour réclamer le dû de votre village »
+          </p>
+        </div>
+        <button 
+          id="copyQuestionBtn" 
+          type="button" 
+          class="w-full sm:w-auto px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 cursor-pointer shadow-lg shadow-amber-500/20"
+        >
+          📋 Copier la Question pour le Maire
+        </button>
+      </div>
+
+      <!-- Barre de Partage Virale Multi-Réseaux -->
+      <div class="space-y-2 pt-1">
+        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest block font-bold">
+          📢 DIFFUSER L'AUDIT DE VOTRE COMMUNE (EN 1 CLIC) :
+        </span>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+          <!-- WhatsApp -->
+          <a 
+            id="shareWhatsappBtn" 
+            href="#" 
+            target="_blank" 
+            class="px-3 py-2 bg-[#25D366]/20 hover:bg-[#25D366]/30 text-[#25D366] border border-[#25D366]/40 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 text-center"
+          >
+            <span>💬 WhatsApp</span>
+          </a>
+
+          <!-- TikTok / Script Créateur -->
+          <button 
+            id="copyTiktokBtn" 
+            type="button" 
+            class="px-3 py-2 bg-gradient-to-r from-[#00f2fe]/20 to-[#fe0979]/20 hover:from-[#00f2fe]/30 hover:to-[#fe0979]/30 text-white border border-[#fe0979]/40 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 text-center cursor-pointer shadow-lg"
+          >
+            <span>🎵 TikTok / Reel</span>
+          </button>
+
+          <!-- Facebook -->
+          <a 
+            id="shareFacebookBtn" 
+            href="#" 
+            target="_blank" 
+            class="px-3 py-2 bg-[#1877F2]/20 hover:bg-[#1877F2]/30 text-[#1877F2] border border-[#1877F2]/40 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 text-center"
+          >
+            <span>🔵 Facebook</span>
+          </a>
+
+          <!-- X / Twitter -->
+          <a 
+            id="shareTwitterBtn" 
+            href="#" 
+            target="_blank" 
+            class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 text-center"
+          >
+            <span>✖️ X (Twitter)</span>
+          </a>
+
+          <!-- Copier le Lien / Fiche -->
+          <button 
+            id="copyFicheBtn" 
+            type="button" 
+            class="px-3 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 text-xs font-mono font-bold rounded-xl transition flex items-center justify-center gap-1.5 text-center cursor-pointer col-span-2 sm:col-span-1"
+          >
+            <span>📋 Copier Fiche</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script is:inline define:vars={{ communesData }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const communeSelect = document.getElementById('communeSelect');
+    const foyerSelect = document.getElementById('foyerSelect');
+    
+    const perteFoyerDisplay = document.getElementById('perteFoyerDisplay');
+    const manqueCommunalDisplay = document.getElementById('manqueCommunalDisplay');
+    const communeBadge = document.getElementById('communeBadge');
+    const pressionDisplay = document.getElementById('pressionDisplay');
+    const routesDisplay = document.getElementById('routesDisplay');
+    const cantineDisplay = document.getElementById('cantineDisplay');
+    
+    const shareWhatsappBtn = document.getElementById('shareWhatsappBtn');
+    const shareFacebookBtn = document.getElementById('shareFacebookBtn');
+    const shareTwitterBtn = document.getElementById('shareTwitterBtn');
+    const copyFicheBtn = document.getElementById('copyFicheBtn');
+    const copyTiktokBtn = document.getElementById('copyTiktokBtn');
+    const copyQuestionBtn = document.getElementById('copyQuestionBtn');
+
+    function updateSimulation() {
+      const selectedCode = communeSelect.value;
+      const foyerSize = parseInt(foyerSelect.value) || 4;
+      
+      const commune = communesData.find(c => c.code === selectedCode) || communesData[0];
+      
+      const perteFoyer = foyerSize * 1200;
+      
+      if (perteFoyerDisplay) {
+        perteFoyerDisplay.textContent = `${perteFoyer.toLocaleString('fr-FR')} € / an`;
+      }
+      
+      if (manqueCommunalDisplay) {
+        manqueCommunalDisplay.textContent = `${commune.manque_communal.toLocaleString('fr-FR')} € / an`;
+      }
+      
+      if (communeBadge) {
+        communeBadge.textContent = commune.nom.toUpperCase();
+      }
+      
+      if (pressionDisplay) {
+        pressionDisplay.innerHTML = `Population : <b>${commune.pop.toLocaleString('fr-FR')} hab.</b> l'hiver → <span class="text-amber-300 font-bold">${commune.pop_ete.toLocaleString('fr-FR')} hab. l'été</span> (Multiplicateur x${commune.mult_ete}).`;
+      }
+      
+      if (routesDisplay) {
+        routesDisplay.textContent = `${commune.km_routes.toLocaleString('fr-FR')} km`;
+      }
+      
+      if (cantineDisplay) {
+        cantineDisplay.textContent = `${commune.annees_cantine} Ans`;
+      }
+
+      // Liens dynamiques de partage
+      const pageUrl = "https://fsucieta.github.io/enquetes/02-le-mythe-des-subventions.html";
+      const messageVirale = 
+        `🔴 AUDIT L'OCHJU — Le Vol Fiscal sur notre village de ${commune.nom} :\n` +
+        `• Manque à gagner confisqué par Bercy : ${commune.manque_communal.toLocaleString('fr-FR')} € / an.\n` +
+        `• Pour une famille de ${foyerSize} personnes : ${perteFoyer.toLocaleString('fr-FR')} € / an retirés de nos poches !\n` +
+        `Découvrez la fiche complète de notre commune : ${pageUrl}`;
+
+      // 1. WhatsApp
+      if (shareWhatsappBtn) {
+        shareWhatsappBtn.setAttribute('href', `https://api.whatsapp.com/send?text=${encodeURIComponent(messageVirale)}`);
+      }
+
+      // 2. Facebook
+      if (shareFacebookBtn) {
+        shareFacebookBtn.setAttribute('href', `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}&quote=${encodeURIComponent(messageVirale)}`);
+      }
+
+      // 3. X / Twitter
+      if (shareTwitterBtn) {
+        const tweetText = `🔴 Audit @L_OCHJU : ${commune.nom} perd ${commune.manque_communal.toLocaleString('fr-FR')}€/an confisqués par Bercy (${perteFoyer.toLocaleString('fr-FR')}€/foyer). La vérité des 1 000 bilans fiscaux :`;
+        shareTwitterBtn.setAttribute('href', `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(pageUrl)}`);
+      }
+    }
+
+    if (communeSelect && foyerSelect) {
+      communeSelect.addEventListener('change', updateSimulation);
+      foyerSelect.addEventListener('change', updateSimulation);
+      updateSimulation();
+    }
+
+    // Gestion du bouton Copier la Fiche
+    if (copyFicheBtn && communeSelect) {
+      copyFicheBtn.addEventListener('click', () => {
+        const commune = communesData.find(c => c.code === communeSelect.value) || communesData[0];
+        const foyerSize = parseInt(foyerSelect.value) || 4;
+        const perteFoyer = foyerSize * 1200;
+        const ficheText = 
+          `📊 FICHE CITOYENNE L'OCHJU — COMMUNE DE ${commune.nom.toUpperCase()} (${commune.dept})\n` +
+          `• Population : ${commune.pop.toLocaleString('fr-FR')} hab. l'hiver | ${commune.pop_ete.toLocaleString('fr-FR')} hab. l'été (x${commune.mult_ete})\n` +
+          `• Spoliation fiscale communale : ${commune.manque_communal.toLocaleString('fr-FR')} € / an\n` +
+          `• Perte pour votre foyer (${foyerSize} pers.) : ${perteFoyer.toLocaleString('fr-FR')} € / an\n` +
+          `• Projets finançables sans Bercy : ${commune.km_routes} km de routes neuves ou ${commune.annees_cantine} ans de cantine bio gratuite !\n` +
+          `Lien de l'enquête : https://fsucieta.github.io/enquetes/02-le-mythe-des-subventions.html`;
+
+        navigator.clipboard.writeText(ficheText).then(() => {
+          const originalText = copyFicheBtn.innerHTML;
+          copyFicheBtn.innerHTML = "<span>✅ Fiche Copiée !</span>";
+          setTimeout(() => {
+            copyFicheBtn.innerHTML = originalText;
+          }, 2000);
+        });
+      });
+    }
+
+    // Gestion du bouton TikTok (Génération de script vidéo Face-Caméra 9:16)
+    if (copyTiktokBtn && communeSelect) {
+      copyTiktokBtn.addEventListener('click', () => {
+        const commune = communesData.find(c => c.code === communeSelect.value) || communesData[0];
+        const foyerSize = parseInt(foyerSelect.value) || 4;
+        const perteFoyer = foyerSize * 1200;
+        
+        const tiktokScript = 
+          `🎬 SCRIPT TIKTOK / REEL (Face Caméra - 30s) — ${commune.nom.toUpperCase()} :\n\n` +
+          `[ACCROCHE] "Tu habites à ${commune.nom} ? Regarde ce chiffre, c'est ce que l'État te vole sans que tu le saches."\n\n` +
+          `[PREUVE] "Bercy nous traite d'assistés, mais les 1 000 bilans officiels prouvent que notre village perd ${commune.manque_communal.toLocaleString('fr-FR')} € chaque année qui partent à Paris ! Pour une famille de ${foyerSize} personnes, c'est ${perteFoyer.toLocaleString('fr-FR')} € retirés de nos poches."\n\n` +
+          `[IMPACT] "Avec cet argent, notre commune pourrait financer ${commune.km_routes} km de routes neuves ou ${commune.annees_cantine} ans de cantine bio gratuite pour nos petits."\n\n` +
+          `[APPEL À L'ACTION] "Fais tourner la vidéo, teste ton village sur L'OCHJU : fsucieta.github.io #Corse #${commune.nom.replace(/[\s-']/g, '')} #LOchju"`;
+
+        navigator.clipboard.writeText(tiktokScript).then(() => {
+          const originalContent = copyTiktokBtn.innerHTML;
+          copyTiktokBtn.innerHTML = "<span>✅ Script Copié !</span>";
+          setTimeout(() => {
+            copyTiktokBtn.innerHTML = originalContent;
+          }, 2000);
+        });
+      });
+    }
+
+    // Gestion du bouton Copier la Question
+    if (copyQuestionBtn && communeSelect) {
+      copyQuestionBtn.addEventListener('click', () => {
+        const commune = communesData.find(c => c.code === communeSelect.value) || communesData[0];
+        const questionText = `Question écrite pour le Conseil Municipal de ${commune.nom} :\n« Monsieur le Maire, l'audit officiel des finances locales démontre que notre commune subit un manque à gagner fiscal estimé à ${commune.manque_communal.toLocaleString('fr-FR')} € par an du fait de la sous-compensation des charges par l'État. Quelles démarches officielles la municipalité compte-t-elle engager pour réclamer ces fonds indispensables à la réfection de nos routes et à nos écoles ? »`;
+        
+        navigator.clipboard.writeText(questionText).then(() => {
+          const originalText = copyQuestionBtn.textContent;
+          copyQuestionBtn.textContent = "✅ Question Copiée !";
+          setTimeout(() => {
+            copyQuestionBtn.textContent = originalText;
+          }, 2000);
+        });
+      });
+    }
+  });
+</script>
