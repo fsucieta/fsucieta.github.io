@@ -15,7 +15,19 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <!-- Initialisation Immédiate du Thème (Persistance & Anti-Flash) -->
+    <script is:inline>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        } else {
+          document.documentElement.classList.remove('light');
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
     
     <!-- Tailwind CSS CDN avec directive is:inline obligatoire pour Astro -->
     <script is:inline src="https://cdn.tailwindcss.com"></script>
@@ -54,7 +66,40 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
   </head>
   <body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen transition-colors duration-300">
     <slot />
-    
+
+    <!-- Bouton Flottant Global de Retour en Haut de Page ("Back to Top") -->
+    <button 
+      id="globalBackToTopBtn" 
+      title="Retourner en haut de page"
+      aria-label="Retourner en haut de page"
+      class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 shadow-2xl hover:bg-amber-500 hover:text-slate-950 hover:border-amber-400 transition-all duration-300 opacity-0 pointer-events-none translate-y-4 group backdrop-blur flex items-center justify-center cursor-pointer"
+    >
+      <svg class="w-6 h-6 group-hover:-translate-y-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
+
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('globalBackToTopBtn');
+        if (btn) {
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+              btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+              btn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            } else {
+              btn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+              btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+          });
+
+          btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      });
+    </script>
+
     <!-- Leaflet JS -->
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   </body>
@@ -113,6 +158,22 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05) !important;
   }
 
+  html.light nav {
+    background-color: rgba(250, 248, 245, 0.96) !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  html.light nav a {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #334155 !important;
+  }
+
+  html.light nav a:hover {
+    border-color: #b8860b !important;
+    color: #b8860b !important;
+  }
+
   html.light h1, html.light h2, html.light h3, html.light h4, 
   html.light h1 a, html.light h2 a, html.light h3 a, html.light h4 a {
     color: #0f172a !important;
@@ -130,12 +191,30 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
   html.light #foncier-dvf-section,
   html.light #dvfDetailPanel,
   html.light .bg-slate-950,
+  html.light .bg-slate-950\/60,
+  html.light .bg-slate-950\/80,
+  html.light .bg-slate-950\/90,
   html.light .bg-slate-900,
+  html.light .bg-slate-900\/90,
   html.light .bg-slate-800 {
     background-color: #ffffff !important;
     border-color: #cbd5e1 !important;
     color: #0f172a !important;
     box-shadow: 0 4px 15px -3px rgba(15, 23, 42, 0.06) !important;
+  }
+
+  /* 4 Piliers & 27 Dossiers en Mode Jour */
+  html.light .bg-slate-950\/60:hover,
+  html.light .bg-slate-950\/80:hover {
+    background-color: #f8fafc !important;
+    border-color: #b8860b !important;
+    box-shadow: 0 8px 25px -4px rgba(184, 134, 11, 0.15) !important;
+  }
+
+  html.light .bg-slate-800 {
+    background-color: #f1f5f9 !important;
+    border-color: #cbd5e1 !important;
+    color: #475569 !important;
   }
 
   html.light .fiche-card:hover {
@@ -156,6 +235,54 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
   html.light .text-slate-400, 
   html.light .text-slate-500 {
     color: #475569 !important;
+  }
+
+  /* Badges & Pillules en Mode Jour */
+  html.light .bg-emerald-500\/10,
+  html.light .bg-emerald-500\/20 {
+    background-color: #ecfdf5 !important;
+    border-color: #10b981 !important;
+    color: #047857 !important;
+  }
+
+  html.light .bg-blue-500\/10,
+  html.light .bg-blue-500\/20 {
+    background-color: #eff6ff !important;
+    border-color: #3b82f6 !important;
+    color: #1d4ed8 !important;
+  }
+
+  /* Tableaux en Mode Jour */
+  html.light .article-body table {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08) !important;
+  }
+
+  html.light .article-body th {
+    background-color: #f8fafc !important;
+    color: #b8860b !important;
+    border-bottom: 2px solid #b8860b !important;
+  }
+
+  html.light .article-body td {
+    color: #334155 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  html.light .article-body tr:hover td {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  html.light .article-body blockquote {
+    background: #fffbe8 !important;
+    border-left: 5px solid #b8860b !important;
+    box-shadow: 0 4px 15px -3px rgba(184, 134, 11, 0.1) !important;
+  }
+
+  html.light .article-body blockquote p {
+    color: #78350f !important;
   }
 
   /* Surcharges Thème Clair pour le Radar Thermique */
