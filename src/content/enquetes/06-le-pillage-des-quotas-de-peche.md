@@ -1,6 +1,6 @@
 ---
 id: 6
-title: "Enquête 06 : L'Extinction Programmée de nos Pêcheurs — Du Cartel du Carburant au Hold-Up des Espèces Nobles"
+title: "Enquête 06 : Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
 subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière (187,5 M€ de sanction), le monopole sétois et le pillage côtier étouffent nos marins et font exploser le prix du poisson pour les foyers corses"
 category: "MER & PÊCHE"
 ref: "LOCHJU-AUDIT-ENQUETE-06"
