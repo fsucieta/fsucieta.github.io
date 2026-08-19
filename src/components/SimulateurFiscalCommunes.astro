@@ -78,18 +78,36 @@ import communesData from '../data/communes_fiscal_db.json';
     
     <!-- Ligne 1 : Les 2 Grands Chiffres Chocs -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <!-- Perte Foyer -->
-      <div class="bg-gradient-to-br from-rose-950/40 via-slate-900 to-slate-950 border border-rose-500/40 p-5 rounded-2xl relative overflow-hidden shadow-lg">
-        <div class="text-[11px] font-mono uppercase text-rose-300 font-bold tracking-wider mb-1 flex items-center justify-between">
-          <span>💶 SPOLIATION SUR VOTRE FOYER</span>
-          <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 text-[10px]">PAR AN</span>
+      <!-- Perte Foyer Haute Précision -->
+      <div class="bg-gradient-to-br from-rose-950/40 via-slate-900 to-slate-950 border border-rose-500/40 p-5 rounded-2xl relative overflow-hidden shadow-lg flex flex-col justify-between space-y-3">
+        <div>
+          <div class="text-[11px] font-mono uppercase text-rose-300 font-bold tracking-wider mb-1 flex items-center justify-between">
+            <span>💶 SPOLIATION SUR VOTRE FOYER</span>
+            <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 text-[10px] font-mono font-bold" id="perteMensuelleDisplay">400 € / MOIS</span>
+          </div>
+          <div class="text-3xl md:text-4xl font-black text-rose-400 font-mono my-1" id="perteFoyerDisplay">
+            4 800 € / an
+          </div>
+          <p class="text-[11px] text-slate-300 leading-relaxed">
+            Pouvoir d'achat direct prélevé sur la consommation de votre famille et confisqué à Paris sans retour.
+          </p>
         </div>
-        <div class="text-3xl md:text-4xl font-black text-rose-400 font-mono my-2" id="perteFoyerDisplay">
-          4 800 € / an
+
+        <!-- Ventilation Médico-Légale en Direct -->
+        <div class="bg-slate-950/80 p-3 rounded-xl border border-rose-500/20 space-y-1.5 text-[10px] font-mono">
+          <div class="flex justify-between text-slate-300">
+            <span>🛒 IS Grandes Surfaces (Paris) :</span>
+            <b class="text-rose-300" id="ventilationIsDisplay">2 120 € / an</b>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>🏖️ TVA Touristes non reversée :</span>
+            <b class="text-amber-300" id="ventilationTvaDisplay">1 680 € / an</b>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>🚢 Surcoût Bateaux & Énergie :</span>
+            <b class="text-cyan-300" id="ventilationTransportDisplay">1 000 € / an</b>
+          </div>
         </div>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          Montant net de valeur ajoutée prélevé sur la consommation de votre famille et confisqué à Paris sans retour.
-        </p>
       </div>
 
       <!-- Perte Communale -->
@@ -240,9 +258,33 @@ import communesData from '../data/communes_fiscal_db.json';
       const commune = communesData.find(c => c.code === selectedCode) || communesData[0];
       
       const perteFoyer = foyerSize * 1200;
+      const perteMensuelle = Math.round(perteFoyer / 12);
+      const ventilationIs = foyerSize * 530;
+      const ventilationTva = foyerSize * 420;
+      const ventilationTransport = foyerSize * 250;
       
       if (perteFoyerDisplay) {
         perteFoyerDisplay.textContent = `${perteFoyer.toLocaleString('fr-FR')} € / an`;
+      }
+
+      const perteMensuelleDisplay = document.getElementById('perteMensuelleDisplay');
+      if (perteMensuelleDisplay) {
+        perteMensuelleDisplay.textContent = `${perteMensuelle.toLocaleString('fr-FR')} € / MOIS`;
+      }
+
+      const ventilationIsDisplay = document.getElementById('ventilationIsDisplay');
+      if (ventilationIsDisplay) {
+        ventilationIsDisplay.textContent = `${ventilationIs.toLocaleString('fr-FR')} € / an`;
+      }
+
+      const ventilationTvaDisplay = document.getElementById('ventilationTvaDisplay');
+      if (ventilationTvaDisplay) {
+        ventilationTvaDisplay.textContent = `${ventilationTva.toLocaleString('fr-FR')} € / an`;
+      }
+
+      const ventilationTransportDisplay = document.getElementById('ventilationTransportDisplay');
+      if (ventilationTransportDisplay) {
+        ventilationTransportDisplay.textContent = `${ventilationTransport.toLocaleString('fr-FR')} € / an`;
       }
       
       if (manqueCommunalDisplay) {
@@ -263,6 +305,11 @@ import communesData from '../data/communes_fiscal_db.json';
       
       if (cantineDisplay) {
         cantineDisplay.textContent = `${commune.annees_cantine} Ans`;
+      }
+
+      const questionPreview = document.getElementById('questionPreview');
+      if (questionPreview) {
+        questionPreview.textContent = `« Question officielle pour ${commune.nom} (${commune.manque_communal.toLocaleString('fr-FR')} €/an réclamés) »`;
       }
 
       // Liens dynamiques de partage
