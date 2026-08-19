@@ -8,7 +8,6 @@ author: "Cellule d'Investigation Financière L'OCHJU"
 date: "Août 2026"
 tool: "DGFiP / Cour des Comptes / Insee / BODACC / États 1259 / Bufitonu.fr"
 chapeau: "Pendant que les plateaux télé parisiens accusent la Corse de vivre aux crochets de la République, la réalité des chiffres officiels révèle un braquage silencieux : chaque année, l'État prélève 1,45 milliard d'euros sur l'île et n'en reverse que 1,03 milliard. L'analyse médico-légale de 1 000 bilans officiels (les 360 matrices budgétaires des mairies, les liasses fiscales des multinationales et les comptes de Bercy) prouve qu'un solde net de 420 millions d'euros par an disparaît dans les caisses centrales de Paris. C'est l'équivalent direct de 1 200 € retirés chaque année de la poche de chaque homme, femme et enfant en Corse."
-math: "\\text{Spoliation Nette Annuelle par Habitant} = \\frac{\\text{Recettes Fiscales Captées (1,45 Md€)} - \\text{Dépenses Publiques Réelles de l'État (1,03 Md€)}}{\\text{350 000 Habitants}} = \\mathbf{1\\,200\\text{ € / an et par personne}}"
 image: "img_enquete_02.webp"
 imageCaption: "📷 Document Photographique Officiel — Palais Lantivy (Hôtel de Préfecture & Siège de l'État en Corse)"
 sources:
@@ -70,7 +69,7 @@ Mais au moment de payer l'**Impôt sur les Sociétés (IS à 25 %)** sur les bé
 1. Les ordinateurs des magasins n'envoient pas la déclaration fiscale en Corse.
 2. Tout est centralisé au siège social situé à Paris, à Nanterre ou dans les Hauts-de-Seine.
 
-$$\text{IS Réalisé en Corse mais Déclaré à Paris} = \mathbf{185 \text{ Millions d'Euros chaque année}}$$
+> 💡 **Le Chiffre Clé** : Ce sont **185 Millions d'Euros d'Impôt sur les Sociétés** réalisés sur le sol corse qui sont déclarés et encaissés chaque année directement en Île-de-France.
 
 | Secteur Économique Insulaire | Chiffre d'Affaires en Corse | Localisation du Siège Social | Perte Fiscale pour la Corse |
 | :--- | :--- | :--- | :--- |
@@ -95,7 +94,7 @@ Pourtant, une investigation médico-légale sur les circuits d'approvisionnement
 2. **La liquidation des taxes hors de Corse** : Au moment de l'expédition maritime, les droits d'accise sont liquidés et payés auprès de la recette des douanes de PACA/Marseille au lieu d'être déclarés comme une mise à la consommation en Corse.
 3. **L'omerta des états-majors** : Des témoignages internes recueillis auprès d'anciens cadres commerciaux de l'industrie des spiritueux confirment que toute tentative de dénoncer ou de régulariser ce détournement fiscal au profit de la Corse s'est heurtée à des ruptures contractuelles et des protocoles de confidentialité stricts pour protéger les marges de la grande distribution.
 
-$$\text{Droits d'Accise sur les Spiritueux Évadés vers PACA/Bercy} = \mathbf{35 \text{ Millions d'Euros par an}}$$
+> 💡 **Le Chiffre Clé** : Ce sont **35 Millions d'Euros par an** de droits d'accise sur les spiritueux consommés en Corse qui sont captés par les douanes de PACA et le budget de Bercy au lieu d'être reversés à la Collectivité de Corse.
 
 ### 🎰 LA MANNE FANTÔME : 65 M€ DE TAXES SUR LES JEUX ET LE NUMÉRIQUE
 Chaque pari PMU, chaque ticket de la Française des Jeux (FDJ) gratté dans les bars de village et chaque achat en ligne (Amazon, Airbnb, Booking) génère **plus de 65 millions d'euros par an de taxes spécifiques perçues directement par le Trésor Public**, avec un taux de réallocation locale de **zéro centime d'euro**.
@@ -138,7 +137,7 @@ Mais ce que l'État ne vous dit jamais, c'est que ce montant est **bloqué au m�
 1. **Ce n'est pas un cadeau, c'est la loi** : L'article L. 4425-26 du Code Général des Collectivités Territoriales impose à l'État de compenser le coût de la mer pour garantir l'égalité des citoyens.
 2. **Le Gel Illégal depuis 17 ans** : Depuis 2009, alors que le prix du carburant des navires a pris **+140 %** et que le coût de la vie a explosé, l'État a refusé d'augmenter d'un seul centime son enveloppe de 187 M€.
 
-$$\text{Perte de Valeur Cumulée Infligée à la Corse (2009-2026)} = \mathbf{658 \text{ Millions d'Euros}}$$
+> 💡 **Le Chiffre Clé** : Ce gel illégal de l'enveloppe de continuité territoriale représente une **perte de valeur cumulée de 658 Millions d'Euros** confisquée à la Corse entre 2009 et 2026.
 
 | Année Fiscale | Dotation Versée par l'État | Montant Dû selon l'Inflation Réelle | Manque à Gagner Annuel |
 | :--- | :--- | :--- | :--- |
@@ -168,9 +167,7 @@ Le **Rapport d'Enquête du Sénat n° 714 sur l'électricité (480 pages, télé
 
 La démonstration mathématique est close : **la Corse est un territoire contributeur net qui enrichit l'État français de 420 millions d'euros chaque année**.
 
-Comment récupérer concrètement cet argent ? Pour garantir que nos propositions ne sont pas de simples vœux pieux mais un plan d'ingénierie financière applicable dès demain matin, la Cellule L'OCHJU a soumis chaque mesure à l'**Indice de Faisabilité Technique et Souveraine (IFTS)** :
-
-$$\text{IFTS} = \frac{\text{Solidité Juridique (Codes \& Jurisprudence)} \times \text{Rendement Financier Net}}{\text{Complexité Administrative de Mise en Œuvre}} \times 100 = \mathbf{94,8 / 100}$$
+Comment récupérer concrètement cet argent ? Pour garantir que nos propositions ne sont pas de simples vœux pieux mais un plan d'ingénierie financière applicable dès demain matin, la Cellule L'OCHJU a soumis chaque mesure à l'**Indice de Faisabilité Technique et Souveraine (IFTS)**. Cet indice combine la solidité des textes de loi, le rendement financier direct et la simplicité de mise en œuvre administrative pour obtenir une note globale de **94,8 / 100** :
 
 > 💡 **Qu'est-ce que l'Indice IFTS ?** C'est le thermomètre de faisabilité de L'OCHJU noté sur 100. Un score supérieur à 80/100 signifie que la mesure est **100 % légale**, qu'elle s'appuie sur des articles de loi déjà existants (Code des collectivités, droit européen des îles) et qu'elle peut être votée et appliquée immédiatement sans créer de bureaucratie supplémentaire.
 
