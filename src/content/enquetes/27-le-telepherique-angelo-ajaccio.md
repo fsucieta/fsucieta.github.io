@@ -3,8 +3,8 @@ id: 27
 title: "Enquête 27 : Téléphérique 'Angelo' — Le cheval de Troie pour détruire la SPL Muvitarra et privatiser le transport ajaccien"
 subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
 category: "INFRASTRUCTURES & POUVOIR"
-ref: "FSUCIETA-AUDIT-ENQUETE-27"
-author: "Cellule d'Investigation L'OCHJU — FSUCIETÀ"
+ref: "LOCHJU-AUDIT-ENQUETE-27"
+author: "Cellule d'Investigation L'OCHJU"
 date: "Août 2026"
 tool: "DGFiP / PTIC / MRAe / Registres du Commerce / DUP Préfecture"
 chapeau: "Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain 'Angelo' à 52 millions d'euros TTC dissimule l'un des montages les plus éclairants du capitalisme d'État. Enquête exclusive sur une triangulation parfaite entre le parti Horizons, la Caisse des Dépôts et un géant industriel privé."
@@ -102,4 +102,4 @@ $$\text{Indice d'Engrenage Systémique (IES)} = \frac{\text{Subvention PTIC (26,
 
 ---
 
-> **Verdict de la Cellule L'OCHJU — FSUCIETÀ** : Près d'un an après son inauguration, le téléphérique « Angelo » apporte la preuve matérielle qu'il ne constitue pas un véritable service public de transport : les citoyens n'y trouvent aucunement leur compte et les cabines tournent à vide. Pourtant, la CAPA impute l'intégralité du budget d'exploitation d’Angelo dans le budget des transports urbains au détriment des bus de proximité. Angelo est l'illustration d'un capitalisme d'État contemporain où les fonds publics financent une vitrine politique et une rente d'exploitation privée, pendant que les salariés de Muvitarra sont précarisés et que les contribuables ajacciens assument le déficit.
+> **Verdict de la Cellule L'OCHJU** : Près d'un an après son inauguration, le téléphérique « Angelo » apporte la preuve matérielle qu'il ne constitue pas un véritable service public de transport : les citoyens n'y trouvent aucunement leur compte et les cabines tournent à vide. Pourtant, la CAPA impute l'intégralité du budget d'exploitation d’Angelo dans le budget des transports urbains au détriment des bus de proximité. Angelo est l'illustration d'un capitalisme d'État contemporain où les fonds publics financent une vitrine politique et une rente d'exploitation privée, pendant que les salariés de Muvitarra sont précarisés et que les contribuables ajacciens assument le déficit.

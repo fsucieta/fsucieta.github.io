@@ -10,6 +10,7 @@ tool: "DGFiP / Cour des Comptes / Insee / BODACC / États 1259 / Bufitonu.fr"
 chapeau: "Pendant que les plateaux télé parisiens accusent la Corse de vivre aux crochets de la République, la réalité des chiffres officiels révèle un braquage silencieux : chaque année, l'État prélève 1,45 milliard d'euros sur l'île et n'en reverse que 1,03 milliard. L'analyse médico-légale de 1 000 bilans officiels (les 360 matrices budgétaires des mairies, les liasses fiscales des multinationales et les comptes de Bercy) prouve qu'un solde net de 420 millions d'euros par an disparaît dans les caisses centrales de Paris. C'est l'équivalent direct de 1 200 € retirés chaque année de la poche de chaque homme, femme et enfant en Corse."
 math: "\\text{Spoliation Nette Annuelle par Habitant} = \\frac{\\text{Recettes Fiscales Captées (1,45 Md€)} - \\text{Dépenses Publiques Réelles de l'État (1,03 Md€)}}{\\text{350 000 Habitants}} = \\mathbf{1\\,200\\text{ € / an et par personne}}"
 image: "img_enquete_02.webp"
+imageCaption: "📷 Document Photographique Officiel — Palais Lantivy (Hôtel de Préfecture & Siège de l'État en Corse)"
 sources:
   - name: "Sénat de la République : Rapport d'Information n° 488 (114 pages) — Continuité Territoriale, Transports & Gel des 187 M€"
     url: "../docs/senat-r22-488-continuite-corse.pdf"
@@ -86,10 +87,20 @@ L'analyse des statistiques de la Banque de France et de l'INSEE révèle une sec
 - **Seulement 38 % de cette épargne est réinjectée localement** sous forme de crédits immobiliers ou de prêts aux artisans insulaires.
 - **Les 62 % restants (soit 7,3 milliards d'euros de liquidités corses)** sont centralisés par les sièges bancaires parisiens (Caisse des Dépôts, BNP, Crédit Agricole) pour financer des projets d'infrastructures en Île-de-France et la dette publique de l'État.
 
+### 🥃 LE HOLD-UP DES ACCISES SUR LES ALCOOLS : 35 M€ CONFISQUÉS VIA PACA
+En vertu de **l'Article L. 4425-1 du Code Général des Collectivités Territoriales (CGCT)**, le produit des droits de consommation (accises) sur les alcools vendus en Corse doit être **intégralement reversé au budget de la Collectivité de Corse (CdC)**.
+
+Pourtant, une investigation médico-légale sur les circuits d'approvisionnement des spiritueux met à jour un siphonage silencieux :
+1. **Le contournement par les Centrales d'Achat PACA** : Les grands groupes de spiritueux (Pernod Ricard, etc.) approvisionnent les hypermarchés corses via leurs centrales d'achat basées à Marseille et en région PACA sous régime fiscal suspensif.
+2. **La liquidation des taxes hors de Corse** : Au moment de l'expédition maritime, les droits d'accise sont liquidés et payés auprès de la recette des douanes de PACA/Marseille au lieu d'être déclarés comme une mise à la consommation en Corse.
+3. **L'omerta des états-majors** : Des témoignages internes recueillis auprès d'anciens cadres commerciaux de l'industrie des spiritueux confirment que toute tentative de dénoncer ou de régulariser ce détournement fiscal au profit de la Corse s'est heurtée à des ruptures contractuelles et des protocoles de confidentialité stricts pour protéger les marges de la grande distribution.
+
+$$\text{Droits d'Accise sur les Spiritueux Évadés vers PACA/Bercy} = \mathbf{35 \text{ Millions d'Euros par an}}$$
+
 ### 🎰 LA MANNE FANTÔME : 65 M€ DE TAXES SUR LES JEUX ET LE NUMÉRIQUE
 Chaque pari PMU, chaque ticket de la Française des Jeux (FDJ) gratté dans les bars de village et chaque achat en ligne (Amazon, Airbnb, Booking) génère **plus de 65 millions d'euros par an de taxes spécifiques perçues directement par le Trésor Public**, avec un taux de réallocation locale de **zéro centime d'euro**.
 
-💡 **En clair pour chaque foyer corse** : Non seulement votre caddie au supermarché paie les impôts des métros parisiens, mais en plus, l'argent que vous mettez de côté sur votre Livret A est envoyé à Paris pour financer le continent pendant que les banques refusent des prêts à vos enfants pour bâtir sur leur propre terre !
+💡 **En clair pour chaque foyer corse** : Non seulement votre caddie au supermarché paie les impôts des métros parisiens, mais l'argent de votre pastis ou de vos spiritueux est déclaré à Marseille au lieu de financer vos hôpitaux, et l'épargne de votre Livret A est envoyée à Paris pendant qu'on refuse des prêts à vos enfants pour bâtir chez eux !
 
 ---
 

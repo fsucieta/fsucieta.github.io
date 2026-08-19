@@ -3,8 +3,8 @@ id: 7
 title: "Enquête 07 : Le Cadastre Minier Secret & le Plan IRM 2024 — Les richesses enfouies du sous-sol corse"
 subtitle: "Radiographie des permis d'exploration du BRGM : cuivre, antimoine, terres rares et métaux stratégiques sous contrôle central sans concertation insulaire"
 category: "MINES & ÉNERGIE"
-ref: "FSUCIETA-AUDIT-ENQUETE-07"
-author: "Cellule d'Investigation Géologique L'OCHJU — FSUCIETÀ"
+ref: "LOCHJU-AUDIT-ENQUETE-07"
+author: "Cellule d'Investigation Géologique L'OCHJU"
 date: "Août 2026"
 tool: "BRGM / SIG Mines / Code Minier"
 chapeau: "Présentée comme un territoire pauvre en ressources géologiques, la Corse abrite dans son socle schisteux et granitique d'anciens gisements miniers riches en métaux critiques (antimoine, cuivre, amiante, terres rares). Enquête sur les prospections discrètes et les concessions d'État délivrées au mépris du droit des communes."
@@ -56,7 +56,7 @@ L'exploitation de la banque de données du Bureau de Recherches Géologiques et 
 
     
 
-Avant d'envisager toute nouvelle prospection, l'audit environnemental mené par L'OCHJU — FSUCIETÀ met en lumière l'abandon honteux des friches minières historiques par l'État. Sur le site de l'ancienne mine d'antimoine de Meria ou sur le littoral de Canari (marqué par la décharge industrielle d'amiante), des milliers de tonnes de résidus de grattage et de scories riches en métaux lourds (arsenic, antimoine, plomb) continuent de se déverser dans les ruisseaux et la mer lors des épisodes pluvieux intenses.
+Avant d'envisager toute nouvelle prospection, l'audit environnemental mené par L'OCHJU met en lumière l'abandon honteux des friches minières historiques par l'État. Sur le site de l'ancienne mine d'antimoine de Meria ou sur le littoral de Canari (marqué par la décharge industrielle d'amiante), des milliers de tonnes de résidus de grattage et de scories riches en métaux lourds (arsenic, antimoine, plomb) continuent de se déverser dans les ruisseaux et la mer lors des épisodes pluvieux intenses.
 
     
 

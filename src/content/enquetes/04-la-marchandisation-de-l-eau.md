@@ -3,8 +3,8 @@ id: 4
 title: "Enquête 04 : La Corse, Laboratoire Mondial d’Émancipation — Le Plan de 175 Millions de m³ qui brise la Tutelle et Libère l’Île par l’Eau"
 subtitle: "Fin de la rente de Paris et des tuyaux percés de Veolia : la démonstration scientifique du Carré d'Or (0 % béton, 0 % fioul) pour conquérir l’autonomie hydraulique, alimentaire (ODARC) et énergétique absolue du Peuple Corse."
 category: "EAU & RESSOURCES"
-ref: "FSUCIETA-AUDIT-ENQUETE-04"
-author: "Cellule d'Investigation Environnementale L'OCHJU — FSUCIETÀ"
+ref: "LOCHJU-AUDIT-ENQUETE-04"
+author: "Cellule d'Investigation Environnementale L'OCHJU"
 date: "Août 2026"
 tool: "SISPEA / Data.gouv / OEHC / OFB / Bufitonu.fr"
 chapeau: "Qualifiée historiquement de château d'eau de la Méditerranée en raison de ses sommets enneigés et de ses 4 000 kilomètres de cours d'eau, la Corse fait face chaque été à des arrêtés préfectoraux de restriction d'eau potable d'une sévérité extrême. Derrière le discours officiel du dérèglement climatique, l'analyse médico-légale des rapports hydrologiques de l'OEHC, du système national SISPEA, des cartes du radar d'urbanisme Bufitonu.fr et des conventions de Délégation de Service Public (DSP) révèle un triple scandale de gestion : plus de 80 % à 85 % de l'eau de pluie s'écoule directement vers la mer sans être stockée, aggravé par l'imperméabilisation des sols, pendant que sur les volumes captés, 42 millions de m³ d'eau potable traitée s'évaporent dans le sol chaque année sous l'effet de réseaux fissurés non entretenus par les multinationales privées."
@@ -129,7 +129,7 @@ $$\text{Indice de Captation Commerciale (ICC)} = \frac{\text{Prix du m³ Factur�
 
 ---
 
-> **Verdict de la Cellule L'OCHJU — FSUCIETÀ** : L'eau corse n'est pas rare, elle est abandonnée à la mer l'hiver et marchandisée l'été. En faisant sauter les verrous juridiques de la résiliation pour faute et en déployant le Plan de Souveraineté Hydrique Globale sur 8 ans avec un Indice IFTS certifié de 89,2/100, la Corse mobilise **175 millions de m³ par an** (2 % de la pluie) sans aucun béton en surface. Ce plan garantit l'eau au robinet, la nourriture dans nos assiettes et la fermeture des centrales au fioul. La souveraineté de l'eau n'est pas un slogan : c'est un calendrier d'ingénierie et de régie publique.
+> **Verdict de la Cellule L'OCHJU** : L'eau corse n'est pas rare, elle est abandonnée à la mer l'hiver et marchandisée l'été. En faisant sauter les verrous juridiques de la résiliation pour faute et en déployant le Plan de Souveraineté Hydrique Globale sur 8 ans avec un Indice IFTS certifié de 89,2/100, la Corse mobilise **175 millions de m³ par an** (2 % de la pluie) sans aucun béton en surface. Ce plan garantit l'eau au robinet, la nourriture dans nos assiettes et la fermeture des centrales au fioul. La souveraineté de l'eau n'est pas un slogan : c'est un calendrier d'ingénierie et de régie publique.
 
 
 L'examen des indicateurs de performance publiés sur le système national SISPEA (Système d'Information sur les Services Publics d'Eau et d'Assainissement) révèle des chiffres alarmants. Dans une majorité de communes insulaires, le rendement des réseaux d'eau potable s'établit entre 50 % et 65 %. Cela signifie que **pour 100 litres d'eau prélevés dans les nappes ou captés dans les barrages et traités à grand renfort de produits chimiques, 35 à 50 litres s'évaporent dans le sol à cause de canalisations vétustes et fissurées**.

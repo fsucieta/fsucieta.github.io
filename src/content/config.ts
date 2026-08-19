@@ -14,6 +14,7 @@ const enquetes = defineCollection({
     chapeau: z.string(),
     math: z.string().optional(),
     image: z.string(),
+    imageCaption: z.string().optional(),
     sources: z.array(z.object({
       name: z.string(),
       url: z.string(),

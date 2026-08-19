@@ -3,8 +3,8 @@ id: 11
 title: "Enquête 11 : Le Sanctuaire Confisqué — Les 3 Diables Cachés du Cadastre Militaire et le Plan de Rétrocession de 2 800 Hectares qui Libère la Corse"
 subtitle: "BA 126 de Solenzara, Aspretto et Camp Raffalli : autopsie des baux de concession secrets de l'OTAN, 40 000 m³ d'eau captés sur les nappes de Travo, les sols pollués aux hydrocarbures F-34 et la démonstration du Carré d'Or Foncier (3,95 M€ de compensation, 327 ha vivriers pour l'ODARC et dépollution d'État)."
 category: "DÉFENSE & TERRITOIRE"
-ref: "FSUCIETA-AUDIT-ENQUETE-11"
-author: "Cellule d'Investigation Foncier-Défense L'OCHJU — FSUCIETÀ"
+ref: "LOCHJU-AUDIT-ENQUETE-11"
+author: "Cellule d'Investigation Foncier-Défense L'OCHJU"
 date: "Août 2026"
 tool: "TGPIE / DGFiP / DDTM / Géoportail de l'Urbanisme / Bufitonu.fr / BASOL / ODARC"
 chapeau: "Alors que la Corse étouffe sous une crise du logement sans précédent, une raréfaction dramatique du foncier agricole et l'asphyxie financière de ses communes, l'État sanctuarise plus de 2 800 hectares de terres littorales de premier ordre sous la mainmise exclusive du Ministère des Armées. L'analyse médico-légale des matrices du Tableau Général des Propriétés Immobilières de l'État (TGPIE), des servitudes d'utilité publique (SUP PM1/PM2/PT2), de la base BASOL des sites pollués et du cadastre analysé avec le partenaire foncier Bufitonu.fr révèle les 3 diables cachés du système militaire insulaire : la redevance dérisoire payée par les armées étrangères de l'OTAN pour mitrailler nos côtes, le pompage secret et prioritaire de 40 000 m³ d'eau potable dans la nappe alluvionnaire du Travo en pleine canicule, et la pollution non traitée aux hydrocarbures F-34 et métaux lourds. Démonstration du Plan de Rétrocession Souveraine validé par un Indice IFTS de 91,4 / 100."
@@ -154,7 +154,7 @@ Chaque année, ce sont près de **4 millions d'euros de ressources fiscales dire
 
 Comment briser cette tutelle cinquantenaire et restituer ces 2 800 hectares au service direct du Peuple Corse ?
 
-La Cellule d'Investigation L'OCHJU / FSUCIETÀ présente le **Plan de Rétrocession et de Souveraineté Foncière Décennal**, fondé sur des leviers d'ingénierie publique et validé par un **Indice de Faisabilité Technique et Souveraine (IFTS) certifié de 91,4 / 100** :
+La Cellule d'Investigation L'OCHJU / L'OCHJU présente le **Plan de Rétrocession et de Souveraineté Foncière Décennal**, fondé sur des leviers d'ingénierie publique et validé par un **Indice de Faisabilité Technique et Souveraine (IFTS) certifié de 91,4 / 100** :
 
 $$\text{IFTS} = \frac{\text{Légalité Administrative (CRPA/CGCT)} \times \text{Rendement Agricole & Urbain}}{\text{Coût de Dépollution & Réhabilitation}} \times 100 = \mathbf{91,4 / 100}$$
 
@@ -212,7 +212,7 @@ La confiscation du foncier corse n'est pas une fatalité. En application du Code
 
 $$\text{Rendement Social de Rétrocession (RSR)} = \frac{\text{Emplois Créés (Agricoles + Maritimes)} + \text{Logements Publics}}{\text{Coût de Restitution Fiscale}} = \mathbf{+12,4 \times \text{la valeur d'emprise}}$$
 
-| Domaine d'Audit Forensique | Donnée Réelle Constatée | Norme FSUCIETÀ / Régions d'Europe | Statut de Conformité |
+| Domaine d'Audit Forensique | Donnée Réelle Constatée | Norme L'OCHJU / Régions d'Europe | Statut de Conformité |
 | :--- | :--- | :--- | :--- |
 | **Emprise Foncière Défense** | **2 842 Hectares (Plaines Littorales)** | < 300 ha strictement opérationnels | 🔴 Surdimensionnement Majeur |
 | **Friches Inexploitées BA 126** | **327 Hectares abandonnés** | 0 ha en zone de tension foncière | 🔴 Rente Fiscale Bloquée |
@@ -223,7 +223,7 @@ $$\text{Rendement Social de Rétrocession (RSR)} = \frac{\text{Emplois Créés (
 
 ---
 
-> **Verdict de la Cellule L'OCHJU — FSUCIETÀ** : Les 2 800 hectares du Domaine de la Défense en Corse ne sont pas un sanctuaire intouchable, ils sont le vestige d'un aménagement colonial qui paralyse le logement, affame l'agriculture, pompe l'eau des nappes et assèche les caisses des villages. En activant la Redevance Foncier Militaire Réparatrice (3,95 M€/an), en libérant 250 hectares agricoles à Solenzara pour nourrir 45 000 habitants et en exigeant la dépollution intégrale aux frais de l'État, le Peuple Corse brise le verrou de la rente militaire et reconquiert sa souveraineté spatiale. La terre n'appartient pas aux casernes : elle appartient à ceux qui la vivent et la cultivent.
+> **Verdict de la Cellule L'OCHJU** : Les 2 800 hectares du Domaine de la Défense en Corse ne sont pas un sanctuaire intouchable, ils sont le vestige d'un aménagement colonial qui paralyse le logement, affame l'agriculture, pompe l'eau des nappes et assèche les caisses des villages. En activant la Redevance Foncier Militaire Réparatrice (3,95 M€/an), en libérant 250 hectares agricoles à Solenzara pour nourrir 45 000 habitants et en exigeant la dépollution intégrale aux frais de l'État, le Peuple Corse brise le verrou de la rente militaire et reconquiert sa souveraineté spatiale. La terre n'appartient pas aux casernes : elle appartient à ceux qui la vivent et la cultivent.
 
 ---
 
@@ -232,5 +232,5 @@ $$\text{Rendement Social de Rétrocession (RSR)} = \frac{\text{Emplois Créés (
   <br><br>
   <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
   <br>
-  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Foncier-Défense L'OCHJU / FSUCIETÀ</span>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Foncier-Défense L'OCHJU / L'OCHJU</span>
 </div>
