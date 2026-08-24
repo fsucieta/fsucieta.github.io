@@ -330,6 +330,13 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
+"28-le-naufrage-organise-de-la-muvitarra.md": {
+	id: "28-le-naufrage-organise-de-la-muvitarra.md";
+  slug: "28-le-naufrage-organise-de-la-muvitarra";
+  body: string;
+  collection: "enquetes";
+  data: InferEntrySchema<"enquetes">
+} & { render(): Render[".md"] };
 };
 
 	};

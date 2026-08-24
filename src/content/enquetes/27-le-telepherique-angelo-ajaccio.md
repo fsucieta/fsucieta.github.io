@@ -1,15 +1,16 @@
 ---
 id: 27
-title: "Enquête 27 : Téléphérique 'Angelo' — Le cheval de Troie pour détruire la SPL Muvitarra et privatiser le transport ajaccien"
+title: "Enquête 27 (Partie 1/2) : Téléphérique 'Angelo' — Le mirage à 52 M€ et la rente privée au détriment du réseau public"
 subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
 category: "INFRASTRUCTURES & POUVOIR"
-ref: "LOCHJU-AUDIT-ENQUETE-27"
+ref: "LOCHJU-AUDIT-ENQUETE-27-P1"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Août 2026"
 tool: "DGFiP / PTIC / MRAe / Registres du Commerce / DUP Préfecture"
 chapeau: "Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain 'Angelo' à 52 millions d'euros TTC dissimule l'un des montages les plus éclairants du capitalisme d'État. Enquête exclusive sur une triangulation parfaite entre le parti Horizons, la Caisse des Dépôts et un géant industriel privé."
 math: "\\text{Indice d'Engrenage Systémique (IES)} = \\frac{\\text{Subvention PTIC (26,7 M€)} + \\text{Rente Concession POMA (23,89 M€)}}{\\text{Taux de Remplissage Effectif constatés (RUP < 18\\%)}} \\times 100"
-image: "img_enquete_27.jpg"
+image: "img_enquete_27.webp"
+imageCaption: "📷 Pièce Administrative Officielle Vieillie — Arrêté Préfectoral de DUP n° 2A-2023-12-04-00001 (Téléporté Urbain Angelo | Préfecture de Corse-du-Sud)"
 sources:
   - name: "Préfecture de Corse-du-Sud : Arrêté de DUP n° 2A-2023-12-04-00001 (19,18 Mo)"
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/12343/79095/file/A%20P%20de%20DUP%20du%20t%C3%A9l%C3%A9port%C3%A9%20et%20MEC%20PLU%20.pdf"
@@ -30,7 +31,12 @@ sources:
   - name: "Préfecture de Corse-du-Sud : Arrêté d'Ouverture d'Enquête Publique du 10 Mai 2023 (2,28 Mo)"
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11409/72784/file/AP%20enqu%C3%AAte%20publique_projet%20ANGELO%20t%C3%A9l%C3%A9cabine%20Ajaccio.pdf"
     pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11409/72784/file/AP%20enqu%C3%AAte%20publique_projet%20ANGELO%20t%C3%A9l%C3%A9cabine%20Ajaccio.pdf"
-    sha256: "5b9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f"
+---
+
+> 🔗 **GRAND DOSSIER TRANSPORTS AJACCIENS (VOLET 1/2)** :  
+> Cet article constitue la première partie de notre enquête exclusive sur les mobilités d'Ajaccio.  
+> 👉 **[Lire la Partie 2/2 : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie et le Plan de Sauvetage](/enquetes/28-le-naufrage-organise-de-la-muvitarra/)**
+
 ---
 
 ## 💡 CHAPEAU
@@ -63,7 +69,7 @@ L'institution financière d'État se trouve ainsi des deux côtés de la table :
 
 ---
 
-## ACTE III. LES COULISSES DU TRACÉ : SURCOÛTS, FONCIER & VERROU ADMINISATIF
+## ACTE III. LES COULISSES DU TRACÉ : SURCOÛTS, FONCIER & VERROU ADMINISTRATIF
 
 Sur le terrain, l'exécution du tracé a donné lieu à une cascade de surcoûts et d'arrangements fonciers passés sous silence :
 - **La pollution du site militaire de Saint-Joseph** : Les terrassements de la station aval ont mis au jour une pollution aux hydrocarbures sur le parc à mazout militaire, imposant des fondations sur pieux profonds (**+2,4 millions d'euros d'avenants**).
