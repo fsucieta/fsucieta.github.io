@@ -70,11 +70,11 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
         <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">❌ DISCOURS OFFICIEL</span>
         <span class="text-[10px] font-mono text-slate-400">FAUX PROCÈS</span>
       </div>
-      <p class="font-serif italic text-slate-200 text-sm mb-4">« La Muvitarra coule à cause des salaires trop élevés des chauffeurs. »</p>
+      <p class="font-serif italic text-slate-200 text-sm mb-4">« La Muvitarra coule à cause des salaires des chauffeurs 40 % supérieurs aux moyennes nationales. »</p>
     </div>
     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs">
       <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LA VÉRITÉ DES CHIFFRES D'ÉTAT :</div>
-      <p class="text-slate-300 font-sans leading-relaxed">Les salaires moyens sont de <b>3 350 € bruts</b>, pile dans la moyenne nationale française (3 316 €), alors que le coût de la vie en Corse est 14 % plus élevé.</p>
+      <p class="text-slate-300 font-sans leading-relaxed">Les salaires moyens sont de <b>3 350 € bruts/mois (primes et 13e/14e mois inclus)</b>, strictement alignés sur la moyenne nationale française (3 316 €), alors que le coût de la vie en Corse est 14 % plus élevé.</p>
       <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Déclarations sociales & Liasses fiscales Greffe</div>
     </div>
   </div>
@@ -85,12 +85,12 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
         <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">❌ DISCOURS OFFICIEL</span>
         <span class="text-[10px] font-mono text-slate-400">COMMUNICATION</span>
       </div>
-      <p class="font-serif italic text-slate-200 text-sm mb-4">« La collectivité paye tout ce qu'elle doit à la régie publique. »</p>
+      <p class="font-serif italic text-slate-200 text-sm mb-4">« La collectivité paye tout ce qu'elle doit et la régie est seule responsable de son déficit. »</p>
     </div>
     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs">
-      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LA VÉRITÉ DES CHIFFRES D'ÉTAT :</div>
-      <p class="text-slate-300 font-sans leading-relaxed"><b>2,9 Millions d'euros d'impayés de la CAPA</b> (88 % du déficit de la régie). L'agglomération commande des lignes mais refuse de les régler.</p>
-      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Comptes d'exploitation certifiés SPL</div>
+      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 L'AVEU OFFICIEL DE LA CAPA :</div>
+      <p class="text-slate-300 font-sans leading-relaxed">Sur <b>2,9 M€ d'impayés de lignes</b>, la CAPA a dû avouer elle-même dans son communiqué de crise avoir versé un <b>rattrapage rétroactif d'1,4 M€</b> et engager 250 k€/an supplémentaires.</p>
+      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Communiqué officiel CAPA (Déc. 2025) & Comptes SPL</div>
     </div>
   </div>
 
@@ -98,14 +98,14 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
     <div>
       <div class="flex items-center justify-between gap-2 mb-3">
         <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">❌ DISCOURS OFFICIEL</span>
-        <span class="text-[10px] font-mono text-slate-400">JURIDIQUE</span>
+        <span class="text-[10px] font-mono text-slate-400">JURIDIQUE & DREAL</span>
       </div>
-      <p class="font-serif italic text-slate-200 text-sm mb-4">« Le contrat est normal, régulier et parfaitement géré. »</p>
+      <p class="font-serif italic text-slate-200 text-sm mb-4">« Le contrat est parfaitement géré et les bus roulent en toute conformité légale. »</p>
     </div>
     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs">
-      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LA VÉRITÉ DES CHIFFRES D'ÉTAT :</div>
-      <p class="text-slate-300 font-sans leading-relaxed"><b>11 avenants bricolés en 8 ans et demi</b> pour étirer un contrat prévu pour 3 ans, bloquant volontairement l'indexation sur l'inflation.</p>
-      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Registre officiel des délibérations CAPA</div>
+      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LE COUPERET DE L'ÉTAT :</div>
+      <p class="text-slate-300 font-sans leading-relaxed"><b>Mise en demeure de la DREAL</b> pour capitaux propres négatifs (- 766 132 €) sous menace de retrait des 38 licences, et <b>11 avenants bricolés</b> pour étirer un contrat de 3 ans sans indexer l'inflation.</p>
+      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Mise en demeure DREAL Corse (UCS/MO/2023-461)</div>
     </div>
   </div>
 
@@ -113,14 +113,14 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
     <div>
       <div class="flex items-center justify-between gap-2 mb-3">
         <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">❌ DISCOURS OFFICIEL</span>
-        <span class="text-[10px] font-mono text-slate-400">FINANCES</span>
+        <span class="text-[10px] font-mono text-slate-400">BUDGET & NAVETTE</span>
       </div>
-      <p class="font-serif italic text-slate-200 text-sm mb-4">« L'argent des transports sert aux bus du quotidien de nos quartiers. »</p>
+      <p class="font-serif italic text-slate-200 text-sm mb-4">« L'argent des transports finance les bus de quartier et Angelo ne coûte rien au réseau. »</p>
     </div>
     <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs">
-      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LA VÉRITÉ DES CHIFFRES D'ÉTAT :</div>
-      <p class="text-slate-300 font-sans leading-relaxed">La dette transports a explosé à <b>25,9 M€ (54 % de toute la dette de l'agglo)</b>, engloutie à 75 % par le téléphérique Angelo.</p>
-      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Rapport d'Orientations Budgétaires ROB CAPA</div>
+      <div class="text-emerald-400 font-bold font-sans mb-1">🔍 LES CHIFFRES DES RAPPORTS CAPA (ROB) :</div>
+      <p class="text-slate-300 font-sans leading-relaxed">Dette globale portée à <b>81,95 M€</b> (ROB 2025), <b>65,8 M€</b> investis dans les transports (dont Angelo), et <b>subvention d'équilibre payée par Ajaccio pour la navette vers Porticcio</b> hors CAPA (ROB 2024, p. 17).</p>
+      <div class="mt-2 text-[10px] font-mono text-amber-400/80">📄 Pièce : Rapports d'Orientations Budgétaires ROB 2024 & 2025</div>
     </div>
   </div>
 </div>
