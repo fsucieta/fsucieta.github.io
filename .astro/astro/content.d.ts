@@ -155,9 +155,9 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
-"03-etude-comparative-outre-mer-europe.md": {
-	id: "03-etude-comparative-outre-mer-europe.md";
-  slug: "03-etude-comparative-outre-mer-europe";
+"03-le-manifeste-universel-du-sol.md": {
+	id: "03-le-manifeste-universel-du-sol.md";
+  slug: "03-le-manifeste-universel-du-sol";
   body: string;
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
