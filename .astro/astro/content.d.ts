@@ -337,13 +337,6 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
-"29-the-paoli-legacy-appel-international-usa.md": {
-	id: "29-the-paoli-legacy-appel-international-usa.md";
-  slug: "29-the-paoli-legacy-appel-international-usa";
-  body: string;
-  collection: "enquetes";
-  data: InferEntrySchema<"enquetes">
-} & { render(): Render[".md"] };
 };
 
 	};
