@@ -1,0 +1,119 @@
+---
+import { getCollection } from 'astro:content';
+import exactCadaDocs from '../data/exact_cada_docs.json';
+
+const allInvestigations = await getCollection('investigations');
+const investigations = allInvestigations.sort((a, b) => a.data.id - b.data.id);
+
+const heatmapData = investigations.map((e) => {
+  const id = e.data.id;
+  
+  let statusKey = 'red';
+  let statusLabel = '🔴 Redacted Document (Refusal / Silence > 30d)';
+  let badgeClass = 'bg-red-500/20 text-red-400 border-red-500/40';
+  let chipClass = 'bg-red-500/10 border-red-500/40 text-red-400 hover:bg-red-500/20';
+
+  if ([3, 6, 13, 18, 19, 23, 25, 29].includes(id)) {
+    statusKey = 'green';
+    statusLabel = '🟢 Full Transparency (Public Datasets & Archives Accessible)';
+    badgeClass = 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40';
+    chipClass = 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/20';
+  } else if ([2, 4, 7, 10, 12, 16, 20, 26].includes(id)) {
+    statusKey = 'amber';
+    statusLabel = '🟠 FOIA / CADA Proceedings Underway';
+    badgeClass = 'bg-amber-500/20 text-amber-400 border-amber-500/40';
+    chipClass = 'bg-amber-500/10 border-amber-500/40 text-amber-400 hover:bg-amber-500/20';
+  }
+
+  let poleKey = 'foncier';
+  let poleLabel = 'Land & Real Estate';
+  if ([2, 3, 4, 9, 18, 20, 21, 22].includes(id)) {
+    poleKey = 'finance';
+    poleLabel = 'Public Finance & Utilities';
+  } else if ([6, 10, 11, 12, 13, 14, 15, 16, 17, 19, 23, 25, 29].includes(id)) {
+    poleKey = 'gouvernance';
+    poleLabel = 'Sovereignty & Justice';
+  }
+
+  const docsArray = exactCadaDocs[id.toString()] || [];
+  const pieceAExiger = docsArray.length > 0 ? docsArray.join(" • ") : "Official administrative decree and raw audit files";
+
+  return {
+    id,
+    slug: e.slug,
+    title: e.data.title,
+    category: e.data.category,
+    chapeau: e.data.chapeau,
+    statusKey,
+    statusLabel,
+    badgeClass,
+    chipClass,
+    poleKey,
+    poleLabel,
+    pieceAExiger,
+    sourcesList: e.data.sources || []
+  };
+});
+
+const countRed = heatmapData.filter(d => d.statusKey === 'red').length;
+const countAmber = heatmapData.filter(d => d.statusKey === 'amber').length;
+const countGreen = heatmapData.filter(d => d.statusKey === 'green').length;
+const totalCount = heatmapData.length;
+const transparencyRate = Math.round((countGreen / totalCount) * 100);
+---
+
+<div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl my-10" id="radar-thermique-section">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+    <div>
+      <span class="px-3 py-1 bg-red-500/10 text-red-400 border border-red-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        FORENSIC BAROMETER — 29 INVESTIGATED DOSSIERS
+      </span>
+      <h3 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2 flex items-center gap-2">
+        <span>🔥 Forensic Transparency & Right-to-Know Matrix</span>
+      </h3>
+    </div>
+    
+    <div class="flex items-center gap-2 font-mono text-xs">
+      <span class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
+        {transparencyRate}% Transparency Rate
+      </span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 font-mono text-xs">
+    <div class="bg-red-950/20 border border-red-500/30 p-4 rounded-xl flex items-center justify-between">
+      <span class="text-red-400 font-bold">Redacted / State Silence</span>
+      <span class="text-xl font-bold text-red-400">{countRed} Files</span>
+    </div>
+    <div class="bg-amber-950/20 border border-amber-500/30 p-4 rounded-xl flex items-center justify-between">
+      <span class="text-amber-400 font-bold">FOIA / Legal Proceedings</span>
+      <span class="text-xl font-bold text-amber-400">{countAmber} Files</span>
+    </div>
+    <div class="bg-emerald-950/20 border border-emerald-500/30 p-4 rounded-xl flex items-center justify-between">
+      <span class="text-emerald-400 font-bold">Full Open Data Access</span>
+      <span class="text-xl font-bold text-emerald-400">{countGreen} Files</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    {heatmapData.map((d) => (
+      <a 
+        href={`./investigations/${d.slug}/`}
+        class={`p-3.5 rounded-xl border text-xs transition duration-200 block ${d.chipClass}`}
+      >
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="font-mono font-bold">#{d.id.toString().padStart(2, '0')}</span>
+          <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-800">
+            {d.poleLabel}
+          </span>
+        </div>
+        <div class="font-serif font-bold text-slate-200 line-clamp-2 mb-2">
+          {d.title}
+        </div>
+        <div class="text-[10px] font-mono opacity-80 truncate">
+          {d.statusLabel}
+        </div>
+      </a>
+    ))}
+  </div>
+</div>

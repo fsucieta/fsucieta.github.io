@@ -1,0 +1,58 @@
+---
+import dvfData from '../data/corsica_dvf_360.json';
+---
+
+<div class="bg-slate-950 border border-cyan-500/30 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="foncier-dvf-section">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
+    <div>
+      <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
+        OPEN DATA DGFIP / INSEE — 360 CORSICAN MUNICIPALITIES (DVF REGISTRY)
+      </span>
+      <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2 flex items-center gap-2">
+        <span>🤝 Real Estate Transactions & Land Valuation Radar (360 Communes)</span>
+      </h3>
+    </div>
+    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
+      Coverage : 100% of all 360 Corsican Municipalities
+    </div>
+  </div>
+
+  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6">
+    <h4 class="text-sm font-bold font-serif text-cyan-400 mb-1 flex items-center gap-2">
+      💡 Why consult the official DVF (Land Value Requests) registry?
+    </h4>
+    <p class="text-xs text-slate-300 font-serif leading-relaxed">
+      This official French Treasury (DGFiP) registry records <strong>every authenticated property and land sale</strong> completed in Corsica. It allows citizens to detect <strong>real estate speculation</strong>, massive acquisitions by non-resident corporate holdings, and compare real square-meter prices against local household incomes across all 360 municipalities.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Municipalities Monitored</span>
+      <span class="text-xl font-bold font-mono text-amber-400">360 / 360</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Audited Transactions</span>
+      <span class="text-xl font-bold font-mono text-slate-200">{dvfData.statistiques_globales.total_transactions_enregistrees.toLocaleString()} deeds</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Average Regional Price / m²</span>
+      <span class="text-xl font-bold font-mono text-cyan-400">{dvfData.statistiques_globales.prix_moyen_m2_corse} € / m²</span>
+    </div>
+    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
+      <span class="text-xs font-mono text-slate-400 block mb-1">Offshore / Non-Resident Share</span>
+      <span class="text-xl font-bold font-mono text-red-400">{dvfData.statistiques_globales.part_acquisitions_sci_non_residents} %</span>
+    </div>
+  </div>
+
+  <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+    <div class="mb-4">
+      <label class="block text-xs font-mono text-slate-400 mb-1">SEARCH OR SELECT AMONG THE 360 CORSICAN MUNICIPALITIES :</label>
+      <select id="dvfCommuneSelectEn" class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-mono">
+        {dvfData.communes.map(c => (
+          <option value={c.code_insee}>{c.commune} — {c.epci} — {c.prix_m2_moyen} €/m² — Tension {c.niveau_tension}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>

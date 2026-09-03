@@ -337,6 +337,218 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
+"29-the-paoli-legacy-appel-international-usa.md": {
+	id: "29-the-paoli-legacy-appel-international-usa.md";
+  slug: "29-the-paoli-legacy-appel-international-usa";
+  body: string;
+  collection: "enquetes";
+  data: InferEntrySchema<"enquetes">
+} & { render(): Render[".md"] };
+};
+"investigations": {
+"01-le-grand-verrou-financier.md": {
+	id: "01-le-grand-verrou-financier.md";
+  slug: "01-le-grand-verrou-financier";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"02-le-mythe-des-subventions.md": {
+	id: "02-le-mythe-des-subventions.md";
+  slug: "02-le-mythe-des-subventions";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"03-le-manifeste-universel-du-sol.md": {
+	id: "03-le-manifeste-universel-du-sol.md";
+  slug: "03-le-manifeste-universel-du-sol";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"04-la-marchandisation-de-l-eau.md": {
+	id: "04-la-marchandisation-de-l-eau.md";
+  slug: "04-la-marchandisation-de-l-eau";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"05-l-empire-des-sci-non-residentes.md": {
+	id: "05-l-empire-des-sci-non-residentes.md";
+  slug: "05-l-empire-des-sci-non-residentes";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"06-le-pillage-des-quotas-de-peche.md": {
+	id: "06-le-pillage-des-quotas-de-peche.md";
+  slug: "06-le-pillage-des-quotas-de-peche";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"07-le-cadastre-minier-secret.md": {
+	id: "07-le-cadastre-minier-secret.md";
+  slug: "07-le-cadastre-minier-secret";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"08-le-pillage-de-la-foret-corse.md": {
+	id: "08-le-pillage-de-la-foret-corse.md";
+  slug: "08-le-pillage-de-la-foret-corse";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"09-l-evasion-des-capitaux-touristiques.md": {
+	id: "09-l-evasion-des-capitaux-touristiques.md";
+  slug: "09-l-evasion-des-capitaux-touristiques";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"10-la-tutelle-de-la-haute-fonction-publique.md": {
+	id: "10-la-tutelle-de-la-haute-fonction-publique.md";
+  slug: "10-la-tutelle-de-la-haute-fonction-publique";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"11-l-emprise-et-les-servitudes-militaires.md": {
+	id: "11-l-emprise-et-les-servitudes-militaires.md";
+  slug: "11-l-emprise-et-les-servitudes-militaires";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"12-la-dependance-sanitaire-evasan.md": {
+	id: "12-la-dependance-sanitaire-evasan.md";
+  slug: "12-la-dependance-sanitaire-evasan";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"13-le-sous-investissement-educatif.md": {
+	id: "13-le-sous-investissement-educatif.md";
+  slug: "13-le-sous-investissement-educatif";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"14-le-dessaisissement-judiciaire-jirs.md": {
+	id: "14-le-dessaisissement-judiciaire-jirs.md";
+  slug: "14-le-dessaisissement-judiciaire-jirs";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"15-le-controle-de-legalite-et-censure.md": {
+	id: "15-le-controle-de-legalite-et-censure.md";
+  slug: "15-le-controle-de-legalite-et-censure";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"16-la-continuite-des-arretes-miot.md": {
+	id: "16-la-continuite-des-arretes-miot.md";
+  slug: "16-la-continuite-des-arretes-miot";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"17-le-verrou-de-la-charte-europeenne.md": {
+	id: "17-le-verrou-de-la-charte-europeenne.md";
+  slug: "17-le-verrou-de-la-charte-europeenne";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"18-le-monopole-energetique-edf-sei.md": {
+	id: "18-le-monopole-energetique-edf-sei.md";
+  slug: "18-le-monopole-energetique-edf-sei";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"19-la-dependance-numerique-et-data.md": {
+	id: "19-la-dependance-numerique-et-data.md";
+  slug: "19-la-dependance-numerique-et-data";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"20-l-accaparement-des-primes-pac.md": {
+	id: "20-l-accaparement-des-primes-pac.md";
+  slug: "20-l-accaparement-des-primes-pac";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"21-le-scandale-des-dechets-syvadec.md": {
+	id: "21-le-scandale-des-dechets-syvadec.md";
+  slug: "21-le-scandale-des-dechets-syvadec";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"22-la-captation-bancaire-et-epargne.md": {
+	id: "22-la-captation-bancaire-et-epargne.md";
+  slug: "22-la-captation-bancaire-et-epargne";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"23-la-sous-dotation-de-la-securite-civile.md": {
+	id: "23-la-sous-dotation-de-la-securite-civile.md";
+  slug: "23-la-sous-dotation-de-la-securite-civile";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"24-le-radar-d-urbanisme-permis-tacites.md": {
+	id: "24-le-radar-d-urbanisme-permis-tacites.md";
+  slug: "24-le-radar-d-urbanisme-permis-tacites";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"25-la-transparence-des-petitionnaires-mrae.md": {
+	id: "25-la-transparence-des-petitionnaires-mrae.md";
+  slug: "25-la-transparence-des-petitionnaires-mrae";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"26-la-speculation-sur-le-bati-agricole.md": {
+	id: "26-la-speculation-sur-le-bati-agricole.md";
+  slug: "26-la-speculation-sur-le-bati-agricole";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"27-le-telepherique-angelo-ajaccio.md": {
+	id: "27-le-telepherique-angelo-ajaccio.md";
+  slug: "27-le-telepherique-angelo-ajaccio";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"28-le-naufrage-organise-de-la-muvitarra.md": {
+	id: "28-le-naufrage-organise-de-la-muvitarra.md";
+  slug: "28-le-naufrage-organise-de-la-muvitarra";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
+"29-the-paoli-legacy-appel-international-usa.md": {
+	id: "29-the-paoli-legacy-appel-international-usa.md";
+  slug: "29-the-paoli-legacy-appel-international-usa";
+  body: string;
+  collection: "investigations";
+  data: InferEntrySchema<"investigations">
+} & { render(): Render[".md"] };
 };
 
 	};

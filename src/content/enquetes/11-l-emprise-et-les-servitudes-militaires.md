@@ -45,20 +45,13 @@ $$\text{Indice d'Étranglement Foncier (IEF)} = \frac{\text{Emprises Défense en
 
 Près d'**un quart des plaines littorales stratégiques plates et directement aménageables de l'île est immobilisé derrière des grillages militaires**.
 
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│              CARTOGRAPHIE MÉDICO-LÉGALE DU DOMAINE DE DÉFENSE             │
-├───────────────────────────────┬─────────────────┬─────────────────────────┤
-│ Site / Emprise Stratégique    │ Surface Cadastre│ Vocation Réelle         │
-├───────────────────────────────┼─────────────────┼─────────────────────────┤
-│ BA 126 Solenzara / Ventiseri  │ 512 Hectares    │ Entraînement Chasse OTAN│
-│ Camp Raffalli / Calvi         │ 340 Hectares    │ Base 2e REP & Tir Balagne│
-│ Lazaret-Aspretto / Ajaccio    │ 18 Hectares     │ Front de Mer Golfe      │
-│ Champs de Tir & Radars Côtiers│ 1 972 Hectares  │ Diane, Bonifacio, S. Dam│
-├───────────────────────────────┼─────────────────┼─────────────────────────┤
-│ TOTAL SANCTUARISÉ             │ 2 842 HECTARES  │ 0 € d'Impôt Foncier Local│
-└───────────────────────────────┴─────────────────┴─────────────────────────┘
-```
+| Site / Emprise Stratégique | Surface Cadastre | Vocation Réelle |
+| :--- | :--- | :--- |
+| **BA 126 Solenzara / Ventiseri** | **512 Hectares** | Entraînement Chasse OTAN |
+| **Camp Raffalli / Calvi** | **340 Hectares** | Base 2e REP & Tir Balagne |
+| **Lazaret-Aspretto / Ajaccio** | **18 Hectares** | Front de Mer Golfe |
+| **Champs de Tir & Radars Côtiers** | **1 972 Hectares** | Diane, Bonifacio, S. Dam |
+| **TOTAL SANCTUARISÉ** | **2 842 HECTARES** | **0 € d'Impôt Foncier Local** |
 
 💡 **En clair pour chaque foyer corse** : L'État occupe l'équivalent de près de 4 000 terrains de football sur nos plus belles plaines en bord de mer. Pendant qu'on répète aux Corses qu'il n'y a « plus de place pour construire », l'armée garde sous clé des milliers d'hectares de terres plates et fertiles qui dorment sans servir à la population !
 
@@ -72,17 +65,13 @@ L'exemple le plus flagrant de cette confiscation s'observe en Plaine Orientale :
 
 L'analyse technique du cadastre et des images satellites Sentinel-2 révèle une anomalie majeure : **sur les 512 hectares de l'enceinte, les pistes, hangars et zones de commandement n'occupent que 185 hectares. Plus de 327 hectares sont des friches agricoles planes abandonnées**, fermées par des miradors.
 
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│            GOUFFRE AGRONOMIQUE ET TERRITORIAL DE LA BA 126 (VENTISERI)   │
-├────────────────────────────────┬──────────────────────────────────────────┤
-│ Surface Totale Clôturée        │ 512 Hectares                             │
-│ Surface Technique Réelle       │ 185 Hectares (Pistes, taxiways, hangars) │
-│ Surface Agricole Morte Gelée   │ 327 Hectares de Terres Céréalières       │
-│ Potentiel Nourricier ODARC     │ ~ 1 800 Tonnes de Blé / Maraîchage Bio/an│
-│ Foyers Corses Nourris          │ 45 000 Habitants à l'Année               │
-└────────────────────────────────┴──────────────────────────────────────────┘
-```
+| Indicateur Agronomique BA 126 (Ventiseri) | Métrique Constatée | Impact Foncier & Alimentaire |
+| :--- | :--- | :--- |
+| **Surface Totale Clôturée** | **512 Hectares** | Enclave militaire fermée |
+| **Surface Technique Réelle** | **185 Hectares** | Pistes, taxiways, hangars |
+| **Surface Agricole Morte Gelée** | **327 Hectares** | Terres céréalières d'exception |
+| **Potentiel Nourricier ODARC** | **~ 1 800 Tonnes / an** | Blé dur et maraîchage bio |
+| **Foyers Corses Nourris** | **45 000 Habitants / an** | Autonomie alimentaire insulaire |
 
 Ce verrouillage militaire impose un triple préjudice à la région :
 1. **La Coupure Physique de la Côte Orientale** : L'enceinte militaire bloque le raccordement direct entre Ventiseri, Solaro et Sari-Solenzara, forçant les usagers à des contournements routiers permanents.
@@ -97,15 +86,11 @@ Ce verrouillage militaire impose un triple préjudice à la région :
 
 En poussant l'investigation forensique dans les annexes budgétaires du Ministère des Armées, les bilans hydrogéologiques de l'OEHC et les bases d'inventaire environnemental **BASOL / BASIAS**, la Cellule L'OCHJU met à nu **les 3 diables cachés** de l'emprise militaire en Corse :
 
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│              LES 3 DIABLES CACHÉS DU SYSTÈME MILITAIRE INSULAIRE         │
-├───────────────────────────────────────────────────────────────────────────┤
-│ 1. LE DIABLE DE L'OTAN (Les campagnes de tir étrangères à prix cassé)     │
-│ 2. LE DIABLE DE L'EAU (Pompage prioritaire de 40 000 m³ sur la nappe)     │
-│ 3. LE DIABLE DU PASSIF ÉCOLOGIQUE (Kérosène F-34, PFAS et métaux lourds)  │
-└───────────────────────────────────────────────────────────────────────────┘
-```
+> [!IMPORTANT]
+> **LES 3 DIABLES CACHÉS DU SYSTÈME MILITAIRE INSULAIRE :**  
+> 1. **Le Diable de l'OTAN** : Les campagnes de tir étrangères à prix cassé au large de Diane  
+> 2. **Le Diable de l'Eau** : Le pompage prioritaire de 40 000 m³ sur la nappe du Travo en pleine canicule  
+> 3. **Le Diable du Passif Écologique** : Sols pollués au kérosène F-34, mousses anti-incendie PFAS et métaux lourds
 
 ### 1. Le Diable de l'OTAN : La Corse transformée en polygone de tir low-cost
 Les exercices interalliés (comme l'exercice multinational *Serpentex*) mobilisent des dizaines de chasseurs F-16, Eurofighter et Mirage appartenant aux armées de l'air belge, britannique, allemande ou saoudienne. 
@@ -160,18 +145,12 @@ $$\text{IFTS} = \frac{\text{Légalité Administrative (CRPA/CGCT)} \times \text{
 
 ### 🛠️ Les 4 Piliers du Déploiement Stratégique :
 
-```
-┌───────────────────────────────────────────────────────────────────────────┐
-│          LES 4 PILIERS DU PLAN DE RÉTROCESSION FONCIÈRE SOUVERAINE        │
-├───────────────────────────────┬─────────────────┬───────────┬─────────────┤
-│ Pilier d'Action               │ Surface Libérée │ IFTS / 100│ Échéance    │
-├───────────────────────────────┼─────────────────┼───────────┼─────────────┤
-│ 1. Redevance Foncier Réparatrice│ 2 842 ha taxés  │ 96 / 100  │ Immédiat    │
-│ 2. Sanctuaire Maritime Aspretto│ 18 Hectares     │ 92 / 100  │ 1 à 3 ans   │
-│ 3. Ceinture Nourricière BA 126│ 250 ha agricoles│ 94 / 100  │ 2 à 4 ans   │
-│ 4. Dégel des Servitudes SUP   │ +4 500 ha libérés│ 88 / 100  │ 3 à 5 ans   │
-└───────────────────────────────┴─────────────────┴───────────┴─────────────┘
-```
+| Pilier d'Action Stratégique | Surface Libérée | Indice IFTS / 100 | Échéance de Déploiement |
+| :--- | :--- | :--- | :--- |
+| **1. Redevance Foncier Réparatrice** | **2 842 ha taxés** | **96 / 100** | Immédiat (3,95 M€/an pour communes) |
+| **2. Sanctuaire Maritime Aspretto** | **18 Hectares** | **92 / 100** | 1 à 3 ans (Port vert & Université) |
+| **3. Ceinture Nourricière BA 126** | **250 ha agricoles**| **94 / 100** | 2 à 4 ans (ODARC & 35 maraîchers) |
+| **4. Dégel des Servitudes SUP** | **+4 500 ha libérés**| **88 / 100** | 3 à 5 ans (Fin de la crise du logement)|
 
 #### 🟢 1. L'Instauration de la Redevance Foncier Militaire Réparatrice (RFMR) — *Immédiat (IFTS : 96/100)*
 Sur le modèle des statuts d'autonomie des régions insulaires européennes (Sardaigne, Sicile), l'Assemblée de Corse doit voter l'assujettissement de l'État à une **compensation financière annuelle de 3,95 M€/an**, reversée intégralement aux budgets des communes d'accueil pour financer le logement social et la voirie.
