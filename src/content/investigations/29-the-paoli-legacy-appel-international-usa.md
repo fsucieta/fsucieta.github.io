@@ -30,6 +30,9 @@ sources:
   - name: "United Nations (Digital Library) : Resolution 1514 (XV) on Decolonization & C-24 Mechanism"
     url: "https://digitallibrary.un.org/record/755481/files/A_RES_67_265-FR.pdf"
     sha256: "ea4863fb441801ae9fe3209a79bb82fb80ff22f2ba6e7a06f5158701fce15c3c"
+  - name: "United Nations : Declaration on the Rights of Indigenous Peoples (UNDRIP 2007 - Res 61/295)"
+    url: "https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/11/UNDRIP_E_web.pdf"
+    sha256: "7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e"
 ---
 
 ## ⚡ I. EXORDIUM : AN ADDRESS TO THE CONSCIENCE OF FREE MEN
