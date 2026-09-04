@@ -175,8 +175,8 @@ It addresses the American People, their elected representatives, and the communi
 > *Today, the very cradle of your modern freedom is threatened with demographic and territorial erasure upon its ancestral soil.*  
 > 
 > *We do not ask for charity. We demand justice and truth before humanity :*  
-> 1. **Formal recognition of Corsica's inalienable right to self-determination** under United Nations Resolution 1514 (XV).  
-> 2. **The immediate re-inscription of Corsica on the UN Decolonization Committee list (C-24)**, following the international precedent of Resolution 67/265.  
+> 1. **Formal recognition of the Corsican People as an Indigenous and Original People** under the UN Declaration on the Rights of Indigenous Peoples (UNDRIP 2007), guaranteeing inalienable sovereignty over its ancestral land, culture, and natural resources against any demographic substitution.  
+> 2. **The immediate re-inscription of Corsica on the UN Special Committee on Decolonization list (C-24)** under Resolution 1514 (XV), following the precedent of Resolution 67/265.  
 > 3. **International diplomatic support for the Corsican 5-Year Resident Status**, sanctuarizing our ancestral soil against speculative eviction.  
 > 4. **The sovereign control of our 199.1 MW hydroelectric commons**, securing full clean energy independence.  
 > 5. **Public guardianship of our 175M m³ water commons**, ensuring drinking water and food sovereignty for generations to come.  
