@@ -18,6 +18,7 @@ const enquetes = defineCollection({
     sources: z.array(z.object({
       name: z.string(),
       url: z.string(),
+      pdfDirect: z.string().optional(),
       sha256: z.string().optional()
     })).optional()
   })
@@ -41,6 +42,7 @@ const investigations = defineCollection({
     sources: z.array(z.object({
       name: z.string(),
       url: z.string(),
+      pdfDirect: z.string().optional(),
       sha256: z.string().optional()
     })).optional()
   })
