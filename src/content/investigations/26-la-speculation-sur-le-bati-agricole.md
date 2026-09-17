@@ -3,6 +3,7 @@ id: 26
 title: "Investigation 26 : Speculation on Agricultural Buildings & Luxury Shepherd Huts"
 subtitle: "Radiography of the perversion of Article L. 151-11 : the fraudulent conversion of traditional stone ruins and shepherd huts (i pagliaghji) into luxury vacation estates with swimming pools and helipads."
 category: "AGRICULTURE & LUXURY CONVERSIONS"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-26"
 author: "L'OCHJU Heritage & Land Investigation Desk"
 date: "August 2026"

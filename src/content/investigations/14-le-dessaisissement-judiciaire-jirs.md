@@ -3,6 +3,7 @@ id: 14
 title: "Investigation 14 : Judicial Dispossession & Extraterritorial Justice"
 subtitle: "Radiography of criminal proceedings : how the systematic transfer of investigations to the JIRS in Marseille deprives Corsica of its natural judicial sovereignty."
 category: "JUSTICE & CIVIL LIBERTIES"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-14"
 author: "L'OCHJU Legal Investigation Desk"
 date: "August 2026"

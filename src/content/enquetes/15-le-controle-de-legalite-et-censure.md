@@ -3,6 +3,7 @@ id: 15
 title: "Enquête 15 : Le Contrôle de Légalité & la Censure des Délibérations Locales"
 subtitle: "Radiographie de la tutelle préfectorale : comment les déférés du Préfet annulent les arrêtés des maires ruraux tout en fermant les yeux sur les grands projets spéculatifs"
 category: "URBANISME & PRÉFECTURE"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-15"
 author: "Cellule d'Investigation Juridique L'OCHJU"
 date: "Août 2026"

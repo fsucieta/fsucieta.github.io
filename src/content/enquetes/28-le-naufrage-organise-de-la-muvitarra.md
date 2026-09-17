@@ -3,6 +3,7 @@ id: 28
 title: "Enquête 27 (Partie 2/2) : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie, l'Impasse du 31 Août et le Plan de Sauvetage Souverain"
 subtitle: "Mise en demeure de la DREAL, 2,9 M€ d'impayés de la CAPA, flotte vétuste à 63 % et siphonnage financier au profit de la rive sud : les pièces d'État qui démontrent le sabotage délibéré de la régie publique ajaccienne."
 category: "INFRASTRUCTURES & POUVOIR"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P2"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Août 2026"
@@ -40,7 +41,7 @@ sources:
 
 > 🔗 **GRAND DOSSIER TRANSPORTS AJACCIENS (VOLET 2/2)** :  
 > Cet article constitue la seconde partie de notre enquête exclusive sur les mobilités d'Ajaccio.  
-> 👉 **[Lire la Partie 1/2 : Téléphérique 'Angelo' — Le mirage à 52 M€ et la rente POMA](/enquetes/27-le-telepherique-angelo-ajaccio/)**
+> 👉 **[Lire la Partie 1/2 : Téléphérique 'Angelo' — Le mirage à 52 M€ et la rente POMA](../27-le-telepherique-angelo-ajaccio/)**
 
 ---
 

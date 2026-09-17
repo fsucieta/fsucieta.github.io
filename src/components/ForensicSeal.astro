@@ -1,0 +1,195 @@
+---
+interface SourceItem {
+  name: string;
+  url: string;
+  pdfDirect?: string;
+  sha256?: string;
+}
+
+interface Props {
+  id: number;
+  refCode: string;
+  author: string;
+  date: string;
+  tool: string;
+  sources?: SourceItem[];
+  lang?: 'fr' | 'en';
+}
+
+const {
+  id,
+  refCode,
+  author,
+  date,
+  tool,
+  sources = [],
+  lang = 'fr'
+} = Astro.props;
+
+const isFr = lang === 'fr';
+const sourcesCount = sources.length;
+const premierDoc = sourcesCount > 0 ? sources[0] : null;
+
+let premierDocHref = "";
+if (premierDoc) {
+  const raw = premierDoc.pdfDirect || premierDoc.url;
+  if (raw.startsWith('http')) {
+    premierDocHref = raw;
+  } else {
+    const clean = raw.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+    premierDocHref = isFr ? `../../${clean}` : `../../../${clean}`;
+  }
+}
+
+// Détermination factuelle du faisceau disciplinaire (Fusion Multi-INT RULE[multi_int_fusion])
+const disciplines: { code: string; label: string; bg: string; text: string }[] = [];
+
+// 1. OSINT (Registres d'État, Sénat, CADA, Délibérations publiques)
+disciplines.push({
+  code: "OSINT",
+  label: isFr ? "Registres Publics & CADA" : "Public Registers & FOIA",
+  bg: "bg-blue-500/15 border-blue-500/30",
+  text: "text-blue-300"
+});
+
+// 2. FININT (Flux d'argent, Budgets DGFiP, Bilans BODACC, Concessions)
+if ([1, 2, 4, 9, 13, 18, 20, 21, 22, 27, 28].includes(id)) {
+  disciplines.push({
+    code: "FININT",
+    label: isFr ? "Audit Financier & Fiscal" : "Financial & Tax Audit",
+    bg: "bg-amber-500/15 border-amber-500/30",
+    text: "text-amber-300"
+  });
+}
+
+// 3. GEOINT (Cadastre, Parcelles DVF, Zonages PLU/PADDUC, Données Cadastrales)
+if ([3, 5, 7, 8, 11, 21, 24, 26, 27, 2].includes(id)) {
+  disciplines.push({
+    code: "GEOINT",
+    label: isFr ? "Cadastre & SIG Foncier (source : Bufitonu.fr / DVF)" : "Cadastral GIS (source: Bufitonu.fr / DVF)",
+    bg: "bg-cyan-500/15 border-cyan-500/30",
+    text: "text-cyan-300"
+  });
+}
+
+// 4. SOCMINT / Juridique (Souveraineté, Déclarations, Syndicats, Décrets)
+if ([6, 10, 12, 14, 15, 16, 17, 19, 23, 25, 29].includes(id)) {
+  disciplines.push({
+    code: "SOCMINT",
+    label: isFr ? "Droit Public & Témoignages" : "Public Law & Statements",
+    bg: "bg-emerald-500/15 border-emerald-500/30",
+    text: "text-emerald-300"
+  });
+}
+---
+
+<div class="relative my-8 rounded-2xl border border-amber-500/35 bg-gradient-to-r from-amber-500/10 via-slate-950 to-slate-950 p-5 md:p-6 shadow-2xl backdrop-blur-md overflow-hidden group">
+  <!-- Filigrane d'authenticité souveraine -->
+  <div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full border border-amber-500/10 flex items-center justify-center pointer-events-none opacity-40 group-hover:scale-110 transition duration-700">
+    <span class="text-5xl select-none opacity-20">🛡️</span>
+  </div>
+
+  <!-- En-tête du Sceau : Cote de Greffe & Date -->
+  <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-4 mb-4">
+    <div class="flex items-center gap-3">
+      <span class="text-2xl p-2.5 rounded-xl bg-slate-900 border border-slate-800 shadow-inner">
+        ⚖️
+      </span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40">
+            {isFr ? "SCEAU DE PREUVE FORENSIQUE ISO/IEC 27037" : "FORENSIC SEAL ISO/IEC 27037"}
+          </span>
+          <span class="text-[10px] font-mono text-emerald-400 font-bold flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            {isFr ? "ACTES D'ÉTAT SCELLÉS" : "SEALED STATE DEEDS"}
+          </span>
+        </div>
+        <h3 class="text-xs font-mono font-bold text-slate-200 mt-1 uppercase tracking-widest">
+          {isFr ? "FAISCEAU DE PREUVES MULTI-INT" : "MULTI-INT EVIDENCE MESH"} • DOSSIER #{id.toString().padStart(2, '0')}
+        </h3>
+      </div>
+    </div>
+
+    <!-- Références administratives précises -->
+    <div class="flex items-center gap-3">
+      <div class="text-right hidden sm:block">
+        <span class="text-[10px] font-mono text-slate-500 block uppercase">{isFr ? "Cote de Greffe" : "Filing Ref"}</span>
+        <span class="text-xs font-mono font-bold text-cyan-400">{refCode}</span>
+      </div>
+      <div class="h-8 w-px bg-slate-800 hidden sm:block"></div>
+      <div class="text-right">
+        <span class="text-[10px] font-mono text-slate-500 block uppercase">{isFr ? "Date d'Archivage" : "Filing Date"}</span>
+        <span class="text-xs font-mono text-slate-300 font-bold">{date}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disciplines croisées (Fusion Multi-INT RULE[multi_int_fusion]) -->
+  <div class="mb-4">
+    <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-2">
+      {isFr ? "Disciplines de Renseignement Criminel Croisées :" : "Crossed Intelligence Disciplines:"}
+    </span>
+    <div class="flex flex-wrap gap-2">
+      {disciplines.map((d) => (
+        <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-mono font-bold ${d.bg} ${d.text}`}>
+          <span class="w-1.5 h-1.5 rounded-full bg-current"></span>
+          <span>{d.code}</span>
+          <span class="font-normal opacity-80 text-[11px]">— {d.label}</span>
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <!-- Données d'intégrité et Pièces Physiques Scellées -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono mb-4">
+    <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80">
+      <span class="text-[10px] text-slate-500 block uppercase tracking-wider mb-1">
+        {isFr ? "PROTOCOLE D'EXTRACTION" : "EXTRACTION PROTOCOL"}
+      </span>
+      <span class="text-slate-200 font-semibold truncate block" title={tool}>
+        🔬 {tool}
+      </span>
+    </div>
+
+    <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80">
+      <span class="text-[10px] text-slate-500 block uppercase tracking-wider mb-1">
+        {isFr ? "PIÈCES EN NOTRE POSSESSION" : "DOCUMENTS IN OUR POSSESSION"}
+      </span>
+      <a href="#sources-section" class="text-emerald-400 font-bold hover:underline flex items-center gap-1.5">
+        <span>📎</span> {sourcesCount} {isFr ? "Actes Officiels Scellés ↓" : "Sealed Official Deeds ↓"}
+      </a>
+    </div>
+
+    <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80">
+      <span class="text-[10px] text-slate-500 block uppercase tracking-wider mb-1">
+        {isFr ? "PREMIÈRE PIÈCE MAÎTRESSE" : "PRIMARY RECORD"}
+      </span>
+      {premierDoc ? (
+        <a 
+          href={premierDocHref} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-amber-300 font-bold hover:underline truncate block"
+          title={premierDoc.name}
+        >
+          📄 {isFr ? "Consulter le PDF Officiel ↗" : "View Official PDF ↗"}
+        </a>
+      ) : (
+        <span class="text-slate-400 italic">{isFr ? "Saisine CADA en cours" : "FOIA request pending"}</span>
+      )}
+    </div>
+  </div>
+
+  <!-- Note déontologique légale & Anti-SLAPP -->
+  <div class="pt-3 border-t border-slate-800/50 flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] font-mono text-slate-500 gap-2">
+    <span>
+      {isFr 
+        ? "⚖️ Adossé aux actes publics — Protection des lanceurs d'alerte et anonymisation stratégique des tiers (Règle SLAPP)." 
+        : "⚖️ Backed by public administrative deeds — Whistleblower shield & strategic privacy anonymization."}
+    </span>
+    <span class="text-amber-400/80 font-bold shrink-0">
+      {isFr ? "NORME ISO/IEC 27037:2012" : "ISO/IEC 27037:2012 COMPLIANT"}
+    </span>
+  </div>
+</div>

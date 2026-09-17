@@ -3,6 +3,7 @@ id: 24
 title: "Investigation 24 : The Urban Planning Radar & Tacit Building Permits"
 subtitle: "Radiography of discreet concretization : how the legal mechanism of tacit building permits (R. 424-1) bypasses public disclosure and citizen oversight."
 category: "URBAN PLANNING & SITADEL"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-24"
 author: "L'OCHJU Urban Investigation Desk"
 date: "August 2026"

@@ -3,6 +3,7 @@ id: 13
 title: "Enquête 13 : Le Sous-Investissement Éducatif & l'Université de Corse"
 subtitle: "Radiographie de l'enseignement supérieur : comment l'Université Pasquale Paoli de Corte subit la sous-dotation ministérielle et la fuite des cerveaux"
 category: "ÉDUCATION & RECHERCHE"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-13"
 author: "Cellule d'Investigation Éducation L'OCHJU"
 date: "Août 2026"

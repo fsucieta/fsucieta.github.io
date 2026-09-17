@@ -3,6 +3,7 @@ id: 19
 title: "Investigation 19 : Digital Dependence & Threats to Data Sovereignty"
 subtitle: "Radiography of telecommunication networks : the vulnerability of subsea fiber cables and the hosting of Corsican public records on Parisian and American cloud servers."
 category: "DIGITAL INFRASTRUCTURE & DATA"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-19"
 author: "L'OCHJU Digital Investigation Desk"
 date: "August 2026"

@@ -3,6 +3,7 @@ id: 10
 title: "Enquête 10 : La Tutelle de la Haute Fonction Publique & le Gel des Compétences"
 subtitle: "Analyse de la gouvernance administrative : comment la rotation permanente des corps d'État (Préfets, DREAL, Rectorat) bloque le développement des compétences locales"
 category: "INSTITUTIONS & TUTELLE"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-10"
 author: "Cellule d'Investigation Institutionnelle L'OCHJU"
 date: "Août 2026"

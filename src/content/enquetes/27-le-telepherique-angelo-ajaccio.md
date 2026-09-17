@@ -3,6 +3,7 @@ id: 27
 title: "Enquête 27 (Partie 1/2) : Téléphérique 'Angelo' — Le mirage à 52 M€ et la rente privée au détriment du réseau public"
 subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
 category: "INFRASTRUCTURES & POUVOIR"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P1"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Août 2026"
@@ -35,7 +36,7 @@ sources:
 
 > 🔗 **GRAND DOSSIER TRANSPORTS AJACCIENS (VOLET 1/2)** :  
 > Cet article constitue la première partie de notre enquête exclusive sur les mobilités d'Ajaccio.  
-> 👉 **[Lire la Partie 2/2 : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie et le Plan de Sauvetage](/enquetes/28-le-naufrage-organise-de-la-muvitarra/)**
+> 👉 **[Lire la Partie 2/2 : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie et le Plan de Sauvetage](../28-le-naufrage-organise-de-la-muvitarra/)**
 
 ---
 

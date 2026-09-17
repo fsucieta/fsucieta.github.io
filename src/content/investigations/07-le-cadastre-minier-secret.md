@@ -3,6 +3,7 @@ id: 7
 title: "Investigation 07 : The Secret Mining Cadastre & The IRM 2024 Plan — The Concealed Subsoil Riches of Corsica"
 subtitle: "Radiography of BRGM mineral exploration permits : copper, antimony, rare earth elements, and critical raw materials under central state control without insular consultation."
 category: "MINING COMMONS & ENERGY TRANSITION"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-07"
 author: "L'OCHJU Geological Investigation Desk"
 date: "August 2026"

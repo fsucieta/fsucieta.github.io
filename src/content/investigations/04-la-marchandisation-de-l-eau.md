@@ -3,6 +3,7 @@ id: 4
 title: "Investigation 04 : Corsica, Global Laboratory of Emancipation — The 175 Million m³ Plan Breaking Tutelage & Freeing the Island Through Water"
 subtitle: "Ending Parisian monopoly rents and Veolia's leaking pipes: scientific demonstration of the Golden Square (0% concrete, 0% fuel) to achieve absolute hydraulic, food (ODARC), and energy sovereignty for the Corsican People."
 category: "WATER & STRATEGIC COMMONS"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-04"
 author: "L'OCHJU Environmental Investigation Desk"
 date: "August 2026"

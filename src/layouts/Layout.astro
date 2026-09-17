@@ -2,30 +2,66 @@
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  canonicalUrl?: string;
+  lang?: string;
 }
 
-const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Participatif & Open Data. L'aveti ?" } = Astro.props;
+const { 
+  title, 
+  description = "L'OCHJU — Média Citoyen d'Investigation, Participatif & Open Data en Corse. Révélations forensiques et données d'intérêt public. L'aveti ?",
+  image = "/alerte_censure_lochju.jpg",
+  canonicalUrl = Astro.url.href,
+  lang = "fr"
+} = Astro.props;
+
+const siteUrl = "https://fsucieta.github.io";
+const cleanCanonical = canonicalUrl.startsWith("http") ? canonicalUrl : `${siteUrl}/${canonicalUrl.replace(/^\//, '')}`;
+const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.replace(/^\//, '')}`;
 ---
 
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang={lang} class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Primaire (Google Core Standard) -->
     <title>{title}</title>
-    <!-- Initialisation Immédiate du Thème (Persistance & Anti-Flash) -->
+    <meta name="description" content={description} />
+    <link rel="canonical" href={cleanCanonical} />
+
+    <!-- Open Graph / Facebook / WhatsApp (Social Graph) -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="L'OCHJU" />
+    <meta property="og:url" content={cleanCanonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:image:alt" content={title} />
+
+    <!-- Twitter Card (Format Grand Angle) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
+
+    <!-- Mesure d'Audience Éthique & Souveraine sans cookies (GoatCounter) -->
+    <script data-goatcounter="https://lochju.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    <!-- Initialisation Immédiate du Thème Tri-Mode (Persistance Anti-Flash — Granit Insulaire par défaut) -->
     <script is:inline>
       (function() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-          document.documentElement.classList.remove('dark');
-          document.documentElement.classList.add('light');
-        } else {
-          document.documentElement.classList.remove('light');
-          document.documentElement.classList.add('dark');
-        }
+        /* Axe 1 : Mode Nuit / Jour — défaut : dark */
+        const savedMode = localStorage.getItem('lochju-mode') || 'dark';
+        document.documentElement.classList.remove('dark', 'light');
+        document.documentElement.classList.add(savedMode);
+
+        /* Axe 2 : Palette (paoli / finint / granit) — défaut : granit */
+        const savedPalette = localStorage.getItem('lochju-palette') || 'granit';
+        document.documentElement.setAttribute('data-palette', savedPalette);
       })();
     </script>
     
@@ -37,6 +73,20 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
         theme: {
           extend: {
             colors: {
+              slate: {
+                950: '#06080d', /* Noir minéral profond d'archive (Fond souverain L'OCHJU) */
+                900: '#0b0f17', /* Surface d'obsidienne pure (Cartes, bannières & conteneurs) */
+                850: '#101724', /* Niveau de profondeur intermédiaire */
+                800: '#151d2c', /* Bordures et séparateurs ultra-fins */
+                700: '#222f46', /* Éléments et contours secondaires */
+                600: '#384860',
+                500: '#64748b',
+                400: '#94a3b8',
+                300: '#cbd5e1',
+                200: '#e2e8f0',
+                100: '#f1f5f9',
+                50: '#f8fafc'
+              },
               gold: {
                 400: '#facc15',
                 500: '#d4af37',
@@ -48,25 +98,64 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
               }
             },
             fontFamily: {
-              serif: ['Georgia', 'Merriweather', 'serif'],
-              sans: ['Inter', 'system-ui', 'sans-serif']
+              serif: ['Merriweather', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              cinzel: ['Cinzel', 'serif'],
+              mono: ['JetBrains Mono', 'monospace']
             }
           }
         }
       }
     </script>
     
-    <!-- Polices Google Fonts -->
+    <!-- Polices Google Fonts : Inter, Merriweather, JetBrains Mono & Cinzel (Édition Régale) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
     
+    <!-- Styles Forensiques Globaux : Scrollytelling, Surlignage Lumineux & Chiaroscuro -->
+    <style is:global>
+      /* Chiffres tabulaires alignés d'orfèvrerie financière */
+      .font-mono, [data-tabular-nums] {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Effet de surlignage dynamique au défilement (Forensic Highlight) */
+      mark.forensic-highlight {
+        background: transparent;
+        color: #f1f5f9;
+        padding: 0.12em 0.3em;
+        border-radius: 0.25em;
+        border-bottom: 2px solid transparent;
+        transition: background 0.8s ease, color 0.5s ease, border-color 0.8s ease, box-shadow 0.8s ease;
+      }
+      mark.forensic-highlight.illuminated {
+        background: linear-gradient(120deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.45) 100%);
+        color: #fef08a;
+        border-bottom: 2px solid #f59e0b;
+        box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+      }
+      mark.forensic-highlight:hover {
+        background: rgba(245, 158, 11, 0.55);
+        box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+      }
+
+      /* Fond d'archives et ambiance Chiaroscuro subtile */
+      body {
+        background-color: #06080d;
+        background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.04) 0%, transparent 60%);
+      }
+    </style>
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   </head>
   <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300 antialiased selection:bg-amber-500 selection:text-slate-950">
     <slot />
     
+    <!-- Barre de Progression de Lecture Furtive (Stealth Reading Bar) -->
+    <div id="readingProgressBar" class="fixed top-0 left-0 h-[2.5px] bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 z-[100] w-0 transition-all duration-150 pointer-events-none opacity-90"></div>
+
     <!-- Bouton Flottant "Retour en Haut" -->
     <button 
       id="backToTopBtn" 
@@ -82,20 +171,55 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     <script is:inline>
       document.addEventListener('DOMContentLoaded', function() {
         const btn = document.getElementById('backToTopBtn');
-        if (btn) {
-          window.addEventListener('scroll', function() {
-            if (window.scrollY > 400) {
+        const progressBar = document.getElementById('readingProgressBar');
+        
+        window.addEventListener('scroll', function() {
+          const scrollY = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          
+          if (progressBar && docHeight > 0) {
+            const progress = (scrollY / docHeight) * 100;
+            progressBar.style.width = `${progress}%`;
+          }
+
+          if (btn) {
+            if (scrollY > 400) {
               btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
               btn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
             } else {
               btn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
               btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
             }
-          });
+          }
+        });
 
+        if (btn) {
           btn.addEventListener('click', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           });
+        }
+      });
+    </script>
+
+    <!-- Moteur de Scrollytelling Forensique (Illumination fluide des preuves) -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        const highlights = document.querySelectorAll('mark.forensic-highlight');
+        if (!highlights.length) return;
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('illuminated');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.25, rootMargin: '0px 0px -50px 0px' });
+
+          highlights.forEach((h) => observer.observe(h));
+        } else {
+          highlights.forEach((h) => h.classList.add('illuminated'));
         }
       });
     </script>
@@ -107,58 +231,217 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
 
 <style is:global>
   /* ==========================================================================
-     SYSTÈME D'EXCELLENCE BI-THÈME (MODE JOUR NOBLE / MODE NUIT FORENSIC)
+     SYSTÈME TRI-PALETTE × BI-MODE SOUVERAIN L'OCHJU (6 COMBINAISONS)
+     Palette A — 🏛️ PAOLIEN    : Obsidienne & Or Antique 1755
+     Palette B — 📊 FININT     : Cobalt Abyssal & Radar Émeraude
+     Palette C — 🌿 GRANIT     : Ardoise Noire & Cuivre Martelé (DÉFAUT)
+     Mode Dark × Mode Light — persistance via localStorage
      ========================================================================== */
 
-  html.dark {
-    --bg-main: #090d16;
-    --bg-card: #0f172a;
-    --text-main: #e2e8f0;
-    --text-muted: #94a3b8;
-    --border-color: #1e293b;
-  }
-
-  html.light {
-    --bg-main: #fbf9f5;
-    --bg-card: #ffffff;
-    --text-main: #0f172a;
-    --text-muted: #475569;
-    --border-color: #cbd5e1;
-  }
-
+  /* ---------- TOKENS PARTAGÉS (Indépendants de la palette) ---------- */
   html {
     scroll-behavior: smooth;
   }
 
-  /* --------------------------------------------------------------------------
-     1. SURCHARGES GLOBALES MODE JOUR (PRESSE D'INVESTIGATION PRESTIGE)
-     -------------------------------------------------------------------------- */
-
-  html.light body {
-    background-color: #fbf9f5 !important;
-    color: #0f172a !important;
+  /* ---------- PALETTE A : 🏛️ PAOLIEN — Mode Nuit (Chambre des Comptes & Or 1755) ---------- */
+  html.dark[data-palette="paoli"] {
+    --bg-main:        #080705;
+    --bg-card:        #12100d;
+    --bg-card-hover:  #1a1713;
+    --bg-header:      rgba(8, 7, 5, 0.96);
+    --text-main:      #f5f0e1;
+    --text-muted:     #a39b8b;
+    --border-color:   #3d3118;
+    --border-highlight:#d4af37;
+    --accent-primary: #d4af37;
+    --accent-hover:   #facc15;
+    --accent-glow:    rgba(212, 175, 55, 0.08);
+    --accent-card:    rgba(212, 175, 55, 0.12);
+    --body-gradient:
+      radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 65%),
+      radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.03) 0%, transparent 50%);
   }
 
+  /* ---------- PALETTE A : 🏛️ PAOLIEN — Mode Jour ---------- */
+  html.light[data-palette="paoli"] {
+    --bg-main:        #fcfaf4;
+    --bg-card:        #ffffff;
+    --bg-card-hover:  #faf6eb;
+    --bg-header:      rgba(252, 250, 244, 0.97);
+    --text-main:      #1c170d;
+    --text-muted:     #574d3c;
+    --border-color:   #dfd3be;
+    --border-highlight:#b8860b;
+    --accent-primary: #b8860b;
+    --accent-hover:   #d4af37;
+    --accent-glow:    rgba(184, 134, 11, 0.06);
+    --accent-card:    rgba(184, 134, 11, 0.08);
+    --body-gradient:  none;
+  }
+
+  /* ---------- PALETTE B : 📊 FININT — Mode Nuit (Terminal Bloomberg Cobalt & Radar Émeraude) ---------- */
+  html.dark[data-palette="finint"] {
+    --bg-main:        #020617;
+    --bg-card:        #08142b;
+    --bg-card-hover:  #0f2247;
+    --bg-header:      rgba(2, 6, 23, 0.96);
+    --text-main:      #e0f2fe;
+    --text-muted:     #7dd3fc;
+    --border-color:   #0e3a59;
+    --border-highlight:#10b981;
+    --accent-primary: #10b981;
+    --accent-hover:   #34d399;
+    --accent-glow:    rgba(16, 185, 129, 0.12);
+    --accent-card:    rgba(16, 185, 129, 0.14);
+    --body-gradient:
+      radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+      radial-gradient(circle at 80% 40%, rgba(14, 165, 233, 0.08) 0%, transparent 55%);
+  }
+
+  /* ---------- PALETTE B : 📊 FININT — Mode Jour ---------- */
+  html.light[data-palette="finint"] {
+    --bg-main:        #f0f7ff;
+    --bg-card:        #ffffff;
+    --bg-card-hover:  #e0f2fe;
+    --bg-header:      rgba(240, 247, 255, 0.97);
+    --text-main:      #082f49;
+    --text-muted:     #0369a1;
+    --border-color:   #bae6fd;
+    --border-highlight:#059669;
+    --accent-primary: #059669;
+    --accent-hover:   #10b981;
+    --accent-glow:    rgba(5, 150, 105, 0.08);
+    --accent-card:    rgba(5, 150, 105, 0.10);
+    --body-gradient:  none;
+  }
+
+  /* ---------- PALETTE C : 🌿 GRANIT INSULAIRE — Mode Nuit (DÉFAUT) (Ardoise & Cuivre Martelé) ---------- */
+  html.dark[data-palette="granit"],
+  html.dark:not([data-palette]) {
+    --bg-main:        #070a08;
+    --bg-card:        #101a14;
+    --bg-card-hover:  #17261d;
+    --bg-header:      rgba(7, 10, 8, 0.96);
+    --text-main:      #edf2ed;
+    --text-muted:     #98a89b;
+    --border-color:   #283d31;
+    --border-highlight:#c26d43;
+    --accent-primary: #c26d43;
+    --accent-hover:   #e07a4a;
+    --accent-glow:    rgba(194, 109, 67, 0.12);
+    --accent-card:    rgba(194, 109, 67, 0.14);
+    --body-gradient:
+      radial-gradient(circle at 50% 0%, rgba(194, 109, 67, 0.08) 0%, transparent 65%),
+      radial-gradient(circle at 85% 60%, rgba(52, 211, 153, 0.05) 0%, transparent 50%);
+  }
+
+  /* ---------- PALETTE C : 🌿 GRANIT INSULAIRE — Mode Jour ---------- */
+  html.light[data-palette="granit"],
+  html.light:not([data-palette]) {
+    --bg-main:        #f4f6f3;
+    --bg-card:        #ffffff;
+    --bg-card-hover:  #e7ede6;
+    --bg-header:      rgba(244, 246, 243, 0.97);
+    --text-main:      #121d15;
+    --text-muted:     #3f5446;
+    --border-color:   #ced9d1;
+    --border-highlight:#b45309;
+    --accent-primary: #b45309;
+    --accent-hover:   #c26d43;
+    --accent-glow:    rgba(180, 83, 9, 0.08);
+    --accent-card:    rgba(180, 83, 9, 0.10);
+    --body-gradient:  none;
+  }
+
+  /* ---------- APPLICATION DES TOKENS BODY ---------- */
+  html.dark body {
+    background-color: var(--bg-main) !important;
+    background-image: var(--body-gradient) !important;
+    color: var(--text-main) !important;
+  }
+
+  html.light body {
+    background-color: var(--bg-main) !important;
+    background-image: none !important;
+    color: var(--text-main) !important;
+  }
+
+  /* ---------- SURCHARGE FORCÉE DES CARTES ET CONTENEURS EN MODE NUIT SELON LA PALETTE ---------- */
+  html.dark .fiche-card,
+  html.dark .hero-card-container,
+  html.dark .bg-slate-900,
+  html.dark .bg-slate-950,
+  html.dark #manifeste-section,
+  html.dark #fichesGrid .fiche-card,
+  html.dark #fichesGridEn .fiche-card-en {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-main) !important;
+  }
+
+  html.dark header,
+  html.dark nav {
+    background-color: var(--bg-header) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  html.dark .fiche-card:hover,
+  html.dark .fiche-card-en:hover {
+    background-color: var(--bg-card-hover) !important;
+    border-color: var(--border-highlight) !important;
+  }
+
+  /* Accentuation dynamique des liserés et liens actifs */
+  html.dark .text-amber-400 {
+    color: var(--accent-primary) !important;
+  }
+  html.dark .border-amber-500\/40,
+  html.dark .border-amber-500\/30 {
+    border-color: var(--accent-primary) !important;
+  }
+  html.dark mark.forensic-highlight.illuminated {
+    background: var(--accent-card) !important;
+    border-bottom: 2px solid var(--accent-primary) !important;
+    color: var(--text-main) !important;
+    box-shadow: 0 0 15px var(--accent-glow) !important;
+  }
+
+  /* ---------- TRANSITIONS FLUIDES LORS DU CHANGEMENT DE PALETTE ---------- */
+  html body,
+  html header,
+  html nav,
+  html footer,
+  html .fiche-card,
+  html .hero-card-container {
+    transition: background-color 0.4s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease !important;
+  }
+
+  /* --------------------------------------------------------------------------
+     1. SURCHARGES COMPOSANTS — MODE JOUR (Papier Chiffon & Rapport Parlementaire)
+     Ces règles gèrent les bordures et halos des éléments structuraux.
+     Les couleurs de fond et texte sont désormais héritées des tokens CSS tri-palette.
+     -------------------------------------------------------------------------- */
+
   html.light header {
-    background-color: rgba(251, 249, 245, 0.96) !important;
-    border-color: #cbd5e1 !important;
+    background-color: var(--bg-header) !important;
+    border-color: var(--border-color) !important;
     box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05) !important;
   }
 
   html.light nav {
-    background-color: rgba(251, 249, 245, 0.96) !important;
-    border-color: #cbd5e1 !important;
+    background-color: var(--bg-header) !important;
+    border-color: var(--border-color) !important;
   }
 
   html.light nav a {
-    background-color: #ffffff !important;
-    border-color: #cbd5e1 !important;
-    color: #334155 !important;
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-muted) !important;
   }
 
   html.light nav a:hover {
-    border-color: #b8860b !important;
-    color: #b8860b !important;
+    border-color: var(--accent-primary) !important;
+    color: var(--accent-primary) !important;
   }
 
   /* Titres et Hiérarchie Typographique en Mode Jour */
@@ -167,16 +450,26 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     color: #0f172a !important;
   }
 
-  /* Conteneurs et Boîtes de Données en Mode Jour */
+  /* Conteneurs et Boîtes de Données en Mode Jour (Blanc Pur Net) */
   html.light .hero-card-container,
   html.light .hero-banner,
   html.light .fiche-card,
+  html.light .fiche-card-en,
+  html.light #fichesGrid .fiche-card,
+  html.light #fichesGridEn .fiche-card-en,
+  html.light #fichesGridEnCours .fiche-card,
+  html.light #fichesGridEnCoursEn .fiche-card-en,
   html.light article,
+  html.light #alerte-censure-section,
+  html.light #alerte-censure-section > div,
   html.light #manifeste-section,
+  html.light #manifeste-section > div,
   html.light #whistleblower-vault,
+  html.light #whistleblower-section,
   html.light #cada-generator,
   html.light #radar-thermique-section,
   html.light #foncier-dvf-section,
+  html.light #dvf-foncier-section,
   html.light .bg-slate-950,
   html.light .bg-slate-950\/60,
   html.light .bg-slate-950\/80,
@@ -185,18 +478,61 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
   html.light .bg-slate-900,
   html.light .bg-slate-900\/60,
   html.light .bg-slate-900\/80,
-  html.light .bg-slate-900\/90 {
+  html.light .bg-slate-900\/90,
+  html.light .bg-slate-900\/40 {
+    background: #ffffff !important;
     background-color: #ffffff !important;
+    background-image: none !important;
     border-color: #cbd5e1 !important;
     color: #0f172a !important;
     box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.06) !important;
   }
 
-  /* Remplacement des Dégradés Sombres en Dégradés Blanc / Ivoire */
-  html.light .bg-gradient-to-br,
-  html.light .bg-gradient-to-r {
-    background: #ffffff !important;
+  /* Boutons de partage et pastilles d'action en mode Jour */
+  html.light .card-share-btn {
+    background-color: #f8fafc !important;
     border-color: #cbd5e1 !important;
+    color: #334155 !important;
+  }
+  html.light .card-share-btn:hover {
+    background-color: #f59e0b !important;
+    border-color: #d97706 !important;
+    color: #ffffff !important;
+  }
+
+  /* Ajustements spécifiques de contraste pour les bandeaux du haut en mode Jour */
+  html.light #alerte-censure-section h2,
+  html.light #manifeste-section h1 {
+    color: #0f172a !important;
+  }
+  html.light #manifeste-section p,
+  html.light #alerte-censure-section p {
+    color: #334155 !important;
+  }
+  html.light #censureMessageText {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+  html.light #manifeste-section p.text-amber-200\/90 {
+    color: #78350f !important;
+  }
+
+  /* Remplacement des Dégradés Sombres en Dégradés Blanc / Ivoire pour les conteneurs */
+  html.light .hero-card-container.bg-gradient-to-r,
+  html.light .fiche-card.bg-gradient-to-b,
+  html.light .fiche-card-en.bg-gradient-to-b {
+    background: #ffffff !important;
+    background-image: none !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  /* SUPPRESSION DU VOILE SUR LES ILLUSTRATIONS EN MODE JOUR */
+  html.light .absolute.inset-0.bg-gradient-to-t,
+  html.light img + .absolute.inset-0 {
+    background: transparent !important;
+    background-image: none !important;
+    opacity: 0 !important;
   }
 
   html.light .bg-slate-800 {
@@ -229,6 +565,29 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
   html.light strong, html.light b {
     color: #0f172a !important;
     font-weight: 700 !important;
+  }
+
+  /* Ajustement de lisibilité pour les accents jaune/ambre/cyan en mode Jour */
+  html.light .text-amber-400,
+  html.light .text-amber-300,
+  html.light .text-amber-500 {
+    color: #b45309 !important;
+  }
+
+  html.light .text-cyan-400,
+  html.light .text-cyan-300 {
+    color: #0369a1 !important;
+  }
+
+  html.light .text-emerald-400 {
+    color: #047857 !important;
+  }
+
+  html.light .border-amber-500\/30,
+  html.light .border-amber-500\/40,
+  html.light .border-emerald-500\/30,
+  html.light .border-emerald-500\/40 {
+    border-color: #cbd5e1 !important;
   }
 
   /* Formulaires, Inputs et Sélecteurs en Mode Jour */
@@ -293,109 +652,145 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     color: #1e293b !important;
   }
 
-  /* ENCARTS DE DONNÉES CLÉS & CITATIONS (BLOCKQUOTES) */
+  /* ==========================================================================
+     ENCARTS DE RÉVÉLATION FORENSIQUE & CITATIONS NOBLES (BLOOMBERG / FT STYLE)
+     ========================================================================== */
   .article-body blockquote {
     position: relative !important;
-    border-left: 5px solid #d4af37 !important;
-    background: linear-gradient(145deg, #0b1120 0%, #0f172a 100%) !important;
-    padding: 1.75rem 2rem !important;
-    margin: 2rem 0 !important;
-    border-radius: 0 16px 16px 0 !important;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.15) !important;
+    border-left: 3px solid var(--accent-primary, #d4af37) !important;
+    background: var(--bg-card, rgba(11, 15, 23, 0.75)) !important;
+    backdrop-filter: blur(12px) !important;
+    padding: 1.5rem 1.75rem !important;
+    margin: 2.5rem 0 !important;
+    border-radius: 0 12px 12px 0 !important;
+    border-top: 1px solid var(--border-color, rgba(212, 175, 55, 0.15)) !important;
+    border-right: 1px solid var(--border-color, rgba(21, 29, 44, 0.6)) !important;
+    border-bottom: 1px solid var(--border-color, rgba(21, 29, 44, 0.6)) !important;
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.5) !important;
   }
 
+  /* Suppression définitive de l'ampoule CSS artificielle ::before */
   .article-body blockquote::before {
-    content: "💡 CONSTAT MATÉRIEL ET DONNÉES CLÉS" !important;
-    display: block !important;
-    font-family: 'Inter', monospace !important;
-    font-size: 0.78rem !important;
-    font-weight: 800 !important;
-    color: #d4af37 !important;
-    margin-bottom: 0.75rem !important;
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
+    display: none !important;
+    content: none !important;
   }
 
   .article-body blockquote p {
-    color: #fef08a !important;
+    color: #e2e8f0 !important;
+    font-family: 'Merriweather', serif !important;
     font-size: 1.05rem !important;
-    line-height: 1.8 !important;
+    line-height: 1.85 !important;
     margin-bottom: 0.5rem !important;
-    font-style: italic !important;
+    font-style: normal !important;
   }
 
-  /* BLOCKQUOTE EN MODE JOUR */
+  .article-body blockquote strong, .article-body blockquote b {
+    color: #fef08a !important;
+    font-weight: 700 !important;
+  }
+
+  /* ENCARTS EN MODE JOUR (PAPIER NOBLE D'ARCHIVE) */
   html.light .article-body blockquote {
-    background: #fffdf5 !important;
-    border-left: 5px solid #b8860b !important;
-    border-top: 1px solid #fed7aa !important;
-    border-right: 1px solid #fed7aa !important;
-    border-bottom: 1px solid #fed7aa !important;
-    box-shadow: 0 6px 20px -3px rgba(184, 134, 11, 0.12) !important;
-  }
-
-  html.light .article-body blockquote::before {
-    color: #92400e !important;
+    background: #ffffff !important;
+    border-left: 3px solid #b8860b !important;
+    border-top: 1px solid #e2e8f0 !important;
+    border-right: 1px solid #e2e8f0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    box-shadow: 0 6px 20px -3px rgba(15, 23, 42, 0.05) !important;
   }
 
   html.light .article-body blockquote p {
-    color: #78350f !important;
+    color: #1e293b !important;
   }
 
-  /* TABLEAUX EN MODE NUIT */
+  html.light .article-body blockquote strong, html.light .article-body blockquote b {
+    color: #92400e !important;
+  }
+
+  /* ==========================================================================
+     TABLEAUX DE HAUTE PRÉCISION MÉDICO-LÉGALE (HIGH-PRECISION FINANCIAL LEDGER)
+     ========================================================================== */
   .article-body table {
     width: 100% !important;
-    margin: 2.5rem 0;
-    border-collapse: separate;
-    border-spacing: 0;
-    background-color: #0f172a;
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    margin: 3rem 0 !important;
+    border-collapse: collapse !important;
+    background: rgba(11, 15, 23, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #151d2c !important;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.9rem !important;
+  }
+
+  .article-body thead {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
   }
 
   .article-body th {
-    background-color: #1e293b;
-    color: #d4af37;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.82rem;
-    letter-spacing: 0.05em;
-    padding: 1rem 1.25rem;
-    text-align: left;
-    border-bottom: 2px solid rgba(212, 175, 55, 0.4);
+    background: #06080d !important;
+    color: #f1f5f9 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.08em !important;
+    padding: 1.1rem 1.25rem !important;
+    text-align: left !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35) !important;
   }
 
   .article-body td {
-    padding: 1rem 1.25rem;
-    color: #cbd5e1;
-    border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+    padding: 1rem 1.25rem !important;
+    color: #cbd5e1 !important;
+    border-bottom: 1px solid #151d2c !important;
+    vertical-align: middle !important;
   }
 
-  /* TABLEAUX EN MODE JOUR */
+  /* Alignement monospaced parfait des données et chiffres */
+  .article-body td strong, .article-body td b {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-variant-numeric: tabular-nums !important;
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+  }
+
+  .article-body tr {
+    transition: background-color 0.2s ease !important;
+  }
+
+  .article-body tbody tr:hover {
+    background-color: rgba(21, 29, 44, 0.5) !important;
+  }
+
+  .article-body tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+
+  /* TABLEAUX EN MODE JOUR (STYLE RAPPORT DE COUR DES COMPTES) */
   html.light .article-body table {
     background-color: #ffffff !important;
     border: 1px solid #cbd5e1 !important;
-    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06) !important;
   }
 
   html.light .article-body th {
     background-color: #f8fafc !important;
-    color: #92400e !important;
+    color: #0f172a !important;
     border-bottom: 2px solid #b8860b !important;
   }
 
   html.light .article-body td {
-    color: #1e293b !important;
+    color: #334155 !important;
     border-bottom: 1px solid #e2e8f0 !important;
   }
 
-  html.light .article-body tr:hover td {
-    background-color: #f8fafc !important;
+  html.light .article-body td strong, html.light .article-body td b {
     color: #0f172a !important;
+  }
+
+  html.light .article-body tbody tr:hover {
+    background-color: #f8fafc !important;
   }
 
   /* CODES & LABELS FORENSIQUES */
@@ -415,10 +810,102 @@ const { title, description = "L'OCHJU — Média Citoyen d'Investigation, Partic
     border: 1px solid #cbd5e1 !important;
   }
 
+  /* SURBRILLANCES FORENSIQUES LUMINEUSES SOBRES (HIGH-END MINIMALIST) */
+  mark.forensic-highlight {
+    background-color: rgba(245, 158, 11, 0.08);
+    color: #fef08a;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border-bottom: 2px solid rgba(245, 158, 11, 0.4);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  mark.forensic-highlight.illuminated {
+    background-color: rgba(245, 158, 11, 0.18);
+    color: #ffffff;
+    border-bottom-color: #f59e0b;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+  }
+
+  html.light mark.forensic-highlight {
+    background-color: rgba(180, 83, 9, 0.06) !important;
+    color: #92400e !important;
+    border-bottom: 2px solid rgba(180, 83, 9, 0.3) !important;
+  }
+
+  html.light mark.forensic-highlight.illuminated {
+    background-color: rgba(180, 83, 9, 0.14) !important;
+    color: #78350f !important;
+    border-bottom-color: #b45309 !important;
+    box-shadow: 0 0 10px rgba(180, 83, 9, 0.15) !important;
+  }
+
   /* FOOTER */
   html.light footer {
     background-color: #f1f5f9 !important;
     border-color: #cbd5e1 !important;
     color: #64748b !important;
+  }
+
+  /* ==========================================================================
+     STANDARD D'IMPRESSION A4 CITOYEN (AFFICHAGE VILLAGE / TRACT D'ACTION)
+     ========================================================================== */
+  @media print {
+    /* Masquer les éléments interactifs et de navigation superflus sur papier */
+    header, nav, footer, .no-print, [data-no-print], button {
+      display: none !important;
+    }
+
+    body, html {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      font-size: 11pt !important;
+      line-height: 1.5 !important;
+    }
+
+    /* Forcer l'encre noire et les contrastes nets pour les textes */
+    p, span, li, td, th {
+      color: #1e293b !important;
+    }
+
+    h1, h2, h3, h4 {
+      color: #000000 !important;
+      page-break-after: avoid;
+    }
+
+    /* Mise en valeur des surbrillances sur papier (soulignement élégant) */
+    mark.forensic-highlight {
+      background: transparent !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      text-decoration: underline 2px solid #b8860b !important;
+      box-shadow: none !important;
+    }
+
+    /* Préservation des tableaux et bordures nettes */
+    table {
+      width: 100% !important;
+      border-collapse: collapse !important;
+      page-break-inside: avoid;
+    }
+
+    th, td {
+      border: 1px solid #94a3b8 !important;
+      padding: 6px 10px !important;
+      font-size: 10pt !important;
+    }
+
+    th {
+      background-color: #f1f5f9 !important;
+      font-weight: bold !important;
+    }
+
+    /* Gestion des ruptures de page */
+    article {
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
   }
 </style>

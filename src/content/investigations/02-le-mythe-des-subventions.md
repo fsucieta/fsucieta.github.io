@@ -3,6 +3,7 @@ id: 2
 title: "Investigation 02 : The 420 Million Euro Hold-Up — The Final Collapse of the Subsidy Myth"
 subtitle: "From Corporate Income Tax evasion to Parisian headquarters, summer VAT extraction, and the frozen 187M€ Senate fund: 1,000 official audits prove Corsica finances the French state (1,200 € extracted per citizen annually)."
 category: "TAXATION & PUBLIC BUDGET"
+status: cloturee
 ref: "LOCHJU-AUDIT-INVESTIGATION-02"
 author: "L'OCHJU x FSUCIETÀ Financial Investigation Desk"
 date: "August 2026"
@@ -33,7 +34,7 @@ While Parisian television networks routinely accuse Corsica of living on French 
 
 ---
 
-## ACT I. THE INVERTED INVOICE : 1,200 € EXTRACTED ANNUALLY FROM EVERY CORSICAN
+## 1. THE INVERTED INVOICE : 1,200 € EXTRACTED ANNUALLY FROM EVERY CORSICAN
 
 For fifty years, an official state narrative has been relentlessly repeated to the Corsican public: *« You cost too much, you are on life support, without Parisian funds you would collapse. »*
 
@@ -41,69 +42,57 @@ This guilt-inducing propaganda serves a precise geopolitical objective: keeping 
 
 To settle this matter conclusively, the Financial Investigation Desk of L'OCHJU asked the only question that matters: **when summing all taxes paid by Corsicans (VAT, fuel taxes, income tax) versus all state expenditures actually reinjected into the island, who is subsidizing whom?**
 
-To answer, we disregarded political rhetoric and dissected **1,000 certified state accounting records**:
-- The **360 municipal budget matrices (États 1259)** covering every commune in Corsica.
-- The **250 certified corporate tax filings (BODACC / Infogreffe)** of major conglomerates operating on the island.
-- The **150 annual Finance Bills (Lois de Finances)** of Bercy and **100 Court of Accounts audits**.
+To answer, we disregarded political rhetoric and dissected **1,000 certified state accounting records** (the 360 municipal budget matrices, corporate tax filings of retail monopolies, and Treasury accounts).
 
-| Official Budgetary Metric | Certified Annual Amount | Official Source & Traceability |
-| :--- | :--- | :--- |
-| **Tax Revenues Extracted from Corsica by Paris** | **1.45 Billion Euros** | DGFiP / French Customs / Regional Treasury |
-| **Actual Public Expenditures Reinjected by Paris** | **1.03 Billion Euros** | Finance Bills / French Court of Accounts |
-| **NET ANNUAL SURPLUS CAPTURED BY PARIS (STATE PROFIT)** | **+ 420 MILLION EUROS / YEAR** | **Net Insular Transfer Balance** |
-| **DIRECT EXTRACTION PER CITIZEN (350,000 RESIDENTS)** | **1,200 € / CITIZEN / YEAR** | **4,800 € for a family of 4** |
-
-💡 **In plain terms for every Corsican household**: For a family of four (two parents and two children), **4,800 € of wealth generated in Corsica** is siphoned off to Paris every year and never returns. You are labeled as dependents, yet official balance sheets prove that **it is you who are subsidizing the French state!**
+💡 **In plain terms for every Corsican household**: Certified public records prove that **€4,800 of wealth generated annually by a family of four** is siphoned off to Paris and never returns. You are labeled as dependents, yet official balance sheets prove that **it is you who are subsidizing the French state!**
 
 ---
 
-## ACT II. THE CHECKOUT SLEIGHT OF HAND : CORPORATE TAXATION SHIFTED TO PARIS
+## 2. THE CHECKOUT SLEIGHT OF HAND : CORPORATE TAXATION SHIFTED TO PARIS
 
 How does the French state conceal this massive financial extraction? Through a legal accounting loophole: **headquarters tax centralization**.
 
 Every time you buy groceries at a supermarket in Ajaccio, Bastia, Furiani, or Porto-Vecchio, pay your mobile phone subscription, or fill your car with petrol, you pay a profit margin to corporate conglomerates.
 
-These corporations (Leclerc, Carrefour, TotalEnergies, Orange, SFR, banking groups) generate over **2.45 billion euros in revenue each year in Corsica**.
+These corporations (retail monopolies, energy providers, telecom operators, private banks) generate over **2.45 billion euros in annual revenue in Corsica**.
 
-However, when paying **Corporate Income Tax (25% rate)** on profits generated from your expenditure:
-1. Store checkout terminals do not register tax liabilities in Corsica.
-2. All revenues are consolidated at corporate headquarters located in Paris, Nanterre, or Hauts-de-Seine.
+Yet when paying the **Corporate Income Tax (IS at 25%)** on profits generated directly from your money:
+1. Store checkout computers do not file local tax returns in Corsica.
+2. Every tax filing is centralized at corporate headquarters in Paris, Nanterre, or Hauts-de-Seine.
 
-> 💡 **The Key Metric** : Over **185 Million Euros in Corporate Income Tax** generated on Corsican soil is declared and collected directly in the Paris region every year.
+> 💡 **The Key Metric** : **185 Million Euros in Corporate Income Tax** generated on Corsican soil is reported, collected, and retained directly in the Parisian region every single year.
 
-| Insular Economic Sector | Annual Turnover in Corsica | Corporate Headquarters Location | Annual Tax Loss for Corsica |
+| Island Economic Sector | Annual Revenue in Corsica | Corporate Headquarters Location | Annual Tax Extracted from Corsica |
 | :--- | :--- | :--- | :--- |
-| **Retail Supermarkets & Hypermarkets** | > 1.40 Billion € / year | Paris / Hauts-de-Seine | ~ 105 Million € / year |
-| **Fuel & Energy (TotalEnergies, Vito)** | > 450 Million € / year | Courbevoie / Nanterre | ~ 35 Million € / year |
-| **Telecoms & Digital (Orange, SFR, Free)** | > 280 Million € / year | Paris / Saint-Denis | ~ 22 Million € / year |
-| **Banking & Insurance Desks** | > 320 Million € / year | Paris (Central Desks) | ~ 23 Million € / year |
-| **TOTAL DELOCALIZED CAPITAL FLOWS** | **> 2.45 BILLION EUROS** | **Centralized in Paris Region** | **185 M€ IN EXTRACTED TAXES / YEAR** |
+| **Retail Supermarkets & Distribution** | > 1.40 Billion € / year | Paris / Hauts-de-Seine | ~ 105 Million € / year |
+| **Fuels & Energy Monopolies** | > 450 Million € / year | Courbevoie / Nanterre | ~ 35 Million € / year |
+| **Telecommunications & Tech** | > 280 Million € / year | Paris / Saint-Denis | ~ 22 Million € / year |
+| **Banking & Insurance Conglomerates** | > 320 Million € / year | Paris (Central HQs) | ~ 23 Million € / year |
+| **TOTAL DELOCALIZED CASH FLOW** | **> 2.45 BILLION EUROS** | **Centralized in Paris Region** | **185 M€ IN STOLEN TAXES / YEAR** |
 
-In the dashboards of the Ministry of Finance at Bercy, this wealth appears magically as produced by the Paris region. Meanwhile, Corsica, stripped of the statistical trace of its profits, is labeled as « unprofitable ».
+On Treasury dashboards in Bercy, this wealth appears as having been produced in the Paris metropolitan region. Meanwhile, Corsica, stripped of the statistical trace of its own earnings, is labeled as "unprofitable".
 
-### 🏦 THE BANKING HEIST : 7.3 BILLION EUROS OF CORSICAN SAVINGS CAPTURED IN PARIS
-Analysis of Banque de France and INSEE data reveals a second financial extraction siphon: Corsican households hold **11.8 billion euros in liquid savings** (Livret A, LDDS, Life Insurance).
-- **Only 38% of this savings is reinjected locally** as mortgage loans or small business credits to island artisans.
-- **The remaining 62% (or 7.3 billion euros in Corsican liquidities)** is centralized by Parisian banking headquarters (Caisse des Dépôts, BNP, Crédit Agricole) to finance infrastructure projects in the Paris region and French national public debt.
+### 🏦 BANKING EXTRACTION : 7.3 BILLION EUROS IN CORSICAN SAVINGS FUNNELED TO PARIS
+Central bank and INSEE statistics disclose a second siphon: Corsican households hold **11.8 billion euros in liquid savings** (Livret A, tax-free accounts, life insurance).
+- **Only 38% of these funds are reinjected into the island** as mortgages or loans to local artisans.
+- **The remaining 62% (7.3 billion euros in Corsican liquidity)** is swept into Parisian banking vaults (Caisse des Dépôts, BNP, Crédit Agricole) to finance infrastructure in the Paris region and national sovereign debt.
 
-### 🥃 THE ALCOHOL EXCISE DUTY ROBBERY : 35 M€ CONFISCATED VIA PACA
-Under **Article L. 4425-1 of the General Local Authorities Code (CGCT)**, consumption excise duties on alcohol sold in Corsica must be **100% remitted to the budget of the Collectivité de Corse (CdC)**.
+### 🥃 SPIRITS EXCISE FRAUD : 35 M€ CONFISCATED THROUGH MARSEILLE CUSTOMS
+Under **Article L. 4425-1 of the CGCT**, 100% of excise duties on alcohol consumed in Corsica must be **returned to the budget of the Collectivité de Corse**.
 
-Yet, forensic auditing of spirits distribution supply chains reveals a silent bypass:
-1. **Bypassing via PACA Central Purchasing Desks** : Major spirits conglomerates supply Corsican hypermarkets via purchasing hubs based in Marseille and the PACA region under tax-suspension regimes.
-2. **Duty liquidation outside Corsica** : At the maritime shipment stage, excise duties are declared and paid directly to PACA/Marseille customs instead of registering as Corsican consumption.
-3. **Corporate Omerta** : Internal whistleblowers confirm that any effort to regularize this tax redirection to Corsica was met with strict nondisclosure covenants to preserve supermarket retail margins.
+Forensic analysis reveals a quiet diversion:
+1. **PACA Central Purchasing Route**: Beverage conglomerates supply island hypermarkets through distribution hubs in Marseille and PACA under tax-suspension regimes.
+2. **Tax Clearance Outside Corsica**: Upon maritime dispatch, excise duties are cleared through mainland customs rather than registered as island consumption.
+3. **Institutional Silence**: Industry insiders confirm that commercial attempts to clear taxes directly in Corsica were terminated under strict non-disclosure clauses to protect distributor margins.
 
-> 💡 **The Key Metric** : Over **35 Million Euros per year** in alcohol excise duties generated in Corsica are captured by PACA customs and Bercy instead of being paid to the Collectivité de Corse.
+> 💡 **The Key Metric** : **35 Million Euros per year** in alcohol excise duties belonging to Corsica is absorbed into mainland customs budgets instead of funding local hospitals and services.
 
-### 🎰 THE PHANTOM WINDFALL : 65 M€ IN GAMBLING AND DIGITAL TAXES
-Every sports bet, every lottery ticket purchased in village cafes, and every online purchase (Amazon, Airbnb, Booking) generates **over 65 million euros per year in specific duties paid directly to the French Treasury**, with a local reallocation rate of **zero euros**.
-
-💡 **In plain terms for every Corsican household**: Not only do your grocery purchases fund Parisian metro lines, but your local drinks duties are siphoned to Marseille instead of funding island hospitals, while your family savings are wired to Paris while local banks refuse home loans to your children!
+### 🎰 THE PHANTOM WINDFALL : 65 M€ IN GAMBLING AND E-COMMERCE TAXES
+Every lottery ticket scratched, every sports bet placed in village cafés, and every transaction on Amazon or Airbnb generates **over 65 million euros per year in specific taxes collected by the French Treasury**, with a local return rate of **zero cents**.
 
 ---
 
-## ACT III. THE TOURIST VAT TRAP : 3 MILLION TOURISTS, 0 € FOR OUR ROADS
+## 3. THE TOURIST VAT TRAP : 3 MILLION TOURISTS, 0 € FOR OUR ROADS
 
 The second capital extraction conduit activates every summer.
 
@@ -128,7 +117,7 @@ The state returns **not a single cent of compensation for infrastructure degrada
 
 ---
 
-## ACT IV. THE BOAT TICKET SCANDAL : 658 M€ CONFISCATED ON MARITIME CONTINUITY
+## 4. THE BOAT TICKET SCANDAL : 658 M€ CONFISCATED ON MARITIME CONTINUITY
 
 To justify its presence, the French state always brandishes the Territorial Continuity Envelope: **187 million euros per year** to co-finance ferries and air links between Corsica and the mainland.
 
@@ -161,9 +150,19 @@ Senate Inquiry Report No. 714 on electricity (480 pages) uncovers another hidden
 
 💡 **In plain terms for every Corsican household**: If your ferry tickets, electricity bills, and supermarket groceries are outrageously expensive, it is because the central state and its corporate cartels confiscate your transport and energy taxes while refusing to enforce the laws protecting your purchasing power!
 
+### 📊 CONSOLIDATED BUDGET BALANCE : WHO IS SUBSIDIZING WHOM?
+Following the forensic examination of 360 municipal budget matrices, corporate tax filings of retail monopolies, and 100 Court of Accounts audits, here is the official certified synthesis of real financial flows between Corsica and Paris:
+
+| Official Budgetary Metric | Certified Annual Amount | Official Source & Traceability |
+| :--- | :--- | :--- |
+| **Tax Revenues Extracted from Corsica by Paris** | **1.45 Billion Euros** | DGFiP / French Customs / Regional Treasury |
+| **Actual Public Expenditures Reinjected by Paris** | **1.03 Billion Euros** | Finance Bills / French Court of Accounts |
+| **NET ANNUAL SURPLUS CAPTURED BY PARIS (STATE PROFIT)** | **+ 420 MILLION EUROS / YEAR** | **Net Insular Transfer Balance** |
+| **DIRECT EXTRACTION PER CITIZEN (350,000 RESIDENTS)** | **1,200 € / CITIZEN / YEAR** | **4,800 € for a family of 4** |
+
 ---
 
-## ACT V. THE RESTITUTION PLAN : RECOVERING OUR 1,200 € PER CAPITA & THE IFTS INDEX (94.8/100)
+## 5. THE RESTITUTION PLAN : RECOVERING OUR 1,200 € PER CAPITA & THE IFTS INDEX (94.8/100)
 
 Mathematical proof is established: **Corsica is a net contributor enriching the French state by 420 million euros annually**.
 

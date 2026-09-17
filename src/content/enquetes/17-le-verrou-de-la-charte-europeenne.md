@@ -3,6 +3,7 @@ id: 17
 title: "Enquête 17 : Le Verrou de la Charte Européenne & le Droit à la Langue Corse"
 subtitle: "Analyse du blocage constitutionnel : la censure de la co-officialité de la langue corse et le refus de ratifier la Charte européenne des langues régionales"
 category: "CULTURE & LANGUE"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-17"
 author: "Cellule d'Investigation Culturelle L'OCHJU"
 date: "Août 2026"

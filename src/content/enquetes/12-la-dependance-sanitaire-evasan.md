@@ -3,6 +3,7 @@ id: 12
 title: "Enquête 12 : La Dépendance Sanitaire & le Coût du Sous-Équipement Hospitalier"
 subtitle: "Radiographie de la santé publique : comment le tarification à l'activité (T2A) et le manque de CHU étouffent les hôpitaux de Bastia et d'Ajaccio et forcent les évacuations sanitaires"
 category: "SANTÉ & HÔPITAL"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-12"
 author: "Cellule d'Investigation Santé L'OCHJU"
 date: "Août 2026"

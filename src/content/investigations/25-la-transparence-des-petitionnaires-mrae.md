@@ -3,6 +3,7 @@ id: 25
 title: "Investigation 25 : Petitioner Transparency & Environmental Impact Assessments"
 subtitle: "Radiography of public inquiries : how straw men and project salami-slicing neutralize environmental assessments before the MRAe."
 category: "ENVIRONMENT & TRANSPARENCY"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-25"
 author: "L'OCHJU Environmental Investigation Desk"
 date: "August 2026"

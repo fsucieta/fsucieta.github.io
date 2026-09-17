@@ -3,6 +3,7 @@ id: 18
 title: "Investigation 18 : The Stolen Light — Breaking the Energy Monopoly Illusion"
 subtitle: "199 MW of pure hydro power confiscated : forensic autopsy of a captive monopoly and the sovereign blueprint that will make Corsica the cleanest, wealthiest, and most autonomous island in the Mediterranean."
 category: "ENERGY & STRATEGIC COMMONS"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "L'OCHJU Energy Investigation Desk"
 date: "August 2026"

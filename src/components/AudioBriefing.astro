@@ -1,0 +1,344 @@
+﻿---
+// AudioBriefing.astro — Mini-Lecteur Audio Forensique L'OCHJU
+// Paramètres :
+//   srcFr  : chemin vers le fichier audio FR (ex: /audio/01-briefing-fr.mp3)
+//   srcEn  : chemin vers le fichier audio EN (ex: /audio/01-briefing-en.mp3)
+//   lang   : langue courante ('fr' | 'en') — détermine quelle piste est jouée par défaut
+// Usage    : <AudioBriefing srcFr={data.audioBriefingFr} srcEn={data.audioBriefingEn} lang="fr" />
+// Rendu    : Ne s'affiche que si au moins une piste audio est disponible
+// Design   : Card forensique adaptée aux 3 thèmes via var(--accent-primary)
+
+interface Props {
+  srcFr?: string;
+  srcEn?: string;
+  lang?: 'fr' | 'en';
+}
+
+const { srcFr, srcEn, lang = 'fr' } = Astro.props;
+
+// Le composant ne s'affiche que si au moins une piste est disponible
+const hasFr = !!srcFr;
+const hasEn = !!srcEn;
+const hasAudio = hasFr || hasEn;
+
+// Piste active par défaut : on joue la langue de la page si disponible, sinon l'autre
+const defaultSrc = (lang === 'fr' && hasFr) ? srcFr : (lang === 'en' && hasEn) ? srcEn : (hasFr ? srcFr : srcEn);
+const defaultLang = (lang === 'fr' && hasFr) ? 'fr' : (lang === 'en' && hasEn) ? 'en' : (hasFr ? 'fr' : 'en');
+---
+
+{hasAudio && (
+  <div
+    class="audio-briefing-player my-10 p-5 rounded-2xl border shadow-xl relative overflow-hidden"
+    style="background: var(--bg-card, #0d1112); border-color: var(--border-color, #1e2426);"
+    id="audioBriefingContainer"
+    role="complementary"
+    aria-label="Lecteur audio — Synthèse forensique de l'enquête"
+  >
+    <!-- Fil d'accentuation coloré selon la palette active -->
+    <div
+      class="absolute inset-x-0 top-0 h-[2px] rounded-t-2xl"
+      style="background: linear-gradient(90deg, transparent, var(--accent-primary, #c26d43), transparent);"
+    ></div>
+
+    <!-- En-tête du player -->
+    <div class="flex items-center gap-3 mb-4">
+      <div
+        class="flex items-center justify-center w-9 h-9 rounded-xl text-lg font-bold flex-shrink-0"
+        style="background: var(--accent-card, rgba(194,109,67,0.08)); border: 1px solid var(--border-color, #1e2426);"
+        aria-hidden="true"
+      >🎙️</div>
+      <div>
+        <p class="text-sm font-bold font-mono" style="color: var(--accent-primary, #c26d43);">
+          {lang === 'fr' ? 'SYNTHÈSE AUDIO — BRIEFING FORENSIQUE' : 'AUDIO BRIEFING — FORENSIC SUMMARY'}
+        </p>
+        <p class="text-[11px] font-mono" style="color: var(--text-muted, #8d9090);">
+          {lang === 'fr' ? 'L\'essentiel de l\'enquête en 5 minutes · Écoute sur mobile & desktop' : 'Investigation highlights in 5 minutes · Mobile & desktop playback'}
+        </p>
+      </div>
+    </div>
+
+    <!-- Sélecteur de langue si les deux pistes sont disponibles -->
+    {hasFr && hasEn && (
+      <div class="flex gap-2 mb-4">
+        <button
+          id="audioLangFr"
+          class="px-3 py-1 rounded-lg text-xs font-bold font-mono border transition-all duration-200 cursor-pointer"
+          style={defaultLang === 'fr'
+            ? 'background: var(--accent-card, rgba(194,109,67,0.12)); color: var(--accent-primary, #c26d43); border-color: var(--accent-primary, #c26d43);'
+            : 'background: transparent; color: var(--text-muted); border-color: var(--border-color);'}
+        >🇫🇷 Français</button>
+        <button
+          id="audioLangEn"
+          class="px-3 py-1 rounded-lg text-xs font-bold font-mono border transition-all duration-200 cursor-pointer"
+          style={defaultLang === 'en'
+            ? 'background: var(--accent-card, rgba(194,109,67,0.12)); color: var(--accent-primary, #c26d43); border-color: var(--accent-primary, #c26d43);'
+            : 'background: transparent; color: var(--text-muted); border-color: var(--border-color);'}
+        >🇬🇧 English</button>
+      </div>
+    )}
+
+    <!-- Visualiseur d'onde animée (CSS pur, 12 barres) -->
+    <div
+      id="audioWaveform"
+      class="flex items-end justify-center gap-[3px] h-10 mb-4 px-2"
+      aria-hidden="true"
+    >
+      {Array.from({ length: 24 }).map((_, i) => (
+        <div
+          class="audio-wave-bar w-1 rounded-sm flex-shrink-0 transition-all duration-300"
+          style={`background: var(--accent-primary, #c26d43); opacity: 0.35; height: ${Math.floor(Math.random() * 70 + 20)}%;`}
+          data-index={i}
+        ></div>
+      ))}
+    </div>
+
+    <!-- Balise audio HTML5 native -->
+    <audio id="audioBriefingPlayer" preload="metadata" style="display:none;">
+      <source id="audioSource" src={defaultSrc} type="audio/mpeg" />
+      Votre navigateur ne supporte pas la lecture audio HTML5.
+    </audio>
+
+    <!-- Barre de progression + temps -->
+    <div class="mb-3 relative">
+      <div
+        class="w-full h-1.5 rounded-full cursor-pointer relative overflow-hidden"
+        style="background: var(--border-color, #1e2426);"
+        id="audioProgressBar"
+        role="slider"
+        aria-label="Progression de la lecture audio"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div
+          id="audioProgress"
+          class="h-full rounded-full transition-all duration-100"
+          style="width: 0%; background: linear-gradient(90deg, var(--accent-primary, #c26d43), var(--accent-hover, #d4845a));"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Temps écoulé / Durée totale -->
+    <div class="flex items-center justify-between text-[11px] font-mono mb-4" style="color: var(--text-muted, #8d9090);">
+      <span id="audioCurrentTime">0:00</span>
+      <span id="audioDuration">--:--</span>
+    </div>
+
+    <!-- Contrôles du lecteur -->
+    <div class="flex items-center justify-between gap-3">
+
+      <!-- Bouton Play / Pause -->
+      <button
+        id="audioPlayPause"
+        type="button"
+        aria-label="Lire / Mettre en pause"
+        class="flex items-center justify-center w-12 h-12 rounded-2xl border-2 text-xl font-bold transition-all duration-300 cursor-pointer shadow-lg flex-shrink-0"
+        style="background: var(--accent-card, rgba(194,109,67,0.1)); border-color: var(--accent-primary, #c26d43); color: var(--accent-primary, #c26d43);"
+      >▶</button>
+
+      <!-- Bouton retour 10s -->
+      <button
+        id="audioRewind"
+        type="button"
+        aria-label="Reculer de 10 secondes"
+        class="text-xs font-mono px-3 py-1.5 rounded-lg border cursor-pointer transition-all duration-200"
+        style="color: var(--text-muted, #8d9090); border-color: var(--border-color, #1e2426);"
+      >−10s</button>
+
+      <!-- Bouton avance 10s -->
+      <button
+        id="audioForward"
+        type="button"
+        aria-label="Avancer de 10 secondes"
+        class="text-xs font-mono px-3 py-1.5 rounded-lg border cursor-pointer transition-all duration-200"
+        style="color: var(--text-muted, #8d9090); border-color: var(--border-color, #1e2426);"
+      >+10s</button>
+
+      <!-- Sélecteur de vitesse de lecture -->
+      <div class="flex gap-1 ml-auto">
+        {['1', '1.5', '2'].map((speed) => (
+          <button
+            class="audio-speed-btn text-[10px] font-bold font-mono px-2 py-1 rounded-lg border cursor-pointer transition-all duration-200"
+            data-speed={speed}
+            aria-label={`Vitesse ${speed}×`}
+            style={speed === '1'
+              ? 'background: var(--accent-card); color: var(--accent-primary); border-color: var(--accent-primary);'
+              : 'background: transparent; color: var(--text-muted); border-color: var(--border-color);'}
+          >×{speed}</button>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+
+<style>
+  /* Animation des barres d'onde quand le son joue */
+  .audio-wave-bar.playing {
+    animation: wavePulse var(--wave-duration, 0.8s) ease-in-out infinite alternate;
+    opacity: 0.9 !important;
+  }
+
+  @keyframes wavePulse {
+    0%   { transform: scaleY(0.3); }
+    100% { transform: scaleY(1.0); }
+  }
+</style>
+
+<script is:inline>
+(function() {
+  /* ============================================================
+   * CONTRÔLEUR AUDIO BRIEFING — L'OCHJU AudioBriefing.astro
+   * Gère : play/pause, progression, temps, vitesse, langue
+   * Technologie : HTML5 Audio natif, zéro dépendance externe
+   * ============================================================ */
+
+  const player       = document.getElementById('audioBriefingPlayer');
+  const playBtn      = document.getElementById('audioPlayPause');
+  const progressBar  = document.getElementById('audioProgressBar');
+  const progressFill = document.getElementById('audioProgress');
+  const currentTime  = document.getElementById('audioCurrentTime');
+  const duration     = document.getElementById('audioDuration');
+  const rewindBtn    = document.getElementById('audioRewind');
+  const forwardBtn   = document.getElementById('audioForward');
+  const speedBtns    = document.querySelectorAll('.audio-speed-btn');
+  const waveBars     = document.querySelectorAll('.audio-wave-bar');
+  const langFr       = document.getElementById('audioLangFr');
+  const langEn       = document.getElementById('audioLangEn');
+  const audioSource  = document.getElementById('audioSource');
+
+  if (!player) return; // Sortie si aucun audio disponible
+
+  /* --- Formatage du temps (secondes → "m:ss") --- */
+  function formatTime(s) {
+    if (isNaN(s) || !isFinite(s)) return '--:--';
+    var m = Math.floor(s / 60);
+    var ss = Math.floor(s % 60);
+    return m + ':' + (ss < 10 ? '0' : '') + ss;
+  }
+
+  /* --- Mise à jour de la durée totale dès les métadonnées chargées --- */
+  player.addEventListener('loadedmetadata', function() {
+    if (duration) duration.textContent = formatTime(player.duration);
+  });
+
+  /* --- Mise à jour de la progression en temps réel --- */
+  player.addEventListener('timeupdate', function() {
+    if (!player.duration || isNaN(player.duration)) return;
+    var pct = (player.currentTime / player.duration) * 100;
+    if (progressFill) progressFill.style.width = pct + '%';
+    if (progressBar)  progressBar.setAttribute('aria-valuenow', Math.round(pct));
+    if (currentTime)  currentTime.textContent = formatTime(player.currentTime);
+  });
+
+  /* --- Lecture/Pause --- */
+  function togglePlay() {
+    if (player.paused) {
+      player.play();
+    } else {
+      player.pause();
+    }
+  }
+
+  player.addEventListener('play', function() {
+    if (playBtn) playBtn.textContent = '⏸';
+    /* Activer l'animation des ondes avec des durées variables par barre */
+    waveBars.forEach(function(bar, i) {
+      bar.style.setProperty('--wave-duration', (0.5 + (i % 7) * 0.12) + 's');
+      bar.classList.add('playing');
+    });
+  });
+
+  player.addEventListener('pause', function() {
+    if (playBtn) playBtn.textContent = '▶';
+    waveBars.forEach(function(bar) { bar.classList.remove('playing'); });
+  });
+
+  player.addEventListener('ended', function() {
+    if (playBtn) playBtn.textContent = '▶';
+    waveBars.forEach(function(bar) { bar.classList.remove('playing'); });
+    if (progressFill) progressFill.style.width = '0%';
+    if (currentTime)  currentTime.textContent = '0:00';
+    player.currentTime = 0;
+  });
+
+  if (playBtn) playBtn.addEventListener('click', togglePlay);
+
+  /* --- Rewind / Forward 10s --- */
+  if (rewindBtn)  rewindBtn.addEventListener('click',  function() { player.currentTime = Math.max(0, player.currentTime - 10); });
+  if (forwardBtn) forwardBtn.addEventListener('click', function() { player.currentTime = Math.min(player.duration || Infinity, player.currentTime + 10); });
+
+  /* --- Clic sur la barre de progression pour se déplacer --- */
+  if (progressBar) {
+    progressBar.addEventListener('click', function(e) {
+      var rect = progressBar.getBoundingClientRect();
+      var pct  = (e.clientX - rect.left) / rect.width;
+      if (player.duration) {
+        player.currentTime = pct * player.duration;
+      }
+    });
+  }
+
+  /* --- Boutons de vitesse de lecture --- */
+  speedBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var speed = parseFloat(btn.getAttribute('data-speed'));
+      player.playbackRate = speed;
+
+      /* Mise à jour du style actif / inactif */
+      speedBtns.forEach(function(b) {
+        if (parseFloat(b.getAttribute('data-speed')) === speed) {
+          b.style.background   = 'var(--accent-card)';
+          b.style.color        = 'var(--accent-primary)';
+          b.style.borderColor  = 'var(--accent-primary)';
+        } else {
+          b.style.background   = 'transparent';
+          b.style.color        = 'var(--text-muted)';
+          b.style.borderColor  = 'var(--border-color)';
+        }
+      });
+    });
+  });
+
+  /* --- Sélecteur de langue (si les deux pistes existent) --- */
+  function switchAudio(srcValue, activeLangBtn, inactiveLangBtn) {
+    if (!audioSource || !srcValue) return;
+    var wasPlaying = !player.paused;
+    var savedTime  = player.currentTime;
+    player.pause();
+    audioSource.src = srcValue;
+    player.load();
+
+    /* Restauration de la position de lecture après le changement de piste */
+    player.addEventListener('loadedmetadata', function onMeta() {
+      player.currentTime = savedTime;
+      if (wasPlaying) player.play();
+      player.removeEventListener('loadedmetadata', onMeta);
+    });
+
+    /* Mise à jour visuelle des boutons de langue */
+    if (activeLangBtn) {
+      activeLangBtn.style.background   = 'var(--accent-card)';
+      activeLangBtn.style.color        = 'var(--accent-primary)';
+      activeLangBtn.style.borderColor  = 'var(--accent-primary)';
+    }
+    if (inactiveLangBtn) {
+      inactiveLangBtn.style.background   = 'transparent';
+      inactiveLangBtn.style.color        = 'var(--text-muted)';
+      inactiveLangBtn.style.borderColor  = 'var(--border-color)';
+    }
+  }
+
+  /* Données injectées via data-attributes (Astro -> JS) */
+  var container = document.getElementById('audioBriefingContainer');
+  var srcFrData = container ? container.getAttribute('data-src-fr') : null;
+  var srcEnData = container ? container.getAttribute('data-src-en') : null;
+
+  if (langFr && srcFrData) {
+    langFr.addEventListener('click', function() { switchAudio(srcFrData, langFr, langEn); });
+  }
+  if (langEn && srcEnData) {
+    langEn.addEventListener('click', function() { switchAudio(srcEnData, langEn, langFr); });
+  }
+
+})();
+</script>

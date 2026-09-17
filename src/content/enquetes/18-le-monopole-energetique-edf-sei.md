@@ -3,6 +3,7 @@ id: 18
 title: "Enquête 18 : La Lumière Volée — Briser l'Illusion de la Dépendance"
 subtitle: "199 MW d'énergie pure dérobés : autopsie médico-légale d'un monopole et le projet souverain qui fera de la Corse l'île la plus propre, prospère et libre de Méditerranée."
 category: "ÉNERGIE & SOUVERAINETÉ"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "Cellule d'Investigation Énergétique L'OCHJU"
 date: "Août 2026"

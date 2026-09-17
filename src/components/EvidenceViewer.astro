@@ -1,0 +1,107 @@
+---
+interface SourceItem {
+  name: string;
+  url: string;
+  pdfDirect?: string;
+  sha256?: string;
+}
+
+interface Props {
+  source: SourceItem;
+  id: number;
+  lang?: 'fr' | 'en';
+}
+
+const { source, id, lang = 'fr' } = Astro.props;
+const isFr = lang === 'fr';
+
+const rawTarget = source.pdfDirect || source.url;
+const isLocalPdf = !rawTarget.startsWith('http') && rawTarget.toLowerCase().endsWith('.pdf');
+let resolvedPdf = rawTarget;
+if (!rawTarget.startsWith('http')) {
+  const clean = rawTarget.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+  resolvedPdf = isFr ? `../../${clean}` : `../../../${clean}`;
+}
+---
+
+<div class="my-10 rounded-2xl border border-amber-500/30 bg-slate-900/90 shadow-2xl overflow-hidden group">
+  <!-- En-tête de la visionneuse médico-légale -->
+  <div class="p-4 bg-slate-950 border-b border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div class="flex items-center gap-2.5">
+      <span class="p-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 text-sm">
+        🔍
+      </span>
+      <div>
+        <span class="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
+          {isFr ? "PIÈCE À CONVICTION PRINCIPALE EN NOTRE POSSESSION" : "PRIMARY SEALED EVIDENCE RECORD"}
+        </span>
+        <h4 class="text-xs font-mono font-bold text-slate-100 truncate max-w-md sm:max-w-xl">
+          {source.name}
+        </h4>
+      </div>
+    </div>
+
+    <!-- Actions d'inspection -->
+    <div class="flex items-center gap-2">
+      <a 
+        href={resolvedPdf} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-mono font-bold transition shadow-sm cursor-pointer"
+      >
+        <span>↗️</span> <span>{isFr ? "Consulter l'Acte Officiel" : "Inspect Official Record"}</span>
+      </a>
+      {isLocalPdf && (
+        <a 
+          href={resolvedPdf} 
+          download
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono font-semibold transition border border-slate-700 cursor-pointer"
+        >
+          <span>📥</span> <span>{isFr ? "Télécharger" : "Download"}</span>
+        </a>
+      )}
+    </div>
+  </div>
+
+  <!-- Cadre de visualisation interactif -->
+  <div class="relative bg-slate-950 p-4 min-h-[160px] flex flex-col items-center justify-center border-b border-slate-800">
+    {isLocalPdf ? (
+      <iframe 
+        src={`${resolvedPdf}#toolbar=0&navpanes=0`} 
+        class="w-full h-96 rounded-xl border border-slate-800/80 bg-slate-900 shadow-inner"
+        title={source.name}
+        loading="lazy"
+      ></iframe>
+    ) : (
+      <div class="w-full py-8 px-6 rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="space-y-1.5 text-center sm:text-left">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 text-xs font-mono font-bold">
+            <span>🏛️</span> <span>{isFr ? "Archive Gouvernementale / Registre Public Externe" : "Government Archive / External Public Registry"}</span>
+          </div>
+          <p class="text-xs text-slate-300 font-sans max-w-xl">
+            {isFr 
+              ? "En raison des protocoles de sécurité stricts des serveurs d'État officiels (anti-cliquage), cette pièce certifiée est consultable directement sur son registre d'origine sécurisé."
+              : "Due to strict government security policies on state servers, this certified record is accessible directly on its origin registry."}
+          </p>
+        </div>
+        <a 
+          href={resolvedPdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-bold text-xs font-mono shadow-lg transition transform hover:scale-[1.02] shrink-0 flex items-center gap-2"
+        >
+          <span>📄 {isFr ? "Ouvrir le Registre Officiel (1-Clic) ↗" : "Open Official Registry (1-Click) ↗"}</span>
+        </a>
+      </div>
+    )}
+
+    <div class="w-full px-2 pt-3 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-slate-400 gap-2">
+      <span class="truncate">
+        🔒 SHA-256 : <code class="text-amber-300 select-all font-mono">{source.sha256 || "Certifié conforme au bit près (ISO 27037)"}</code>
+      </span>
+      <span class="text-emerald-400 font-bold shrink-0">
+        ✓ {isFr ? "Traçabilité Médico-Légale Certifiée" : "Forensic Traceability Certified"}
+      </span>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,10 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import ThemeToggle from '../../components/ThemeToggle.astro';
 import SimulateurFiscalCommunes from '../../components/SimulateurFiscalCommunes.astro';
-
+import ShareButtons from '../../components/ShareButtons.astro';
+import ForensicSeal from '../../components/ForensicSeal.astro';
+import EvidenceViewer from '../../components/EvidenceViewer.astro';
+import AudioBriefing from '../../components/AudioBriefing.astro';
 
 export async function getStaticPaths() {
   const enquetes = await getCollection('enquetes');
@@ -21,9 +24,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data;
 const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image.replace(/^\//, '')}`;
+const ogImage = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}`;
 ---
 
-<Layout title={`${data.title} — L'OCHJU — L'aveti ?`} description={data.chapeau}>
+<Layout 
+  title={`${data.title} — L'OCHJU — L'aveti ?`} 
+  description={data.chapeau}
+  image={ogImage}
+  canonicalUrl={`https://fsucieta.github.io/enquetes/${entry.slug}/`}
+  lang="fr"
+>
   <!-- Navigation Supérieure -->
   <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
@@ -72,11 +82,29 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
         <div><strong>Auteur :</strong> {data.author}</div>
         <div><strong>Outil d'Audit :</strong> <code class="bg-slate-900 px-2.5 py-1 rounded text-cyan-400 font-mono text-xs border border-cyan-500/20">{data.tool}</code></div>
       </div>
+
+      <!-- Module de Partage Citoyen & Impression Fiche A4 (Haut d'article) -->
+      <div class="mt-6 pt-4 border-t border-slate-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold flex items-center gap-1.5">
+            <span>📤</span> Diffuser :
+          </span>
+          <ShareButtons title={data.title} chapeau={data.chapeau} />
+        </div>
+        <button 
+          onclick="window.print()" 
+          class="no-print inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-amber-500/30 text-xs font-mono font-bold transition shadow-sm cursor-pointer"
+          title="Imprimer cette enquête en format tract citoyen A4 haute fidélité"
+        >
+          <span>🖨️</span>
+          <span>Fiche Citoyenne A4</span>
+        </button>
+      </div>
     </div>
 
     <!-- Image d'illustration photographique officielle et authentique -->
     {data.image && (
-      <div class="mb-10 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
+      <div class="mb-8 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
         <img src={imgPath} alt={data.title} class="w-full object-cover max-h-[480px] group-hover:scale-105 transition duration-700" />
         <div class="p-3 bg-slate-900/90 text-xs font-mono text-slate-400 border-t border-slate-800 flex justify-between items-center">
           <span>{data.imageCaption || `📷 Document Photographique Officiel — ${data.title}`}</span>
@@ -85,19 +113,47 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
       </div>
     )}
 
-    <!-- SIMULATEUR CITOYEN DU VOL FISCAL DES 360 COMMUNES (Spécifique Enquête 02 - En avant-première) -->
+    <!-- Corps de l'Article avec Infographies Visuelles Multi-Lignes (Zero Défilement Horizontale pour Citations) -->
+    <!-- 🎙️ Mini-Lecteur Audio Forensique (s'affiche uniquement si audioBriefingFr ou audioBriefingEn est renseigné) -->
+    <AudioBriefing srcFr={data.audioBriefingFr} srcEn={data.audioBriefingEn} lang="fr" />
+
+    <article class="article-body font-serif text-lg leading-relaxed text-slate-200 space-y-6">
+      <Content />
+    </article>
+
+    <!-- SIMULATEUR CITOYEN DU VOL FISCAL DES 360 COMMUNES (Spécifique Enquête 02 - Outil d'Action Citoyenne) -->
     {data.id === 2 && (
-      <div class="mb-12">
+      <div class="my-16">
         <SimulateurFiscalCommunes />
       </div>
     )}
 
+    <!-- Sceau Forensique ISO 27037 & Chaîne de Preuve Numérique (Certification Clôture d'Enquête) -->
+    <div class="mt-16 pt-8 border-t border-amber-500/30">
+      <ForensicSeal 
+        id={data.id}
+        refCode={data.ref}
+        author={data.author}
+        date={data.date}
+        tool={data.tool}
+        sources={data.sources || []}
+        lang="fr"
+      />
+    </div>
 
+    <!-- Visionneuse de Preuve Intégrée (Pièce Maîtresse d'Archive Certifiée) -->
+    {data.sources && data.sources.length > 0 && (
+      <EvidenceViewer source={data.sources[0]} id={data.id} lang="fr" />
+    )}
 
-    <!-- Corps de l'Article avec Infographies Visuelles Multi-Lignes (Zero Défilement Horizontale pour Citations) -->
-    <article class="article-body font-serif text-lg leading-relaxed text-slate-200 space-y-6">
-      <Content />
-    </article>
+    <!-- Encart de Partage Citoyen & Mobilisation (Fin d'Article) -->
+    <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-amber-500/30 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center sm:text-left">
+        <h4 class="font-serif font-bold text-slate-100 text-base">Vous avez le pouvoir d'agir</h4>
+        <p class="font-sans text-xs text-slate-400">La lumière se propage grâce à vous. Partagez cette enquête pour briser le silence.</p>
+      </div>
+      <ShareButtons title={data.title} chapeau={data.chapeau} />
+    </div>
 
     <!-- SECTION DES SOURCES ET PIÈCES D'ÉTAT CERTIFIÉES (VISUALISATEUR CITOYEN) -->
     {data.sources && data.sources.length > 0 && (
@@ -129,8 +185,12 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
 
         <div class="grid grid-cols-1 gap-4">
           {data.sources.map((src: any, index: number) => {
-            const targetUrl = src.pdfDirect || src.url;
-            const finalHref = targetUrl.startsWith('http') ? targetUrl : `../../${targetUrl.replace(/^\//, '')}`;
+            const rawTarget = src.pdfDirect || src.url;
+            let finalHref = rawTarget;
+            if (!rawTarget.startsWith('http')) {
+              const cleanTarget = rawTarget.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+              finalHref = `../../${cleanTarget}`;
+            }
             return (
               <div class="bg-slate-900/90 border border-slate-800 hover:border-emerald-500/60 p-5 rounded-2xl transition flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg">
                 <div class="space-y-1.5">
@@ -204,6 +264,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
                 id="modalPdfDirectLink" 
                 href="#" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 class="px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-lg text-[11px] font-mono uppercase tracking-wider transition"
               >
                 📥 Ouvrir le Fichier Source →
@@ -227,7 +288,7 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
 
         <!-- Pied de page du Modal -->
         <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <a href="../#cada-generator" class="w-full sm:w-auto px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs rounded-xl transition text-center shadow-lg">
+          <a href="../../#cada-generator" class="w-full sm:w-auto px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs rounded-xl transition text-center shadow-lg">
             ⚖️ Générer la Saisine CADA Pré-remplie
           </a>
           <button id="closeDocModalBtn2" class="w-full sm:w-auto px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-mono text-xs rounded-xl transition border border-slate-700 cursor-pointer">
@@ -297,14 +358,14 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../${data.image
 
     <!-- Bouton de retour -->
     <div class="mt-16 text-center">
-      <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-base rounded-xl hover:from-amber-400 hover:to-amber-500 transition shadow-lg shadow-amber-500/20 font-sans">
-        <span>← Retour à la liste des 26 enquêtes</span>
+      <a href="../../" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-base rounded-xl hover:from-amber-400 hover:to-amber-500 transition shadow-lg shadow-amber-500/20 font-sans">
+        <span>← Retour à la liste des 29 enquêtes</span>
       </a>
     </div>
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 mt-20 text-center text-xs text-slate-500 font-mono">
-    CASA DI CRISTALE 2.0 — INVESTIGATION CITOYENNE SOUVERAINE
+    L'OCHJU — INVESTIGATION CITOYENNE SOUVERAINE & OPEN DATA
   </footer>
 </Layout>
 

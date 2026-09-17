@@ -3,6 +3,7 @@ id: 28
 title: "Investigation 27 (Part 2/2) : The Fate of Muvitarra — The Mechanics of Asphyxiation, The August 31 Deadline & The Sovereign Rescue Plan"
 subtitle: "DREAL formal notice, 2.9 M€ in unpaid debts by CAPA, a 63% obsolete fleet, and financial siphoning toward the south shore: official state records exposing the deliberate dismantling of Ajaccio's public transit utility."
 category: "INFRASTRUCTURES & POWER"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P2"
 author: "L'OCHJU Investigation Desk"
 date: "August 2026"
@@ -40,7 +41,7 @@ sources:
 
 > 🔗 **MAJOR AJACCIO TRANSIT DOSSIER (PART 2/2)** :  
 > This article constitutes the second part of our exclusive investigation on Ajaccio mobility.  
-> 👉 **[Read Part 1/2 : Angelo Cable Car — The 52 M€ Mirage and the POMA Private Annuity](/investigations/27-le-telepherique-angelo-ajaccio/)**
+> 👉 **[Read Part 1/2 : Angelo Cable Car — The 52 M€ Mirage and the POMA Private Annuity](../27-le-telepherique-angelo-ajaccio/)**
 
 ---
 

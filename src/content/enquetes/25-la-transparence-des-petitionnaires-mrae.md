@@ -3,6 +3,7 @@ id: 25
 title: "Enquête 25 : La Transparence des Pétitionnaires & l'Étude d'Impact Environnemental"
 subtitle: "Radiographie des enquêtes publiques : comment le masquage des prête-noms et le saucillonnage des projets immobiliers neutralisent l'évaluation environnementale"
 category: "ENVIRONNEMENT & TRANSPARENCE"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-25"
 author: "Cellule d'Investigation Environnementale L'OCHJU"
 date: "Août 2026"

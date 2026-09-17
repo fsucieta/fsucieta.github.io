@@ -3,6 +3,7 @@ id: 23
 title: "Enquête 23 : La Sous-Dotation de la Sécurité Civile & les Risques Majeurs"
 subtitle: "Radiographie de la prévention des risques : sous-dimensionnement des moyens aériens anti-incendie (Canadairs) et précarité des secours en haute montagne"
 category: "SECURITÉ CIVILE & RISQUES"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-23"
 author: "Cellule d'Investigation Sécurité Civile L'OCHJU"
 date: "Août 2026"

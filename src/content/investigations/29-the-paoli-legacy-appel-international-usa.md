@@ -3,6 +3,7 @@ id: 29
 title: "Special Issue 01 : Manifesto from Corte to Philadelphia — An Appeal to Free Nations"
 subtitle: "From the modern world's first democratic Constitution (1755) to America's first military battle cry 'Remember Paoli !' (1777) : the resurgence of a sacred moral pact between Corsica and the free world."
 category: "EMANCIPATION MANIFESTO & GEOPOLITICS"
+status: cloturee
 ref: "LOCHJU-MANIFESTO-01-CORTE-PHILADELPHIA"
 author: "The Citizen Editorial Board of L'OCHJU"
 date: "September 2026"
@@ -54,7 +55,7 @@ That miracle bears a name that imperial armies sought to erase and that free men
 
 ## 📜 II. THE GIFT OF CORTE (1755) : THE FIRST BREATH OF MODERN DEMOCRACY
 
-On November 18, 1755, in the mountain citadel of Corte, Pasquale Paoli — elected General of the Nation by the unanimous voice of village delegates — did not merely repel the mercantile ambitions of a predatory Genoese empire.
+On <mark class="forensic-highlight">November 18, 1755</mark>, in the mountain citadel of Corte, Pasquale Paoli — elected General of the Nation by the unanimous voice of village delegates — did not merely repel the mercantile ambitions of a predatory Genoese empire.
 
 He bestowed upon all mankind the very first written democratic constitution of the modern era:
 

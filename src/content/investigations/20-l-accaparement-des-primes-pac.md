@@ -3,6 +3,7 @@ id: 20
 title: "Investigation 20 : The CAP Subsidy Capture & Speculative Pastoralism"
 subtitle: "Radiography of agricultural subsidies : how the Common Agricultural Policy (CAP) surface declaration model enriches large speculative landowners at the expense of real working farmers."
 category: "AGRICULTURE & CAP SUBSIDIES"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-20"
 author: "L'OCHJU Agro-Economic Investigation Desk"
 date: "August 2026"

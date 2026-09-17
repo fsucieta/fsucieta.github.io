@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
-import MatriceImpact from '../components/MatriceImpact.astro';
 import GisMap from '../components/GisMap.astro';
 import CadaGenerator from '../components/CadaGenerator.astro';
 import WhistleblowerVault from '../components/WhistleblowerVault.astro';
@@ -11,10 +10,23 @@ import FoncierDvfRadar from '../components/FoncierDvfRadar.astro';
 const allEnquetes = await getCollection('enquetes');
 // Trier par ID
 const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
-const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossier majeur à la Une (#29 : Hors-Série 01 - The Paoli Legacy)
+
+// Séparation éditoriale claire : Dossiers Clôturés vs Enquêtes en Cours d'Instruction
+const enquetesCloturees = enquetes.filter(e => e.data.status !== 'en_cours');
+const enquetesEnCours = enquetes.filter(e => e.data.status === 'en_cours');
+
+// Les 8 Grandes Enquêtes Clôturées Majeures pour le Carrousel à la Une (Option A)
+const idsClotures = [29, 2, 3, 4, 6, 18, 27, 28];
+const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id)).filter(Boolean);
 ---
 
-<Layout title="L'OCHJU — Média Citoyen d'Investigation & Open Data (L'aveti ?)">
+<Layout 
+  title="L'OCHJU — Média Citoyen d'Investigation & Open Data (L'aveti ?)"
+  description="L'OCHJU — Premier média citoyen d'investigation en Corse fondé sur l'open data et la preuve médico-légale. 29 grandes enquêtes en libre accès."
+  canonicalUrl="https://fsucieta.github.io/"
+  image="/alerte_censure_lochju.jpg"
+  lang="fr"
+>
   <!-- En-tête / Header Éditorial L'OCHJU Centré & Épuré -->
   <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-4 px-6 shadow-2xl">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -30,7 +42,7 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
       </div>
 
       <!-- Centre : Logo Officiel Géant Centré Majestueux -->
-      <a href="./" class="group flex justify-center">
+      <a href="./" class="group flex justify-center" aria-label="Retour à l'accueil de L'OCHJU">
         <div class="relative">
           <div class="absolute -inset-2 bg-gradient-to-r from-amber-500/40 via-amber-300/30 to-amber-500/40 rounded-2xl blur-md opacity-40 group-hover:opacity-100 transition duration-500"></div>
           <img 
@@ -53,7 +65,7 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
   </header>
 
   <!-- Navigation Rapide Sticky (Confort Ergonomique Mobile & Desktop) -->
-  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[108px] z-40 py-2.5 px-6 shadow-md overflow-x-auto">
+  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[108px] z-40 py-2.5 px-6 shadow-md overflow-x-auto" aria-label="Navigation rapide par sections">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 text-xs font-mono whitespace-nowrap">
       <a href="#manifeste-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
         <span>🙏 Le Manifeste</span>
@@ -76,329 +88,477 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
     </div>
   </nav>
 
-  <!-- ================= SECTION MANIFESTE INTEGRAL ("LA PRIERE DE L'OCHJU") ================= -->
-  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4" id="manifeste-section">
-    <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden bg-slate-900">
+  <main id="main-content">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-4" id="alerte-censure-section">
+  <div class="relative rounded-3xl p-6 sm:p-8 md:p-10 border border-amber-500/30 bg-gradient-to-b from-slate-900/90 via-slate-950 to-slate-950 shadow-2xl backdrop-blur-xl overflow-hidden">
+    <!-- Glow subtil d'arrière-plan -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
       
-      <!-- CITATION HISTORIQUE DE PASQUALE PAOLI EN FRANÇAIS (AU-DESSUS DU TITRE) -->
-      <div class="bg-amber-500/5 border border-amber-500/30 rounded-xl p-6 mb-8 text-center">
-        <p class="font-serif italic text-slate-100 text-base md:text-lg leading-relaxed">
-          « La Justice, la vertu et l'amour de la Patrie doivent être les seuls moteurs de nos actions. Le Peuple Corse, ayant recouvré sa liberté, entend donner une forme durable à son gouvernement en fondant sa Constitution sur la raison et la vérité. »
-        </p>
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mt-3 block">
-          — Pasquale Paoli, Préambule de la Constitution de la Corse (18 Novembre 1755)
-        </span>
-      </div>
-
-      <div class="text-center border-b border-slate-800 pb-6 mb-8">
-        <h1 class="text-3xl md:text-5xl font-black font-serif text-slate-100 mb-3">🙏 LA PRIÈRE DE L'OCHJU</h1>
-        <p class="font-serif italic text-amber-400 text-base md:text-lg">Au-delà des 200 000 vues : la parole qui dissipe l'opacité et délivre le peuple par le Savoir.</p>
-      </div>
-
-      <div class="font-serif text-lg text-slate-100 border-l-4 border-rose-600 pl-6 mb-8 leading-relaxed">
-        👁️ Vous croyez qu'il ne s'agit que d'articles. Vous pensez qu'il ne s'agit que de chiffres alignés sur un écran.
-        <br/><br/>
-        200 000 fois. En quelques jours, l'écran s'est éclairé deux cent mille fois. Ce n'est pas un simple succès d'audience : c'est un dysfonctionnement majeur dans leur système. C'est la preuve que sous le vernis du silence et de la résignation, vous n'attendiez tous qu'une seule chose : l'étincelle de la vérité.
-      </div>
-
-      <div class="font-serif text-base text-slate-300 space-y-4 mb-8 leading-relaxed">
-        <p>Pendant des décennies, ils ont régné sur un empire d'opacité. Ils ont misé sur votre fatigue. Ils ont compté sur une arme silencieuse, mais terrifiante : l'ignorance. Ils vous ont dit que les dossiers étaient "trop complexes", que le foncier était "un casse-tête juridique", que l'eau, les transports ou l'énergie échappaient à votre contrôle. <strong class="text-slate-100">Ils vous ont menti.</strong></p>
-      </div>
-
-      <h2 class="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-2 mb-4">⚡ BIENVENUE DANS L'INFORMATION 2.0 (INTELLIGENCE & DONNÉES BRUTES)</h2>
-      <div class="font-serif text-base text-slate-300 space-y-4 mb-8 leading-relaxed">
-        <p>L'OCHJU n'est pas un média classique. L'OCHJU n'est pas une tribune d'opinion. L'OCHJU est une rupture forensique dans leur système.</p>
-        <p>Nous combinons la rigueur absolue de l'ingénierie de données — extraction d'actes officiels bruts, analyse cadastrale avec notre partenaire de veille foncière <strong class="text-amber-400 font-sans">Bufitonu.fr</strong>, décryptage des bilans financiers et des flux d'argent — avec la seule force qu'ils ne pourront jamais pirater : la vérité du terrain et l'éveil d'un peuple.</p>
-        <p>À partir d'aujourd'hui, le mot "ignorer" est effacé de notre vocabulaire. Ni les décideurs dans leurs bureaux dorés, ni les notables du silence ne pourront plus jamais prononcer cette phrase : <em class="italic text-slate-100">"Nous ne savions pas."</em></p>
-        <p>Parce que désormais, VOUS savez. Et le Savoir partagé n'est pas une simple information : c'est l'arme ultime de votre réappropriation. C'est l'acte de naissance de notre souveraineté citoyenne.</p>
-      </div>
-
-      <h2 class="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-2 mb-4">🏛️ LES QUATRE PILIERS INATTAQUABLES</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">I. L'ÉPREUVE DU FAIT</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">Pas de rumeurs. Pas de bavardages. Chaque fait révélé est adossé à des pièces officielles consultables et vérifiables au bit près.</p>
-        </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">II. LA DOUBLE ÉTAGÈRE</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">Le concept financier ou juridique le plus complexe rendu limpide pour chaque foyer. Comprendre, c'est désarmer le pouvoir.</p>
-        </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">III. LA RIPOSTE ET LA SOLUTION</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">L'indignation est stérile sans l'action. À chaque dysfonctionnement mis à nu, nous apportons la feuille de route et l'alternative de gouvernance.</p>
-        </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">IV. L'INDÉPENDANCE SANS CONCESSION</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">Ni maîtres, ni actionnaires, ni agendas politiques. Ce média n'a d'exigences qu'envers ses lecteurs et son unique cause est la défense de la terre corse et la survie de son PEUPLE.</p>
+      <!-- Colonne Gauche : Visuel épuré centré -->
+      <div class="lg:col-span-4 flex flex-col items-center justify-center">
+        <div class="relative group w-full max-w-[280px] sm:max-w-xs">
+          <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500/30 to-amber-300/20 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500"></div>
+          <img src="./alerte_censure_lochju.jpg" alt="L'OCHJU - On ne fait pas taire la vérité" class="relative w-full h-auto rounded-2xl border border-amber-500/40 shadow-2xl">
         </div>
       </div>
 
-      <h2 class="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-2 mb-2">📂 27 DOSSIERS. 27 SERRURES À CROCHETER.</h2>
-      <p class="text-xs text-slate-400 italic mb-6"><em>(Veille cadastrale & foncière menée en partenariat avec Bufitonu.fr)</em></p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 font-sans mb-8">
-        <!-- 01 -->
-        <a href="./enquetes/01-le-grand-verrou-financier/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">01</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Grand Verrou Financier</span> — <span class="text-slate-400">Prêts In Fine, non-résidents et accès au crédit.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 02 -->
-        <a href="./enquetes/02-le-mythe-des-subventions/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">02</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Le Hold-Up des 420 Millions</span> — <span class="text-slate-400">Balance fiscale réelle (1 000 bilans) et 1 200 € volés/an.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 03 -->
-        <a href="./enquetes/03-le-manifeste-universel-du-sol/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">03</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Le Manifeste Universel du Sol</span> — <span class="text-slate-400">Droit comparé (Malte/Åland), doctrine Talamoni 2014 et plan global de souveraineté.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 04 -->
-        <a href="./enquetes/04-la-marchandisation-de-l-eau/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">04</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">La Marchandisation de l'Eau</span> — <span class="text-slate-400">42 Mm³ perdus, DSP privées et plan de souveraineté.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 05 -->
-        <a href="./enquetes/05-l-empire-des-sci-non-residentes/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">05</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">L'Empire des SCI Non-Résidentes</span> — <span class="text-slate-400">Registres RBE, cadastre et mitage foncier.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 06 -->
-        <a href="./enquetes/06-le-pillage-des-quotas-de-peche/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">06</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Quand la Mer S'Arrête de Chanter</span> — <span class="text-slate-400">Quotas confisqués (Sète), cartel carburant (187 M€) et Pesca Nustrale.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 07 -->
-        <a href="./enquetes/07-le-cadastre-minier-secret/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">07</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Cadastre Minier Secret</span> — <span class="text-slate-400">Terres rares, antimoine et inventaire BRGM.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 08 -->
-        <a href="./enquetes/08-le-pillage-de-la-foret-corse/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">08</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Pillage de la Forêt Corse</span> — <span class="text-slate-400">Exportation des grumes et filière bois locale.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 09 -->
-        <a href="./enquetes/09-l-evasion-des-capitaux-touristiques/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">09</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">L'Évasion des Capitaux Touristiques</span> — <span class="text-slate-400">Captation de valeur par les centrales continentales.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 10 -->
-        <a href="./enquetes/10-la-tutelle-de-la-haute-fonction-publique/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">10</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Tutelle de la Haute Fonction Publique</span> — <span class="text-slate-400">Administration du zapping et blocages.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 11 -->
-        <a href="./enquetes/11-l-emprise-et-les-servitudes-militaires/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">11</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">L'Emprise & Servitudes Militaires</span> — <span class="text-slate-400">Solenzara, Aspretto et développement foncier.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 12 -->
-        <a href="./enquetes/12-la-dependance-sanitaire-evasan/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">12</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Dépendance Sanitaire EVASAN</span> — <span class="text-slate-400">Absence de CHU et fuite des budgets santé.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 13 -->
-        <a href="./enquetes/13-le-sous-investissement-educatif/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">13</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Sous-Investissement Éducatif</span> — <span class="text-slate-400">Université de Corte et exil de la jeunesse.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 14 -->
-        <a href="./enquetes/14-le-dessaisissement-judiciaire-jirs/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">14</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Dessaisissement Judiciaire JIRS</span> — <span class="text-slate-400">Procédure d'exception et justice délocalisée.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 15 -->
-        <a href="./enquetes/15-le-controle-de-legalite-et-censure/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">15</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Contrôle de Légalité & Censure</span> — <span class="text-slate-400">Traque des maires ruraux vs laxisme littoral.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 16 -->
-        <a href="./enquetes/16-la-continuite-des-arretes-miot/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">16</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Continuité des Arrêtés Miot</span> — <span class="text-slate-400">Indivision, démantèlement fiscal et GIRTEC.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 17 -->
-        <a href="./enquetes/17-le-verrou-de-la-charte-europeenne/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">17</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Verrou de la Charte Européenne</span> — <span class="text-slate-400">Dogme linguistique et co-officialité bloquée.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 18 -->
-        <a href="./enquetes/18-le-monopole-energetique-edf-sei/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">18</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Le Vol de la Lumière</span> — <span class="text-slate-400">Pacte colonial énergétique, scandale du Ricanto (800 M€) et 199 MW confisqués.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 19 -->
-        <a href="./enquetes/19-la-dependance-numerique-et-data/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">19</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Dépendance Numérique & Data</span> — <span class="text-slate-400">Câbles sous-marins et souveraineté des données.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 20 -->
-        <a href="./enquetes/20-l-accaparement-des-primes-pac/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">20</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">L'Accaparement des Primes PAC</span> — <span class="text-slate-400">Spéculation TéléPAC et faux troupeaux.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 21 -->
-        <a href="./enquetes/21-le-scandale-des-dechets-syvadec/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">21</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Le Scandale des Déchets SYVADEC</span> — <span class="text-slate-400">Exportations maritimes et coût par foyer.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 22 -->
-        <a href="./enquetes/22-la-captation-bancaire-et-epargne/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">22</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Captation Bancaire & Épargne</span> — <span class="text-slate-400">Évasion des dépôts locaux vers Paris.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 23 -->
-        <a href="./enquetes/23-la-sous-dotation-de-la-securite-civile/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">23</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">La Sous-Dotation Sécurité Civile</span> — <span class="text-slate-400">Flotte aérienne et moyens de secours SIS.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 24 -->
-        <a href="./enquetes/24-le-radar-d-urbanisme-permis-tacites/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">24</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Radar d'Urbanisme & Permis Tacites</span> — <span class="text-slate-400">Bétonnage masqué et recours CADA.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 25 -->
-        <a href="./enquetes/25-la-transparence-des-petitionnaires-mrae/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">25</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Transparence des Pétitionnaires MRAe</span> — <span class="text-slate-400">Saucissonnage et prête-noms fonciers.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 26 -->
-        <a href="./enquetes/26-la-speculation-sur-le-bati-agricole/" class="bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">26</span><span class="text-slate-100 font-semibold group-hover:text-amber-300 transition">Spéculation sur le Bâti Agricole</span> — <span class="text-slate-400">Détournement des pagliaghji et failles.</span></div>
-          <span class="px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono text-[10px] flex-shrink-0">À DÉVELOPPER</span>
-        </a>
-
-        <!-- 27 (Partie 1/2) -->
-        <a href="./enquetes/27-le-telepherique-angelo-ajaccio/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">27</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Téléphérique Angelo (Partie 1/2)</span> — <span class="text-slate-400">Le mirage à 52 M€, la rente POMA et les réserves de la DUP.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 28 (Partie 2/2) -->
-        <a href="./enquetes/28-le-naufrage-organise-de-la-muvitarra/" class="bg-slate-950/80 border border-emerald-500/40 hover:border-emerald-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-md">
-          <div class="pr-2"><span class="font-mono text-emerald-400 font-bold mr-2">28</span><span class="text-slate-100 font-bold group-hover:text-emerald-300 transition">Destin Muvitarra (Partie 2/2)</span> — <span class="text-slate-400">2,9 M€ d'impayés, couperet DREAL et Plan de Sauvetage Souverain.</span></div>
-          <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold flex-shrink-0">🟢 DOSSIER CLÔTURÉ</span>
-        </a>
-
-        <!-- 29 (Hors-Série International) -->
-        <a href="./enquetes/29-the-paoli-legacy-appel-international-usa/" class="bg-slate-950/80 border border-amber-500/50 hover:border-amber-400 hover:bg-slate-900 rounded-xl p-3.5 flex justify-between items-center text-xs transition duration-200 group shadow-lg shadow-amber-500/10">
-          <div class="pr-2"><span class="font-mono text-amber-400 font-bold mr-2">29</span><span class="text-slate-100 font-bold group-hover:text-amber-300 transition">Hors-Série 01 : Manifeste de Corte à Philadelphie</span> — <span class="text-slate-400">Le réveil du pacte moral sacré et l'Appel aux Nations Libres (1755–2026).</span></div>
-          <span class="px-2 py-1 rounded bg-amber-500/20 text-amber-400 border border-amber-500/40 font-mono text-[10px] font-bold flex-shrink-0">⭐ HORS-SÉRIE MONUMENTAL</span>
-        </a>
-      </div>
-
-      <div class="bg-rose-500/5 border border-rose-500/30 rounded-xl p-6 text-center mb-6">
-        <p class="text-slate-100 font-semibold text-sm">Il reste 19 verrous à faire sauter. 19 dossiers en cours d'instruction citoyenne.</p>
-        <p class="text-xs text-slate-400 mt-2">Nous ne le ferons pas seuls dans un bureau. Nous sommes l'étincelle, vous êtes l'incendie. Si vous détenez un document officiel, une délibération masquée, un chiffre étouffé, une expertise technique ou une preuve de terrain : prenez un dossier en main. Écrivez-nous en MP. Rejoignez la cellule.</p>
-      </div>
-
-      <div class="text-center font-serif italic text-amber-400 text-sm">
-        <strong>L'opacité n'est pas une fatalité. Le Savoir partagé est notre contre-pouvoir.</strong>
-        <br/><br/>
-        <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
-        <br/>
-        <span class="text-xs text-slate-400 font-sans opacity-75">— La rédaction de L'OCHJU</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Hero Éditorial / "À LA UNE" -->
-  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4">
-    <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
-      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      
-      <div class="flex flex-wrap items-center gap-3 mb-4">
-        <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono">
-          ★ ÉDITION INAUGURALE — 26 ENQUÊTES EXCLUSIVES (78 REGISTRES D'ÉTAT DÉCODÉS)
-        </span>
-        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono font-bold">
-          360 COMMUNES AUDITÉES (+14 000 ACTES FONCIERS DVF)
-        </span>
-      </div>
-
-      <!-- Dossier à la Une -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
-        <div class="lg:col-span-7">
-          <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider block mb-2">
-            GRAND DOSSIER D'INVESTIGATION #{uneEnquete.data.id.toString().padStart(2, '0')}
+      <!-- Colonne Droite : Communiqué Régalien & Actions Équilibrées -->
+      <div class="lg:col-span-8 flex flex-col justify-center space-y-5">
+        
+        <!-- En-tête Badge de Presse avec Impact Historique -->
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest bg-rose-500/20 text-rose-300 border border-rose-500/40">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+            COMMUNIQUÉ OFFICIEL • ALERTE CENSURE
           </span>
-          <h1 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
-            <a href={`./enquetes/${uneEnquete.slug}/`}>
-              {uneEnquete.data.title}
-            </a>
-          </h1>
-          <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
-            {uneEnquete.data.chapeau}
-          </p>
-          <div class="flex flex-wrap items-center gap-4">
-            <a 
-              href={`./enquetes/${uneEnquete.slug}/`} 
-              class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
-            >
-              Lire le Grand Dossier (TEMPS DE LECTURE : 6 MIN) →
-            </a>
-            <a 
-              href="#fiches-grid-section" 
-              class="bg-slate-900 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
-            >
-              📂 Découvrir les 29 Enquêtes
-            </a>
-          </div>
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest bg-amber-500/15 text-amber-300 border border-amber-500/30">
+            🔥 +700 000 VUES EN UN MOIS
+          </span>
+          <span class="text-[11px] font-mono text-slate-500 hidden sm:inline">09.09.2026</span>
         </div>
 
-        <div class="lg:col-span-5">
-          <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
-            <img 
-              src={`./img_enquete_${uneEnquete.data.id.toString().padStart(2, '0')}.jpg`} 
-              alt={uneEnquete.data.title} 
-              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
-            <div class="absolute bottom-4 left-4 right-4 text-xs font-mono text-amber-300 bg-slate-950/90 p-3 rounded-lg border border-amber-500/30 backdrop-blur">
-              💡 <span class="font-bold">L'OCHJU Citoyen</span> : Visualisez l'audit médico-légal et les saisines CADA associées.
+        <!-- Titre de Presse Majeur -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black font-serif text-slate-100 leading-tight">
+          On ne fait pas taire la vérité. <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Devenez le mégaphone de L’OCHJU.</span>
+        </h2>
+
+        <!-- Texte Explicatif Épuré -->
+        <p class="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
+          Face à une mobilisation populaire historique — <strong class="text-amber-400 font-semibold">+700 000 vues enregistrées en un mois</strong> sur nos 29 dossiers d'investigation et nos audits cadastraux —, notre page sur les réseaux sociaux fait l'objet d'un blocage par vagues de signalements coordonnés. 
+          <strong class="text-slate-100">La liberté d'informer ne dépend d'aucun algorithme privé.</strong> Aidez-nous à briser l'omerta en relayant ce message sur vos réseaux.
+        </p>
+
+        <!-- Boîte de Citation & Actions Structurées -->
+        <div class="rounded-2xl bg-slate-950/90 border border-slate-800/90 p-4 sm:p-5 space-y-4">
+          
+          <!-- Ligne Texte du message + Bouton Copier -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                <span>📜</span> Message officiel complet prêt à être partagé :
+              </span>
+              <button id="copyCensureBtn" onclick="copyCensureMessage()" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95">
+                <span id="copyBtnIcon">📋</span> <span id="copyBtnLabel">Copier le texte</span>
+              </button>
+            </div>
+
+            <div id="censureMessageText" class="text-xs font-mono text-slate-300 leading-relaxed max-h-40 overflow-y-auto whitespace-pre-wrap selection:bg-amber-500 selection:text-slate-950 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60">🔴 DÉFERLANTE CITOYENNE : PLUS DE 700 000 VUES EN UN MOIS SUR L'OCHJU !
+🔴 ALERTE CENSURE : ON NE FAIT PAS TAIRE LA VÉRITÉ !
+
+Suite au réveil massif de l'opinion publique et aux révélations de nos 29 grandes enquêtes forensiques (+700 000 vues en 30 jours), notre page sur les réseaux sociaux fait l'objet d'une tentative de blocage par vagues de signalements coordonnés.
+
+Ceux qui profitent de l'opacité et des rentes pensent pouvoir éteindre la lumière d'un clic. Mais la souveraineté de l'information ne dépend d'aucun algorithme privé.
+
+Retrouvez l'intégralité des 29 grandes enquêtes d'investigation, les audits cadastraux et les pièces d'archives certifiées en accès libre, gratuit et indépendant sur notre site officiel :
+👉 https://fsucieta.github.io/
+
+La vérité n'appartient à aucun pouvoir. Partagez massivement ce message pour briser l'omerta et défendre la liberté d'informer ! ✊👁️</div>
+          </div>
+
+          <!-- Barre d'Action et de Diffusion Intelligente & Équilibrée (Grille Harmonisée) -->
+          <div class="pt-3 border-t border-slate-800/80">
+            <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider block mb-2.5">
+              Diffuser ou télécharger l'alerte :
+            </span>
+
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffsucieta.github.io%2F" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#1877F2] text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>📘</span> <span>Facebook</span>
+              </a>
+
+              <!-- X / Twitter -->
+              <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffsucieta.github.io%2F&text=%F0%9F%94%B4%20ALERTE%20CENSURE%20%3A%20ON%20NE%20FAIT%20PAS%20TAIRE%20L'OCHJU%20!%0A%0ARetrouvez%20nos%2028%20grandes%20enqu%C3%AAtes%20d'investigation%20citoyenne%20en%20acc%C3%A8s%20libre%20et%20ind%C3%A9pendant%20sur%20le%20site%20officiel%20%3A" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-black text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>✖️</span> <span>X</span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://api.whatsapp.com/send?text=%F0%9F%94%B4%20ALERTE%20CENSURE%20%3A%20ON%20NE%20FAIT%20PAS%20TAIRE%20L'OCHJU%20!%0A%0ASuite%20%C3%A0%20nos%20enqu%C3%AAtes%20d'investigation%2C%20notre%20page%20fait%20l'objet%20d'une%20tentative%20de%20censure.%20La%20v%C3%A9rit%C3%A9%20ne%20d%C3%A9pend%20d'aucun%20algorithme.%0A%0ARetrouvez%20les%2028%20enqu%C3%AAtes%20en%20acc%C3%A8s%20libre%20%3A%20https%3A%2F%2Ffsucieta.github.io%2F" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#25D366] text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>💬</span> <span>WhatsApp</span>
+              </a>
+
+              <!-- Telegram -->
+              <a href="https://t.me/share/url?url=https%3A%2F%2Ffsucieta.github.io%2F&text=%F0%9F%94%B4%20ALERTE%20CENSURE%20%3A%20ON%20NE%20FAIT%20PAS%20TAIRE%20L'OCHJU%20!%20D%C3%A9couvrez%20les%2028%20enqu%C3%AAtes%20d'investigation%20en%20acc%C3%A8s%20libre%20sur%20le%20site%20officiel." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#0088cc] text-slate-200 hover:text-white border border-slate-800 hover:border-[#0088cc] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>✈️</span> <span>Telegram</span>
+              </a>
+
+              <!-- Télécharger Affiche HD -->
+              <a href="./alerte_censure_lochju.jpg" download="L-OCHJU-ON-NE-FAIT-PAS-TAIRE-LA-VERITE.jpg" class="col-span-2 sm:col-span-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/30 text-xs font-mono font-bold transition-all duration-200 shadow-sm text-center">
+                <span>📥</span> <span>Affiche HD</span>
+              </a>
             </div>
           </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyCensureMessage() {
+    const text = document.getElementById('censureMessageText').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const label = document.getElementById('copyBtnLabel');
+      const icon = document.getElementById('copyBtnIcon');
+      label.innerText = 'Copié !';
+      icon.innerText = '✅';
+      setTimeout(() => {
+        label.innerText = 'Copier le texte';
+        icon.innerText = '📋';
+      }, 3000);
+    });
+  }
+</script>
+
+
+
+  <!-- ================= SECTION MANIFESTE SOUVERAIN ÉPURÉ ("LE SERMENT DE L'OCHJU") ================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-2" id="manifeste-section">
+    <div class="relative border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden bg-gradient-to-b from-slate-900/90 via-slate-950 to-slate-950 backdrop-blur-xl">
+      <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- CITATION HISTORIQUE SOUVERAINE DE PASQUALE PAOLI -->
+      <div class="max-w-3xl mx-auto text-center mb-6">
+        <blockquote class="!bg-transparent !border-0 !p-0 !m-0 !shadow-none">
+          <p class="font-serif italic text-amber-200/90 text-sm sm:text-base md:text-lg leading-relaxed">
+            « La Justice, la vertu et l'amour de la Patrie doivent être les seuls moteurs de nos actions. Le Peuple Corse, ayant recouvré sa liberté, entend donner une forme durable à son gouvernement en fondant sa Constitution sur la raison et la vérité. »
+          </p>
+          <cite class="font-mono text-[11px] text-amber-400/80 uppercase tracking-widest mt-2 block not-italic">
+            — Pasquale Paoli, Préambule de la Constitution de la Corse (18 Novembre 1755)
+          </cite>
+        </blockquote>
+      </div>
+
+      <!-- SYNTHÈSE DU SERMENT CITOYEN (3 LIGNES FORTES) -->
+      <div class="max-w-4xl mx-auto text-center border-t border-b border-slate-800/80 py-5 my-5 space-y-2">
+        <h1 class="text-xl sm:text-2xl font-serif font-black text-slate-100 tracking-wide">
+          LE SAVOIR PARTAGÉ EST NOTRE CONTRE-POUVOIR
+        </h1>
+        <p class="font-serif text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+          Sous le vernis du silence et de la résignation, l'écran s'est allumé <strong class="text-amber-400 font-mono">+700 000 fois</strong> en un mois. Ni maîtres, ni compromis : voici la vérité des chiffres pour rendre au peuple son pouvoir de décider.
+        </p>
+      </div>
+
+      <!-- LES 4 PILIERS RÉSUMÉS EN CARTES HORIZONTALES COMPACTES -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto my-6">
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-rose-400 block mb-0.5 uppercase tracking-wider">I. L'Épreuve du Fait</span>
+          <span class="text-[11px] text-slate-400 font-sans">0 rumeur · Actes d'État vérifiés au bit près</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-amber-400 block mb-0.5 uppercase tracking-wider">II. La Double Étagère</span>
+          <span class="text-[11px] text-slate-400 font-sans">Droit & finances traduits pour chaque foyer</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-cyan-400 block mb-0.5 uppercase tracking-wider">III. La Riposte Directe</span>
+          <span class="text-[11px] text-slate-400 font-sans">À chaque scandale, la solution légale</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-emerald-400 block mb-0.5 uppercase tracking-wider">IV. Indépendance Totale</span>
+          <span class="text-[11px] text-slate-400 font-sans">Ni subvention d'État, ni actionnaire</span>
         </div>
       </div>
+
+      <!-- TEXTE INTÉGRAL DÉPLIABLE À LA DEMANDE (ACCORDÉON RAFFINÉ) -->
+      <details class="max-w-3xl mx-auto group border border-slate-800/80 rounded-xl bg-slate-950/60 transition duration-300">
+        <summary class="p-3 text-center cursor-pointer font-mono text-xs text-amber-400 hover:text-amber-300 flex items-center justify-center gap-2 select-none">
+          <span>📜 Lire le Texte Intégral du Manifeste</span>
+          <span class="text-slate-500 group-open:rotate-180 transition transform">▼</span>
+        </summary>
+        <div class="p-6 border-t border-slate-800/80 font-serif text-sm text-slate-300 space-y-4 leading-relaxed bg-slate-900/40">
+          <p class="border-l-2 border-rose-500 pl-4 italic text-slate-200">
+            👁️ Vous croyez qu'il ne s'agit que d'articles. Vous pensez qu'il ne s'agit que de chiffres alignés sur un écran. Sept cent mille fois en un mois, l'écran s'est éclairé. C'est la preuve vivante que vous n'attendiez qu'une seule chose : l'étincelle de la vérité.
+          </p>
+          <p>
+            Pendant des décennies, ils ont régné sur un empire d'opacité. Ils ont misé sur votre fatigue et l'ignorance programmée. Ils vous ont dit que les dossiers étaient "trop complexes", que le foncier était un casse-tête, que l'eau, les transports ou l'énergie échappaient à votre contrôle. <strong class="text-slate-100">Ils vous ont menti.</strong>
+          </p>
+          <p>
+            L'OCHJU n'est pas une tribune d'opinion. L'OCHJU est une rupture médico-légale dans leur système. Nous combinons l'ingénierie de données (actes officiels bruts, veille cadastrale avec <strong class="text-amber-400">Bufitonu.fr</strong>, décryptage des bilans financiers) avec l'éveil citoyen.
+          </p>
+          <p class="text-center font-serif italic text-amber-400 pt-2 border-t border-slate-800">
+            « L'opacité n'est pas une fatalité. Le Savoir partagé est notre contre-pouvoir. »
+          </p>
+        </div>
+      </details>
+
+      <!-- Bouton d'ancrage rapide vers les dossiers -->
+      <div class="mt-6 text-center">
+        <a href="#carousel-alaune-section" class="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition shadow-lg shadow-amber-500/20">
+          <span>Accéder Directement aux Enquêtes à la Une ↓</span>
+        </a>
+      </div>
+
     </div>
   </section>
 
-  <!-- Section 1 : Grille des 26 Enquêtes d'Impact (100% Cliquables) -->
+  <!-- ================= CARROUSEL INTERACTIF "À LA UNE" : LES 8 ENQUÊTES CLÔTURÉES ================= -->
+  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4" id="carousel-alaune-section">
+    <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden bg-slate-900">
+      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <!-- En-tête du Carrousel avec Indicateur d'Édition et Boutons de Navigation -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800/80 pb-4">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            ★ DOSSIERS MAJEURS À LA UNE (ENQUÊTES CLÔTURÉES)
+          </span>
+          <span class="px-2.5 py-1 bg-rose-500/10 text-rose-300 border border-rose-500/30 rounded-full text-xs font-mono font-bold">
+            🔥 +700 000 VUES
+          </span>
+          <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono font-bold">
+            🗺️ 360 COMMUNES
+          </span>
+          <span class="px-3 py-1 bg-slate-950 text-slate-300 border border-slate-800 rounded-full text-xs font-mono font-bold" id="carouselCounter">
+            Dossier 1 / {enquetesAlaUne.length}
+          </span>
+        </div>
+
+        <!-- Contrôles Précédent / Suivant et Pause -->
+        <div class="flex items-center gap-2">
+          <button 
+            id="carouselPrevBtn" 
+            type="button" 
+            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Dossier précédent"
+          >
+            ◀
+          </button>
+          <button 
+            id="carouselPlayPauseBtn" 
+            type="button" 
+            class="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Mettre en pause / Relancer le défilement automatique"
+          >
+            ⏸️ Pause
+          </button>
+          <button 
+            id="carouselNextBtn" 
+            type="button" 
+            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Dossier suivant"
+          >
+            ▶
+          </button>
+        </div>
+      </div>
+
+      <!-- Diapositives du Carrousel (Chaque enquête clôturée) -->
+      <div class="relative overflow-hidden min-h-[440px]" id="carouselSlidesContainer">
+        {enquetesAlaUne.map((enq, index) => {
+          const d = enq.data;
+          const isFirst = index === 0;
+          return (
+            <div 
+              class={`carousel-slide transition-opacity duration-700 ${isFirst ? 'opacity-100 relative' : 'opacity-0 absolute inset-0 pointer-events-none'}`}
+              data-slide-index={index}
+            >
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                  <div class="flex items-center gap-2.5 mb-3">
+                    <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider">
+                      GRAND DOSSIER D'INVESTIGATION #{d.id.toString().padStart(2, '0')}
+                    </span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold">
+                      {d.id === 29 ? '⭐ HORS-SÉRIE MONUMENTAL' : '🟢 DOSSIER CLÔTURÉ'}
+                    </span>
+                  </div>
+
+                  <h2 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
+                    <a href={`./enquetes/${enq.slug}/`}>
+                      {d.title}
+                    </a>
+                  </h2>
+
+                  <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
+                    {d.chapeau}
+                  </p>
+
+                  <div class="flex flex-wrap items-center gap-4">
+                    <a 
+                      href={`./enquetes/${enq.slug}/`} 
+                      class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
+                    >
+                      Lire le Grand Dossier (6 MIN) →
+                    </a>
+                    <a 
+                      href="#fiches-section" 
+                      class="bg-slate-950 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
+                    >
+                      📂 Voir les 29 Enquêtes
+                    </a>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                  <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
+                    <img 
+                      src={d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`} 
+                      alt={d.title} 
+                      class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-xs font-mono text-amber-300 bg-slate-950/90 p-3 rounded-lg border border-amber-500/30 backdrop-blur">
+                      💡 <span class="font-bold">L'OCHJU Citadinu</span> : {d.subtitle || "Dossier médico-légal et pièces d'archives certifiées."}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Puces de Navigation / Pagination -->
+      <div class="flex items-center justify-center gap-2 mt-8 pt-4 border-t border-slate-800/80" id="carouselDots">
+        {enquetesAlaUne.map((_, index) => (
+          <button 
+            type="button" 
+            class={`carousel-dot w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${index === 0 ? 'bg-amber-400 w-8' : 'bg-slate-700 hover:bg-slate-500'}`}
+            data-dot-index={index}
+            title={`Aller au dossier ${index + 1}`}
+          ></button>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Script du Carrousel Dynamique -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.getElementById('carouselPrevBtn');
+      const nextBtn = document.getElementById('carouselNextBtn');
+      const playPauseBtn = document.getElementById('carouselPlayPauseBtn');
+      const counter = document.getElementById('carouselCounter');
+      const container = document.getElementById('carousel-alaune-section');
+
+      if (!slides.length) return;
+
+      let currentIndex = 0;
+      let isPlaying = true;
+      let autoTimer = null;
+      const total = slides.length;
+
+      function updateSlide(newIndex) {
+        slides.forEach((slide, idx) => {
+          if (idx === newIndex) {
+            slide.classList.remove('opacity-0', 'absolute', 'pointer-events-none');
+            slide.classList.add('opacity-100', 'relative');
+          } else {
+            slide.classList.remove('opacity-100', 'relative');
+            slide.classList.add('opacity-0', 'absolute', 'pointer-events-none');
+          }
+        });
+
+        dots.forEach((dot, idx) => {
+          if (idx === newIndex) {
+            dot.classList.add('bg-amber-400', 'w-8');
+            dot.classList.remove('bg-slate-700');
+          } else {
+            dot.classList.remove('bg-amber-400', 'w-8');
+            dot.classList.add('bg-slate-700');
+          }
+        });
+
+        if (counter) {
+          counter.textContent = `Dossier ${newIndex + 1} / ${total}`;
+        }
+
+        currentIndex = newIndex;
+      }
+
+      function nextSlide() {
+        const next = (currentIndex + 1) % total;
+        updateSlide(next);
+      }
+
+      function prevSlide() {
+        const prev = (currentIndex - 1 + total) % total;
+        updateSlide(prev);
+      }
+
+      function startTimer() {
+        stopTimer();
+        autoTimer = setInterval(nextSlide, 5500);
+      }
+
+      function stopTimer() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          if (isPlaying) startTimer();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          if (isPlaying) startTimer();
+        });
+      }
+
+      dots.forEach((dot) => {
+        dot.addEventListener('click', (e) => {
+          const idx = parseInt(e.target.getAttribute('data-dot-index') || '0', 10);
+          updateSlide(idx);
+          if (isPlaying) startTimer();
+        });
+      });
+
+      if (playPauseBtn) {
+        playPauseBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            playPauseBtn.textContent = '⏸️ Pause';
+            startTimer();
+          } else {
+            playPauseBtn.textContent = '▶️ Lecture';
+            stopTimer();
+          }
+        });
+      }
+
+      if (container) {
+        container.addEventListener('mouseenter', () => {
+          if (isPlaying) stopTimer();
+        });
+        container.addEventListener('mouseleave', () => {
+          if (isPlaying) startTimer();
+        });
+      }
+
+      startTimer();
+    });
+  </script>
+
+  <!-- Section 1 : Grille des Enquêtes d'Impact (100% Cliquables & Filtrage par Statut) -->
+  <!-- Section 1 : Dossiers d'Enquête Clôturés & Scellés (100% Cliquables) -->
   <section class="max-w-7xl mx-auto px-6 py-8" id="fiches-section">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-slate-800 pb-4">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-emerald-500/30 pb-4">
       <div>
-        <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-          DOSSIERS D'INVESTIGATION CITOYENNE
+        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          ACTES ET PIÈCES SCELLÉS · INSTRUCTION COMPLÈTE
         </span>
         <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-          📁 Les 29 Enquêtes d'Impact
+          🟢 Les Dossiers Majeurs Clôturés ({enquetesCloturees.length})
         </h2>
+        <p class="text-xs font-mono text-slate-400 mt-1">Enquêtes avec preuves médico-légales complètes, bilans financiers audités et actes d'archives scellés.</p>
       </div>
 
       <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
@@ -407,57 +567,80 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
           <input 
             type="text" 
             id="searchInput" 
-            placeholder="🔍 Filtrer les 29 enquêtes..." 
+            placeholder="🔍 Filtrer les dossiers..." 
+            aria-label="Rechercher ou filtrer les enquêtes par titre, mot-clé ou commune"
             class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:border-amber-400 transition font-sans shadow-inner"
           />
         </div>
-        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-2 rounded-xl border border-slate-800" id="cardsCount">
-          29 / 29 Dossiers Visibles
-        </span>
       </div>
     </div>
 
-    <!-- Grille des 28 Fiches Enquêtes -->
+    <!-- Grille des Fiches Enquêtes Clôturées -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGrid">
-      {enquetes.map((enquete) => {
+      {enquetesCloturees.map((enquete) => {
         const d = enquete.data;
         const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
+        const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
         return (
           <a 
             href={`./enquetes/${enquete.slug}/`}
-            class="fiche-card bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/60 transition duration-300 flex flex-col shadow-lg hover:shadow-amber-500/10 group cursor-pointer block"
-            data-title={d.title.toLowerCase()}
+            class="fiche-card relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/80 hover:border-emerald-500/60 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 group cursor-pointer block hover:-translate-y-1"
+            data-title={displayTitle.toLowerCase()}
             data-category={d.category.toLowerCase()}
             data-chapeau={d.chapeau.toLowerCase()}
           >
-            <!-- Visuel carte cliquable -->
-            <div class="h-48 bg-slate-900 overflow-hidden relative">
+            <!-- Liseré supérieur émeraude de scellement médico-légal -->
+            <div class="h-1 w-full bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent group-hover:via-emerald-400 transition-all duration-500"></div>
+
+            <!-- Visuel carte -->
+            <div class="h-52 bg-slate-950 overflow-hidden relative">
               <img 
                 src={imgPath} 
-                alt={d.title} 
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                alt={displayTitle} 
+                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
               />
-              <div class="absolute top-3 left-3 bg-slate-950/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-400 border border-amber-500/30 font-mono">
-                Enquête #{d.id.toString().padStart(2, '0')}
+              <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none">
+                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-emerald-400 border border-emerald-500/40 shadow-lg flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span>ACTES SCELLÉS</span>
+                </span>
+                <span class="bg-slate-950/80 backdrop-blur-md px-2.5 py-0.5 rounded text-[10px] font-mono text-slate-400 border border-slate-800">
+                  {d.ref || "ISO-27037"}
+                </span>
               </div>
             </div>
 
-            <!-- Contenu carte cliquable -->
-            <div class="p-6 flex-1 flex flex-col justify-between">
+            <!-- Contenu du Dossier Scellé -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-xs font-mono text-cyan-400 font-bold block mb-2">{d.category}</span>
-                <h3 class="text-lg font-bold font-serif text-slate-100 mb-3 group-hover:text-amber-400 transition leading-snug">
-                  {d.title}
+                <div class="flex items-center gap-2 mb-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                  <span class="text-[11px] font-mono uppercase tracking-widest text-cyan-400 font-bold">{d.category}</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
+                  {displayTitle}
                 </h3>
-                <p class="text-slate-400 text-sm line-clamp-3 mb-4 leading-relaxed font-serif">
+                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
                   {d.chapeau}
                 </p>
               </div>
 
-              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1 font-sans">
-                  Consulter l'enquête (TEMPS DE LECTURE : 6 MIN) →
+              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
+                <span class="text-xs font-mono font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Consulter le Dossier</span>
+                  <span class="transition transform group-hover:translate-x-1">→</span>
                 </span>
+                <button
+                  type="button"
+                  class="card-share-btn inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 hover:bg-amber-500 text-slate-400 hover:text-slate-950 border border-slate-800 hover:border-amber-400 text-[11px] font-mono font-semibold transition duration-200 z-10"
+                  data-share-title={displayTitle}
+                  data-share-url={`./enquetes/${enquete.slug}/`}
+                  data-share-chapeau={d.chapeau}
+                  title="Partager cette enquête"
+                  onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
+                >
+                  <span>📤</span> <span>Partager</span>
+                </button>
               </div>
             </div>
           </a>
@@ -466,9 +649,91 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
     </div>
   </section>
 
-  <!-- Section 2 : Matrice d'Impact des 26 Enquêtes par Pôles -->
-  <section class="max-w-7xl mx-auto px-6 py-4" id="network-section">
-    <MatriceImpact />
+  <!-- Section 2 : Enquêtes Ouvertes & Instructions en Cours (Appel à Pièces Citoyennes) -->
+  <section class="max-w-7xl mx-auto px-6 py-8 border-t border-amber-500/20" id="enquetes-en-cours-section">
+    <div class="mb-8 border-b border-amber-500/30 pb-4">
+      <span class="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        INSTRUCTION EN COURS · APPEL À PIÈCES ET SIGNALEMENTS
+      </span>
+      <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
+        🟡 Enquêtes en Cours d'Instruction ({enquetesEnCours.length})
+      </h2>
+      <p class="text-xs font-mono text-slate-400 mt-1">Dossiers d'investigation actifs : vous détenez des documents officiels, des arrêtés ou des pièces justificatives ? Transmettez-les via notre coffre-fort PGP.</p>
+    </div>
+
+    <!-- Grille des Enquêtes en Cours d'Instruction -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGridEnCours">
+      {enquetesEnCours.map((enquete) => {
+        const d = enquete.data;
+        const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
+        const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+        return (
+          <a 
+            href={`./enquetes/${enquete.slug}/`}
+            class="fiche-card relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-amber-500/30 hover:border-amber-400 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 group cursor-pointer block hover:-translate-y-1"
+            data-title={displayTitle.toLowerCase()}
+            data-category={d.category.toLowerCase()}
+            data-chapeau={d.chapeau.toLowerCase()}
+          >
+            <!-- Liseré supérieur ambre vibrant -->
+            <div class="h-1 w-full bg-gradient-to-r from-transparent via-amber-500/60 to-transparent group-hover:via-amber-400 transition-all duration-500"></div>
+
+            <!-- Visuel carte -->
+            <div class="h-52 bg-slate-950 overflow-hidden relative">
+              <img 
+                src={imgPath} 
+                alt={displayTitle} 
+                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
+              />
+              <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none">
+                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-amber-300 border border-amber-500/40 shadow-lg flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                  <span>EN INSTRUCTION</span>
+                </span>
+                <span class="bg-slate-950/80 backdrop-blur-md px-2.5 py-0.5 rounded text-[10px] font-mono text-slate-400 border border-slate-800">
+                  {d.ref || "ISO-27037"}
+                </span>
+              </div>
+            </div>
+
+            <!-- Contenu du Dossier -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <div class="flex items-center gap-2 mb-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-bold">{d.category}</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
+                  {displayTitle}
+                </h3>
+                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
+                  {d.chapeau}
+                </p>
+              </div>
+
+              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
+                <span class="text-xs font-mono font-bold text-amber-300 group-hover:text-amber-200 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Suivre l'Instruction</span>
+                  <span class="transition transform group-hover:translate-x-1">→</span>
+                </span>
+                <button
+                  type="button"
+                  class="card-share-btn inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 hover:bg-amber-500 text-slate-400 hover:text-slate-950 border border-slate-800 hover:border-amber-400 text-[11px] font-mono font-semibold transition duration-200 z-10"
+                  data-share-title={displayTitle}
+                  data-share-url={`./enquetes/${enquete.slug}/`}
+                  data-share-chapeau={d.chapeau}
+                  title="Partager cette enquête"
+                  onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
+                >
+                  <span>📤</span> <span>Partager</span>
+                </button>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
   </section>
 
   <!-- Section 3 : Cartographie SIG 360 Communes -->
@@ -490,35 +755,123 @@ const uneEnquete = enquetes.find(e => e.data.id === 29) || enquetes[0]; // Dossi
   <section class="max-w-7xl mx-auto px-6 py-4" id="whistleblower-section">
     <WhistleblowerVault />
   </section>
+  </main>
 
-  <!-- Script de Recherche Temps Réel des 26 Enquêtes -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500 font-mono mt-16" role="contentinfo">
+    L'OCHJU — MÉDIA CITOYEN D'INVESTIGATION FORENSIQUE & OPEN DATA | 29 GRANDES ENQUÊTES POUR LA TRANSPARENCE ET LA SOUVERAINETÉ
+  </footer>
+
+  <!-- Script de Recherche Temps Réel (Recherche sur l'Ensemble des Dossiers) -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
-      const cards = document.querySelectorAll<HTMLElement>('#fichesGrid .fiche-card');
-      const cardsCount = document.getElementById('cardsCount');
+      const allCards = document.querySelectorAll<HTMLElement>('.fiche-card');
 
       if (searchInput) {
         searchInput.addEventListener('input', (e) => {
           const term = (e.target as HTMLInputElement).value.toLowerCase().trim();
-          let visibleCount = 0;
 
-          cards.forEach((card) => {
+          allCards.forEach((card) => {
             const title = card.getAttribute('data-title') || '';
             const category = card.getAttribute('data-category') || '';
             const chapeau = card.getAttribute('data-chapeau') || '';
 
-            if (title.includes(term) || category.includes(term) || chapeau.includes(term)) {
+            if (!term || title.includes(term) || category.includes(term) || chapeau.includes(term)) {
               card.style.display = 'flex';
-              visibleCount++;
             } else {
               card.style.display = 'none';
             }
           });
+        });
+      }
+    });
+  </script>
 
-          if (cardsCount) {
-            cardsCount.textContent = `${visibleCount} / 26 Dossiers Visibles`;
-          }
+  <!-- MODAL GLOBAL DE PARTAGE D'ENQUÊTE -->
+  <div id="cardShareModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden" onclick="if(event.target === this) closeShareModal();">
+    <div class="bg-slate-900 border border-amber-500/40 w-full max-w-md rounded-2xl shadow-2xl overflow-hidden p-6 space-y-5">
+      <div class="flex justify-between items-start">
+        <div class="space-y-1">
+          <span class="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider">📤 Mobilisation Citoyenne</span>
+          <h3 id="modalShareTitle" class="text-base font-bold font-serif text-slate-100 leading-snug"></h3>
+        </div>
+        <button onclick="closeShareModal()" class="text-slate-400 hover:text-white p-1.5 rounded-lg bg-slate-800 hover:bg-rose-500/80 transition cursor-pointer text-sm">✕</button>
+      </div>
+
+      <p class="text-xs text-slate-400 font-sans">Diffusez cette enquête sur vos réseaux pour briser l'omerta et informer les citoyens :</p>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <a id="shareXLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-black text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 text-xs font-mono font-medium transition shadow-sm">
+          <span>✖️</span> <span>X</span>
+        </a>
+        <a id="shareFbLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#1877F2] text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2] text-xs font-mono font-medium transition shadow-sm">
+          <span>📘</span> <span>Facebook</span>
+        </a>
+        <a id="shareWaLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#25D366] text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366] text-xs font-mono font-medium transition shadow-sm">
+          <span>💬</span> <span>WhatsApp</span>
+        </a>
+        <a id="shareTgLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#0088cc] text-slate-200 hover:text-white border border-slate-800 hover:border-[#0088cc] text-xs font-mono font-medium transition shadow-sm">
+          <span>✈️</span> <span>Telegram</span>
+        </a>
+      </div>
+
+      <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
+        <span class="text-[11px] font-mono text-slate-400">Lien direct :</span>
+        <button id="shareCopyModalBtn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/30 text-xs font-mono font-bold transition cursor-pointer">
+          <span id="shareCopyModalIcon">🔗</span> <span id="shareCopyModalLabel">Copier le lien</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    let activeShareUrl = '';
+
+    function openShareModal(button) {
+      const title = button.getAttribute('data-share-title') || '';
+      const rawUrl = button.getAttribute('data-share-url') || '';
+      const chapeau = button.getAttribute('data-share-chapeau') || '';
+      
+      const fullUrl = rawUrl.startsWith('http') ? rawUrl : (window.location.origin + '/' + rawUrl.replace(/^\.\//, '').replace(/^\//, ''));
+      activeShareUrl = fullUrl;
+
+      document.getElementById('modalShareTitle').textContent = title;
+
+      const tweetText = `🔴 Enquête L'OCHJU : ${title}\n\n${chapeau ? chapeau.slice(0, 140) + '...' : ''}\n\nÀ lire ici :`;
+      document.getElementById('shareXLink').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(fullUrl)}`;
+
+      document.getElementById('shareFbLink').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`;
+
+      const waText = `🔴 *Enquête L'OCHJU : ${title}*\n\n${chapeau ? chapeau + '\n\n' : ''}👉 ${fullUrl}`;
+      document.getElementById('shareWaLink').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(waText)}`;
+
+      const tgText = `🔴 Enquête L'OCHJU : ${title}`;
+      document.getElementById('shareTgLink').href = `https://t.me/share/url?url=${encodeURIComponent(fullUrl)}&text=${encodeURIComponent(tgText)}`;
+
+      document.getElementById('cardShareModal').classList.remove('hidden');
+    }
+
+    function closeShareModal() {
+      document.getElementById('cardShareModal').classList.add('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const copyBtn = document.getElementById('shareCopyModalBtn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          if (!activeShareUrl) return;
+          navigator.clipboard.writeText(activeShareUrl).then(() => {
+            const label = document.getElementById('shareCopyModalLabel');
+            const icon = document.getElementById('shareCopyModalIcon');
+            if (label && icon) {
+              label.textContent = 'Copié !';
+              icon.textContent = '✅';
+              setTimeout(() => {
+                label.textContent = 'Copier le lien';
+                icon.textContent = '🔗';
+              }, 2500);
+            }
+          });
         });
       }
     });

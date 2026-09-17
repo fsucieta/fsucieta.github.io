@@ -3,6 +3,7 @@ id: 27
 title: "Investigation 27 (Part 1/2) : The 'Angelo' Urban Cable Car — The 52 M€ Illusion & Private Annuity at the Expense of Public Transit"
 subtitle: "Financial asphyxiation, POMA annuity, and public service sacrifice : revelations on the state strategy sacrificing municipal public transit to benefit a national private conglomerate."
 category: "INFRASTRUCTURES & POWER"
+status: cloturee
 ref: "LOCHJU-AUDIT-INVESTIGATION-27-P1"
 author: "L'OCHJU Investigation Desk"
 date: "August 2026"
@@ -36,7 +37,7 @@ sources:
 
 > 🔗 **AJACCIO PUBLIC MOBILITY SPECIAL DOSSIER (PART 1/2)** :  
 > This article constitutes the first part of our exclusive investigation into Ajaccio public transit.  
-> 👉 **[Read Part 2/2 : The Fate of Muvitarra — The Asphyxiation Figures, The August 31 Deadline & The Sovereign Rescue Plan](/investigations/28-le-naufrage-organise-de-la-muvitarra/)**
+> 👉 **[Read Part 2/2 : The Fate of Muvitarra — The Asphyxiation Figures, The August 31 Deadline & The Sovereign Rescue Plan](../28-le-naufrage-organise-de-la-muvitarra/)**
 
 ---
 

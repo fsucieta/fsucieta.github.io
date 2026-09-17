@@ -3,6 +3,7 @@ id: 24
 title: "Enquête 24 : Le Radar d'Urbanisme & les Permis Tacites en Mairie"
 subtitle: "Radiographie de la bétonisation discrète : comment le mécanisme des permis de construire tacites (R. 424-1) contourne l'affichage public et le contrôle citoyen"
 category: "URBANISME & SITADEL"
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-24"
 author: "Cellule d'Investigation Urbanistique L'OCHJU"
 date: "Août 2026"

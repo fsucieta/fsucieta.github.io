@@ -3,6 +3,7 @@ id: 3
 title: "Investigation 03 : The Universal Land Manifesto — How Mediterranean & World Islands Protect Their Soil (And Why France Forbids It to Corsica)"
 subtitle: "From Malta (Protocol No. 6) to the Åland Islands, from Denmark (Protocol No. 32) to Polynesia: forensic autopsy of the great republican lie. Irrefutable proof that land protection is legal worldwide."
 category: "INTERNATIONAL LAW & SOVEREIGNTY"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-03-MONDIAL"
 author: "L'OCHJU x FSUCIETÀ International Investigation Desk"
 date: "August 2026"
@@ -194,7 +195,7 @@ Strasbourg jurisprudence enshrines the fundamental right to respect for home and
 
 The land battle is not an isolated front: **the soil is the physical receptacle where all systemic extractions exposed by L'OCHJU converge.**
 
-To emancipate Corsica from external rent and organized underdevelopment, the Institute lays out the operational architecture of the **Total Sovereignty Ecosystem**, linking property access, water management, energy autonomy, and the recovery of 420 million euros in state-siphoned revenues:
+To emancipate Corsica from external rent and organized underdevelopment, the Institute lays out the operational architecture of the **Total Sovereignty Ecosystem**, linking property access, water management, energy autonomy, and the recovery of <mark class="forensic-highlight">420 million euros</mark> in state-siphoned revenues:
 
 ![Infographic : The Sovereignty Ecosystem of the Corsican People](/infographie_ecosysteme_souverainete_03.jpg)
 
@@ -208,7 +209,7 @@ To emancipate Corsica from external rent and organized underdevelopment, the Ins
 
 ### 2. Water Sovereignty & Farmland Sanctuarization (The 175M m³ Blueprint)
 * **Breakthrough Engineering : The 175 Million m³ per Year Plan (0% Concrete, 0% Fuel)**:
-  * **Alluvial Underground Dams (Gravona, Fium'Orbu, Tavignano, Golo)**: Capturing fresh water beneath river gravels before it reaches the sea, ensuring massive storage with **0% evaporation and 0 kWh consumed** (+60M m³/year to irrigate 35,000 hectares for ODARC).
+  * **Alluvial Underground Dams (Gravona, Fium'Orbu, Tavignano, Golo)**: Capturing fresh water beneath river gravels before it reaches the sea, ensuring massive storage with **0% evaporation and 0 kWh consumed** (+60M m³/year to irrigate <mark class="forensic-highlight">35,000 hectares</mark> for ODARC).
   * **Default Termination of Private DSP Contracts**: Ending contracts with private cartels (Kyrnolia/Veolia) below 65% efficiency to halt the loss of **42 million m³ of treated drinking water per year** in crumbling pipes (+26M m³/year recovered).
   * **Passive Solar MOF Collectors (MIT / Mg-Gallate)**: Outfitting 300 public rooftops (hospitals, schools) to extract pure water via passive condensation (+1.8M m³/year).
   * **In-Pipe Hydroelectric Turbines & Deep Sea SWAC**: Harnessing gravity pressure to generate clean power (+40M m³/year turbined) and deploying seawater air conditioning in Ajaccio and Bastia to eliminate 90% of summer cooling demand.

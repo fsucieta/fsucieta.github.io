@@ -3,6 +3,7 @@ id: 6
 title: "Investigation 06 : When the Sea Ceases to Sing — Autopsy of the Extinction of Corsican Fishermen & The Plunder of Our Sea"
 subtitle: "The logbook of a maritime dispossession : how the fuel cartel (187.5 M€ sanction), the Sète monopoly, and coastal looting choke our mariners and inflate fish prices for Corsican families"
 category: "MARITIME & FISHERIES"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-06"
 author: "L'OCHJU Maritime Investigation Desk"
 date: "August 2026"

@@ -3,6 +3,7 @@ id: 6
 title: "Enquête 06 : Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
 subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière (187,5 M€ de sanction), le monopole sétois et le pillage côtier étouffent nos marins et font exploser le prix du poisson pour les foyers corses"
 category: "MER & PÊCHE"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-06"
 author: "Cellule d'Investigation Maritime L'OCHJU"
 date: "Août 2026"
@@ -46,7 +47,7 @@ Ce cri d'alarme fait suite au blocage historique d'avril 2026. Il ne s'agit pas 
 
 Le premier responsable de l'asphyxie financière de nos marins et de la cherté du poisson ne se trouve pas en mer, mais à terre, dans les cuves des dépôts pétroliers.
 
-Le **17 novembre 2025**, l'Autorité de la Concurrence a rendu une décision historique (**Décision n° 25-D-07 de 80 pages**) infligeant **187,49 millions d'euros d'amende** aux actionnaires de la société des **Dépôts Pétroliers de la Corse (DPLC)** :
+Le **17 novembre 2025**, l'Autorité de la Concurrence a rendu une décision historique (**Décision n° 25-D-07 de 80 pages**) infligeant **<mark class="forensic-highlight">187,49 millions d'euros</mark> d'amende** aux actionnaires de la société des **Dépôts Pétroliers de la Corse (DPLC)** :
 * **TotalEnergies Marketing France (TEMF)** : 115 820 000 € d'amende.
 * **Groupe Rubis / Vito** : 64 670 000 € d'amende (dont 64,24 M€ pour Rubis Énergie et 430 000 € pour Rubis Terminal / Tepsa).
 * **EG Retail** : 7 000 000 € d'amende.

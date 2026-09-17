@@ -3,6 +3,7 @@ id: 29
 title: "Hors-Série 01 : Manifeste de Corte à Philadelphie — L'Appel aux Nations Libres"
 subtitle: "De la première Constitution démocratique du monde moderne (1755) au premier cri de guerre de l'Amérique 'Remember Paoli !' (1777) : le réveil du pacte moral sacré entre la Corse et les peuples libres."
 category: "MANIFESTE D'ÉMANCIPATION & GÉOPOLITIQUE"
+status: cloturee
 ref: "LOCHJU-MANIFESTE-01-CORTE-PHILADELPHIA"
 author: "La Rédaction Citoyenne de L'OCHJU"
 date: "Septembre 2026"
@@ -54,7 +55,7 @@ Ce miracle porte un nom que les armées impériales ont tenté d’effacer et qu
 
 ## 📜 II. LE DON DE CORTE (1755) : LE PREMIER SOUFFLE DE LA DÉMOCRATIE MODERNE
 
-Le 18 novembre 1755, dans les hauteurs sacrées de Corte, Pasquale Paoli — élu Général de la Nation par la volonté unanime des représentants des villages — ne se contentait pas de repousser les prétentions mercantiles d'une république marchande génoise prédatrice. 
+Le <mark class="forensic-highlight">18 novembre 1755</mark>, dans les hauteurs sacrées de Corte, Pasquale Paoli — élu Général de la Nation par la volonté unanime des représentants des villages — ne se contentait pas de repousser les prétentions mercantiles d'une république marchande génoise prédatrice. 
 
 Il offrait à l'humanité entière le premier texte constitutionnel écrit du monde moderne :
 
@@ -87,11 +88,11 @@ Au printemps 1768, un jeune voyageur écossais, **James Boswell**, publie à Lon
 
 ---
 
-## ⚔️ IV. LE SERMENT DE SANG (SEPTEMBRE 1777) : LA NAISSANCE DE « REMEMBER PAOLI ! »
+## ⚔️ IV. LE SERMENT DE SANG (SEPTEMBRE 1777) : LA NAISSANCE DE <mark class="forensic-highlight">« REMEMBER PAOLI ! »</mark>
 
 En septembre 1777, alors que la jeune République américaine lutte pour sa survie sur les terres de Pennsylvanie, le destin des deux peuples se scelle à jamais dans le sang et la gloire.
 
-Dans la nuit glaciale du **20 au 21 septembre 1777**, la division américaine du général Anthony Wayne bivouaque près de la *General Paoli Tavern*, auberge historique baptisée en l'honneur du héros corse. À minuit, les troupes de choc britanniques lancent une attaque brutale à la baïonnette silencieuse dans les bois obscurs. Cinquante-trois soldats américains sont massacrés au fer froid.
+Dans la nuit glaciale du **<mark class="forensic-highlight">20 au 21 septembre 1777</mark>**, la division américaine du général Anthony Wayne bivouaque près de la *General Paoli Tavern*, auberge historique baptisée en l'honneur du héros corse. À minuit, les troupes de choc britanniques lancent une attaque brutale à la baïonnette silencieuse dans les bois obscurs. Cinquante-trois soldats américains sont massacrés au fer froid.
 
 Face à la tragédie, George Washington et Anthony Wayne refusent le désespoir. Ils transforment le sacrifice de leurs hommes en flamme immortelle : ils forgent **le tout premier cri de guerre officiel de l'histoire militaire des États-Unis : « REMEMBER PAOLI ! »**.
 

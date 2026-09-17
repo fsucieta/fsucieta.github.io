@@ -3,6 +3,7 @@ id: 2
 title: "Enquête 02 : Le Hold-Up des 420 Millions — L'Effondrement Définitif du Mythe de l'Assistanat"
 subtitle: "De l'évasion de l'Impôt sur les Sociétés vers les sièges parisiens au siphonage de la TVA estivale et au gel des 187 M€ du Sénat : 1 000 bilans officiels prouvent que c'est la Corse qui finance l'État (1 200 € volés par citoyen et par an)."
 category: "FISCALITÉ & BUDGET"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-02"
 author: "Cellule d'Investigation Financière L'OCHJU"
 date: "Août 2026"
@@ -29,11 +30,11 @@ sources:
     sha256: "7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e"
 ---
 
-Pendant que les plateaux télé parisiens accusent la Corse de vivre aux crochets de la République, la réalité des chiffres officiels révèle un braquage silencieux : chaque année, l'État prélève **1,45 milliard d'euros sur l'île** et n'en reverse que **1,03 milliard**. L'analyse médico-légale de **1 000 bilans officiels** (les 360 matrices budgétaires des mairies, les liasses fiscales des multinationales et les comptes de Bercy) prouve qu'un solde net de **420 millions d'euros par an disparaît dans les caisses centrales de Paris**. C'est l'équivalent direct de **1 200 € retirés chaque année de la poche de chaque homme, femme et enfant en Corse**.
+Pendant que les plateaux télé parisiens accusent la Corse de vivre aux crochets de la République, la réalité des chiffres officiels révèle un braquage silencieux : chaque année, l'État prélève **<mark class="forensic-highlight">1,45 milliard d'euros sur l'île</mark>** et n'en reverse que **1,03 milliard**. L'analyse médico-légale de **1 000 bilans officiels** (les 360 matrices budgétaires des mairies, les liasses fiscales des multinationales et les comptes de Bercy) prouve qu'un solde net de **<mark class="forensic-highlight">420 millions d'euros par an disparaît</mark> dans les caisses centrales de Paris**. C'est l'équivalent direct de **<mark class="forensic-highlight">1 200 € retirés chaque année</mark> de la poche de chaque homme, femme et enfant en Corse**.
 
 ---
 
-## ACTE I. LA FACTURE INVERSÉE : 1 200 € RETIRÉS CHAQUE ANNÉE À CHAQUE CORSE
+## 1. LA FACTURE INVERSÉE : 1 200 € RETIRÉS CHAQUE ANNÉE À CHAQUE CORSE
 
 Depuis cinquante ans, un mensonge d'État est répété en boucle aux Corses : *« Vous coûtez trop cher, vous êtes sous perfusion, sans l'argent de Paris vous ne seriez rien. »*
 
@@ -41,23 +42,13 @@ Ce refrain culpabilisateur a un but politique très précis : maintenir le peupl
 
 Pour en avoir le cœur net, la Cellule d'Investigation Financière de L'OCHJU a posé la seule question qui compte : **si l'on fait la somme de tout ce que les Corses paient (TVA, carburants, impôts) et de tout ce que l'État réinjecte réellement sur l'île, qui paie pour qui ?**
 
-Pour répondre, nous n'avons pas écouté les discours politiques : nous avons épluché **1 000 documents comptables officiels de l'État** :
-- Les **360 bilans budgétaires (États 1259)** de toutes les mairies de Corse.
-- Les **250 liasses fiscales (BODACC/Infogreffe)** des grandes entreprises opérant sur l'île.
-- Les **150 lois de finances de Bercy** et les **100 audits de la Cour des Comptes**.
+Pour répondre, nous n'avons pas écouté les discours politiques : nous avons épluché **1 000 documents comptables officiels de l'État** (les 360 bilans budgétaires communaux, les 250 liasses fiscales des multinationales et les lois de finances de Bercy).
 
-| Indicateur Budgétaire Officiel | Montant Annuel Constaté | Source & Traçabilité |
-| :--- | :--- | :--- |
-| **Recettes Fiscales Prélevées en Corse par l'État** | **1,45 Milliard d'Euros** | DGFiP / Douanes / Recueil Régional |
-| **Dépenses Publiques Réelles Réinjectées par l'État** | **1,03 Milliard d'Euros** | Loi de Finances / Cour des Comptes |
-| **SOLDE NET ENCAISSÉ PAR BERCY (BÉNÉFICE DE L'ÉTAT)** | **+ 420 MILLIONS D'EUROS / AN** | **Solde Net de Transfert Insulaire** |
-| **SPOLIATION DIRECTE PAR HABITANT (350 000 RÉSIDENTS)** | **1 200 € / HABITANT / AN** | **4 800 € pour une famille de 4 personnes** |
-
-💡 **En clair pour chaque foyer corse** : Pour une famille de 4 personnes (deux parents et deux enfants), ce sont **4 800 € par an** de richesse créée en Corse qui partent à Paris et qui ne reviennent jamais sur l'île. On vous traite d'assistés, mais dans la réalité des comptes, **c'est vous qui financez le train de vie de l'État !**
+💡 **En clair pour chaque foyer corse** : Dans la réalité des comptes publics certifiés, ce sont **<mark class="forensic-highlight">4 800 € par an</mark> de richesse** créée par une famille de 4 personnes qui partent à Paris et qui ne reviennent jamais sur l'île. On vous traite d'assistés, mais dans les faits, **c'est vous qui financez le train de vie de l'État !**
 
 ---
 
-## ACTE II. LE TOUR DE PASSE-PASSE DU CADDIE : L'IMPÔT SUR LES SOCIÉTÉS EXPÉDIÉ À PARIS
+## 2. LE TOUR DE PASSE-PASSE DU CADDIE : L'IMPÔT SUR LES SOCIÉTÉS EXPÉDIÉ À PARIS
 
 Comment l'État réussit-il à masquer ce bénéfice géant ? Par une entourloupe comptable légale : **l'évasion du siège social**.
 
@@ -103,7 +94,7 @@ Chaque pari PMU, chaque ticket de la Française des Jeux (FDJ) gratté dans les 
 
 ---
 
-## ACTE III. LE PIÈGE DE LA TVA ESTIVALE : 3 MILLIONS DE TOURISTES, 0 € POUR NOS ROUTES
+## 3. LE PIÈGE DE LA TVA ESTIVALE : 3 MILLIONS DE TOURISTES, 0 € POUR NOS ROUTES
 
 Le deuxième tuyau d'aspiration de votre argent s'active chaque été.
 
@@ -128,7 +119,7 @@ L'État ne reverse **pas un seul centime de compensation pour l'usure causée pa
 
 ---
 
-## ACTE IV. LE SCANDALE DU BILLET DE BATEAU : 658 M€ CONFISQUÉS SUR LES TRANSPORTS
+## 4. LE SCANDALE DU BILLET DE BATEAU : 658 M€ CONFISQUÉS SUR LES TRANSPORTS
 
 Pour justifier son rôle, l'État met toujours en avant la fameuse Enveloppe de Continuité Territoriale : **187 millions d'euros par an** versés pour financer les bateaux et les avions entre la Corse et le continent.
 
@@ -161,9 +152,19 @@ Le **Rapport d'Enquête du Sénat n° 714 sur l'électricité (480 pages, télé
 
 💡 **En clair pour chaque foyer corse** : Si vos billets de bateau, votre électricité et vos produits au supermarché sont hors de prix, c'est parce que l'État et ses monopoles confisquent vos taxes de transport et d'énergie tout en refusant d'appliquer les lois qui protègent votre pouvoir d'achat !
 
+### 📊 LE BILAN BUDGÉTAIRE CONSOLIDÉ : QUI PAIE POUR QUI ?
+Au terme de l'examen croisé des 360 bilans budgétaires communaux, des liasses fiscales des multinationales et des 100 audits de la Cour des Comptes, voici la synthèse officielle et chiffrée des flux financiers réels entre la Corse et l'État :
+
+| Indicateur Budgétaire Officiel | Montant Annuel Constaté | Source & Traçabilité |
+| :--- | :--- | :--- |
+| **Recettes Fiscales Prélevées en Corse par l'État** | **1,45 Milliard d'Euros** | DGFiP / Douanes / Recueil Régional |
+| **Dépenses Publiques Réelles Réinjectées par l'État** | **1,03 Milliard d'Euros** | Loi de Finances / Cour des Comptes |
+| **SOLDE NET ENCAISSÉ PAR BERCY (BÉNÉFICE DE L'ÉTAT)** | **+ 420 MILLIONS D'EUROS / AN** | **Solde Net de Transfert Insulaire** |
+| **SPOLIATION DIRECTE PAR HABITANT (350 000 RÉSIDENTS)** | **1 200 € / HABITANT / AN** | **4 800 € pour une famille de 4 personnes** |
+
 ---
 
-## ACTE V. LE PLAN DE RESTITUTION : RÉCUPÉRER NOS 1 200 € PAR PERSONNE & L'INDICE IFTS (94,8/100)
+## 5. LE PLAN DE RESTITUTION : RÉCUPÉRER NOS 1 200 € PAR PERSONNE & L'INDICE IFTS (94,8/100)
 
 La démonstration mathématique est close : **la Corse est un territoire contributeur net qui enrichit l'État français de 420 millions d'euros chaque année**.
 

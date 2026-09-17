@@ -3,6 +3,7 @@ id: 3
 title: "Enquête 03 : Le Manifeste Universel du Sol — Comment les Îles de Méditerranée et du Monde Protègent leur Terre (Et Pourquoi la France l'Interdit à la Corse)"
 subtitle: "De Malte (Protocole n°6) aux Îles Åland, du Danemark (Protocole n°32) à la Polynésie : autopsie médico-légale du grand mensonge républicain. Les preuves irréfutables que la protection du sol est légale partout dans le monde."
 category: "DROIT INTERNATIONAL & SOUVERAINETÉ"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-03-MONDIAL"
 author: "Cellule d'Investigation Internationale L'OCHJU x FSUCIETÀ"
 date: "Août 2026"
@@ -195,7 +196,7 @@ La jurisprudence de Strasbourg consacre le droit fondamental au respect du domic
 
 Le combat pour la terre n'est pas un front isolé : **le sol est le réceptacle physique où convergent tous les pillages méthodiques révélés par les enquêtes de L'OCHJU.** 
 
-Pour émanciper la Corse de la rente extérieure et du sous-développement organisé, l'Institut pose sur la table l'architecture opérationnelle de **l'Écosystème de Souveraineté Totale**, reliant l'accès à la propriété, la gestion de l'eau, la rupture avec le monopole énergétique et la reprise en main des 420 millions d'euros captés par l'État :
+Pour émanciper la Corse de la rente extérieure et du sous-développement organisé, l'Institut pose sur la table l'architecture opérationnelle de **l'Écosystème de Souveraineté Totale**, reliant l'accès à la propriété, la gestion de l'eau, la rupture avec le monopole énergétique et la reprise en main des <mark class="forensic-highlight">420 millions d'euros</mark> captés par l'État :
 
 ![Infographie : L'Écosystème de Souveraineté du Peuple Corse](/infographie_ecosysteme_souverainete_03.jpg)
 
@@ -209,7 +210,7 @@ Pour émanciper la Corse de la rente extérieure et du sous-développement organ
 
 ### 2. Souveraineté Hydrique & Sanctuarisation des Terres Nourricières (Le Plan des 175 Mm³)
 * **L'Ingénierie de Rupture : Le Plan de 175 Millions de m³ par an (0 % Béton, 0 % Fioul)** :
-  * **Barrages Souterrains Alluvionnaires Pilotes (Gravona, Fium'Orbu, Tavignano, Golo)** : Bloquer l'eau douce directement sous les lits de gravier avant qu'elle ne parte en mer, garantissant un stockage naturel colossal avec **0 % d'évaporation et 0 kWh consommé** (+60 Mm³/an pour irriguer 35 000 hectares agricoles de l'ODARC).
+  * **Barrages Souterrains Alluvionnaires Pilotes (Gravona, Fium'Orbu, Tavignano, Golo)** : Bloquer l'eau douce directement sous les lits de gravier avant qu'elle ne parte en mer, garantissant un stockage naturel colossal avec **0 % d'évaporation et 0 kWh consommé** (+60 Mm³/an pour irriguer <mark class="forensic-highlight">35 000 hectares</mark> agricoles de l'ODARC).
   * **Résiliation pour Faute des DSP Privées & Colmatage d'Urgence** : Mettre fin sans indemnité aux contrats de multinationales privées (type Kyrnolia/Veolia) sous les 65 % de rendement pour stopper l'hémorragie des **42 millions de m³ d'eau potable traitée perdus chaque année dans des tuyaux percés** (+26 Mm³/an récupérés).
   * **Capteurs MOF Solaires Passifs (MIT / Mg-Gallate)** : Équipement de 300 toitures de bâtiments publics (hôpitaux, écoles, crèches) pour produire de l'eau pure par condensation passive sans énergie (+1,8 Mm³/an).
   * **Micro-Turbinage Hydroélectrique de Conduite & SWAC Abyssal** : Utiliser la pression gravitaire des réseaux pour produire de l'électricité propre (+40 Mm³/an turbinés) et déployer la climatisation par eau de mer profonde à Ajaccio et Bastia pour effacer 90 % de la climatisation estivale.

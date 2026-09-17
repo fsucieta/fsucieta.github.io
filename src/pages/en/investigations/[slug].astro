@@ -2,7 +2,10 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import ThemeToggle from '../../../components/ThemeToggle.astro';
-
+import ShareButtons from '../../../components/ShareButtons.astro';
+import ForensicSeal from '../../../components/ForensicSeal.astro';
+import EvidenceViewer from '../../../components/EvidenceViewer.astro';
+import AudioBriefing from '../../../components/AudioBriefing.astro';
 
 export async function getStaticPaths() {
   const investigations = await getCollection('investigations');
@@ -20,9 +23,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data;
 const imgPath = data.image.startsWith('http') ? data.image : `../../../${data.image.replace(/^\//, '')}`;
+const ogImage = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}`;
 ---
 
-<Layout title={`${data.title} — L'OCHJU — The Eye of Investigation`} description={data.chapeau}>
+<Layout 
+  title={`${data.title} — L'OCHJU — The Eye of Investigation`} 
+  description={data.chapeau}
+  image={ogImage}
+  canonicalUrl={`https://fsucieta.github.io/en/investigations/${entry.slug}/`}
+  lang="en"
+>
   <!-- Top Navigation -->
   <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50 py-4 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
@@ -71,11 +81,29 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../../${data.im
         <div><strong>Investigation Desk :</strong> {data.author}</div>
         <div><strong>Forensic Audit Tool :</strong> <code class="bg-slate-900 px-2.5 py-1 rounded text-cyan-400 font-mono text-xs border border-cyan-500/20">{data.tool}</code></div>
       </div>
+
+      <!-- Citizen Sharing & Printable A4 Briefing Module (Top of Article) -->
+      <div class="mt-6 pt-4 border-t border-slate-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold flex items-center gap-1.5">
+            <span>📤</span> Share :
+          </span>
+          <ShareButtons title={data.title} chapeau={data.chapeau} />
+        </div>
+        <button 
+          onclick="window.print()" 
+          class="no-print inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-amber-500/30 text-xs font-mono font-bold transition shadow-sm cursor-pointer"
+          title="Print this investigation in high-fidelity A4 citizen briefing format"
+        >
+          <span>🖨️</span>
+          <span>Print A4 Briefing</span>
+        </button>
+      </div>
     </div>
 
     <!-- Official Photographic Document -->
     {data.image && (
-      <div class="mb-10 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
+      <div class="mb-8 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
         <img src={imgPath} alt={data.title} class="w-full object-cover max-h-[480px] group-hover:scale-105 transition duration-700" />
         <div class="p-3 bg-slate-900/90 text-xs font-mono text-slate-400 border-t border-slate-800 flex justify-between items-center">
           <span>{data.imageCaption || `📷 Official Photographic Document — ${data.title}`}</span>
@@ -84,12 +112,40 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../../${data.im
       </div>
     )}
 
-
-
     <!-- Main Article Body -->
+    <!-- 🎙️ Audio Briefing Player (visible only when audioBriefingFr or audioBriefingEn is defined in frontmatter) -->
+    <AudioBriefing srcFr={data.audioBriefingFr} srcEn={data.audioBriefingEn} lang="en" />
+
     <article class="article-body font-serif text-lg leading-relaxed text-slate-200 space-y-6">
       <Content />
     </article>
+
+    <!-- Forensic Seal ISO 27037 & Digital Chain of Custody (Investigation Closing Certification) -->
+    <div class="mt-16 pt-8 border-t border-amber-500/30">
+      <ForensicSeal 
+        id={data.id}
+        refCode={data.ref}
+        author={data.author}
+        date={data.date}
+        tool={data.tool}
+        sources={data.sources || []}
+        lang="en"
+      />
+    </div>
+
+    <!-- Primary Sealed Evidence Viewer (Certified Primary Archive) -->
+    {data.sources && data.sources.length > 0 && (
+      <EvidenceViewer source={data.sources[0]} id={data.id} lang="en" />
+    )}
+
+    <!-- Citizen Mobilization & Sharing Callout (Article Footer) -->
+    <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-amber-500/30 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center sm:text-left">
+        <h4 class="font-serif font-bold text-slate-100 text-base">You hold the power to act</h4>
+        <p class="font-sans text-xs text-slate-400">Light travels through you. Share this investigation to break the digital silence.</p>
+      </div>
+      <ShareButtons title={data.title} chapeau={data.chapeau} />
+    </div>
 
     <!-- CERTIFIED OFFICIAL STATE REGISTRIES & PRIMARY ARCHIVES SECTION -->
     {data.sources && data.sources.length > 0 && (
@@ -121,8 +177,12 @@ const imgPath = data.image.startsWith('http') ? data.image : `../../../${data.im
 
         <div class="grid grid-cols-1 gap-4">
           {data.sources.map((src: any, index: number) => {
-            const targetUrl = src.url;
-            const finalHref = targetUrl.startsWith('http') ? targetUrl : `../../../${targetUrl.replace(/^\//, '')}`;
+            const rawTarget = src.pdfDirect || src.url;
+            let finalHref = rawTarget;
+            if (!rawTarget.startsWith('http')) {
+              const cleanTarget = rawTarget.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+              finalHref = `../../../${cleanTarget}`;
+            }
             return (
               <div class="bg-slate-900/90 border border-slate-800 hover:border-emerald-500/60 p-5 rounded-2xl transition flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg">
                 <div class="space-y-1.5">

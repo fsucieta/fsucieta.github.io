@@ -3,6 +3,7 @@ id: 8
 title: "Investigation 08 : The Plunder of the Corsican Forest & Raw Timber Exportation"
 subtitle: "Dispossession of forestry wealth : the massive export of raw Corsican Laricio pine logs to Italy without local processing or island value creation."
 category: "FORESTRY & TIMBER COMMONS"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-08"
 author: "L'OCHJU Forestry Investigation Desk"
 date: "August 2026"

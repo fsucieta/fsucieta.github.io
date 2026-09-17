@@ -3,6 +3,7 @@ id: 13
 title: "Investigation 13 : Educational Under-Investment & The University of Corsica"
 subtitle: "Radiography of higher education : how Pasquale Paoli University in Corte suffers from ministerial under-funding, student housing shortages, and the brain drain."
 category: "EDUCATION & SCIENTIFIC RESEARCH"
+status: en_cours
 ref: "LOCHJU-AUDIT-INVESTIGATION-13"
 author: "L'OCHJU Education Investigation Desk"
 date: "August 2026"

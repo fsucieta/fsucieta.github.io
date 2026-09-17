@@ -2,23 +2,37 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import ThemeToggle from '../../components/ThemeToggle.astro';
-import MatriceImpactEn from '../../components/MatriceImpactEn.astro';
 import GisMap from '../../components/GisMap.astro';
 import CadaGeneratorEn from '../../components/CadaGeneratorEn.astro';
 import WhistleblowerVaultEn from '../../components/WhistleblowerVaultEn.astro';
 import FoncierDvfRadarEn from '../../components/FoncierDvfRadarEn.astro';
 
 const allInvestigations = await getCollection('investigations');
-// Sort by ID (Special Issue 29 first, then 01 to 28)
+// Tri par identifiant (Le numéro 29 en premier, puis de 01 à 28)
 const investigations = allInvestigations.sort((a, b) => {
   if (a.data.id === 29) return -1;
   if (b.data.id === 29) return 1;
   return a.data.id - b.data.id;
 });
-const uneInvestigation = investigations.find(i => i.data.id === 29) || investigations[0]; // Featured Major Investigation (#29 : Special Issue 01 - The Paoli Legacy)
+
+// Séparation éditoriale : Sealed Records vs Active Inquiries
+const investigationsCloturees = investigations.filter(i => i.data.status !== 'en_cours');
+const investigationsEnCours = investigations.filter(i => i.data.status === 'en_cours');
+
+// Option A : Sélection stricte des 8 enquêtes clôturées / finalisées
+const idsClotures = [29, 2, 3, 4, 6, 18, 27, 28];
+const investigationsAlaUne = idsClotures
+  .map(id => investigations.find(i => i.data.id === id))
+  .filter((i): i is NonNullable<typeof i> => Boolean(i));
 ---
 
-<Layout title="L'OCHJU — Citizen Investigative Media & Open Data (The Eye of Corsica)">
+<Layout 
+  title="L'OCHJU — Citizen Investigative Media & Open Data (The Eye of Corsica)"
+  description="L'OCHJU — First citizen open data investigative media in Corsica. 29 major forensic investigations on sovereignty, public finance and transparency."
+  canonicalUrl="https://fsucieta.github.io/en/"
+  image="/alerte_censure_lochju.jpg"
+  lang="en"
+>
   <!-- Top Navigation / Header Centered & Majestic -->
   <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-4 px-6 shadow-2xl">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -34,7 +48,7 @@ const uneInvestigation = investigations.find(i => i.data.id === 29) || investiga
       </div>
 
       <!-- Center : Official Majestic Logo -->
-      <a href="./" class="group flex justify-center">
+      <a href="./" class="group flex justify-center" aria-label="Return to L'OCHJU Homepage">
         <div class="relative">
           <div class="absolute -inset-2 bg-gradient-to-r from-amber-500/40 via-amber-300/30 to-amber-500/40 rounded-2xl blur-md opacity-40 group-hover:opacity-100 transition duration-500"></div>
           <img 
@@ -57,16 +71,13 @@ const uneInvestigation = investigations.find(i => i.data.id === 29) || investiga
   </header>
 
   <!-- Sticky Quick Navigation Menu (Identical to FR) -->
-  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[108px] z-40 py-2.5 px-6 shadow-md overflow-x-auto">
+  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[108px] z-40 py-2.5 px-6 shadow-md overflow-x-auto" aria-label="Quick section navigation">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 text-xs font-mono whitespace-nowrap">
       <a href="#manifeste-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
         <span>🙏 The Manifesto</span>
       </a>
       <a href="#fiches-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
         <span>📂 29 Investigations</span>
-      </a>
-      <a href="#radar-thermique-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
-        <span>🔥 Forensic Matrix</span>
       </a>
       <a href="#gis-map-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
         <span>🗺️ 360 Municipalities GIS</span>
@@ -83,182 +94,546 @@ const uneInvestigation = investigations.find(i => i.data.id === 29) || investiga
     </div>
   </nav>
 
-  <!-- ================= SECTION MANIFESTE / THE PRAYER OF L'OCHJU ================= -->
-  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4" id="manifeste-section">
-    <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden bg-slate-900">
+  <main id="main-content">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-4" id="alerte-censure-section">
+  <div class="relative rounded-3xl p-6 sm:p-8 md:p-10 border border-amber-500/30 bg-gradient-to-b from-slate-900/90 via-slate-950 to-slate-950 shadow-2xl backdrop-blur-xl overflow-hidden">
+    <!-- Subtle Ambient Glow -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
       
-      <!-- HISTORICAL QUOTE BY PASQUALE PAOLI -->
-      <div class="bg-amber-500/5 border border-amber-500/30 rounded-xl p-6 mb-8 text-center">
-        <p class="font-serif italic text-slate-100 text-base md:text-lg leading-relaxed">
-          « Justice, virtue, and love of Country must be the sole engines of our actions. The Corsican People, having recovered their liberty, intend to give a lasting form to their government by founding their Constitution upon reason and truth. »
+      <!-- Left Column : HD Artwork centered -->
+      <div class="lg:col-span-4 flex flex-col items-center justify-center">
+        <div class="relative group w-full max-w-[280px] sm:max-w-xs">
+          <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500/30 to-amber-300/20 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500"></div>
+          <img src="../alerte_censure_lochju.jpg" alt="L'OCHJU - Truth Will Not Be Silenced" class="relative w-full h-auto rounded-2xl border border-amber-500/40 shadow-2xl">
+        </div>
+      </div>
+
+      <!-- Right Column : Official Statement & Balanced Actions -->
+      <div class="lg:col-span-8 flex flex-col justify-center space-y-5">
+        
+        <!-- Header Press Badge with Historic Milestone -->
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest bg-rose-500/20 text-rose-300 border border-rose-500/40">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+            OFFICIAL COMMUNIQUÉ • CENSORSHIP ALERT
+          </span>
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest bg-amber-500/15 text-amber-300 border border-amber-500/30">
+            🔥 +700,000 VIEWS IN 30 DAYS
+          </span>
+          <span class="text-[11px] font-mono text-slate-500 hidden sm:inline">09.09.2026</span>
+        </div>
+
+        <!-- Major Headline -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black font-serif text-slate-100 leading-tight">
+          Truth will not be silenced. <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Become the megaphone of L’OCHJU.</span>
+        </h2>
+
+        <!-- Context Explanation -->
+        <p class="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
+          Facing a historic democratic surge — <strong class="text-amber-400 font-semibold">+700,000 readers in a single month</strong> across our 29 forensic investigations and cadastral audits —, our social media channels are experiencing coordinated censorship attempts. 
+          <strong class="text-slate-100">The freedom to inform does not belong to private algorithms.</strong> Help us break the digital blackout by sharing this official alert across your networks.
         </p>
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mt-3 block">
-          — Pasquale Paoli, Preamble to the Constitution of Corsica (November 18, 1755)
-        </span>
-      </div>
 
-      <div class="text-center border-b border-slate-800 pb-6 mb-8">
-        <h1 class="text-3xl md:text-5xl font-black font-serif text-slate-100 mb-3">🙏 THE PRAYER OF L'OCHJU</h1>
-        <p class="font-serif italic text-amber-400 text-base md:text-lg">Beyond 200,000 views : the word that dispels opacity and delivers the people through Knowledge.</p>
-      </div>
+        <!-- Structured Quote Box & Actions -->
+        <div class="rounded-2xl bg-slate-950/90 border border-slate-800/90 p-4 sm:p-5 space-y-4">
+          
+          <!-- Message line + Copy Button -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                <span>📜</span> Official message ready to broadcast:
+              </span>
+              <button id="copyCensureBtnEn" onclick="copyCensureMessageEn()" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-mono text-xs uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95">
+                <span id="copyBtnIconEn">📋</span> <span id="copyBtnLabelEn">Copy text</span>
+              </button>
+            </div>
 
-      <div class="font-serif text-lg text-slate-100 border-l-4 border-rose-600 pl-6 mb-8 leading-relaxed">
-        👁️ You think these are merely articles. You believe these are just numbers aligned on a screen.
-        <br/><br/>
-        200,000 times. In a matter of days, the screen lit up two hundred thousand times. This is not merely an audience success: it is a major malfunction in their system. It is living proof that beneath the varnish of silence and resignation, you were all waiting for one thing: the spark of truth.
-      </div>
+            <div id="censureMessageTextEn" class="text-xs font-mono text-slate-300 leading-relaxed max-h-40 overflow-y-auto whitespace-pre-wrap selection:bg-amber-500 selection:text-slate-950 p-3 rounded-xl bg-slate-900/60 border border-slate-800/60">🔴 CITIZEN TIDAL WAVE: OVER 700,000 VIEWS IN ONE MONTH ON L'OCHJU!
+🔴 CENSORSHIP ALERT: TRUTH WILL NOT BE SILENCED!
 
-      <div class="font-serif text-base text-slate-300 space-y-4 mb-8 leading-relaxed">
-        <p>For decades, they reigned over an empire of opacity. They banked on your exhaustion. They counted on a silent but terrifying weapon: ignorance. They told you that the files were "too complex", that land was "a legal headache", that water, transport, or energy were beyond your control. <strong class="text-slate-100">They lied to you.</strong></p>
-      </div>
+Following the historic public awakening and our 29 forensic citizen investigations (+700,000 readers in 30 days), our social media channels are currently subject to coordinated mass-reporting and censorship attempts.
 
-      <h2 class="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-2 mb-4">⚡ WELCOME TO INFORMATION 2.0 (INTELLIGENCE & RAW FORENSIC DATA)</h2>
-      <div class="font-serif text-base text-slate-300 space-y-4 mb-8 leading-relaxed">
-        <p>L'OCHJU is not a conventional media outlet. L'OCHJU is not an opinion platform. L'OCHJU is a forensic rupture in their system.</p>
-        <p>We combine the absolute rigor of data engineering — extraction of raw official decrees, cadastral analysis with our land monitoring partner <strong class="text-amber-400 font-sans">Bufitonu.fr</strong>, forensic auditing of corporate balance sheets and capital flows — with the only force they can never hack: the truth on the ground and the awakening of a people.</p>
-        <p>Starting today, the word "ignorant" is erased from our vocabulary. Neither decision-makers in their gilded offices nor local oligarchs of silence will ever be able to utter this sentence again: <em class="italic text-slate-100">"We did not know."</em></p>
-        <p>Because now, YOU know. And shared Knowledge is not merely information: it is the ultimate weapon of your reclamation. It is the birth certificate of our citizen sovereignty.</p>
-      </div>
+Those who profit from opacity and economic rent believe they can extinguish truth with an algorithmic click. But information sovereignty belongs to no private platform.
 
-      <h2 class="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-slate-800 pb-2 mb-4">🏛️ THE FOUR UNASSAILABLE PILLARS</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">I. THE PROOF OF FACT</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">No rumors. No idle gossip. Every revealed fact is backed by verifiable official decrees down to the bit.</p>
+Access all 29 major investigative dossiers, cadastral land audits, and certified archive records freely, publicly, and independently on our official site:
+👉 https://fsucieta.github.io/en/
+
+Truth belongs to no master. Share this message widely to break the silence and uphold the freedom to inform! ✊👁️</div>
+          </div>
+
+          <!-- Harmonized Action & Share Grid (5 Columns) -->
+          <div class="pt-3 border-t border-slate-800/80">
+            <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider block mb-2.5">
+              Broadcast or download alert:
+            </span>
+
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffsucieta.github.io%2Fen%2F" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#1877F2] text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>📘</span> <span>Facebook</span>
+              </a>
+
+              <!-- X / Twitter -->
+              <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffsucieta.github.io%2Fen%2F&text=%F0%9F%94%B4%20CENSORSHIP%20ALERT%3A%20THE%20EYE%20WILL%20NOT%20BE%20SILENCED!%0A%0AExplore%20the%2028%20forensic%20investigations%20in%20free%20open%20access%20on%20the%20official%20portal%3A" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-black text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>✖️</span> <span>X</span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://api.whatsapp.com/send?text=%F0%9F%94%B4%20CENSORSHIP%20ALERT%3A%20THE%20EYE%20WILL%20NOT%20BE%20SILENCED!%0A%0AFollowing%20our%20investigations%2C%20our%20channels%20are%20targeted%20by%20censorship.%20Truth%20does%20not%20belong%20to%20algorithms.%0A%0AAll%2028%20investigations%20in%20open%20access%3A%20https%3A%2F%2Ffsucieta.github.io%2Fen%2F" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#25D366] text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>💬</span> <span>WhatsApp</span>
+              </a>
+
+              <!-- Telegram -->
+              <a href="https://t.me/share/url?url=https%3A%2F%2Ffsucieta.github.io%2Fen%2F&text=%F0%9F%94%B4%20CENSORSHIP%20ALERT%3A%20THE%20EYE%20WILL%20NOT%20BE%20SILENCED!%20Discover%20the%2028%20open-access%20investigations%20on%20the%20official%20website." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-[#0088cc] text-slate-200 hover:text-white border border-slate-800 hover:border-[#0088cc] text-xs font-mono font-semibold transition-all duration-200 shadow-sm text-center">
+                <span>✈️</span> <span>Telegram</span>
+              </a>
+
+              <!-- Download HD Artwork -->
+              <a href="../alerte_censure_lochju.jpg" download="L-OCHJU-TRUTH-WILL-NOT-BE-SILENCED.jpg" class="col-span-2 sm:col-span-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/30 text-xs font-mono font-bold transition-all duration-200 shadow-sm text-center">
+                <span>📥</span> <span>HD Poster</span>
+              </a>
+            </div>
+          </div>
+
         </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">II. THE DOUBLE-SHELF PEDAGOGY</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">The most complex financial and legal concepts rendered crystal-clear for every household. To understand is to disarm power.</p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyCensureMessageEn() {
+    const text = document.getElementById('censureMessageTextEn').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const label = document.getElementById('copyBtnLabelEn');
+      const icon = document.getElementById('copyBtnIconEn');
+      label.innerText = 'Copied!';
+      icon.innerText = '✅';
+      setTimeout(() => {
+        label.innerText = 'Copy text';
+        icon.innerText = '📋';
+      }, 3000);
+    });
+  }
+</script>
+
+  
+
+  <!-- ================= SECTION MANIFESTE SOUVERAIN ÉPURÉ ("THE OATH OF L'OCHJU") ================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-2" id="manifeste-section">
+    <div class="relative border border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden bg-gradient-to-b from-slate-900/90 via-slate-950 to-slate-950 backdrop-blur-xl">
+      <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- HISTORICAL QUOTE BY PASQUALE PAOLI -->
+      <div class="max-w-3xl mx-auto text-center mb-6">
+        <blockquote class="!bg-transparent !border-0 !p-0 !m-0 !shadow-none">
+          <p class="font-serif italic text-amber-200/90 text-sm sm:text-base md:text-lg leading-relaxed">
+            « Justice, virtue, and love of Country must be the sole engines of our actions. The Corsican People, having recovered their liberty, intend to give a lasting form to their government by founding their Constitution upon reason and truth. »
+          </p>
+          <cite class="font-mono text-[11px] text-amber-400/80 uppercase tracking-widest mt-2 block not-italic">
+            — Pasquale Paoli, Preamble to the Constitution of Corsica (November 18, 1755)
+          </cite>
+        </blockquote>
+      </div>
+
+      <!-- SYNTHESIS OF THE CITIZEN OATH (3 IMPACTFUL LINES) -->
+      <div class="max-w-4xl mx-auto text-center border-t border-b border-slate-800/80 py-5 my-5 space-y-2">
+        <h1 class="text-xl sm:text-2xl font-serif font-black text-slate-100 tracking-wide">
+          SHARED KNOWLEDGE IS OUR COUNTER-POWER
+        </h1>
+        <p class="font-serif text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+          Beneath the varnish of silence, the screen lit up <strong class="text-amber-400 font-mono">+700,000 times</strong> in a single month. No masters, no compromises: here is the certified truth to restore citizen sovereignty.
+        </p>
+      </div>
+
+      <!-- THE 4 PILLARS IN COMPACT HORIZONTAL CARDS -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto my-6">
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-rose-400 block mb-0.5 uppercase tracking-wider">I. Proof of Fact</span>
+          <span class="text-[11px] text-slate-400 font-sans">0 rumors · Decrees verified down to the bit</span>
         </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">III. THE REMEDY & THE ROADMAP</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">Outrage is sterile without action. For every exposed failure, we provide the concrete governance alternative and legal recourse.</p>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-amber-400 block mb-0.5 uppercase tracking-wider">II. Double-Shelf</span>
+          <span class="text-[11px] text-slate-400 font-sans">Law & finance translated for every home</span>
         </div>
-        <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5">
-          <h4 class="font-mono text-xs font-bold text-rose-500 uppercase mb-2">IV. UNCOMPROMISING INDEPENDENCE</h4>
-          <p class="text-xs text-slate-400 leading-relaxed font-sans">No masters, no corporate shareholders, no political agendas. Our only allegiance is to our readers and the defense of the land.</p>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-cyan-400 block mb-0.5 uppercase tracking-wider">III. Direct Remedy</span>
+          <span class="text-[11px] text-slate-400 font-sans">For every failure, a concrete statutory solution</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
+          <span class="text-[10px] font-mono font-bold text-emerald-400 block mb-0.5 uppercase tracking-wider">IV. Full Independence</span>
+          <span class="text-[11px] text-slate-400 font-sans">Zero subsidies, zero corporate shareholders</span>
         </div>
       </div>
+
+      <!-- EXPANDABLE FULL MANIFESTO TEXT ON DEMAND -->
+      <details class="max-w-3xl mx-auto group border border-slate-800/80 rounded-xl bg-slate-950/60 transition duration-300">
+        <summary class="p-3 text-center cursor-pointer font-mono text-xs text-amber-400 hover:text-amber-300 flex items-center justify-center gap-2 select-none">
+          <span>📜 Read the Full Manifesto Text</span>
+          <span class="text-slate-500 group-open:rotate-180 transition transform">▼</span>
+        </summary>
+        <div class="p-6 border-t border-slate-800/80 font-serif text-sm text-slate-300 space-y-4 leading-relaxed bg-slate-900/40">
+          <p class="border-l-2 border-rose-500 pl-4 italic text-slate-200">
+            👁️ You think these are merely articles. You believe these are just numbers aligned on a screen. Seven hundred thousand times in a month, the screen lit up. Living proof that you were waiting for only one thing: the spark of truth.
+          </p>
+          <p>
+            For decades, they reigned over an empire of opacity. They counted on a terrifying weapon: ignorance. They told you files were "too complex", that land was a puzzle, that water or energy were beyond your control. <strong class="text-slate-100">They lied to you.</strong>
+          </p>
+          <p>
+            L'OCHJU is not an opinion platform. It is a forensic rupture in their system. We combine data engineering (raw official decrees, cadastral monitoring with <strong class="text-amber-400">Bufitonu.fr</strong>, corporate ledger audits) with citizen awakening.
+          </p>
+          <p class="text-center font-serif italic text-amber-400 pt-2 border-t border-slate-800">
+            « Opacity is not a fatality. Shared Knowledge is our counter-power. »
+          </p>
+        </div>
+      </details>
+
+      <!-- Fast Anchor Button -->
+      <div class="mt-6 text-center">
+        <a href="#carousel-alaune-section" class="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition shadow-lg shadow-amber-500/20">
+          <span>Access Featured Investigations Directly ↓</span>
+        </a>
+      </div>
+
     </div>
   </section>
 
-  <!-- Editorial Hero / "FEATURED INVESTIGATION" -->
-  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4">
+  <!-- ================= INTERACTIVE CAROUSEL "FEATURED DOSSIERS" : THE 8 COMPLETED INVESTIGATIONS ================= -->
+  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4" id="carousel-alaune-section">
     <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden bg-slate-900">
       <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
       
-      <div class="flex flex-wrap items-center gap-3 mb-4">
-        <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono">
-          ★ INAUGURAL EDITION — 29 EXCLUSIVE INVESTIGATIONS (DECODED STATE REGISTRIES)
-        </span>
-        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono font-bold">
-          360 MUNICIPALITIES AUDITED (+14,000 DVF LAND RECORDS)
-        </span>
-      </div>
-
-      <!-- Featured Dossier -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
-        <div class="lg:col-span-7">
-          <span class="text-xs font-mono text-amber-400 font-bold uppercase tracking-wider block mb-2">
-            SPECIAL ISSUE #{uneInvestigation.data.id.toString().padStart(2, '0')} | DIPLOMATIC APPEAL
+      <!-- Carousel Header with Mode Indicator and Navigation Controls -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800/80 pb-4">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            ★ FEATURED MAJOR DOSSIERS (COMPLETED INVESTIGATIONS)
           </span>
-          <h1 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
-            <a href={`./investigations/${uneInvestigation.slug}/`}>
-              {uneInvestigation.data.title}
-            </a>
-          </h1>
-          <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
-            {uneInvestigation.data.chapeau}
-          </p>
-          <div class="flex flex-wrap items-center gap-4">
-            <a 
-              href={`./investigations/${uneInvestigation.slug}/`} 
-              class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
-            >
-              Read Special Investigation (READING TIME : 8 MIN) →
-            </a>
-            <a 
-              href="#fiches-section" 
-              class="bg-slate-900 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
-            >
-              📂 Explore All 29 Investigations
-            </a>
-          </div>
+          <span class="px-2.5 py-1 bg-rose-500/10 text-rose-300 border border-rose-500/30 rounded-full text-xs font-mono font-bold">
+            🔥 +700,000 VIEWS
+          </span>
+          <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono font-bold">
+            🗺️ 360 MUNICIPALITIES
+          </span>
+          <span class="px-3 py-1 bg-slate-950 text-slate-300 border border-slate-800 rounded-full text-xs font-mono font-bold" id="carouselCounter">
+            Investigation 1 / {investigationsAlaUne.length}
+          </span>
         </div>
 
-        <div class="lg:col-span-5">
-          <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
-            <img 
-              src={`../${uneInvestigation.data.image}`} 
-              alt={uneInvestigation.data.title} 
-              class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
-            <div class="absolute bottom-4 left-4 right-4 text-xs font-mono text-amber-300 bg-slate-950/90 p-3 rounded-lg border border-amber-500/30 backdrop-blur">
-              💡 <span class="font-bold">L'OCHJU International</span> : Primary archives & diplomatic roadmap.
-            </div>
-          </div>
+        <!-- Controls : Previous / Next and Pause -->
+        <div class="flex items-center gap-2">
+          <button 
+            id="carouselPrevBtn" 
+            type="button" 
+            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Previous dossier"
+          >
+            ◀
+          </button>
+          <button 
+            id="carouselPlayPauseBtn" 
+            type="button" 
+            class="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Pause / Resume auto-play"
+          >
+            ⏸️ Pause
+          </button>
+          <button 
+            id="carouselNextBtn" 
+            type="button" 
+            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
+            title="Next dossier"
+          >
+            ▶
+          </button>
         </div>
       </div>
+
+      <!-- Carousel Slides (Each completed investigation) -->
+      <div class="relative overflow-hidden min-h-[440px]" id="carouselSlidesContainer">
+        {investigationsAlaUne.map((enq, index) => {
+          const d = enq.data;
+          const isFirst = index === 0;
+          const imgPath = d.image.startsWith('http') ? d.image : `../${d.image.replace(/^\//, '')}`;
+          return (
+            <div 
+              class={`carousel-slide transition-opacity duration-700 ${isFirst ? 'opacity-100 relative' : 'opacity-0 absolute inset-0 pointer-events-none'}`}
+              data-slide-index={index}
+            >
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                  <div class="flex items-center gap-2.5 mb-3">
+                    <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider">
+                      MAJOR CITIZEN INVESTIGATION #{d.id.toString().padStart(2, '0')}
+                    </span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold">
+                      {d.id === 29 ? '⭐ MONUMENTAL SPECIAL ISSUE' : '🟢 COMPLETED INVESTIGATION'}
+                    </span>
+                  </div>
+
+                  <h2 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
+                    <a href={`./investigations/${enq.slug}/`}>
+                      {d.title}
+                    </a>
+                  </h2>
+
+                  <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
+                    {d.chapeau}
+                  </p>
+
+                  <div class="flex flex-wrap items-center gap-4">
+                    <a 
+                      href={`./investigations/${enq.slug}/`} 
+                      class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
+                    >
+                      Read Investigation File (6 MIN) →
+                    </a>
+                    <a 
+                      href="#fiches-section" 
+                      class="bg-slate-950 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
+                    >
+                      📂 Explore All 29 Files
+                    </a>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                  <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
+                    <img 
+                      src={imgPath} 
+                      alt={d.title} 
+                      class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-xs font-mono text-amber-300 bg-slate-950/90 p-3 rounded-lg border border-amber-500/30 backdrop-blur">
+                      💡 <span class="font-bold">L'OCHJU Citizen Desk</span> : {d.subtitle || "Forensic audit & certified archive documents."}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Navigation / Pagination Dots -->
+      <div class="flex items-center justify-center gap-2 mt-8 pt-4 border-t border-slate-800/80" id="carouselDots">
+        {investigationsAlaUne.map((_, index) => (
+          <button 
+            type="button" 
+            class={`carousel-dot w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${index === 0 ? 'bg-amber-400 w-8' : 'bg-slate-700 hover:bg-slate-500'}`}
+            data-dot-index={index}
+            title={`Go to dossier ${index + 1}`}
+          ></button>
+        ))}
+      </div>
+
     </div>
   </section>
 
-  <!-- Section : 29 Investigation Cards (100% Cliquables avec Images) -->
+  <!-- Interactive Carousel Dynamic Script -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.getElementById('carouselPrevBtn');
+      const nextBtn = document.getElementById('carouselNextBtn');
+      const playPauseBtn = document.getElementById('carouselPlayPauseBtn');
+      const counter = document.getElementById('carouselCounter');
+      const container = document.getElementById('carousel-alaune-section');
+
+      if (!slides.length) return;
+
+      let currentIndex = 0;
+      let isPlaying = true;
+      let autoTimer = null;
+      const total = slides.length;
+
+      function updateSlide(newIndex) {
+        slides.forEach((slide, idx) => {
+          if (idx === newIndex) {
+            slide.classList.remove('opacity-0', 'absolute', 'pointer-events-none');
+            slide.classList.add('opacity-100', 'relative');
+          } else {
+            slide.classList.remove('opacity-100', 'relative');
+            slide.classList.add('opacity-0', 'absolute', 'pointer-events-none');
+          }
+        });
+
+        dots.forEach((dot, idx) => {
+          if (idx === newIndex) {
+            dot.classList.add('bg-amber-400', 'w-8');
+            dot.classList.remove('bg-slate-700');
+          } else {
+            dot.classList.remove('bg-amber-400', 'w-8');
+            dot.classList.add('bg-slate-700');
+          }
+        });
+
+        if (counter) {
+          counter.textContent = `Investigation ${newIndex + 1} / ${total}`;
+        }
+
+        currentIndex = newIndex;
+      }
+
+      function nextSlide() {
+        const next = (currentIndex + 1) % total;
+        updateSlide(next);
+      }
+
+      function prevSlide() {
+        const prev = (currentIndex - 1 + total) % total;
+        updateSlide(prev);
+      }
+
+      function startTimer() {
+        stopTimer();
+        autoTimer = setInterval(nextSlide, 5500);
+      }
+
+      function stopTimer() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          if (isPlaying) startTimer();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          if (isPlaying) startTimer();
+        });
+      }
+
+      dots.forEach((dot) => {
+        dot.addEventListener('click', (e) => {
+          const idx = parseInt(e.target.getAttribute('data-dot-index') || '0', 10);
+          updateSlide(idx);
+          if (isPlaying) startTimer();
+        });
+      });
+
+      if (playPauseBtn) {
+        playPauseBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            playPauseBtn.textContent = '⏸️ Pause';
+            startTimer();
+          } else {
+            playPauseBtn.textContent = '▶️ Play';
+            stopTimer();
+          }
+        });
+      }
+
+      if (container) {
+        container.addEventListener('mouseenter', () => {
+          if (isPlaying) stopTimer();
+        });
+        container.addEventListener('mouseleave', () => {
+          if (isPlaying) startTimer();
+        });
+      }
+
+      startTimer();
+    });
+  </script>
+
+  <!-- Section 1 : Sealed Investigation Records (100% Clickable) -->
   <section class="max-w-7xl mx-auto px-6 py-8" id="fiches-section">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-slate-800 pb-4">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-emerald-500/30 pb-4">
       <div>
-        <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-          INTERNATIONAL CITIZEN INVESTIGATION FILES
+        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          SEALED ARCHIVE RECORDS · COMPLETED INQUIRIES
         </span>
         <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-          📁 The 29 Impact Investigations
+          🟢 Major Concluded Investigations ({investigationsCloturees.length})
         </h2>
+        <p class="text-xs font-mono text-slate-400 mt-1">Investigations backed by audited financial statements, forensic documentation and verified public records.</p>
       </div>
 
       <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
-        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-2 rounded-xl border border-slate-800">
-          29 / 29 Published Files
-        </span>
+        <div class="w-full sm:w-72">
+          <input 
+            type="text" 
+            id="searchInputEn" 
+            placeholder="🔍 Filter files..." 
+            aria-label="Filter investigations by keyword, topic or region"
+            class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:border-amber-400 transition font-sans shadow-inner"
+          />
+        </div>
       </div>
     </div>
 
-    <!-- Grille des 29 Fiches Enquêtes -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGrid">
-      {investigations.map((inv) => {
+    <!-- Grille des Enquêtes Clôturées -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGridEn">
+      {investigationsCloturees.map((inv) => {
         const d = inv.data;
         const imgPath = d.image.startsWith('http') ? d.image : `../${d.image.replace(/^\//, '')}`;
+        const displayTitle = d.title.replace(/^Investigation\s+\d+\s*:\s*/i, '');
         return (
           <a 
             href={`./investigations/${inv.slug}/`}
-            class="fiche-card bg-slate-950 border border-slate-800 rounded-xl overflow-hidden hover:border-amber-500/60 transition duration-300 flex flex-col shadow-lg hover:shadow-amber-500/10 group cursor-pointer block"
+            class="fiche-card-en relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/80 hover:border-emerald-500/60 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 group cursor-pointer block hover:-translate-y-1"
+            data-title={displayTitle.toLowerCase()}
+            data-category={d.category.toLowerCase()}
+            data-chapeau={d.chapeau.toLowerCase()}
           >
+            <!-- Liseré supérieur émeraude de scellement médico-légal -->
+            <div class="h-1 w-full bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent group-hover:via-emerald-400 transition-all duration-500"></div>
+
             <!-- Card Image -->
-            <div class="h-48 bg-slate-900 overflow-hidden relative">
+            <div class="h-52 bg-slate-950 overflow-hidden relative">
               <img 
                 src={imgPath} 
-                alt={d.title} 
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                alt={displayTitle} 
+                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
               />
-              <div class="absolute top-3 left-3 bg-slate-950/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-400 border border-amber-500/30 font-mono">
-                #{d.id.toString().padStart(2, '0')}
+              <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none">
+                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-emerald-400 border border-emerald-500/40 shadow-lg flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span>SEALED EVIDENCE</span>
+                </span>
+                <span class="bg-slate-950/80 backdrop-blur-md px-2.5 py-0.5 rounded text-[10px] font-mono text-slate-400 border border-slate-800">
+                  {d.ref || "ISO-27037"}
+                </span>
               </div>
             </div>
 
             <!-- Card Content -->
-            <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-xs font-mono text-cyan-400 font-bold block mb-2">{d.category}</span>
-                <h3 class="text-lg font-bold font-serif text-slate-100 mb-3 group-hover:text-amber-400 transition leading-snug">
-                  {d.title}
+                <div class="flex items-center gap-2 mb-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                  <span class="text-[11px] font-mono uppercase tracking-widest text-cyan-400 font-bold">{d.category}</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
+                  {displayTitle}
                 </h3>
-                <p class="text-slate-400 text-sm line-clamp-3 mb-4 leading-relaxed font-serif">
+                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
                   {d.chapeau}
                 </p>
               </div>
 
               <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <span class="text-xs font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1 font-sans">
-                  Read Investigation (READING TIME : 6 MIN) →
+                <span class="text-xs font-mono font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Open Investigation File</span>
+                  <span class="transition transform group-hover:translate-x-1">→</span>
                 </span>
               </div>
             </div>
@@ -268,14 +643,111 @@ const uneInvestigation = investigations.find(i => i.data.id === 29) || investiga
     </div>
   </section>
 
-  <!-- 1. Forensic Transparency Matrix -->
-  <section class="max-w-7xl mx-auto px-6">
-    <MatriceImpactEn />
+  <!-- Section 2 : Open Investigations & Active Citizen Inquiries -->
+  <section class="max-w-7xl mx-auto px-6 py-8 border-t border-amber-500/20" id="enquetes-en-cours-section-en">
+    <div class="mb-8 border-b border-amber-500/30 pb-4">
+      <span class="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        ACTIVE INQUIRIES · CALL FOR EVIDENCE & WHISTLEBLOWER DISCLOSURES
+      </span>
+      <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
+        🟡 Active Citizen Inquiries ({investigationsEnCours.length})
+      </h2>
+      <p class="text-xs font-mono text-slate-400 mt-1">Ongoing investigations: do you hold official documents, regulatory records, or verifiable evidence? Submit them securely via our PGP vault.</p>
+    </div>
+
+    <!-- Grille des Enquêtes en Cours -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGridEnCoursEn">
+      {investigationsEnCours.map((inv) => {
+        const d = inv.data;
+        const imgPath = d.image.startsWith('http') ? d.image : `../${d.image.replace(/^\//, '')}`;
+        const displayTitle = d.title.replace(/^Investigation\s+\d+\s*:\s*/i, '');
+        return (
+          <a 
+            href={`./investigations/${inv.slug}/`}
+            class="fiche-card-en relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-amber-500/30 hover:border-amber-400 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 group cursor-pointer block hover:-translate-y-1"
+            data-title={displayTitle.toLowerCase()}
+            data-category={d.category.toLowerCase()}
+            data-chapeau={d.chapeau.toLowerCase()}
+          >
+            <!-- Liseré supérieur ambre vibrant -->
+            <div class="h-1 w-full bg-gradient-to-r from-transparent via-amber-500/60 to-transparent group-hover:via-amber-400 transition-all duration-500"></div>
+
+            <!-- Card Image -->
+            <div class="h-52 bg-slate-950 overflow-hidden relative">
+              <img 
+                src={imgPath} 
+                alt={displayTitle} 
+                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
+              />
+              <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none">
+                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-amber-300 border border-amber-500/40 shadow-lg flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                  <span>ACTIVE INQUIRY</span>
+                </span>
+                <span class="bg-slate-950/80 backdrop-blur-md px-2.5 py-0.5 rounded text-[10px] font-mono text-slate-400 border border-slate-800">
+                  {d.ref || "ISO-27037"}
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <div class="flex items-center gap-2 mb-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-bold">{d.category}</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
+                  {displayTitle}
+                </h3>
+                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
+                  {d.chapeau}
+                </p>
+              </div>
+
+              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-amber-300 group-hover:text-amber-200 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Follow Evidence Trail</span>
+                  <span class="transition transform group-hover:translate-x-1">→</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
   </section>
+
+  <!-- Script de recherche en temps réel pour la section anglaise -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInputEn') as HTMLInputElement | null;
+      const allCards = document.querySelectorAll<HTMLElement>('.fiche-card-en');
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const term = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+          allCards.forEach((card) => {
+            const title = card.getAttribute('data-title') || '';
+            const category = card.getAttribute('data-category') || '';
+            const chapeau = card.getAttribute('data-chapeau') || '';
+
+            if (!term || title.includes(term) || category.includes(term) || chapeau.includes(term)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
 
   <!-- 2. GIS Map 360 Communes -->
   <section class="max-w-7xl mx-auto px-6" id="gis-map-section">
-    <GisMap />
+    <GisMap lang="en" />
   </section>
 
   <!-- 3. DVF Real Estate Radar -->
@@ -292,8 +764,9 @@ const uneInvestigation = investigations.find(i => i.data.id === 29) || investiga
   <section class="max-w-7xl mx-auto px-6" id="whistleblower-vault">
     <WhistleblowerVaultEn />
   </section>
+  </main>
 
-  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500 font-mono mt-16">
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500 font-mono mt-16" role="contentinfo">
     L'OCHJU — THE EYE OF CORSICA | 29 SOVEREIGN CITIZEN INVESTIGATIONS IN CO-OFFICIAL ENGLISH TRANSLATION
   </footer>
 </Layout>
