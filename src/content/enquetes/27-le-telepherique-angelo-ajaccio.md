@@ -1,6 +1,6 @@
 ---
 id: 27
-title: "Enquête 27 (Partie 1/2) : Téléphérique 'Angelo' — Le mirage à 52 M€ et la rente privée au détriment du réseau public"
+title: "Téléphérique 'Angelo' (Partie 1/2) — Le mirage à 52 M€ et la rente privée au détriment du réseau public"
 subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
 category: "INFRASTRUCTURES & POUVOIR"
 status: cloturee

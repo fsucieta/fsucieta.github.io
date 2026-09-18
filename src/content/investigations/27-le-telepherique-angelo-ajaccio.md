@@ -1,6 +1,6 @@
 ---
 id: 27
-title: "Investigation 27 (Part 1/2) : The 'Angelo' Urban Cable Car — The 52 M€ Illusion & Private Annuity at the Expense of Public Transit"
+title: "The 'Angelo' Urban Cable Car (Part 1/2) — The 52 M€ Illusion & Private Annuity at the Expense of Public Transit"
 subtitle: "Financial asphyxiation, POMA annuity, and public service sacrifice : revelations on the state strategy sacrificing municipal public transit to benefit a national private conglomerate."
 category: "INFRASTRUCTURES & POWER"
 status: cloturee

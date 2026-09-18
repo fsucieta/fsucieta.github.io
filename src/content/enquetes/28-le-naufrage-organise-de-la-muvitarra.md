@@ -1,6 +1,6 @@
 ---
 id: 28
-title: "Enquête 27 (Partie 2/2) : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie, l'Impasse du 31 Août et le Plan de Sauvetage Souverain"
+title: "Le Destin de la Muvitarra (Partie 2/2) — Les Chiffres de l'Asphyxie, l'Impasse du 31 Août et le Plan de Sauvetage Souverain"
 subtitle: "Mise en demeure de la DREAL, 2,9 M€ d'impayés de la CAPA, flotte vétuste à 63 % et siphonnage financier au profit de la rive sud : les pièces d'État qui démontrent le sabotage délibéré de la régie publique ajaccienne."
 category: "INFRASTRUCTURES & POUVOIR"
 status: cloturee

@@ -1,6 +1,6 @@
 ---
 id: 28
-title: "Investigation 27 (Part 2/2) : The Fate of Muvitarra — The Mechanics of Asphyxiation, The August 31 Deadline & The Sovereign Rescue Plan"
+title: "The Fate of Muvitarra (Part 2/2) — The Mechanics of Asphyxiation, The August 31 Deadline & The Sovereign Rescue Plan"
 subtitle: "DREAL formal notice, 2.9 M€ in unpaid debts by CAPA, a 63% obsolete fleet, and financial siphoning toward the south shore: official state records exposing the deliberate dismantling of Ajaccio's public transit utility."
 category: "INFRASTRUCTURES & POWER"
 status: cloturee
