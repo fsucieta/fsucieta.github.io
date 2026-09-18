@@ -128,71 +128,71 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
 
 ---
 
-## ACTE I. LES IMPAYÉS DE LA CAPA : L'AVEU DU RETARD ET L'ASPHYXIE VOLONTAIRE
+## 1. LES PRESTATIONS IMPAYÉES DE LA CAPA : L'AVEU DU RETARD ET L'IMPASSE BUDGÉTAIRE
 
-Les comptes d'exploitation pulvérisent le faux procès fait aux salariés : **88 % du déficit de la régie (-3,3 M€) provient directement des refus de paiement de la CAPA**.
+Les comptes d'exploitation et les audits de gestion mettent en lumière la cause première des difficultés : une grande part du déficit d'exploitation de la régie provient de retards d'arbitrage et de compensations financières différées de la collectivité.
 
-Pendant qu'on montrait les chauffeurs du doigt, la collectivité commandait de nouveaux trajets indispensables pour les habitants, mais refusait d'en verser le montant :
+Alors que la communication municipale a parfois pointé du doigt les coûts internes, la collectivité a ordonné des extensions de lignes indispensables pour les usagers sans toujours en régulariser le financement à temps :
 
-1. **La Desserte du Nouvel Hôpital, du Collège Stiletto et de Bodiccione (278 000 € par an non payés)** :  
-   Pour relier le nouvel hôpital et le collège (24 allers-retours par jour), les bus ont parcouru 44 133 kilomètres supplémentaires. La régie a demandé le paiement normal de ces kilomètres. **Refus net de la CAPA le 1er décembre 2022**, qui a exigé que ces bus roulent « gratuitement » !
-2. **Le Renfort de la Ligne 4 pour les scolaires (390 000 € par an non payés)** :  
-   Des bus ajoutés chaque matin pour que nos enfants n'attendent pas sous la pluie, jamais régularisés par la collectivité.
-3. **Le Blocage du Carburant (243 000 € de surcoût à la pompe)** :  
-   Quand le prix du gazole a bondi de **+42 %**, la CAPA a refusé d'ajuster sa participation sur le prix réel à la pompe, laissant la régie payer la hausse sur ses propres fonds.
-4. **Les Réparations de Matériel avancées par la régie (351 000 €)** :  
-   De grosses réparations payées directement par la trésorerie des bus au lieu d'être financées par la collectivité.
+1. **La desserte du Nouvel Hôpital, du Collège Stiletto et de Bodiccione (278 000 €/an en attente de régularisation)** :  
+   Pour relier le pôle hospitalier et le collège (24 allers-retours quotidiens), les bus ont parcouru plus de 44 133 kilomètres supplémentaires. La régie a demandé l'inscription budgétaire normale de ces kilomètres pour équilibrer ses charges.
+2. **Le renfort de la Ligne 4 pour les scolaires (390 000 €/an)** :  
+   Des rotations supplémentaires ajoutées le matin pour acheminer les élèves, restées longtemps en attente d'avenant formel.
+3. **Le choc sur le carburant (243 000 € de surcoût subi à la pompe)** :  
+   Lorsque le cours du gazole a connu des hausses de plus de **+42 %**, l'absence d'indexation automatique rapide de la subvention a contraint la régie à absorber la trésorerie sur ses fonds propres.
+4. **Les dépenses d'entretien et grosses réparations avancées (351 000 €)** :  
+   Des opérations de maintenance lourde avancées par la régie sur un matériel roulant particulièrement éprouvé.
 
 ### L'Aveu Officiel de la CAPA : Le Rattrapage Rétroactif d'1,4 Million d'Euros
-Dans son communiqué officiel de crise publié lors de la grève générale de décembre 2025, **la CAPA a fini par avouer elle-même ce manquement financier historique** en écrivant textuellement :
+Dans son communiqué officiel de crise diffusé lors du conflit social de décembre 2025, **la CAPA a formellement reconnu ce décalage de trésorerie** en écrivant textuellement :
 > *« Elle a d’abord procédé à un **paiement rétroactif d’un montant d’un 1,4 million d’euros de lignes effectuées** et s’est engagée à verser **250 000 euros supplémentaires chaque année** pour que cela ne se reproduise plus. »*
 
-Cet aveu officiel confirme la réalité médico-légale : si la collectivité a dû verser 1,4 M€ de rattrapage en urgence, c'est bien parce qu'elle avait sciemment accumulé des impayés sur des lignes réelles, plongeant la régie dans un déficit artificiel !
+Cette régularisation rétroactive d'urgence démontre que les tensions financières de la régie découlaient directement de charges de service public commandées mais non compensées à leur juste coût.
 
 ---
 
-## ACTE II. LE COUPERET DE LA DREAL ET LA DETTE GÉANTE DU TÉLÉPHÉRIQUE
+## 2. LA MISE EN DEMEURE DE LA DREAL ET LE POIDS BUDGÉTAIRE DU TÉLÉPHÉRIQUE
 
-Le dossier révèle un document préfectoral d'une gravité exceptionnelle, resté inconnu du grand public : **la Mise en demeure officielle de la DREAL du 18 décembre 2023 (Réf: UCS/MO/2023-461)**.
+Le dossier administratif s'appuie sur une pièce officielle déterminante : **la Mise en demeure émise par la DREAL Corse le 18 décembre 2023 (Réf: UCS/MO/2023-461)**.
 
-1. **La Menace de Suppression des Bus** :  
-   Les services de l'État ont constaté que la régie Muvitarra était tombée dans le rouge à hauteur de **- 766 132 €**. La loi exigeant une réserve financière minimale de 195 500 € pour faire rouler 38 bus, la préfecture a donné un **ultimatum de 6 mois** : renflouer les comptes sous peine d'interdire purement et simplement aux bus de circuler !
-2. **L'Inertie de la Direction** :  
-   À l'échéance de juin 2024, la direction n'avait toujours apporté aucune solution financière pérenne aux services de l'État.
-3. **L'Échéance Imminente du 31 Août : Le Risque d'un Vide Juridique** :  
-   Le contrat liant l'agglomération à la Muvitarra expire le **31 août**. Alors que la CAPA promettait dans sa communication un contrat effectif au 1er janvier 2026, **aucun nouveau contrat n'a été signé au 1er septembre**, plongeant le réseau dans une précarité juridique totale à la veille de la rentrée scolaire.
-4. **L'Argent Englouti par le Téléphérique Angelo (Aveu du ROB 2025)** :  
-   Dans son Rapport d'Orientations Budgétaires (ROB 2025, page 5 et 6), la CAPA chiffre son programme d'investissement transports à **65,8 Millions d'euros (dont 41,2 M€ de reste à charge net)** et avoue noir sur blanc que ses charges explosent en raison *« de la mise en service du téléporté, de l'application complète des avenants à la SPL Muvitarra »*. La dette globale de l'agglomération atteint ainsi **81,95 Millions d'euros** sur 17 ans et 10 mois !
-
----
-
-## ACTE III. LE PARC EN RUINE & LE FAUX PROCÈS DES CONDUCTEURS
-
-Pour masquer ses propres arbitrages budgétaires, la collectivité a diffusé un réquisitoire contre les salariés lors du conflit de décembre 2025. La confrontation entre la communication officielle et la réalité des faits est sans appel :
-
-1. **Le Faux Argument du Coût Kilométrique (9 € / km)** :  
-   Dans son communiqué, la CAPA s'indigne : *« Aujourd’hui, faire rouler un bus de la SPL Muvitarra coûte 9 euros par kilomètre contre 4,60 € à 6 € sur le continent »*.  
-   **La Réalité** : Ce surcoût ne provient pas des salaires, mais du vieillissement dramatique d'une flotte dont **63 % des bus ont plus de 10 ans** (seulement 7 bus neufs acquis en 7 ans) et de la paralysie routière ajaccienne (vitesse commerciale tombée sous les 11 km/h sur la Rocade).
-2. **L'Intox sur les Salaires des Chauffeurs** :  
-   Alors que la mairie prétend que les salaires seraient *« 40 % supérieurs à la moyenne nationale »*, les liasses fiscales officielles et les déclarations sociales démontrent un **salaire moyen de 3 350 € bruts par mois (primes, 13e et 14e mois inclus)**, strictement équivalent au standard national (3 316 €), alors même que le coût de l'alimentation en Corse est 14 % plus cher !
-3. **Le Couperet des 15 Mois et le Crash Social Délibéré** :  
-   La CAPA confirme dans son communiqué avoir **dénoncé unilatéralement 90 accords d'entreprise dès le 27 septembre 2024**, ouvrant un compte à rebours de 15 mois expirant le 27 décembre 2025 pour supprimer la subrogation maladie et les congés historiques. C'est ce passage en force politique qui a déclenché la grève générale paralysant la ville le 2 décembre 2025.
-4. **L'Absentéisme : Conséquence de la Casse des Conditions de Travail** :  
-   En mettant en avant *« 10 400 jours d'absence en 2024 »*, la direction omet de préciser que cet absentéisme est le produit direct du burn-out des agents confrontés à des bus en panne constante, au blocage des salaires de remplacement et à la suppression brutale du maintien de salaire (subrogation CPAM) pour masquer 460 000 € de retards administratifs internes.
+1. **L'exigence légale de capacité financière** :  
+   Constatant des capitaux propres devenus négatifs (- 766 132 €) au titre de l'exercice audité, l'autorité de contrôle des transports a rappelé l'obligation réglementaire de disposer d'une réserve minimale de 195 500 € pour maintenir les 38 licences d'exploitation des bus, fixant un délai pour rétablir les équilibres.
+2. **L'étirement contractuel par 11 avenants successifs** :  
+   Faute d'un cadre pluriannuel pérenne et modernisé, la relation contractuelle a été prorogée par 11 avenants consécutifs, maintenant la régie dans une incertitude de gestion défavorable aux investissements de renouvellement.
+3. **Le risque de vide contractuel à l'échéance du 31 août** :  
+   Le Contrat d'Obligations de Service Public (COSP) arrivant à terme le 31 août 2026, l'absence de signature d'un nouveau contrat-cadre crée une précarité juridique majeure pour les usagers et les personnels à la veille de la rentrée scolaire.
+4. **L'arbitrage financier en faveur du téléphérique Angelo (Citations du ROB 2025)** :  
+   Dans son Rapport d'Orientations Budgétaires officiel (**ROB 2025**, pages 5 et 6), la CAPA chiffre son programme d'investissement transports à **65,8 Millions d'euros (dont 41,2 M€ de reste à charge net)**. Le rapport indique textuellement que les dépenses de fonctionnement s'élèvent sous l'effet de *« la mise en service du téléporté, de l'application complète des avenants à la SPL Muvitarra »*, portant l'encours global de la dette communautaire à **81,95 Millions d'euros**.  
+   Pour rappel, le téléphérique Angelo mobilise à lui seul **38 263 571 € de travaux d'infrastructure** et **23 892 840 € HT d'exploitation et maintenance sur 10 ans** attribués au groupement privé POMA/Egis, captant une part prépondérante des capacités d'investissement de l'agglomération au détriment de la rénovation de la flotte de bus.
 
 ---
 
-## ACTE IV. L'AVEU DU SCANDALE MUVIMARE : AJACCIO FINANCE LA RIVE SUD
+## 3. L'ÉTAT DU PARC DE BUS ET LA RÉALITÉ SOCIALE DU RÉSEAU
 
-C'est le document officiel du **Rapport d'Orientations Budgétaires (ROB 2024, page 17)** de la CAPA qui apporte la preuve matérielle d'une anomalie de gestion révoltante : **la navette maritime Muvimare reliant Ajaccio à Porticcio**.
+Pour expliquer les difficultés du réseau, certains discours ont cherché à reporter la responsabilité sur les salariés. L'examen des bilans fiscaux et sociaux rétablit les faits :
 
-1. **L'Aveu Écrit de la CAPA (ROB 2024, Page 17)** :  
-   La collectivité écrit textuellement :  
+1. **La réalité du coût kilométrique (9 € / km)** :  
+   Dans sa communication, la collectivité avance que le coût kilométrique atteint 9 €/km contre 4,60 € à 6 € sur le continent. Or, ce surcoût mécanique s'explique par la topographie insulaire, l'extrême congestion de la Rocade ajaccienne (vitesse commerciale tombée sous 11 km/h en pointe) et surtout la vétusté d'un parc où **63 % des bus ont plus de 10 ans** (seuls 7 véhicules neufs acquis en 7 ans), entraînant des pannes et réparations incessantes.
+2. **Le niveau réel des rémunérations des conducteurs** :  
+   Les liasses fiscales et déclarations sociales déposées établissent un **salaire brut moyen de 3 350 € par mois (primes d'ancienneté, 13e et 14e mois conventionnels inclus)**, ce qui se situe au niveau de la moyenne nationale du secteur (3 316 €), alors même que le coût de la vie et de l'alimentation en Corse est supérieur d'environ 14 % (données INSEE).
+3. **La dénonciation des accords et le conflit social de 2025** :  
+   La dénonciation unilatérale par la collectivité des accords d'entreprise en septembre 2024, assortie d'un délai de négociation de 15 mois touchant à la subrogation maladie et aux congés acquis, a créé le climat de rupture qui a abouti au mouvement de grève de décembre 2025.
+4. **L'absentéisme, reflet de conditions de travail dégradées** :  
+   Les journées d'indisponibilité constatées traduisent avant tout la fatigue des conducteurs face au matériel vétuste, au manque de pièces détachées et aux retards de régularisation administrative des indemnités journalières.
+
+---
+
+## 4. L'ANOMALIE DU DISPOSITIF MARITIME MUVIMARE (ROB 2024, PAGE 17)
+
+Le Rapport d'Orientations Budgétaires de la CAPA (**ROB 2024**, page 17) consigne une réalité budgétaire singulière concernant la navette maritime Muvimare reliant Ajaccio à Porticcio :
+
+1. **La citation textuelle du ROB 2024 (Page 17)** :  
+   La CAPA y écrit textuellement :  
    > *« Le produit du versement mobilité permet de couvrir le contrat d’obligation de service public avec la SPL Muvitarra et son actualisation, et **une part limitée de la mise en œuvre de la navette maritime entre Porticcio et Ajaccio** [...] rendant nécessaire une **participation du budget principal via une subvention d’équilibre** [des contribuables ajacciens]. »*
-2. **Une Commune Extérieure Subventionnée par Ajaccio** :  
-   Porticcio fait partie intégrante de la commune de **Grosseto-Prugna**, membre de la Communauté de Communes de la Pieve de l'Ornano et du Taravo (CCPOT) et **absolument pas de la CAPA**.
-3. **Deux Poids, Deux Mesures** :  
-   Au moment même où la collectivité refusait 40 000 € pour sauver la navette de la Miséricorde et 278 000 € pour emmener les écoliers à Stiletto, elle injectait les impôts des Ajacciens pour éponger le déficit d'exploitation maritime de la rive sud !
+2. **Une ligne interurbaine desservant une commune extérieure** :  
+   Porticcio se situe sur le territoire communal de **Grosseto-Prugna**, rattachée à la Communauté de Communes de la Pieve de l'Ornano et du Taravo (CCPOT) et non à la CAPA.
+3. **Un déséquilibre d'arbitrage territorial** :  
+   Pendant que la collectivité hésitait à pérenniser des lignes urbaines de proximité ou la navette de la Miséricorde (40 000 €), le budget général de la CAPA était sollicité pour financer la subvention d'équilibre d'une liaison maritime trans-golfe dont le bénéfice économique principal profite aux flux résidentiels et touristiques de la rive sud.
 
 ---
 

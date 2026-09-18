@@ -128,71 +128,71 @@ Forensic analysis of **official tax filings and annual balance sheets** cross-re
 
 ---
 
-## ACT I. CAPA'S UNPAID BALANCES : ADMISSION OF DELAYS & DELIBERATE ASPHYXIATION
+## 1. CAPA'S UNPAID BALANCES : ADMISSION OF DELAYS & BUDGET STRANGULATION
 
-Operating balance sheets shatter the false trial staged against employees: **88% of the company's deficit (-€3.3M) stems directly from CAPA's refusal to settle payments**.
+Operating balance sheets and management audits highlight the structural origin of difficulties: a substantial share of the public transit company's operating deficit stems from deferred municipal compensations and lagging budget indexation.
 
-While drivers were publicly targeted, the intercommunality ordered essential new services for residents while refusing to remit payment:
+While municipal communication frequently pointed toward internal overheads, the urban community mandated vital service extensions for residents without consistently regularizing corresponding funding in a timely manner:
 
-1. **Service to the New Hospital, Stiletto Middle School & Bodiccione (€278,000/year unpaid)**:  
-   To connect the new hospital and school (24 round trips daily), buses traveled 44,133 additional kilometers. The operator requested standard payment. **CAPA issued a flat refusal on December 1, 2022**, demanding these buses run for free!
-2. **Reinforcement of Line 4 for Schoolchildren (€390,000/year unpaid)**:  
-   Additional buses scheduled each morning so children wouldn't wait in the rain, never reimbursed by the community.
-3. **The Fuel Price Blockade (€243,000 surcharge at the pump)**:  
-   When diesel surged by **+42%**, CAPA refused to index its operational contributions to actual pump costs, leaving the utility to absorb the spike from its own funds.
+1. **Service to the New Hospital, Stiletto Middle School & Bodiccione (€278,000/year pending regularization)**:  
+   To connect the new hospital center and middle school (24 round trips daily), buses traveled 44,133 additional kilometers. The operator requested standard contractual billing to balance accounts.
+2. **Reinforcement of Line 4 for Schoolchildren (€390,000/year)**:  
+   Morning reinforcement runs deployed to transport pupils without delay, remaining long in pending status without formal amendment.
+3. **The Fuel Price Surge (€243,000 surcharge at the pump)**:  
+   When diesel surged by **+42%**, the absence of an automatic operational indexation mechanism forced the public utility to absorb fuel cost inflation directly from its cash reserves.
 4. **Maintenance Equipment Outlays Advanced by the Utility (€351,000)**:  
-   Major fleet overhauls paid out of bus cash reserves instead of being financed by the contracting authority.
+   Heavy maintenance expenditures advanced by the operator on an increasingly aged vehicle fleet.
 
 ### CAPA's Official Admission : The Retroactive €1.4 Million Settlement
-In its official crisis communiqué released during the general strike of December 2025, **CAPA ended up admitting this historic payment deficit itself**, stating verbatim:
+In its official crisis communiqué released during the labor dispute of December 2025, **CAPA formally acknowledged this accumulated liquidity lag**, stating verbatim:
 > *« It first carried out a **retroactive payment of 1.4 million euros for routes already completed** and committed to paying **250,000 euros extra each year** to ensure this does not happen again. »*
 
-This official admission confirms the forensic reality: if the community had to disburse €1.4M in retroactive funds, it was precisely because it had accumulated unpaid debts on actual routes, plunging the public operator into an artificial deficit!
+This emergency retroactive payment confirms that financial tensions experienced by the operator stemmed directly from public transport services ordered but delayed in reimbursement.
 
 ---
 
-## ACT II. THE DREAL FORMAL NOTICE & THE GIANT CABLE CAR DEBT
+## 2. THE DREAL FORMAL NOTICE & THE FINANCIAL WEIGHT OF THE CABLE CAR
 
-The file reveals an official prefectoral notice of exceptional gravity, concealed from the public: **the DREAL Formal Notice of December 18, 2023 (Ref: UCS/MO/2023-461)**.
+The administrative record rests upon a decisive regulatory milestone: **the Formal Notice issued by DREAL Corse on December 18, 2023 (Ref: UCS/MO/2023-461)**.
 
-1. **The Threat of Bus Service Revocation**:  
-   State inspectors noted that Muvitarra's equity fell into the red at **- €766,132**. As statutory regulations mandate a minimum financial reserve of €195,500 to operate 38 buses, the prefecture gave a **6-month ultimatum**: replenish equity or face immediate revocation of bus operating licenses!
-2. **Management Inertia**:  
-   By June 2024, executive management had failed to provide any sustainable financial resolution to state authorities.
-3. **The Imminent August 31 Deadline : Risk of a Legal Void**:  
-   The contract between the urban community and Muvitarra expires on **August 31**. While CAPA promised a finalized contract by January 1, 2026, **no new contract has been signed for September 1**, plunging transit operations into complete legal insecurity ahead of the school reopening.
-4. **Capital Swallowed by the Angelo Cable Car (ROB 2025 Admission)**:  
-   In its Budgetary Orientation Report (ROB 2025, pages 5 and 6), CAPA tallies transit capital outlays at **€65.8 Million (€41.2M net after subsidies)** and admits in writing that expenditures exploded due to *« commissioning of the cable car and full implementation of amendments with SPL Muvitarra »*. Total community debt reached **€81.95 Million** over 17 years and 10 months!
-
----
-
-## ACT III. THE DILAPIDATED FLEET & THE FALSE ACCUSATION AGAINST DRIVERS
-
-To divert attention from its budgetary allocations, the urban community waged a PR campaign against workers during the December 2025 dispute. Comparing official rhetoric with verified facts is devastating:
-
-1. **The Fallacy of the Mileage Cost (€9 / km)**:  
-   In its press release, CAPA expressed outrage: *« Today, running a bus for SPL Muvitarra costs 9 euros per kilometer compared to €4.60 to €6 on the mainland »*.  
-   **The Reality**: This surcharge does not stem from wages, but from the acute aging of a fleet where **63% of buses are over 10 years old** (only 7 new buses purchased in 7 years) and rampant Ajaccio traffic gridlock (commercial speed falling below 11 km/h on the Rocade).
-2. **Disinformation Regarding Driver Salaries**:  
-   While City Hall claimed wages were *« 40% above national averages »*, official corporate tax returns and social security filings show an **average wage of €3,350 gross per month (including all bonuses and 13th/14th months)**, strictly matching the French national benchmark (€3,316), despite island grocery prices being 14% higher!
-3. **The 15-Month Guillotine and Deliberate Labor Conflict**:  
-   CAPA acknowledged in writing that it **unilaterally terminated 90 collective agreements on September 27, 2024**, triggering a 15-month countdown expiring December 27, 2025 to abolish sick leave subrogation and acquired holiday rights. This deliberate hardline stance triggered the general strike that paralyzed the city on December 2, 2025.
-4. **Absenteeism : The Direct Result of Degraded Working Conditions**:  
-   Citing *« 10,400 days of absence in 2024 »*, management failed to mention that this absenteeism is the direct byproduct of driver burnout caused by chronic breakdowns, wage freezes for relief drivers, and the abrupt halt of salary maintenance to mask €460,000 in internal administrative delays.
+1. **Statutory Financial Capacity Requirements**:  
+   Noting that equity capital had fallen into negative territory (- €766,132) for the audited financial year, transport oversight authorities cited the legal obligation to maintain a minimum reserve of €195,500 to retain 38 bus operating licenses, setting a compliance deadline.
+2. **Contractual Stretching via 11 Piecemeal Amendments**:  
+   Lacking a multi-year modernized framework, the contractual relationship was prolonged through 11 successive amendments, maintaining the operator in managerial uncertainty unfavorable to long-term fleet renewals.
+3. **The Risk of a Contractual Void at the August 31 Deadline**:  
+   With the Public Service Obligations Contract (COSP) expiring on August 31, 2026, the absence of a signed framework contract creates serious legal insecurity for commuters and staff ahead of the new school term.
+4. **Budgetary Prioritization of the Angelo Cable Car (ROB 2025 Citations)**:  
+   In its official Budgetary Orientation Report (**ROB 2025**, pages 5 and 6), CAPA tallies its transit capital investment program at **€65.8 Million (€41.2M net community balance)**. The report explicitly highlights that operating expenditures are rising due to *« commissioning of the cable car and full implementation of amendments with SPL Muvitarra »*, bringing total community debt to **€81.95 Million**.  
+   As established in Part 1, the Angelo cable car alone represents **€38,263,571 in infrastructure works** alongside **€23,892,840 excl. tax in 10-year operation and maintenance** awarded to the private consortium POMA/Egis, absorbing substantial capital outlays at the expense of upgrading the urban bus fleet.
 
 ---
 
-## ACT IV. THE MUVIMARE SHUTTLE SCANDAL : AJACCIO TAXPAYERS SUBSIDIZE PORTICCIO
+## 3. THE BUS FLEET REALITY & LABOR CONDITIONS
 
-Official documents from CAPA's **Budgetary Orientation Report (ROB 2024, page 17)** provide material proof of an astonishing governance anomaly: **the Muvimare sea shuttle linking Ajaccio to Porticcio**.
+To explain transit disruptions, official rhetoric occasionally attempted to attribute responsibility to operating staff. Scrutiny of tax returns and social filings contextualizes the reality:
 
-1. **CAPA's Written Admission (ROB 2024, Page 17)**:  
-   The community writes verbatim:  
+1. **The Reality of Mileage Costs (€9 / km)**:  
+   Community communication argued that operating a bus costs €9/km compared to €4.60 to €6 on the mainland. However, this mechanical overhead arises from island topography, extreme congestion along the Ajaccio bypass (commercial speeds dropping below 11 km/h at peak), and the acute aging of a fleet where **63% of buses are over 10 years old** (only 7 new vehicles purchased over 7 years), triggering chronic mechanical failures.
+2. **Driver Compensation Levels**:  
+   Filed tax returns and social security declarations establish an **average gross wage of €3,350 per month (including seniority bonuses and convention 13th/14th months)**, aligning closely with the French transit sector benchmark (€3,316), while island food and living costs are approximately 14% higher (INSEE data).
+3. **Agreement Termination and the 2025 Labor Conflict**:  
+   The unilateral termination of company agreements by local authorities in September 2024, coupled with a 15-month negotiating window touching upon sick leave subrogation and acquired leave, generated the breakdown that culminated in the strike of December 2025.
+4. **Absenteeism as a Consequence of Strained Working Conditions**:  
+   Recorded absenteeism reflects driver exhaustion when confronted daily with failing equipment, spare part shortages, and administrative delays in settling sickness allowance payments.
+
+---
+
+## 4. THE MUVIMARE MARITIME DISPARITY (ROB 2024, PAGE 17)
+
+CAPA's Budgetary Orientation Report (**ROB 2024**, page 17) records a specific financial mechanism regarding the Muvimare sea shuttle connecting Ajaccio to Porticcio:
+
+1. **Verbatim Citation from ROB 2024 (Page 17)**:  
+   CAPA states textually:  
    > *« Transport levy proceeds cover the public service obligation contract with SPL Muvitarra and its adjustment, and **a limited share of the implementation of the sea shuttle between Porticcio and Ajaccio** [...] requiring an **operating balance subsidy from the general budget** [of Ajaccio taxpayers]. »*
-2. **An External Municipality Subsidized by Ajaccio**:  
-   Porticcio is an integral part of the municipality of **Grosseto-Prugna**, belonging to the Community of Communes of Pieve de l'Ornano and Taravo (CCPOT) and **absolutely not part of CAPA**.
-3. **A Blatant Double Standard**:  
-   At the exact moment the agglomeration refused €40,000 to save the Miséricorde shuttle and €278,000 to transport pupils to Stiletto, it injected Ajaccio taxpayer money to absorb maritime operating deficits for the south shore!
+2. **An Interurban Route Serving an External Municipality**:  
+   Porticcio is part of the municipality of **Grosseto-Prugna**, belonging to the Community of Communes of Pieve de l'Ornano and Taravo (CCPOT), and is not a member of CAPA.
+3. **Territorial Allocation Asymmetry**:  
+   While local authorities hesitated to safeguard neighborhood feeder routes or the Miséricorde hospital shuttle (€40,000), CAPA's general budget was called upon to subsidize a trans-gulf maritime link whose primary economic benefits accrue to south shore residential and holiday resort developments.
 
 ---
 
