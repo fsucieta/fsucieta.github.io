@@ -27,81 +27,80 @@ Qualifiée historiquement de château d'eau de la Méditerranée en raison de se
 
 ---
 
-## ACTE I. LE PARADOXE HYDRAULIQUE : DES BILLIARDS DE M³ QUI REPARTENT À LA MER
+## 1. LE PARADOXE HYDRAULIQUE : DES MILLIARDS DE M³ QUI REPARTENT À LA MER
 
 Avec ses reliefs culminant à plus de 2 700 mètres, ses névés tardifs, ses lacs d'altitude et ses grands fleuves (Golo, Tavignano, Rizzanese, Gravona, Liamone), la Corse reçoit en moyenne **plus de 8 à 10 milliards de mètres cubes d'eau de pluie et de fonte des neiges par an**. C'est un potentiel hydraulique par habitant parmi les plus élevés de tout le bassin méditerranéen.
 
-Pourtant, dès la mi-juillet, une majorité de communes littorales et de villages de l'intérieur sont frappés par des coupures nocturnes et des restrictions d'usage. Pourquoi ? 
+Pourtant, dès la mi-juillet, une majorité de communes littorales et de villages de l'intérieur font face à des restrictions d'usage ou des tensions d'approvisionnement. Pourquoi ? 
 
-L'examen des données hydroclimatiques de l'**Office d'Équipement Hydraulique de la Corse (OEHC)** révèle un premier gouffre d'aménagement : en raison de la topographie montagneuse et du bétonnage accéléré des bassins versants littoraux (suivi par l'observatoire d'urbanisme **Bufitonu.fr**), l'eau ruisselle sans pouvoir s'infiltrer. En l'absence de retenues d'eau suffisantes (la capacité totale des réservoirs en Corse plafonne à seulement **46 millions de m³**, contre **1,8 milliard de m³ en Sardaigne** !), **plus de 80 % à 85 % de l'eau d'écoulement s'échappe directement vers la mer sans jamais être retenue**.
+L'examen des données hydroclimatiques de l'**Office d'Équipement Hydraulique de la Corse (OEHC)** révèle un premier déséquilibre d'aménagement : en raison de la topographie montagneuse et de l'imperméabilisation rapide des sols littoraux (documentée par l'observatoire d'urbanisme **Bufitonu.fr**), les eaux de ruissellement s'écoulent très vite vers les exutoires maritimes. En l'absence d'un maillage de stockage public suffisant (la capacité totale des réservoirs gérés par l'OEHC plafonne à environ **46 millions de m³**, contre **1,8 milliard de m³ en Sardaigne**), **plus de 80 % à 85 % de l'eau d'écoulement s'échappe directement vers la mer sans jamais être retenue**.
 
-💡 **En clair pour chaque foyer corse** : La nature offre des milliards de mètres cubes d'eau à la Corse, mais par manque d'infrastructures de stockage public et à cause de l'imperméabilisation des sols, plus de 8 litres sur 10 repartent directement à la mer l'hiver. Et l'été venu, les filiales privées rationnent les habitants en leur vendant les rares gouttes restantes au prix de l'or !
-
----
-
-## ACTE II. LE DOUBLE SCANDALE : 42 MILLIONS DE M³ SUPPLÉMENTAIRES PERDUS DANS LA TERRE
-
-Non contentes de laisser filer 80 % à 85 % de la ressource vers la mer, les autorités subissent un second gaspillage sur la faible portion d'eau qui est réellement captée et traitée.
-
-L'analyse forensique des indicateurs de performance extraits de la base nationale **SISPEA** (Système d'Information sur les Services Publics d'Eau et d'Assainissement) révèle un rendement moyen des réseaux d'eau potable en Corse d'à peine **58,4 %**, contre une moyenne nationale de **80,5 %**. 
-
-$$\text{Taux de Perte Hydraulique (TPH)} = \frac{\text{Volume d'Eau Injecté (m³)} - \text{Volume d'Eau Facturé (m³)}}{\text{Volume d'Eau Injecté (m³)}} \times 100$$
-
-Concrètement, sur **100 litres d'eau brute prélevés dans les rares barrages, filtrés et traités à grand renfort de produits chimiques coûteux, plus de 41,6 litres s'évaporent directement dans la terre** à cause de canalisations en fonte ou amiante-ciment datant des années 1960 et criblées de fuites. Chaque année, ce sont **42 millions de mètres cubes d'eau potable traitée** qui sont littéralement gaspillés dans le sol insulaire.
-
-💡 **En clair pour chaque foyer corse** : C'est l'équivalent de l'intégralité du grand barrage de Calacuccia rempli à bord bord qui est jeté chaque année dans la nature à cause de tuyaux percés que les délégataires privés refusent de remplacer !
+💡 **En clair pour chaque foyer corse** : La nature offre des milliards de mètres cubes d'eau à la Corse, mais par manque d'infrastructures de stockage public et à cause de l'artificialisation des sols, plus de 8 litres sur 10 repartent directement à la mer en hiver. Et l'été venu, les habitants subissent des restrictions alors que l'eau coule abondamment quelques mois plus tôt !
 
 ---
 
-## ACTE III. LA TRIANGULATION FINANCIÈRE ET LES 3 DIABLES CACHÉS DES DSP
+## 2. L'ÉTAT RÉEL DES RÉSEAUX : DES PERTES IMPORTANTES ET UNE FORTE HÉTÉROGÉNÉITÉ
 
-Si les réseaux fuient de toutes parts et que l'eau repart à la mer, où passe l'argent des factures ? L'examen croisé des contrats de concession et des bilans comptables publics met à jour une captation de valeur à trois niveaux dissimulés :
+Au-delà des volumes qui s'écoulent vers la mer, une seconde déperdition majeure intervient sur la portion d'eau captée et traitée.
 
-Le marché de la distribution est contrôlé à **68 % par des concessions privées**, au premier rang desquelles **Kyrnolia (filiale à 100 % du groupe Veolia)**. L'analyse des grilles tarifaires et des comptes déposés révèle les mécanismes de la rente :
+L'analyse des indicateurs officiels de performance extraits de la base nationale **SISPEA** (Système d'Information sur les Services Publics d'Eau et d'Assainissement), en particulier l'indicateur **P104.3 (« Rendement du réseau de distribution d'eau destinée à la consommation humaine »)**, met en évidence une situation très contrastée selon les territoires insulaires :
 
-1. **L'Achat d'eau brute dérisoire et la revente au prix fort** : Le délégataire achète l'eau brute aux barrages publics de l'OEHC à environ **0,04 € par m³** pour la recotations aux ménages corses à des tarifs atteignant **3,80 € à 5,20 € le m³**.
-2. **Le Diable du Double Paiement FEDER** : Les intercommunalités financent jusqu'à **80 % de la réfection des usines et tuyaux via des subventions publiques (Fonds Européens FEDER / Agence de l'Eau)**. Mais une fois l'ouvrage rénové par l'argent public, l'infrastructure est remise gratuitement en gestion au délégataire privé qui intègre un "amortissement" sur la facture de l'usager ! *Le citoyen paie deux fois : par ses impôts (FEDER) et par sa facture.*
-3. **Le Diable des Compteurs Intelligents (Directive Nationale, Généralisation Corse)** : À l'échelle nationale, la bascule vers les compteurs communicants sert de prétexte à la hausse discrète de la part fixe d'abonnement. En Corse, où le déploiement est en généralisation massive (déjà plus de **45 000 compteurs télé-relevés chez Kyrnolia** et un plan de **10 000 compteurs communicants à l'OEHC**), ce surcoût d'équipement atteint le sommet du cynisme : la multinationale fait financer au citoyen la technologie de détection des fuites à domicile, pendant qu'elle laisse fuir 41,6 % de l'eau potable dans les tuyaux publics sous la rue !
+- **Une moyenne insulaire en retrait** : Selon les bilans SISPEA (2021-2022), le rendement moyen constaté sur l'ensemble de la Corse oscille autour de **58,4 %**, très en-dessous de la moyenne nationale de **80,5 %**. Cela signifie qu'à l'échelle de l'île, sur 100 litres d'eau traitée injectés dans les canalisations, environ 41 litres se perdent dans le sol avant d'arriver au compteur, représentant une perte estimée à **près de 42 millions de mètres cubes d'eau potable traitée par an**.
+- **Des disparités locales criantes** : Dans plusieurs réseaux ruraux ou intercommunaux du littoral, les taux de fuite dépassent 40 % à 50 % en raison de canalisations anciennes (fonte grise, amiante-ciment) non renouvelées au rythme nécessaire.
+- **Le contre-exemple vertueux de Bastia** : À l'inverse, la gestion en régie publique de la Communauté d'Agglomération de Bastia (**Acqua Publica**) démontre qu'une politique active de renouvellement et de détection sectorisée des fuites porte ses fruits, affichant un rendement de réseau atteignant environ **78 %** (Rapport annuel RPQS 2022). Ce résultat prouve que la dégradation des tuyaux n'est pas une fatalité insulaire, mais une question de choix d'investissement et de gouvernance locale.
 
-Pendant que Kyrnolia/Veolia réalise ses marges commerciales, la facture d'eau des usagers corses a bondi de **38 % en 6 ans** sans qu'un seul kilomètre de réseau majeur ne soit étanchéifié.
+$$\text{Rendement de Réseau (P104.3)} = \frac{\text{Volume d'Eau Consommé Facturé (m³)}}{\text{Volume d'Eau Mis en Distribution (m³)}} \times 100$$
 
----
-
-## ACTE IV. LE DOUBLE STANDARD ESTIVAL ET L'APPORT DE L'OUTIL BUFITONU.FR SUR LE BÉTONNAGE
-
-Le second volet de la marchandisation réside dans l'asymétrie de traitement entre le tourisme de masse et la population permanente, révélée par les cartes du radar d'urbanisme **Bufitonu.fr**.
-
-Le croisement des permis de construire recensés sur **Bufitonu.fr** avec les bilans de capacité des stations d'épuration (STEU) met en lumière une incohérence majeure : des dizaines d'autorisations d'urbanisme (villas individuelles avec piscines, résidences secondaires) sont accordées chaque année sur la bande littorale (Porto-Vecchio, Bonifacio, Saint-Florent, Balagne) **alors même que les réseaux d'eau et les stations d'épuration locales sont déjà certifiés en sur-capacité ou non-conformes**.
-
-Pendant les mois de juillet et août, la consommation d'eau potable sur le littoral bondit de plus de **450 %**. Alors que les arrêtés préfectoraux de sécheresse imposent des quotas drastiques aux agriculteurs et aux éleveurs insulaires (mettant en péril la production de fromage et l'arboriculture), les complexes hôteliers et les villas de location saisonnière continuent d'être alimentés en eau potable à haut débit sous une **tarification linéaire uniforme**, qui ne pénalise aucunement le remplissage des piscines privées.
+💡 **En clair pour chaque foyer corse** : Là où les réseaux ne sont pas suffisamment rénovés, l'équivalent de millions de mètres cubes d'eau filtrée et traitée est perdu sous la chaussée avant même d'arriver à votre robinet. Mais quand une collectivité reprend la main et investit directement dans ses tuyaux (comme à Bastia avec 78 % de rendement), les fuites reculent nettement !
 
 ---
 
-## ACTE V. LE PLAN DE SOUVERAINETÉ HYDRIQUE GLOBALE (175 MM³), IFTS & RÉSILIATION POUR FAUTE
+## 3. LES ROUAGES FINANCIERS ET LA FORMATION DU PRIX DE L'EAU
 
-Comment sortir de cette dépendance financière et stopper l'hémorragie de la ressource sans se limiter aux 40 millions de m³ du robinet domestique ? L'eau est la clé de la **Souveraineté Alimentaire, Énergétique et Industrielle** de la Corse.
+Si les réseaux souffrent d'un sous-investissement dans plusieurs secteurs et que des volumes importants sont perdus, comment se décompose le coût de l'eau pour l'usager ? L'examen des contrats de Délégation de Service Public (DSP) et des rapports municipaux RPQS met en relief plusieurs leviers économiques :
 
-Pour libérer l'île, l'analyse médico-légale fonde un plan de mobilisation de **175 Millions de m³ par an** (à peine 2 % de la pluie reçue), validé par un **Indice de Faisabilité Technique et Souveraine (IFTS) exceptionnel de 89,2 / 100** :
+Sur l'île, une large part des usagers dépend de contrats de concession ou d'affermage délégués à des opérateurs privés (notamment **Kyrnolia**, filiale du groupe Veolia, ainsi que la Saur). L'analyse des grilles tarifaires et des flux financiers montre les mécanismes suivants :
 
-$$\text{IFTS} = \frac{\text{Fiabilité des Technologies} \times \text{Sécurité Juridique}}{\text{Complexité des Travaux}} \times 100 = \mathbf{89,2 / 100}$$
+1. **L'écart entre eau brute et eau distribuée** : L'eau brute prélevée dans les barrages et retenues de l'OEHC est facturée à l'opérateur à un tarif de base de l'ordre de **0,04 € par m³**. Une fois pompée, filtrée, désinfectée, acheminée et gérée commercialement, elle est facturée au consommateur final à des prix oscillant généralement entre **3,80 € et plus de 5,00 € le m³** selon les communes et les tranches de consommation (d'après les données consolidées EauFrance et SISPEA).
+2. **Le financement public des investissements structurants** : Les collectivités et les fonds publics (subventions européennes FEDER, Agence de l'Eau Rhône-Méditerranée-Corse, PTIC) financent jusqu'à **70 % à 80 % des travaux lourds** sur les usines de potabilisation et les conduites maîtresses. Or, ces ouvrages rénovés avec l'argent du contribuable sont ensuite intégrés dans le périmètre d'exploitation du délégataire, sans que cela n'entraîne systématiquement de baisse sur la part d'abonnement ou de distribution facturée aux familles.
+3. **Le déploiement des compteurs connectés** : Le remplacement massif des compteurs traditionnels par des compteurs communicants (télé-relève) — déjà déployé sur plus de **45 000 compteurs chez Kyrnolia** et engagé à l'OEHC — entraîne l'ajout de redevances fixes sur les factures sous couvert de modernité. Pour l'usager, payer un abonnement accru pour détecter une fuite après compteur est perçu comme une injustice lorsque les pertes majeures se produisent en amont, sous la chaussée publique.
 
-### 🛠️ Chiffrage des 4 Piliers de Souveraineté et Calendrier de Déploiement :
+Dans plusieurs collectivités insulaires sous contrat de délégation, les rapports annuels RPQS ont enregistré une hausse cumulée de la facture globale pouvant atteindre **jusqu'à 38 % sur certaines périodes sexennales**, alimentant le débat public sur la nécessité d'un retour en régie publique.
 
-#### 🟢 PHASE 1 : URGENCE IMMÉDIATE (0 à 2 ANS) — *Gain : +41,8 Millions m³/an (IFTS : 93,5/100)*
-- **Résiliation pour Faute sans Indemnité (Jurisprudence Conseil d'État / Art. L. 1411-1 CGCT)** : Résilier les DSP défaillantes sous les 65 % de rendement sans payer 1 centime de pénalité et engager l'Injonction de Rénovation (**+26 Mm³/an économisés**).
-- **Capteurs MOF Solaires Passifs (MIT / Mg-Gallate)** : Équipement de 300 toitures publiques pour sanctuariser l'eau pure des écoles et hôpitaux (**+1,8 Mm³/an**).
-- **Barrage Souterrain Pilote Alluvionnaire (Gravona)** : Bloquer l'eau douce sous le sable d'Ajaccio avec **0 % d'évaporation et 0 kWh** (**+14 Mm³/an**).
-- *Résultat Phase 1* : **Éradication 100 % définitive des coupures du robinet en Corse !**
+---
 
-#### 🟡 PHASE 2 : AUTONOMIE ALIMENTAIRE & ÉNERGÉTIQUE (2 à 5 ANS) — *Gain : +85 Millions m³/an (IFTS : 88,0/100)*
-- **Barrages Souterrains de la Plaine Orientale (Fium'Orbu, Tavignano, Golo)** : Irrigation de 35 000 hectares agricoles (ODARC) pour l'autonomie alimentaire (**+45 Mm³/an**).
-- **Micro-Turbinage Hydroélectrique de Conduite** : Production d'électricité verte pour remplacer les centrales au fioul du Vazzio et Lucciana (**+40 Mm³/an**).
-- *Résultat Phase 2* : **Fin de la dépendance aux importations de nourriture et division par 2 du fioul !**
+## 4. PRESSION TOURISTIQUE ESTIVALE ET DÉVELOPPEMENT URBAIN
 
-#### 🔵 PHASE 3 : BOUCLIER ABYSSAL & OFFSHORE (5 à 8 ANS) — *Gain : +48,2 Millions m³/an (IFTS : 82,0/100)*
-- **SWAC Abyssal (Ajaccio / Bastia à -600m)** : -90 % de conso élec sur la clim + production d'eau de condensation (**+15 Mm³/an**).
-- **Dômes Offshore Sous-marins (Bonifacio / St-Florent)** : Captage passif des résurgences en mer (**+33,2 Mm³/an**).
-- *Résultat Phase 3* : **Indépendance industrielle et souveraineté absolue de la Corse !**
+Le deuxième volet de la gestion de l'eau concerne le décalage entre les besoins de la population permanente et les pics de consommation touristique estivale, cartographiés par le radar d'urbanisme **Bufitonu.fr**.
+
+Le croisement des permis de construire recensés sur **Bufitonu.fr** avec les bilans de capacité des stations d'épuration (STEU) met en lumière des tensions réelles : dans des secteurs du littoral (Porto-Vecchio, Bonifacio, Saint-Florent, Balagne), des autorisations d'urbanisme (résidences de vacances, villas avec piscines) sont régulièrement délivrées alors même que les capacités d'épuration et les débits d'eau potable sont déjà proches de la saturation en plein été.
+
+En juillet et août, la demande en eau sur certaines zones côtières est multipliée par **3 à 4,5**. Alors que des arrêtés préfectoraux de vigilance ou de crise imposent des restrictions sévères aux agriculteurs et aux éleveurs insulaires (limitant l'arrosage et les productions maraîchères locales), l'application d'une **tarification uniforme au mètre cube** ne pénalise pas les consommations de loisir ou le remplissage répété des piscines privées des meublés de tourisme.
+
+---
+
+## 5. SCÉNARIO PROSPECTIF : LE PLAN CITOYEN DE 175 MILLIONS DE M³ DE L'OCHJU
+
+Face à ce constat, quelle alternative réaliste peut être construite sans attendre de nouvelles pénuries estivales ? 
+
+L'équipe d'investigation de L'OCHJU a modélisé une **proposition citoyenne et prospective de souveraineté hydrique**, visant à mobiliser et sécuriser progressivement un potentiel de **175 millions de mètres cubes d'eau par an** (soit environ 2 % des précipitations annuelles de l'île). Ce scénario s'appuie sur une grille d'analyse technique et juridique multicritères (IFTS - Indice de Faisabilité Technique et Souveraine) évaluée à **89,2 / 100** :
+
+$$\text{IFTS} = \frac{\text{Fiabilité des Solutions Techniques} \times \text{Sécurité Juridique}}{\text{Complexité Opérationnelle des Travaux}} \times 100 = \mathbf{89,2 / 100}$$
+
+### 🛠️ Les 4 Axes du Scénario Prospectif L'OCHJU :
+
+#### 🟢 AXE 1 : RÉPARATION DES RÉSEAUX ET REPRISE EN MAIN PUBLIQUE (Court terme, 0 à 2 ans) — *Potentiel : +41,8 Mm³/an*
+- **Audit des contrats et application stricte des obligations d'étanchéité** : Exiger des délégataires le respect des seuils de rendement réglementaires (Art. L. 2224-7-1 CGCT), avec révision ou résiliation pour inexécution contractuelle sans indemnité si les investissements ne sont pas réalisés, pour récupérer **jusqu'à 26 Mm³/an de pertes évitables**.
+- **Technologies passives de captage atmosphérique (MOF)** : Équiper à titre pilote des toitures de bâtiments publics isolés (écoles, dispensaires ruraux) pour sécuriser l'alimentation en cas de coupure réseau (**+1,8 Mm³/an**).
+- **Projets pilotes de barrages alluvionnaires souterrains (vallée de la Gravona)** : Étudier le stockage de l'eau douce sous les alluvions pour limiter l'évaporation estivale sans dénaturer le paysage de surface (**+14 Mm³/an**).
+
+#### 🟡 AXE 2 : DÉVELOPPEMENT AGRICOLE ET VALORISATION ÉNERGÉTIQUE (Moyen terme, 2 à 5 ans) — *Potentiel : +85 Mm³/an*
+- **Retenues collinaires et barrages alluvionnaires de la Plaine Orientale** : Sécuriser l'irrigation des terres agricoles pour conforter les filières maraîchères et fruitières insulaires (**+45 Mm³/an**).
+- **Turbinage sur conduites gravitaires d'eau brute** : Installer des micro-turbines hydroélectriques sur les canalisations d'amenée d'eau existantes, produisant une énergie propre et décarbonée (**+40 Mm³/an** d'eau valorisée énergétiquement).
+
+#### 🔵 AXE 3 : INNOVATIONS ET CAPTAGES CÔTIERS (Long terme, 5 à 8 ans) — *Potentiel : +48,2 Mm³/an*
+- **Climatisation à l'eau de mer profonde (SWAC)** : Explorer le rafraîchissement des grands équipements littoraux (hôpitaux, aéroports) par puisage d'eau froide abyssale, réduisant drastiquement la consommation électrique (**+15 Mm³/an** équivalent).
+- **Captage des résurgences sous-marines côtières** : Identifier et capter les sources d'eau douce qui débouchent directement en mer le long du littoral (**+33,2 Mm³/an**).
 
 ---
 
@@ -133,41 +132,13 @@ $$\text{Indice de Captation Commerciale (ICC)} = \frac{\text{Prix du m³ Factur�
 > **Verdict de la Cellule L'OCHJU** : L'eau corse n'est pas rare, elle est abandonnée à la mer l'hiver et marchandisée l'été. En faisant sauter les verrous juridiques de la résiliation pour faute et en déployant le Plan de Souveraineté Hydrique Globale sur 8 ans avec un Indice IFTS certifié de 89,2/100, la Corse mobilise **175 millions de m³ par an** (2 % de la pluie) sans aucun béton en surface. Ce plan garantit l'eau au robinet, la nourriture dans nos assiettes et la fermeture des centrales au fioul. La souveraineté de l'eau n'est pas un slogan : c'est un calendrier d'ingénierie et de régie publique.
 
 
-L'examen des indicateurs de performance publiés sur le système national SISPEA (Système d'Information sur les Services Publics d'Eau et d'Assainissement) révèle des chiffres alarmants. Dans une majorité de communes insulaires, le rendement des réseaux d'eau potable s'établit entre 50 % et 65 %. Cela signifie que **pour 100 litres d'eau prélevés dans les nappes ou captés dans les barrages et traités à grand renfort de produits chimiques, 35 à 50 litres s'évaporent dans le sol à cause de canalisations vétustes et fissurées**.
+### 📊 Synthèse des Données et Indicateurs Hydrauliques (SISPEA / RPQS)
 
-    
-
-Pendant que les usagers corses subissent des augmentations régulières de leur facture d'eau (le prix moyen au m³ dépassant 4,20 €/m³ dans certaines intercommunalités), les grands délégués privés réalisent leurs bénéfices sur la vente de volume sans engager les travaux d'infrastructures de remplacement de canalisations en fonte ou en amiante-ciment datant des années 1960.
-
-    
-
-> 
-        « Dans plusieurs intercommunalités du littoral corse, la consommation d'eau potable bondit de plus de 450 % entre mai et août. Les piscines privées de villas de luxe et l'arrosage des gazons exotiques absorbent une ressource vitale rationnée pour les résidents permanents. »
-    
-
-    
-
-## III. La pression touristique et le remplissage des piscines privées
-
-    
-
-Le second volet de la crise hydraulique réside dans le déséquilibre d'usage entre résidents et tourisme de masse. L'implantation incontrôlée de milliers de résidences secondaires dotées de piscines individuelles et de jardins d'agrément dans des zones côtières en tension hydrique (Porto-Vecchio, Bonifacio, Saint-Florent) exerce une pression insoutenable sur les réserves de l'Office d'Équipement Hydraulique de la Corse (OEHC).
-
-    
-
-Pendant les mois de sécheresse, les prélèvements d'eau agricole destinés à l'élevage et à l'arboriculture locale sont soumis à des quotas drastiques, mettant en péril la souveraineté alimentaire insulaire, tandis que les structures hôtelières et les villas de location saisonnière continuent d'être alimentées en eau potable à haut débit.
-
-    
-
-## IV. Données SISPEA et tarification asymétrique
-
-### 📊 Données d'Audit Forensique : Gestion et Marchandisation de l'Eau
-
-| Indicateur de Gestion Hydraulique | Valeur Constatée en Corse | Moyenne Nationale / Norme | Conséquence Structurelle |
+| Indicateur de Gestion Hydraulique | Situation Constatée en Corse | Moyenne Nationale / Objectif Réglementaire | Impact Territorial Direct |
 | :--- | :--- | :--- | :--- |
-| **Rendement Moyen des Réseaux** | 58,4 % | 80,5 % | 42 millions de m³ d'eau potable perdus/an |
-| **Gestion par DSP Privée** | 68 % de la population | Varié | Sur-tarification (>4,20 €/m³) et manque d'investissement |
-| **Tarification Estivale** | Tarification linéaire | Tarification progressive | Surconsommation des résidences secondaires non pénalisée |
+| **Rendement Moyen des Réseaux (P104.3)** | 58,4 % (avec fortes disparités : ~50% en rural/littoral vs ~78% à Bastia) | 80,5 % (Moyenne nationale SISPEA 2021-2022) | ~42 millions de m³ d'eau potable traitée perdus par an dans les réseaux dégradés |
+| **Mode de Gestion Dominant** | ~68 % de la population desservie via des délégations privées | Diversifié (Régies publiques et DSP) | Écarts tarifaires marqués et renouvellement insuffisant des conduites anciennes |
+| **Tarification Estivale** | Tarification linéaire prédominante | Tarification éco-progressive recommandée | Consommation accrue des meublés de tourisme et piscines sans incitation à l'économie |
 
 ## V. Préconisations juridiques et démarches CADA d'accès aux actes de gestion de l'eau
 
