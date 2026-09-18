@@ -1,26 +1,30 @@
 ---
 id: 6
 title: "Enquête 06 : Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
-subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière (187,5 M€ de sanction), le monopole sétois et le pillage côtier étouffent nos marins et font exploser le prix du poisson pour les foyers corses"
+subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière sur les dépôts de carburants (187,5 M€ de sanction), le monopole sétois sur les quotas et le pillage côtier étouffent nos marins et font exploser le coût de la vie insulaire"
 category: "MER & PÊCHE"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-06"
 author: "Cellule d'Investigation Maritime L'OCHJU"
 date: "Août 2026"
-tool: "DPMA / IFREMER / Autorité de la Concurrence / Stella Mare / CRPMEM / Prud'homies"
-chapeau: "Avec plus de 1 000 kilomètres de côtes, la Corse devrait offrir à ses enfants le poisson le plus frais et le plus abordable de Méditerranée. La réalité est un scandale d'État : un cartel pétrolier condamné à 187,5 M€ d'amende maintient le gazole pêche à des sommets artificiels, provoquant l'ultimatum syndical du 18 août 2026 menaçant de bloquer les ports de l'île. Au même moment, 90 % du thon rouge et de l'espadon sont confisqués par des armateurs extérieurs, tandis que nos langoustes et nos oursins subissent le braconnage. Voici les preuves matérielles d'un naufrage organisé et le plan d'action pour reconquérir notre souveraineté maritime et diviser par deux le prix du poisson sur nos étals."
+tool: "DPMA / IFREMER / Autorité de la Concurrence / Conseil d'État / Stella Mare / CRPMEM / Prud'homies"
+chapeau: "Avec plus de 1 000 kilomètres de côtes, la Corse devrait offrir à ses enfants le poisson le plus frais et le plus abordable de Méditerranée. La réalité est un scandale de gouvernance : une entente sur les dépôts pétroliers sanctionnée à 187,5 M€ par l'Autorité de la concurrence a verrouillé les carburants insulaires, pendant que les surcoûts d'exploitation provoquent l'ultimatum syndical du 18 août 2026 menaçant de bloquer les ports de l'île. Au même moment, la quasi-totalité du thon rouge et de l'espadon est captée par de grands armements extérieurs, tandis que nos langoustes et nos oursins subissent le braconnage. Voici les preuves matérielles d'un naufrage organisé et le plan d'action pour reconquérir notre souveraineté maritime."
 image: "img_enquete_06.png"
 imageCaption: "📷 Document Photographique Authentique — Port de Pêche Traditionnel de Centuri (Cap Corse) au Coucher du Soleil | Barques et Métiers Insulaires"
 sources:
-  - name: "Autorité de la Concurrence : Décision n° 25-D-07 du 17 novembre 2025 (Texte Intégral 80 pages — Cartel DPLC, Sanction de 187,49 M€)"
+  - name: "Autorité de la Concurrence : Décision n° 25-D-07 du 17 novembre 2025 (Texte Intégral 80 pages — Entente DPLC, Sanction de 187,49 M€)"
     url: "../docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "../docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     sha256: "6e067af1700b08a733e6af1e0bf103f828b7be4c2c37cd8dbf1fabcc3db80cd4"
-  - name: "Cour Administrative d'Appel de Toulouse : Arrêt n° 21TL03940 du 28 mars 2024 (Annulation des quotas pour violation de l'Article 17 du Règlement UE 1380/2013)"
+  - name: "Conseil d'État : Décision n° 494626 du 5 juin 2025 (Cassation de l'arrêt CAA Toulouse n° 21TL03940, renvoi pour erreur de droit sur l'article R. 921-48)"
+    url: "../docs/decision-conseil-etat-pourvoi-quotas-thon.pdf"
+    pdfDirect: "../docs/decision-conseil-etat-pourvoi-quotas-thon.pdf"
+    sha256: "ac3dac5f40fc841b67c9cfb3e3c95deb3d6485adec1c9939f92c84335d4dd3ba"
+  - name: "Cour Administrative d'Appel de Toulouse : Arrêt n° 21TL03940 du 28 mars 2024 (Contentieux de répartition des quotas de thon rouge)"
     url: "../docs/arret-caa-toulouse-21tl03940-officiel.pdf"
     pdfDirect: "../docs/arret-caa-toulouse-21tl03940-officiel.pdf"
     sha256: "88f25fca12b9ca6064612d910301de4cde44349dc85d23fc21c8ee86d82b8c81"
-  - name: "Plateforme Stella Mare (CNRS / Università di Corsica) : Dossier Scientifique & Avancée Mondiale sur les Juvéniles de Langouste Rouge (Palinurus elephas)"
+  - name: "Plateforme Stella Mare (CNRS / Università di Corsica) : Dossier Scientifique sur les Juvéniles de Langouste Rouge (Palinurus elephas)"
     url: "../docs/stella-mare-dossier-scientifique-langouste-2023.pdf"
     pdfDirect: "../docs/stella-mare-dossier-scientifique-langouste-2023.pdf"
     sha256: "aa01561074c95fbc42f3b56384934e2fd027a21f2e93a3874ec25abd3705deda"
@@ -34,64 +38,72 @@ sources:
 
 Le **18 août 2026**, devant les grilles de la Préfecture de Corse, les représentants du **Sindicatu pè a difesa di i pescadori corsi** ont posé un ultimatum solennel : **sans accord concret et pérenne avant le 31 août, l'ensemble des ports de commerce de l'île (Ajaccio, Bastia, Porto-Vecchio, Propriano, L'Île-Rousse, Bonifacio) seront totalement bloqués dès la mi-septembre 2026.**
 
-Ce cri d'alarme fait suite au blocage historique d'avril 2026. Il ne s'agit pas d'une simple protestation syndicale, mais du **dernier combat pour la survie de la pêche artisanale corse** :
+Ce cri d'alarme fait suite au blocage d'avril 2026. Il ne s'agit pas d'une simple protestation syndicale, mais du **combat pour la survie de la pêche artisanale corse** :
 * En 1990, la Corse comptait **plus de 450 marins-pêcheurs artisans**.
 * En 2026, ils ne sont plus que **180 professionnels en activité** (âge moyen : 54 ans).
-* Chaque année, des patrons-pêcheurs désarment leurs bateaux, étranglés entre des coûts de carburant exorbitants et l'interdiction administrative de pêcher les espèces qui nagent au large de leurs propres côtes.
+* Chaque année, des patrons-pêcheurs désarment leurs bateaux, pris en étau entre des coûts d'exploitation records et la captation des quotas pélagiques par les armements industriels extérieurs.
 
-💡 **L'Absurdité Quotidienne pour les Familles Corses** : Alors que nous vivons sur une île baignée par la Méditerranée, le poisson frais est devenu un produit de grand luxe inaccessible pour les foyers insulaires. Sur les étals de la grande distribution, le poisson est majoritairement importé par cargo d'élevages industriels continentaux ou étrangers, vendu à des prix vertigineux (souvent entre 25 € et 45 € le kilo). Les pêcheurs locaux meurent à petit feu pendant que les consommateurs corses paient le prix fort !
-
----
-
-## ACTE II. LE PREMIER ÉTAU : L'ENTENTE SUR LE GAZOLE PÊCHE (187,5 M€ DE SANCTION)
-
-Le premier responsable de l'asphyxie financière de nos marins et de la cherté du poisson ne se trouve pas en mer, mais à terre, dans les cuves des dépôts pétroliers.
-
-Le **17 novembre 2025**, l'Autorité de la Concurrence a rendu une décision historique (**Décision n° 25-D-07 de 80 pages**) infligeant **<mark class="forensic-highlight">187,49 millions d'euros</mark> d'amende** aux actionnaires de la société des **Dépôts Pétroliers de la Corse (DPLC)** :
-* **TotalEnergies Marketing France (TEMF)** : 115 820 000 € d'amende.
-* **Groupe Rubis / Vito** : 64 670 000 € d'amende (dont 64,24 M€ pour Rubis Énergie et 430 000 € pour Rubis Terminal / Tepsa).
-* **EG Retail** : 7 000 000 € d'amende.
-
-### 🔍 Ce que révèle l'enquête officielle de 80 pages :
-
-1. **Le Monopole Incontournable des Cuves** (*L'Étage Technique*) :  
-   L'Autorité établit formellement que les dépôts de stockage d'Ajaccio et de Bastia/Lucciana gérés par DPLC constituent une infrastructure captive qui *« n'est pas reproductible à des conditions économiques raisonnables »*.  
-   👉 *Traduction Citoyenne* : Il est matériellement impossible de créer un autre dépôt pétrolier en Corse. Celui qui tient les cuves tient l'île entière par la gorge.
-
-2. **Le Pacte d'Exclusion Secret** (*L'Étage Technique*) :  
-   Par un contrat de fonctionnement exclusif, les compagnies pétrolières actionnaires s'étaient réservé l'intégralité des droits de passage. Tout distributeur indépendant ou non-actionnaire devait soit payer une taxe d'accès prohibitive, soit acheter le carburant à ses propres concurrents à un tarif majoré.  
-   👉 *Traduction Citoyenne* : L'absence totale de concurrence a permis aux pétroliers de prélever une rente injustifiée sur chaque litre de carburant livré sur l'île.
-
-3. **L'Asphyxie Directe du Pêcheur en Mer** :  
-   Le carburant représentant **jusqu'à 40 % des charges d'exploitation** d'une barque de pêche, cette entente a maintenu le gazole marin corse à des tarifs anormalement élevés.  
-   👉 *L'Impact au Port* : À chaque sortie en mer nécessitant 300 litres de gazole, un patron-pêcheur corse subissait entre **90 € et 120 € de surcoût artificiel**, directement répercuté sur le prix de revient de chaque kilo de poisson pêché.
+💡 **L'Absurdité Quotidienne pour les Familles Corses** : Alors que nous vivons sur une île baignée par la Méditerranée, le poisson frais reste un produit difficilement accessible pour nombre de foyers insulaires. Sur les étals de la grande distribution, le poisson est majoritairement importé par cargo d'élevages industriels ou du continent, vendu à des prix élevés (souvent entre 25 € et 45 € le kilo). Les pêcheurs locaux peinent à vivre de leur métier pendant que les consommateurs corses paient le prix fort !
 
 ---
 
-## ACTE III. LE GRAND HOLD-UP DU LARGE : LE THON ROUGE ET L'ESPADON CONFISQUÉS PAR SÈTE
+## ACTE II. LE VERROU LOGISTIQUE : L'ENTENTE SUR LES DÉPÔTS PÉTROLIERS (187,5 M€ DE SANCTION)
 
-Pendant que le carburant étouffe les marins au port, l'administration organise la confiscation des espèces pélagiques les plus nobles : le **Thon Rouge** et l'**Espadon**.
+L'une des causes structurelles des surcoûts supportés par l'ensemble de l'économie corse se trouve à terre, dans les cuves des dépôts de stockage de carburants routiers.
 
-Les registres officiels de l'**Arrêté Ministériel du 13 février 2024 (NOR : TREM2403053A - JORF n°0042)** dévoilent une répartition révoltante :
-* Sur un quota national de **6 693 tonnes**, **5 957 tonnes** sont allouées à la Méditerranée.
-* L'Organisation de Producteurs **SATHOAN (Sète / Agde / Marseille)** capte à elle seule **4 078,6 tonnes** (soit **68,5 % du total Méditerranée**), dont plus de 3 500 tonnes réservées à une poignée de grands senneurs industriels de plus de 40 mètres comme les navires de la série *Jean Marie Christian*, dotés chacun de **401,3 tonnes de quota nominatif**.
-* Pendant ce temps, la flotte des **180 artisans pêcheurs de Corse** ne reçoit que **26,4 tonnes brutes** (16,7 t pour les palangriers + 9,7 t pour les canneurs/ligneurs), soit à peine **0,44 % du contingent méditerranéen** !
+Le **17 novembre 2025**, l'Autorité de la Concurrence a rendu une décision retentissante (**Décision n° 25-D-07 de 80 pages**) infligeant **<mark class="forensic-highlight">187,49 millions d'euros</mark> de sanctions pécuniaires** aux actionnaires de la société des **Dépôts Pétroliers de la Corse (DPLC)** :
 
-| Flottille & Armements | Quota Réel Attribué (Arrêté 2024) | Part du Quota Méditerranée | Écart avec les Pêcheurs Corses |
+| Entité Sanctionnée | Montant de la Sanction | Solidarité Juridique avec la Société Mère |
+| :--- | :--- | :--- |
+| **TotalEnergies Marketing France (TEMF)** | **115 820 000 €** | Solidaire avec **TotalEnergies SE** |
+| **Rubis Énergie** | **64 240 000 €** | Solidaire avec **Rubis SCA** |
+| **Tepsa (ex-Rubis Terminal)** | **430 000 €** | — |
+| **EG Retail (France)** | **7 000 000 €** | — |
+| **TOTAL DES SANCTIONS INFLIGÉES** | **187 490 000 €** | **Publication forcée intégrale ordonnée dans Corse-Matin (Art. 3)** |
+
+### 🔍 Ce que démontre l'instruction médico-légale de l'Autorité :
+
+1. **La Période d'Infraction Formellement Établie** :  
+   L'Autorité a sanctionné l'entente pour la période allant du **22 mars 2016 au 1er janvier 2023** (date à laquelle la clause d'exclusivité a été formellement supprimée), la responsabilité d'EG Retail étant circonscrite du **22 mars 2016 au 16 octobre 2017**.  
+   *Précision de rigueur* : Le grief relatif à un refus d'agrément remontant à 2009 n'a pas été retenu comme établi par l'Autorité.
+
+2. **Le Monopole Incontournable des Dépôts DPLC** (*L'Étage Technique*) :  
+   Les dépôts de Lucciana (Bastia) et d'Ajaccio, représentant environ **30 000 m³ de capacité de stockage**, constituent une infrastructure essentielle captive qu'il est économiquement et matériellement impossible de dupliquer sur l'île.  
+   👉 *Traduction Citoyenne* : Quiconque verrouille ces cuves détient le contrôle d'accès sur l'ensemble de l'approvisionnement en carburants de la Corse.
+
+3. **Le Rejet des Justifications de Sécurité Seveso** :  
+   Les pétroliers invoquaient des impératifs techniques et de sécurité Seveso pour justifier la fermeture du passage. L'Autorité a formellement rejeté cette argumentation en constatant notamment qu'un opérateur tiers (BP) avait pu utiliser les dépôts sans être actionnaire, et que la suppression de la clause contestée au 1er janvier 2023 s'est opérée sans aucune perturbation de l'exploitation sécurisée des sites.
+
+4. **L'Impact sur les Prix Insulaires** :  
+   Bien que l'Autorité n'ait pas fixé de préjudice chiffré global au centime près par foyer, elle a relevé des indices concordants d'un surcoût structurel, constatant notamment des écarts de prix moyens hors taxes substantiels entre la Corse et le continent (+6,7 % sur le gazole et +5,3 % sur le SP95 sur la période 2017-2018), pesant sur toute la chaîne de transport et d'avitaillement insulaire.
+
+---
+
+## ACTE III. LA RÉPARTITION DES QUOTAS DE THON ROUGE : UNE ASYMÉTRIE AU DÉTRIMENT DES ARTISANS
+
+Pendant que les charges logistiques pèsent sur l'activité des marins, l'accès aux espèces pélagiques majeures (le **Thon Rouge** et l'**Espadon**) fait l'objet d'une concentration historique au profit des grands armements industriels.
+
+Les registres officiels de l'**Arrêté Ministériel du 13 février 2024 (NOR : TREM2403053A - JORF n°0042)** illustrent cette asymétrie :
+* Sur un quota national de **6 693 tonnes**, **5 957 tonnes** sont allouées à la façade Méditerranée.
+* L'Organisation de Producteurs **SATHOAN (Sète / Agde / Marseille)** s'est vu attribuer **4 078,6 tonnes** (soit **68,5 % du total Méditerranée**), dont une part prépondérante réservée aux grands senneurs industriels hauturiers (chacun doté de quotas nominatifs pouvant dépasser **400 tonnes** par navire).
+* En comparaison, l'ensemble des marins-pêcheurs de Corse ne se partagent qu'une enveloppe globale de **26,4 tonnes** (16,7 t pour les palangriers + 9,7 t pour la ligne et la canne), soit à peine **0,44 % du contingent méditerranéen**.  
+*(Pour mémoire, les arrêtés antérieurs de 2017 cantonnaient les artisans corses non adhérents à une OP à un micro-quota de 5,3 tonnes : 3,1 t + 2,2 t).*
+
+| Flottille & Armements | Quota Alloué (Arrêté 2024) | Part du Quota Méditerranée | Proportion |
 | :--- | :--- | :--- | :--- |
-| **OP SATHOAN (Sète - Industriels)** | **4 078,6 Tonnes** | **68,5 %** | **154 fois plus** que toute la Corse réunie |
-| **1 Seul Senneur Sétois** (*Jean Marie Christian*) | **401,3 Tonnes** | 6,7 % | **15 fois plus** que 180 marins corses réunis |
-| **Flottille Artisanale Corse (Prud'homies)** | **26,4 Tonnes** | **0,44 %** | **180 artisans insulaires spoliés** |
-| **SPOLIATION ÉCONOMIQUE ANNUELLE** | **- 45 M€ de valeur perdue / an** | **99,5 % capté hors de Corse** | **1 200 € volés par foyer insulaire / an** |
+| **OP SATHOAN (Sète - Grands Navires)** | **4 078,6 Tonnes** | **68,5 %** | **154 fois plus** que toute la flotte corse |
+| **1 Seul Senneur Industriel Sétois** | **~401 Tonnes** | ~6,7 % | **15 fois plus** que 180 marins corses réunis |
+| **Artisans Pêcheurs de Corse** | **26,4 Tonnes** | **0,44 %** | **Ressource locale sous contrainte administrative** |
 
-### ⚖️ L'Illégalité Condamnée par la Justice Administrative
-L'**Article 17 du Règlement Européen sur la Politique Commune de la Pêche (UE 1380/2013)** oblige expressément les États membres à utiliser des critères environnementaux et sociaux pour privilégier la petite pêche artisanale sélective (faible impact sur les fonds marins et création d'emplois locaux).
+### ⚖️ Le Contentieux Juridictionnel des Quotas : La Position du Conseil d'État
+La contestation de cette clé de répartition repose sur l'**Article 17 du Règlement Européen PCP (UE n° 1380/2013)**, qui enjoint aux États membres de fonder l'attribution des possibilités de pêche sur des critères transparents et objectifs, incluant des critères environnementaux, sociaux et économiques favorables à la pêche artisanale.
 
-Dans son **Arrêt n° 21TL03940 du 28 mars 2024**, la **Cour Administrative d'Appel de Toulouse** a infligé un camouflet à l'administration en confirmant l'illégalité de cette pratique : l'article R. 921-35 du Code rural français viole le droit européen en sanctuarisant le principe des « antériorités historiques ».  
-👉 *Traduction Citoyenne* : C'est comme si l'État interdisait aux agriculteurs corses de récolter leurs clémentines ou leurs châtaignes au seul motif que de grandes coopératives continentales les ramassaient déjà en 2009 !
+* **L'Arrêt de la CAA de Toulouse (28 mars 2024)** : La Cour d'appel (n° 21TL03940) avait annulé les critères fondant la répartition en estimant que l'article R. 921-35 du Code rural français méconnaissait le droit européen en sanctuarisant les antériorités historiques au détriment des critères environnementaux.
+* **La Cassation par le Conseil d'État (5 juin 2025, n° 494626)** : Saisi par le ministère, le **Conseil d'État a cassé l'arrêt de la CAA de Toulouse pour erreur de droit**, retenant que la cour s'était méprise sur la portée des dispositions combinées des articles R. 921-35 et R. 921-48 du Code rural. Le Conseil d'État a renvoyé le dossier devant la CAA de Toulouse pour un nouvel examen.  
+*La bataille juridique sur la répartition équitable des quotas selon les critères de l'Article 17 UE demeure donc pleinement ouverte et non tranchée au fond.*
 
-### L'Évasion de la Valeur vers Malte et l'Asie
-Les thoniers industriels continentaux encerclent les bancs reproducteurs à quelques milles du Cap Corse et des Bouches de Bonifacio. Les poissons vivants sont transférés dans des cages submersibles remorquées vers Malte ou l'Espagne pour y être engraissés avant d'être exportés par avion vers le marché japonais : **45 millions d'euros de valeur marchande sont ainsi siphonnés chaque année sous les yeux de nos pêcheurs.**
+### La Fuite de Valeur Économique
+Une fraction importante des bancs de thons pêchés en Méditerranée occidentale est transférée vivante dans des cages tractées vers des fermes d'engraissement (notamment à Malte ou en Espagne) avant d'être expédiée vers les marchés internationaux, privant les ports insulaires des retombées directes du débarquement et de la transformation locale.
 
 ---
 
@@ -140,11 +152,11 @@ Ce diagnostic démontre que la crise n'est pas une fatalité écologique, mais l
 
 | Axe d'Investigation | Constat Matériel Établi | Pièce Probatoire d'Origine Scellée |
 | :--- | :--- | :--- |
-| **Cartel Pétrolier** | Entente illégale et verrouillage des dépôts DPLC d'Ajaccio et Bastia | Décision n° 25-D-07 de l'Autorité de la Concurrence (80 pages - 187,5 M€) |
-| **Confiscation des Quotas** | 68,5 % du quota capté par Sète (4 078 t), 0,44 % attribué à la Corse (26 t) | Arrêté Ministériel JORF du 13 février 2024 (NOR: TREM2403053A) |
-| **Illégalité Administrative** | Violation prouvée de l'Article 17 du Règlement Européen PCP | Arrêt n° 21TL03940 de la Cour Administrative d'Appel de Toulouse |
-| **Potentiel Écologique** | Restauration biologique possible (459 juvéniles de langouste) | Dossier Scientifique Officiel Stella Mare (CNRS / Università di Corsica) |
-| **Dividende Citoyen** | Surcoût injustifié de 20 € à 30 € / kg pour les familles insulaires | Mercuriales de vente et relevés de bord des Prud'homies |
+| **Entente Dépôts Pétroliers** | Verrouillage anticoncurrentiel des dépôts DPLC d'Ajaccio et Lucciana (2016-2023) | Décision n° 25-D-07 de l'Autorité de la Concurrence (80 pages - 187,49 M€) |
+| **Répartition des Quotas** | 68,5 % du quota alloué aux armements industriels (4 078 t), 0,44 % à la Corse (26 t) | Arrêté Ministériel JORF du 13 février 2024 (NOR: TREM2403053A) |
+| **Bataille Juridique Quotas** | Cassation pour erreur de droit sur l'art. R. 921-48, renvoi devant la CAA de Toulouse | Décision n° 494626 du Conseil d'État (5 juin 2025) & Arrêt CAA n° 21TL03940 |
+| **Potentiel Écologique** | Restauration biologique prouvée (459 juvéniles de langouste) | Dossier Scientifique Officiel Stella Mare (CNRS / Università di Corsica) |
+| **Dividende Citoyen** | Écart de prix moyen hors taxes (+6,7 % gazole / +5,3 % SP95 sur 2017-2018) | Relevés économiques certifiés de l'Autorité de la Concurrence |
 
-> **Conclusion de la Cellule d'Investigation** : L'ultimatum syndical du 18 août 2026 est la conséquence inévitable de deux décennies de spoliation méthodique et de renoncements administratifs. La mer corse doit avant tout nourrir le peuple corse et faire vivre dignement ses marins : l'application stricte du droit européen et la reprise en main de nos quotas sont à la fois une urgence économique, une évidence écologique et un devoir de justice sociale.
+> **Conclusion de la Cellule d'Investigation** : L'ultimatum syndical du 18 août 2026 est la conséquence inévitable d'années de verrous logistiques et de renoncements administratifs. La mer corse doit avant tout nourrir le peuple corse et faire vivre dignement ses marins : l'application transparente du droit européen (Art. 17 PCP) et la valorisation locale des débarquements sont à la fois une urgence économique, une évidence écologique et un devoir de justice sociale.
 

@@ -1,14 +1,14 @@
 ---
 id: 6
 title: "Investigation 06 : When the Sea Ceases to Sing — Autopsy of the Extinction of Corsican Fishermen & The Plunder of Our Sea"
-subtitle: "The logbook of a maritime dispossession : how the fuel cartel (187.5 M€ sanction), the Sète monopoly, and coastal looting choke our mariners and inflate fish prices for Corsican families"
+subtitle: "The logbook of a maritime dispossession : how the fuel storage conspiracy (187.5 M€ sanction), the Sète quota monopoly, and coastal pressures weigh on our mariners and island cost of living"
 category: "MARITIME & FISHERIES"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-06"
 author: "L'OCHJU Maritime Investigation Desk"
 date: "August 2026"
-tool: "DPMA / IFREMER / French Competition Authority / Stella Mare / CRPMEM / Prud'homies"
-chapeau: "With more than 1,000 kilometers of coastline, Corsica should offer its children the freshest and most affordable fish in the Mediterranean. The reality is a state scandal: an oil cartel fined 187.5 M€ keeps fishing diesel at artificial summits, triggering the union ultimatum of August 18, 2026 threatening to blockade the island's ports. At the same time, 90% of bluefin tuna and swordfish are confiscated by outside shipowners, while our lobsters and sea urchins suffer poaching. Here is the material evidence of an organized shipwreck and the action plan to reclaim our maritime sovereignty and cut fish prices on our stalls in half."
+tool: "DPMA / IFREMER / French Competition Authority / Council of State / Stella Mare / CRPMEM / Prud'homies"
+chapeau: "With more than 1,000 kilometers of coastline, Corsica should offer its children the freshest and most affordable fish in the Mediterranean. The reality is a governance scandal: a fuel storage cartel sanctioned with 187.5 M€ by the Competition Authority locked down insular logistics, while mounting operating costs triggered the union ultimatum of August 18, 2026 threatening to blockade the island's ports. At the same time, the vast majority of bluefin tuna and swordfish is captured by large outside fleets, while our lobsters and sea urchins face poaching pressure. Here is the material evidence of an organized shipwreck and the roadmap to reclaim maritime sovereignty."
 image: "img_enquete_06.png"
 imageCaption: "📷 Authentic Photographic Record — Traditional Fishing Port of Centuri (Cap Corse) at Sunset | Insular Crafts and Pointu Boats"
 sources:
@@ -16,11 +16,15 @@ sources:
     url: "../docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "../docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     sha256: "6e067af1700b08a733e6af1e0bf103f828b7be4c2c37cd8dbf1fabcc3db80cd4"
-  - name: "Toulouse Administrative Court of Appeal : Ruling No. 21TL03940 of March 28, 2024 (Annulment of quotas for violation of Article 17 of EU Regulation 1380/2013)"
+  - name: "French Council of State : Decision No. 494626 of June 5, 2025 (Quashing of CAA Toulouse ruling 21TL03940 for error of law on Article R. 921-48, case remanded)"
+    url: "../docs/decision-conseil-etat-pourvoi-quotas-thon.pdf"
+    pdfDirect: "../docs/decision-conseil-etat-pourvoi-quotas-thon.pdf"
+    sha256: "ac3dac5f40fc841b67c9cfb3e3c95deb3d6485adec1c9939f92c84335d4dd3ba"
+  - name: "Toulouse Administrative Court of Appeal : Ruling No. 21TL03940 of March 28, 2024 (Bluefin tuna quota allocation dispute)"
     url: "../docs/arret-caa-toulouse-21tl03940-officiel.pdf"
     pdfDirect: "../docs/arret-caa-toulouse-21tl03940-officiel.pdf"
     sha256: "88f25fca12b9ca6064612d910301de4cde44349dc85d23fc21c8ee86d82b8c81"
-  - name: "Stella Mare Scientific Platform (CNRS / Università di Corsica) : Scientific Dossier & Global Breakthrough on Red Lobster Juveniles (Palinurus elephas)"
+  - name: "Stella Mare Scientific Platform (CNRS / Università di Corsica) : Scientific Dossier on Red Lobster Juveniles (Palinurus elephas)"
     url: "../docs/stella-mare-dossier-scientifique-langouste-2023.pdf"
     pdfDirect: "../docs/stella-mare-dossier-scientifique-langouste-2023.pdf"
     sha256: "aa01561074c95fbc42f3b56384934e2fd027a21f2e93a3874ec25abd3705deda"
@@ -34,64 +38,72 @@ sources:
 
 On **August 18, 2026**, before the gates of the Prefecture of Corsica, representatives of the **Sindicatu pè a difesa di i pescadori corsi** issued a solemn ultimatum: **without a concrete and lasting agreement before August 31, all commercial ports on the island (Ajaccio, Bastia, Porto-Vecchio, Propriano, L'Île-Rousse, Bonifacio) will be totally blockaded starting in mid-September 2026.**
 
-This alarm bell follows the historic blockade of April 2026. It is not a simple union protest, but the **final battle for the survival of Corsican artisanal fishing**:
+This alarm bell follows the blockade of April 2026. It is not a simple union protest, but the **struggle for the survival of Corsican artisanal fishing**:
 * In 1990, Corsica counted **more than 450 artisanal fishermen**.
 * In 2026, there are only **180 active professionals remaining** (average age: 54 years).
-* Every year, fishing skippers decommission their boats, strangled between exorbitant fuel costs and administrative bans on catching species swimming off their own shores.
+* Every year, fishing skippers decommission their boats, caught between record operating costs and the capture of pelagic quotas by outside industrial fleets.
 
-💡 **Daily Absurdity for Corsican Families**: While living on an island bathed by the Mediterranean, fresh fish has become an inaccessible luxury item for island households. On supermarket shelves, fish is predominantly cargo-imported from mainland or foreign industrial fish farms, sold at dizzying prices (often between €25 and €45 per kilo). Local fishermen die a slow death while Corsican consumers pay the maximum price!
-
----
-
-## ACT II. THE FIRST VISE : THE FISHING DIESEL CARTEL (187.5 M€ SANCTION)
-
-The primary culprit behind the financial asphyxiation of our mariners and the sky-high price of fish is not at sea, but on land, inside oil storage tanks.
-
-On **November 17, 2025**, the French Competition Authority issued a historic decision (**Decision No. 25-D-07 of 80 pages**) imposing **187.49 million euros in fines** on the shareholders of **Dépôts Pétroliers de la Corse (DPLC)**:
-* **TotalEnergies Marketing France (TEMF)**: €115,820,000 fine.
-* **Rubis Group / Vito**: €64,670,000 fine (including €64.24M for Rubis Énergie and €430,000 for Rubis Terminal / Tepsa).
-* **EG Retail**: €7,000,000 fine.
-
-### 🔍 What the official 80-page investigation uncovers:
-
-1. **The Inescapable Tank Monopoly** (*Technical Level*):  
-   The Authority formally establishes that the storage depots of Ajaccio and Bastia/Lucciana operated by DPLC constitute a captive infrastructure that *« is not replicable under reasonable economic conditions »*.  
-   👉 *Citizen Translation*: It is physically impossible to create another fuel depot in Corsica. Whoever holds the tanks holds the entire island by the throat.
-
-2. **The Secret Exclusion Pact** (*Technical Level*):  
-   Through an exclusive operating contract, the shareholder oil companies reserved all throughput rights for themselves. Any independent or non-shareholder distributor had to either pay a prohibitive access fee or purchase fuel from its own competitors at an inflated rate.  
-   👉 *Citizen Translation*: The total absence of competition allowed oil majors to collect an unjustified rent on every liter of fuel delivered to the island.
-
-3. **Direct Asphyxiation of Fishermen at Sea**:  
-   With fuel representing **up to 40% of operating expenses** for a fishing boat, this cartel maintained Corsican marine diesel at abnormally inflated rates.  
-   👉 *Impact at Port*: For every sea outing requiring 300 liters of diesel, a Corsican fishing skipper endured between **€90 and €120 in artificial surcharges**, directly passed on to the cost price of every kilo of fish caught.
+💡 **Daily Absurdity for Corsican Families**: While living on an island bathed by the Mediterranean, fresh fish remains difficult to access for many island households. On supermarket shelves, fish is predominantly cargo-imported from mainland or foreign industrial fish farms, sold at high prices (often between €25 and €45 per kilo). Local fishermen struggle to make a living while Corsican consumers pay the maximum price!
 
 ---
 
-## ACT III. THE DEEP SEA HEIST : BLUEFIN TUNA AND SWORDFISH CONFISCATED BY SÈTE
+## ACT II. THE LOGISTICAL VISE : THE FUEL STORAGE CARTEL (187.5 M€ SANCTION)
 
-While fuel suffocates sailors in port, state administration organizes the confiscation of the most noble pelagic species: **Bluefin Tuna** and **Swordfish**.
+A major structural cause behind the high operating costs borne across the Corsican economy is located on land, inside road fuel storage tanks.
 
-Official registers of the **Ministerial Order of February 13, 2024 (NOR: TREM2403053A - JORF No. 0042)** reveal a revolting distribution:
+On **November 17, 2025**, the French Competition Authority issued a landmark decision (**Decision No. 25-D-07 of 80 pages**) imposing **€187.49 million in financial penalties** on the shareholders of **Dépôts Pétroliers de la Corse (DPLC)**:
+
+| Sanctioned Entity | Penalty Amount | Joint and Several Liability with Parent Entity |
+| :--- | :--- | :--- |
+| **TotalEnergies Marketing France (TEMF)** | **€115,820,000** | Jointly liable with **TotalEnergies SE** |
+| **Rubis Énergie** | **€64,240,000** | Jointly liable with **Rubis SCA** |
+| **Tepsa (former Rubis Terminal)** | **€430,000** | — |
+| **EG Retail (France)** | **€7,000,000** | — |
+| **TOTAL SANCTIONS IMPOSED** | **€187,490,000** | **Mandatory full summary publication in Corse-Matin (Art. 3)** |
+
+### 🔍 What the official investigation establishes:
+
+1. **Infraction Duration Legally Proven**:  
+   The Authority sanctioned the cartel for the period from **March 22, 2016 to January 1, 2023** (when the exclusivity clause was formally removed), with EG Retail's liability established from **March 22, 2016 to October 16, 2017**.  
+   *Strict clarification*: The claim regarding an approval refusal dating back to 2009 was ruled not established by the Authority.
+
+2. **The Inescapable Tank Monopoly of DPLC** (*Technical Level*):  
+   The storage depots of Lucciana (Bastia) and Ajaccio, totaling approximately **30,000 m³ of capacity**, constitute an essential captive infrastructure that cannot be duplicated under reasonable economic conditions.  
+   👉 *Citizen Translation*: Whoever controls these tanks controls the access gate for fuel supplies across the entire island.
+
+3. **Rejection of Seveso Safety Exemption**:  
+   The oil companies argued technical safety constraints under Seveso regulations. The Authority formally rejected this justification, noting that a third party (BP) had accessed the depots without being a shareholder, and that lifting the exclusivity on January 1, 2023 caused no disruption to site security or operations.
+
+4. **Impact on Insular Prices**:  
+   While the Authority did not quantify an exact household-by-household monetary damage, it found concordant evidence of structural surcharges, noting substantial average pre-tax price spreads between Corsica and mainland France (+6.7% for diesel and +5.3% for SP95 petrol during 2017-2018), weighing on the entire insular logistics chain.
+
+---
+
+## ACT III. BLUEFIN TUNA QUOTA ALLOCATION : A STRUCTURAL ASYMMETRY
+
+While logistics costs strain mariners' viability, access to key pelagic species (**Bluefin Tuna** and **Swordfish**) has been historically concentrated among large mainland fleets.
+
+Official registers of the **Ministerial Order of February 13, 2024 (NOR: TREM2403053A - JORF No. 0042)** illustrate this disparity:
 * Out of a national quota of **6,693 tons**, **5,957 tons** are allocated to the Mediterranean.
-* The **SATHOAN Producer Organization (Sète / Agde / Marseille)** captures alone **4,078.6 tons** (representing **68.5% of the Mediterranean total**), of which more than 3,500 tons are reserved for a handful of large industrial purse seiners over 40 meters such as the vessels of the *Jean Marie Christian* series, each granted **401.3 tons of nominative quota**.
-* Meanwhile, the entire fleet of **180 artisanal fishermen of Corsica** receives only **26.4 gross tons** (16.7 t for longliners + 9.7 t for handliners/rod-and-line), representing barely **0.44% of the Mediterranean contingent**!
+* The **SATHOAN Producer Organization (Sète / Agde / Marseille)** was allocated **4,078.6 tons** (representing **68.5% of the Mediterranean total**), with the lion's share reserved for large offshore industrial purse seiners (each granted individual quotas exceeding **400 tons**).
+* In contrast, all artisanal fishermen across Corsica share a total allocation of only **26.4 tons** (16.7 t for longliners + 9.7 t for line and rod), representing barely **0.44% of the Mediterranean contingent**.  
+*(By comparison, earlier 2017 ministerial orders restricted non-PO Corsican fishermen to a micro-quota of 5.3 tons: 3.1 t + 2.2 t).*
 
-| Fleet & Armaments | Real Quota Allocated (2024 Order) | Share of Mediterranean Quota | Disparity with Corsican Fishermen |
+| Fleet & Armaments | Allocated Quota (2024 Order) | Mediterranean Share | Comparison |
 | :--- | :--- | :--- | :--- |
-| **SATHOAN PO (Sète - Industrials)** | **4,078.6 Tons** | **68.5 %** | **154 times more** than entire Corsica combined |
-| **1 Single Sète Seiner** (*Jean Marie Christian*) | **401.3 Tons** | 6.7 % | **15 times more** than 180 Corsican sailors combined |
-| **Corsican Artisanal Fleet (Prud'homies)** | **26.4 Tons** | **0.44 %** | **180 island artisans dispossessed** |
-| **ANNUAL ECONOMIC SPOLIATION** | **- €45M lost value / year** | **99.5 % captured outside Corsica** | **€1,200 stolen per island household / year** |
+| **SATHOAN PO (Sète - Industrial Vessels)** | **4,078.6 Tons** | **68.5 %** | **154 times more** than entire Corsica combined |
+| **1 Single Industrial Sète Seiner** | **~401 Tons** | ~6.7 % | **15 times more** than 180 Corsican mariners combined |
+| **Corsican Artisanal Fishermen** | **26.4 Tons** | **0.44 %** | **Local resource under strict administrative limits** |
 
-### ⚖️ Administrative Illegality Condemned by the Courts
-**Article 17 of European Regulation on the Common Fisheries Policy (EU 1380/2013)** expressly obliges Member States to use environmental and social criteria to favor selective small-scale artisanal fishing (low impact on marine beds and local job creation).
+### ⚖️ Jurisdictional Dispute on Quotas: The Council of State's Decision
+Legal challenges against this allocation mechanism rely on **Article 17 of EU Regulation 1380/2013 (Common Fisheries Policy)**, requiring Member States to allocate fishing opportunities based on transparent and objective criteria, including environmental, social, and economic factors favoring artisanal fisheries.
 
-In its **Ruling No. 21TL03940 of March 28, 2024**, the **Toulouse Administrative Court of Appeal** dealt a stinging rebuff to the administration by confirming the illegality of this practice: Article R. 921-35 of the French Rural Code violates European law by entrenching the principle of « historical track records ».  
-👉 *Citizen Translation*: It is as if the state barred Corsican farmers from harvesting their clementines or chestnuts simply because large mainland cooperatives were already picking them in 2009!
+* **Toulouse Administrative Court of Appeal (March 28, 2024)**: Ruling No. 21TL03940 had annulled the allocation criteria on the grounds that Article R. 921-35 of the French Rural Code prioritized historical track records over environmental criteria.
+* **Quashing by the Council of State (June 5, 2025, No. 494626)**: Following an appeal by the ministry, the **Council of State quashed the Toulouse ruling for error of law**, finding that the appellate court misconstrued the combined effect of Articles R. 921-35 and R. 921-48 of the Rural Code. The Council of State remanded the case to the Toulouse CAA for re-examination.  
+*The judicial dispute on the fair application of Article 17 EU criteria remains active and pending on the merits.*
 
-### Value Flight to Malta and Asia
-Mainland industrial tuna seiners encircle spawning schools miles off Cap Corse and the Strait of Bonifacio. Live fish are transferred to submersible cages towed to Malta or Spain to be fattened before being flown to the Japanese market: **€45 million in commercial value is siphoned off every year right under the eyes of our fishermen.**
+### Economic Value Extraction
+A significant portion of tuna schools caught in the western Mediterranean is transferred alive into towable sea cages directed to fattening farms in Malta or Spain before being exported internationally, depriving island ports of direct landing and local processing value.
 
 ---
 
@@ -140,10 +152,10 @@ This diagnostic proves that the crisis is not an ecological inevitability, but t
 
 | Investigation Axis | Certified Forensic Finding | Sealed Original Probative Evidence |
 | :--- | :--- | :--- |
-| **Oil Cartel** | Illegal conspiracy and lock on Ajaccio and Bastia DPLC depots | Decision No. 25-D-07 of the French Competition Authority (80 pages - 187.5 M€) |
-| **Quota Confiscation** | 68.5% of quota captured by Sète (4,078 t), 0.44% granted to Corsica (26 t) | Ministerial Order JORF of February 13, 2024 (NOR: TREM2403053A) |
-| **Administrative Illegality** | Proven breach of Article 17 of EU Common Fisheries Policy Regulation | Ruling No. 21TL03940 of the Toulouse Administrative Court of Appeal |
+| **Fuel Storage Cartel** | Anticompetitive lock on Ajaccio and Lucciana DPLC storage depots (2016-2023) | Decision No. 25-D-07 of the French Competition Authority (80 pages - €187.49M) |
+| **Quota Allocation** | 68.5% of quota allocated to industrial fleets (4,078 t), 0.44% to Corsica (26 t) | Ministerial Order JORF of February 13, 2024 (NOR: TREM2403053A) |
+| **Quota Legal Dispute** | Ruling quashed for error of law on art. R. 921-48, remanded to Toulouse CAA | Decision No. 494626 of the French Council of State (June 5, 2025) & CAA Ruling |
 | **Ecological Potential** | Biological restoration proven (459 lobster puerulus juveniles) | Official Scientific Dossier Stella Mare (CNRS / Università di Corsica) |
-| **Citizen Dividend** | Unjustified surcharge of €20 to €30 / kg for island families | Guild landing sales records and wholesale price schedules |
+| **Citizen Impact** | Pre-tax average price spread (+6.7% diesel / +5.3% SP95 during 2017-2018) | Certified economic data from the French Competition Authority |
 
-> **Conclusion of the Investigation Desk**: The union ultimatum of August 18, 2026 is the inevitable consequence of two decades of methodical spoliation and administrative capitulation. The Corsican sea must first and foremost feed the Corsican people and provide a dignified living for its mariners: the strict application of European law and taking back our quotas are simultaneously an economic urgency, an ecological evidence, and a duty of social justice.
+> **Conclusion of the Investigation Desk**: The union ultimatum of August 18, 2026 is the inevitable consequence of years of logistical bottlenecks and administrative disengagement. The Corsican sea must first and foremost nourish the Corsican people and provide a dignified living for its mariners: transparent application of European law (Art. 17 CFP) and valuing local landings are an economic urgency, an ecological evidence, and a duty of social justice.
