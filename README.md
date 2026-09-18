@@ -19,6 +19,8 @@ In **2026**, FSUCIETÀ launches **Democratic Initiative 2.0**: an open-source, d
 
 No rumors. No personal attacks. **100% mathematical, legal, and spatial evidence.**
 
+All major closed investigations (Dossiers #02, #03, #04, #06, #18, #27, #28, and Special Issue #29) comply with the ISO/IEC 27037 digital forensics standard and have undergone contradictory verification in September 2026.
+
 ---
 
 ## 📂 REPOSITORY STRUCTURE
