@@ -143,26 +143,26 @@ Deux cent cinquante ans plus tard, la politique de l'État central en Corse deme
 
 ## 🔱 VII. LA PROSPÉRITÉ RETROUVÉE : LE TRIDENT DE VIE DE LA CORSE (EAU, ÉNERGIE, MER)
 
-Pour répondre à ceux qui prétendent qu'une île de liberté serait condamnée à la misère ou à la mendicité budgétaire, nous affirmons avec force la vérité matérielle de notre terre : **la Corse possède en elle-même toutes les richesses naturelles pour nourrir, éclairer et faire prospérer son peuple**.
+Pour répondre à ceux qui prétendent qu'une île de liberté serait condamnée à la dépendance ou à une supposée dette budgétaire permanente, la réalité matérielle de notre terre démontre l'inverse : **la Corse possède en elle-même toutes les ressources naturelles indispensables pour subvenir à ses besoins, s'éclairer et assurer la prospérité de son peuple**.
 
-Le renouveau corse repose sur la réappropriation souveraine de son **Trident Vital** :
+Le renouveau corse s'appuie sur la réappropriation et la gestion publique de son **Trident Vital** :
 
-1. **⚡ L'Énergie Souveraine (199,1 MW Hydroélectriques)** :  
-   Nos quatre grands barrages de retenue (Calacuccia, Rizzanese, Sampolo, Tolla) représentent à eux seuls **199,1 MW d'électricité propre et inépuisable**. En les associant au stockage par pompage (STEP) et à l'énergie solaire, la Corse élimine immédiatement le fioul lourd importé et devient la première île à énergie 100 % verte et autonome de Méditerranée.
-2. **💧 Le Château d'Eau Méditerranéen (175 Millions de m³)** :  
-   Arrosée par 8 à 10 milliards de m³ d'eau de pluie chaque année, la Corse est bénie par la nature. La captation écologique sous les alluvions de nos fleuves (Golo, Tavignano, Gravona) mobilise **60 millions de m³ d'eau pure supplémentaire sans barrage de béton**, garantissant l'irrigation agricole, l'autosuffisance alimentaire et la fin des coupures estivales.
-3. **🌊 Le Sanctuaire de la Mer (Le Bouclier des 12 Milles)** :  
-   La réappropriation de nos quotas maritimes confisqués par les flottes industrielles lointaines et la sanctuarisation de nos eaux côtières redonnent vie à nos 180 patrons-pêcheurs artisans, offrant à nos familles un poisson frais de haute mer à prix citoyen accessible.
+1. **⚡ L'Énergie Souveraine (194 à 199 MW Hydroélectriques sous Concession d'État)** :  
+   Les quatre grands barrages de retenue de l'île (Calacuccia, Tolla, Sampolo, Rizzanese) totalisent environ **194 à 199 MW de puissance hydroélectrique installée**. Cette énergie propre, renouvelable et souveraine est aujourd'hui exploitée sous concession d'État. En associant cette force hydraulique à des stations de transfert d'énergie par pompage (STEP) et au déploiement solaire prévu par la Programmation Pluriannuelle de l'Énergie (PPE), la Corse peut s'affranchir du fioul lourd importé et sécuriser son autonomie énergétique verte.
+2. **💧 Le Château d'Eau Méditerranéen (Scénario Citoyen de 175 Millions de m³)** :  
+   Alors que le réseau public de l'Office d'Équipement Hydraulique de Corse (OEHC) stocke déjà près de 46 millions de m³ dans ses barrages et cours d'eau, les pluies génèrent chaque année 8 à 10 milliards de m³ d'eau sur les reliefs insulaires. Le projet d'ingénierie citoyenne défendu par *L'OCHJU* démontre que la mobilisation des nappes alluviales des fleuves (Golo, Tavignano, Gravona) permettrait de capter jusqu'à **60 millions de m³ supplémentaires sans artificialisation massive**, atteignant un potentiel global de 175 millions de m³ pour sanctuariser l'irrigation agricole et éradiquer définitivement les restrictions estivales d'eau potable.
+3. **🌊 Le Sanctuaire de la Mer (Le Bouclier des 12 Milles et la Règle de Droit Européenne)** :  
+   Comme l'a tranché la Cour administrative d'appel de Toulouse le 28 mars 2024 en application de l'article 17 de la Politique Commune de la Pêche (PCP), la répartition des quotas maritimes ne peut plus être confisquée par une poignée d'armateurs industriels continentaux. La sanctuarisation de la bande côtière des 12 milles et la réallocation légitime des quotas historiques protègent nos 180 patrons-pêcheurs artisans, garantissant aux familles un approvisionnement local en poisson frais à un coût équitable.
 
-Ce patrimoine n'est pas une marchandise : c'est le bien commun inaliénable du Peuple Corse.
+Ce patrimoine naturel n'est pas une marchandise financière : il constitue le bien commun inaliénable du Peuple Corse.
 
 ---
 
 ## 🌐 VIII. L'APPEL SOLENNEL AUX NATIONS LIBRES ET AU CONGRÈS DES ÉTATS-UNIS
 
-Aujourd'hui, face à la spéculation immobilière mondiale qui dépossède notre jeunesse et face à l'étouffement centralisateur, la Corse se lève dans la dignité de son histoire.
+Aujourd'hui, face à la flambée de la spéculation immobilière qui interdit à notre jeunesse de vivre et bâtir sur son propre sol, et face à l'étouffement des droits historiques, la Corse s'exprime avec la fierté de son histoire.
 
-Elle s'adresse directement au peuple américain, à ses représentants et aux nations libres du monde :
+Elle s'adresse directement au peuple américain, à ses représentants et aux démocraties du monde entier :
 
 > ### 📜 THE CORSICAN APPEAL TO FREE PEOPLES & THE US CONGRESS
 > *(Corte — Washington, 2026)*
@@ -176,12 +176,12 @@ Elle s'adresse directement au peuple américain, à ses représentants et aux na
 > *Today, the very cradle of your modern freedom is threatened with demographic and territorial erasure upon its ancestral soil.*  
 > 
 > *We do not ask for charity. We demand justice and truth before humanity :*  
-> 1. **Formal recognition of the Corsican People as an Indigenous and Original People** under the UN Declaration on the Rights of Indigenous Peoples (UNDRIP 2007), guaranteeing inalienable sovereignty over its ancestral land, culture, and natural resources against any demographic substitution.  
+> 1. **Formal recognition of the Corsican People as an Indigenous and Original People** under the UN Declaration on the Rights of Indigenous Peoples (UNDRIP 2007), guaranteeing inalienable sovereignty over its ancestral land, culture, and natural resources against speculative displacement.  
 > 2. **The immediate re-inscription of Corsica on the UN Special Committee on Decolonization list (C-24)** under Resolution 1514 (XV), following the precedent of Resolution 67/265.  
-> 3. **International diplomatic support for the Corsican 5-Year Resident Status**, sanctuarizing our ancestral soil against speculative eviction.  
-> 4. **The sovereign control of our 199.1 MW hydroelectric commons**, securing full clean energy independence.  
-> 5. **Public guardianship of our 175M m³ water commons**, ensuring drinking water and food sovereignty for generations to come.  
-> 6. **The restitution of our maritime quotas and coastal protection**, restoring the sea to our artisanal fishermen and our people.  
+> 3. **International diplomatic support for the Corsican 5-Year Resident Status**, protecting our ancestral soil against speculative eviction in accordance with European and constitutional territorial safeguards.  
+> 4. **Public governance of our 194–199 MW hydroelectric commons**, securing full clean energy autonomy and regional grid modernization.  
+> 5. **Public stewardship of our water commons (with a planned 175M m³ multi-source capacity)**, ensuring drinking water access and food sovereignty for future generations.  
+> 6. **The lawful restitution of our maritime quotas under EU CFP Article 17 and coastal zone defense**, securing fair livelihoods for our artisanal fishermen.  
 > 
 > ***'REMEMBER PAOLI — DEFEND THE CRADLE OF YOUR OWN FREEDOM.'*** ”*
 

@@ -143,18 +143,18 @@ Two hundred and fifty years later, that historical injustice remains unresolved:
 
 ## 🔱 VII. SOVEREIGN RESTITUTION : CORSICA'S TRIDENT OF LIFE (WATER, ENERGY, SEA)
 
-To those who claim that an island of liberty is destined for dependence or perpetual economic subsidy, we declare the material truth of our land: **Corsica commands within its mountains, rivers, and coastal plateau all the natural vitality needed to nourish, power, and liberate its people**.
+To those who claim that an island of liberty is destined for dependence or perpetual economic subsidy, the physical reality of our land demonstrates the exact opposite: **Corsica commands within its mountains, rivers, and coastal plateau all the natural vitality needed to nourish, power, and liberate its people**.
 
-Corsica's resurgence rests upon the sovereign reclaim of its **Vital Trident**:
+Corsica's resurgence rests upon the sovereign reclaim and public governance of its **Vital Trident**:
 
-1. **⚡ Sovereign Energy (199.1 MW Hydroelectric Power)** :  
-   Our four mountain reservoirs (Calacuccia, Rizzanese, Sampolo, Tolla) generate **199.1 MW of clean, self-replenishing electricity**. Integrated with pumped-storage hydro (STEP) and solar commons, Corsica eliminates imported heavy fossil fuels and stands as the Mediterranean's first 100% green, energy-positive island.
-2. **💧 The Mediterranean Water Fortress (175 Million m³)** :  
-   Blessed with 8 to 10 billion m³ of rain annually, Corsica possesses extraordinary water wealth. Non-invasive alluvial river capture (Golo, Tavignano, Gravona) unlocks **60 million m³ of fresh water without concrete dams**, ensuring universal irrigation, absolute food security, and an end to summer shortages.
-3. **🌊 The Sanctuary of the Sea (The 12-Mile Shield)** :  
-   Reclaiming our maritime pelagic quotas and shielding our coastal nursery grounds from mega-yacht destruction restores our 180 artisanal fishermen and delivers fresh fish directly to local families at affordable, citizen-controlled prices.
+1. **⚡ Sovereign Energy (194 to 199 MW Hydroelectric Power under State Concession)** :  
+   Our four major mountain reservoirs (Calacuccia, Tolla, Sampolo, Rizzanese) total approximately **194 to 199 MW of installed hydroelectric capacity**. This clean, renewable, and sovereign energy is currently operated under state concessions. Integrated with pumped-storage hydro (STEP) and solar expansion outlined in the Multi-Year Energy Plan (PPE), Corsica can phase out imported heavy fuel oil and achieve clean energy self-sufficiency.
+2. **💧 The Mediterranean Water Fortress (Citizen Proposal of 175 Million m³)** :  
+   While the public network of the Corsican Hydraulic Equipment Office (OEHC) already stores nearly 46 million m³ across its reservoirs and dams, annual rainfall yields 8 to 10 billion m³ across the island's watersheds. The engineering model championed by *L'OCHJU* demonstrates that non-invasive alluvial river capture (Golo, Tavignano, Gravona) can mobilize up to **60 million m³ of additional fresh water without massive concrete dam construction**, achieving an overall potential of 175 million m³ to safeguard agricultural irrigation and end summer drinking water shortages forever.
+3. **🌊 The Sanctuary of the Sea (The 12-Mile Shield & European Rule of Law)** :  
+   As definitively ruled by the Toulouse Administrative Court of Appeal on March 28, 2024 under Article 17 of the Common Fisheries Policy (CFP), pelagic fishing quotas can no longer be monopolized by industrial mainland vessels. Enforcing the 12-mile coastal sanctuary and reallocating historical quotas protects our 180 artisanal fishermen and delivers fresh fish directly to local families at fair, citizen-level prices.
 
-This heritage is not a commodity for global speculation: it is the inalienable commons of the Corsican People.
+This natural heritage is not a financial commodity: it is the inalienable commons of the Corsican People.
 
 ---
 
@@ -176,12 +176,12 @@ It addresses the American People, their elected representatives, and the communi
 > *Today, the very cradle of your modern freedom is threatened with demographic and territorial erasure upon its ancestral soil.*  
 > 
 > *We do not ask for charity. We demand justice and truth before humanity :*  
-> 1. **Formal recognition of the Corsican People as an Indigenous and Original People** under the UN Declaration on the Rights of Indigenous Peoples (UNDRIP 2007), guaranteeing inalienable sovereignty over its ancestral land, culture, and natural resources against any demographic substitution.  
+> 1. **Formal recognition of the Corsican People as an Indigenous and Original People** under the UN Declaration on the Rights of Indigenous Peoples (UNDRIP 2007), guaranteeing inalienable sovereignty over its ancestral land, culture, and natural resources against speculative displacement.  
 > 2. **The immediate re-inscription of Corsica on the UN Special Committee on Decolonization list (C-24)** under Resolution 1514 (XV), following the precedent of Resolution 67/265.  
-> 3. **International diplomatic support for the Corsican 5-Year Resident Status**, sanctuarizing our ancestral soil against speculative eviction.  
-> 4. **The sovereign control of our 199.1 MW hydroelectric commons**, securing full clean energy independence.  
-> 5. **Public guardianship of our 175M m³ water commons**, ensuring drinking water and food sovereignty for generations to come.  
-> 6. **The restitution of our maritime quotas and coastal protection**, restoring the sea to our artisanal fishermen and our people.  
+> 3. **International diplomatic support for the Corsican 5-Year Resident Status**, protecting our ancestral soil against speculative eviction in accordance with European and constitutional territorial safeguards.  
+> 4. **Public governance of our 194–199 MW hydroelectric commons**, securing full clean energy autonomy and regional grid modernization.  
+> 5. **Public stewardship of our water commons (with a planned 175M m³ multi-source capacity)**, ensuring drinking water access and food sovereignty for future generations.  
+> 6. **The lawful restitution of our maritime quotas under EU CFP Article 17 and coastal zone defense**, securing fair livelihoods for our artisanal fishermen.  
 > 
 > ***'REMEMBER PAOLI — DEFEND THE CRADLE OF YOUR OWN FREEDOM.'*** ”*
 
