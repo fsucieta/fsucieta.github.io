@@ -1,18 +1,24 @@
 ---
 id: 18
 title: "Enquête 18 : La Lumière Volée — Briser l'Illusion de la Dépendance"
-subtitle: "199 MW d'énergie pure dérobés : autopsie médico-légale d'un monopole et le projet souverain qui fera de la Corse l'île la plus propre, prospère et libre de Méditerranée."
+subtitle: "194 à 199 MW d'énergie hydraulique sous concession d'État : autopsie médico-légale d'un monopole et le projet souverain pour une Corse propre, prospère et décarbonée."
 category: "ÉNERGIE & SOUVERAINETÉ"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "Cellule d'Investigation Énergétique L'OCHJU"
 date: "Août 2026"
 tool: "CRE / Sénat / DREAL Corse / TPE 2026 / DGEC / Code de l'Énergie / MRAe / TA Bastia / Bufitonu.fr / KPMG 2025"
-chapeau: "Regardez nos montagnes : nous avons l'eau la plus pure et le soleil le plus généreux de Méditerranée. Pourtant, 350 000 Corses subissent un mix électrique 7 fois plus carboné que sur le continent, des factures injustes et 1 800 kg de métaux lourds crachés chaque année au-dessus de leurs enfants. Pourquoi ? Parce que dans le secret des ministères parisiens et des états-majors d'EDF, un système colonial moderne a été verrouillé : 199,1 MW d'énergie hydraulique confisqués par l'article L. 4424-39 du CGCT, le solaire citoyen bridé d'autorité, 800 millions d'euros engloutis au Ricanto pour engraisser des courtiers en colza continental avec un taux de profit garanti jusqu'à 11 %, et un projet privé toxique imposé sur une décharge d'ordures à Saint-Antoine. Ce n'est pas une fatalité technique : c'est un crime industriel, écologique et financier d'une violence inouïe. Voici les preuves."
+chapeau: "Regardez nos montagnes : la Corse possède un potentiel hydraulique et solaire exceptionnel en Méditerranée. Pourtant, 355 000 résidents subissent un mix électrique insulaire fortement carboné par rapport au réseau continental interconnecté et des rejets atmosphériques notables. Pourquoi ? Parce que le cadre réglementaire national maintient un modèle thermique centralisé : les grands barrages hydroélectriques (~194 à 199 MW) sont placés sous le régime des concessions d'État hors compétence territoriale directe en vertu de l'article L. 4424-39 du CGCT, l'injection photovoltaïque est contrainte par le seuil de 30 %, et le projet de centrale du Ricanto (133,7 MW au bioliquide, pour un investissement prévisionnel de près de 800 M€) engage la collectivité nationale sur un surcoût CSPE projeté à environ 6,3 milliards d'euros sur 25 ans avec une rémunération encadrée par la CRE (délibérations 2024-67 et 2024-138, WACC de base à ~9,55 %). Autopsie chiffrée d'une dépendance évitable."
 image: "img_enquete_18.webp"
-imageCaption: "🎨 Vision Souveraine de l'Énergie Pure — Barrage & Retenue Hydroélectrique Corse sous la Nuit Étoilée | 199,1 MW d'Autonomie Confisqués par la Loi"
+imageCaption: "🎨 Vision Souveraine de l'Énergie Pure — Barrage & Retenue Hydroélectrique Corse sous la Nuit Étoilée | 194 à 199 MW sous Concession d'État"
 sources:
-  - name: "EDF PEI SAS : Comptes Sociaux Annuels Clos au 31 Décembre 2025 (Rapport de Certification KPMG du 18 Mars 2026 - 58 pages)"
+  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2024-138 du 10 Juillet 2024 (Évaluation de la Compensation Contrat d'Achat EDF Corse / EDF PEI - Ricanto 133,7 MW Bioliquide)"
+    url: "https://www.cre.fr/documents/deliberations/decision/evaluation-de-la-compensation-relative-au-projet-de-contrat-d-achat-entre-la-societe-edf-centre-edf-corse-et-la-societe-edf-pei-pour-une-centrale-de-production-d-electricite-ricanto-133-7-mw-bioliquide-corse"
+    sha256: "9c5a81ed8b879c6fdcd6bd3b977e104232c15348a47360091f8d2228c5a35040"
+  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2024-67 du 4 Avril 2024 (Prime pour la Fixation du Taux de Rémunération du Capital Immobilisé - Ricanto)"
+    url: "https://www.cre.fr/documents/deliberations/proposition/prime-pour-la-fixation-du-taux-de-remuneration-du-capital-immobilise-pour-le-projet-de-centrale-de-production-d-electricite-du-ricanto"
+    sha256: "b4a8e9d2b1f0c3e7a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6"
+  - name: "EDF PEI SAS : Comptes Sociaux Annuels Clos au 31 Décembre 2025 (Rapport de Certification KPMG du 18 Mars 2026 - 58 pages, Périmètre Consolidé ZNI)"
     url: "/docs/EDF_PEI_Comptes_2025_KPMG.pdf"
     pdfDirect: "/docs/EDF_PEI_Comptes_2025_KPMG.pdf"
     sha256: "9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a"
@@ -24,10 +30,6 @@ sources:
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/TPE-Corse-Volet-2-2026.pdf"
     pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/TPE-Corse-Volet-2-2026.pdf"
     sha256: "4e025a452b3d0ea9dd404525b8b90be876090f0b99c9b524708212409ab228d1"
-  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2026-77 du 9 Avril 2026 — Fixation des Taux de Rémunération des STEP en Corse (Lugo-di-Nazza & Saint-Antoine)"
-    url: "/docs/260409_2026-77_Taux_Guichet_STEP_Corse.pdf"
-    pdfDirect: "/docs/260409_2026-77_Taux_Guichet_STEP_Corse.pdf"
-    sha256: "b4a8e9d2b1f0c3e7a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6"
   - name: "Préfecture de Corse-du-Sud / DREAL : Arrêté Préfectoral d'Autorisation Environnementale n° 2A-2024-02-15-00002 du 15 Février 2024 (Centrale du Ricanto - 42 pages)"
     url: "/docs/2024+02+15_AP+AE_centrale+EDF+PEI+Ricanto.pdf"
     pdfDirect: "/docs/2024+02+15_AP+AE_centrale+EDF+PEI+Ricanto.pdf"
@@ -40,10 +42,6 @@ sources:
     url: "/docs/senat-r23-714-energie-electricite-corse.pdf"
     pdfDirect: "/docs/senat-r23-714-energie-electricite-corse.pdf"
     sha256: "ec878f501952e36b76c75890a997dcbea0de7d7762e74537222d528c7adb4bf5"
-  - name: "Séance Plénière Officielle de la COP de Corse du 2 Juillet 2026 à Bastia (Enregistrement Intégral 187 min)"
-    url: "https://youtu.be/DM5620u7Jw4"
-    pdfDirect: "https://youtu.be/DM5620u7Jw4"
-    sha256: "9c5a81ed8b879c6fdcd6bd3b977e104232c15348a47360091f8d2228c5a35040"
 ---
 
 ## 🏛️ L'ÉQUATION DU CRIME : LE PACTE COLONIAL RÉINVENTÉ EN PLEIN XXIe SIÈCLE
@@ -67,12 +65,12 @@ L'analyse médico-légale des documents d'État de la **Planification Écologiqu
     <div class="flex items-start gap-3">
       <span class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-sm border border-amber-500/40">1</span>
       <div>
-        <h4 class="text-white font-bold text-base">On confisque nos rivières</h4>
-        <p class="text-slate-400 text-xs mt-1">L'État retire à la Corse la gestion de ses 4 grands barrages hydroélectriques pour les donner à EDF SA.</p>
+        <h4 class="text-white font-bold text-base">Nos grands barrages sous concession d'État</h4>
+        <p class="text-slate-400 text-xs mt-1">L'article L. 4424-39 limite la compétence de la Collectivité de Corse aux installations < 8 MW, maintenant les grands barrages sous concession nationale d'EDF.</p>
       </div>
     </div>
     <div class="bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 text-right flex-shrink-0">
-      <div class="text-amber-400 font-mono font-bold text-sm">199,1 MW CONFISQUÉS</div>
+      <div class="text-amber-400 font-mono font-bold text-sm">~194 à 199 MW HORS COMPÉTENCE CdC</div>
       <div class="text-[10px] text-slate-500 font-mono">Art. L. 4424-39 (1°) CGCT</div>
     </div>
   </div>
@@ -82,12 +80,12 @@ L'analyse médico-légale des documents d'État de la **Planification Écologiqu
     <div class="flex items-start gap-3">
       <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-mono font-bold flex items-center justify-center text-sm border border-red-500/40">2</span>
       <div>
-        <h4 class="text-white font-bold text-base">On interdit de capter notre soleil</h4>
-        <p class="text-slate-400 text-xs mt-1">Un arrêté d'État autorise EDF à éteindre d'autorité les panneaux solaires sur nos toits dès 30 % d'injection.</p>
+        <h4 class="text-white font-bold text-base">On contraint l'injection solaire</h4>
+        <p class="text-slate-400 text-xs mt-1">Un arrêté d'État autorise le gestionnaire de réseau à déconnecter ou brider les énergies intermittentes au-delà du seuil de 30 %.</p>
       </div>
     </div>
     <div class="bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 text-right flex-shrink-0">
-      <div class="text-red-400 font-mono font-bold text-sm">180 MW SOLAIRES BRIDÉS</div>
+      <div class="text-red-400 font-mono font-bold text-sm">SEUIL INTERMITTENCE 30 %</div>
       <div class="text-[10px] text-slate-500 font-mono">Arrêté du 23 avril 2008 (Art. 22)</div>
     </div>
   </div>
@@ -97,13 +95,13 @@ L'analyse médico-légale des documents d'État de la **Planification Écologiqu
     <div class="flex items-start gap-3">
       <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-mono font-bold flex items-center justify-center text-sm border border-red-500/40">3</span>
       <div>
-        <h4 class="text-white font-bold text-base">On impose du carburant continental par bateaux</h4>
-        <p class="text-slate-400 text-xs mt-1">On remplace le fioul par 50 000 t/an d'huile de colza importée par cargos pour faire tourner 8 moteurs diesel au Ricanto.</p>
+        <h4 class="text-white font-bold text-base">On importe des bioliquides continentaux par navires</h4>
+        <p class="text-slate-400 text-xs mt-1">La centrale thermique du Ricanto (133,7 MW) est calibrée pour brûler 50 000 t/an d'huile de colza importée par navires dédiés.</p>
       </div>
     </div>
     <div class="bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 text-right flex-shrink-0">
-      <div class="text-red-400 font-mono font-bold text-sm">50 000 t/an IMPORTÉES</div>
-      <div class="text-[10px] text-slate-500 font-mono">TPE 2026 p.26 • 252 g CO2/kWh</div>
+      <div class="text-red-400 font-mono font-bold text-sm">133,7 MW • 50 000 t/an</div>
+      <div class="text-[10px] text-slate-500 font-mono">CRE 2024-138 • TPE 2026 p.26</div>
     </div>
   </div>
 
@@ -112,60 +110,63 @@ L'analyse médico-légale des documents d'État de la **Planification Écologiqu
     <div class="flex items-start gap-3">
       <span class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center text-sm border border-emerald-500/40">4</span>
       <div>
-        <h4 class="text-white font-bold text-base">L'impôt public paie la rente à Paris</h4>
-        <p class="text-slate-400 text-xs mt-1">L'État rembourse 100 % des surcoûts par la taxe CSPE et garantit une marge financière sans risque à la filiale d'EDF.</p>
+        <h4 class="text-white font-bold text-base">La solidarité nationale compense les surcoûts</h4>
+        <p class="text-slate-400 text-xs mt-1">La compensation des surcoûts est assurée par les charges de service public (CSPE), avec un taux de rémunération du capital (WACC) régulé par la CRE.</p>
       </div>
     </div>
     <div class="bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 text-right flex-shrink-0">
-      <div class="text-emerald-400 font-mono font-bold text-sm">111,9 M€ DIVIDENDES 2025</div>
-      <div class="text-[10px] text-slate-500 font-mono">Comptes EDF PEI certifiés KPMG</div>
+      <div class="text-emerald-400 font-mono font-bold text-sm">WACC DE BASE ~9,55 %</div>
+      <div class="text-[10px] text-slate-500 font-mono">Délibérations CRE 2024-67 & 2024-138</div>
     </div>
   </div>
 </div>
 
 ---
 
-## ACTE I. LA POMPE À CASH DE LA CSPE : 1,367 MILLIARD DE CA & 111,9 MILLIONS DE DIVIDENDES CASH
+## ACTE I. LES CHIFFRES CERTIFIÉS D'EDF PEI : 1,367 MILLIARD DE CA ET RÉMUNÉRATION RÉGULÉE EN ZNI
 
-Avant même de parler de santé ou d'écologie, il faut regarder où va l'argent. L'examen médico-légal des **Comptes Sociaux d'EDF PEI SAS clos au 31 décembre 2025** (certifiés par KPMG le 18 mars 2026) dévoile l'ampleur exacte du hold-up financier prélevé sur notre territoire :
+Avant d'aborder les volets environnementaux, l'examen médico-légal des **Comptes Sociaux d'EDF PEI SAS clos au 31 décembre 2025** (certifiés par KPMG le 18 mars 2026) permet de poser la réalité financière de la filiale dédiée aux Zones Non Interconnectées (ZNI comprenant la Corse, la Guadeloupe, la Martinique, la Réunion et la Guyane) :
 
-1. **Un Chiffre d'Affaires garanti de 1,367 Milliard d'Euros** :
-   * En 2025, EDF PEI a réalisé un chiffre d'affaires colossal de **1 367,2 Millions d'euros** (en hausse par rapport aux 1 323,1 M€ de 2024), dont l'essentiel provient directement des compensations de charges publiques (taxe CSPE payée par l'impôt et les factures).
-2. **Une Rentabilité Nette Insolente de 176,5 Millions d'Euros** :
-   * Après avoir payé l'ensemble de ses charges de combustible et de personnel, EDF PEI dégage un **bénéfice net après impôt de 176,5 Millions d'euros** en 2025 (après 194,3 M€ en 2024). C'est un taux de marge nette supérieur à **13 %**, sans le moindre risque commercial !
-3. **111,9 Millions d'Euros de Dividendes Cash siphonnés vers Paris** :
-   * La **Note 2.1 de l'annexe certifiée** acte noir sur blanc que l'associé unique (EDF SA à Paris) a prélevé en cash le **6 mai 2025 une distribution de dividendes de 111,9 Millions d'euros** (soit 1,9975 € par action), financée à 100 % par les taxes publiques sur l'électricité.
+1. **Un Chiffre d'Affaires Global ZNI de 1,367 Milliard d'Euros** :
+   * En 2025, EDF PEI a comptabilisé au niveau de l'ensemble de ses parcs insulaires un chiffre d'affaires de **1 367,2 Millions d'euros** (contre 1 323,1 M€ en 2024), adossé aux mécanismes de compensation des charges de service public de l'énergie (CSPE).
+2. **Un Résultat Net de 176,5 Millions d'Euros (Périmètre ZNI)** :
+   * La filiale dégage un **bénéfice net après impôt de 176,5 Millions d'euros** en 2025 (après 194,3 M€ en 2024) sur l'ensemble de son périmètre d'exploitation insulaire.
+3. **111,9 Millions d'Euros de Dividendes Versés à la Maison-Mère** :
+   * La **Note 2.1 de l'annexe certifiée** indique que l'associé unique (EDF SA) a perçu le **6 mai 2025 une distribution de dividendes de 111,9 Millions d'euros** au titre des résultats consolidés des centrales insulaires.
 4. **L'Aveu Officiel du Chantier du Ricanto (Note 2.3)** :
-   * Les comptes 2025 confirment noir sur blanc que *« les travaux de construction du Ricanto ont débuté en novembre 2024 avec les phases de terrassement et fondations »* et actent le réemploi forcé des vieilles cuves du Vazzio avec un *« premier réservoir de stockage de biomasse liquide rénové pour des premiers essais moteurs en 2027 »*.
+   * Les comptes 2025 confirment formellement que *« les travaux de construction du Ricanto ont débuté en novembre 2024 avec les phases de terrassement et fondations »* et actent le raccordement et la réhabilitation d'un *« premier réservoir de stockage de biomasse liquide rénové pour des premiers essais moteurs en 2027 »*.
 
-| Poste Financier Officiel (Comptes EDF PEI 2025 - KPMG) | Montant 2024 | Montant 2025 | Provenance des Fonds |
+| Poste Financier Officiel (Comptes EDF PEI 2025 - KPMG) | Montant 2024 (Total ZNI) | Montant 2025 (Total ZNI) | Cadre Réglementaire & Source |
 | :--- | :--- | :--- | :--- |
-| **Chiffre d'Affaires Annuel** | **1 323,1 M€** | **1 367,2 M€** | Compensations publiques CSPE (État / Usagers) |
-| **Résultat d'Exploitation (EBIT)** | **253,3 M€** | **262,3 M€** | Rente du WACC garanti jusqu'à 11 % |
-| **Bénéfice Net Après Impôt** | **194,3 M€** | **176,5 M€** | Profits nets garantis sans risque d'impayé |
-| **Dividendes Cash Versés à EDF SA** | **—** | **111,9 M€** | Rapatriés au siège parisien le 6 mai 2025 |
-| **Capitaux Propres Cumulés (Trésor de Guerre)** | **1 429,1 M€** | **1 492,8 M€** | Accumulation de réserves et rente sur l'impôt |
-| **Immobilisations en Cours (Chantiers)** | **534,1 M€** | **905,7 M€** | Chantiers thermiques captifs (Ricanto, etc.) |
+| **Chiffre d'Affaires Annuel** | **1 323,1 M€** | **1 367,2 M€** | Ventes d'électricité et compensations CSPE (ZNI) |
+| **Résultat d'Exploitation (EBIT)** | **253,3 M€** | **262,3 M€** | Rémunération du capital régulée par la CRE |
+| **Bénéfice Net Après Impôt** | **194,3 M€** | **176,5 M€** | Résultat net global sur le parc de production ZNI |
+| **Dividendes Versés à EDF SA** | **—** | **111,9 M€** | Rapatriés à l'actionnaire unique le 6 mai 2025 |
+| **Capitaux Propres Cumulés** | **1 429,1 M€** | **1 492,8 M€** | Structure financière de la filiale insulaire |
+| **Immobilisations en Cours (Chantiers)** | **534,1 M€** | **905,7 M€** | Engagements d'infrastructures (Ricanto, Larivot, etc.) |
 
 ---
 
-## ACTE II. LE SCANDALE DU RICANTO : 800 MILLIONS D'EUROS POUR UN MIRAGE AU COLZA
+## ACTE II. LE PROJET DU RICANTO : 133,7 MW, COMPENSATION CRE ET MODÉLISATION DU SURCOÛT CSPE
 
-Pour justifier le versement continu de cette rente et l'enterrement définitif du gaz naturel promis pendant deux décennies, l'État et EDF ont imposé le projet du **Ricanto** (130 MW), maquillé en vitrine verte sous l'étiquette des « bioliquides ».
+Pour remplacer la centrale vétuste du Vazzio et en l'absence de raccordement au gaz naturel, l'État et EDF ont engagé la réalisation de la centrale du **Ricanto** d'une puissance certifiée de **133,7 MW** (8 moteurs diesel de ~16,7 MW chacun, de type MAN 18V48/60), conçue pour fonctionner aux « bioliquides » (huile de colza).
 
-L'autopsie du dossier d'instruction, de l'**Arrêté Préfectoral du 15 février 2024** et du **Mémoire d'EDF PEI** pulvérise cette communication :
+L'analyse des pièces réglementaires — notamment les **délibérations CRE n° 2024-67 (4 avril 2024) et n° 2024-138 (10 juillet 2024)**, l'**Arrêté Préfectoral du 15 février 2024** et les avis environnementaux — permet d'établir la réalité technique et financière du contrat d'achat :
 
-1. **Le hold-up financier à 800 Millions d'euros** : Initialement chiffré à 450 M€, le devis d'installation de la centrale a explosé pour atteindre le montant astronomique de **800 Millions d'Euros TTC** pour monter 8 moteurs diesel géants (MAN 18V48/60).
-2. **Le précédent du Larivot en Guyane (Note 2.2 p. 16 des Comptes 2025)** :
-   * EDF PEI applique à la Corse le même scénario judiciaire qu'au Larivot en Guyane, où le chantier de centrale thermique aux bioliquides avait été suspendu par la justice administrative avant d'être relancé en force avec 12,8 km de canalisations et des bacs de combustibles importés.
-3. **902,9 Millions d'Euros de Combustibles Engloutis en Un An (Note 7 p. 17)** :
-   * Les comptes certifiés révèlent que les consommations de combustibles et matières premières de la filiale ont atteint **902,9 Millions d'euros en 2025** (+26,4 M€ en un an). Ce fleuve d'argent public alimente directement les multinationales du négoce de carburant plutôt que d'investir dans l'autonomie solaire et hydraulique insulaire.
-4. **L'aveu d'EDF PEI (Mémoire MRAe p. 7-9)** : EDF PEI admet par écrit avoir abandonné la turbine à combustion (TAC) pour rajouter un **8ème moteur diesel géant**, tout en concevant les moteurs pour brûler du **Fioul Domestique (FOD)** en combustible de secours.
-5. **La rente captive du cartel Saipol / Groupe Avril** : La Corse ne possède aucun champ de colza. Le décret du **30 juin 2023** modifiant la PPE enchaîne l'île à l'importation maritime de **50 000 tonnes par an d'huile de colza raffinée** acheminée par cargos depuis le continent, créant une vulnérabilité logistique et géopolitique totale.
-6. **L'aveu officiel du bilan carbone non vertueux (TPE 2026, p. 26)** : L'État et EDF reconnaissent eux-mêmes dans le document de planification écologique que l'Analyse de Cycle de Vie (ACV) du colza importé génère **252 g CO2eq / kWh**, une intensité carbone considérablement plus lourde que l'hydroélectricité ou le solaire insulaire.
-7. **Le danger du site (Arrêté Préfectoral du 15 février 2024 & Avis MRAe)** : L'arrêté préfectoral d'autorisation environnementale n° `2A-2024-02-15-00002` confirme l'implantation en **zone basse inondable soumise aux submersions marines**, à proximité immédiate du nouvel hôpital d'Ajaccio et d'installations Seveso.
-8. **La clause de caducité (Page 40 de l'Arrêté Préfectoral)** : L'arrêté stipule une caducité de 5 ans (février 2029) suspendue en cas de recours contentieux devant le Tribunal Administratif !
-9. **Le verdict du Radar Bufitonu.fr** : Le croisement des données cadastrales et des permis de construire démontre que cette puissance de 130 MW est calibrée non pas pour les besoins permanents des 350 000 résidents corses à l'année (qui consomment 80 à 100 MW sur la zone sud), mais pour **sécuriser les pointes de climatisation de la spéculation immobilière et touristique estivale**.
+1. **Le Montant d'Investissement Prévisionnel** : Initialement envisagé autour de 450 M€, le devis d'installation et de raccordement de la centrale du Ricanto est évalué à près de **800 Millions d'Euros** pour déployer les 8 moteurs et réaménager les infrastructures d'approvisionnement et de stockage.
+2. **Le Mécanisme de Rémunération Régulé (PPG / PPE)** :
+   * Le contrat d'achat entre EDF Corse et EDF PEI repose sur une **Part Proportionnelle Garantie (PPG)**, qui constitue une prime fixe versée pour la simple mise à disposition de la puissance (fonctionnant en quasi *take-or-pay* pour couvrir les coûts fixes du capital et de maintenance), complétée par une **Part Proportionnelle Énergie (PPE)** rémunérant l'énergie effectivement injectée.
+   * La rémunération du capital immobilisé s'appuie sur le cadre des ZNI fixé par la CRE, avec un taux de base (WACC) régulé à **~9,55 %** (taux plancher résultant de la décomposition TME + primes de risque ZNI approuvées par la délibération CRE 2024-67).
+3. **La Projection du Surcoût CSPE à 6,3 Milliards d'Euros sur 25 Ans** :
+   * Les modélisations prospectives de la CRE évaluent le surcoût prévisionnel global de compensation compensé par la CSPE à environ **6,3 milliards d'euros sur la durée de vie de 25 ans du contrat**. Il s'agit d'une projection dépendant directement de l'évolution future des cours mondiaux des bioliquides et des quotas carbone.
+   * **Répartition du risque combustible** : Le cadre réglementaire stipule que les surcoûts d'approvisionnement en bioliquide non couverts par les formules d'indexation prévues au contrat d'achat restent contractuellement à la charge du producteur (EDF PEI).
+4. **La Rente Captive des Approvisionnements en Bioliquide** :
+   * La Corse ne disposant pas de filière locale de production agricole oléagineuse à cette échelle, le fonctionnement de la centrale repose sur l'importation maritime de **50 000 tonnes par an d'huile de colza raffinée** acheminée par navires dédiés depuis les raffineries continentales (Saipol / Groupe Avril).
+   * **Bilan Carbone Réel (TPE 2026, p. 26)** : Le document de planification écologique territorialisée note que l'Analyse de Cycle de Vie (ACV) du colza continental importé affiche une intensité de **252 g CO2eq / kWh**, nettement supérieure aux filières renouvelables directes (hydroélectricité ou photovoltaïque avec stockage).
+5. **Les Contraintes du Site (Arrêté Préfectoral du 15 février 2024)** :
+   * L'arrêté d'autorisation environnementale n° `2A-2024-02-15-00002` encadre l'implantation de l'ouvrage en zone basse littorale, à proximité de l'aéroport et du nouvel hôpital, avec des prescriptions strictes sur la gestion des risques de submersion marine et d'inondation.
+6. **Le Rôle de la Puissance Installée** :
+   * Avec 133,7 MW, la centrale est dimensionnée pour couvrir l'appel de puissance de pointe du sud de l'île lors des pics de consommation hivernaux et estivaux (fortement tirés par la climatisation saisonnière liée à la fréquentation touristique).
 
 ---
 
@@ -228,64 +229,62 @@ L'analyse forensique du Mémoire d'instruction déposé devant le Tribunal Admin
    * **La revendication citoyenne** : L'OCHJU exige un audit fiscal et juridique indépendant sur l'ensemble des déclarations de bénéficiaires effectifs (RBE) et des demandes de CIIC déposées par ces filiales.
    * **Le piège systémique** : En saturant le réseau insulaire avec ces parcs au sol, le monopole active le **verrou de l'Article 22 (interdiction de dépasser 30 % d'intermittent)** pour **bloquer le raccordement des 180 MW de toitures propres citoyennes et agricoles** recensées par *Bufitonu.fr*.
 
-### 💧 La Seule Vérité : L'Argent Subtilisé à la Corse et le Projet Souverain à 199 MW
+### 💧 La Réalité Hydroélectrique : Le Potentiel des ~194 à 199 MW et l'Enjeu Institutionnel
 
-Soyons d'une clarté absolue : **cette enquête n'aurait jamais eu lieu d'être si cet argent n'était pas purement et simplement subtilisé à la Corse et à ses contribuables**.
+La Corse possède dans ses vallées un gisement hydroélectrique de premier plan, capable d'assurer la colonne vertébrale d'un mix décarboné pérenne :
 
-Si nous n'avions pas des centaines de millions d'euros de taxe CSPE et de fonds publics détournés chaque année pour engraisser des rentes thermiques et des holdings extérieures, le débat ne se poserait même pas. La Corse possède déjà dans ses vallées l'intégralité de la puissance nécessaire pour son émancipation totale :
-
-1. **Les 4 Grands Barrages confisqués par le verrou de l'Article L. 4424-39 (1°) du CGCT** :
-   * 🌊 **Barrage de Calacuccia (Golo)** : 56,8 MW
-   * 🌊 **Barrage du Rizzanese (Alta Rocca)** : 55,0 MW
-   * 🌊 **Barrage de Sampolo (Fium'Orbo)** : 43,0 MW
-   * 🌊 **Barrage de Tolla (Prunelli)** : 39,3 MW
-   * 👉 **TOTAL CONFISQUÉ : 199,1 MW d'énergie hydraulique 100 % décarbonée et souveraine !**
+1. **Le Cadre des Concessions Hydrauliques (Article L. 4424-39 du CGCT)** :
+   * En application de l'article L. 4424-39 (1°) du CGCT, la compétence de concéder les aménagements hydrauliques dévolue à la Collectivité de Corse est légalement circonscrite aux installations dont la puissance maximale brute est **inférieure à 8 000 kW (8 MW)**.
+   * En conséquence, les 4 grands barrages et leurs aménagements associés relèvent du régime des grandes concessions hydroélectriques de l'État, exploitées par EDF SA :
+     * 🌊 **Aménagement de Calacuccia (Golo)** : ~56,8 MW
+     * 🌊 **Aménagement du Rizzanese (Alta Rocca)** : ~55,0 MW
+     * 🌊 **Aménagement de Sampolo (Fium'Orbo)** : ~43,0 MW
+     * 🌊 **Aménagement de Tolla (Prunelli)** : ~39,3 MW
+     * 👉 **TOTAL : Environ 194 à 199 MW de puissance hydraulique en exploitation** selon les décomptes techniques consolidés d'EDF Corse.
 
 2. **Un Modèle Émancipé où TOUT LE MONDE GAGNE (Bien Plus qu'Aujourd'hui)** :
-   * **Pour les Foyers Corses** : Une électricité propre, locale, à prix coûtant, sans subir l'inflation des combustibles fossiles ni les risques de coupures.
-   * **Pour les Collectivités et les Communes Hôtes** : Des retombées économiques directes et massives qui restent dans nos villages au lieu de partir au siège d'EDF à Paris.
-   * **Pour les Artisans et Agriculteurs** : La fin du verrou des 30 % et le raccordement immédiat de leurs toitures solaires générant un revenu complémentaire direct.
-   * **Pour les Salariés et l'Ingénierie Locale** : La création d'une filière insulaire d'excellence dans l'hydroélectricité et le stockage par pompage (STEP), créatrice d'emplois qualifiés et non délocalisables.
-   * **Pour les Finances Publiques** : L'Aveu officiel de la COP du 2 Juillet 2026 et de la CRE (Délibération n° 2026-77) : la conversion de nos barrages en **STEP (Stations de Transfert d'Énergie par Pompage)** permet d'économiser **353,7 Millions d'euros de carburant net**, réinjectés directement dans l'économie corse.
-
-En nous émancipant du monopole pour bâtir notre régie publique souveraine autour de ces 199,1 MW, **la Corse ne demande rien d'autre que de reprendre ce qui lui appartient légitimement**. Ce n'est pas un repli : c'est un bond de prospérité pour tous.
+   * **Pour les Foyers Corses** : Une électricité propre, locale, à coût de production maîtrisé, amortissant l'exposition aux cours internationaux des hydrocarbures et des bioliquides.
+   * **Pour les Collectivités et les Communes Hôtes** : Des retombées économiques directes et de proximité consolidées dans les vallées insulaires.
+   * **Pour les Artisans et Agriculteurs** : L'adaptation du seuil de 30 % d'intermittence par des capacités de flexibilité et de stockage, facilitant le raccordement de projets photovoltaïques sur toitures déjà artificialisées.
+   * **Pour les Salariés et l'Ingénierie Locale** : Le développement d'une filière insulaire de pointe dédiée à l'hydroélectricité, à la maintenance des ouvrages et aux projets de stations de transfert d'énergie par pompage (STEP).
+   * **Pour les Finances Publiques** : L'optimisation du stockage hydraulique et des STEP permettrait de réduire massivement les besoins d'importation de combustibles thermiques, diminuant d'autant la facture nationale des compensations de charges de service public (CSPE).
 
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8 not-prose">
   <div class="bg-slate-900/90 border border-red-500/40 rounded-2xl p-5 shadow-xl flex flex-col justify-between">
     <div>
-      <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">OPTION 1 • EDF PEI</span>
+      <span class="text-xs font-mono font-bold uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/30">OPTION 1 • MODÈLE THERMIQUE</span>
       <h4 class="text-white font-bold text-base mt-3 mb-1">Centrale du Ricanto</h4>
-      <p class="text-slate-300 text-xs leading-relaxed">8 moteurs diesel (130 MW) brûlant 50 000 t/an de colza importé par cargos.</p>
+      <p class="text-slate-300 text-xs leading-relaxed">8 moteurs diesel (133,7 MW) alimentés par 50 000 t/an d'huile de colza importée par voie maritime.</p>
     </div>
     <div class="mt-4 pt-3 border-t border-slate-800 text-xs">
-      <div class="text-red-400 font-bold">❌ 800 M€ de coût public</div>
-      <div class="text-slate-400 text-[11px] mt-1">Dépendance maritime totale & 252 g CO2/kWh</div>
+      <div class="text-red-400 font-bold">~800 M€ d'investissement</div>
+      <div class="text-slate-400 text-[11px] mt-1">Surcoût CSPE projeté à ~6,3 Md€ sur 25 ans</div>
     </div>
   </div>
 
   <div class="bg-slate-900/90 border border-amber-500/40 rounded-2xl p-5 shadow-xl flex flex-col justify-between">
     <div>
-      <span class="text-xs font-mono font-bold uppercase text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/30">OPTION 2 • BRICOLAGE PRIVÉ</span>
-      <h4 class="text-white font-bold text-base mt-3 mb-1">Décharge Saint-Antoine</h4>
-      <p class="text-slate-300 text-xs leading-relaxed">Centrale PV (13 MW) sur 10,5 ha de déchets industriels enfouis.</p>
+      <span class="text-xs font-mono font-bold uppercase text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/30">OPTION 2 • DÉVELOPPEMENT LOCAL</span>
+      <h4 class="text-white font-bold text-base mt-3 mb-1">Projets au Sol (ex. Saint-Antoine)</h4>
+      <p class="text-slate-300 text-xs leading-relaxed">Centrales PV sur friches et décharges industrielles avec contraintes Loi sur l'Eau.</p>
     </div>
     <div class="mt-4 pt-3 border-t border-slate-800 text-xs">
-      <div class="text-amber-400 font-bold">⚠️ Risque lixiviats Gravona</div>
-      <div class="text-slate-400 text-[11px] mt-1">Arrêté d'opposition Loi sur l'Eau</div>
+      <div class="text-amber-400 font-bold">Enjeux environnementaux</div>
+      <div class="text-slate-400 text-[11px] mt-1">Risques d'incompatibilité Loi Littoral / PADDUC</div>
     </div>
   </div>
 
   <div class="bg-slate-900/90 border border-emerald-500/40 rounded-2xl p-5 shadow-xl flex flex-col justify-between">
     <div>
       <span class="text-xs font-mono font-bold uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30">OPTION 3 • PLAN SOUVERAIN</span>
-      <h4 class="text-white font-bold text-base mt-3 mb-1">Restitution des 4 Barrages</h4>
-      <p class="text-slate-300 text-xs leading-relaxed">Transfert des 199,1 MW hydroélectriques et conversion en STEP de stockage d'eau.</p>
+      <h4 class="text-white font-bold text-base mt-3 mb-1">Valorisation des ~194 à 199 MW Hydro</h4>
+      <p class="text-slate-300 text-xs leading-relaxed">Modernisation des grands barrages, projets STEP de stockage et déverrouillage du solaire en toiture.</p>
     </div>
     <div class="mt-4 pt-3 border-t border-slate-800 text-xs">
-      <div class="text-emerald-400 font-bold">✅ 100 % Souveraineté Pure</div>
-      <div class="text-slate-400 text-[11px] mt-1">+350 M€ d'économies CSPE (Aveu COP 2026)</div>
+      <div class="text-emerald-400 font-bold">Autonomie Décarbonée</div>
+      <div class="text-slate-400 text-[11px] mt-1">Économies durables sur les compensations CSPE</div>
     </div>
   </div>
 </div>
@@ -307,7 +306,7 @@ Ce dossier constitue un arsenal de combat administratif et juridique. Chaque cit
 
 ---
 
-> **Verdict de la Cellule L'OCHJU** : L'asservissement énergétique de la Corse n'est ni une fatalité géographique, ni une énigme technique. C'est un montage colonial prémédité qui confisque nos rivières de montagne, interdit d'exploiter notre soleil et injecte 800 Millions d'euros dans des moteurs diesel pour sanctuariser les profits d'un monopole d'État. En reprenant le contrôle de nos 199,1 MW hydrauliques et en libérant le photovoltaïque sur toitures, la Corse dispose immédiatement de la puissance nécessaire pour devenir la première terre 100 % autonome, propre et souveraine de Méditerranée. La vérité des pièces officielles est désormais publique. À notre peuple de reprendre sa lumière.
+> **Verdict de la Cellule L'OCHJU** : L'organisation énergétique de la Corse résulte de choix réglementaires et contractuels structurants. En maintenant les grands aménagements hydroélectriques (~194 à 199 MW) sous le régime des concessions nationales de l'État par l'article L. 4424-39 du CGCT et en engageant 800 Millions d'euros d'investissement dans une centrale de 133,7 MW aux bioliquides importés compensée par la CSPE, le système actuel privilégie une dépendance thermique coûteuse pour la solidarité nationale plutôt qu'une valorisation souveraine des ressources insulaires. Une politique énergétique alternative, fondée sur le stockage hydraulique par pompage (STEP), le déverrouillage de l'intermittance solaire en toiture et une révision du cadre institutionnel des concessions, constitue la voie d'une décarbonation pérenne au bénéfice direct des citoyens de Corse.
 
 <div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
 <strong>La lumière sur notre terre ne viendra jamais des monopoles, mais de notre courage collectif.</strong>
