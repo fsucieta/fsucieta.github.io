@@ -1,15 +1,15 @@
 ---
 id: 27
-title: "Téléphérique 'Angelo' (Partie 1/2) — Le mirage à 52 M€ et la rente privée au détriment du réseau public"
-subtitle: "Asphyxie financière, rente POMA et casse sociale : révélations sur la stratégie d'État pour sacrifier la régie publique au profit d'un géant privé national."
+title: "Téléphérique 'Angelo' (Partie 1/2) — Le Mirage Financier et la Rente d'Exploitation Privée"
+subtitle: "Chantier à 38,3 M€, rente d'exploitation POMA de 23,9 M€ sur 10 ans et déficit structurel : radiographie financière du téléporté urbain face à la crise des transports publics ajacciens."
 category: "INFRASTRUCTURES & POUVOIR"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P1"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Août 2026"
-tool: "DGFiP / PTIC / MRAe / Registres du Commerce / DUP Préfecture"
-chapeau: "Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain 'Angelo' à 52 millions d'euros TTC dissimule l'un des montages les plus éclairants du capitalisme d'État. Enquête exclusive sur une triangulation parfaite entre le parti Horizons, la Caisse des Dépôts et un géant industriel privé."
-math: "\\text{Indice d'Engrenage Systémique (IES)} = \\frac{\\text{Subvention PTIC (26,7 M€)} + \\text{Rente Concession POMA (23,89 M€)}}{\\text{Taux de Remplissage Effectif constatés (RUP < 18\\%)}} \\times 100"
+tool: "DGFiP / PTIC / MRAe / Registres du Commerce / DUP Préfecture / ROB CAPA 2025 / angelo.corsica"
+chapeau: "Inauguré en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain 'Angelo' représente 38,26 millions d'euros de travaux et 23,89 millions d'euros d'exploitation sur dix ans. L'examen des registres de la DUP, du site officiel angelo.corsica et du Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA révèle un montage emblématique : un investissement porté à 70 % par le PTIC (État) complété par le FEDER, mais grevé d'un déficit d'exploitation structurel garanti à un groupement industriel privé pendant que le réseau de bus historique subit la rigueur."
+math: "\\text{Indice d'Engrenage Systémique (IES)} = \\frac{\\text{Subvention PTIC (70\\%)} + \\text{Rente Concession POMA (23,89 M€)}}{\\text{Taux de Couverture des Recettes (FAQ officielle } \\approx 20\\%)} \\times 100"
 image: "img_enquete_27.webp"
 imageCaption: "📷 Pièce Administrative Officielle Vieillie — Arrêté Préfectoral de DUP n° 2A-2023-12-04-00001 (Téléporté Urbain Angelo | Préfecture de Corse-du-Sud)"
 sources:
@@ -17,6 +17,10 @@ sources:
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/12343/79095/file/A%20P%20de%20DUP%20du%20t%C3%A9l%C3%A9port%C3%A9%20et%20MEC%20PLU%20.pdf"
     pdfDirect: "../docs/A-P-de-DUP-du-teleporte-et-MEC-PLU-.pdf"
     sha256: "7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e"
+  - name: "CAPA / Ville d'Ajaccio : Rapport d'Orientation Budgétaire (ROB) 2025 (Transports & Engagements Téléporté)"
+    url: "../docs/rob-2025-capa-ajaccio.pdf"
+    pdfDirect: "../docs/rob-2025-capa-ajaccio.pdf"
+    sha256: "17bb396ce208c90333cb92b19280d9eb4f79624505f963a7d4d440ad6efc4ff6"
   - name: "Commissaire Enquêteur : Rapport d'Enquête Publique Intégral du 14 Août 2023 (17,09 Mo)"
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11931/76213/file/140823%20-%20Rapport%20d%27enqu%C3%AAte%20et%20annexes.pdf"
     pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11931/76213/file/140823%20-%20Rapport%20d%27enqu%C3%AAte%20et%20annexes.pdf"
@@ -25,13 +29,9 @@ sources:
     url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11932/76218/file/150823%20-%20Recueil%20des%20conclusions%20et%20avis.pdf"
     pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11932/76218/file/150823%20-%20Recueil%20des%20conclusions%20et%20avis.pdf"
     sha256: "4a8e9d2b1f0c3e7a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a"
-  - name: "Préfecture de Corse-du-Sud : Arrêté de Cessibilité et Servitudes SUP (0,49 Mo)"
-    url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/12392/79373/file/AP%20de%20cessibilite%CC%81%20et%20de%20SUP-t%C3%A9l%C3%A9port%C3%A9_modif.pdf"
-    pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/12392/79373/file/AP%20de%20cessibilite%CC%81%20et%20de%20SUP-t%C3%A9l%C3%A9port%C3%A9_modif.pdf"
+  - name: "Site Officiel Angelo (CAPA) : Données Clés, Coûts Révisés & FAQ Institutionnelle"
+    url: "https://angelo.corsica/"
     sha256: "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
-  - name: "Préfecture de Corse-du-Sud : Arrêté d'Ouverture d'Enquête Publique du 10 Mai 2023 (2,28 Mo)"
-    url: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11409/72784/file/AP%20enqu%C3%AAte%20publique_projet%20ANGELO%20t%C3%A9l%C3%A9cabine%20Ajaccio.pdf"
-    pdfDirect: "https://www.corse-du-sud.gouv.fr/contenu/telechargement/11409/72784/file/AP%20enqu%C3%AAte%20publique_projet%20ANGELO%20t%C3%A9l%C3%A9cabine%20Ajaccio.pdf"
 ---
 
 > 🔗 **GRAND DOSSIER TRANSPORTS AJACCIENS (VOLET 1/2)** :  
@@ -42,71 +42,70 @@ sources:
 
 ## 💡 CHAPEAU
 
-Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain « Angelo » à 52 millions d'euros TTC dissimule l'un des montages les plus éclairants du capitalisme d'État contemporain. Derrière la vitrine écologique d'une infrastructure aérienne, l'analyse médico-légale des 86 pages de l'arrêté préfectoral de DUP et des comptes de la Communauté d’Agglomération du Pays Ajaccien (CAPA) révèle une stratégie à double détente : ériger un totem politique régalien tout en organisant l'asphyxie financière de la régie publique historique (SPL Muvitarra) pour offrir le marché des transports d'Ajaccio à un géant privé national.
+Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain « Angelo » représente une commande publique globale dépassant les 60 millions d'euros : **38,26 millions d'euros pour la construction** et **23,89 millions d'euros d'exploitation-maintenance sur 10 ans**. Derrière la vitrine écologique d'une liaison par câble, l'analyse médico-légale de l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001, du site officiel *angelo.corsica* et du Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA met en lumière une contradiction économique majeure : un investissement couvert à 70 % par des fonds publics d'État (PTIC) pour un équipement structurellement déficitaire, dont la redevance privée est sanctuarisée tandis que le réseau public de bus subit la rigueur.
 
 ---
 
-## ACTE I. L'ALLIANCE D'ÉTAT & LA FICHE TECHNIQUE SANS USAGERS
+## ACTE I. LA TRAJECTOIRE BUDGÉTAIRE RÉELLE : DE 35 M€ À 38,26 M€ DE CHANTIER
 
-Sur le papier, le téléphérique urbain « Angelo » est présenté comme un chef-d'œuvre de mobilité décarbonée. L'examen du dossier officiel visé par l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001 en fixe le périmètre exact : une ligne monocâble débrayable à propulsion électrique de **2,9 km**, la pose de **19 pylônes d'ancrage en milieu naturel** (d'une hauteur de 5 à 30 mètres, dont 6 implantés à proximité immédiate des gares) et l'aménagement de **4 stations au total** (Saint-Joseph, Stiletto, Mezzavia et une 4ème station intermédiaire créée au lieu-dit « Château d'eau » sur l'ancien terrain militaire pour desservir la partie haute du site).
+L'examen minutieux des délibérations et des fiches contractuelles d'Angelo permet d'établir la trajectoire financière réelle du marché de construction :
+* **2019** : Première estimation budgétaire annoncée autour de **35 millions d'euros HT**.
+* **2022** : Marché global de conception-réalisation-exploitation-maintenance (CREM) attribué pour un montant initial de travaux de **34,64 M€ HT** (environ 36,01 M€ lors des notifications initiales).
+* **2024-2025** : Le coût définitif de réalisation est arrêté à **<mark class="forensic-highlight">38 263 571 €</mark>** après révision des prix, actualisation et avenants techniques (donnée certifiée sur le site officiel *angelo.corsica* et sa FAQ).
 
-Pourtant, les études de fréquentation indépendantes ont immédiatement démontré l'aberration du tracé. Le projet d'Angelo n'a jamais obéi à une logique de transport pour les usagers : il est avant tout **le marqueur politique d'une alliance d'État entre Édouard Philippe et Laurent Marcangeli**. Pour imposer le parti Horizons comme le pôle de stabilité républicain en Corse, il fallait doter son homme fort d'une vitrine d'ingénierie moderne.
-
-C'est ainsi que l'État central accorde un taux de subvention inédit de **70 % via les crédits du Plan de Transformation et d'Investissement pour la Corse (PTIC)**, complétés par plus de 6 millions d'euros de fonds européens FEDER. La plume de ce montage a été directement rédigée au sein du pôle transports/écologie de Matignon par les conseillers techniques de l'ombre (Damien Cazé, Jimmy Brun), sanctuarisant 26,7 millions d'euros de fonds publics d'État pour un projet contesté par l'ensemble des experts.
-
----
-
-## ACTE II. LA TRIANGULATION RÉGALIENNE & LA RENTE CAISSE DES DÉPÔTS / POMA
-
-Comment ce projet de 35 millions d'euros HT à l'origine a-t-il pu franchir la barre des **52,4 millions d'euros TTC**, assorti d'un contrat d'exploitation de 23,89 millions d'euros sur 10 ans ? 
-
-Le rapport d'enquête publique de 86 pages répertorié au registre préfectoral confirme que l'instruction a été conduite durant 32 jours consécutifs (du 30 mai au 30 juin 2023) par **M. Gérard PERFETTINI**, Commissaire Enquêteur titulaire désigné par le Président du Tribunal Administratif de Bastia. Si l'avis rendu a été favorable à la DUP, le Commissaire Enquêteur l'a assorti de deux réserves administratives strictes et de trois recommandations relatives à la sécurité et à la stricte continuité d'intermodalité avec les transports de surface.
-
-Le marché attribué en **Conception-Réalisation-Exploitation-Maintenance (CREM)** réunit le constructeur grenoblois **POMA** et la société d'ingénierie **Egis Rail**. Or, l'analyse des registres d'actionnariat révèle un conflit d'intérêts institutionnel majeur :
-1. **La Caisse des Dépôts (via la Banque des Territoires)** conseille, prête et subventionne la collectivité d'Ajaccio (CAPA).
-2. **La même Caisse des Dépôts est l'actionnaire majoritaire à 75 % d'Egis Rail**, le co-traitant privé qui rédige les spécifications, conçoit le projet et perçoit les honoraires d'ingénierie aux côtés de POMA !
-
-L'institution financière d'État se trouve ainsi des deux côtés de la table : elle valide les prêts publics d'un côté tout en encaissant les bénéfices de la maîtrise d’œuvre privée de l'autre. Le contrat signé garantit à la **SECA** (filiale à 100 % de POMA) une redevance fixe annuelle de **2,38 millions d'euros par an pendant 10 ans (23,89 M€ HT)**. Avec un taux de remplissage effectif qui plafonne sous les **18 %** (les usagers refusant la rupture de correspondance en bus), le déficit net d'exploitation dépasse **1,98 million d'euros par an**, soit une facture indirecte de **815,50 euros par foyer fiscal ajaccien**.
+### Le Montage Financier de la Construction :
+1. **Le Plan de Transformation et d'Investissement pour la Corse (PTIC)** : L'État central a apporté un soutien exceptionnel à hauteur de **70 % de l'investissement subventionnable**, soit environ **26,7 millions d'euros**.
+2. **La Sollicitation du FEDER (Fonds Européens)** : Une subvention européenne de **6,01 millions d'euros** a été sollicitée sur une assiette éligible de 34,64 M€ HT, avec pour objectif explicite de **réduire le reste à charge direct de la communauté d'agglomération (CAPA)**.
+3. **Le Financement Résiduel CAPA** : La part locale d'autofinancement et d'emprunt a été calibrée autour de **30 %** du coût initial hors aides européennes.
 
 ---
 
-## ACTE III. LES COULISSES DU TRACÉ : SURCOÛTS, FONCIER & VERROU ADMINISTRATIF
+## ACTE II. LE CONTRAT D'EXPLOITATION POMA & LE DILEMME DE LA RENTABILITÉ
 
-Sur le terrain, l'exécution du tracé a donné lieu à une cascade de surcoûts et d'arrangements fonciers passés sous silence :
-- **La pollution du site militaire de Saint-Joseph** : Les terrassements de la station aval ont mis au jour une pollution aux hydrocarbures sur le parc à mazout militaire, imposant des fondations sur pieux profonds (**+2,4 millions d'euros d'avenants**).
-- **L'héliportage du Mont Sant’Anghjulu** : Pour ancrer les pylônes P5 à P12 dans le massif escarpé dépourvu d'accès routier, le groupement a mobilisé des hélicoptères bi-turbines lourds (Super Puma), générant un surcoût d'acheminement supérieur à **450 000 euros**.
-- **L'acquisition d'urgence de la Scierie Viguier** : Au Stiletto, le déblocage de la station intermédiaire a nécessité le rachat précipité du terrain privé de la scierie Viguier pour éviter un blocage judiciaire, créant une **dette foncière d'urgence de 3 millions d'euros**.
-- **Le piège des servitudes SUP de survol** : Par arrêté du 4 décembre 2023, la Préfecture a imposé des Servitudes d'Utilité Publique de survol autorisant le passage permanent des cabines au-dessus des villas privées, imposant des contraintes au PLU sans indemnisation décente.
-- **La stratégie d'étanchéité des registres citoyens** : L'arrêté d'ouverture du 10 mai 2023 révèle que la Préfecture a créé deux registres dématérialisés étanches (**n° 4664 pour la DUP/PLU** et **n° 4665 pour les expropriations parcellaires**), cloisonnant sciemment la contestation des propriétaires fonciers survolés et celle des usagers des transports.
-- **L'imbrication foncière du Stiletto** : L'Article 5 de l'Arrêté Préfectoral de DUP a imposé à la CAPA des mesures d'évitement concernant la **Tortue d'Hermann**, tout en révélant (page 3) que le tracé s'interconnecte directement avec les intérêts immobiliers du secteur : l'arrêté du 27 janvier 2021 avait accordé une dérogation d'espèces protégées au programme de la SCCV « Les Terrasses du Stiletto », porté par **un grand groupe BTP et promoteur immobilier privé très influent au niveau régional**.
+À côté des 38,26 M€ de travaux s'ajoute le volet exploitation-maintenance (O&M) du marché CREM :
+* La collectivité s'est engagée sur un contrat décennal d'un montant de **23 892 840 € HT sur 10 ans** (soit environ **2,39 millions d'euros par an**).
+* Ce contrat est confié à une société d'exploitation locale dont l'actionnaire de référence est le constructeur de transport par câble **POMA**, assisté pour l'ingénierie par **Egis Rail** (filiale à 75 % de la Caisse des Dépôts, laquelle est par ailleurs le financeur et conseil institutionnel des collectivités).
 
----
-
-## ACTE IV. LA FAILLITE DU CONTRÔLE DE LÉGALITÉ ET LE CHEVAL DE TROIE SUR LA MUVITARRA
-
-Comment un tel engrenage a-t-il pu être validé par les autorités de tutelle ?
-Durant son mandat (2020-2022), le Préfet de Corse **Pascal Lelarge** s'est illustré par un contrôle de légalité d'une sévérité extrême sur les affaires locales. Pourtant, c'est sous sa signature que les conventions d'adossement des 70 % de subventions d'État du PTIC ont été validées sans la moindre objection sur le risque financier. En parallèle, la **Chambre Régionale des Comptes (CRC)** de la Corse est restée silencieuse durant la phase de montage, n'émettant aucune alerte préventive sur le glissement budgétaire (de 35 M€ HT à 52,4 M€ TTC) ni sur le transfert de charge vers la SECA.
-
-C'est sur ce terrain fragilisé qu'a été orchestrée l'asphyxie de la **Société Publique Locale (SPL) Muvitarra**. Historiquement à l'équilibre financier, la régie publique a été délibérément étranglée par la CAPA. Pour absorber la redevance fixe de 2,38 M€/an due au concessionnaire POMA/SECA et financer les obligations de l'arrêté préfectoral (notamment la création d'une voie de bus en site propre achevée récemment), la collectivité a appliqué des retenues financières arbitraires et sabré le budget de fonctionnement des bus de quartier.
+### La Contradiction Chiffrée de la Fréquentation :
+Le dossier d'enquête publique et les déclarations de lancement mettaient en avant un seuil de rentabilité théorique estimé à **~3 800 voyages par jour**.  
+Or, l'analyse des projections budgétaires d'exploitation révèle une réalité tout autre :
+* Les prévisions de recettes de billetterie n'ont été modélisées que sur une hypothèse de **3 000 voyages par jour**.
+* La FAQ institutionnelle de la CAPA reconnaît elle-même sans fard la règle générale des transports collectifs urbains : les recettes tarifaires ne couvrent qu'environ **20 % des dépenses d'exploitation**, les 80 % restants étant à la charge intégrale de la collectivité et des contribuables.
+* Avec une fréquentation effective qui peine à décoller sur les premiers mois d'exploitation en raison de ruptures de correspondance avec les quartiers périphériques, le déficit d'exploitation annuel dépasse **1,9 million d'euros**, absorbé par le budget transport de la collectivité.
 
 ---
 
-## ACTE V. LE CRASH SOCIAL DE DÉCEMBRE 2025 ET LE PIÈGE DE LA PRIVATISATION
+## ACTE III. LES ALÉAS DU TRACÉ ET L'ENQUÊTE PUBLIQUE
 
-La démonstration matérielle de cette asphyxie budgétaire a éclaté au grand jour le **2 décembre 2025** lors de la grève générale et illimitée qui a paralysé le réseau Muvistrada. Dès septembre 2024, la CAPA avait dénoncé unilatéralement les accords d'entreprise des salariés de la SPL Muvitarra, imposant un ultimatum couperet au 27 décembre 2025 pour sabrer les avantages sociaux des conducteurs et agents de maintenance, qualifiés d'« insoutenables financièrement » par la collectivité.
+Le tracé aérien de **2,7 km** (souvent arrondi à ~3 km selon les accès aux stations) relie Saint-Joseph à Mezzavia via **19 pylônes** et **4 stations** (Saint-Joseph, Stiletto, Mezzavia et la station intermédiaire Château d'eau).
 
-Or, au moment exact où la CAPA prétextait une rigueur budgétaire pour imposer une baisse de pouvoir d'achat aux salariés de la régie publique, elle versait sans sourciller la rente garantie de **2,38 M€/an au concessionnaire privé POMA/SECA** pour des cabines aériennes tournant quasi à vide. Après des semaines d'occupation du dépôt du Vazzio et de barrages filtrants menés par le STC, la CGT et FO, la CAPA décrétera en urgence la gratuité du réseau jusqu'au 5 janvier 2026.
-
-*L'analyse juridique d'investigation* : Si la collectivité a le droit formel d'indemniser un préjudice d'usagers, l'octroi d'une telle gratuité massive financée sur les deniers publics à quelques mois des échéances municipales de mars 2026 frôle la frontière de l'**Article L. 52-1 (alinéa 2) du Code électoral**, qui interdit l'utilisation des moyens publics à des fins de promotion de l'exécutif en période pré-électorale. 
-
-Cette manœuvre d'apaisement vise à masquer la véritable feuille de route : dissoudre la régie publique pour basculer vers une **Délégation de Service Public (DSP) privée**. Si ce marché est emporté par un **géant privé national** du transport, l'argent des contribuables ajacciens repartira massivement sur le continent. Ajaccio s'apprête ainsi à subir le bégaiement de l'histoire et le désastre déjà connu avec le groupe **Transdev**, qui était reparti avec pertes et fracas grâce à la mobilisation des syndicalistes historiques préservant la maîtrise publique.
-
----
-
-## 📊 ANNEXE FINANCIÈRE & FORMULE D'INVESTIGATION
-
-$$\text{Indice d'Engrenage Systémique (IES)} = \frac{\text{Subvention PTIC (26,7 M€)} + \text{Rente Concession POMA (23,89 M€)}}{\text{Taux de Remplissage Effectif constatés (RUP < 18\%)}} \times 100$$
+Sur le terrain, plusieurs aléas techniques et contraintes d'insertion ont émaillé le chantier :
+* **Le parc de l'ancien site militaire de Saint-Joseph** : Des poches de pollution aux hydrocarbures liées aux anciens dépôts ont nécessité des terrassements spécifiques et des fondations renforcées par pieux forés.
+* **Les contraintes environnementales et topographiques** : L'Article 5 de l'arrêté préfectoral de DUP a imposé des protocoles stricts d'évitement pour la **Tortue d'Hermann**, tandis que l'implantation sur les crêtes escarpées de Sant'Anghjulu a nécessité des héliportages de précision.
+* **Les Servitudes d'Utilité Publique (SUP)** : Par arrêté du 4 décembre 2023, la Préfecture a instauré des servitudes de survol réglementant l'espace aérien au-dessus des parcelles privées situées dans l'axe des câbles.
+* **Le Rapport de l'Enquête Publique** : Conduit par M. Gérard Perfettini du 30 mai au 30 juin 2023, le rapport a délivré un avis favorable assorti de deux réserves et trois recommandations, soulignant avec insistance que le succès de l'infrastructure dépendait d'une **intermodalité fluide et sans surcoût avec les lignes de bus urbaines**.
 
 ---
 
-> **Verdict de la Cellule L'OCHJU** : Près d'un an après son inauguration, le téléphérique « Angelo » apporte la preuve matérielle qu'il ne constitue pas un véritable service public de transport : les citoyens n'y trouvent aucunement leur compte et les cabines tournent à vide. Pourtant, la CAPA impute l'intégralité du budget d'exploitation d’Angelo dans le budget des transports urbains au détriment des bus de proximité. Angelo est l'illustration d'un capitalisme d'État contemporain où les fonds publics financent une vitrine politique et une rente d'exploitation privée, pendant que les salariés de Muvitarra sont précarisés et que les contribuables ajacciens assument le déficit.
+## ACTE IV. LE ROB CAPA 2025 ET LE CONSTRASTE AVEC LE RÉSEAU PUBLIC DE BUS
+
+Le **Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA** permet de mesurer l'impact de ce choix d'investissement sur l'ensemble de la politique communautaire de transport :
+* Dans un contexte budgétaire où la collectivité affiche la nécessité d'une modération des charges et d'une gestion serrée des dépenses de fonctionnement, **le téléphérique Angelo est sanctuarisé hors des plans d'économies**.
+* La redevance annuelle d'exploitation due au titulaire privé du marché CREM constitue une dépense obligatoire et incompressible de près de **2,4 M€ par an**.
+* Cette contrainte pèse directement sur les marges de manœuvre allouées à la régie publique historique **SPL Muvitarra**, exploitante du réseau de bus de l'agglomération, confrontée au vieillissement de son parc de véhicules et à des tensions sociales aiguës autour du maintien de ses équilibres de gestion.
+
+---
+
+## 📊 ANNEXE FINANCIÈRE : SYNTHÈSE DES CHIFFRES CERTIFIÉS
+
+| Poste Budgétaire | Montant Certifié | Source Officielle | Clé de Financement / Constat |
+| :--- | :--- | :--- | :--- |
+| **Travaux de Construction (Infrastructures & Cabines)** | **38 263 571 €** | Site officiel *angelo.corsica* / DUP | ~70 % PTIC (État) + ~30 % CAPA (dont FEDER 6,01 M€ demandé) |
+| **Exploitation & Maintenance (O&M - 10 ans)** | **23 892 840 € HT** | Marché CREM / CAPA | Société locale POMA / Egis Rail (~2,39 M€/an) |
+| **Seuil Théorique d'Équilibre Affiché** | **~3 800 voy./jour** | Dossier d'Enquête Publique | Hypothèse haute de communication initiale |
+| **Fréquentation Budgétée en Recettes** | **~3 000 voy./jour** | Projections d'Exploitation | Écart structurel de modélisation financière |
+| **Taux de Couverture des Dépenses par la Billetterie** | **~20 %** | FAQ officielle *angelo.corsica* | **Déficit d'exploitation structurel d'environ 80 % à charge publique** |
+
+---
+
+> **Verdict de la Cellule L'OCHJU** : L'examen des pièces officielles ramène le téléphérique Angelo à sa juste réalité : un investissement de construction de 38,26 M€ (très largement financé par l'État via le PTIC à 70 %) combiné à un contrat d'exploitation de 23,89 M€ sur 10 ans. Mais l'enjeu citoyen fondamental demeure entier : en engageant la collectivité sur une dépense d'exploitation annuelle incompressible d'environ 2,4 M€ pour un équipement qui ne couvre que 20 % de ses coûts, les décideurs ont créé une rente contractuelle sanctuarisée au détriment du réseau de bus historique Muvitarra, dont les usagers des quartiers d'Ajaccio paient aujourd'hui le prix fort en termes de fréquences et de dessertes.
