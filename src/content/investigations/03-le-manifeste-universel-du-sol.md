@@ -44,224 +44,139 @@ sources:
     sha256: "2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c"
 ---
 
-## ⚡ CLINICAL FINDING : THE ONLY MEDITERRANEAN ISLAND STRIPPED OF LAND DEFENSE
+## 1. THE FIELD REALITY : LAND DISPROPORTION & HOUSING STRAIN
 
-The core issue comes down to a brutal reality that every Corsican family experiences: **today, a young worker earning an average wage on the island can no longer buy a home on the soil where ancestors rest.**
+The core issue stems from an acute daily challenge experienced by island families and young workers: **accessing homeownership or finding year-round housing with average local earnings has become a massive obstacle due to external property speculation.**
 
-This phenomenon is not an unavoidable economic fate or mere supply and demand. It is the mechanical outcome of a legal framework kept wide open to external speculation:
+This reality reflects a deep structural imbalance between local purchasing power and tourist market pressures:
 
-Corsica now records an average of **38% secondary homes**, a figure that skyrockets across the littoral zone to reach **82% in Coti-Chiavari**, over **75% in Porto-Vecchio, Lecci, and Bonifacio**, and over **70% in Lumio or Saint-Florent**. In these micro-regions, shutters remain closed ten months out of twelve while local youth are forced deeper into the interior or forced into exile.
+Corsica currently averages **nearly 38% secondary residences**, a figure climbing above **70% to 80% across several coastal municipalities** (Porto-Vecchio, Bonifacio, Lecci, Lumio, Coti-Chiavari). Throughout most of the year, numerous homes sit shuttered while permanent residents struggle to secure housing commensurate with local wages.
 
-The mathematical chasm is staggering: while median household income in Corsica stalls at **€1,700 per month** — placing the island among territories with the highest monetary poverty rates under French administration —, coastal property prices range between **€5,000 and €10,000 per square meter**. In practice, even with two stable salaries and permanent contracts, a Corsican couple can borrow at most €200,000 — the price of a modest 25m² studio —, facing external buyers and corporate holdings wiring cash for villas exceeding €800,000.
+The financial gap is substantial: while median household income in Corsica ranks among the lowest in France (~€1,700 to €1,800/month), coastal real estate values frequently trade between €4,000 and over €7,000 per square meter. Facing cash-rich non-resident buyers or real estate civil companies (SCIs), local working households are mechanically priced out of the residential market.
 
-Each year, more than **one billion euros in real estate transactions** bypass the local productive economy, generating zero sustainable jobs and organizing the systematic displacement of the resident population.
+When insular elected officials demand protective safeguards — conditioning real estate acquisitions upon verified continuous primary residency —, state representatives routinely counter that such measures breach constitutional equality and European free movement of capital (Article 63 TFEU).
 
-And when the Corsican people and their elected representatives demand the most basic safeguard — *« To purchase property in full ownership, one must prove at least 5 years of continuous primary residency »* —, the French state issues a categorical refusal, alleging that this status would be « contrary to republican equality and forbidden by European law ».
-
-**This is a state lie.**  
-From Malta to Finland, from Denmark to Polynesia, and into the heart of the Swiss and Austrian Alps, all peoples facing external financial pressure have engraved strict land locks into their laws with the full endorsement of Europe and Constitutional Courts.
-
-Corsica is today **the single island community in Europe that its own sovereign state deliberately refuses to protect**. Here are the official treaties, constitutional jurisprudence, and parliamentary acts establishing the facts.
+Yet a rigorous comparative analysis demonstrates that **numerous European and island jurisdictions already enforce legitimate and permanent statutory derogations** to protect permanent housing.
 
 ---
 
-## 🌊 ACT I. EUROPEAN TOUR OF LAND RIGHTS : THE 5 CITADELS PARIS CONCEALS
+## 2. EUROPEAN DEROGATIONS : WHAT EU LAW ALREADY PERMITS
 
-The French government and prefects assert that EU primary law (Article 63 TFEU guaranteeing free movement of capital) prohibits real estate purchase restrictions. **This is false. The European Union has granted major and permanent derogations to all states with the political courage to demand them.**
-
-![Infographic : Land Rights in Europe](/infographie_comparatif_europe_03.jpg)
+Contrary to the assumption that European Union law mandates unrestricted real estate deregulation, several Member States negotiated and secured explicit treaty safeguards:
 
 ### 1. Malta : Protocol No. 6 to the 2003 Accession Treaty
-Malta (500,000 inhabitants, full EU and Eurozone member) established a non-negotiable accession condition in 2003:
-* **The 5-Year Uninterrupted Rule**: No French, German, or Italian citizen can acquire a secondary residence in Malta unless legally and continuously resident for **at least 5 years**.
-* **The Prohibitive Financial Ceiling**: Even for a resident of over 5 years, a non-Maltese may buy only one property, and only if exceeding elevated minimum price thresholds set by the Maltese state to protect local first-time buyers.
-* **Legal Grounding Validated by Brussels**: The EU expressly recognized that on an island with limited land, an unconstrained open market would cause the mechanical expulsion of the native population.
+Malta, a sovereign Mediterranean island state and full EU member, secured a permanent safeguard upon accession:
+* **The 5-Year Continuous Residency Rule**: Citizens of other Member States cannot acquire a secondary residence in Malta unless they have legally resided on the island for **at least five consecutive years**.
+* **Recognition of Island Constraints**: The European Union explicitly acknowledged that on small island territories with limited land supply, unconstrained markets would displace local populations.
 
-### 2. Åland Islands : Protocol No. 2 to the 1994 Accession Treaty
-Swedish-speaking autonomous archipelago affiliated with Finland (30,000 inhabitants):
-* **The Right of Domicile (*Hembygdsrätt*)**: No one can purchase land, an apartment, or hold shares in a real estate company without local citizenship status (*Hembygdsrätt*).
-* **Attribution Conditions**: 5 years of continuous residency, proficiency in the local language, and prior authorization from the autonomous Government of Åland.
-* **Validation by CJEU (Ruling C-355/98)**: The Court of Justice of the European Union ruled that preserving the linguistic, cultural, and land identity of an island community constitutes an **overriding public interest** justifying restrictions on the free movement of capital.
+### 2. The Åland Islands : Protocol No. 2 to the 1994 Accession Treaty
+For this autonomous Swedish-speaking archipelago under Finnish sovereignty:
+* **The Regional Right of Domicile (*Hembygdsrätt*)**: Acquiring real estate and land is reserved to holders of local civic status, contingent on verified long-term residency.
+* **CJEU Confirmation**: European case law recognized the legitimacy of safeguarding demographic, cultural, and land balances in an insular community.
 
-### 3. Denmark : Protocol No. 32 Annexed to the Maastricht Treaty
-Following the initial rejection of the Maastricht Treaty by referendum in 1992, Denmark demanded and secured an absolute derogation enshrined in EU primary law:
-* **Total Ban on Non-Resident Purchases**: Non-Danish citizens (particularly German investors) are strictly prohibited from purchasing secondary residences along the entire Danish coastline.
-* **Perpetual Enforceability**: Protocol No. 32 is permanent and cannot be repealed without Denmark's unanimous consent.
+### 3. Denmark : Protocol No. 32 Annexed to the Treaty on European Union
+Enshrined within EU primary law since the Maastricht Treaty:
+* **Coastal Zone Protection**: Denmark permanently secured the right to bar non-residents from purchasing secondary residences along its coastline, preserving holiday areas from speculative external buyouts.
 
-### 4. Austria : The CJEU *Konle* (C-302/97) and *Ospelt* (C-452/01) Rulings
-Confronted with massive German property speculation in the Alpine regions of Tyrol and Salzburg, regional governments instituted strict administrative controls:
-* **Systematic Prior Authorization**: Every real estate transaction requires approval from the local authority, verifying the buyer will not use the property for speculative leisure.
-* **CJEU Jurisprudence**: The Luxembourg Court upheld these regional statutes on the legitimate grounds of *« preserving agricultural land and preventing valley depopulation caused by the proliferation of secondary residences »*.
+### 4. Austria : Regional Land Controls Upheld in *Konle* & *Ospelt* Rulings
+In Alpine regions facing intense tourist pressure (Tyrol, Salzburg):
+* **Prior Declarations and Land-Use Verification**: The Court of Justice of the European Union (**rulings C-302/97 *Konle* and C-452/01 *Ospelt* **) affirmed that prior notification procedures and land-use restrictions comply with EU law when pursuing the public interest objective of preserving agricultural lands and curbing holiday home sprawl.
 
-### 5. Switzerland : The « Lex Weber » and « Lex Koller »
-While non-EU but integrated into the Single Market (EFTA):
-* **Constitutional 20% Cap**: Approved by referendum in 2012 (Art. 75b of the Federal Constitution), Swiss law bans new secondary home construction in municipalities where secondary homes already exceed 20%.
-* **The « Lex Koller »**: General prohibition barring foreign individuals and legal entities from acquiring residential real estate without prior cantonal authorization.
+### 5. Switzerland : Constitutional 20% Secondary Home Cap
+While outside the EU but integrated via bilateral accords:
+* **The 20% Cap Rule**: Article 75b of the Swiss Federal Constitution strictly caps the share of secondary homes per municipality, barring new permits beyond this threshold to protect local primary housing.
 
 ---
 
-## ⚠️ ACT II. THE BALEARIC CRASH AND THE SARDINIAN TRAP : CONSEQUENCES OF NO STATUS
+## 3. THE LIMITS OF ISOLATED TAX SURCHARGES : THE SARDINIAN LESSON
 
-To see what awaits Corsica without sovereign protections, one need only look to neighboring islands:
+Attempting to curb land pressure solely through regional taxation, without adequate constitutional or statutory backing, carries major legal risks:
 
-### 1. The Social Catastrophe of the Balearic Islands (Mallorca, Ibiza, Menorca)
-* **Tragic Metrics**: In ten years, real estate prices surged by **+180%**. Nearly **45% of real estate transactions are made by wealthy foreign buyers**.
-* **Economic Segregation**: Local nurses, teachers, firefighters, and young couples can no longer find housing and are forced to live in camper vans, trailers, or converted shipping containers.
-* **Political Deadlock**: The Balearic Autonomous Government now pleads with Madrid and Brussels for the status Malta enjoys, realizing too late that without an accession treaty lock, the free market destroyed their youth.
-
-### 2. The Sardinian Legal Trap : CJEU Ruling C-169/08 on the « Soru Tax »
-In 2006, the President of the Autonomous Region of Sardinia, Renato Soru, attempted to curb coastal sprawl along the *Costa Smeralda* by enacting a regional surtax on secondary homes and yachts belonging to non-residents.
-* **Luxembourg's Decisive Invalidation**: On November 17, 2009, the CJEU ruled the tax illegal as discriminatory, forcing Sardinia to refund millions of euros to investors.
-* **Lesson for Corsica**: **Improvising local tax surcharges without constitutional and European treaty derogation (such as the Article 72-5 illusion) is a futile trap bound for judicial cancellation.**
+- **The Sardinian "Soru Tax" Precedent**: In 2006, the Autonomous Region of Sardinia introduced a regional luxury surcharge on secondary residences and yachts of non-residents. By a judgment of November 17, 2009 (**Case C-169/08**), the CJEU struck down the tax as discriminatory under EU freedom of services.
+- **Policy Lesson**: Local fiscal surcharges, absent an explicit constitutional and European treaty derogation, remain vulnerable to litigation and cannot replace structural land-use regulations.
 
 ---
 
-## 🏛️ ACT III. THE DOUBLE STANDARD TRIAL : THE REPUBLIC CAUGHT IN THE ACT
+## 4. DIVERSITY OF STATUSES WITHIN THE FRENCH REPUBLIC
 
-Paris claims that Article 1 of the French Constitution — guaranteeing « equality of all citizens without distinction » — makes any residency requirement strictly impossible.
+Contrary to arguments that republican equality prohibits all geographic differentiation, French law already enforces distinct land and employment priority regimes across overseas island territories:
 
-**This is blatant state hypocrisy. The French Republic already applies these exact statutory derogations across its Pacific and Caribbean territories:**
+### 1. Landmark Decision No. 2004-490 DC : Land Priority in French Polynesia
+On February 12, 2004, reviewing the Organic Law on French Polynesian Autonomy (Law No. 2004-192), the **Constitutional Council validated Article 19**, which conditions land acquisition on local residency duration.
 
-### 1. Historic Decision No. 2004-490 DC : French Polynesia Sanctuarized
-On February 12, 2004, reviewing the Organic Law on the autonomy statute of French Polynesia, the **Constitutional Council validated Article 19**, enacting strict real estate priority conditioned upon residency duration.
-
-Magistrates established a principle of historic scope that Paris pretends to forget whenever crossing the Mediterranean:
+Magistrates affirmed a decisive principle:
 > *« Considering that preserving land ownership within the cultural heritage and identity of the local population, alongside safeguarding social cohesion against insular constraints, constitutes a sufficient public interest objective to justify restrictions on contractual freedom and the free movement of capital... »*
 
-In plain terms: **the Constitutional Council ruled in black and white that protecting ancestral land for an island people is fully compliant with republican constitutional principles.**
+This constitutional validation establishes that protecting ancestral land and social cohesion in island territories is fully compatible with republican principles.
 
-### 2. New Caledonia : Local Citizenship Enshrined in the French Constitution
-Under **Articles 76 and 77 (Title XIII of the French Constitution)** born from the 1998 Nouméa Accord, the Republic formally established:
-* A **distinct New Caledonian citizenship**.
-* A **frozen electoral roll** for self-determination and provincial elections.
-* **Absolute priority for local employment and housing**, conditioned upon minimum continuous residency.
+### 2. New Caledonia : Constitutional Protections
+Under **Articles 76 and 77 (Title XIII of the French Constitution)** derived from the 1998 Nouméa Accord, the French legal framework incorporated:
+* Specific electoral rolls for provincial and self-determination ballots.
+* Priority employment and housing access conditioned upon minimum residency duration.
 
-### 3. Saint-Barthélemy : Deliberate Exit from the European Union (OCT Status)
-While the French state tells Corsican elected officials that European treaties prohibit land regulation, France organized the official exit of **Saint-Barthélemy** from EU Outermost Region status in 2012, transforming it into an **Overseas Country and Territory (OCT)**.
+### 3. Saint-Barthélemy : European Treaty Adaptation
+In 2012, with French state approval, **Saint-Barthélemy** transitioned from Outermost Region (OMR) to **Overseas Country and Territory (OCT)** status associated with the EU, enabling it to modulate capital movement directives and enforce local protective property transfer fees.
 
-This statutory shift exempted Saint-Barthélemy from EU free movement of capital directives, allowing it to establish protective land transfer taxes.
-
-![Infographic : The French Republic's Double Standard](/infographie_double_standard_03.jpg)
-
-### ⚖️ The Political Question Terrifying Paris :
-If land protection, resident status, and local citizenship are **fully legal, constitutional, and republican** in Papeete, Nouméa, and Saint-Barthélemy...  
-**By what colonial double standard does the French state dare to forbid them in Ajaccio, Bastia, and Corte, if not to maintain Corsica in territorial subjugation and deliver its coastline to corporate speculators?**
+These precedents show that legal frameworks for land defense exist and function within both the Republic and Europe.
 
 ---
 
-## 🏛️ ACT IV. THE TALAMONI DOCTRINE (2014) : THE CORSICAN ASSEMBLY BLUEPRINT
+## 5. THE HISTORIC RESIDENT STATUS PROPOSAL (DELIBERATION 14/083 AC)
 
-The demand for Resident Status in Corsica is grounded in a rigorous legal doctrine forged at the *Università di Corsica* and championed in the regional hemicycle by **Jean-Guy Talamoni**, attorney-at-law, legal scholar, and former President of the Assembly of Corsica.
+The demand for land regulation in Corsica crystallized in an official parliamentary act:
 
-### 1. The Historic Vote of April 24, 2014 (Deliberation No. 14/083 AC)
-On April 24, 2014, the Assembly of Corsica adopted the official deliberation establishing Resident Status by **29 votes in favor**.
+### 1. The April 24, 2014 Vote in the Assembly of Corsica
+On April 24, 2014, the Assembly of Corsica approved **Deliberation No. 14/083 AC** by a clear majority, proposing the creation of a Resident Status based on the report by **Jean-Guy Talamoni**.
 
-In his introductory parliamentary report, Jean-Guy Talamoni laid down an unassailable principle:
-> *« Corsican land is not a financial commodity open to international speculation. It is the indispensable physical foundation for the historical, cultural, and human continuity of our people. Without control over our soil, no community can endure. »*
+Key components included:
+* **A 5-year primary residency requirement** before acquiring full ownership of real estate.
+* **Protection of family heritage (*CIMM* criteria)**, ensuring descendants and island diaspora retain full rights to inherit and preserve family homes.
+* **Corporate entity transparency**, preventing non-resident corporate shells from circumventing local ownership criteria.
 
-The statutory mechanism enacted by elected representatives established three fundamental locks:
-* **The 5-Year Continuous Primary Residency Requirement** for any acquisition of land or real estate.
-* **Preservation of the Right of Return (*CIMM*)** : Direct ancestral ties and diaspora return rights are fully protected to inherit and maintain family property.
-* **Corporate Entity Regulation** : Banning non-resident SCIs and financial holdings from acquiring property unless majority-owned by verified island residents.
-
-### 2. Academic Deconstruction of the « Republican Lock »
-In his academic works (*Le Républicanisme corse*), Talamoni systematically demolished state objections:
-* **A Social Measure, Not an Ethnic One** : Resident Status contains zero ethnic, linguistic, or blood criteria. It applies universally to any citizen from anywhere in the world who chooses to reside, work, and contribute to the Corsican community for 5 years.
-* **Hierarchy of Norms & Right to Housing** : Property rights have never been absolute above the physical survival of a society. The European Court of Human Rights has repeatedly affirmed that the fundamental right to decent housing and social public order justifies restricting capital speculation.
-* **The Paolist Legacy of 1755** : Talamoni demonstrates that the first modern democratic constitution, drafted by Pasquale Paoli in Corte in 1755, defined citizenship as active participation in the Nation's life, incompatible with subjecting soil to external monopolies.
-
-By denying Corsica this democratically approved status, the French state does not protect republican equality: **it deliberately organizes the transfer of Corsican soil to global financial capital.**
+### 2. A Social and Universal Measure
+This framework is built upon universal social criteria rather than ethnic distinctions: it applies to any citizen regardless of origin who chooses to establish their home, work, and life within the Corsican community for five years.
 
 ---
 
-## 🌐 ACT V. INTERNATIONAL RECOURSE : FROM THE CORSICAN ASSEMBLY TO THE UNITED NATIONS
+## 6. INTERNATIONAL & HUMAN RIGHTS CONTEXT
 
-Faced with central state intransigence, the Corsican case has been elevated to international legal jurisdictions:
+The Corsican land question also intersects with established international norms:
 
-### 1. Mission to the UN 4th Committee in New York (October 2016)
-Official guest of Polynesian leader **Oscar Temaru**, the President of the Assembly of Corsica Jean-Guy Talamoni mandated an official delegation to the **UN General Assembly 4th Committee** (Special Political and Decolonization / C-24) in New York, submitting a complete evidentiary dossier on Corsican land dispossession.
-
-### 2. The Geneva Process (2024) and Resolution 1514 (XV)
-At international conferences in Geneva, the formal demand was reiterated:
-* **UN Resolution 1514 (XV)**: Proclaims the inalienable right of all peoples to freely dispose of their natural wealth and resources.
-* **Precedent of Resolution 67/265 (Polynesia 2013)**: Proves that the UN General Assembly can reinscribe an island territory onto the Non-Self-Governing Territories list despite French diplomatic opposition.
-
-### 3. The European Court of Human Rights (Article 8 & Protocol No. 1)
-Strasbourg jurisprudence enshrines the fundamental right to respect for home and the protection of indigenous historical communities against economic eviction from their traditional environment.
+- **United Nations Framework**: General Assembly resolutions (including Resolution 1514 on self-determination over natural wealth and resources) enshrine populations' rights over their territorial heritage.
+- **European Court of Human Rights (Article 8 & Protocol No. 1)**: ECHR jurisprudence protects the right to respect for home and private life, offering grounds for safeguarding traditional living conditions against disproportionate economic displacement.
 
 ---
 
-## ✊ ACT VI. TOTAL SOVEREIGNTY ECOSYSTEM : THE CORSICAN PEOPLE'S RUPTURE PLAN
+## 7. POLICY BLUEPRINT : AN INTEGRATED TERRITORIAL SOVEREIGNTY FRAMEWORK
 
-The land battle is not an isolated front: **the soil is the physical receptacle where all systemic extractions exposed by L'OCHJU converge.**
+To resolve the housing emergency and secure future generations, a coherent territorial framework can be structured around concrete policy levers:
 
-To emancipate Corsica from external rent and organized underdevelopment, the Institute lays out the operational architecture of the **Total Sovereignty Ecosystem**, linking property access, water management, energy autonomy, and the recovery of <mark class="forensic-highlight">420 million euros</mark> in state-siphoned revenues:
+### 1. Land Regulation & Affordable Homeownership (Investigations 01, 03 & 05)
+* **European Derogation Protocol (Malte Model, Protocol No. 6)**: Conditioning secondary residence purchases on five years of verified residency.
+* **Real Solidarity Leases (BRS)**: Separating land ownership (held perpetually by a public community land trust) from building ownership, giving young workers access to homes at production cost (~€1,800/m²).
+* **Corporate Ownership Scrutiny**: Enforcing beneficial ownership registers for SCIs and taxing rapid speculative capital gains.
 
-![Infographic : The Sovereignty Ecosystem of the Corsican People](/infographie_ecosysteme_souverainete_03.jpg)
+### 2. Farmland Preservation & Water Governance (Investigation 04)
+* **Sanctuarizing arable agricultural soil**: Long-term rural leases dedicated to sustainable local farming in valleys and the eastern plain.
+* **Securing water resources**: Implementing priorities from Investigation #04 (accelerated leak repairs, catchment storage, and progressive seasonal tariffs discouraging non-essential pool consumption).
 
-### 1. Land Sovereignty & Insular Banking Shield (Investigations 01, 03 & 05)
-* **5-Year Resident Status (Protocol 6)**: Conditioning all real estate acquisitions in full ownership on five years of primary fiscal residency, permanently shielding coastline from international speculation.
-* **Real Solidarity Leases (BRS)**: Permanently dissociating land ownership (remaining an inalienable perpetual asset of the Collectivité de Corse) and building ownership (transferred to young Corsican workers at cost price, **€1,800/m²** instead of speculative €6,000 to €10,000/m²).
-* **Locking Interest-Only Loans & Opaque Holdings**:
-  * Acquisition ban on any SCI or holding whose **Beneficial Ownership Register (RBE)** is not audited and approved by the Island Land Office.
-  * Neutralizing *in fine* loans and off-balance collateral used by external fortunes to bypass the 35% HCSF ceiling.
-  * Enacting a **30% surtax on speculative capital gains** realized by non-residents reselling prior to 10 years of ownership.
+### 3. Reorienting Capital & Fiscal Sovereignty (Cross-Referencing Investigations 01 & 02)
+* As modeled in **Investigation 02 (Fiscal and Financial Balance)**, reorienting island liquid savings (~€7.3B redirected outside) and collecting localized corporate tax contributions provides the capital foundation to fund zero-interest home loans for resident families.
 
-### 2. Water Sovereignty & Farmland Sanctuarization (The 175M m³ Blueprint)
-* **Breakthrough Engineering : The 175 Million m³ per Year Plan (0% Concrete, 0% Fuel)**:
-  * **Alluvial Underground Dams (Gravona, Fium'Orbu, Tavignano, Golo)**: Capturing fresh water beneath river gravels before it reaches the sea, ensuring massive storage with **0% evaporation and 0 kWh consumed** (+60M m³/year to irrigate <mark class="forensic-highlight">35,000 hectares</mark> for ODARC).
-  * **Default Termination of Private DSP Contracts**: Ending contracts with private cartels (Kyrnolia/Veolia) below 65% efficiency to halt the loss of **42 million m³ of treated drinking water per year** in crumbling pipes (+26M m³/year recovered).
-  * **Passive Solar MOF Collectors (MIT / Mg-Gallate)**: Outfitting 300 public rooftops (hospitals, schools) to extract pure water via passive condensation (+1.8M m³/year).
-  * **In-Pipe Hydroelectric Turbines & Deep Sea SWAC**: Harnessing gravity pressure to generate clean power (+40M m³/year turbined) and deploying seawater air conditioning in Ajaccio and Bastia to eliminate 90% of summer cooling demand.
-* **Single Public Water Authority & Eco-Progressive Pricing**:
-  * *Tier 1 (Vital resident needs)*: First 40 m³/year free for every island household.
-  * *Tier 2 (Standard & agricultural use)*: Capped cost-price tariff for family farms with priority access during droughts.
-  * *Tier 3 (Secondary home excess & pools)*: Punitive surcharge of **+300% to +500%** on summer excess volumes, and formal bans on filling private pools from June to September backed by **€10,000 municipal fines**.
-* **Public Farmland Reserve (Inalienable Arable Soil)**:
-  * **99-Year Emphyteutic Leases** non-transferable to real estate developers, reserved exclusively for young island farmers in food crops and extensive pastoralism.
-  * Automatic PLU rezoning to non-buildable agricultural status for any farmland subject to speculative construction attempts.
-
-### 3. Reclaiming the 420 Million Euro Financial Drain (Investigations 01 & 02)
-* **Accounting Reality : The State Extracts €1.45B and Returns Only €1.03B**:
-  * Forensic audit of **1,000 official state balance sheets** (360 municipal budget matrices, BODACC filings, Treasury ledgers) dismantles the « dependent Corsica » fable. The net annual surplus is **+420 million euros captured by the French Treasury**, or **€1,200 extracted annually from every Corsican citizen** (€4,800 for a family of four).
-* **Dismantling Bercy's 3 Cash Pumps**:
-  * **Repatriation of Relocated Corporate Income Tax (€185M/year)**: Multinational retail and energy cartels generate over €2.45 billion on the island but book profits at Parisian headquarters. Enacting mandatory withholding tax so profits generated in Corsica stay in Corsica.
-  * **Repatriation of Alcohol Excise Duties (€35M/year)**: Ending illegal diversion through PACA purchasing hubs and enforcing **Article L. 4425-1 CGCT** dedicating 100% of receipts to the Collectivité de Corse.
-  * **Recovery of Gaming and Digital Taxes (€65M/year)**: Direct territorial collection of levies on FDJ, PMU, and booking platforms (Airbnb, Booking).
-* **Establishment of the Public Bank of Deposit & Guarantee (BPTG)**:
-  * **Liberating €7.3 Billion in Captive Corsican Savings**: Mainland banks collect €11.8 billion in liquid island savings but reinvest only 38% locally, funneling €7.3 billion to Paris.
-  * **Zero-Interest Loans (PTZ) for Island Youth**: BPTG will deploy repatriated savings and the €420M surplus to issue 0% mortgages guaranteed by the Region, enabling young workers to secure homes independently of Parisian banks.
-
-### 4. Energy Autonomy & Rupture with the EDF-SEI Monopoly (Investigation 18)
-* **Ending the Thermal Monopoly (Rupture with 199 MW Fossil Lock)**:
-  * Dismantling heavy-fuel thermal units at Vazzio and Lucciana (capturing hundreds of millions in CSPE subsidies while polluting local health).
-  * Refusing fossil concession renewals to EDF-SEI and repealing state limits on renewables under the guise of « grid stability ».
-* **Public Regional Energy Desk (Citizen Solar & Hydro Power)**:
-  * **Mandatory Rooftop Solar Program**: Mandating photovoltaic panels across commercial zones, warehouses, public parking lots, and secondary villas over 150m², feeding clean energy into the island grid.
-  * **Direct Control of Hydro Dams**: Transferring management of island hydro dams (Castirla, Calacuccia, Rizzanese, Tolla) to the Collectivité de Corse to secure round-the-clock clean baseload power.
-  * **Guaranteed Citizen Tariff**: Creating an insular electricity rate decoupled from European speculative markets, guaranteeing stable cost-price power year-round.
-
-### 5. Maritime Sovereignty & Supranational Action (Investigation 06 & UN)
-* **Reclaiming Fisheries Quotas (Enforcing Toulouse CAA Ruling of March 28, 2024)**:
-  * Repatriating authority over pelagic quotas (bluefin tuna, swordfish) confiscated at 99.5% by Sète industrial shipowners (SATHOAN), depriving Corsican fishermen of **€45 million in annual value**.
-  * Equitable reallocation under **Article 17 of EU Regulation 1380/2013** favoring small-scale selective artisanal fishing.
-* **Coastal Shield & Stella Mare**:
-  * Total ban on mega-yacht anchoring in Posidonia beds and establishment of a **Territorial Exclusive Economic Zone (ZEET)** co-managed by Corsican fishing guilds.
-  * Massive funding for scientific restocking of lobster and sea urchin populations developed by the **Stella Mare** university platform (CNRS / Università di Corsica).
-* **Supranational Diplomatic Offensive (UN & ECHR)**:
-  * Formal filing for Corsica's inscription onto the **UN Non-Self-Governing Territories list (Resolutions 1514 & 67/265)** if the French state maintains its veto on Resident Status.
-  * Application to the European Court of Human Rights (Article 8 & Protocol No. 1) for violation of indigenous communities' rights to preserve their land and vital resources.
+### 4. Clean Energy & Artisanal Fishing Defense (Investigations 06 & 18)
+* Expanding citizen solar and in-pipe hydro-turbines (Investigation #18) to replace fossil reliance.
+* Protecting marine biodiversity and ensuring fair pelagic quota access for local artisanal fishers under Article 17 of EU Regulation 1380/2013 (Investigation #06).
 
 ---
 
-## 🏛️ CITIZEN & NATIONAL ACTION FOR OUR LAND
+## 🏛️ CITIZEN & INSTITUTIONAL ACTION FOR OUR LAND
 
 > [!IMPORTANT]
-> **The Inalienable Right of Peoples to Preserve Their Soil**  
-> The constitutional and European excuse has been completely dismantled: **Malta (Protocol 6), Åland (Protocol 2), Denmark (Protocol 32), Polynesia (Decision 2004-490 DC), the April 24, 2014 vote in Ajaccio, and the scholarly works of Jean-Guy Talamoni** prove that Resident Status and the Sovereignty Ecosystem are an unassailable legal reality.
+> **The Universal Right to Land Defense**  
+> European treaties and constitutional precedents — **Malta (Protocol 6), Åland (Protocol 2), Denmark (Protocol 32), Polynesia (Decision 2004-490 DC), and the April 24, 2014 Deliberation in Ajaccio** — prove that land regulation and resident priority are legitimate, documented policy tools.
 > 
-> * **Citizen Action**: Share this file with mayors, notaries, and elected officials to demand a direct derogation protocol in any constitutional revision.
-> * **Supranational Recourse**: In the event of persistent state obstruction, pursuing referral to the **UN C-24 Committee (Resolutions 1514 & 67/265)** and **ECHR Article 8**.
+> * **Citizen Action**: Engage with local mayors, notaries, and elected officials to advocate for an explicit derogation protocol in upcoming constitutional discussions.
+> * **Institutional Advocacy**: Pursuing dialogue with European institutions and international human rights bodies to defend balanced, sustainable island communities.
 
 ---
 
