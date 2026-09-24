@@ -1,6 +1,6 @@
 ---
 id: 16
-title: "Investigation 16 : The Continuity of the Miot Decrees & Land Indivision"
+title: "The Continuity of the Miot Decrees & Land Indivision"
 subtitle: "Dispossession and inheritance blockage : how the programmed end of the Miot Decrees and cadastral title disorder facilitate speculative buyouts by external capital."
 category: "INHERITANCE & GIRTEC"
 status: en_cours

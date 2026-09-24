@@ -1,6 +1,6 @@
 ---
 id: 10
-title: "Investigation 10 : The Tutelage of Senior Civil Service & Administrative Churn"
+title: "The Tutelage of Senior Civil Service & Administrative Churn"
 subtitle: "Analysis of administrative governance : how the permanent rotation of central state officials (Prefects, DREAL, Rectorate) freezes local development and blocks insular autonomy."
 category: "INSTITUTIONS & TUTELAGE"
 status: en_cours

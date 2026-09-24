@@ -1,6 +1,6 @@
 ---
 id: 2
-title: "Investigation 02 : The 420 Million Euro Hold-Up — The Final Collapse of the Subsidy Myth"
+title: "The 420 Million Euro Hold-Up — The Final Collapse of the Subsidy Myth"
 subtitle: "From corporate taxes declared in Paris to summer tourism VAT and the frozen €187M continuity grant : financial analysis demonstrates that Corsica contributes more to the French national budget than it receives (an estimated €1,200 per resident annually)."
 category: "TAXATION & PUBLIC BUDGET"
 status: cloturee

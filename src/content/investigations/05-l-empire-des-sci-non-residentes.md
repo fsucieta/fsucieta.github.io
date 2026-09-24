@@ -1,6 +1,6 @@
 ---
 id: 5
-title: "Investigation 05 : The Offshore SCI Empire — The Opaque Takeover of the Corsican Coastline"
+title: "The Offshore SCI Empire — The Opaque Takeover of the Corsican Coastline"
 subtitle: "Radiography of beneficial owners : how cross-referenced data from the INPI RBE registry and DVF unmasks land capture by non-resident corporate holdings."
 category: "TRANSPARENCY & BENEFICIAL OWNERSHIP"
 status: en_cours

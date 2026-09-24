@@ -1,6 +1,6 @@
 ---
 id: 20
-title: "Enquête 20 : L'Accaparement des Primes PAC & l'Élevage Spéculatif"
+title: "L'Accaparement des Primes PAC & l'Élevage Spéculatif"
 subtitle: "Radiographie des aides agricoles : comment le système de déclaration de la Politique Agricole Commune (PAC) favorise les grands propriétaires fonciers au détriment des vrais producteurs"
 category: "AGRICULTURE & PAC"
 status: en_cours

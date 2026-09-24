@@ -1,9 +1,8 @@
 ---
 id: 7
-title: "Enquête 07 : Le Cadastre Minier Secret & le Grand Passif — Comment Paris a Pillé nos Richesses et Nous a Laissé le Poison"
+title: "Le Cadastre Minier Secret & le Grand Passif — Comment Paris a Pillé nos Richesses et Nous a Laissé le Poison"
 subtitle: "Pétrole au large de Scandola, fer oublié de Marignana, terres rares sous les pins d'Evisa et rivières empoisonnées à l'arsenic : la vérité sur ce qui dort sous nos pieds et pourquoi on vous fait croire que la Corse est pauvre."
 category: "MINES & ÉNERGIE"
-status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-07-POPULAIRE"
 author: "Cellule d'Investigation Citoyenne L'OCHJU"
 date: "Septembre 2026"
@@ -53,8 +52,6 @@ Le 27 août 2025, en pleine torpeur estivale, le gouvernement a même discrètem
 
 Il est temps que le peuple corse sache ce qu'il y a réellement sous sa terre. Voici l'histoire complète, prouvée document par document.
 
-![Infographie : Le Cadastre Minier Secret de la Corse — Ce que Paris vous cache](/infographie_cadastre_minier_07.jpg)
-
 ---
 
 ## 🌊 1. DU PÉTROLE AU LARGE DE SCANDOLA : LE MASSACRE SILENCIEUX DE NOTRE MER
@@ -67,7 +64,7 @@ Le 21 septembre 2012, dans le plus grand secret, le ministre de l'Écologie à P
 
 La surface qu'on leur a donnée sur un plateau d'argent ? **9 300 kilomètres carrés de mer**. C'est plus grand que la Corse tout entière ! Ce périmètre gigantesque vient lécher les côtes occidentales de l'île, à quelques dizaines de kilomètres à peine de Calvi, de Galéria et des falaises de Scandola.
 
-### 3. Le scandale de Scandola : quand l'UNESCO a découvert le pot aux roses
+### La découverte surprise par l'UNESCO : le scandale international
 Ce que l'histoire officielle oublie de préciser, c'est que l'UNESCO et l'UICN (l'Union Internationale pour la Conservation de la Nature) n'avaient même pas été averties ! C'est en février 2012 que les inspecteurs internationaux ont découvert par surprise que la France avait accordé ce permis géant de 9 300 km² à quelques encablures d'un joyau mondial de la biodiversité.
 
 Et le piège continue aujourd'hui. Dans le mémoire d'observations officiel déposé le 27 janvier 2026 par l'association citoyenne *Le GARDE*, les juristes révèlent le double jeu de l'État dans la révision du décret de Scandola :
@@ -201,3 +198,7 @@ Pour en finir avec un siècle de pillage et d'empoisonnement en silence, nous de
 
 > **À RETENIR POUR CHAQUE CITOYEN :**  
 > *Ne laissez plus jamais personne vous dire que notre île est un caillou stérile qui survit grâce à l'aumône extérieure. Notre terre est riche, notre mer est précieuse, et ce qui dort sous nos pieds appartient à nos enfants. C'est à nous, et à personne d'autre, de décider de notre avenir.*
+
+---
+
+*Enquête menée avec l'appui cartographique et le cadastre historique du partenaire de veille d'urbanisme [Bufitonu.fr](https://bufitonu.fr).*

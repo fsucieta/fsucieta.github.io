@@ -1,6 +1,6 @@
 ---
 id: 21
-title: "Enquête 21 : Le Scandale des Déchets & le Coût de l'Enfouissement — L'impasse environnementale insulaire"
+title: "Le Scandale des Déchets & le Coût de l'Enfouissement — L'impasse environnementale insulaire"
 subtitle: "Radiographie du Syvadec et de la filière poubelles : l'exportation par cargo vers le continent et l'overdose des sites d'enfouissement de Tallone et Prunelli"
 category: "DÉCHETS & ENVIRONNEMENT"
 status: en_cours

@@ -1,6 +1,6 @@
 ---
 id: 29
-title: "Hors-Série 01 : Manifeste de Corte à Philadelphie — L'Appel aux Nations Libres"
+title: "Manifeste de Corte à Philadelphie — L'Appel aux Nations Libres"
 subtitle: "De la première Constitution démocratique du monde moderne (1755) au premier cri de guerre de l'Amérique 'Remember Paoli !' (1777) : le réveil du pacte moral sacré entre la Corse et les peuples libres."
 category: "MANIFESTE D'ÉMANCIPATION & GÉOPOLITIQUE"
 status: cloturee

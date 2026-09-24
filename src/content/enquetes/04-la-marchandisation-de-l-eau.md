@@ -1,6 +1,6 @@
 ---
 id: 4
-title: "Enquête 04 : La Corse, Laboratoire Mondial d’Émancipation — Le Plan de 175 Millions de m³ qui brise la Tutelle et Libère l’Île par l’Eau"
+title: "La Corse, Laboratoire Mondial d’Émancipation — Le Plan de 175 Millions de m³ qui brise la Tutelle et Libère l’Île par l’Eau"
 subtitle: "Fin de la rente de Paris et des tuyaux percés de Veolia : la démonstration scientifique du Carré d'Or (0 % béton, 0 % fioul) pour conquérir l’autonomie hydraulique, alimentaire (ODARC) et énergétique absolue du Peuple Corse."
 category: "EAU & RESSOURCES"
 status: cloturee

@@ -1,6 +1,6 @@
 ---
 id: 22
-title: "Enquête 22 : La Captation Bancaire & l'Évasion des Dépôts d'Épargne"
+title: "La Captation Bancaire & l'Évasion des Dépôts d'Épargne"
 subtitle: "Radiographie du système bancaire insulaire : comment les banques privées réinjectent moins de 40 % des dépôts des épargnants corses dans l'économie réelle locale"
 category: "BANQUE & ÉPARGNE"
 status: en_cours

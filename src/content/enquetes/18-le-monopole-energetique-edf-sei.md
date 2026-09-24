@@ -1,6 +1,6 @@
 ---
 id: 18
-title: "Enquête 18 : La Lumière Volée — Briser l'Illusion de la Dépendance"
+title: "La Lumière Volée — Briser l'Illusion de la Dépendance"
 subtitle: "194 à 199 MW d'énergie hydraulique sous concession d'État : autopsie médico-légale d'un monopole et le projet souverain pour une Corse propre, prospère et décarbonée."
 category: "ÉNERGIE & SOUVERAINETÉ"
 status: cloturee

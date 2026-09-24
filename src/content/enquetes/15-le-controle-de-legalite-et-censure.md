@@ -1,6 +1,6 @@
 ---
 id: 15
-title: "Enquête 15 : Le Contrôle de Légalité & la Censure des Délibérations Locales"
+title: "Le Contrôle de Légalité & la Censure des Délibérations Locales"
 subtitle: "Radiographie de la tutelle préfectorale : comment les déférés du Préfet annulent les arrêtés des maires ruraux tout en fermant les yeux sur les grands projets spéculatifs"
 category: "URBANISME & PRÉFECTURE"
 status: en_cours

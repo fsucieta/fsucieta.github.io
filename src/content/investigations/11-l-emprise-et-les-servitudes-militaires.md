@@ -1,6 +1,6 @@
 ---
 id: 11
-title: "Investigation 11 : The Confiscated Sanctuary — The 3 Hidden Levers of the Military Cadastre & The 2,800-Hectare Retrocession Plan Liberating Corsica"
+title: "The Confiscated Sanctuary — The 3 Hidden Levers of the Military Cadastre & The 2,800-Hectare Retrocession Plan Liberating Corsica"
 subtitle: "Solenzara Air Base 126, Aspretto and Camp Raffalli: autopsy of secret NATO lease agreements, 40,000 m³ of water pumped from Travo aquifers, F-34 fuel contamination, and demonstration of the Land Golden Square (€3.95M compensation, 327 ha food farmland for ODARC, and state decontamination)."
 category: "DEFENSE & TERRITORY"
 status: en_cours

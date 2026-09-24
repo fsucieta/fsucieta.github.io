@@ -1,6 +1,6 @@
 ---
 id: 22
-title: "Investigation 22 : Banking Capture & The Flight of Insular Savings Deposits"
+title: "Banking Capture & The Flight of Insular Savings Deposits"
 subtitle: "Radiography of the insular banking system : how private banks reinject less than 40% of Corsican savings deposits into the local productive economy."
 category: "BANKING & LIQUID SAVINGS"
 status: en_cours

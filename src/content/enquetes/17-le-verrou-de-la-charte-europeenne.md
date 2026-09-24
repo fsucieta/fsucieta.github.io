@@ -1,6 +1,6 @@
 ---
 id: 17
-title: "Enquête 17 : Le Verrou de la Charte Européenne & le Droit à la Langue Corse"
+title: "Le Verrou de la Charte Européenne & le Droit à la Langue Corse"
 subtitle: "Analyse du blocage constitutionnel : la censure de la co-officialité de la langue corse et le refus de ratifier la Charte européenne des langues régionales"
 category: "CULTURE & LANGUE"
 status: en_cours

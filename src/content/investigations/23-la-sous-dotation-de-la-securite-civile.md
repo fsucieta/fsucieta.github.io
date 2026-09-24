@@ -1,6 +1,6 @@
 ---
 id: 23
-title: "Investigation 23 : Civil Protection Under-Funding & Major Risk Preparedness"
+title: "Civil Protection Under-Funding & Major Risk Preparedness"
 subtitle: "Radiography of risk prevention : the under-sizing of aerial firefighting fleets (Canadairs) and the precariousness of high-mountain rescue services."
 category: "CIVIL DEFENSE & NATURAL HAZARDS"
 status: en_cours

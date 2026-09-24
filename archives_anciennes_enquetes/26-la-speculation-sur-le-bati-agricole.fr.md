@@ -3,7 +3,6 @@ id: 26
 title: "Enquête 26 : La Spéculation sur le Bâti Agricole & les Bergeries de Prestige"
 subtitle: "Radiographie du détournement de l'article L. 151-11 : la transformation frauduleuse de ruines et bergeries traditionnelles en résidences secondaires de luxe avec piscine et héliport"
 category: "AGRICOLE & BERGERIES"
-status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-26"
 author: "Cellule d'Investigation Foncier-Patrimoine L'OCHJU"
 date: "Août 2026"

@@ -1,6 +1,6 @@
 ---
 id: 19
-title: "Investigation 19 : Digital Dependence & Threats to Data Sovereignty"
+title: "Digital Dependence & Threats to Data Sovereignty"
 subtitle: "Radiography of telecommunication networks : the vulnerability of subsea fiber cables and the hosting of Corsican public records on Parisian and American cloud servers."
 category: "DIGITAL INFRASTRUCTURE & DATA"
 status: en_cours

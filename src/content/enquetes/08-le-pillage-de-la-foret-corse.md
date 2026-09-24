@@ -1,6 +1,6 @@
 ---
 id: 8
-title: "Enquête 08 : Le Pillage de la Forêt Corse & l'Exportation du Bois Brut"
+title: "Le Pillage de la Forêt Corse & l'Exportation du Bois Brut"
 subtitle: "Spoliation de la ressource forestière : l'exportation massive de grumes de pin laricio vers l'Italie sans transformation locale ni création de valeur"
 category: "FORÊT & FILIÈRE BOIS"
 status: en_cours

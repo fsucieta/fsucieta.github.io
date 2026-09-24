@@ -1,6 +1,6 @@
 ---
 id: 16
-title: "Enquête 16 : La Continuité Cinquantenaire des Arrêtés Miot & l'Indivision Foncière"
+title: "La Continuité Cinquantenaire des Arrêtés Miot & l'Indivision Foncière"
 subtitle: "Spoliation et blocage successoral : comment la fin programmée des arrêtés Miot et le désordre des titres favorisent le rachat spéculatif par les capitaux extérieurs"
 category: "SUCCESSIONS & GIRTEC"
 status: en_cours

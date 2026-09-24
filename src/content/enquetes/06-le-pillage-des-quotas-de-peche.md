@@ -1,6 +1,6 @@
 ---
 id: 6
-title: "Enquête 06 : Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
+title: "Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
 subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière sur les dépôts de carburants (187,5 M€ de sanction), le monopole sétois sur les quotas et le pillage côtier étouffent nos marins et font exploser le coût de la vie insulaire"
 category: "MER & PÊCHE"
 status: cloturee

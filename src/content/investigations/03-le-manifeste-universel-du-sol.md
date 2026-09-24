@@ -1,6 +1,6 @@
 ---
 id: 3
-title: "Investigation 03 : The Universal Land Manifesto — How Mediterranean & World Islands Protect Their Soil (And Why France Forbids It to Corsica)"
+title: "The Universal Land Manifesto — How Mediterranean & World Islands Protect Their Soil (And Why France Forbids It to Corsica)"
 subtitle: "From Malta (Protocol No. 6) to the Åland Islands, from Denmark (Protocol No. 32) to Polynesia: forensic autopsy of the great republican lie. Irrefutable proof that land protection is legal worldwide."
 category: "INTERNATIONAL LAW & SOVEREIGNTY"
 status: cloturee

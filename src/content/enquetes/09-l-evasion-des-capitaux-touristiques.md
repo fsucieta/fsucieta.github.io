@@ -1,6 +1,6 @@
 ---
 id: 9
-title: "Enquête 09 : L'Évasion des Capitaux de la Saison Touristique — Le vol des valeurs ajoutées"
+title: "L'Évasion des Capitaux de la Saison Touristique — Le vol des valeurs ajoutées"
 subtitle: "Enquête sur la fuite des devises estivales : comment la grande distribution, les enseignes nationales et les plateformes de location vident la Corse de ses gains de saison"
 category: "ÉCONOMIE & CAPITAL"
 status: en_cours

@@ -1,6 +1,6 @@
 ---
 id: 15
-title: "Investigation 15 : Legality Control & The Censorship of Local Municipal Deliberations"
+title: "Legality Control & The Censorship of Local Municipal Deliberations"
 subtitle: "Radiography of prefectoral oversight : how state appeals strike down rural mayors' decrees while turning a blind eye to massive coastal real estate developments."
 category: "URBAN PLANNING & PREFECTORAL VETO"
 status: en_cours

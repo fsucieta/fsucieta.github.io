@@ -1,6 +1,6 @@
 ---
 id: 11
-title: "Enquête 11 : Le Sanctuaire Confisqué — Les 3 Diables Cachés du Cadastre Militaire et le Plan de Rétrocession de 2 800 Hectares qui Libère la Corse"
+title: "Le Sanctuaire Confisqué — Les 3 Diables Cachés du Cadastre Militaire et le Plan de Rétrocession de 2 800 Hectares qui Libère la Corse"
 subtitle: "BA 126 de Solenzara, Aspretto et Camp Raffalli : autopsie des baux de concession secrets de l'OTAN, 40 000 m³ d'eau captés sur les nappes de Travo, les sols pollués aux hydrocarbures F-34 et la démonstration du Carré d'Or Foncier (3,95 M€ de compensation, 327 ha vivriers pour l'ODARC et dépollution d'État)."
 category: "DÉFENSE & TERRITOIRE"
 status: en_cours

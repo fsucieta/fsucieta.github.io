@@ -1,6 +1,6 @@
 ---
 id: 17
-title: "Investigation 17 : The European Charter Lock & The Right to the Corsican Language"
+title: "The European Charter Lock & The Right to the Corsican Language"
 subtitle: "Analysis of the constitutional blockage : the censorship of Corsican language co-officiality and France's refusal to ratify the European Charter for Regional Languages."
 category: "CULTURE & LINGUISTIC SOVEREIGNTY"
 status: en_cours

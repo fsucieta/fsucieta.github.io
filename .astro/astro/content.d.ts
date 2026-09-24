@@ -316,9 +316,9 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
-"26-la-speculation-sur-le-bati-agricole.md": {
-	id: "26-la-speculation-sur-le-bati-agricole.md";
-  slug: "26-la-speculation-sur-le-bati-agricole";
+"26-le-verrou-des-depots-petroliers.md": {
+	id: "26-le-verrou-des-depots-petroliers.md";
+  slug: "26-le-verrou-des-depots-petroliers";
   body: string;
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
@@ -521,9 +521,9 @@ declare module 'astro:content' {
   collection: "investigations";
   data: InferEntrySchema<"investigations">
 } & { render(): Render[".md"] };
-"26-la-speculation-sur-le-bati-agricole.md": {
-	id: "26-la-speculation-sur-le-bati-agricole.md";
-  slug: "26-la-speculation-sur-le-bati-agricole";
+"26-the-fuel-depot-monopoly.md": {
+	id: "26-the-fuel-depot-monopoly.md";
+  slug: "26-the-fuel-depot-monopoly";
   body: string;
   collection: "investigations";
   data: InferEntrySchema<"investigations">

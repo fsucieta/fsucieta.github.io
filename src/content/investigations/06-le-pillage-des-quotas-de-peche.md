@@ -1,6 +1,6 @@
 ---
 id: 6
-title: "Investigation 06 : When the Sea Ceases to Sing — Autopsy of the Extinction of Corsican Fishermen & The Plunder of Our Sea"
+title: "When the Sea Ceases to Sing — Autopsy of the Extinction of Corsican Fishermen & The Plunder of Our Sea"
 subtitle: "The logbook of a maritime dispossession : how the fuel storage conspiracy (187.5 M€ sanction), the Sète quota monopoly, and coastal pressures weigh on our mariners and island cost of living"
 category: "MARITIME & FISHERIES"
 status: cloturee

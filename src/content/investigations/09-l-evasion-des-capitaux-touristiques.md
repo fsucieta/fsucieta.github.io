@@ -1,6 +1,6 @@
 ---
 id: 9
-title: "Investigation 09 : The Capital Flight of the Tourism Season — The Drain of Island Added Value"
+title: "The Capital Flight of the Tourism Season — The Drain of Island Added Value"
 subtitle: "Investigation into the siphoning of summer revenue : how supermarket retail cartels, national franchises, and digital rental platforms drain Corsica of its seasonal gains."
 category: "TOURISM ECONOMY & CAPITAL FLIGHT"
 status: en_cours

@@ -1,6 +1,6 @@
 ---
 id: 5
-title: "Enquête 05 : L'Empire des SCI Non-Résidentes — La mainmise opaque sur le littoral corse"
+title: "L'Empire des SCI Non-Résidentes — La mainmise opaque sur le littoral corse"
 subtitle: "Radiographie des bénéficiaires effectifs : comment les données croisées de l'INPI RBE et de DVF démasquent l'accaparement de la terre par des sociétés hors-sol"
 category: "TRANSPARENCE & INPI"
 status: en_cours

@@ -1,6 +1,6 @@
 ---
 id: 29
-title: "Special Issue 01 : Manifesto from Corte to Philadelphia — An Appeal to Free Nations"
+title: "Manifesto from Corte to Philadelphia — An Appeal to Free Nations"
 subtitle: "From the modern world's first democratic Constitution (1755) to America's first military battle cry 'Remember Paoli !' (1777) : the resurgence of a sacred moral pact between Corsica and the free world."
 category: "EMANCIPATION MANIFESTO & GEOPOLITICS"
 status: cloturee

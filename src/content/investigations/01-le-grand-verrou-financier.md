@@ -1,6 +1,6 @@
 ---
 id: 1
-title: "Investigation 01 : The Great Financial Lock — The Secret Mechanics of Offshore Mortgage Dispossession"
+title: "The Great Financial Lock — The Secret Mechanics of Offshore Mortgage Dispossession"
 subtitle: "Forensic banking autopsy of territorial dispossession : how mainland banks and private wealth holdings bypass debt-ratio caps to capture Corsican land."
 category: "BANKING & REAL ESTATE PREDATION"
 status: en_cours

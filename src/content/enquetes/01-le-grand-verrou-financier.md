@@ -1,6 +1,6 @@
 ---
 id: 1
-title: "Enquête 01 : Le Grand Verrou Financier — La mécanique secrète des prêts hypothécaires extérieurs"
+title: "Le Grand Verrou Financier — La mécanique secrète des prêts hypothécaires extérieurs"
 subtitle: "Radiographie financière de la dépossession foncière : comment les banques continentales et les holdings privées contournent le taux d'endettement pour acquérir la terre corse"
 category: "FONCIER & BANQUE"
 status: en_cours

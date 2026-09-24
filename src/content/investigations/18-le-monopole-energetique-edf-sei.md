@@ -1,6 +1,6 @@
 ---
 id: 18
-title: "Investigation 18 : The Stolen Light — Breaking the Energy Monopoly Illusion"
+title: "The Stolen Light — Breaking the Energy Monopoly Illusion"
 subtitle: "~194 to 199 MW of hydroelectric power under state concessions : forensic autopsy of a captive monopoly and the sovereign blueprint for a clean, prosperous, and decarbonized Corsica."
 category: "ENERGY & STRATEGIC COMMONS"
 status: cloturee

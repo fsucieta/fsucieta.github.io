@@ -1,6 +1,6 @@
 ---
 id: 12
-title: "Investigation 12 : Healthcare Dependence & The Cost of Hospital Under-Equipment"
+title: "Healthcare Dependence & The Cost of Hospital Under-Equipment"
 subtitle: "Radiography of public health : how activity-based pricing (T2A) and the absence of a University Hospital Center (CHU) strangle Bastia and Ajaccio hospitals, forcing 25,000 medical evacuations annually."
 category: "HEALTHCARE & PUBLIC HOSPITALS"
 status: en_cours

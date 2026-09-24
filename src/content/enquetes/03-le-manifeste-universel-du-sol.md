@@ -1,6 +1,6 @@
 ---
 id: 3
-title: "Enquête 03 : Le Manifeste Universel du Sol — Comment les Îles de Méditerranée et du Monde Protègent leur Terre (Et Pourquoi la France l'Interdit à la Corse)"
+title: "Le Manifeste Universel du Sol — Comment les Îles de Méditerranée et du Monde Protègent leur Terre (Et Pourquoi la France l'Interdit à la Corse)"
 subtitle: "De Malte (Protocole n°6) aux Îles Åland, du Danemark (Protocole n°32) à la Polynésie : autopsie médico-légale du grand mensonge républicain. Les preuves irréfutables que la protection du sol est légale partout dans le monde."
 category: "DROIT INTERNATIONAL & SOUVERAINETÉ"
 status: cloturee

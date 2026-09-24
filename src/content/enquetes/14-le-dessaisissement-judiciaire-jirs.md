@@ -1,6 +1,6 @@
 ---
 id: 14
-title: "Enquête 14 : Le Dessaisissement Judiciaire & la Justice Délocalisée"
+title: "Le Dessaisissement Judiciaire & la Justice Délocalisée"
 subtitle: "Radiographie des procédures pénales : comment la délocalisation systématique des instructions vers la JIRS de Marseille dépossède la Corse de sa justice"
 category: "JUSTICE & LIBERTÉS"
 status: en_cours

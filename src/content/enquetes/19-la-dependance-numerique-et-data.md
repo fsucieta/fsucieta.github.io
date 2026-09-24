@@ -1,6 +1,6 @@
 ---
 id: 19
-title: "Enquête 19 : La Dépendance Numérique & les Atteintes à la Souveraineté des Données"
+title: "La Dépendance Numérique & les Atteintes à la Souveraineté des Données"
 subtitle: "Radiographie du réseau de télécommunication : vulnérabilité des câbles sous-marins de fibre optique et hébergement des données publiques corses sur des serveurs parisiens"
 category: "NUMÉRIQUE & DATA"
 status: en_cours

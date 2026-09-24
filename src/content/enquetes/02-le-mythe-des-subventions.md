@@ -1,6 +1,6 @@
 ---
 id: 2
-title: "Enquête 02 : Le Hold-Up des 420 Millions — L'Effondrement Définitif du Mythe de l'Assistanat"
+title: "Le Hold-Up des 420 Millions — L'Effondrement Définitif du Mythe de l'Assistanat"
 subtitle: "De l'impôt des grandes enseignes encaissé à Paris à la TVA du tourisme d'été et au gel des 187 M€ du Sénat : notre analyse des flux financiers montre que la Corse rapporte plus à l'État qu'elle ne lui coûte (estimation d'environ 1 200 € par habitant et par an)."
 category: "FISCALITÉ & BUDGET"
 status: cloturee

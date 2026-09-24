@@ -1,6 +1,6 @@
 ---
 id: 21
-title: "Investigation 21 : The Waste Crisis & The Cost of Landfill Saturation — The Island Environmental Deadlock"
+title: "The Waste Crisis & The Cost of Landfill Saturation — The Island Environmental Deadlock"
 subtitle: "Radiography of Syvadec and the waste industry : maritime cargo export to the mainland and the saturation of landfill sites in Tallone and Prunelli."
 category: "WASTE MANAGEMENT & ENVIRONMENT"
 status: en_cours
