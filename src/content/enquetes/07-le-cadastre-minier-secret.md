@@ -203,3 +203,13 @@ Pour en finir avec un siècle de pillage et d'empoisonnement en silence, nous de
 ---
 
 *Enquête menée avec l'appui cartographique et le cadastre historique du partenaire de veille d'urbanisme [Bufitonu.fr](https://bufitonu.fr).*
+
+---
+
+### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+
+Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+
+- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-07-cadastre-minier/01_KIT_PRESSE_INVESTIGATION.md) : synthèse des permis secrets, analyse géologique des terres rares et passif sanitaire à l'arsenic.
+- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Pôle Régional Environnemental)**](/transmissions/enquete-07-cadastre-minier/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 (arrêt CAA Versailles, décret 2025-851, rapport BRGM).
+- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-07-cadastre-minier/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : projet de loi de transfert du Code minier, fonds d'État de dépollution et modèle de question écrite au gouvernement.

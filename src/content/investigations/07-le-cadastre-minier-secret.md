@@ -140,4 +140,14 @@ The investigation into **Mining Commons** reveals institutional fragmentation:
 ### Legislative Recommendations & Innovative Statutory Remedies :
 1. **Transfer of Mining Competence & Subsoil Ownership to the Collectivité de Corse :** Enact a statutory transfer of all state mining rights to the Corsican Regional Authority, establishing that no subsurface title can be granted without Assembly of Corsica approval.
 2. **Mandatory Polluter-Pays State Environmental Remediation Fund :** Legally compel the French central state to finance the complete environmental rehabilitation and heavy-metal encapsulation of the Meria, Canari, and Castifao wastelands.
-3. **Establishment of the Corsican Sovereign Critical Minerals Reserve :** Classify all strategic subsoil assets as non-alienable common heritage (*Patrimoine Commun Inaliénable*), dedicated exclusively to regional ecological transition.\n
+3. **Establishment of the Corsican Sovereign Critical Minerals Reserve :** Classify all strategic subsoil assets as non-alienable common heritage (*Patrimoine Commun Inaliénable*), dedicated exclusively to regional ecological transition.
+
+---
+
+### 🏛️ OFFICIAL INSTITUTIONAL & PRESS TRANSMISSION DOSSIERS (GRADE ICIJ)
+
+To ensure maximum democratic accountability, judicial follow-up, and investigative media coverage, the investigation desk makes available the unredacted transmission files:
+
+- 📰 [**Press & Investigative Newsrooms Briefing Kit**](/transmissions/enquete-07-cadastre-minier/01_KIT_PRESSE_INVESTIGATION.md) : key findings summary, offshore hydrocarbon concession analysis, and heavy-metal contamination autopsy.
+- ⚖️ [**Official Judicial Referral Brief (CPP Art. 40 / Environmental Prosecution Unit)**](/transmissions/enquete-07-cadastre-minier/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : formal itemized inventory of 4 sealed ISO/IEC 27037 legal exhibits (CAA Versailles ruling, Decree 2025-851, BRGM scientific survey).
+- 🏛️ [**Parliamentary & Territorial Action Policy Brief**](/transmissions/enquete-07-cadastre-minier/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : draft statutory transfer of mining jurisdiction, €50M state decontamination fund, and ready-to-file written parliamentary question.

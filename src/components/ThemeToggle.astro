@@ -1,4 +1,4 @@
-﻿---
+---
 // ThemeToggle.astro — Sélecteur Dual-Axis Tri-Palette L'OCHJU
 // Axe 1 : Mode Nuit / Jour (classe .dark / .light sur <html>)
 // Axe 2 : Palette Paolien / FININT / Granit (attribut data-palette sur <html>)
@@ -10,12 +10,17 @@
   <!-- Libellé discret -->
   <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider hidden sm:block">Thème</span>
 
-  <!-- Conteneur principal du double sélecteur -->
-  <div class="flex items-center gap-1.5 bg-slate-900/80 border border-slate-800 rounded-xl p-1 shadow-lg backdrop-blur-sm">
+  <!-- Conteneur principal du double sélecteur (adaptatif Nuit / Jour) -->
+  <div 
+    id="themeSelectorBox"
+    class="flex items-center gap-1.5 rounded-xl p-1 shadow-lg backdrop-blur-sm transition-colors duration-300"
+    style="background: rgba(11, 15, 23, 0.85); border: 1px solid rgba(51, 65, 85, 0.6);"
+  >
 
     <!-- === AXE 1 : Toggle Mode Nuit / Jour === -->
     <button
       id="modeToggleBtn"
+      data-action="toggle-mode"
       type="button"
       title="Basculer entre Mode Nuit et Mode Jour"
       aria-label="Changer le mode d'affichage"
@@ -27,12 +32,14 @@
     </button>
 
     <!-- Séparateur -->
-    <div class="w-px h-6 bg-slate-700/60"></div>
+    <div id="themeDivider" class="w-px h-6 bg-slate-700/60"></div>
 
     <!-- === AXE 2 : Sélecteur Palette === -->
     <!-- Swatch Paolien (Or Antique) -->
     <button
       id="palettePaoli"
+      data-action="set-palette"
+      data-palette-target="paoli"
       type="button"
       title="🏛️ Thème Paolien — Chambre des Comptes 1755 (Obsidienne & Or Antique)"
       aria-label="Thème Paolien"
@@ -45,6 +52,8 @@
     <!-- Swatch FININT (Émeraude) -->
     <button
       id="paletteFinint"
+      data-action="set-palette"
+      data-palette-target="finint"
       type="button"
       title="📊 Thème Bloomberg FININT — Terminal Renseignement Financier (Cobalt & Émeraude)"
       aria-label="Thème Bloomberg FININT"
@@ -57,6 +66,8 @@
     <!-- Swatch Granit (Cuivre Martelé) -->
     <button
       id="paletteGranit"
+      data-action="set-palette"
+      data-palette-target="granit"
       type="button"
       title="🌿 Thème Granit Insulaire — Maquis, Schiste & Châtaigneraie (Ardoise & Cuivre)"
       aria-label="Thème Granit Insulaire"
@@ -72,94 +83,150 @@
 <script is:inline>
 (function() {
   /* ============================================================
-   * CONTRÔLEUR TRI-PALETTE BI-MODE — L'OCHJU ThemeToggle
+   * CONTRÔLEUR TRI-PALETTE BI-MODE ROBUSTE — L'OCHJU ThemeToggle
    * Persistance indépendante :
    *   localStorage['lochju-mode']    = 'dark' | 'light'
    *   localStorage['lochju-palette'] = 'paoli' | 'finint' | 'granit'
    * ============================================================ */
 
-  const html = document.documentElement;
-  const modeBtn      = document.getElementById('modeToggleBtn');
-  const modeIcon     = document.getElementById('modeIcon');
-  const modeLabel    = document.getElementById('modeLabel');
-  const btnPaoli     = document.getElementById('palettePaoli');
-  const btnFinint    = document.getElementById('paletteFinint');
-  const btnGranit    = document.getElementById('paletteGranit');
+  function getCurrentMode() {
+    return localStorage.getItem('lochju-mode') || 'dark';
+  }
 
-  /* --- Helpers --- */
-  function getCurrentMode()    { return localStorage.getItem('lochju-mode')    || 'dark'; }
-  function getCurrentPalette() { return localStorage.getItem('lochju-palette') || 'granit'; }
+  function getCurrentPalette() {
+    return localStorage.getItem('lochju-palette') || 'granit';
+  }
 
-  /* --- Application du mode (nuit / jour) --- */
+  /* --- Application du mode (Nuit / Jour) --- */
   function applyMode(mode) {
+    var html = document.documentElement;
     html.classList.remove('dark', 'light');
     html.classList.add(mode);
-    localStorage.setItem('lochju-mode', mode);
+    try {
+      localStorage.setItem('lochju-mode', mode);
+    } catch (e) {}
+
+    // Mise à jour de tous les boutons et indicateurs du sélecteur
+    var modeIcons = document.querySelectorAll('#modeIcon');
+    var modeLabels = document.querySelectorAll('#modeLabel');
+    var modeBtns = document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]');
+    var selectorBoxes = document.querySelectorAll('#themeSelectorBox');
+    var dividers = document.querySelectorAll('#themeDivider');
 
     if (mode === 'dark') {
-      if (modeIcon)  modeIcon.textContent  = '🌙';
-      if (modeLabel) modeLabel.textContent = 'NUIT';
-      if (modeBtn) {
-        modeBtn.style.color      = 'var(--accent-primary, #c26d43)';
-        modeBtn.style.background = 'rgba(15,21,30,0.8)';
-      }
+      modeIcons.forEach(function(el) { el.textContent = '🌙'; });
+      modeLabels.forEach(function(el) { el.textContent = 'NUIT'; });
+      modeBtns.forEach(function(btn) {
+        btn.style.color = 'var(--accent-primary, #c26d43)';
+        btn.style.background = 'rgba(15, 21, 30, 0.8)';
+        btn.style.borderColor = 'rgba(51, 65, 85, 0.6)';
+      });
+      selectorBoxes.forEach(function(box) {
+        box.style.background = 'rgba(11, 15, 23, 0.9)';
+        box.style.borderColor = 'rgba(51, 65, 85, 0.6)';
+        box.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.5)';
+      });
+      dividers.forEach(function(d) {
+        d.style.backgroundColor = 'rgba(51, 65, 85, 0.6)';
+      });
     } else {
-      if (modeIcon)  modeIcon.textContent  = '☀️';
-      if (modeLabel) modeLabel.textContent = 'JOUR';
-      if (modeBtn) {
-        modeBtn.style.color      = 'var(--text-muted, #475569)';
-        modeBtn.style.background = 'rgba(248,247,242,0.9)';
-      }
+      modeIcons.forEach(function(el) { el.textContent = '☀️'; });
+      modeLabels.forEach(function(el) { el.textContent = 'JOUR'; });
+      modeBtns.forEach(function(btn) {
+        btn.style.color = '#0f172a';
+        btn.style.background = '#ffffff';
+        btn.style.borderColor = '#cbd5e1';
+      });
+      selectorBoxes.forEach(function(box) {
+        box.style.background = 'rgba(255, 255, 255, 0.95)';
+        box.style.borderColor = '#cbd5e1';
+        box.style.boxShadow = '0 10px 25px -5px rgba(15, 23, 42, 0.1)';
+      });
+      dividers.forEach(function(d) {
+        d.style.backgroundColor = '#cbd5e1';
+      });
     }
   }
 
-  /* --- Application de la palette --- */
+  /* --- Application de la palette (Paolien, FININT, Granit) --- */
   function applyPalette(palette) {
+    var html = document.documentElement;
     html.setAttribute('data-palette', palette);
-    localStorage.setItem('lochju-palette', palette);
+    try {
+      localStorage.setItem('lochju-palette', palette);
+    } catch (e) {}
 
-    /* Activer / désactiver visuellement les swatches */
-    var swatches = [
-      { btn: btnPaoli,  name: 'paoli'  },
-      { btn: btnFinint, name: 'finint' },
-      { btn: btnGranit, name: 'granit' }
-    ];
-
-    swatches.forEach(function(s) {
-      if (!s.btn) return;
-      if (s.name === palette) {
-        s.btn.style.border        = '2px solid rgba(255,255,255,0.9)';
-        s.btn.style.boxShadow     = '0 0 0 2px rgba(255,255,255,0.2), 0 0 12px rgba(255,255,255,0.12)';
-        s.btn.style.transform     = 'scale(1.15)';
-        s.btn.style.outline       = '2px solid rgba(255,255,255,0.08)';
-        s.btn.style.outlineOffset = '2px';
+    // Mise en surbrillance des boutons swatch correspondants
+    var swatches = document.querySelectorAll('[data-palette-target]');
+    swatches.forEach(function(btn) {
+      var target = btn.getAttribute('data-palette-target');
+      if (target === palette) {
+        btn.style.border = '2px solid rgba(255, 255, 255, 0.95)';
+        btn.style.boxShadow = '0 0 0 2px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.2)';
+        btn.style.transform = 'scale(1.15)';
+        btn.style.outline = '2px solid rgba(255, 255, 255, 0.12)';
+        btn.style.outlineOffset = '2px';
       } else {
-        s.btn.style.border        = '2px solid transparent';
-        s.btn.style.boxShadow     = 'none';
-        s.btn.style.transform     = 'scale(1)';
-        s.btn.style.outline       = 'none';
+        btn.style.border = '2px solid transparent';
+        btn.style.boxShadow = 'none';
+        btn.style.transform = 'scale(1)';
+        btn.style.outline = 'none';
+      }
+    });
+
+    // Mettre à jour la couleur du bouton Mode en dark si nécessaire
+    if (getCurrentMode() === 'dark') {
+      var modeBtns = document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]');
+      modeBtns.forEach(function(btn) {
+        btn.style.color = 'var(--accent-primary, #c26d43)';
+      });
+    }
+  }
+
+  /* --- Initialisation globale & Écouteurs avec délégation résiliente --- */
+  function initThemeController() {
+    var mode = getCurrentMode();
+    var palette = getCurrentPalette();
+    applyMode(mode);
+    applyPalette(palette);
+  }
+
+  // 1. Initialisation immédiate
+  initThemeController();
+
+  // 2. Initialisation au DOMContentLoaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeController);
+  }
+
+  // 3. Délégation d'événements unique et globale sur document (infaillible lors des clics)
+  if (!window.__lochjuThemeListenerAttached) {
+    window.__lochjuThemeListenerAttached = true;
+
+    document.addEventListener('click', function(e) {
+      // Clic sur Toggle Mode
+      var modeBtn = e.target.closest('#modeToggleBtn, [data-action="toggle-mode"]');
+      if (modeBtn) {
+        e.preventDefault();
+        var nextMode = getCurrentMode() === 'dark' ? 'light' : 'dark';
+        applyMode(nextMode);
+        return;
+      }
+
+      // Clic sur Swatch Palette
+      var paletteBtn = e.target.closest('[data-palette-target]');
+      if (paletteBtn) {
+        e.preventDefault();
+        var targetPalette = paletteBtn.getAttribute('data-palette-target');
+        if (targetPalette) {
+          applyPalette(targetPalette);
+        }
+        return;
       }
     });
   }
 
-  /* --- Initialisation au chargement --- */
-  function init() {
-    applyMode(getCurrentMode());
-    applyPalette(getCurrentPalette());
-  }
-
-  init();
-
-  /* --- Gestionnaires d'événements --- */
-  if (modeBtn) {
-    modeBtn.addEventListener('click', function() {
-      applyMode(getCurrentMode() === 'dark' ? 'light' : 'dark');
-    });
-  }
-
-  if (btnPaoli)   btnPaoli.addEventListener('click',  function() { applyPalette('paoli');  });
-  if (btnFinint)  btnFinint.addEventListener('click', function() { applyPalette('finint'); });
-  if (btnGranit)  btnGranit.addEventListener('click', function() { applyPalette('granit'); });
-
+  // 4. Compatibilité Astro ViewTransitions / navigation
+  document.addEventListener('astro:page-load', initThemeController);
 })();
 </script>
