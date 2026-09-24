@@ -315,3 +315,13 @@ Pour maintenir une pression démocratique totale et briser l'omerta, chaque cito
 1. **Mise en Place Immédiate du Statut d'Accès Tiers Régulé (ATR) :** Obligation stricte pour les dépôts de Lucciana et du Vazzio de publier des tarifs de stockage transparents et non discriminatoires pour tout importateur.
 2. **Création d'un Observatoire Citoyen des Prix à la Pompe :** Publication hebdomadaire des marges brutes de raffinage, transport maritime et stockage pour chaque station-service de Corse.
 3. **Pôle Public Insulaire de Sécurité Énergétique :** Entrée au capital de la Collectivité de Corse dans les infrastructures de stockage pour garantir la résilience de l'île.
+
+---
+
+### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+
+Pour garantir l'impact citoyen, la saisine judiciaire et le relais médiatique de cette enquête, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+
+- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md) : synthèse des faits saillants, chronologie médico-légale et angles d'attaque éditoriaux.
+- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / PNF / Adlc)**](/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 et qualifications pénales/commerciales.
+- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : proposition de décret L. 410-2 du Code de commerce, modèle de question écrite au gouvernement et projet de régie publique insulaire.

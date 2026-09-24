@@ -315,3 +315,13 @@ To enforce total transparency, any citizen, elected representative, or civic ass
 1. **Immediate Regulated Third-Party Access (rTPA) :** Strict requirement for Lucciana and Vazzio depots to publish transparent, non-discriminatory tariffs for all third-party fuel distributors.
 2. **Citizen Pump Price Watchdog :** Weekly publication of verified refining, maritime freight, and storage gross margins for every fuel station in Corsica.
 3. **Public Territorial Energy Reserve :** Capital participation by the Collectivité de Corse in bulk storage infrastructure to guarantee 60-day island resilience.
+
+---
+
+### 🏛️ OFFICIAL INSTITUTIONAL & PRESS TRANSMISSION DOSSIERS (GRADE ICIJ)
+
+To ensure maximum democratic accountability, judicial follow-up, and investigative media coverage, the investigation desk makes available the unredacted transmission files:
+
+- 📰 [**Press & Investigative Newsrooms Briefing Kit**](/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md) : key findings summary, forensic timeline, and editorial investigation angles.
+- ⚖️ [**Official Judicial Referral Brief (CPP Art. 40 / PNF / Antitrust Authority)**](/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : formal itemized inventory of 4 sealed ISO/IEC 27037 legal exhibits and statutory offense qualifications.
+- 🏛️ [**Parliamentary & Territorial Action Policy Brief**](/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : emergency price-cap decree pursuant to Commercial Code Art. L. 410-2, ready-to-file written question to the government, and public utility buyout proposal.
