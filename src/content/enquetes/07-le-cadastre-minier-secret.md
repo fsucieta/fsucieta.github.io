@@ -3,6 +3,7 @@ id: 7
 title: "Le Cadastre Minier Secret & le Grand Passif — Comment Paris a Pillé nos Richesses et Nous a Laissé le Poison"
 subtitle: "Pétrole au large de Scandola, fer oublié de Marignana, terres rares sous les pins d'Evisa et rivières empoisonnées à l'arsenic : la vérité sur ce qui dort sous nos pieds et pourquoi on vous fait croire que la Corse est pauvre."
 category: "MINES & ÉNERGIE"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-07-POPULAIRE"
 author: "Cellule d'Investigation Citoyenne L'OCHJU"
 date: "Septembre 2026"

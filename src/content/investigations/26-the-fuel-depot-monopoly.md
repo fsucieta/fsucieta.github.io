@@ -3,6 +3,7 @@ id: 26
 title: "The Fuel Depot Monopoly — The Forensic Autopsy of Corsica's Fuel Cartel"
 subtitle: "€187.5M antitrust fine: how the Lucciana and Vazzio fuel terminal cartel, shielded by 37 years of state inaction, confiscates island tax breaks, bans SP95-E10, and siphons €48M every year from Corsican households."
 category: "ENERGY & MONOPOLIES"
+status: cloturee
 ref: "LOCHJU-AUDIT-INVESTIGATION-26"
 author: "L'OCHJU Energy & Antitrust Forensic Investigation Desk"
 date: "September 2026"

@@ -3,6 +3,7 @@ id: 26
 title: "Le Verrou des Dépôts Pétroliers — L'Autopsie du Racket sur les Carburants en Corse"
 subtitle: "187,5 millions d'euros d'amende pour entente illicite : comment le cartel de Lucciana et du Vazzio, avec la complicité passive de l'État, confisque l'avantage fiscal insulaire, interdit le SP95-E10 et prélève 48 millions d'euros par an sur le peuple corse."
 category: "ÉNERGIE & MONOPOLES"
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-26"
 author: "Cellule d'Investigation Énergie & Concurrence L'OCHJU"
 date: "Septembre 2026"
