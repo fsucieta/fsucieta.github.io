@@ -1,84 +1,51 @@
 ---
 // ThemeToggle.astro — Sélecteur Dual-Axis Tri-Palette L'OCHJU
-// Axe 1 : Mode Nuit / Jour (classe .dark / .light sur <html>)
-// Axe 2 : Palette Paolien / FININT / Granit (attribut data-palette sur <html>)
-// Persistance indépendante via localStorage : 'lochju-mode' et 'lochju-palette'
 ---
 
 <div class="flex flex-col items-end gap-1.5" id="lochju-theme-selector">
-
-  <!-- Libellé discret -->
   <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider hidden sm:block">Thème</span>
 
-  <!-- Conteneur principal du double sélecteur (adaptatif Nuit / Jour) -->
-  <div 
-    id="themeSelectorBox"
-    class="flex items-center gap-1.5 rounded-xl p-1 shadow-lg backdrop-blur-sm transition-colors duration-300"
-    style="background: rgba(11, 15, 23, 0.85); border: 1px solid rgba(51, 65, 85, 0.6);"
-  >
+  <div id="themeSelectorBox"
+    class="flex items-center gap-1.5 rounded-xl p-1 shadow-lg backdrop-blur-sm"
+    style="background:rgba(11,15,23,0.85);border:1px solid rgba(51,65,85,0.6);">
 
-    <!-- === AXE 1 : Toggle Mode Nuit / Jour === -->
-    <button
-      id="modeToggleBtn"
-      data-action="toggle-mode"
-      type="button"
-      onclick="if(window.__lochjuToggleMode) window.__lochjuToggleMode();"
-      title="Basculer entre Mode Nuit et Mode Jour"
-      aria-label="Changer le mode d'affichage"
-      class="px-2.5 py-1.5 rounded-lg text-xs font-bold font-mono transition-all duration-300 flex items-center gap-1.5 cursor-pointer border border-transparent hover:border-slate-700"
-      style="min-width: 80px;"
-    >
+    <!-- Toggle Nuit / Jour -->
+    <button id="modeToggleBtn" data-action="toggle-mode" type="button"
+      onclick="if(window.__lochjuToggleMode)window.__lochjuToggleMode();"
+      title="Basculer Mode Nuit / Jour"
+      class="px-2.5 py-1.5 rounded-lg text-xs font-bold font-mono flex items-center gap-1.5 cursor-pointer border border-transparent"
+      style="min-width:80px;">
       <span id="modeIcon" class="text-base leading-none">🌙</span>
       <span id="modeLabel" class="hidden sm:inline">NUIT</span>
     </button>
 
-    <!-- Séparateur -->
     <div id="themeDivider" class="w-px h-6 bg-slate-700/60"></div>
 
-    <!-- === AXE 2 : Sélecteur Palette === -->
-    <!-- Swatch Paolien (Or Antique) -->
-    <button
-      id="palettePaoli"
-      data-action="set-palette"
-      data-palette-target="paoli"
-      type="button"
-      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('paoli');"
-      title="🏛️ Thème Paolien — Chambre des Comptes 1755 (Obsidienne & Or Antique)"
-      aria-label="Thème Paolien"
-      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
-      style="background: linear-gradient(135deg, #0b0f17 50%, #d4af37 50%);"
-    >
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🏛️ PAO</span>
+    <!-- Swatch Paolien -->
+    <button id="palettePaoli" data-palette-target="paoli" type="button"
+      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('paoli');"
+      title="🏛️ Paolien — Or 1755"
+      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
+      style="background:linear-gradient(135deg,#0b0f17 50%,#d4af37 50%);">
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">🏛️ PAO</span>
     </button>
 
-    <!-- Swatch FININT (Émeraude) -->
-    <button
-      id="paletteFinint"
-      data-action="set-palette"
-      data-palette-target="finint"
-      type="button"
-      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('finint');"
-      title="📊 Thème Bloomberg FININT — Terminal Renseignement Financier (Cobalt & Émeraude)"
-      aria-label="Thème Bloomberg FININT"
-      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
-      style="background: linear-gradient(135deg, #080d18 50%, #10b981 50%);"
-    >
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">📊 FIN</span>
+    <!-- Swatch FININT -->
+    <button id="paletteFinint" data-palette-target="finint" type="button"
+      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('finint');"
+      title="📊 FININT — Bloomberg"
+      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
+      style="background:linear-gradient(135deg,#080d18 50%,#10b981 50%);">
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">📊 FIN</span>
     </button>
 
-    <!-- Swatch Granit (Cuivre Martelé) -->
-    <button
-      id="paletteGranit"
-      data-action="set-palette"
-      data-palette-target="granit"
-      type="button"
-      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('granit');"
-      title="🌿 Thème Granit Insulaire — Maquis, Schiste & Châtaigneraie (Ardoise & Cuivre)"
-      aria-label="Thème Granit Insulaire"
-      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
-      style="background: linear-gradient(135deg, #0d1112 50%, #c26d43 50%);"
-    >
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-orange-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🌿 GRA</span>
+    <!-- Swatch Granit -->
+    <button id="paletteGranit" data-palette-target="granit" type="button"
+      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('granit');"
+      title="🌿 Granit Insulaire — Cuivre"
+      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
+      style="background:linear-gradient(135deg,#0d1112 50%,#c26d43 50%);">
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-orange-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">🌿 GRA</span>
     </button>
 
   </div>
@@ -86,193 +53,95 @@
 
 <script is:inline>
 (function() {
-  /* ============================================================
-   * CONTRÔLEUR TRI-PALETTE BI-MODE — L'OCHJU
-   * STRATÉGIE : styles inline sur les éléments structurels.
-   * Tailwind CDN génère bg-slate-950/90 etc. APRÈS le CSS compilé.
-   * Style inline = spécificité absolue, impossible à surcharger.
-   * ============================================================ */
+  /* ================================================================
+   * CONTRÔLEUR THÈME — L'OCHJU
+   * Rôle : lire/écrire localStorage + mettre à jour <html> class/data-palette
+   *        + mettre à jour l'UI du sélecteur.
+   * Le rendu visuel est géré par window.__lochjuInjectCSS (Layout.astro).
+   * ================================================================ */
 
-  function getCurrentMode() {
-    try {
-      var saved = localStorage.getItem('lochju-mode');
-      if (saved === 'dark' || saved === 'light') return saved;
-    } catch (e) {}
-    if (document.documentElement.classList.contains('light')) return 'light';
-    return 'dark';
+  function getMode() {
+    try { var s=localStorage.getItem('lochju-mode'); if(s==='dark'||s==='light') return s; } catch(e){}
+    return document.documentElement.classList.contains('light') ? 'light' : 'dark';
   }
 
-  function getCurrentPalette() {
-    try {
-      var saved = localStorage.getItem('lochju-palette');
-      if (saved === 'paoli' || saved === 'finint' || saved === 'granit') return saved;
-    } catch (e) {}
-    var dp = document.documentElement.getAttribute('data-palette');
-    if (dp === 'paoli' || dp === 'finint' || dp === 'granit') return dp;
-    return 'granit';
+  function getPalette() {
+    try { var s=localStorage.getItem('lochju-palette'); if(s==='paoli'||s==='finint'||s==='granit') return s; } catch(e){}
+    var dp=document.documentElement.getAttribute('data-palette');
+    return (dp==='paoli'||dp==='finint'||dp==='granit') ? dp : 'granit';
   }
 
-  /* --- Table de couleurs : 2 modes × 3 palettes --- */
-  var COLORS = {
-    dark: {
-      paoli:  { bg: '#080705', text: '#f5f0e1', header: 'rgba(8,7,5,0.96)',       border: '#3d3118', nav: 'rgba(8,7,5,0.92)'    },
-      finint: { bg: '#020617', text: '#e0f2fe', header: 'rgba(2,6,23,0.96)',      border: '#0e3a59', nav: 'rgba(2,6,23,0.92)'   },
-      granit: { bg: '#070a08', text: '#edf2ed', header: 'rgba(7,10,8,0.96)',      border: '#283d31', nav: 'rgba(7,10,8,0.92)'   }
-    },
-    light: {
-      paoli:  { bg: '#fcfaf4', text: '#1c170d', header: 'rgba(252,250,244,0.97)', border: '#dfd3be', nav: 'rgba(252,250,244,0.95)' },
-      finint: { bg: '#f0f7ff', text: '#082f49', header: 'rgba(240,247,255,0.97)', border: '#bae6fd', nav: 'rgba(240,247,255,0.95)' },
-      granit: { bg: '#f4f6f3', text: '#121d15', header: 'rgba(244,246,243,0.97)', border: '#ced9d1', nav: 'rgba(244,246,243,0.95)' }
-    }
-  };
+  /* --- Mise à jour de l'UI du sélecteur (boutons + box) --- */
+  function updateUI(mode, palette) {
+    /* Icône et label du toggle */
+    document.querySelectorAll('#modeIcon').forEach(function(el){ el.textContent = mode==='dark' ? '🌙' : '☀️'; });
+    document.querySelectorAll('#modeLabel').forEach(function(el){ el.textContent = mode==='dark' ? 'NUIT' : 'JOUR'; });
 
-  /* --- Application des styles inline sur tous les éléments structurels ---
-   * style.setProperty(..., 'important') = priorité absolue dans la cascade CSS.
-   * Aucun CDN, aucune feuille de style ne peut surclasser un style inline. */
-  function applyInlineStyles(mode, palette) {
-    var c = (COLORS[mode] && COLORS[mode][palette]) ? COLORS[mode][palette] : COLORS[mode]['granit'];
-
-    /* 1. BODY — fond de page et couleur de texte principale */
-    if (document.body) {
-      document.body.style.setProperty('background-color', c.bg, 'important');
-      document.body.style.setProperty('color', c.text, 'important');
-    }
-
-    /* 2. HEADER — contient bg-slate-950/95 Tailwind CDN hardcodé */
-    document.querySelectorAll('header').forEach(function(el) {
-      el.style.setProperty('background-color', c.header, 'important');
-      el.style.setProperty('border-color', c.border, 'important');
+    /* Style du bouton toggle */
+    document.querySelectorAll('#modeToggleBtn,[data-action="toggle-mode"]').forEach(function(btn){
+      btn.style.color      = mode==='dark' ? '#c26d43'             : '#0f172a';
+      btn.style.background = mode==='dark' ? 'rgba(15,21,30,0.8)'  : '#ffffff';
+      btn.style.borderColor= mode==='dark' ? 'rgba(51,65,85,0.6)'  : '#cbd5e1';
     });
 
-    /* 3. NAV — contient bg-slate-950/90 Tailwind CDN hardcodé */
-    document.querySelectorAll('nav').forEach(function(el) {
-      el.style.setProperty('background-color', c.nav, 'important');
-      el.style.setProperty('border-color', c.border, 'important');
+    /* Boîte du sélecteur */
+    document.querySelectorAll('#themeSelectorBox').forEach(function(box){
+      box.style.background  = mode==='dark' ? 'rgba(11,15,23,0.9)' : 'rgba(255,255,255,0.95)';
+      box.style.borderColor = mode==='dark' ? 'rgba(51,65,85,0.6)' : '#cbd5e1';
     });
 
-    /* 4. MAIN — conteneur principal de la page */
-    document.querySelectorAll('main').forEach(function(el) {
-      el.style.setProperty('background-color', c.bg, 'important');
-      el.style.setProperty('color', c.text, 'important');
+    /* Séparateur */
+    document.querySelectorAll('#themeDivider').forEach(function(d){
+      d.style.backgroundColor = mode==='dark' ? 'rgba(51,65,85,0.6)' : '#cbd5e1';
     });
 
-    /* 5. FOOTER */
-    document.querySelectorAll('footer').forEach(function(el) {
-      el.style.setProperty('background-color', c.header, 'important');
-      el.style.setProperty('border-color', c.border, 'important');
-      el.style.setProperty('color', c.text, 'important');
+    /* Surbrillance des swatches */
+    document.querySelectorAll('[data-palette-target]').forEach(function(btn){
+      var active = btn.getAttribute('data-palette-target') === palette;
+      btn.style.border    = active ? '2px solid rgba(255,255,255,0.9)' : '2px solid transparent';
+      btn.style.transform = active ? 'scale(1.15)' : 'scale(1)';
+      btn.style.boxShadow = active ? '0 0 0 2px rgba(255,255,255,0.2)' : 'none';
     });
   }
 
-  /* --- Mise à jour de l'UI du bouton mode (icône + label + style sélecteur) --- */
-  function updateModeUI(mode) {
-    document.querySelectorAll('#modeIcon').forEach(function(el) {
-      el.textContent = mode === 'dark' ? '🌙' : '☀️';
-    });
-    document.querySelectorAll('#modeLabel').forEach(function(el) {
-      el.textContent = mode === 'dark' ? 'NUIT' : 'JOUR';
-    });
-    document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]').forEach(function(btn) {
-      if (mode === 'dark') {
-        btn.style.color = 'var(--accent-primary, #c26d43)';
-        btn.style.background = 'rgba(15, 21, 30, 0.8)';
-        btn.style.borderColor = 'rgba(51, 65, 85, 0.6)';
-      } else {
-        btn.style.color = '#0f172a';
-        btn.style.background = '#ffffff';
-        btn.style.borderColor = '#cbd5e1';
-      }
-    });
-    document.querySelectorAll('#themeSelectorBox').forEach(function(box) {
-      box.style.background = mode === 'dark' ? 'rgba(11, 15, 23, 0.9)' : 'rgba(255, 255, 255, 0.95)';
-      box.style.borderColor = mode === 'dark' ? 'rgba(51, 65, 85, 0.6)' : '#cbd5e1';
-    });
-    document.querySelectorAll('#themeDivider').forEach(function(d) {
-      d.style.backgroundColor = mode === 'dark' ? 'rgba(51, 65, 85, 0.6)' : '#cbd5e1';
-    });
-  }
-
-  /* --- Application du mode complet (classe HTML + UI + inline styles) --- */
+  /* --- Applique le mode (classe HTML + localStorage + UI) --- */
   function applyMode(mode) {
-    var validMode = (mode === 'light') ? 'light' : 'dark';
-    /* 1. Classe sur <html> pour que le CSS global réagisse */
+    var v = (mode === 'light') ? 'light' : 'dark';
     document.documentElement.classList.remove('dark', 'light');
-    document.documentElement.classList.add(validMode);
-    /* 2. Persistance */
-    try { localStorage.setItem('lochju-mode', validMode); } catch (e) {}
-    /* 3. UI du sélecteur */
-    updateModeUI(validMode);
-    /* 4. Styles inline via le moteur centralisé (défini en fin de body dans Layout.astro) */
-    if (window.__lochjuApplyStructural) {
-      window.__lochjuApplyStructural(validMode, getCurrentPalette());
-    }
+    document.documentElement.classList.add(v);
+    try { localStorage.setItem('lochju-mode', v); } catch(e){}
+    updateUI(v, getPalette());
   }
 
-  /* --- Application de la palette (Paolien, FININT, Granit) --- */
+  /* --- Applique la palette (data-palette + localStorage + UI) --- */
   function applyPalette(palette) {
-    var validPalette = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
-    document.documentElement.setAttribute('data-palette', validPalette);
-    try { localStorage.setItem('lochju-palette', validPalette); } catch (e) {}
-
-    /* Surbrillance du swatch actif */
-    document.querySelectorAll('[data-palette-target]').forEach(function(btn) {
-      var isActive = btn.getAttribute('data-palette-target') === validPalette;
-      btn.style.border  = isActive ? '2px solid rgba(255,255,255,0.95)' : '2px solid transparent';
-      btn.style.boxShadow = isActive ? '0 0 0 2px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.2)' : 'none';
-      btn.style.transform = isActive ? 'scale(1.15)' : 'scale(1)';
-      btn.style.outline = isActive ? '2px solid rgba(255,255,255,0.12)' : 'none';
-      btn.style.outlineOffset = '2px';
-    });
-
-    /* Styles inline via le moteur centralisé */
-    if (window.__lochjuApplyStructural) {
-      window.__lochjuApplyStructural(getCurrentMode(), validPalette);
-    }
+    var v = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
+    document.documentElement.setAttribute('data-palette', v);
+    try { localStorage.setItem('lochju-palette', v); } catch(e){}
+    updateUI(getMode(), v);
   }
 
+  /* --- Fonctions publiques --- */
+  window.__lochjuToggleMode  = function() { applyMode(getMode()==='dark' ? 'light' : 'dark'); };
+  window.__lochjuSetPalette  = function(p) { applyPalette(p); };
 
-  /* --- Fonctions publiques sur window --- */
-  window.__lochjuToggleMode = function() {
-    applyMode(getCurrentMode() === 'dark' ? 'light' : 'dark');
-  };
+  /* --- Initialisation : UI uniquement (le CSS est géré par Layout.astro) --- */
+  function init() { updateUI(getMode(), getPalette()); }
+  init();
+  document.addEventListener('DOMContentLoaded', init);
 
-  window.__lochjuSetPalette = function(palette) {
-    applyPalette(palette);
-  };
-
-  window.__lochjuInitTheme = function() {
-    applyMode(getCurrentMode());
-    applyPalette(getCurrentPalette());
-  };
-
-  /* --- Initialisations séquencées --- */
-  /* 1. Initialisation immédiate : corrige ce qui est déjà dans le DOM */
-  window.__lochjuInitTheme();
-
-  /* 2. DOMContentLoaded : DOM complet = header, nav, footer disponibles */
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', window.__lochjuInitTheme);
-  } else {
-    /* DOM déjà prêt (fréquent avec Astro static) : relancer pour cibler tous les éléments */
-    window.__lochjuInitTheme();
-  }
-
-  /* 3. Délégation globale d'événements (filet de sécurité) */
-  if (!window.__lochjuThemeListenerAttached) {
-    window.__lochjuThemeListenerAttached = true;
+  /* --- Délégation d'événements (filet de sécurité) --- */
+  if (!window.__lochjuEvt) {
+    window.__lochjuEvt = true;
     document.addEventListener('click', function(e) {
-      var modeBtn = e.target.closest('#modeToggleBtn, [data-action="toggle-mode"]');
-      if (modeBtn) { e.preventDefault(); window.__lochjuToggleMode(); return; }
-      var paletteBtn = e.target.closest('[data-palette-target]');
-      if (paletteBtn) {
-        e.preventDefault();
-        var t = paletteBtn.getAttribute('data-palette-target');
-        if (t) window.__lochjuSetPalette(t);
-      }
+      var mb = e.target.closest('[data-action="toggle-mode"]');
+      if (mb) { e.preventDefault(); window.__lochjuToggleMode(); return; }
+      var pb = e.target.closest('[data-palette-target]');
+      if (pb) { e.preventDefault(); var t=pb.getAttribute('data-palette-target'); if(t) window.__lochjuSetPalette(t); }
     });
   }
 
-  /* 4. Compatibilité Astro ViewTransitions */
-  document.addEventListener('astro:page-load', window.__lochjuInitTheme);
+  /* --- Astro ViewTransitions --- */
+  document.addEventListener('astro:page-load', init);
 })();
 </script>
