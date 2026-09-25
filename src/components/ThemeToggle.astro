@@ -1,147 +1,123 @@
 ---
-// ThemeToggle.astro — Sélecteur Dual-Axis Tri-Palette L'OCHJU
+// ThemeToggle.astro — Sélecteur Tri-Palette Nuit Souverain L'OCHJU
+// Mode Nuit permanent. Sélection interactive entre les 3 ambiances visuelles :
+// 🏛️ Paoli (Or Antique 1755) | 📊 FININT (Émeraude Bloomberg) | 🌿 Granit (Cuivre Insulaire - Défaut)
 ---
 
-<div class="flex flex-col items-end gap-1.5" id="lochju-theme-selector">
-  <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider hidden sm:block">Thème</span>
+<div class="flex flex-col items-end gap-1" id="lochju-theme-selector">
+  <!-- Libellé discret -->
+  <span class="text-[9px] font-mono text-slate-500 uppercase tracking-widest hidden sm:block">Palette</span>
 
-  <div id="themeSelectorBox"
+  <!-- Conteneur Tri-Palette -->
+  <div 
+    id="themeSelectorBox"
     class="flex items-center gap-1.5 rounded-xl p-1 shadow-lg backdrop-blur-sm"
-    style="background:rgba(11,15,23,0.85);border:1px solid rgba(51,65,85,0.6);">
-
-    <!-- Toggle Nuit / Jour -->
-    <button id="modeToggleBtn" data-action="toggle-mode" type="button"
-      onclick="if(window.__lochjuToggleMode)window.__lochjuToggleMode();"
-      title="Basculer Mode Nuit / Jour"
-      class="px-2.5 py-1.5 rounded-lg text-xs font-bold font-mono flex items-center gap-1.5 cursor-pointer border border-transparent"
-      style="min-width:80px;">
-      <span id="modeIcon" class="text-base leading-none">🌙</span>
-      <span id="modeLabel" class="hidden sm:inline">NUIT</span>
+    style="background: rgba(11, 15, 23, 0.85); border: 1px solid rgba(51, 65, 85, 0.6);"
+  >
+    <!-- Swatch Paolien (Or Antique 1755) -->
+    <button
+      id="palettePaoli"
+      data-palette-target="paoli"
+      type="button"
+      title="🏛️ Thème Paolien — Chambre des Comptes 1755 (Obsidienne & Or Antique)"
+      aria-label="Thème Paolien"
+      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
+      style="background: linear-gradient(135deg, #0b0f17 50%, #d4af37 50%);"
+    >
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🏛️ PAO</span>
     </button>
 
-    <div id="themeDivider" class="w-px h-6 bg-slate-700/60"></div>
-
-    <!-- Swatch Paolien -->
-    <button id="palettePaoli" data-palette-target="paoli" type="button"
-      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('paoli');"
-      title="🏛️ Paolien — Or 1755"
-      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
-      style="background:linear-gradient(135deg,#0b0f17 50%,#d4af37 50%);">
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">🏛️ PAO</span>
+    <!-- Swatch FININT (Radar Émeraude Bloomberg) -->
+    <button
+      id="paletteFinint"
+      data-palette-target="finint"
+      type="button"
+      title="📊 Thème Bloomberg FININT — Terminal Renseignement Financier (Cobalt & Émeraude)"
+      aria-label="Thème Bloomberg FININT"
+      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
+      style="background: linear-gradient(135deg, #080d18 50%, #10b981 50%);"
+    >
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">📊 FIN</span>
     </button>
 
-    <!-- Swatch FININT -->
-    <button id="paletteFinint" data-palette-target="finint" type="button"
-      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('finint');"
-      title="📊 FININT — Bloomberg"
-      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
-      style="background:linear-gradient(135deg,#080d18 50%,#10b981 50%);">
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">📊 FIN</span>
+    <!-- Swatch Granit (Schiste & Cuivre Martelé - Défaut) -->
+    <button
+      id="paletteGranit"
+      data-palette-target="granit"
+      type="button"
+      title="🌿 Thème Granit Insulaire — Maquis, Schiste & Châtaigneraie (Ardoise & Cuivre)"
+      aria-label="Thème Granit Insulaire"
+      class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
+      style="background: linear-gradient(135deg, #0d1112 50%, #c26d43 50%);"
+    >
+      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-orange-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🌿 GRA</span>
     </button>
-
-    <!-- Swatch Granit -->
-    <button id="paletteGranit" data-palette-target="granit" type="button"
-      onclick="if(window.__lochjuSetPalette)window.__lochjuSetPalette('granit');"
-      title="🌿 Granit Insulaire — Cuivre"
-      class="group relative w-7 h-7 rounded-lg border-2 cursor-pointer"
-      style="background:linear-gradient(135deg,#0d1112 50%,#c26d43 50%);">
-      <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-orange-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap border border-slate-700 z-50">🌿 GRA</span>
-    </button>
-
   </div>
 </div>
 
 <script is:inline>
 (function() {
   /* ================================================================
-   * CONTRÔLEUR THÈME — L'OCHJU
-   * Rôle : lire/écrire localStorage + mettre à jour <html> class/data-palette
-   *        + mettre à jour l'UI du sélecteur.
-   * Le rendu visuel est géré par window.__lochjuInjectCSS (Layout.astro).
+   * CONTRÔLEUR TRI-PALETTE SOUVERAIN — L'OCHJU
+   * Gère exclusivement la permutation des 3 ambiances sombres.
+   * Pas de mode jour. Rendu CSS pur garanti par Layout.astro.
    * ================================================================ */
 
-  function getMode() {
-    try { var s=localStorage.getItem('lochju-mode'); if(s==='dark'||s==='light') return s; } catch(e){}
-    return document.documentElement.classList.contains('light') ? 'light' : 'dark';
+  function getCurrentPalette() {
+    try {
+      var saved = localStorage.getItem('lochju-palette');
+      if (saved === 'paoli' || saved === 'finint' || saved === 'granit') return saved;
+    } catch (e) {}
+    var dp = document.documentElement.getAttribute('data-palette');
+    if (dp === 'paoli' || dp === 'finint' || dp === 'granit') return dp;
+    return 'granit';
   }
 
-  function getPalette() {
-    try { var s=localStorage.getItem('lochju-palette'); if(s==='paoli'||s==='finint'||s==='granit') return s; } catch(e){}
-    var dp=document.documentElement.getAttribute('data-palette');
-    return (dp==='paoli'||dp==='finint'||dp==='granit') ? dp : 'granit';
-  }
-
-  /* --- Mise à jour de l'UI du sélecteur (boutons + box) --- */
-  function updateUI(mode, palette) {
-    /* Icône et label du toggle */
-    document.querySelectorAll('#modeIcon').forEach(function(el){ el.textContent = mode==='dark' ? '🌙' : '☀️'; });
-    document.querySelectorAll('#modeLabel').forEach(function(el){ el.textContent = mode==='dark' ? 'NUIT' : 'JOUR'; });
-
-    /* Style du bouton toggle */
-    document.querySelectorAll('#modeToggleBtn,[data-action="toggle-mode"]').forEach(function(btn){
-      btn.style.color      = mode==='dark' ? '#c26d43'             : '#0f172a';
-      btn.style.background = mode==='dark' ? 'rgba(15,21,30,0.8)'  : '#ffffff';
-      btn.style.borderColor= mode==='dark' ? 'rgba(51,65,85,0.6)'  : '#cbd5e1';
-    });
-
-    /* Boîte du sélecteur */
-    document.querySelectorAll('#themeSelectorBox').forEach(function(box){
-      box.style.background  = mode==='dark' ? 'rgba(11,15,23,0.9)' : 'rgba(255,255,255,0.95)';
-      box.style.borderColor = mode==='dark' ? 'rgba(51,65,85,0.6)' : '#cbd5e1';
-    });
-
-    /* Séparateur */
-    document.querySelectorAll('#themeDivider').forEach(function(d){
-      d.style.backgroundColor = mode==='dark' ? 'rgba(51,65,85,0.6)' : '#cbd5e1';
-    });
-
-    /* Surbrillance des swatches */
-    document.querySelectorAll('[data-palette-target]').forEach(function(btn){
-      var active = btn.getAttribute('data-palette-target') === palette;
-      btn.style.border    = active ? '2px solid rgba(255,255,255,0.9)' : '2px solid transparent';
-      btn.style.transform = active ? 'scale(1.15)' : 'scale(1)';
-      btn.style.boxShadow = active ? '0 0 0 2px rgba(255,255,255,0.2)' : 'none';
-    });
-  }
-
-  /* --- Applique le mode (classe HTML + localStorage + UI) --- */
-  function applyMode(mode) {
-    var v = (mode === 'light') ? 'light' : 'dark';
-    document.documentElement.classList.remove('dark', 'light');
-    document.documentElement.classList.add(v);
-    try { localStorage.setItem('lochju-mode', v); } catch(e){}
-    updateUI(v, getPalette());
-  }
-
-  /* --- Applique la palette (data-palette + localStorage + UI) --- */
   function applyPalette(palette) {
-    var v = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
-    document.documentElement.setAttribute('data-palette', v);
-    try { localStorage.setItem('lochju-palette', v); } catch(e){}
-    updateUI(getMode(), v);
-  }
+    var valid = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
+    document.documentElement.setAttribute('data-palette', valid);
+    try { localStorage.setItem('lochju-palette', valid); } catch (e) {}
 
-  /* --- Fonctions publiques --- */
-  window.__lochjuToggleMode  = function() { applyMode(getMode()==='dark' ? 'light' : 'dark'); };
-  window.__lochjuSetPalette  = function(p) { applyPalette(p); };
-
-  /* --- Initialisation : UI uniquement (le CSS est géré par Layout.astro) --- */
-  function init() { updateUI(getMode(), getPalette()); }
-  init();
-  document.addEventListener('DOMContentLoaded', init);
-
-  /* --- Délégation d'événements (filet de sécurité) --- */
-  if (!window.__lochjuEvt) {
-    window.__lochjuEvt = true;
-    document.addEventListener('click', function(e) {
-      var mb = e.target.closest('[data-action="toggle-mode"]');
-      if (mb) { e.preventDefault(); window.__lochjuToggleMode(); return; }
-      var pb = e.target.closest('[data-palette-target]');
-      if (pb) { e.preventDefault(); var t=pb.getAttribute('data-palette-target'); if(t) window.__lochjuSetPalette(t); }
+    /* Mise à jour visuelle des swatches */
+    document.querySelectorAll('[data-palette-target]').forEach(function(btn) {
+      var isActive = btn.getAttribute('data-palette-target') === valid;
+      btn.style.border = isActive ? '2px solid rgba(255, 255, 255, 0.95)' : '2px solid transparent';
+      btn.style.boxShadow = isActive ? '0 0 0 2px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.2)' : 'none';
+      btn.style.transform = isActive ? 'scale(1.15)' : 'scale(1)';
+      btn.style.outline = isActive ? '2px solid rgba(255, 255, 255, 0.12)' : 'none';
+      btn.style.outlineOffset = '2px';
     });
   }
 
-  /* --- Astro ViewTransitions --- */
+  window.__lochjuSetPalette = function(palette) {
+    applyPalette(palette);
+  };
+
+  function init() {
+    /* Sécuriser le mode nuit permanent */
+    document.documentElement.classList.remove('light');
+    document.documentElement.classList.add('dark');
+    applyPalette(getCurrentPalette());
+  }
+
+  init();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  }
+
+  /* Délégation d'événements sécurisée */
+  if (!window.__lochjuPaletteAttached) {
+    window.__lochjuPaletteAttached = true;
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('[data-palette-target]');
+      if (btn) {
+        e.preventDefault();
+        var target = btn.getAttribute('data-palette-target');
+        if (target) window.__lochjuSetPalette(target);
+      }
+    });
+  }
+
   document.addEventListener('astro:page-load', init);
 })();
 </script>

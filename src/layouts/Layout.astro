@@ -51,15 +51,15 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
     <!-- Mesure d'Audience Éthique & Souveraine sans cookies (GoatCounter) -->
     <script data-goatcounter="https://lochju.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-    <!-- Initialisation Immédiate du Thème Tri-Mode (Persistance Anti-Flash — Granit Insulaire par défaut) -->
+    <!-- Initialisation Immédiate du Thème Tri-Palette Nuit Souverain (Anti-Flash) -->
     <script is:inline>
       (function() {
-        /* Axe 1 : Mode Nuit / Jour — défaut : dark */
-        const savedMode = localStorage.getItem('lochju-mode') || 'dark';
-        document.documentElement.classList.remove('dark', 'light');
-        document.documentElement.classList.add(savedMode);
+        /* Mode Nuit Permanent Souverain */
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        try { localStorage.setItem('lochju-mode', 'dark'); } catch(e) {}
 
-        /* Axe 2 : Palette (paoli / finint / granit) — défaut : granit */
+        /* Palette Active (paoli / finint / granit) — défaut : granit */
         const savedPalette = localStorage.getItem('lochju-palette') || 'granit';
         document.documentElement.setAttribute('data-palette', savedPalette);
       })();
@@ -140,13 +140,17 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
         box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
       }
 
-      /* L'arrière-plan du body et son ambiance Chiaroscuro sont entièrement gérés par les tokens tri-palette / bi-mode */
+      /* Fond d'archives et ambiance Chiaroscuro subtile */
+      body {
+        background-color: #06080d;
+        background-image: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.04) 0%, transparent 60%);
+      }
     </style>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   </head>
-  <body class="min-h-screen flex flex-col font-sans transition-colors duration-300 antialiased selection:bg-amber-500 selection:text-slate-950">
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300 antialiased selection:bg-amber-500 selection:text-slate-950">
     <slot />
     
     <!-- Barre de Progression de Lecture Furtive (Stealth Reading Bar) -->
@@ -351,18 +355,10 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
   }
 
   /* ---------- APPLICATION DES TOKENS BODY ---------- */
-  /* Le body reçoit exclusivement ses couleurs via les tokens CSS tri-palette.
-   * Aucun fallback fixe : les tokens sont définis AVANT cette règle dans la cascade. */
   html.dark body {
-    background-color: var(--bg-main, #070a08) !important;
-    background-image: var(--body-gradient, none) !important;
-    color: var(--text-main, #edf2ed) !important;
-  }
-
-  html.light body {
-    background-color: var(--bg-main, #f4f6f3) !important;
-    background-image: none !important;
-    color: var(--text-main, #121d15) !important;
+    background-color: var(--bg-main) !important;
+    background-image: var(--body-gradient) !important;
+    color: var(--text-main) !important;
   }
 
 
