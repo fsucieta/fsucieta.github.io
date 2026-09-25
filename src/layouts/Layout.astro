@@ -222,8 +222,91 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
 
     <!-- Leaflet JS -->
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- ================================================================
+         MOTEUR D'APPLICATION DU THÈME — FIN DE BODY (GRADE NASA)
+         Placé ICI, après tous les éléments DOM (header, nav, main, footer),
+         pour que querySelectorAll les trouve tous et applique les styles inline.
+         Les styles inline ont la priorité absolue sur Tailwind CDN.
+         ================================================================ -->
+    <script is:inline>
+    (function() {
+      /* --- Table de couleurs : 2 modes × 3 palettes --- */
+      var COLORS = {
+        dark: {
+          paoli:  { bg: '#080705', text: '#f5f0e1', header: 'rgba(8,7,5,0.96)',       border: '#3d3118', nav: 'rgba(8,7,5,0.92)'    },
+          finint: { bg: '#020617', text: '#e0f2fe', header: 'rgba(2,6,23,0.96)',      border: '#0e3a59', nav: 'rgba(2,6,23,0.92)'   },
+          granit: { bg: '#070a08', text: '#edf2ed', header: 'rgba(7,10,8,0.96)',      border: '#283d31', nav: 'rgba(7,10,8,0.92)'   }
+        },
+        light: {
+          paoli:  { bg: '#fcfaf4', text: '#1c170d', header: 'rgba(252,250,244,0.97)', border: '#dfd3be', nav: 'rgba(252,250,244,0.95)' },
+          finint: { bg: '#f0f7ff', text: '#082f49', header: 'rgba(240,247,255,0.97)', border: '#bae6fd', nav: 'rgba(240,247,255,0.95)' },
+          granit: { bg: '#f4f6f3', text: '#121d15', header: 'rgba(244,246,243,0.97)', border: '#ced9d1', nav: 'rgba(244,246,243,0.95)' }
+        }
+      };
+
+      /* --- Applique les styles inline sur les éléments structurels ---
+       * POURQUOI styles inline ? Tailwind CDN génère ses classes (bg-slate-950/95 etc.)
+       * dynamiquement au runtime, APRÈS le CSS compilé. Style inline = spécificité
+       * absolue dans la cascade CSS — impossible à surclasser par aucun CDN. */
+      function applyStructuralStyles(mode, palette) {
+        var c = (COLORS[mode] && COLORS[mode][palette]) ? COLORS[mode][palette] : COLORS[mode]['granit'];
+
+        /* BODY */
+        if (document.body) {
+          document.body.style.setProperty('background-color', c.bg, 'important');
+          document.body.style.setProperty('color', c.text, 'important');
+        }
+        /* HEADER */
+        document.querySelectorAll('header').forEach(function(el) {
+          el.style.setProperty('background-color', c.header, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+        });
+        /* NAV */
+        document.querySelectorAll('nav').forEach(function(el) {
+          el.style.setProperty('background-color', c.nav, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+        });
+        /* MAIN */
+        document.querySelectorAll('main').forEach(function(el) {
+          el.style.setProperty('background-color', c.bg, 'important');
+          el.style.setProperty('color', c.text, 'important');
+        });
+        /* FOOTER */
+        document.querySelectorAll('footer').forEach(function(el) {
+          el.style.setProperty('background-color', c.header, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+          el.style.setProperty('color', c.text, 'important');
+        });
+      }
+
+      /* --- Exposer sur window pour que ThemeToggle puisse l'appeler --- */
+      window.__lochjuApplyStructural = applyStructuralStyles;
+
+      /* --- Lire l'état courant --- */
+      var mode = 'dark', palette = 'granit';
+      try { mode = localStorage.getItem('lochju-mode') || 'dark'; } catch(e) {}
+      try { palette = localStorage.getItem('lochju-palette') || 'granit'; } catch(e) {}
+      if (mode !== 'dark' && mode !== 'light') mode = 'dark';
+      if (palette !== 'paoli' && palette !== 'finint' && palette !== 'granit') palette = 'granit';
+
+      /* --- Application immédiate — DOM complet disponible ici --- */
+      applyStructuralStyles(mode, palette);
+
+      /* --- Re-appliquer après les scripts tiers (Tailwind CDN peut charger après) --- */
+      window.addEventListener('load', function() {
+        var m = 'dark', p = 'granit';
+        try { m = localStorage.getItem('lochju-mode') || 'dark'; } catch(e) {}
+        try { p = localStorage.getItem('lochju-palette') || 'granit'; } catch(e) {}
+        if (m !== 'dark' && m !== 'light') m = 'dark';
+        if (p !== 'paoli' && p !== 'finint' && p !== 'granit') p = 'granit';
+        applyStructuralStyles(m, p);
+      });
+    })();
+    </script>
   </body>
 </html>
+
 
 <style is:global>
   /* ==========================================================================
@@ -350,13 +433,8 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
   }
 
   /* ---------- APPLICATION DES TOKENS BODY ---------- */
-  /* Fallback absolu : fond sombre Granit si aucun token CSS n'est encore chargé */
-  body {
-    background-color: #070a08; /* Granit nuit — couleur de sécurité anti-flash blanc */
-    color: #edf2ed;            /* Texte clair par défaut — écrasé par les tokens */
-    min-height: 100vh;
-  }
-
+  /* Le body reçoit exclusivement ses couleurs via les tokens CSS tri-palette.
+   * Aucun fallback fixe : les tokens sont définis AVANT cette règle dans la cascade. */
   html.dark body {
     background-color: var(--bg-main, #070a08) !important;
     background-image: var(--body-gradient, none) !important;

@@ -48,7 +48,7 @@
           }
         }
       }
-    </script><!-- Polices Google Fonts : Inter, Merriweather, JetBrains Mono & Cinzel (Édition Régale) --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet"><!-- Styles Forensiques Globaux : Scrollytelling, Surlignage Lumineux & Chiaroscuro --><!-- Leaflet CSS --><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><link rel="stylesheet" href="/_astro/index.aUIs87Vy.css"><script type="module">document.addEventListener("DOMContentLoaded",()=>{const n=document.getElementById("searchInput"),a=document.querySelectorAll(".fiche-card");n&&n.addEventListener("input",s=>{const e=s.target.value.toLowerCase().trim();a.forEach(t=>{const c=t.getAttribute("data-title")||"",l=t.getAttribute("data-category")||"",o=t.getAttribute("data-chapeau")||"";!e||c.includes(e)||l.includes(e)||o.includes(e)?t.style.display="flex":t.style.display="none"})})});
+    </script><!-- Polices Google Fonts : Inter, Merriweather, JetBrains Mono & Cinzel (Édition Régale) --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet"><!-- Styles Forensiques Globaux : Scrollytelling, Surlignage Lumineux & Chiaroscuro --><!-- Leaflet CSS --><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><link rel="stylesheet" href="/_astro/index.Czx3Bq4W.css"><script type="module">document.addEventListener("DOMContentLoaded",()=>{const n=document.getElementById("searchInput"),a=document.querySelectorAll(".fiche-card");n&&n.addEventListener("input",s=>{const e=s.target.value.toLowerCase().trim();a.forEach(t=>{const c=t.getAttribute("data-title")||"",l=t.getAttribute("data-category")||"",o=t.getAttribute("data-chapeau")||"";!e||c.includes(e)||l.includes(e)||o.includes(e)?t.style.display="flex":t.style.display="none"})})});
 </script></head> <body class="min-h-screen flex flex-col font-sans transition-colors duration-300 antialiased selection:bg-amber-500 selection:text-slate-950">   <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-4 px-6 shadow-2xl"> <div class="max-w-7xl mx-auto flex items-center justify-between"> <!-- Gauche : Mention Discrète d'Ancrage --> <div class="w-48 hidden md:block"> <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block opacity-75 hover:opacity-100 transition">
 Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span> <span class="text-[9px] font-mono text-slate-600 block">
 09.05.2026
@@ -163,15 +163,17 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
   /* --- Application du mode complet (classe HTML + UI + inline styles) --- */
   function applyMode(mode) {
     var validMode = (mode === 'light') ? 'light' : 'dark';
-    /* 1. Classe sur <html> pour que le CSS global fonctionne aussi */
+    /* 1. Classe sur <html> pour que le CSS global réagisse */
     document.documentElement.classList.remove('dark', 'light');
     document.documentElement.classList.add(validMode);
     /* 2. Persistance */
     try { localStorage.setItem('lochju-mode', validMode); } catch (e) {}
     /* 3. UI du sélecteur */
     updateModeUI(validMode);
-    /* 4. Styles inline sur les éléments structurels */
-    applyInlineStyles(validMode, getCurrentPalette());
+    /* 4. Styles inline via le moteur centralisé (défini en fin de body dans Layout.astro) */
+    if (window.__lochjuApplyStructural) {
+      window.__lochjuApplyStructural(validMode, getCurrentPalette());
+    }
   }
 
   /* --- Application de la palette (Paolien, FININT, Granit) --- */
@@ -190,9 +192,12 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
       btn.style.outlineOffset = '2px';
     });
 
-    /* Re-appliquer les styles inline avec la nouvelle palette */
-    applyInlineStyles(getCurrentMode(), validPalette);
+    /* Styles inline via le moteur centralisé */
+    if (window.__lochjuApplyStructural) {
+      window.__lochjuApplyStructural(getCurrentMode(), validPalette);
+    }
   }
+
 
   /* --- Fonctions publiques sur window --- */
   window.__lochjuToggleMode = function() {
@@ -1006,4 +1011,83 @@ L'OCHJU — MÉDIA CITOYEN D'INVESTIGATION FORENSIQUE & OPEN DATA | 29 GRANDES E
           highlights.forEach((h) => h.classList.add('illuminated'));
         }
       });
-    </script> <!-- Leaflet JS --> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> </body> </html> 
+    </script> <!-- Leaflet JS --> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <!-- ================================================================
+         MOTEUR D'APPLICATION DU THÈME — FIN DE BODY (GRADE NASA)
+         Placé ICI, après tous les éléments DOM (header, nav, main, footer),
+         pour que querySelectorAll les trouve tous et applique les styles inline.
+         Les styles inline ont la priorité absolue sur Tailwind CDN.
+         ================================================================ --> <script>
+    (function() {
+      /* --- Table de couleurs : 2 modes × 3 palettes --- */
+      var COLORS = {
+        dark: {
+          paoli:  { bg: '#080705', text: '#f5f0e1', header: 'rgba(8,7,5,0.96)',       border: '#3d3118', nav: 'rgba(8,7,5,0.92)'    },
+          finint: { bg: '#020617', text: '#e0f2fe', header: 'rgba(2,6,23,0.96)',      border: '#0e3a59', nav: 'rgba(2,6,23,0.92)'   },
+          granit: { bg: '#070a08', text: '#edf2ed', header: 'rgba(7,10,8,0.96)',      border: '#283d31', nav: 'rgba(7,10,8,0.92)'   }
+        },
+        light: {
+          paoli:  { bg: '#fcfaf4', text: '#1c170d', header: 'rgba(252,250,244,0.97)', border: '#dfd3be', nav: 'rgba(252,250,244,0.95)' },
+          finint: { bg: '#f0f7ff', text: '#082f49', header: 'rgba(240,247,255,0.97)', border: '#bae6fd', nav: 'rgba(240,247,255,0.95)' },
+          granit: { bg: '#f4f6f3', text: '#121d15', header: 'rgba(244,246,243,0.97)', border: '#ced9d1', nav: 'rgba(244,246,243,0.95)' }
+        }
+      };
+
+      /* --- Applique les styles inline sur les éléments structurels ---
+       * POURQUOI styles inline ? Tailwind CDN génère ses classes (bg-slate-950/95 etc.)
+       * dynamiquement au runtime, APRÈS le CSS compilé. Style inline = spécificité
+       * absolue dans la cascade CSS — impossible à surclasser par aucun CDN. */
+      function applyStructuralStyles(mode, palette) {
+        var c = (COLORS[mode] && COLORS[mode][palette]) ? COLORS[mode][palette] : COLORS[mode]['granit'];
+
+        /* BODY */
+        if (document.body) {
+          document.body.style.setProperty('background-color', c.bg, 'important');
+          document.body.style.setProperty('color', c.text, 'important');
+        }
+        /* HEADER */
+        document.querySelectorAll('header').forEach(function(el) {
+          el.style.setProperty('background-color', c.header, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+        });
+        /* NAV */
+        document.querySelectorAll('nav').forEach(function(el) {
+          el.style.setProperty('background-color', c.nav, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+        });
+        /* MAIN */
+        document.querySelectorAll('main').forEach(function(el) {
+          el.style.setProperty('background-color', c.bg, 'important');
+          el.style.setProperty('color', c.text, 'important');
+        });
+        /* FOOTER */
+        document.querySelectorAll('footer').forEach(function(el) {
+          el.style.setProperty('background-color', c.header, 'important');
+          el.style.setProperty('border-color', c.border, 'important');
+          el.style.setProperty('color', c.text, 'important');
+        });
+      }
+
+      /* --- Exposer sur window pour que ThemeToggle puisse l'appeler --- */
+      window.__lochjuApplyStructural = applyStructuralStyles;
+
+      /* --- Lire l'état courant --- */
+      var mode = 'dark', palette = 'granit';
+      try { mode = localStorage.getItem('lochju-mode') || 'dark'; } catch(e) {}
+      try { palette = localStorage.getItem('lochju-palette') || 'granit'; } catch(e) {}
+      if (mode !== 'dark' && mode !== 'light') mode = 'dark';
+      if (palette !== 'paoli' && palette !== 'finint' && palette !== 'granit') palette = 'granit';
+
+      /* --- Application immédiate — DOM complet disponible ici --- */
+      applyStructuralStyles(mode, palette);
+
+      /* --- Re-appliquer après les scripts tiers (Tailwind CDN peut charger après) --- */
+      window.addEventListener('load', function() {
+        var m = 'dark', p = 'granit';
+        try { m = localStorage.getItem('lochju-mode') || 'dark'; } catch(e) {}
+        try { p = localStorage.getItem('lochju-palette') || 'granit'; } catch(e) {}
+        if (m !== 'dark' && m !== 'light') m = 'dark';
+        if (p !== 'paoli' && p !== 'finint' && p !== 'granit') p = 'granit';
+        applyStructuralStyles(m, p);
+      });
+    })();
+    </script> </body> </html> 

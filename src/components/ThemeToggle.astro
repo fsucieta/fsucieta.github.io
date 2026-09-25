@@ -195,15 +195,17 @@
   /* --- Application du mode complet (classe HTML + UI + inline styles) --- */
   function applyMode(mode) {
     var validMode = (mode === 'light') ? 'light' : 'dark';
-    /* 1. Classe sur <html> pour que le CSS global fonctionne aussi */
+    /* 1. Classe sur <html> pour que le CSS global réagisse */
     document.documentElement.classList.remove('dark', 'light');
     document.documentElement.classList.add(validMode);
     /* 2. Persistance */
     try { localStorage.setItem('lochju-mode', validMode); } catch (e) {}
     /* 3. UI du sélecteur */
     updateModeUI(validMode);
-    /* 4. Styles inline sur les éléments structurels */
-    applyInlineStyles(validMode, getCurrentPalette());
+    /* 4. Styles inline via le moteur centralisé (défini en fin de body dans Layout.astro) */
+    if (window.__lochjuApplyStructural) {
+      window.__lochjuApplyStructural(validMode, getCurrentPalette());
+    }
   }
 
   /* --- Application de la palette (Paolien, FININT, Granit) --- */
@@ -222,9 +224,12 @@
       btn.style.outlineOffset = '2px';
     });
 
-    /* Re-appliquer les styles inline avec la nouvelle palette */
-    applyInlineStyles(getCurrentMode(), validPalette);
+    /* Styles inline via le moteur centralisé */
+    if (window.__lochjuApplyStructural) {
+      window.__lochjuApplyStructural(getCurrentMode(), validPalette);
+    }
   }
+
 
   /* --- Fonctions publiques sur window --- */
   window.__lochjuToggleMode = function() {
