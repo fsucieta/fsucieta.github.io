@@ -232,3 +232,24 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 1. **Création de la Régie Souveraine de l'Eau publique Insulaire (RSEI) :** Résilier progressivement l'ensemble des Délégations de Service Public (DSP) accordées aux multinationales privées pour unifier la distribution sous forme de régie publique régionale gérée par l'OEHC.
 2. **Instauration de la Tarification Éco-Progressive Horizontale :** Garantir la gratuité des 30 premiers mètres cubes d'eau par an et par foyer résident, combinée à une majoration tarifaire de 300 % sur les volumes consommés par les piscines privées et infrastructures touristiques en saison sèche (juillet-août).
 3. **Obligation Régionale de Rénovation des Réseaux Perdants (Art. L. 2224-7-1 CGCT) :** Conditionner l'attribution de subventions régionales aux communes à l'atteinte d'un rendement minimal de réseau de 85 %, sous peine de mise en régie d'office par la Collectivité.
+
+---
+
+### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+
+Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+
+- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-04-marchandisation-eau/01_KIT_PRESSE_INVESTIGATION.md) : synthèse probatoire sur la gestion de l'eau, pertes colossales de 42 M m³ et surtarifications des DSP.
+- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Parquet National Financier)**](/transmissions/enquete-04-marchandisation-eau/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des pièces scellées ISO/IEC 27037 (données SISPEA, bilans OEHC, rapports OFB).
+- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-04-marchandisation-eau/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : plan territorial de stockage public de 175 M m³, audit des DSP et modèle de question écrite au gouvernement.
+
+---
+
+<div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
+  <strong>L'eau est le bien commun inaliénable du Peuple Corse. Le Savoir partagé est notre contre-pouvoir.</strong>
+  <br><br>
+  <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
+  <br>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Environnementale L'OCHJU</span>
+</div>
+

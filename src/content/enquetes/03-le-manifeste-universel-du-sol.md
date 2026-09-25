@@ -186,8 +186,19 @@ Pour répondre à l'urgence du logement et préserver l'avenir des générations
 
 ---
 
+### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+
+Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+
+- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-03-manifeste-universel-sol/01_KIT_PRESSE_INVESTIGATION.md) : synthèse de droit comparé, traités européens dérogatoires et données de spéculation immobilière.
+- ⚖️ [**Bordereau de Transmission Juridique & Mémoire Constitutionnel**](/transmissions/enquete-03-manifeste-universel-sol/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des pièces probatoires scellées ISO/IEC 27037 (protocoles de Malte, Åland, décision 2004-490 DC et délibération 14/083 AC).
+- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-03-manifeste-universel-sol/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : levier constitutionnel, surtaxation des SCI spéculatives et modèle de question écrite au gouvernement.
+
+---
+
 <div class="text-center font-mono text-amber-400 font-bold text-sm mt-8 border-t border-slate-800 pt-6 tracking-widest uppercase">
 « À NOSTRA TERRA, À NOSTRA STORIA, A NOSTRA LIBERTÀ. »
 <br><br>
 <span class="text-slate-400 text-xs">— Cellule Internationale d'Investigation L'OCHJU x FSUCIETÀ</span>
 </div>
+

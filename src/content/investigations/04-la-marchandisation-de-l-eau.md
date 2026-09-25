@@ -198,3 +198,24 @@ Investigation into **water commodification** exposes key institutional players:
 1. **Creation of the Sovereign Insular Public Water Authority (RSEI)**: Progressively terminate private concessions to unify distribution under a regional public utility operated by the OEHC.
 2. **Establishment of Horizontal Eco-Progressive Pricing**: Guarantee free first 30 m³ annually per resident household, coupled with 300% punitive tariffs on water consumed by secondary home pools in summer.
 3. **Mandatory Regional Network Renovation Standard (Art. L. 2224-7-1 CGCT)**: Condition regional municipal subsidies on achieving minimum 85% network efficiency, subject to public receivership.
+
+---
+
+### 🏛️ OFFICIAL INSTITUTIONAL & PRESS DISCLOSURE DOSSIERS (ICIJ GRADE)
+
+To ensure evidentiary traceability, prosecutorial follow-up, and civic alert dissemination, the investigation cell provides full downloadable official files:
+
+- 📰 [**Press Investigation & Editorial Disclosure Dossier**](/transmissions/enquete-04-marchandisation-eau/01_KIT_PRESSE_INVESTIGATION.md): evidentiary briefing on public water management, 42M m³ pipeline squandering, and concession financial overcharges.
+- ⚖️ [**Judicial Referral Inventory (Art. 40 CPP / Financial Prosecution Service)**](/transmissions/enquete-04-marchandisation-eau/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md): itemized list of sealed evidentiary exhibits under ISO/IEC 27037 standards (SISPEA benchmarks, OEHC audits, OFB inspections).
+- 🏛️ [**Parliamentary & Regional Assembly Policy Interpellation Brief**](/transmissions/enquete-04-marchandisation-eau/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md): sovereign 175M m³ public storage plan, concession audit protocol, and draft written parliamentary inquiry.
+
+---
+
+<div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
+  <strong>Water is the inalienable common good of the Corsican People. Shared knowledge is our counter-power.</strong>
+  <br><br>
+  <strong>L'OCHJU: The gaze that never looks away.</strong>
+  <br>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Environmental Investigation Unit L'OCHJU</span>
+</div>
+

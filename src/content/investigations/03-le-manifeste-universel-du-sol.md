@@ -180,8 +180,19 @@ To resolve the housing emergency and secure future generations, a coherent terri
 
 ---
 
+### 🏛️ OFFICIAL INSTITUTIONAL & PRESS TRANSMISSION DOSSIERS (ICIJ GRADE)
+
+To ensure full forensic traceability, judicial follow-up, and public awareness, the investigative desk provides official downloadable transmission packages:
+
+- 📰 [**Press & Media Investigation Briefing Kit**](/transmissions/enquete-03-manifeste-universel-sol/01_KIT_PRESSE_INVESTIGATION.md) : comparative legal summary, European derogation treaties, and real estate speculation metrics.
+- ⚖️ [**Official Judicial Notice & Constitutional Brief**](/transmissions/enquete-03-manifeste-universel-sol/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventory of sealed pieces of evidence under ISO/IEC 27037 standards (protocols of Malta, Åland, and Decision 2004-490 DC).
+- 🏛️ [**Parliamentary & Institutional Policy Brief**](/transmissions/enquete-03-manifeste-universel-sol/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : constitutional amendment draft, speculation taxation, and written question template for Parliament.
+
+---
+
 <div class="text-center font-mono text-amber-400 font-bold text-sm mt-8 border-t border-slate-800 pt-6 tracking-widest uppercase">
 « À NOSTRA TERRA, À NOSTRA STORIA, A NOSTRA LIBERTÀ. »
 <br><br>
 <span class="text-slate-400 text-xs">— L'OCHJU x FSUCIETÀ International Investigation Desk</span>
 </div>
+

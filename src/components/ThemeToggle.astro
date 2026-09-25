@@ -22,6 +22,7 @@
       id="modeToggleBtn"
       data-action="toggle-mode"
       type="button"
+      onclick="if(window.__lochjuToggleMode) window.__lochjuToggleMode();"
       title="Basculer entre Mode Nuit et Mode Jour"
       aria-label="Changer le mode d'affichage"
       class="px-2.5 py-1.5 rounded-lg text-xs font-bold font-mono transition-all duration-300 flex items-center gap-1.5 cursor-pointer border border-transparent hover:border-slate-700"
@@ -41,6 +42,7 @@
       data-action="set-palette"
       data-palette-target="paoli"
       type="button"
+      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('paoli');"
       title="🏛️ Thème Paolien — Chambre des Comptes 1755 (Obsidienne & Or Antique)"
       aria-label="Thème Paolien"
       class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
@@ -55,6 +57,7 @@
       data-action="set-palette"
       data-palette-target="finint"
       type="button"
+      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('finint');"
       title="📊 Thème Bloomberg FININT — Terminal Renseignement Financier (Cobalt & Émeraude)"
       aria-label="Thème Bloomberg FININT"
       class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
@@ -69,6 +72,7 @@
       data-action="set-palette"
       data-palette-target="granit"
       type="button"
+      onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('granit');"
       title="🌿 Thème Granit Insulaire — Maquis, Schiste & Châtaigneraie (Ardoise & Cuivre)"
       aria-label="Thème Granit Insulaire"
       class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center"
@@ -83,27 +87,41 @@
 <script is:inline>
 (function() {
   /* ============================================================
-   * CONTRÔLEUR TRI-PALETTE BI-MODE ROBUSTE — L'OCHJU ThemeToggle
-   * Persistance indépendante :
+   * CONTRÔLEUR TRI-PALETTE BI-MODE GRADE GOOGLE — L'OCHJU
+   * Persistance indépendante & tolérante aux pannes :
    *   localStorage['lochju-mode']    = 'dark' | 'light'
    *   localStorage['lochju-palette'] = 'paoli' | 'finint' | 'granit'
    * ============================================================ */
 
   function getCurrentMode() {
-    return localStorage.getItem('lochju-mode') || 'dark';
+    try {
+      var saved = localStorage.getItem('lochju-mode');
+      if (saved === 'dark' || saved === 'light') return saved;
+    } catch (e) {}
+    // Détection via DOM si localStorage vide ou restreint
+    if (document.documentElement.classList.contains('light')) return 'light';
+    return 'dark';
   }
 
   function getCurrentPalette() {
-    return localStorage.getItem('lochju-palette') || 'granit';
+    try {
+      var saved = localStorage.getItem('lochju-palette');
+      if (saved === 'paoli' || saved === 'finint' || saved === 'granit') return saved;
+    } catch (e) {}
+    var domPalette = document.documentElement.getAttribute('data-palette');
+    if (domPalette === 'paoli' || domPalette === 'finint' || domPalette === 'granit') return domPalette;
+    return 'granit';
   }
 
   /* --- Application du mode (Nuit / Jour) --- */
   function applyMode(mode) {
+    var validMode = (mode === 'light') ? 'light' : 'dark';
     var html = document.documentElement;
     html.classList.remove('dark', 'light');
-    html.classList.add(mode);
+    html.classList.add(validMode);
+
     try {
-      localStorage.setItem('lochju-mode', mode);
+      localStorage.setItem('lochju-mode', validMode);
     } catch (e) {}
 
     // Mise à jour de tous les boutons et indicateurs du sélecteur
@@ -113,7 +131,7 @@
     var selectorBoxes = document.querySelectorAll('#themeSelectorBox');
     var dividers = document.querySelectorAll('#themeDivider');
 
-    if (mode === 'dark') {
+    if (validMode === 'dark') {
       modeIcons.forEach(function(el) { el.textContent = '🌙'; });
       modeLabels.forEach(function(el) { el.textContent = 'NUIT'; });
       modeBtns.forEach(function(btn) {
@@ -150,17 +168,19 @@
 
   /* --- Application de la palette (Paolien, FININT, Granit) --- */
   function applyPalette(palette) {
+    var validPalette = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
     var html = document.documentElement;
-    html.setAttribute('data-palette', palette);
+    html.setAttribute('data-palette', validPalette);
+
     try {
-      localStorage.setItem('lochju-palette', palette);
+      localStorage.setItem('lochju-palette', validPalette);
     } catch (e) {}
 
     // Mise en surbrillance des boutons swatch correspondants
     var swatches = document.querySelectorAll('[data-palette-target]');
     swatches.forEach(function(btn) {
       var target = btn.getAttribute('data-palette-target');
-      if (target === palette) {
+      if (target === validPalette) {
         btn.style.border = '2px solid rgba(255, 255, 255, 0.95)';
         btn.style.boxShadow = '0 0 0 2px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.2)';
         btn.style.transform = 'scale(1.15)';
@@ -174,7 +194,7 @@
       }
     });
 
-    // Mettre à jour la couleur du bouton Mode en dark si nécessaire
+    // Mettre à jour la couleur du bouton Mode en dark selon la palette active
     if (getCurrentMode() === 'dark') {
       var modeBtns = document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]');
       modeBtns.forEach(function(btn) {
@@ -183,43 +203,50 @@
     }
   }
 
-  /* --- Initialisation globale & Écouteurs avec délégation résiliente --- */
-  function initThemeController() {
+  /* --- Fonctions publiques exposées sur window (Grade Google) --- */
+  window.__lochjuToggleMode = function() {
+    var current = getCurrentMode();
+    var next = (current === 'dark') ? 'light' : 'dark';
+    applyMode(next);
+  };
+
+  window.__lochjuSetPalette = function(palette) {
+    applyPalette(palette);
+  };
+
+  window.__lochjuInitTheme = function() {
     var mode = getCurrentMode();
     var palette = getCurrentPalette();
     applyMode(mode);
     applyPalette(palette);
-  }
+  };
 
-  // 1. Initialisation immédiate
-  initThemeController();
+  // 1. Initialisation immédiate synchrone
+  window.__lochjuInitTheme();
 
   // 2. Initialisation au DOMContentLoaded
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initThemeController);
+    document.addEventListener('DOMContentLoaded', window.__lochjuInitTheme);
   }
 
-  // 3. Délégation d'événements unique et globale sur document (infaillible lors des clics)
+  // 3. Délégation d'événements de secours sur document
   if (!window.__lochjuThemeListenerAttached) {
     window.__lochjuThemeListenerAttached = true;
 
     document.addEventListener('click', function(e) {
-      // Clic sur Toggle Mode
       var modeBtn = e.target.closest('#modeToggleBtn, [data-action="toggle-mode"]');
       if (modeBtn) {
         e.preventDefault();
-        var nextMode = getCurrentMode() === 'dark' ? 'light' : 'dark';
-        applyMode(nextMode);
+        window.__lochjuToggleMode();
         return;
       }
 
-      // Clic sur Swatch Palette
       var paletteBtn = e.target.closest('[data-palette-target]');
       if (paletteBtn) {
         e.preventDefault();
         var targetPalette = paletteBtn.getAttribute('data-palette-target');
         if (targetPalette) {
-          applyPalette(targetPalette);
+          window.__lochjuSetPalette(targetPalette);
         }
         return;
       }
@@ -227,6 +254,6 @@
   }
 
   // 4. Compatibilité Astro ViewTransitions / navigation
-  document.addEventListener('astro:page-load', initThemeController);
+  document.addEventListener('astro:page-load', window.__lochjuInitTheme);
 })();
 </script>

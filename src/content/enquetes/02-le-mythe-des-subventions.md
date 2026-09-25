@@ -158,6 +158,16 @@ Comment rééquilibrer ces flux pour redonner du pouvoir d'achat et moderniser l
 
 ---
 
+### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+
+Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+
+- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-02-mythe-subventions/01_KIT_PRESSE_INVESTIGATION.md) : synthèse probatoire des flux de trésorerie, hold-up des sièges sociaux et chiffres clés médico-légaux.
+- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Parquet National Financier)**](/transmissions/enquete-02-mythe-subventions/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 (rapports du Sénat n° 488, 714, 302 et relevés Banque de France).
+- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-02-mythe-subventions/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : proposition de loi de territorialisation de l'IS, rattrapage de la DCT et modèle de question écrite au gouvernement.
+
+---
+
 <div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
   <strong>Le mythe de l'assistanat s'effondre devant la vérité des chiffres. Le Savoir partagé est notre contre-pouvoir.</strong>
   <br><br>
@@ -165,3 +175,4 @@ Comment rééquilibrer ces flux pour redonner du pouvoir d'achat et moderniser l
   <br>
   <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Financière L'OCHJU</span>
 </div>
+

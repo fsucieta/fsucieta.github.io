@@ -152,10 +152,21 @@ How can these flows be adjusted to support local purchasing power and modernize 
 
 ---
 
+### 🏛️ OFFICIAL INSTITUTIONAL & PRESS TRANSMISSION DOSSIERS (ICIJ GRADE)
+
+To ensure full forensic traceability, judicial follow-up, and public awareness, the investigative desk provides official downloadable transmission packages:
+
+- 📰 [**Press & Media Investigation Briefing Kit**](/transmissions/enquete-02-mythe-subventions/01_KIT_PRESSE_INVESTIGATION.md) : forensic summary of cash flows, corporate tax flight, and key fiscal metrics.
+- ⚖️ [**Official Judicial Notice (Article 40 CPP / National Financial Prosecutor)**](/transmissions/enquete-02-mythe-subventions/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventory of 4 sealed pieces of evidence under ISO/IEC 27037 standards (Senate reports & Bank of France data).
+- 🏛️ [**Parliamentary & Institutional Policy Brief**](/transmissions/enquete-02-mythe-subventions/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : draft bill on corporate tax territorialization, territorial continuity fund catch-up, and written question template for Parliament.
+
+---
+
 <div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
   <strong>The subsidy myth collapses before the truth of numbers. Shared knowledge is our counter-power.</strong>
   <br><br>
   <strong>L'OCHJU is the gaze that will no longer turn away.</strong>
   <br>
   <span class="text-xs text-slate-400 font-sans opacity-75">— L'OCHJU Financial Investigation Desk</span>
-</div>\n
+</div>
+\n
