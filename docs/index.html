@@ -55,10 +55,10 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
 </span> </div> <!-- Centre : Logo Officiel Géant Centré Majestueux --> <a href="./" class="group flex justify-center" aria-label="Retour à l'accueil de L'OCHJU"> <div class="relative"> <div class="absolute -inset-2 bg-gradient-to-r from-amber-500/40 via-amber-300/30 to-amber-500/40 rounded-2xl blur-md opacity-40 group-hover:opacity-100 transition duration-500"></div> <img src="./logo_l_ochju.jpg" alt="L'OCHJU — Média Citoyen (L'aveti ?)" class="relative h-20 md:h-28 w-auto object-contain rounded-xl border-2 border-amber-500/60 group-hover:border-amber-400 transition duration-300 shadow-2xl shadow-amber-500/40"> </div> </a> <!-- Droite : Sélecteur Langue & Switcher Jour / Nuit --> <div class="w-48 flex justify-end items-center gap-3"> <a href="./en/" class="text-xs font-mono bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 px-3 py-1.5 rounded-lg border border-amber-500/30 transition flex items-center gap-1.5 font-bold"> <span>🇬🇧</span> <span>EN</span> </a> <div class="flex flex-col items-end gap-1.5" id="lochju-theme-selector"> <!-- Libellé discret --> <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider hidden sm:block">Thème</span> <!-- Conteneur principal du double sélecteur (adaptatif Nuit / Jour) --> <div id="themeSelectorBox" class="flex items-center gap-1.5 rounded-xl p-1 shadow-lg backdrop-blur-sm transition-colors duration-300" style="background: rgba(11, 15, 23, 0.85); border: 1px solid rgba(51, 65, 85, 0.6);"> <!-- === AXE 1 : Toggle Mode Nuit / Jour === --> <button id="modeToggleBtn" data-action="toggle-mode" type="button" onclick="if(window.__lochjuToggleMode) window.__lochjuToggleMode();" title="Basculer entre Mode Nuit et Mode Jour" aria-label="Changer le mode d'affichage" class="px-2.5 py-1.5 rounded-lg text-xs font-bold font-mono transition-all duration-300 flex items-center gap-1.5 cursor-pointer border border-transparent hover:border-slate-700" style="min-width: 80px;"> <span id="modeIcon" class="text-base leading-none">🌙</span> <span id="modeLabel" class="hidden sm:inline">NUIT</span> </button> <!-- Séparateur --> <div id="themeDivider" class="w-px h-6 bg-slate-700/60"></div> <!-- === AXE 2 : Sélecteur Palette === --> <!-- Swatch Paolien (Or Antique) --> <button id="palettePaoli" data-action="set-palette" data-palette-target="paoli" type="button" onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('paoli');" title="🏛️ Thème Paolien — Chambre des Comptes 1755 (Obsidienne & Or Antique)" aria-label="Thème Paolien" class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center" style="background: linear-gradient(135deg, #0b0f17 50%, #d4af37 50%);"> <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-amber-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🏛️ PAO</span> </button> <!-- Swatch FININT (Émeraude) --> <button id="paletteFinint" data-action="set-palette" data-palette-target="finint" type="button" onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('finint');" title="📊 Thème Bloomberg FININT — Terminal Renseignement Financier (Cobalt & Émeraude)" aria-label="Thème Bloomberg FININT" class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center" style="background: linear-gradient(135deg, #080d18 50%, #10b981 50%);"> <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">📊 FIN</span> </button> <!-- Swatch Granit (Cuivre Martelé) --> <button id="paletteGranit" data-action="set-palette" data-palette-target="granit" type="button" onclick="if(window.__lochjuSetPalette) window.__lochjuSetPalette('granit');" title="🌿 Thème Granit Insulaire — Maquis, Schiste & Châtaigneraie (Ardoise & Cuivre)" aria-label="Thème Granit Insulaire" class="group relative w-7 h-7 rounded-lg border-2 transition-all duration-300 cursor-pointer flex items-center justify-center" style="background: linear-gradient(135deg, #0d1112 50%, #c26d43 50%);"> <span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-mono bg-slate-800 text-orange-400 px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-slate-700 z-50">🌿 GRA</span> </button> </div> </div> <script>
 (function() {
   /* ============================================================
-   * CONTRÔLEUR TRI-PALETTE BI-MODE GRADE GOOGLE — L'OCHJU
-   * Persistance indépendante & tolérante aux pannes :
-   *   localStorage['lochju-mode']    = 'dark' | 'light'
-   *   localStorage['lochju-palette'] = 'paoli' | 'finint' | 'granit'
+   * CONTRÔLEUR TRI-PALETTE BI-MODE — L'OCHJU
+   * STRATÉGIE : styles inline sur les éléments structurels.
+   * Tailwind CDN génère bg-slate-950/90 etc. APRÈS le CSS compilé.
+   * Style inline = spécificité absolue, impossible à surcharger.
    * ============================================================ */
 
   function getCurrentMode() {
@@ -66,7 +66,6 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
       var saved = localStorage.getItem('lochju-mode');
       if (saved === 'dark' || saved === 'light') return saved;
     } catch (e) {}
-    // Détection via DOM si localStorage vide ou restreint
     if (document.documentElement.classList.contains('light')) return 'light';
     return 'dark';
   }
@@ -76,106 +75,128 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
       var saved = localStorage.getItem('lochju-palette');
       if (saved === 'paoli' || saved === 'finint' || saved === 'granit') return saved;
     } catch (e) {}
-    var domPalette = document.documentElement.getAttribute('data-palette');
-    if (domPalette === 'paoli' || domPalette === 'finint' || domPalette === 'granit') return domPalette;
+    var dp = document.documentElement.getAttribute('data-palette');
+    if (dp === 'paoli' || dp === 'finint' || dp === 'granit') return dp;
     return 'granit';
   }
 
-  /* --- Application du mode (Nuit / Jour) --- */
-  function applyMode(mode) {
-    var validMode = (mode === 'light') ? 'light' : 'dark';
-    var html = document.documentElement;
-    html.classList.remove('dark', 'light');
-    html.classList.add(validMode);
+  /* --- Table de couleurs : 2 modes × 3 palettes --- */
+  var COLORS = {
+    dark: {
+      paoli:  { bg: '#080705', text: '#f5f0e1', header: 'rgba(8,7,5,0.96)',       border: '#3d3118', nav: 'rgba(8,7,5,0.92)'    },
+      finint: { bg: '#020617', text: '#e0f2fe', header: 'rgba(2,6,23,0.96)',      border: '#0e3a59', nav: 'rgba(2,6,23,0.92)'   },
+      granit: { bg: '#070a08', text: '#edf2ed', header: 'rgba(7,10,8,0.96)',      border: '#283d31', nav: 'rgba(7,10,8,0.92)'   }
+    },
+    light: {
+      paoli:  { bg: '#fcfaf4', text: '#1c170d', header: 'rgba(252,250,244,0.97)', border: '#dfd3be', nav: 'rgba(252,250,244,0.95)' },
+      finint: { bg: '#f0f7ff', text: '#082f49', header: 'rgba(240,247,255,0.97)', border: '#bae6fd', nav: 'rgba(240,247,255,0.95)' },
+      granit: { bg: '#f4f6f3', text: '#121d15', header: 'rgba(244,246,243,0.97)', border: '#ced9d1', nav: 'rgba(244,246,243,0.95)' }
+    }
+  };
 
-    try {
-      localStorage.setItem('lochju-mode', validMode);
-    } catch (e) {}
+  /* --- Application des styles inline sur tous les éléments structurels ---
+   * style.setProperty(..., 'important') = priorité absolue dans la cascade CSS.
+   * Aucun CDN, aucune feuille de style ne peut surclasser un style inline. */
+  function applyInlineStyles(mode, palette) {
+    var c = (COLORS[mode] && COLORS[mode][palette]) ? COLORS[mode][palette] : COLORS[mode]['granit'];
 
-    // Mise à jour de tous les boutons et indicateurs du sélecteur
-    var modeIcons = document.querySelectorAll('#modeIcon');
-    var modeLabels = document.querySelectorAll('#modeLabel');
-    var modeBtns = document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]');
-    var selectorBoxes = document.querySelectorAll('#themeSelectorBox');
-    var dividers = document.querySelectorAll('#themeDivider');
+    /* 1. BODY — fond de page et couleur de texte principale */
+    if (document.body) {
+      document.body.style.setProperty('background-color', c.bg, 'important');
+      document.body.style.setProperty('color', c.text, 'important');
+    }
 
-    if (validMode === 'dark') {
-      modeIcons.forEach(function(el) { el.textContent = '🌙'; });
-      modeLabels.forEach(function(el) { el.textContent = 'NUIT'; });
-      modeBtns.forEach(function(btn) {
+    /* 2. HEADER — contient bg-slate-950/95 Tailwind CDN hardcodé */
+    document.querySelectorAll('header').forEach(function(el) {
+      el.style.setProperty('background-color', c.header, 'important');
+      el.style.setProperty('border-color', c.border, 'important');
+    });
+
+    /* 3. NAV — contient bg-slate-950/90 Tailwind CDN hardcodé */
+    document.querySelectorAll('nav').forEach(function(el) {
+      el.style.setProperty('background-color', c.nav, 'important');
+      el.style.setProperty('border-color', c.border, 'important');
+    });
+
+    /* 4. MAIN — conteneur principal de la page */
+    document.querySelectorAll('main').forEach(function(el) {
+      el.style.setProperty('background-color', c.bg, 'important');
+      el.style.setProperty('color', c.text, 'important');
+    });
+
+    /* 5. FOOTER */
+    document.querySelectorAll('footer').forEach(function(el) {
+      el.style.setProperty('background-color', c.header, 'important');
+      el.style.setProperty('border-color', c.border, 'important');
+      el.style.setProperty('color', c.text, 'important');
+    });
+  }
+
+  /* --- Mise à jour de l'UI du bouton mode (icône + label + style sélecteur) --- */
+  function updateModeUI(mode) {
+    document.querySelectorAll('#modeIcon').forEach(function(el) {
+      el.textContent = mode === 'dark' ? '🌙' : '☀️';
+    });
+    document.querySelectorAll('#modeLabel').forEach(function(el) {
+      el.textContent = mode === 'dark' ? 'NUIT' : 'JOUR';
+    });
+    document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]').forEach(function(btn) {
+      if (mode === 'dark') {
         btn.style.color = 'var(--accent-primary, #c26d43)';
         btn.style.background = 'rgba(15, 21, 30, 0.8)';
         btn.style.borderColor = 'rgba(51, 65, 85, 0.6)';
-      });
-      selectorBoxes.forEach(function(box) {
-        box.style.background = 'rgba(11, 15, 23, 0.9)';
-        box.style.borderColor = 'rgba(51, 65, 85, 0.6)';
-        box.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.5)';
-      });
-      dividers.forEach(function(d) {
-        d.style.backgroundColor = 'rgba(51, 65, 85, 0.6)';
-      });
-    } else {
-      modeIcons.forEach(function(el) { el.textContent = '☀️'; });
-      modeLabels.forEach(function(el) { el.textContent = 'JOUR'; });
-      modeBtns.forEach(function(btn) {
+      } else {
         btn.style.color = '#0f172a';
         btn.style.background = '#ffffff';
         btn.style.borderColor = '#cbd5e1';
-      });
-      selectorBoxes.forEach(function(box) {
-        box.style.background = 'rgba(255, 255, 255, 0.95)';
-        box.style.borderColor = '#cbd5e1';
-        box.style.boxShadow = '0 10px 25px -5px rgba(15, 23, 42, 0.1)';
-      });
-      dividers.forEach(function(d) {
-        d.style.backgroundColor = '#cbd5e1';
-      });
-    }
+      }
+    });
+    document.querySelectorAll('#themeSelectorBox').forEach(function(box) {
+      box.style.background = mode === 'dark' ? 'rgba(11, 15, 23, 0.9)' : 'rgba(255, 255, 255, 0.95)';
+      box.style.borderColor = mode === 'dark' ? 'rgba(51, 65, 85, 0.6)' : '#cbd5e1';
+    });
+    document.querySelectorAll('#themeDivider').forEach(function(d) {
+      d.style.backgroundColor = mode === 'dark' ? 'rgba(51, 65, 85, 0.6)' : '#cbd5e1';
+    });
+  }
+
+  /* --- Application du mode complet (classe HTML + UI + inline styles) --- */
+  function applyMode(mode) {
+    var validMode = (mode === 'light') ? 'light' : 'dark';
+    /* 1. Classe sur <html> pour que le CSS global fonctionne aussi */
+    document.documentElement.classList.remove('dark', 'light');
+    document.documentElement.classList.add(validMode);
+    /* 2. Persistance */
+    try { localStorage.setItem('lochju-mode', validMode); } catch (e) {}
+    /* 3. UI du sélecteur */
+    updateModeUI(validMode);
+    /* 4. Styles inline sur les éléments structurels */
+    applyInlineStyles(validMode, getCurrentPalette());
   }
 
   /* --- Application de la palette (Paolien, FININT, Granit) --- */
   function applyPalette(palette) {
     var validPalette = (palette === 'paoli' || palette === 'finint' || palette === 'granit') ? palette : 'granit';
-    var html = document.documentElement;
-    html.setAttribute('data-palette', validPalette);
+    document.documentElement.setAttribute('data-palette', validPalette);
+    try { localStorage.setItem('lochju-palette', validPalette); } catch (e) {}
 
-    try {
-      localStorage.setItem('lochju-palette', validPalette);
-    } catch (e) {}
-
-    // Mise en surbrillance des boutons swatch correspondants
-    var swatches = document.querySelectorAll('[data-palette-target]');
-    swatches.forEach(function(btn) {
-      var target = btn.getAttribute('data-palette-target');
-      if (target === validPalette) {
-        btn.style.border = '2px solid rgba(255, 255, 255, 0.95)';
-        btn.style.boxShadow = '0 0 0 2px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.2)';
-        btn.style.transform = 'scale(1.15)';
-        btn.style.outline = '2px solid rgba(255, 255, 255, 0.12)';
-        btn.style.outlineOffset = '2px';
-      } else {
-        btn.style.border = '2px solid transparent';
-        btn.style.boxShadow = 'none';
-        btn.style.transform = 'scale(1)';
-        btn.style.outline = 'none';
-      }
+    /* Surbrillance du swatch actif */
+    document.querySelectorAll('[data-palette-target]').forEach(function(btn) {
+      var isActive = btn.getAttribute('data-palette-target') === validPalette;
+      btn.style.border  = isActive ? '2px solid rgba(255,255,255,0.95)' : '2px solid transparent';
+      btn.style.boxShadow = isActive ? '0 0 0 2px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.2)' : 'none';
+      btn.style.transform = isActive ? 'scale(1.15)' : 'scale(1)';
+      btn.style.outline = isActive ? '2px solid rgba(255,255,255,0.12)' : 'none';
+      btn.style.outlineOffset = '2px';
     });
 
-    // Mettre à jour la couleur du bouton Mode en dark selon la palette active
-    if (getCurrentMode() === 'dark') {
-      var modeBtns = document.querySelectorAll('#modeToggleBtn, [data-action="toggle-mode"]');
-      modeBtns.forEach(function(btn) {
-        btn.style.color = 'var(--accent-primary, #c26d43)';
-      });
-    }
+    /* Re-appliquer les styles inline avec la nouvelle palette */
+    applyInlineStyles(getCurrentMode(), validPalette);
   }
 
-  /* --- Fonctions publiques exposées sur window (Grade Google) --- */
+  /* --- Fonctions publiques sur window --- */
   window.__lochjuToggleMode = function() {
-    var current = getCurrentMode();
-    var next = (current === 'dark') ? 'light' : 'dark';
-    applyMode(next);
+    applyMode(getCurrentMode() === 'dark' ? 'light' : 'dark');
   };
 
   window.__lochjuSetPalette = function(palette) {
@@ -183,45 +204,38 @@ Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong> </span
   };
 
   window.__lochjuInitTheme = function() {
-    var mode = getCurrentMode();
-    var palette = getCurrentPalette();
-    applyMode(mode);
-    applyPalette(palette);
+    applyMode(getCurrentMode());
+    applyPalette(getCurrentPalette());
   };
 
-  // 1. Initialisation immédiate synchrone
+  /* --- Initialisations séquencées --- */
+  /* 1. Initialisation immédiate : corrige ce qui est déjà dans le DOM */
   window.__lochjuInitTheme();
 
-  // 2. Initialisation au DOMContentLoaded
+  /* 2. DOMContentLoaded : DOM complet = header, nav, footer disponibles */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', window.__lochjuInitTheme);
+  } else {
+    /* DOM déjà prêt (fréquent avec Astro static) : relancer pour cibler tous les éléments */
+    window.__lochjuInitTheme();
   }
 
-  // 3. Délégation d'événements de secours sur document
+  /* 3. Délégation globale d'événements (filet de sécurité) */
   if (!window.__lochjuThemeListenerAttached) {
     window.__lochjuThemeListenerAttached = true;
-
     document.addEventListener('click', function(e) {
       var modeBtn = e.target.closest('#modeToggleBtn, [data-action="toggle-mode"]');
-      if (modeBtn) {
-        e.preventDefault();
-        window.__lochjuToggleMode();
-        return;
-      }
-
+      if (modeBtn) { e.preventDefault(); window.__lochjuToggleMode(); return; }
       var paletteBtn = e.target.closest('[data-palette-target]');
       if (paletteBtn) {
         e.preventDefault();
-        var targetPalette = paletteBtn.getAttribute('data-palette-target');
-        if (targetPalette) {
-          window.__lochjuSetPalette(targetPalette);
-        }
-        return;
+        var t = paletteBtn.getAttribute('data-palette-target');
+        if (t) window.__lochjuSetPalette(t);
       }
     });
   }
 
-  // 4. Compatibilité Astro ViewTransitions / navigation
+  /* 4. Compatibilité Astro ViewTransitions */
   document.addEventListener('astro:page-load', window.__lochjuInitTheme);
 })();
 </script> </div> </div> </header>  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[108px] z-40 py-2.5 px-6 shadow-md overflow-x-auto" aria-label="Navigation rapide par sections"> <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 text-xs font-mono whitespace-nowrap"> <a href="#manifeste-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5"> <span>🙏 Le Manifeste</span> </a> <a href="#fiches-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5"> <span>📂 29 Enquêtes</span> </a> <a href="#gis-map-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5"> <span>🗺️ Carte 360 Communes</span> </a> <a href="#foncier-dvf-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-400 hover:text-cyan-400 transition flex items-center gap-1.5"> <span>🤝 Radar DVF</span> </a> <a href="#cada-generator" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5"> <span>⚖️ Droit de Savoir (CADA)</span> </a> <a href="#whistleblower-vault" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-400 hover:text-cyan-400 transition flex items-center gap-1.5"> <span>🔒 Coffre-Fort PGP</span> </a> </div> </nav> <main id="main-content"> <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-4" id="alerte-censure-section"> <div class="relative rounded-3xl p-6 sm:p-8 md:p-10 border border-amber-500/30 bg-gradient-to-b from-slate-900/90 via-slate-950 to-slate-950 shadow-2xl backdrop-blur-xl overflow-hidden"> <!-- Glow subtil d'arrière-plan --> <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div> <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div> <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"> <!-- Colonne Gauche : Visuel épuré centré --> <div class="lg:col-span-4 flex flex-col items-center justify-center"> <div class="relative group w-full max-w-[280px] sm:max-w-xs"> <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500/30 to-amber-300/20 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-500"></div> <img src="./alerte_censure_lochju.jpg" alt="L'OCHJU - On ne fait pas taire la vérité" class="relative w-full h-auto rounded-2xl border border-amber-500/40 shadow-2xl"> </div> </div> <!-- Colonne Droite : Communiqué Régalien & Actions Équilibrées --> <div class="lg:col-span-8 flex flex-col justify-center space-y-5"> <!-- En-tête Badge de Presse avec Impact Historique --> <div class="flex flex-wrap items-center gap-2.5"> <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-widest bg-rose-500/20 text-rose-300 border border-rose-500/40"> <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
