@@ -1,7 +1,7 @@
 ---
 id: 29
-title: "Manifeste de Corte à Philadelphie — L'Appel aux Nations Libres"
-subtitle: "De la première Constitution démocratique du monde moderne (1755) au premier cri de guerre de l'Amérique 'Remember Paoli !' (1777) : le réveil du pacte moral sacré entre la Corse et les peuples libres."
+title: "« Remember Paoli ! » : Le Réveil du Pacte Sacré entre la Corse et l'Amérique"
+subtitle: "Avant que l'Amérique ne naisse, nous avions allumé le feu de la liberté moderne : la saisine historique pour la réinscription de la Corse sur la liste des peuples à décoloniser."
 category: "MANIFESTE D'ÉMANCIPATION & GÉOPOLITIQUE"
 status: cloturee
 ref: "LOCHJU-MANIFESTE-01-CORTE-PHILADELPHIA"
@@ -34,6 +34,70 @@ sources:
   - name: "ONU : Déclaration sur les Droits des Peuples Autochtones (DNUDPA 2007 - Résolution 61/295)"
     url: "https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/11/UNDRIP_F_web.pdf"
     sha256: "7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e"
+---
+
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : LE TRIDENT VITAL & LA SOUVERAINETÉ DE CHAQUE FOYER
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Énergie Hydroélectrique</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">194 à 199 MW</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Puissance propre confisquée sous concession au profit d'EDF</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Château d'Eau Insulaire</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">175 Millions m³</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Capacité stratégique pour éradiquer les coupures et l'eau chère</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Bouclier Côtier & Quotas</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">12 Milles Marins</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Protection contre les chalutiers industriels et quotas équitables</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> On répète aux Corses depuis des générations qu'ils ne produiraient rien et vivraient sous « perfusion financière ». C'est un mensonge d'État. Notre terre produit assez d'électricité propre pour nous éclairer à bas coût, retient assez d'eau douce pour approvisionner toutes nos familles et notre agriculture, et possède des fonds marins capables de nourrir la population avec du poisson frais local. Ce manifeste rappelle aux grandes nations que la Corse n'est pas une colonie touristique soumise à la spéculation, mais le berceau de la première démocratie moderne qui a inspiré l'Amérique.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : PIÈCES HISTORIQUES & CORPUS INTERNATIONAL
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        ARCHIVES SCELLÉES ISO/IEC 27037
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Constitution de Corte (1755) & National Archives US</div>
+        <div class="text-slate-200 font-bold">Origine Républicaine & Cri 'Remember Paoli !'</div>
+        <div class="text-[10px] text-slate-500 mt-1">Vote des femmes 165 ans avant les USA, 80+ chroniques de Franklin, cri de guerre officiel 1777.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Résolution ONU 1514 (XV) & Déclaration UNDRIP (2007)</div>
+        <div class="text-slate-200 font-bold">Droit Inaliénable des Peuples à la Terre</div>
+        <div class="text-[10px] text-slate-500 mt-1">Saisine C-24, précédent Résolution 67/265 et bouclier territorial contre l'éviction spéculative.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes : Corte 1755, Traité Versailles 1768, Res. ONU 1514 (XV), Adams & Jefferson Papers</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## ⚡ I. EXORDE : L'ADRESSE AUX CONSCIENCES DES HOMMES LIBRES
@@ -184,6 +248,90 @@ Elle s'adresse directement au peuple américain, à ses représentants et aux d�
 > 6. **The lawful restitution of our maritime quotas under EU CFP Article 17 and coastal zone defense**, securing fair livelihoods for our artisanal fishermen.  
 > 
 > ***'REMEMBER PAOLI — DEFEND THE CRADLE OF YOUR OWN FREEDOM.'*** ”*
+
+---
+
+<!-- ARSENAL D'ÉMANCIPATION CITOYENNE & DIPLOMATIQUE : LE PACTE TRANSATLANTIQUE -->
+<div class="my-12 p-8 rounded-3xl bg-slate-950 border-2 border-emerald-500/50 shadow-2xl relative overflow-hidden not-prose">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+<div class="flex items-center gap-3 mb-6 border-b border-emerald-500/30 pb-4">
+<span class="text-3xl">🌐</span>
+<div>
+<h3 class="font-serif font-black text-xl text-slate-100 uppercase tracking-wide m-0">
+Arsenal d'Émancipation & Pacte Diplomatique International
+</h3>
+<span class="text-xs font-mono text-emerald-400">
+MÉMOIRES DE SAISINE INTERNATIONALE • GRADE ICIJ • DROIT DES PEUPLES AUTOCHTONES
+</span>
+</div>
+</div>
+
+<p class="text-sm text-slate-300 font-sans leading-relaxed mb-6">
+La légitimité historique et le droit international ne valent que s'ils sont portés devant les tribunes du monde. Pour rompre l'isolement diplomatique de la Corse et sceller l'alliance avec les peuples libres, voici les 3 mémoires et dossiers d'action internationale téléchargeables immédiatement :
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+<!-- LEVIER 1 : SAISINE DIPLOMATIQUE ONU -->
+<a href="/transmissions/enquete-29-paoli-legacy-appel-international/02_BORDEREAU_TRANSMISSION_DIPLOMATIQUE_ONU.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🇺🇳</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">ONU C-24 & UNDRIP</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Mémoire Diplomatique ONU
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Saisine formelle pour la réinscription au Comité Spécial C-24 (Rés. 1514) et la reconnaissance au titre des droits des peuples autochtones.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Mémoire ONU →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION CONGRÈS US & CITIES -->
+<a href="/transmissions/enquete-29-paoli-legacy-appel-international/03_NOTE_INTERPELLATION_CONGRES_US.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Congrès des USA</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Interpellation Congrès & Villes US
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Appel solennel aux 10 cités américaines consacrées à la Corse et résolution de reconnaissance du pacte historique de 1777 « Remember Paoli ! ».
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Consulter l'Appel US →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE INTERNATIONALE ICIJ -->
+<a href="/transmissions/enquete-29-paoli-legacy-appel-international/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ Int.</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit Presse Transatlantique
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dépêche bilingue et dossier médico-légal sur le Trident Vital (194 MW hydro, 175 M m³ eau, 12 milles marins) pour les rédactions internationales.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
 

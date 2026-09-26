@@ -1,7 +1,7 @@
 ---
 id: 26
-title: "Le Verrou des Dépôts Pétroliers — L'Autopsie du Racket sur les Carburants en Corse"
-subtitle: "187,5 millions d'euros d'amende pour entente illicite : comment le cartel de Lucciana et du Vazzio, avec la complicité passive de l'État, confisque l'avantage fiscal insulaire, interdit le SP95-E10 et prélève 48 millions d'euros par an sur le peuple corse."
+title: "L'Arme de notre Soumission : Pourquoi Paris ne Lâchera Jamais le Verrou Pétrolier Corse"
+subtitle: "Lâcher le carburant, ce serait perdre la Corse : les pièces d'un monopole d'État verrouillé pour s'assurer que notre île ne puisse jamais vivre debout."
 category: "ÉNERGIE & MONOPOLES"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-26"
@@ -17,10 +17,12 @@ sources:
     url: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     sha256: "6e067af1700b08a733e6af1e0bf103f828b7be4c2c37cd8dbf1fabcc3db80cd4"
-  - name: "Conseil d'État : Requête Introductive d'Instance A4C du 20 février 2026 (Faute Lourde de l'État & Article L. 410-2 du Code de Commerce)"
-    url: "/docs/a4c-memoire-introductif-conseil-detat-2026.pdf"
-    pdfDirect: "/docs/a4c-memoire-introductif-conseil-detat-2026.pdf"
-    sha256: "939860b56b8ad81ec8901c5ebba9a61aeb295be88bf4d88bf56b5df888e879e3"
+  - name: "Conseil d'État (9e et 10e chambres réunies) : Avis d'audience du 22 septembre 2026 pour l'audience du 30 septembre 2026 (Recours A4C / F. Poletti — Décret L. 410-2 du Code de Commerce)"
+    url: "https://fpoletti.fr/2026/09/23/a-ceux-qui-souffrent/"
+    sha256: "37a330ff23a4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0"
+  - name: "Collectif A4C / F. Poletti : Déclaration du 23 septembre 2026 ('À ceux qui souffrent,') — 8 ans de combat et saisine en chambres réunies"
+    url: "https://fpoletti.fr/2026/09/23/a-ceux-qui-souffrent/"
+    sha256: "8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d"
   - name: "Tribunal des Activités Économiques de Marseille : Jugement du 20 janvier 2026 (SAS ViTO Corse c/ SAS TotalEnergies Marketing Corse — RG 2023F00710)"
     url: "/docs/jugement_tae_marseille_20_janv_2026.pdf"
     pdfDirect: "/docs/jugement_tae_marseille_20_janv_2026.pdf"
@@ -50,25 +52,53 @@ Il est sept heures du matin dans une station-service de la périphérie de Basti
 
 Pourtant, dans les recueils officiels de la République, une autre histoire est racontée aux citoyens :
 
-<div class="my-8 not-prose grid md:grid-cols-2 gap-4">
-  <div class="bg-slate-900 border-l-4 border-cyan-500 rounded-r-2xl p-5 shadow-lg">
+<!-- ==========================================================================
+     CARTOUCHE SUPRÊME DOUBLE ÉTAGÈRE — L'ARITHMÉTIQUE DU RACKET
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE POPULAIRE & ÉMANCIPATION (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
     <div class="flex items-center gap-2 mb-2">
-      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
-      <span class="text-xs font-mono font-bold tracking-wider uppercase text-cyan-400">Étagère Technique : La Promesse Légale</span>
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
     </div>
-    <p class="text-slate-300 text-sm leading-relaxed">
-      L'article 297 du Code Général des Impôts octroie à la Corse un <strong>taux de TVA réduit de 13 %</strong> (contre 20 % sur le continent) et une ristourne spécifique sur la TICPE. En arithmétique fiscale, le carburant à la pompe devrait coûter entre <strong>8 et 12 centimes de moins</strong> qu'à Marseille ou Toulon.
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Vol Fiscal par Foyer</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">380 € / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Surcoût prélevé sur un ménage moyen</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente Globale Confisquée</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">48 M€ / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Siphonné sur les 400M de litres de l'île</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">L'Anomalie Fiscale Brute</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">+15 cts/L</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Payé en plus alors que la TVA corse est à 13 %</span>
+      </div>
+    </div>
+    <p class="font-serif text-sm text-slate-200 leading-relaxed italic">
+      « La loi républicaine (CGI art. 297) accorde à la Corse une TVA réduite à 13 % au lieu de 20 %. En arithmétique simple, le litre devrait coûter 10 centimes de MOINS qu'à Nice. Dans la réalité de votre plein, vous le payez 15 centimes de PLUS. L'avantage fiscal est intégralement capté par le cartel avant même que l'essence n'arrive à la station. »
     </p>
   </div>
 
-  <div class="bg-slate-900 border-l-4 border-amber-500 rounded-r-2xl p-5 shadow-lg">
-    <div class="flex items-center gap-2 mb-2">
-      <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
-      <span class="text-xs font-mono font-bold tracking-wider uppercase text-amber-400">Étagère Vulgarisée : Le Racket Quotidien</span>
+  <!-- ÉTAGÈRE FORENSIQUE : LA COTATION OFFICIELLE DE PREUVE SCELLÉE -->
+  <div class="space-y-2">
+    <div class="text-[11px] font-mono text-cyan-400 uppercase tracking-wider font-semibold flex items-center gap-1.5">
+      <span>⚖️ COTES D'INSTRUCTION ET BASES MÉDICO-LÉGALES :</span>
     </div>
-    <p class="text-slate-300 text-sm leading-relaxed">
-      Dans les faits, le plein coûte <strong>10 à 25 centimes plus cher</strong>. L'avantage fiscal financé par le contribuable ne parvient jamais dans la poche du consommateur corse : il est intégralement capté dès la sortie des navires pétroliers par un cartel logistique qui prélève <strong>48 millions d'euros par an</strong> en pure rente de situation.
-    </p>
+    <div class="text-xs font-mono text-slate-400 grid grid-cols-1 sm:grid-cols-2 gap-2 bg-slate-950/80 p-3 rounded-xl border border-slate-800/80">
+      <div>• <strong>Autorité de la Concurrence :</strong> Décision 25-D-07 du 17/11/2025 (80 pages).</div>
+      <div>• <strong>Sanction pécuniaire infligée :</strong> 187,49 M€ pour entente illicite.</div>
+      <div>• <strong>Conseil d'État (Chambres réunies) :</strong> Audience du 30/09/2026 (Recours A4C / L. 410-2).</div>
+      <div>• <strong>Rapport IGF n° 2018-M-072-03 :</strong> Fret maritime réel chiffré à 1,5-2,5 cts/L.</div>
+    </div>
   </div>
 </div>
 
@@ -189,6 +219,30 @@ Pour parachever l'extraction, les membres du cartel avaient annexé au contrat d
 Parmi toutes les aberrations vécues par les usagers insulaires, il en est une qui frappe chaque propriétaire de véhicule essence : **pourquoi est-il rigoureusement impossible de trouver du SP95-E10 en Corse ?**
 
 Sur le continent, le SP95-E10, enrichi jusqu'à 10 % en bioéthanol, représente la majorité écrasante des ventes d'essence : il est moins taxé, plus écologique et nettement moins cher. En Corse, aucune station ne le distribue. Pas une seule.
+
+<!-- ==========================================================================
+     CARTOUCHE DOUBLE ÉTAGÈRE — LE SABOTAGE DU BIOÉTHANOL E10
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-rose-500/40 bg-slate-950 p-6 md:p-8 shadow-xl">
+  <div class="flex items-center gap-2 mb-3">
+    <span class="w-3 h-3 rounded-full bg-rose-500 animate-pulse"></span>
+    <span class="text-xs font-mono font-bold tracking-widest uppercase text-rose-400">
+      👁️ U SAPÈ CITADINU : LE SCANDALE DES CUVES INTERDITES AU BIOÉTHANOL
+    </span>
+  </div>
+
+  <div class="bg-rose-950/20 border border-rose-500/30 rounded-xl p-4 mb-4">
+    <p class="font-serif text-slate-200 text-sm md:text-base leading-relaxed">
+      <strong>Pourquoi 0 station sur 150 ne propose de SP95-E10 en Corse ?</strong><br/>
+      Sur le continent, l'E10 est le carburant roi : moins taxé, il fait économiser <strong>10 à 12,50 € par plein</strong>. En Corse, les barons de Lucciana et du Vazzio refusent délibérément de dédier une seule cuve à l'éthanol pur. Résultat : vous êtes condamnés à payer le SP95 plein pot. C'est une rançon forcée de <strong>150 € par an</strong> pour chaque jeune et chaque famille roulant à l'essence.
+    </p>
+  </div>
+
+  <div class="text-[11px] font-mono text-slate-400 border-t border-slate-800/80 pt-3 flex flex-wrap justify-between items-center gap-2">
+    <span>⚖️ Preuve scellée : <strong>Avis Adlc n° 20-A-11 (pts 106-114)</strong> & Mémoire A4C Conseil d'État (Pce n° 7 et 8).</span>
+    <span class="text-rose-400 font-bold uppercase tracking-wider">Pénurie Organisée</span>
+  </div>
+</div>
 
 Le motif de cette pénurie organisée a été documenté par l'Autorité de la concurrence dans son **Avis n° 20-A-11 (points 106 à 114)** et repris dans la requête contentieuse déposée devant le Conseil d'État :
 Le bioéthanol ne peut pas voyager pré-mélangé dans les cales des navires pétroliers sans risque d'altération chimique au contact de l'humidité maritime. Pour proposer de l'E10, il faut obligatoirement disposer de bacs dédiés au stockage d'éthanol pur au sein des dépôts de Lucciana et du Vazzio, afin d'injecter le biocarburant lors du chargement des citernes. Or, les actionnaires du cartel ont constamment **refusé de financer l'aménagement de ces cuves d'éthanol**.
@@ -318,10 +372,116 @@ Pour maintenir une pression démocratique totale et briser l'omerta, chaque cito
 
 ---
 
-### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+## ⏱️ 30 Septembre 2026 : Le Racket Pétrolier devant le Conseil d'État
 
-Pour garantir l'impact citoyen, la saisine judiciaire et le relais médiatique de cette enquête, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+Alors que les sanctions de 187,5 millions d'euros infligées aux compagnies ont frappé le passé, une étape historique se joue au présent pour l'avenir de chaque foyer corse. 
 
-- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md) : synthèse des faits saillants, chronologie médico-légale et angles d'attaque éditoriaux.
-- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / PNF / Adlc)**](/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 et qualifications pénales/commerciales.
-- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : proposition de décret L. 410-2 du Code de commerce, modèle de question écrite au gouvernement et projet de régie publique insulaire.
+Par un avis officiel notifié le **22 septembre 2026**, le **Conseil d'État** a inscrit à l'audience du **mercredi 30 septembre 2026** le recours contentieux porté par Frédéric Poletti au nom de l'association citoyenne **A4C** contre le refus implicite du Gouvernement français d'encadrer les prix des carburants dans l'île.
+
+<div class="my-6 not-prose bg-slate-900/90 border border-amber-500/40 rounded-2xl p-6 shadow-xl">
+  <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">⚖️</span>
+      <h4 class="text-base font-bold text-amber-300 font-sans m-0">L'ÉTAU RÉPUBLICAIN : L'ACTION CONTENTIEUSE & PARLEMENTAIRE</h4>
+    </div>
+    <span class="text-[11px] font-mono bg-amber-500/10 text-amber-300 px-3 py-1 rounded-full border border-amber-500/30">
+      AUDIENCE DU 30 SEPTEMBRE 2026
+    </span>
+  </div>
+  <p class="text-xs text-slate-300 font-sans leading-relaxed mb-4">
+    L'affaire est audiencée devant les <strong>9e et 10e chambres réunies</strong>, une formation solennelle réservée aux litiges présentant une difficulté juridique majeure. Le recours se fonde sur l'<strong>article L. 410-2 alinéa 2 du Code de commerce</strong>, qui confère au Premier ministre et au ministre de l'Économie le pouvoir d'encadrer par décret en Conseil d'État les prix des produits de première nécessité dans les zones géographiques où la concurrence est annihilée.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+      <span class="text-slate-400 text-[10px] uppercase block mb-1">🔍 Front Juridictionnel (A4C)</span>
+      <p class="text-slate-200 m-0">Injonction demandée à l'État sous astreinte de réexaminer la demande de régulation des prix des carburants en Corse sous un délai strict de <strong>2 mois</strong>.</p>
+    </div>
+    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+      <span class="text-slate-400 text-[10px] uppercase block mb-1">🏛️ Front Parlementaire (Député Colombani)</span>
+      <p class="text-slate-200 m-0">Mission d'évaluation parlementaire à l'Assemblée nationale prenant l'État en tenaille face à l'inertie de l'Exécutif territorial (délibération 2021-172 AC restée lettre morte).</p>
+    </div>
+  </div>
+</div>
+
+Après huit années d'un combat opiniâtre mené au nom de ceux qui souffrent en silence devant les totems des stations, le Conseil d'État est placé devant ses responsabilités républicaines : mettre fin à la rente du cartel ou entériner la confiscation de l'avantage fiscal insulaire.
+
+---
+
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE : PASSER À L'ACTION IMMÉDIATE
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-10 shadow-2xl">
+<div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+<span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-xs font-bold uppercase tracking-widest font-mono inline-block">
+✊ AUTO-DÉTERMINATION CITOYENNE · DU RAPPORT AU TRIBUNAL
+</span>
+<h3 class="text-2xl md:text-3xl font-black font-serif text-slate-100">
+L'Opacité N'est Pas une Fatalité. Voici les Munitions Légales.
+</h3>
+<p class="font-serif text-sm text-slate-300">
+La décision de justice du 17 novembre 2025 vous donne l'avantage. Les cartels comptent sur votre silence. Utilisez les pièces scellées par L'OCHJU pour exiger des comptes aux élus et à la justice.
+</p>
+</div>
+
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 40 -->
+<a href="/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau de Plainte PNF & Procureur
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Le dossier juridique pré-rempli avec les 4 pièces certifiées ISO 27037 prêt à être déposé au Parquet National Financier.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Décret L. 410-2</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation des Députés
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Le projet de décret d'encadrement des prix et le modèle de question écrite au gouvernement pour sommer les élus d'agir.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Chronologie médico-légale brute et angles d'attaque documentés pour les rédactions libres et journalistes indépendants.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>

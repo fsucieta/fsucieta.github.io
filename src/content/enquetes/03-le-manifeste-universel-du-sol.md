@@ -1,7 +1,7 @@
 ---
 id: 3
-title: "Le Manifeste Universel du Sol — Comment les Îles de Méditerranée et du Monde Protègent leur Terre (Et Pourquoi la France l'Interdit à la Corse)"
-subtitle: "De Malte (Protocole n°6) aux Îles Åland, du Danemark (Protocole n°32) à la Polynésie : autopsie médico-légale du grand mensonge républicain. Les preuves irréfutables que la protection du sol est légale partout dans le monde."
+title: "Nos Enfants N'auront Pas de Terre : Comment la Corse Est Vendue Sous nos Yeux"
+subtitle: "Des millions d'euros venus d'ailleurs pour des villas fermées tout l'hiver, pendant que notre jeunesse est condamnée à l'exil : le visage de la colonisation moderne, et l'ultime sursaut pour que cette terre reste à ses enfants."
 category: "DROIT INTERNATIONAL & SOUVERAINETÉ"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-03-MONDIAL"
@@ -47,6 +47,71 @@ sources:
 ## 1. LE CONSTAT DU TERRAIN : LA DISPROPORTION FONCIÈRE ET L'URGENCE DU LOGEMENT
 
 Le constat part d'une difficulté quotidienne que rencontrent les familles et les jeunes actifs insulaires : **accéder à la propriété ou même trouver un logement à l'année sur l'île avec un salaire moyen est devenu un obstacle majeur face à la pression immobilière extérieure.**
+
+<!-- ==========================================================================
+     CARTOUCHE SUPRÊME DOUBLE ÉTAGÈRE — L'ARITHMÉTIQUE DE LA SOUVERAINETÉ FONCIÈRE
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE POPULAIRE & ÉMANCIPATION (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Taux Résidences Secondaires</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">38 % à 80 %</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Moyenne île vs pointes littorales (Porto-Vecchio, Lumio)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rançon du Mètre Carré</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">4 000 à 7 500 €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Prix littoral vs salaire médian corse (1 750 €/mois)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Précédents Légaux Actifs</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">4 Traités</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Malte (Prot. 6), Åland (Prot. 2), Danemark, Polynésie</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> Acheter un toit ou loger ses enfants sur sa propre terre est devenu impossible. Paris vous répète que protéger l'accès au sol est « interdit par l'Europe et la Constitution ». <strong>C'est un mensonge d'État intégral.</strong> Malte impose 5 ans de résidence préalable avec l'accord de l'Union européenne, la Finlande protège les îles Åland, et la République française elle-même protège le sol en Polynésie (décision 2004-490 DC). Ce qui est légal pour les autres peuples doit l'être pour le Peuple Corse.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : TRAITÉS INTERNATIONAUX & JURISPRUDENCES SCELLÉES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        DROIT COMPARÉ EUROPÉEN
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Traité d'Adhésion Malte — Protocole n° 6</div>
+        <div class="text-slate-200 font-bold">Condition de 5 Ans de Résidence Préalable</div>
+        <div class="text-[10px] text-slate-500 mt-1">Dérogation européenne expresse à l'Art. 63 TFUE gravée au droit primaire de l'Union.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Conseil Constitutionnel — Décision 2004-490 DC</div>
+        <div class="text-slate-200 font-bold">Priorité Foncière aux Résidents en France</div>
+        <div class="text-[10px] text-slate-500 mt-1">Validation constitutionnelle de la réserve d'accès foncier aux résidents justifiant d'une durée d'installation.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : Protocole 6 Malte, Protocole 2 Åland, Délibération 14/083 AC, Résolution ONU 1514</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
 
 Cette situation découle d'un déséquilibre structurel entre le pouvoir d'achat local et l'attractivité touristique :
 
@@ -95,17 +160,11 @@ Face aux tensions foncières, certaines collectivités ont tenté d'intervenir p
 - **L'exemple de la « Taxe Soru » en Sardaigne** : En 2006, la région autonome de Sardaigne avait instauré une surtaxe régionale sur les résidences secondaires et les bateaux des personnes non domiciliées fiscalement sur l'île. Par un arrêt du 17 novembre 2009 (**affaire C-169/08**), la Cour de Justice de l'Union Européenne a invalidé ce dispositif fiscal, le jugeant discriminatoire au regard des règles européennes de libre prestation de services.
 - **La leçon pour les politiques publiques** : Ce précédent montre que de simples surtaxes financières locales, sans ancrage statutaire de dérogation reconnu au niveau constitutionnel et européen, restent vulnérables aux recours contentieux et ne suffisent pas à enrayer la spéculation foncière.
 
----
+## 4. LA DIVERSITÉ DES STATUTS DANS LA RÉPUBLIQUE : LE DOUBLE STANDARD DU DROIT
 
-## 🏛️ ACTE III. LE PROCÈS DU DOUBLE STANDARD : LA RÉPUBLIQUE PRISE EN FLAGRANT DÉLIT
+Paris et ses juristes prétendent souvent que l'Article 1er de la Constitution — garantissant « l'égalité de tous les citoyens sans distinction » — rendrait strictement impossible la moindre condition de résidence pour acquérir la terre en Corse. 
 
-Paris et ses juristes de cour prétendent que l'Article 1er de la Constitution — garantissant « l'égalité de tous les citoyens sans distinction » — rendrait strictement impossible la moindre condition de résidence pour acquérir la terre en Corse. 
-
-**C'est une imposture d'État flagrante. Dans les faits, la République française applique déjà exactement ces dispositifs dérogatoires dès lors qu'il s'agit de ses territoires du Pacifique ou des Antilles :**
-
-## 4. LA DIVERSITÉ DES STATUTS DANS LA RÉPUBLIQUE FRANÇAISE
-
-Face aux affirmations selon lesquelles le principe républicain d'égalité interdirait toute différenciation territoriale, l'ordre juridique français applique déjà des régimes spécifiques d'accès au foncier et à l'emploi dans ses collectivités insulaires d'outre-mer :
+Dans les faits, l'ordre juridique français applique déjà exactement ces dispositifs dérogatoires et des régimes spécifiques d'accès au foncier et à l'emploi dans ses collectivités insulaires d'outre-mer :
 
 ### 1. La Décision Historique n° 2004-490 DC : La Priorité Foncière en Polynésie
 Le 12 février 2004, statuant sur la Loi Organique portant statut d'autonomie de la Polynésie française (Loi n° 2004-192), le **Conseil Constitutionnel a validé l'Article 19** qui subordonne les acquisitions foncières à une durée minimale de résidence.
@@ -175,7 +234,7 @@ Pour répondre à l'urgence du logement et préserver l'avenir des générations
 
 ---
 
-## 🏛️ L'ACTION CITOYENNE & NATIONALE POUR NOTRE TERRE
+## 8. L'ACTION CITOYENNE & NATIONALE POUR NOTRE TERRE
 
 > [!IMPORTANT]
 > **Le Droit Inaliénable des Peuples à Préserver leur Sol**  
@@ -186,13 +245,86 @@ Pour répondre à l'urgence du logement et préserver l'avenir des générations
 
 ---
 
-### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+<div class="space-y-3 mb-8">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono font-bold uppercase tracking-widest">
+⚡ ARSENAL D'ÉMANCIPATION CITOYENNE
+</span>
+<h3 class="text-2xl md:text-3xl font-black font-serif text-slate-100">
+La Dépossession N'est Pas une Fatalité. Voici les Armes du Droit.
+</h3>
+<p class="font-serif text-sm text-slate-300">
+Les traités européens de Malte et des îles Åland ainsi que la jurisprudence constitutionnelle prouvent la légalité de la sauvegarde du sol. Utilisez les dossiers d'instruction scellés par L'OCHJU pour exiger le statut de résident et stopper la spéculation.
+</p>
+</div>
 
-- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-03-manifeste-universel-sol/01_KIT_PRESSE_INVESTIGATION.md) : synthèse de droit comparé, traités européens dérogatoires et données de spéculation immobilière.
-- ⚖️ [**Bordereau de Transmission Juridique & Mémoire Constitutionnel**](/transmissions/enquete-03-manifeste-universel-sol/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des pièces probatoires scellées ISO/IEC 27037 (protocoles de Malte, Åland, décision 2004-490 DC et délibération 14/083 AC).
-- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-03-manifeste-universel-sol/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : levier constitutionnel, surtaxation des SCI spéculatives et modèle de question écrite au gouvernement.
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 40 -->
+<a href="/transmissions/enquete-03-manifeste-universel-sol/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Mémoire Juridique</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Juridique & Statut de Résident
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Inventaire probatoire des pièces scellées ISO 27037 (protocoles européens, décision 2004-490 DC et vote 14/083 AC) pour tout recours.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-03-manifeste-universel-sol/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Révision Const.</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de protocole dérogatoire direct pour la Corse dans la Constitution et taxation punitive des SCI non-résidentes.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-03-manifeste-universel-sol/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dossier de droit comparé international et données forensiques de dépossession foncière pour les rédactions indépendantes.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
 

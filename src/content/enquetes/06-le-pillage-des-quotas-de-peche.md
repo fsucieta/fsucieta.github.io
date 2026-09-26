@@ -1,7 +1,7 @@
 ---
 id: 6
-title: "Quand la Mer S'Arrête de Chanter — Autopsie de l'Extinction des Pêcheurs Corses et du Braquage de Notre Mer"
-subtitle: "Le journal de bord d'une dépossession maritime : comment l'entente pétrolière sur les dépôts de carburants (187,5 M€ de sanction), le monopole sétois sur les quotas et le pillage côtier étouffent nos marins et font exploser le coût de la vie insulaire"
+title: "L'Île qui n'a pas le Droit de Pêcher : Comment la Mer Corse Nourrit le Continent et Affame nos Ports"
+subtitle: "4 078 tonnes de thon rouge pour les armateurs de Sète, 26 tonnes autorisées pour toute la Corse : l'autopsie d'une spoliation maritime d'État qui enrichit des barons continentaux et tue nos 180 patrons-pêcheurs."
 category: "MER & PÊCHE"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-06"
@@ -34,7 +34,74 @@ sources:
     sha256: "8ec4016622bd7acc49a19f9b0ce42b04dad503a8ba973619dd96d2b71d45758c"
 ---
 
-## ACTE I. L'ULTIMATUM D'AOÛT 2026 : POURQUOI LA MER CORSE SE SOULÈVE
+<!-- ==========================================================================
+     CARTOUCHE POPULAIRE & FORENSIQUE : LE DOUBLE ÉTAGÈRE
+     ========================================================================== -->
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Poisson Importé vs Local</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">25 à 45 € / kg</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Contre 12 à 15 €/kg réalisables en criée publique insulaire</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Quota Thon Rouge Alloué</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">0,44 % pour l'île</span>
+        <span class="text-[10px] text-slate-400 block mt-1">26,4 tonnes pour toute la Corse vs 4 078 t pour Sète</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente Pétrolière Maritime</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">187,5 M€ d'Amende</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Entente illicite DPLC sur les carburants (Décision 25-D-07)</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> Alors que nous vivons sur une île entourée par 1 000 km de côtes, le poisson frais de notre mer est devenu un luxe inaccessible pour la majorité des familles corses. Pourquoi ? Parce que 68,5 % des quotas de thon rouge de Méditerranée sont réservés par l'État à de gigantesques navires industriels continentaux, pendant que les pêcheurs corses sont réduits à des miettes et étranglés par le cartel pétrolier insulaire. Résultat : vous payez du poisson sous plastique importé à 35 € le kilo, alors qu'une criée publique citoyenne permettrait du poisson frais à moins de 15 € le kilo !
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : PIÈCES DE JUSTICE & CONVENTIONS SCELLÉES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        ACTES OFFICIELS CONSEIL D'ÉTAT & ADLC
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Décision Conseil d'État n° 494626</div>
+        <div class="text-slate-200 font-bold">Contentieux Quotas Thon Rouge (5 Juin 2025)</div>
+        <div class="text-[10px] text-slate-500 mt-1">Cassation de la CAA Toulouse pour erreur de droit sur l'Art. R. 921-48 du Code rural.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Règlement Européen PCP n° 1380/2013</div>
+        <div class="text-slate-200 font-bold">Article 17 : Critères Sociaux & Écologiques</div>
+        <div class="text-[10px] text-slate-500 mt-1">Obligation d'attribution transparente favorisant la petite pêche côtière à faible impact.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : JORF n°0042 TREM2403053A, Décision ADLC 25-D-07, Dossier Stella Mare CNRS</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 1. L'ULTIMATUM D'AOÛT 2026 : POURQUOI LA MER CORSE SE SOULÈVE
 
 Le **18 août 2026**, devant les grilles de la Préfecture de Corse, les représentants du **Sindicatu pè a difesa di i pescadori corsi** ont posé un ultimatum solennel : **sans accord concret et pérenne avant le 31 août, l'ensemble des ports de commerce de l'île (Ajaccio, Bastia, Porto-Vecchio, Propriano, L'Île-Rousse, Bonifacio) seront totalement bloqués dès la mi-septembre 2026.**
 
@@ -47,7 +114,7 @@ Ce cri d'alarme fait suite au blocage d'avril 2026. Il ne s'agit pas d'une simpl
 
 ---
 
-## ACTE II. LE VERROU LOGISTIQUE : L'ENTENTE SUR LES DÉPÔTS PÉTROLIERS (187,5 M€ DE SANCTION)
+## 2. LE VERROU LOGISTIQUE DES CARBURANTS : L'IMPACT DE L'ENTENTE DPLC SUR L'AVITAILLEMENT (187,5 M€ DE SANCTION)
 
 L'une des causes structurelles des surcoûts supportés par l'ensemble de l'économie corse se trouve à terre, dans les cuves des dépôts de stockage de carburants routiers.
 
@@ -79,7 +146,7 @@ Le **17 novembre 2025**, l'Autorité de la Concurrence a rendu une décision ret
 
 ---
 
-## ACTE III. LA RÉPARTITION DES QUOTAS DE THON ROUGE : UNE ASYMÉTRIE AU DÉTRIMENT DES ARTISANS
+## 3. LA RÉPARTITION DES QUOTAS DE THON ROUGE : UNE ASYMÉTRIE AU DÉTRIMENT DES ARTISANS
 
 Pendant que les charges logistiques pèsent sur l'activité des marins, l'accès aux espèces pélagiques majeures (le **Thon Rouge** et l'**Espadon**) fait l'objet d'une concentration historique au profit des grands armements industriels.
 
@@ -107,7 +174,7 @@ Une fraction importante des bancs de thons pêchés en Méditerranée occidental
 
 ---
 
-## ACTE IV. LE TRÉSOR CÔTIER EN PÉRIL : LANGOUSTES DE CENTURI, OURSINS ET STELLA MARE
+## 4. LE PATRIMOINE CÔTIER EN PÉRIL : LANGOUSTES DE CENTURI, OURSINS ET L'AVANCÉE STELLA MARE
 
 La prédation ne s'arrête pas au grand large : les espèces côtières nobles qui constituent l'âme des prud'homies et de la gastronomie insulaire subissent une pression insoutenable.
 
@@ -126,7 +193,7 @@ La prédation ne s'arrête pas au grand large : les espèces côtières nobles q
 
 ---
 
-## ACTE V. LE PLAN DE BATAILLE : POUR UNE MER SOUVERAINE ET UN POISSON À PRIX JUSTE
+## 5. LE MODÈLE DE SOUVERAINETÉ HALIEUTIQUE : PRIX JUSTE ET VALORISATION INSULAIRE
 
 Ce diagnostic démontre que la crise n'est pas une fatalité écologique, mais la conséquence de choix politiques révocables. Pour sauver les 180 familles de pêcheurs et rendre le poisson frais accessible à tous les résidents corses, la solution repose sur 4 piliers d'action immédiate :
 
@@ -148,7 +215,7 @@ Ce diagnostic démontre que la crise n'est pas une fatalité écologique, mais l
 
 ---
 
-## VERDICT FORENSIQUE : LE DOSSIER MATÉRIEL ÉTABLI
+## 6. SYNTHÈSE FORENSIQUE & RECOMMANDATIONS D'ARBITRAGE (Art. 17 Règlement UE 1380/2013 & Code Rural)
 
 | Axe d'Investigation | Constat Matériel Établi | Pièce Probatoire d'Origine Scellée |
 | :--- | :--- | :--- |
@@ -159,4 +226,98 @@ Ce diagnostic démontre que la crise n'est pas une fatalité écologique, mais l
 | **Dividende Citoyen** | Écart de prix moyen hors taxes (+6,7 % gazole / +5,3 % SP95 sur 2017-2018) | Relevés économiques certifiés de l'Autorité de la Concurrence |
 
 > **Conclusion de la Cellule d'Investigation** : L'ultimatum syndical du 18 août 2026 est la conséquence inévitable d'années de verrous logistiques et de renoncements administratifs. La mer corse doit avant tout nourrir le peuple corse et faire vivre dignement ses marins : l'application transparente du droit européen (Art. 17 PCP) et la valorisation locale des débarquements sont à la fois une urgence économique, une évidence écologique et un devoir de justice sociale.
+
+---
+
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="space-y-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-widest uppercase">
+<span>⚡</span> Riposte Citoyenne Active
+</div>
+<h3 class="text-2xl md:text-3xl font-serif font-black text-slate-100 tracking-tight">
+ARSENAL D'ÉMANCIPATION CITOYENNE : LA MER ET LES QUOTAS
+</h3>
+<p class="text-sm md:text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
+Ne subissez plus la disparition des pêcheurs et l'envolée des prix du poisson. La cellule L'OCHJU met à la disposition immédiate des marins, prud'homies, élus et citoyens des armes juridiques et d'action directe prêtes à l'emploi.
+</p>
+</div>
+
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 17 UE & CAA TOULOUSE -->
+<a href="/transmissions/enquete-06-pillage-quotas-peche/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Art. 17 Règlement UE</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Juridique & Renvoi CE
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Mémoire d'intervention devant la CAA de Toulouse (renvoi n° 494626) pour imposer la répartition sociale des quotas pélagiques.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-06-pillage-quotas-peche/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Quota 800 Tonnes</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de loi pour sanctuariser un quota insulaire de 800 t, créer la Criée Publique Territoriale et sanctuariser les 12 milles.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-06-pillage-quotas-peche/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Radiographie de l'entente pétrolière à 187,5 M€ et du pillage de 4 078 t de thon rouge par les senneurs continentaux.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
+
+---
+
+<div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
+  <strong>A mare hè a nostra vita. U nostru pesciu deve nutrisce a nostra ghjente.</strong>
+  <br><br>
+  <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
+  <br>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Maritime L'OCHJU</span>
+</div>
+
 

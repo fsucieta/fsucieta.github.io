@@ -1,9 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".share-buttons-container").forEach(l=>{const n=l,r=()=>{const e=n.dataset.url;return e&&e.startsWith("http")?e:e?`${window.location.origin}/${e.replace(/^\.\//,"").replace(/^\//,"")}`:window.location.href},a=n.dataset.title||document.title,c=n.dataset.chapeau||"";n.querySelector(".share-x-btn")?.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const t=r(),o=`🔴 Enquête L'OCHJU : ${a}
-
-${c?c.slice(0,140)+"...":""}
-
-À lire ici :`;window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(o)}&url=${encodeURIComponent(t)}`,"_blank","noopener,noreferrer,width=600,height=400")}),n.querySelector(".share-fb-btn")?.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const t=r();window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(t)}`,"_blank","noopener,noreferrer,width=600,height=400")}),n.querySelector(".share-wa-btn")?.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const t=r(),o=`🔴 *Enquête L'OCHJU : ${a}*
-
-${c?c+`
-
-`:""}👉 ${t}`;window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(o)}`,"_blank","noopener,noreferrer")}),n.querySelector(".share-tg-btn")?.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const t=r(),o=`🔴 Enquête L'OCHJU : ${a}`;window.open(`https://t.me/share/url?url=${encodeURIComponent(t)}&text=${encodeURIComponent(o)}`,"_blank","noopener,noreferrer")}),n.querySelector(".share-copy-btn")?.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const t=r();navigator.clipboard.writeText(t).then(()=>{const o=n.querySelector(".share-copy-btn"),i=o?.querySelector(".copy-label"),s=o?.querySelector(".copy-icon");i&&s&&(i.innerText="Copié !",s.innerText="✅",setTimeout(()=>{i.innerText="Copier",s.innerText="🔗"},2500))})})})});

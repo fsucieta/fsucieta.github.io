@@ -1,7 +1,7 @@
 ---
 id: 2
-title: "Le Hold-Up des 420 Millions — L'Effondrement Définitif du Mythe de l'Assistanat"
-subtitle: "De l'impôt des grandes enseignes encaissé à Paris à la TVA du tourisme d'été et au gel des 187 M€ du Sénat : notre analyse des flux financiers montre que la Corse rapporte plus à l'État qu'elle ne lui coûte (estimation d'environ 1 200 € par habitant et par an)."
+title: "Qui Paye pour Qui ? Ce que Chaque Famille Corse Verse à Paris sans Jamais en Voir la Couleur"
+subtitle: "4 800 euros d'impôts par an et par foyer siphonnés vers le continent sans retour : les comptes officiels qui détruisent définitivement le mythe d'une île sous perfusion."
 category: "FISCALITÉ & BUDGET"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-02"
@@ -33,6 +33,71 @@ sources:
 ---
 
 Loin du cliché d'une île sous perfusion permanente, la réalité des chiffres publics raconte une histoire bien différente : chaque année, l'État collecte environ **<mark class="forensic-highlight">1,45 milliard d'euros sur l'île</mark>** (impôts, TVA, taxes sur les carburants) et n'en réinjecte qu'environ **1,03 milliard** sous forme de dotations et de services publics directs. Selon l'estimation financière réalisée par L'OCHJU à partir des déclarations fiscales des entreprises, des budgets municipaux et des rapports du Sénat, la Corse dégage un solde net d'environ **<mark class="forensic-highlight">420 millions d'euros par an au bénéfice du budget central</mark>**, soit environ **<mark class="forensic-highlight">1 200 € par habitant et par an</mark>** pour les **355 000 résidents de l'île**.
+
+<!-- ==========================================================================
+     CARTOUCHE SUPRÊME DOUBLE ÉTAGÈRE — L'ARITHMÉTIQUE DE L'ÉMANCIPATION FISCALE
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE POPULAIRE & ÉMANCIPATION (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Ponction par Foyer</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">4 800 € / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Prélèvement net sans retour (famille de 4)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente Nette Confisquée</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">420 M€ / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Solde net expédié à Paris (1,45 Md€ prélevé vs 1,03 Md€ rendu)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Évasion d'Impôt Sociétés</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">2,45 Mds €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">CA des multinationales imposé hors de Corse</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> On vous répète depuis l'enfance que la Corse est « sous perfusion » et « nourrie par Paris ». La vérité comptable des comptes publics prouve l'inverse exact : chaque Corse envoie en moyenne <strong>1 200 € par an de plus</strong> dans les caisses nationales que ce que l'État ne dépense sur l'île. Vous ne vivez pas aux crochets de la République : <strong>c'est votre travail qui renfloue le budget central</strong>.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : PIÈCES D'ÉTAT SCELLÉES & BASES JURIDIQUES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        ACTES SÉNAT & DGFIP
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Rapport Sénat n° 488 (114 pages)</div>
+        <div class="text-slate-200 font-bold">Gel illégal de la Dotation de Continuité Territoriale</div>
+        <div class="text-[10px] text-slate-500 mt-1">Enveloppe de 187 M€ bloquée depuis 2009 en violation de l'Art. L. 4425-26 du CGCT.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Rapport Sénat n° 714 & CSPE</div>
+        <div class="text-slate-200 font-bold">Confiscation de la Rente Énergétique Insulaire</div>
+        <div class="text-[10px] text-slate-500 mt-1">Centralisation des taxes et maintien sous dépendance EDF-SEI sans autonomie solaire.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : Sénat r22-488, Sénat r23-714, DGFIP États 1259, Art. 74 Const.</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -158,13 +223,86 @@ Comment rééquilibrer ces flux pour redonner du pouvoir d'achat et moderniser l
 
 ---
 
-### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+<div class="space-y-3 mb-8">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono font-bold uppercase tracking-widest">
+⚡ ARSENAL D'ÉMANCIPATION CITOYENNE
+</span>
+<h3 class="text-2xl md:text-3xl font-black font-serif text-slate-100">
+La Dépendance Est une Fiction. Voici les Munitions Budgétaires.
+</h3>
+<p class="font-serif text-sm text-slate-300">
+Les chiffres officiels du Sénat et de la DGFiP démontrent le solde créditeur de la Corse. Ne laissez plus personne vous traiter d'assistés. Utilisez les dossiers d'instruction scellés par L'OCHJU pour exiger la justice fiscale.
+</p>
+</div>
 
-- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-02-mythe-subventions/01_KIT_PRESSE_INVESTIGATION.md) : synthèse probatoire des flux de trésorerie, hold-up des sièges sociaux et chiffres clés médico-légaux.
-- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Parquet National Financier)**](/transmissions/enquete-02-mythe-subventions/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 (rapports du Sénat n° 488, 714, 302 et relevés Banque de France).
-- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-02-mythe-subventions/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : proposition de loi de territorialisation de l'IS, rattrapage de la DCT et modèle de question écrite au gouvernement.
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 40 -->
+<a href="/transmissions/enquete-02-mythe-subventions/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau PNF & Justice Fiscale
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Signalement pour rupture d'égalité républicaine et détournement de l'enveloppe de continuité territoriale gelée depuis 2009.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-02-mythe-subventions/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Territorialisation IS</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de loi pour imposer les bénéfices des hypermarchés et banques en Corse (Code NAF 47.11F) et débloquer les 187 M€.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-02-mythe-subventions/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dossier de preuves économiques brutes démontrant les 420 M€ annuels siphonnés vers le budget central à destination des rédactions.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
 

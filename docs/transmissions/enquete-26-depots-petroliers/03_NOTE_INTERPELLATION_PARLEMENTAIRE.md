@@ -24,7 +24,7 @@ Le marché des carburants en Corse se caractérise par une défaillance de march
 ### II. TROIS PROPOSITIONS CONCRÈTES DE MESURES LÉGISLATIVES ET TERRITORIALES
 
 #### LEVIER 1 (NIVEAU ÉTAT) : DÉCRET D'URGENCE DE PLAFONNEMENT DES PRIX (ART. L. 410-2 DU CODE DE COMMERCE)
-- **Constat** : L'article L. 410-2 du Code de commerce dispose expressément que le gouvernement peut réglementer par décret en Conseil d'État les prix dans les secteurs ou les zones géographiques où la concurrence par les prix est limitée en raison soit de situations de monopole ou de difficultés durables d'approvisionnement.
+- **Constat & Actualité Brûlante** : L'article L. 410-2 du Code de commerce dispose expressément que le gouvernement peut réglementer par décret en Conseil d'État les prix dans les secteurs ou les zones géographiques où la concurrence par les prix est limitée en raison soit de situations de monopole ou de difficultés durables d'approvisionnement. Par avis d'audience notifié le **22 septembre 2026**, le **Conseil d'État (9e et 10e chambres réunies)** a fixé au **30 septembre 2026** l'examen du recours contentieux d'A4C sommant le Gouvernement d'agir sous astreinte dans un délai de 2 mois.
 - **Action Parlementaire Recommandée** :
   - Dépôt d'une **Question Écrite au Gouvernement** sommant le Ministre de l'Économie et des Finances de publier sans délai le décret d'encadrement des marges pétrolières en Corse, à l'identique du système en vigueur dans les départements d'outre-mer (Décret Lurel n° 2012-1458).
   - Proposition de loi transpartisane rendant cette régulation **obligatoire et automatique** dès lors qu'une décision de l'Autorité de la concurrence a constaté une entente sur une infrastructure essentielle insulaire.

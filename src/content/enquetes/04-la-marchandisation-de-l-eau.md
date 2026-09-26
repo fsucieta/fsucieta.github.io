@@ -1,7 +1,7 @@
 ---
 id: 4
-title: "La Corse, Laboratoire Mondial d’Émancipation — Le Plan de 175 Millions de m³ qui brise la Tutelle et Libère l’Île par l’Eau"
-subtitle: "Fin de la rente de Paris et des tuyaux percés de Veolia : la démonstration scientifique du Carré d'Or (0 % béton, 0 % fioul) pour conquérir l’autonomie hydraulique, alimentaire (ODARC) et énergétique absolue du Peuple Corse."
+title: "Le Château d'Eau qui Meurt de Soif : Comment la Corse a Perdu le Contrôle de son Eau"
+subtitle: "Des torrents d'eau pure plein nos montagnes, mais des robinets à sec et des factures qui flambent : comment des décennies de décisions prises loin de chez nous ont privé les Corses de leur or bleu."
 category: "EAU & RESSOURCES"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-04"
@@ -24,6 +24,71 @@ sources:
 ---
 
 Qualifiée historiquement de château d'eau de la Méditerranée en raison de ses sommets enneigés et de ses 4 000 kilomètres de cours d'eau, la Corse fait face chaque été à des arrêtés préfectoraux de restriction d'eau potable d'une sévérité extrême. Derrière le discours officiel du dérèglement climatique, l'analyse médico-légale des rapports hydrologiques de l'OEHC, du système national SISPEA, des cartes du radar d'urbanisme **Bufitonu.fr** et des conventions de Délégation de Service Public (DSP) révèle un triple scandale de gestion : plus de **80 % à 85 % de l'eau de pluie s'écoule directement vers la mer sans être stockée**, aggravé par l'imperméabilisation des sols, pendant que sur les volumes captés, **42 millions de m³ d'eau potable traitée s'évaporent dans le sol chaque année** sous l'effet de réseaux fissurés non entretenus par les multinationales privées.
+
+<!-- ==========================================================================
+     CARTOUCHE SUPRÊME DOUBLE ÉTAGÈRE — L'ARITHMÉTIQUE DU VOL DE L'EAU
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE POPULAIRE & ÉMANCIPATION (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Eau Perdue sous Terre</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">42 Millions m³</span>
+        <span class="text-[10px] text-slate-400 block mt-1">41 % de fuites réseaux par an (moyenne insulaire SISPEA)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Prix de l'Eau Facturée</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">3,80 à 5,20 € / m³</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Achetée 0,04 €/m³ brute aux barrages OEHC</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Stockage Public Insulaire</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">46 Mm³ vs 1,8 Md</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Capacité OEHC dérisoire face à la Sardaigne voisine</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> On vous coupe l'eau au robinet chaque été au prétexte d'une « sécheresse inévitable ». La vérité médico-légale démontre que l'île reçoit 8 à 10 milliards de m³ d'eau par an, mais que 85 % repartent en mer par refus de bâtir des retenues publiques. Pire : sur l'eau captée, 41 litres sur 100 fuient sous la chaussée faute d'entretien par les multinationales délégataires, pendant que votre facture atteint 5 € le m³ pour une eau brute achetée 4 centimes !
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : RAPPORTS SISPEA & CONVENTIONS SCELLÉES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        DONNÉES OFFICIELLES OEHC & OFB
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Base SISPEA — Indicateur P104.3</div>
+        <div class="text-slate-200 font-bold">Rendement de Réseau Insulaire à 58,4 %</div>
+        <div class="text-[10px] text-slate-500 mt-1">Contre 80,5 % de moyenne nationale. Non-respect de l'Art. L. 2224-5 du CGCT.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Plan Stratégique Régie Publique 175 Mm³</div>
+        <div class="text-slate-200 font-bold">Rupture des DSP & Souveraineté Hydraulique</div>
+        <div class="text-[10px] text-slate-500 mt-1">Fin des rentes Veolia/Saur, gratuité des 30 premiers m³ et surtaxe estivale piscines.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : SISPEA EauFrance, Bilans OEHC, Registre OFB, Radar Bufitonu.fr</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -87,7 +152,7 @@ L'équipe d'investigation de L'OCHJU a modélisé une **proposition citoyenne et
 
 $$\text{IFTS} = \frac{\text{Fiabilité des Solutions Techniques} \times \text{Sécurité Juridique}}{\text{Complexité Opérationnelle des Travaux}} \times 100 = \mathbf{89,2 / 100}$$
 
-### 🛠️ Les 4 Axes du Scénario Prospectif L'OCHJU :
+### 🛠️ Les 3 Piliers Opérationnels du Scénario Prospectif L'OCHJU :
 
 #### 🟢 AXE 1 : RÉPARATION DES RÉSEAUX ET REPRISE EN MAIN PUBLIQUE (Court terme, 0 à 2 ans) — *Potentiel : +41,8 Mm³/an*
 - **Audit des contrats et application stricte des obligations d'étanchéité** : Exiger des délégataires le respect des seuils de rendement réglementaires (Art. L. 2224-7-1 CGCT), avec révision ou résiliation pour inexécution contractuelle sans indemnité si les investissements ne sont pas réalisés, pour récupérer **jusqu'à 26 Mm³/an de pertes évitables**.
@@ -104,7 +169,7 @@ $$\text{IFTS} = \frac{\text{Fiabilité des Solutions Techniques} \times \text{S�
 
 ---
 
-## ✊ ACTION CITOYENNE : LES 3 LEVIERS POUR AGIR DANS VOTRE COMMUNE
+### ✊ Action Citoyenne : Les 3 Leviers d'Urgence dans Votre Commune
 
 La pénurie d'eau en Corse n'est pas une fatalité du ciel, mais le résultat de choix modifiables. Voici les **3 actions immédiates** que chaque citoyen corse peut poser dès aujourd'hui pour exiger la souveraineté hydraulique :
 
@@ -114,7 +179,7 @@ La pénurie d'eau en Corse n'est pas une fatalité du ciel, mais le résultat de
 
 ---
 
-## 📊 ANNEXE FORENSIQUE : MATRICE D'AUDIT, FAISABILITÉ ET CALENDRIER DÉCENNAL
+### 📊 Matrice d'Audit et Calendrier Décennal du Plan Citoyen
 
 $$\text{Indice de Captation Commerciale (ICC)} = \frac{\text{Prix du m³ Facturé aux Ménages (5,20 €)}}{\text{Prix d'Achat d'Eau Brute à l'OEHC (0,04 €)}} = 130 \times \text{la valeur brute}$$
 
@@ -131,7 +196,6 @@ $$\text{Indice de Captation Commerciale (ICC)} = \frac{\text{Prix du m³ Factur�
 
 > **Verdict de la Cellule L'OCHJU** : L'eau corse n'est pas rare, elle est abandonnée à la mer l'hiver et marchandisée l'été. En faisant sauter les verrous juridiques de la résiliation pour faute et en déployant le Plan de Souveraineté Hydrique Globale sur 8 ans avec un Indice IFTS certifié de 89,2/100, la Corse mobilise **175 millions de m³ par an** (2 % de la pluie) sans aucun béton en surface. Ce plan garantit l'eau au robinet, la nourriture dans nos assiettes et la fermeture des centrales au fioul. La souveraineté de l'eau n'est pas un slogan : c'est un calendrier d'ingénierie et de régie publique.
 
-
 ### 📊 Synthèse des Données et Indicateurs Hydrauliques (SISPEA / RPQS)
 
 | Indicateur de Gestion Hydraulique | Situation Constatée en Corse | Moyenne Nationale / Objectif Réglementaire | Impact Territorial Direct |
@@ -140,7 +204,9 @@ $$\text{Indice de Captation Commerciale (ICC)} = \frac{\text{Prix du m³ Factur�
 | **Mode de Gestion Dominant** | ~68 % de la population desservie via des délégations privées | Diversifié (Régies publiques et DSP) | Écarts tarifaires marqués et renouvellement insuffisant des conduites anciennes |
 | **Tarification Estivale** | Tarification linéaire prédominante | Tarification éco-progressive recommandée | Consommation accrue des meublés de tourisme et piscines sans incitation à l'économie |
 
-## V. Préconisations juridiques et démarches CADA d'accès aux actes de gestion de l'eau
+---
+
+## 6. PRÉCONISATIONS JURIDIQUES ET DÉMARCHES CADA D'ACCÈS AUX ACTES DE GESTION DE L'EAU
 
 La reconquête de la souveraineté hydraulique corse impose de rendre publics les contrats de délégation, les bilans de fuite et les tarifs appliqués par les délégataires privés. Quatre démarches CADA concrètes :
 
@@ -165,7 +231,7 @@ Demandez à l'Office d'Équipement Hydraulique de Corse (OEHC) les bordereaux de
 Saisissez l'Agence Régionale de Santé de Corse pour obtenir les résultats des analyses bactériologiques et physico-chimiques des réseaux d'eau potable par commune, ainsi que les arrêtés d'injonction de travaux de mise aux normes des stations d'épuration des collectivités défaillantes.
 
 
-## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+## 7. ANALYSE MÉDICO-LÉGALE DES TEXTES ADMINISTRATIFS ET DÉLIBÉRATIONS RÉGIONALES
 
 L'analyse forensique des contrats de Délégation de Service Public (DSP) et des arrêtés tarifaires de l'eau met en évidence une captation caractérisée de la ressource publique :
 
@@ -173,7 +239,7 @@ L'analyse forensique des contrats de Délégation de Service Public (DSP) et des
 2. **Dissection des arrêtés de prélèvement sur les barrages de l'OEHC :** Les actes d'autorisation de prélèvement d'eau brute sur les barrages du Rizzanese et de Sampolo facturent la ressource aux concessionnaires privés à des tarifs dérisoires (0,04 €/m³) recontés à plus de 4,20 €/m³ aux ménages corses.
 3. **Examen des rapports annuels RPQS des régies publiques :** Les procès-verbaux de la DREAL confirment la tolérance administrative face à des taux de fuite dépassant 40 % de la ressource traitée.
 
-## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+## 8. MODÉLISATION DU RECOURS CITOYEN CADA ET SAISINE DES INSTANCES DE CONTRÔLE
 
 Pour stopper le gaspillage de l'eau publique et la sur-tarification pratiquée par les multinationales de la distribution, la saisine CADA exige la transparence intégrale sur :
 
@@ -182,7 +248,7 @@ Pour stopper le gaspillage de l'eau publique et la sur-tarification pratiquée p
 3. **Les redevances d'extraction d'eau brute sur les barrages (OEHC) :** Demande de communication des bordereaux de facturation de l'Office d'Équipement Hydraulique de Corse aux distributeurs privés pour les prélèvements sur le Rizzanese, Calacuccia et Sampolo.
 4. **Les procès-verbaux de contrôle de qualité et de conformité des réseaux (ARS Corse / OFB) :** Injonction de communication des analyses bactériologiques et des arrêtés d'injonction de travaux de mise aux normes des stations d'épuration.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
+## 9. CARTOGRAPHIE DES ACTEURS INSTITUTIONNELS ET DES RÉSEAUX D'INFLUENCE
 
 L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui contrôlent la ressource hydraulique insulaire et en captent la valeur :
 
@@ -194,7 +260,7 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 - **OFB (Office Français de la Biodiversité) :** Compétent sur les débits réservés et les prélèvements en milieu naturel. Sous-doté en agents de terrain en Corse.
 
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
+## 10. GUIDE MÉTHODOLOGIQUE DE CONSTITUTION DE DOSSIER DE PREUVE CADA & SAISINE
 
 ### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
 
@@ -215,7 +281,7 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 | **ARS de Corse** | Analyses bactériologiques et arrêtés d'injonction de travaux | `Art. L. 311-1 CRPA` |
 
 
-## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code de l'Environnement & CGCT Art. L. 2224-7)
+## 11. SYNTHÈSE FORENSIQUE & RECOMMANDATIONS D'ARBITRAGE (Code de l'Environnement & CGCT Art. L. 2224-7)
 
 ### 📊 Matrice d'Audit et Données Chiffrées : Gestion et Marchandisation de l'Eau
 
@@ -235,13 +301,86 @@ L'enquête sur la **marchandisation de l'eau** met en lumière les acteurs qui c
 
 ---
 
-### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+<div class="space-y-3 mb-8">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono font-bold uppercase tracking-widest">
+⚡ ARSENAL D'ÉMANCIPATION CITOYENNE
+</span>
+<h3 class="text-2xl md:text-3xl font-black font-serif text-slate-100">
+La Pénurie Est Fabriquée. Voici les Munitions Hydrauliques.
+</h3>
+<p class="font-serif text-sm text-slate-300">
+Les données nationales SISPEA et les rapports de l'OEHC attestent des 42 millions de m³ perdus et de la rente des multinationales. Reprenez le contrôle du bien commun. Utilisez les pièces d'instruction scellées par L'OCHJU pour exiger la régie publique.
+</p>
+</div>
 
-- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-04-marchandisation-eau/01_KIT_PRESSE_INVESTIGATION.md) : synthèse probatoire sur la gestion de l'eau, pertes colossales de 42 M m³ et surtarifications des DSP.
-- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Parquet National Financier)**](/transmissions/enquete-04-marchandisation-eau/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des pièces scellées ISO/IEC 27037 (données SISPEA, bilans OEHC, rapports OFB).
-- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-04-marchandisation-eau/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : plan territorial de stockage public de 175 M m³, audit des DSP et modèle de question écrite au gouvernement.
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 40 -->
+<a href="/transmissions/enquete-04-marchandisation-eau/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau PNF & Rente des DSP
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dossier juridique pour défaut d'entretien d'ouvrages publics d'eau (Art. L. 2224-5 CGCT) et surtarification abusive des familles.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-04-marchandisation-eau/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Plan 175 Mm³</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de loi pour la création de la Régie Publique Régionale de l'Eau, gratuité des 30 premiers m³ et surtaxe piscines.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-04-marchandisation-eau/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Radiographie médico-légale des rendements de réseaux par EPCI et cartographie des fuites sous-terraines de Veolia/Kyrnolia.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
 

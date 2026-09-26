@@ -1,7 +1,7 @@
 ---
 id: 28
-title: "Le Destin de la Muvitarra (Partie 2/2) — Les Chiffres de l'Asphyxie, l'Impasse du 31 Août et le Plan de Sauvetage Souverain"
-subtitle: "Mise en demeure de la DREAL, 2,9 M€ d'impayés de la CAPA, flotte vétuste à 63 % et siphonnage financier au profit de la rive sud : les pièces d'État qui démontrent le sabotage délibéré de la régie publique ajaccienne."
+title: "L'Agonie de la Muvitarra : Quand la Ville d'Ajaccio Sacrifie ses Bus sur l'Autel des Seigneurs"
+subtitle: "Pendant que l'argent public s'envole dans des cabines vides, les écoliers et les travailleurs ajacciens sont abandonnés sur le trottoir : l'autopsie d'une trahison sociale programmée au sommet."
 category: "INFRASTRUCTURES & POUVOIR"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P2"
@@ -45,12 +45,76 @@ sources:
 
 ---
 
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Vétusté de la Flotte</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">63 % + de 10 ans</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Seulement 7 bus neufs acquis en 7 ans d'exploitation</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Impayés & Surcoûts CAPA</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">2,9 Millions €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Prestations commandées non compensées à temps par l'agglomération</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Dette Globale CAPA</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">81,95 Millions €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Encours consolidé ROB 2025 alourdi par le téléphérique Angelo</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> Vos enfants attendent 45 minutes sous la pluie parce qu'un bus sur deux tombe en panne, et les lignes indispensables (hôpital du Stiletto, quartiers populaires, collèges) sont rognées faute d'argent. La vérité des chiffres officiels, c'est que la collectivité doit près de 3 millions d'euros d'arriérés à sa propre régie de bus, tout en s'endettant lourdement pour offrir une rente garantie à un téléphérique aérien et financer la navette maritime vers une commune extérieure. Ce sabotage financier fabrique artificiellement la dégradation du service pour justifier de le brader à une multinationale privée.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : MISE EN DEMEURE DREAL & RAPPORTS BUDGÉTAIRES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        PIÈCES D'ÉTAT SCELLÉES ISO/IEC 27037
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Mise en Demeure DREAL UCS/MO/2023-461</div>
+        <div class="text-slate-200 font-bold">Menace de Retrait des 38 Licences</div>
+        <div class="text-[10px] text-slate-500 mt-1">Capitaux propres négatifs (- 766 132 €) causés par le défaut de compensation CAPA.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Rapports ROB CAPA 2024 & 2025 & Liasses DGFiP</div>
+        <div class="text-slate-200 font-bold">11 Avenants Prorogés & Subvention Rive Sud</div>
+        <div class="text-[10px] text-slate-500 mt-1">Aveu d'1,4 M€ de rattrapage d'urgence et subvention maritime Porticcio (ROB 2024, p. 17).</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : DREAL UCS/MO/2023-461, ROB CAPA 2024-2026, Greffe Tribunal Commerce Ajaccio</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
+---
+
 > ⏱️ **COMPTE À REBOURS DU 31 AOÛT : L'ÉCHÉANCE DU CONTRAT APPROCHE** :  
 > Le Contrat d'Obligations de Service Public (COSP) liant la CAPA à la Muvitarra expire définitivement le **31 août 2026**. À seulement **7 jours de cette échéance couperet**, aucun nouveau contrat n'a été signé pour le 1er septembre. Cette inertie entretenue au sommet crée un vide contractuel préoccupant à la veille de la rentrée scolaire : en laissant perdurer cette situation sans engagement formel, l'exécutif de la CAPA prend le risque d'une rupture d'activité de la régie publique ouvrant la porte à un recours d'urgence vers une gestion privée (DSP).
 
 ---
 
-## 🏛️ LA MÉCANIQUE D'ASPHYXIE : COMMENT ON DÉMANTÈLE UNE RÉGIE PUBLIQUE
+## 1. LA MÉCANIQUE D'ASPHYXIE : COMMENT ON DÉMANTÈLE UNE RÉGIE PUBLIQUE
 
 Dans l'histoire des services publics, la méthode pour justifier le passage au privé ressemble toujours au même scénario en 4 étapes simples :
 1. **On coupe les vivres** : on refuse de réparer les vieux bus et on bloque les budgets nécessaires.
@@ -128,7 +192,7 @@ L'analyse médico-légale des **liasses fiscales officielles et des bilans finan
 
 ---
 
-## 1. LES PRESTATIONS IMPAYÉES DE LA CAPA : L'AVEU DU RETARD ET L'IMPASSE BUDGÉTAIRE
+## 2. LES PRESTATIONS IMPAYÉES DE LA CAPA : L'AVEU DU RETARD ET L'IMPASSE BUDGÉTAIRE
 
 Les comptes d'exploitation et les audits de gestion mettent en lumière la cause première des difficultés : une grande part du déficit d'exploitation de la régie provient de retards d'arbitrage et de compensations financières différées de la collectivité.
 
@@ -151,7 +215,7 @@ Cette régularisation rétroactive d'urgence démontre que les tensions financi�
 
 ---
 
-## 2. LA MISE EN DEMEURE DE LA DREAL ET LE POIDS BUDGÉTAIRE DU TÉLÉPHÉRIQUE
+## 3. LA MISE EN DEMEURE DE LA DREAL ET LE POIDS BUDGÉTAIRE DU TÉLÉPHÉRIQUE
 
 Le dossier administratif s'appuie sur une pièce officielle déterminante : **la Mise en demeure émise par la DREAL Corse le 18 décembre 2023 (Réf: UCS/MO/2023-461)**.
 
@@ -167,7 +231,7 @@ Le dossier administratif s'appuie sur une pièce officielle déterminante : **la
 
 ---
 
-## 3. L'ÉTAT DU PARC DE BUS ET LA RÉALITÉ SOCIALE DU RÉSEAU
+## 4. L'ÉTAT DU PARC DE BUS ET LA RÉALITÉ SOCIALE DU RÉSEAU
 
 Pour expliquer les difficultés du réseau, certains discours ont cherché à reporter la responsabilité sur les salariés. L'examen des bilans fiscaux et sociaux rétablit les faits :
 
@@ -182,7 +246,7 @@ Pour expliquer les difficultés du réseau, certains discours ont cherché à re
 
 ---
 
-## 4. L'ANOMALIE DU DISPOSITIF MARITIME MUVIMARE (ROB 2024, PAGE 17)
+## 5. L'ANOMALIE DU DISPOSITIF MARITIME MUVIMARE (ROB 2024, PAGE 17)
 
 Le Rapport d'Orientations Budgétaires de la CAPA (**ROB 2024**, page 17) consigne une réalité budgétaire singulière concernant la navette maritime Muvimare reliant Ajaccio à Porticcio :
 
@@ -196,7 +260,7 @@ Le Rapport d'Orientations Budgétaires de la CAPA (**ROB 2024**, page 17) consig
 
 ---
 
-## ✊ LE PLAN DIRECTEUR DES MOBILITÉS SOUVERAINES DU PAYS AJACCIEN (2026-2035)
+## 6. LE PLAN DIRECTEUR DES MOBILITÉS SOUVERAINES DU PAYS AJACCIEN (2026-2035)
 
 Face au mirage d'Angelo et au risque de privatisation de nos bus, **L'OCHJU refuse le fatalisme**. Notre cellule d'ingénierie et d'analyse des flux a modélisé un **Plan Réaliste, Chiffré et Concret**, calibré au millimètre près sur la géographie réelle d'Ajaccio et les besoins des **91 500 habitants de la CAPA**.
 
@@ -318,13 +382,13 @@ Face au mirage d'Angelo et au risque de privatisation de nos bus, **L'OCHJU refu
 
 ---
 
-### 1. Stopper la Rente d'Angelo et Récupérer 23,89 Millions d'Euros
+### A. Stopper la Rente d'Angelo et Récupérer 23,89 Millions d'Euros
 * En résiliant la concession du téléphérique qui tourne à vide, **la collectivité économise 2,38 Millions d'euros par an de rente privée**.
 * Ces sommes permettent immédiatement de **renouveler l'ensemble de la flotte de bus** (achat de 66 véhicules neufs à plancher bas et motorisation propre) et de restaurer des fréquences fortes dans tous les quartiers oubliés (Salines, Cannes, Pietralba, Candia, Finosello, Vazzio, Mezzavia).
 
 ---
 
-### 2. Le "RER Ajaccien" : L'Axe Lourd Insensible aux Bouchons
+### B. Le "RER Ajaccien" : L'Axe Lourd Insensible aux Bouchons
 Sur la route territoriale T20, **28 000 à 32 000 véhicules** s'agglutinent chaque matin, créant jusqu'à une heure d'embouteillages entre Mezzavia et le centre. La voie ferrée métrique des Chemins de Fer de la Corse (CFC) offre une ligne droite parfaite et déjà construite de 15,2 kilomètres.
 
 * **Cadencement au quart d'heure (15 min) en heures de pointe** : En mobilisant les rames modernes AMG 800 (170 à 340 places par train), le rail offre une capacité de **680 à 1 020 places par heure et par sens**.
@@ -333,7 +397,7 @@ Sur la route territoriale T20, **28 000 à 32 000 véhicules** s'agglutinent cha
 
 ---
 
-### 3. Le Plan de Connexion des 9 Communes et Villages de la CAPA
+### C. Le Plan de Connexion des 9 Communes et Villages de la CAPA
 Trop longtemps tenus à l'écart des investissements concentrés sur le centre, les **17 700 habitants des villages périphériques** bénéficient d'un maillage de transport direct :
 
 * **Bassin Gravona / Plaine (Sarrola-Carcopino 3 350 hab., Peri 2 050 hab., Cuttoli 1 500 hab., Tavaco 420 hab., Valle-di-Mezzana 540 hab.)** :  
@@ -343,19 +407,103 @@ Trop longtemps tenus à l'écart des investissements concentrés sur le centre, 
 
 ---
 
-### 4. Un Schéma Urbain Réaliste : Là où ça passe, sans promesses intenables
+### D. Un Schéma Urbain Réaliste : Là où ça passe, sans promesses intenables
 * **Pénétrante du Ricanto (T21)** : Réservation de la voie de droite (ou bande latérale élargie) de 7h00 à 9h00 pour les bus et navettes express, garantissant une liaison directe Aéroport / Rive Sud ➔ Centre-Ville en **10 minutes**.
 * **Contournement par la Rocade Est (D503)** : Les bus reliant Mezzana au Nouvel Hôpital d'Ajaccio (Stiletto) et au Vazzio évitent totalement l'Avenue Noël Franchini pour un trajet garanti en **8 minutes**.
 * **Priorité Intelligente aux Feux** : Plutôt que de détruire le stationnement des commerces de quartier sur Noël Franchini, installation de balises radio accordant automatiquement le feu vert à l'approche des bus Muvistrada.
 
 ---
 
-### 5. La Revitalisation Commerciale du Cœur Historique face à Baléone
+### E. La Revitalisation Commerciale du Cœur Historique face à Baléone
 L'ouverture des centres commerciaux géants en périphérie a siphonné l'activité du centre ancien. La solution passe par la reconquête de l'accessibilité :
 
 * **Déversement direct au seuil des commerces** : Les usagers arrivant par le train et les navettes maritimes débouchent directement sur le quai de la Gare Centrale et le Port, à **2 minutes à pied de la Rue Fesch, de la Place Foch et du Marché**.
 * **Le MUVIPASS Unique** : Une seule carte ou application smartphone donnant accès aux bus, aux trains CFC, aux bateaux Muvimare et aux parkings-relais.
 * **Gratuité Citoyenne Ciblée** : Gratuité intégrale pour les scolaires, les étudiants et les retraités résidents, financée par une contribution équitable prélevée sur les flux touristiques estivaux.
+
+---
+
+<!-- ARSENAL D'ÉMANCIPATION CITOYENNE : ACTIONS & SAISINES -->
+<div class="my-12 p-8 rounded-3xl bg-slate-950 border-2 border-emerald-500/50 shadow-2xl relative overflow-hidden not-prose">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+<div class="flex items-center gap-3 mb-6 border-b border-emerald-500/30 pb-4">
+<span class="text-3xl">🛡️</span>
+<div>
+<h3 class="font-serif font-black text-xl text-slate-100 uppercase tracking-wide m-0">
+Arsenal d'Émancipation Citoyenne : Passez à l'Action
+</h3>
+<span class="text-xs font-mono text-emerald-400">
+DOSSIERS MÉDICO-LÉGAUX PRÊTS À L'EMPLOI • SAISINES OFFICIELLES • GRADE ICIJ
+</span>
+</div>
+</div>
+
+<p class="text-sm text-slate-300 font-sans leading-relaxed mb-6">
+L'investigation sans passage à l'action n'est qu'un spectacle. Pour sauver la régie publique Muvitarra et réclamer des transports dignes, voici les 3 leviers juridiques, démocratiques et médiatiques téléchargeables immédiatement :
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+<!-- LEVIER 1 : ACTION JUDICIAIRE / ARTICLE 40 -->
+<a href="/transmissions/enquete-28-naufrage-muvitarra/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">DREAL & CRC</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Juridique & CRC
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Signalement officiel sur les 2,9 M€ d'impayés CAPA, les 11 avenants dérogatoires et la mise en péril de la régie publique.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-28-naufrage-muvitarra/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Conseil CAPA</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation des Élus
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Sommation pour un contrat pluriannuel pérenne, un plan de renouvellement de 66 bus neufs et l'arrêt de la rente Angelo.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-28-naufrage-muvitarra/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Chiffres clés, audit des comptes de la SPL Muvitarra et synthèse des pièces d'État pour rédactions et collectifs d'usagers.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
 

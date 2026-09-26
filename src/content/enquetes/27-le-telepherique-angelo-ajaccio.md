@@ -1,7 +1,7 @@
 ---
 id: 27
-title: "Téléphérique 'Angelo' (Partie 1/2) — Le Mirage Financier et la Rente d'Exploitation Privée"
-subtitle: "Chantier à 38,3 M€, rente d'exploitation POMA de 23,9 M€ sur 10 ans et déficit structurel : radiographie financière du téléporté urbain face à la crise des transports publics ajacciens."
+title: "La Passerelle des Seigneurs : Quand Angelo Rançonne le Ciel d'Ajaccio"
+subtitle: "Pendant que les Ajacciens étouffent dans les bouchons de la Rocade, l'argent public finance des cabines qui tournent à vide : l'autopsie d'un contrat verrouillé où le privé encaisse et le contribuable trinque."
 category: "INFRASTRUCTURES & POUVOIR"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-27-P1"
@@ -34,19 +34,80 @@ sources:
     sha256: "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
 ---
 
+<!-- ==========================================================================
+     CARTOUCHE POPULAIRE & FORENSIQUE : LE DOUBLE ÉTAGÈRE
+     ========================================================================== -->
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Coût Total Chantier</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">38,26 Millions €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Arrêté définitif après avenants (+3,3 M€ de dérive)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente d'Exploitation POMA</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">23,89 M€ sur 10 ans</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Redevance garantie de ~2,39 M€/an versée au privé</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Déficit à Charge Publique</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">80 % de déficit</span>
+        <span class="text-[10px] text-slate-400 block mt-1">La billetterie ne couvre que 20 % des coûts d'exploitation</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> Pendant que les bus de votre quartier tombent en panne, que des lignes sont supprimées et que la régie publique Muvitarra est mise à la diète, la CAPA a engagé plus de 62 millions d'euros dans un téléphérique aérien. Pire : la collectivité a signé un contrat verrouillé de 2,39 millions d'euros par an garanti à un grand groupe industriel privé (POMA), alors que les tickets ne couvrent que 20 % des frais ! Ce sont vos impôts locaux qui comblent chaque année près de 2 millions d'euros de trou financier pour faire tourner des cabines souvent à moitié vides au-dessus des collines.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : CONVENTIONS DUP & RAPPORTS BUDGÉTAIRES
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        PIÈCES OFFICIELLES CAPA & PRÉFECTURE
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Arrêté Préfectoral DUP n° 2A-2023-12-04-00001</div>
+        <div class="text-slate-200 font-bold">Déclaration d'Utilité Publique Téléporté</div>
+        <div class="text-[10px] text-slate-500 mt-1">19 pylônes, servitudes de survol sur parcelles privées et réserve foncière.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Rapport ROB CAPA 2025 & Marché CREM</div>
+        <div class="text-slate-200 font-bold">Sanctuarisation de la Rente Privée</div>
+        <div class="text-[10px] text-slate-500 mt-1">23,89 M€ HT engagés sur 10 ans en dépense incompressible face à l'asphyxie Muvitarra.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : DUP 2A-2023, ROB CAPA 2025, Enquête Publique Perfettini, angelo.corsica</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
+---
+
 > 🔗 **GRAND DOSSIER TRANSPORTS AJACCIENS (VOLET 1/2)** :  
 > Cet article constitue la première partie de notre enquête exclusive sur les mobilités d'Ajaccio.  
 > 👉 **[Lire la Partie 2/2 : Le Destin de la Muvitarra — Les Chiffres de l'Asphyxie et le Plan de Sauvetage](../28-le-naufrage-organise-de-la-muvitarra/)**
 
 ---
 
-## 💡 CHAPEAU
-
-Inauguré en grande pompe en octobre 2025 pour relier Saint-Joseph à Mezzavia, le téléphérique urbain « Angelo » représente une commande publique globale dépassant les 60 millions d'euros : **38,26 millions d'euros pour la construction** et **23,89 millions d'euros d'exploitation-maintenance sur 10 ans**. Derrière la vitrine écologique d'une liaison par câble, l'analyse médico-légale de l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001, du site officiel *angelo.corsica* et du Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA met en lumière une contradiction économique majeure : un investissement couvert à 70 % par des fonds publics d'État (PTIC) pour un équipement structurellement déficitaire, dont la redevance privée est sanctuarisée tandis que le réseau public de bus subit la rigueur.
-
----
-
-## ACTE I. LA TRAJECTOIRE BUDGÉTAIRE RÉELLE : DE 35 M€ À 38,26 M€ DE CHANTIER
+## 1. LA DÉRIVE BUDGÉTAIRE CERTIFIÉE : DE 35 M€ À 38,26 M€ DE CHANTIER
 
 L'examen minutieux des délibérations et des fiches contractuelles d'Angelo permet d'établir la trajectoire financière réelle du marché de construction :
 * **2019** : Première estimation budgétaire annoncée autour de **35 millions d'euros HT**.
@@ -60,7 +121,7 @@ L'examen minutieux des délibérations et des fiches contractuelles d'Angelo per
 
 ---
 
-## ACTE II. LE CONTRAT D'EXPLOITATION POMA & LE DILEMME DE LA RENTABILITÉ
+## 2. LE CONTRAT D'EXPLOITATION POMA & LE DILEMME DE LA RENTABILITÉ
 
 À côté des 38,26 M€ de travaux s'ajoute le volet exploitation-maintenance (O&M) du marché CREM :
 * La collectivité s'est engagée sur un contrat décennal d'un montant de **23 892 840 € HT sur 10 ans** (soit environ **2,39 millions d'euros par an**).
@@ -75,7 +136,7 @@ Or, l'analyse des projections budgétaires d'exploitation révèle une réalité
 
 ---
 
-## ACTE III. LES ALÉAS DU TRACÉ ET L'ENQUÊTE PUBLIQUE
+## 3. LES ALÉAS DU TRACÉ ET L'ENQUÊTE PUBLIQUE
 
 Le tracé aérien de **2,7 km** (souvent arrondi à ~3 km selon les accès aux stations) relie Saint-Joseph à Mezzavia via **19 pylônes** et **4 stations** (Saint-Joseph, Stiletto, Mezzavia et la station intermédiaire Château d'eau).
 
@@ -87,7 +148,7 @@ Sur le terrain, plusieurs aléas techniques et contraintes d'insertion ont émai
 
 ---
 
-## ACTE IV. LE ROB CAPA 2025 ET LE CONSTRASTE AVEC LE RÉSEAU PUBLIC DE BUS
+## 4. LE ROB CAPA 2025 ET LE SACRIFICE DU RÉSEAU PUBLIC DE BUS
 
 Le **Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA** permet de mesurer l'impact de ce choix d'investissement sur l'ensemble de la politique communautaire de transport :
 * Dans un contexte budgétaire où la collectivité affiche la nécessité d'une modération des charges et d'une gestion serrée des dépenses de fonctionnement, **le téléphérique Angelo est sanctuarisé hors des plans d'économies**.
@@ -96,7 +157,7 @@ Le **Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA** permet de mesurer
 
 ---
 
-## 📊 ANNEXE FINANCIÈRE : SYNTHÈSE DES CHIFFRES CERTIFIÉS
+## 5. SYNTHÈSE FORENSIQUE DES CHIFFRES CERTIFIÉS & ARBITRAGES
 
 | Poste Budgétaire | Montant Certifié | Source Officielle | Clé de Financement / Constat |
 | :--- | :--- | :--- | :--- |
@@ -109,3 +170,96 @@ Le **Rapport d'Orientation Budgétaire (ROB) 2025 de la CAPA** permet de mesurer
 ---
 
 > **Verdict de la Cellule L'OCHJU** : L'examen des pièces officielles ramène le téléphérique Angelo à sa juste réalité : un investissement de construction de 38,26 M€ (très largement financé par l'État via le PTIC à 70 %) combiné à un contrat d'exploitation de 23,89 M€ sur 10 ans. Mais l'enjeu citoyen fondamental demeure entier : en engageant la collectivité sur une dépense d'exploitation annuelle incompressible d'environ 2,4 M€ pour un équipement qui ne couvre que 20 % de ses coûts, les décideurs ont créé une rente contractuelle sanctuarisée au détriment du réseau de bus historique Muvitarra, dont les usagers des quartiers d'Ajaccio paient aujourd'hui le prix fort en termes de fréquences et de dessertes.
+
+---
+
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="space-y-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-widest uppercase">
+<span>⚡</span> Riposte Citoyenne Active
+</div>
+<h3 class="text-2xl md:text-3xl font-serif font-black text-slate-100 tracking-tight">
+ARSENAL D'ÉMANCIPATION CITOYENNE : LES MOBILITÉS DU PAYS AJACCIEN
+</h3>
+<p class="text-sm md:text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
+Ne laissez plus l'argent public des transports être confisqué par des rentes privées pendant que les bus des quartiers sont sacrifiés. La cellule L'OCHJU met à disposition les outils officiels pour agir immédiatement.
+</p>
+</div>
+
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : SIGNALEMENT CRC / PNF -->
+<a href="/transmissions/enquete-27-telepherique-angelo/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Chambre des Comptes</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Signalement Budgétaire CRC
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dossier d'alerte sur l'insoutenabilité du déficit de 80 % et la sanctuarisation de la redevance privée de 23,89 M€.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-27-telepherique-angelo/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Conseil CAPA</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Communautaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Plafonnement de la redevance POMA, pass unique réseau à tarif solidaire et réaffectation vers le réseau de bus Muvitarra.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-27-telepherique-angelo/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Radiographie des 62 M€ de commande publique, du déficit structurel d'exploitation et de l'asphyxie du réseau de bus.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
+
+---
+
+<div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
+  <strong>I trasporti pubblichi sò un dirittu di u populu, micca una rendita per l'interessi privati.</strong>
+  <br><br>
+  <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
+  <br>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Citoyenne L'OCHJU</span>
+</div>

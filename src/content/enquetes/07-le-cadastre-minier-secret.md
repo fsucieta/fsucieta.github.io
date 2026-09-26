@@ -1,7 +1,7 @@
 ---
 id: 7
-title: "Le Cadastre Minier Secret & le Grand Passif — Comment Paris a Pillé nos Richesses et Nous a Laissé le Poison"
-subtitle: "Pétrole au large de Scandola, fer oublié de Marignana, terres rares sous les pins d'Evisa et rivières empoisonnées à l'arsenic : la vérité sur ce qui dort sous nos pieds et pourquoi on vous fait croire que la Corse est pauvre."
+title: "Le Trésor Volé sous nos Pieds : Pourquoi Paris Garde le Sous-Sol Corse Sous Secret d'État"
+subtitle: "À Matra l'arsenic tue, à Canari l'amiante empoisonne : après avoir pillé nos montagnes, la France nous laisse ses déchets toxiques mais verrouille en secret les métaux rares qui valent des milliards."
 category: "MINES & ÉNERGIE"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-07-POPULAIRE"
@@ -31,7 +31,74 @@ sources:
     sha256: "07381d02eaa95ecc15d886b5951f2db21c26d199f6e55f5c4ba8c2b1f77cb9e7"
 ---
 
-## ⚡ PROLOGUE : LA GRANDE ARNAQUE DE « L'ÎLE PAUVRE »
+<!-- ==========================================================================
+     CARTOUCHE POPULAIRE & FORENSIQUE : LE DOUBLE ÉTAGÈRE
+     ========================================================================== -->
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Arsenic à Matra</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">400x la dose mortelle</span>
+        <span class="text-[10px] text-slate-400 block mt-1">4 000 µg/l dans le ruisseau de la Presa (seuil OMS : 10 µg/l)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Amiante Abandonnée</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">13 Millions de Tonnes</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Friche de Canari dans la mer : 32 M€ d'impôts publics engloutis</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Périmètre Convoité en Mer</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">9 375 km² concédés</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Permis Rhône-Maritime au large de Scandola sans l'avis des Corses</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> Pendant un siècle, on a répété aux Corses qu'ils vivaient sur une « île pauvre » devant dire merci aux dotations de Paris. La vérité médico-légale est tout autre : l'État et des consortiums privés ont extrait le fer, l'argent, l'antimoine et l'arsenic, ont expédié les bénéfices hors de Corse, et nous ont laissé le poison. À Matra, l'eau coule à 400 fois le seuil mortel d'arsenic depuis 1944 pendant que le BRGM en est réduit à poser des grillages en 2026 ! Et le 27 août 2025, un décret a retiré aux maires le droit de s'opposer aux forages miniers décidés depuis Paris.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : RAPPORTS DU BRGM & ACTES D'ÉTAT SCELLÉS
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        RAPPORTS OFFICIELS BRGM & DÉCRET 2025-851
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Rapport Scientifique BRGM RP-57640-FR</div>
+        <div class="text-slate-200 font-bold">Contamination Arsenic à Matra & Bravona</div>
+        <div class="text-[10px] text-slate-500 mt-1">Écoulement continu d'eaux hyper-concentrées (4 000 µg/l), blocage du barrage d'irrigation.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Arrêt CAA Versailles N° 22VE02499</div>
+        <div class="text-slate-200 font-bold">Permis Pétrolier Rhône-Maritime (20 Juin 2023)</div>
+        <div class="text-[10px] text-slate-500 mt-1">Concession de 9 375 km² d'hydrocarbures en mer au large de Scandola sans consultation insulaire.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : Décret JORF 2025-851, Rapport BRGM RP-57640-FR, Archives UNESCO Scandola</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 1. LE MYTHE DE « L'ÎLE PAUVRE » : L'HISTOIRE CACHÉE DE NOTRE SOUS-SOL
 
 Regardez ce qu'on nous martèle depuis l'enfance. À l'école, à la télévision, dans les discours des ministres en visite à Ajaccio ou à Bastia, c'est toujours le même refrain méprisant :
 
@@ -47,7 +114,7 @@ Pendant qu'on nous endort avec des discours sur la « pauvreté insulaire », le
 
 - Au large de nos plus beaux paysages, par 2 000 mètres de fond marin, ils ont accordé des permis géants à des compagnies texanes et norvégiennes pour chercher du pétrole et du gaz.
 - Sous nos forêts de pins à Evisa, ils ont cartographié l'un des plus grands gisements d'Europe de métaux ultra-rares, ceux-là mêmes dont l'armée française et les fabricants de voitures électriques ont désespérément besoin.
-- Et de Marignana jusqu'au Cap Corse, des sociétés privées et des banques d'État ont fait fortune en extrayant le fer, le cuivre, l'argent et l'antimoine. Puis, quand il n'y a plus eu d'argent facile à prendre, elles sont parties sans un mot, en nous laissant les rivières empoisonnées à l'arsenic et les plages pleines d'amiante.
+- Et de Marignana jusqu'au Cap Corse et Matra, des sociétés privées et des banques d'État ont fait fortune en extrayant le fer, le cuivre, l'argent, l'antimoine et l'arsenic. Puis, quand il n'y a plus eu d'argent facile à prendre, elles sont parties sans un mot, en nous laissant les rivières empoisonnées à l'arsenic et les plages pleines d'amiante.
 
 Le 27 août 2025, en pleine torpeur estivale, le gouvernement a même discrètement signé un texte de loi pour s'assurer que personne en Corse — ni vos maires, ni vos élus territoriaux — ne puisse jamais s'opposer à un forage décidé depuis un bureau parisien.
 
@@ -55,7 +122,7 @@ Il est temps que le peuple corse sache ce qu'il y a réellement sous sa terre. V
 
 ---
 
-## 🌊 1. DU PÉTROLE AU LARGE DE SCANDOLA : LE MASSACRE SILENCIEUX DE NOTRE MER
+## 2. DU PÉTROLE AU LARGE DE SCANDOLA : LE MASSACRE SILENCIEUX DE NOTRE MER
 
 Tout le monde connaît la réserve de Scandola. Ses falaises de roche rouge qui plongent dans une eau turquoise, ses aigles pêcheurs, ses mérous. C'est la fierté de la Corse, classée au patrimoine mondial de l'humanité par l'UNESCO.
 
@@ -76,7 +143,7 @@ Comme le dénonce formellement le mémoire de l'association : l'État maintient 
 
 ---
 
-## ⚖️ 2. LE COUP DE FORCE DU 27 AOÛT 2025 : POURQUOI VOS MAIRES N'ONT PLUS LE DROIT DE DIRE NON
+## 3. LE COUP DE FORCE DU 27 AOÛT 2025 : POURQUOI VOS MAIRES N'ONT PLUS LE DROIT DE DIRE NON
 
 Mais pourquoi l'État refuse-t-il de verrouiller la porte une bonne fois pour toutes ? Parce qu'il s'est voté une loi sur mesure pour garder le monopole absolu du sous-sol.
 
@@ -95,7 +162,7 @@ En clair : sur votre propre terre, vous n'êtes propriétaire que d'une fine cou
 
 ---
 
-## ⛏️ 3. LA MINE OUBLIÉE DE MARIGNANA : DU FER PUR DERRIÈRE LES CALANQUES DE PIANA
+## 4. LA MINE OUBLIÉE DE MARIGNANA : DU FER PUR DERRIÈRE LES CALANQUES DE PIANA
 
 Pour vous prouver à quel point cette richesse a toujours été exploitée dans notre dos, prenons un exemple que 99 % des Corses ignorent.
 
@@ -109,7 +176,7 @@ Cette montagne n'était pas isolée : elle fait partie d'une immense faille géo
 
 ---
 
-## 🏰 4. L'ARGENTELLA : QUAND PARIS VOULAIT FAIRE SAUTER 22 BOMBES ATOMIQUES EN BALAGNE
+## 5. L'ARGENTELLA : QUAND PARIS VOULAIT FAIRE SAUTER 22 BOMBES ATOMIQUES EN BALAGNE
 
 Plus au nord, dans la baie de Crovani près de Galéria, se dressent les ruines gigantesques de **la mine de l'Argentella**.
 
@@ -129,7 +196,7 @@ Cette affaire prouve une chose essentielle : pour l'État régalien, la Corse n'
 
 ---
 
-## 🧪 5. LE TRÉSOR CACHÉ D'EVISA : DES MÉTAUX RARES SOUS NOS FORÊTS DE PINS
+## 6. LE TRÉSOR CACHÉ D'EVISA : DES MÉTAUX RARES SOUS NOS FORÊTS DE PINS
 
 Aujourd'hui, le trésor le plus convoité de la planète ne se mesure plus en sacs de fer ou de charbon. Il se mesure en **terres rares**.
 
@@ -149,7 +216,7 @@ Pendant que vous marchez sous les pins laricios en pensant que la forêt est ét
 
 ---
 
-## ☠️ 6. LE SCANDALE SANITAIRE : ILS ONT PRIS L'ARGENT, ILS NOUS ONT LAISSÉ LE POISON
+## 7. LE SCANDALE SANITAIRE : ILS ONT PRIS L'ARGENT, ILS NOUS ONT LAISSÉ LE POISON (MATRA & CANARI)
 
 Voici maintenant l'envers du décor. Quand il s'agissait d'encaisser les bénéfices, les capitaux et les dividendes partaient illico vers Paris ou les bourses étrangères. Mais regardez ce qu'ils ont laissé sur notre terre une fois les mines fermées :
 
@@ -178,7 +245,7 @@ Une fois l'opération terminée, que font-ils ? Ils utilisent une astuce du Code
 
 ---
 
-## 🛠️ 7. LA RIPOSTE CITOYENNE : CE QUE NOUS DEVONS EXIGER TOUT DE SUITE
+## 8. LA RIPOSTE CITOYENNE : CE QUE NOUS DEVONS EXIGER TOUT DE SUITE
 
 Cette enquête ne doit pas nous laisser abattus ou résignés. Bien au contraire : **elle nous donne une force immense.**
 
@@ -206,10 +273,94 @@ Pour en finir avec un siècle de pillage et d'empoisonnement en silence, nous de
 
 ---
 
-### 🏛️ DOSSIERS OFFICIELS DE TRANSMISSION INSTITUTIONNELLE & PRESSE (GRADE ICIJ)
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-Pour garantir la traçabilité des faits, le suivi judiciaire et le relais d'alerte citoyenne, la cellule d'investigation met à disposition les dossiers officiels téléchargeables :
+<div class="space-y-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-widest uppercase">
+<span>⚡</span> Riposte Citoyenne Active
+</div>
+<h3 class="text-2xl md:text-3xl font-serif font-black text-slate-100 tracking-tight">
+ARSENAL D'ÉMANCIPATION CITOYENNE : LE SOUS-SOL ET LES MINES
+</h3>
+<p class="text-sm md:text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
+Ne laissez plus l'État et les multinationales piller le sous-sol corse ou abandonner leurs poisons à nos enfants. La cellule L'OCHJU met à disposition les dossiers officiels téléchargeables pour agir immédiatement.
+</p>
+</div>
 
-- 📰 [**Kit de Transmission Presse & Rédactions d'Investigation**](/transmissions/enquete-07-cadastre-minier/01_KIT_PRESSE_INVESTIGATION.md) : synthèse des permis secrets, analyse géologique des terres rares et passif sanitaire à l'arsenic.
-- ⚖️ [**Bordereau de Transmission Judiciaire (Art. 40 CPP / Pôle Régional Environnemental)**](/transmissions/enquete-07-cadastre-minier/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) : inventaire côtés des 4 pièces scellées ISO/IEC 27037 (arrêt CAA Versailles, décret 2025-851, rapport BRGM).
-- 🏛️ [**Note d'Interpellation Parlementaire & Territoriale**](/transmissions/enquete-07-cadastre-minier/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) : projet de loi de transfert du Code minier, fonds d'État de dépollution et modèle de question écrite au gouvernement.
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+
+<!-- LEVIER 1 : JUSTICE ART 40 CPP -->
+<a href="/transmissions/enquete-07-cadastre-minier/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Judiciaire Pôle Environnement
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Signalement pénal pour mise en danger délibérée (arsenic de Matra, amiante de Canari) et carence fautive de police des mines.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-07-cadastre-minier/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Loi Autonomie</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de loi pour le transfert exclusif du Code Minier à la Corse, fonds d'État de dépollution (100 M€) et veto des maires.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-07-cadastre-minier/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Dossier complet sur les permis pétroliers secrets de Scandola, les terres rares d'Evisa et les analyses BRGM de Matra.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
+
+---
+
+<div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
+  <strong>A nostra terra ùn hè micca à vende, nè à e bande, nè à u Statu culuniale.</strong>
+  <br><br>
+  <strong>L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
+  <br>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Citoyenne L'OCHJU</span>
+</div>
+

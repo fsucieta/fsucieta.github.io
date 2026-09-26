@@ -1,7 +1,7 @@
 ---
 id: 18
-title: "La Lumière Volée — Briser l'Illusion de la Dépendance"
-subtitle: "194 à 199 MW d'énergie hydraulique sous concession d'État : autopsie médico-légale d'un monopole et le projet souverain pour une Corse propre, prospère et décarbonée."
+title: "L'Otage Électrique : Pourquoi la Corse n'a Pas le Droit de Vivre de sa Propre Énergie"
+subtitle: "194 mégawatts d'eau pure confisqués et un réseau cadenassé par décret : les pièces d'un système conçu pour qu'aucun foyer insulaire n'échappe à la tutelle métropolitaine."
 category: "ÉNERGIE & SOUVERAINETÉ"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
@@ -44,7 +44,74 @@ sources:
     sha256: "ec878f501952e36b76c75890a997dcbea0de7d7762e74537222d528c7adb4bf5"
 ---
 
-## 🏛️ L'ÉQUATION DU CRIME : LE PACTE COLONIAL RÉINVENTÉ EN PLEIN XXIe SIÈCLE
+<!-- ==========================================================================
+     CARTOUCHE POPULAIRE & FORENSIQUE : LE DOUBLE ÉTAGÈRE
+     ========================================================================== -->
+<div class="my-8 rounded-2xl border-2 border-amber-500/40 bg-slate-950 p-6 shadow-xl relative overflow-hidden not-prose">
+  <div class="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <!-- ÉTAGÈRE CITOYENNE POPULAIRE (HAUT DE CARTOUCHE) -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente CSPE Ricanto</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">6,3 Milliards €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Surcoût sur 25 ans compensé par l'impôt (WACC ~9,55 %)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Hydroélectricité Confisquée</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">194 à 199 MW</span>
+        <span class="text-[10px] text-slate-400 block mt-1">4 grands barrages sous concession d'État (Art. L. 4424-39 CGCT)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Plafond Solaire Intermittent</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">Bridage à 30 %</span>
+        <span class="text-[10px] text-slate-400 block mt-1">180 MW de toitures citoyennes rejetées pour faire tourner le fioul</span>
+      </div>
+    </div>
+    <p class="text-sm font-sans text-slate-200 leading-relaxed m-0">
+      <strong class="text-amber-300">En clair pour votre foyer :</strong> La Corse a le plus gros potentiel hydroélectrique et solaire de la Méditerranée occidentale. Pourtant, vous respirez les fumées des centrales au fioul (1 800 kg de métaux lourds par an sur le golfe d'Ajaccio) et l'État engage 800 M€ dans une centrale thermique au Ricanto qui brûlera 50 000 tonnes d'huile de colza importée par bateau ! Pourquoi ? Parce que la loi bloque la compétence de la Corse aux barrages de moins de 8 MW, bridant les 200 MW de grands barrages publics et empêchant les artisans d'injecter leur énergie solaire, afin de garantir 6,3 milliards d'euros de subventions CSPE à EDF.
+    </p>
+  </div>
+
+  <!-- ÉTAGÈRE FORENSIQUE SCELLÉE (BAS DE CARTOUCHE) -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-[11px] font-mono font-bold tracking-wider uppercase text-emerald-400 flex items-center gap-1.5">
+        <span>⚖️</span> ÉTAGÈRE FORENSIQUE : DÉLIBÉRATIONS CRE & AUDITS KPMG SCELLÉS
+      </span>
+      <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
+        PIÈCES OFFICIELLES CRE & SENAT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Délibérations CRE 2024-67 & 2024-138</div>
+        <div class="text-slate-200 font-bold">Rémunération Ricanto & WACC à ~9,55 %</div>
+        <div class="text-[10px] text-slate-500 mt-1">Contrat d'achat PPG/PPE garanti sur 25 ans financé par la CSPE nationale.</div>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
+        <div class="text-slate-400 text-[10px] uppercase">Comptes EDF PEI 2025 (KPMG) & TPE 2026</div>
+        <div class="text-slate-200 font-bold">1,367 Md€ de CA • 111,9 M€ Dividendes</div>
+        <div class="text-[10px] text-slate-500 mt-1">101,7 M€ de provisions déconstruction Vazzio et 500 000 m³ d'eau douce consommée.</div>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
+      <span>Cotes de référence : CRE 2024-138, KPMG 2026, AP 2A-2024-02-15-00002, Rapport Sénat r714</span>
+      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    </div>
+  </div>
+</div>
+
+---
+
+## 1. L'ÉQUATION DU MONOPOLE : LE PACTE COLONIAL RÉINVENTÉ EN PLEIN XXIe SIÈCLE
 
 Dans l'histoire moderne de l'économie politique, le **« Pacte Colonial »** (le régime historique de l'*Exclusif*) a toujours répondu à une mécanique implacable en cinq temps :
 1. Une métropole s'approprie les matières premières et les ressources naturelles stratégiques d'un territoire insulaire.
@@ -123,7 +190,7 @@ L'analyse médico-légale des documents d'État de la **Planification Écologiqu
 
 ---
 
-## ACTE I. LES CHIFFRES CERTIFIÉS D'EDF PEI : 1,367 MILLIARD DE CA ET RÉMUNÉRATION RÉGULÉE EN ZNI
+## 2. LES CHIFFRES CERTIFIÉS D'EDF PEI : 1,367 MILLIARD DE CA ET RÉMUNÉRATION RÉGULÉE EN ZNI
 
 Avant d'aborder les volets environnementaux, l'examen médico-légal des **Comptes Sociaux d'EDF PEI SAS clos au 31 décembre 2025** (certifiés par KPMG le 18 mars 2026) permet de poser la réalité financière de la filiale dédiée aux Zones Non Interconnectées (ZNI comprenant la Corse, la Guadeloupe, la Martinique, la Réunion et la Guyane) :
 
@@ -147,7 +214,7 @@ Avant d'aborder les volets environnementaux, l'examen médico-légal des **Compt
 
 ---
 
-## ACTE II. LE PROJET DU RICANTO : 133,7 MW, COMPENSATION CRE ET MODÉLISATION DU SURCOÛT CSPE
+## 3. LE PROJET DU RICANTO : 133,7 MW, COMPENSATION CRE ET MODÉLISATION DU SURCOÛT CSPE
 
 Pour remplacer la centrale vétuste du Vazzio et en l'absence de raccordement au gaz naturel, l'État et EDF ont engagé la réalisation de la centrale du **Ricanto** d'une puissance certifiée de **133,7 MW** (8 moteurs diesel de ~16,7 MW chacun, de type MAN 18V48/60), conçue pour fonctionner aux « bioliquides » (huile de colza).
 
@@ -170,7 +237,7 @@ L'analyse des pièces réglementaires — notamment les **délibérations CRE n�
 
 ---
 
-## ACTE III. L'USINE DU POISON : 1 800 KG DE MÉTAUX LOURDS DANS NOS POUMONS SOUS LE SCEAU DE L'ÉTAT
+## 4. L'USINE DU POISON : 1 800 KG DE MÉTAUX LOURDS DANS NOS POUMONS SOUS LE SCEAU DE L'ÉTAT
 
 Voilà le prix humain que paie notre peuple pour alimenter cette pompe à cash. Pendant quarante ans, dans le golfe d'Ajaccio, des générations entières ont vécu sous l'ombre toxique des cheminées du Vazzio. Construite pour une durée de vie nominale de 25 ans, cette installation vétuste a été maintenue en survie artificielle par une cascade de dérogations préfectorales accordées au mépris de la santé publique.
 
@@ -189,7 +256,7 @@ L'examen médico-légal des registres de la DREAL, des déclarations IREP/Géori
 
 ---
 
-## ACTE IV. LE VERROU DES 30 % : COMMENT ILS BRIDENT LE SOLEIL CORSE
+## 5. LE VERROU DES 30 % : COMMENT L'ÉTAT ET EDF BRIDENT LE SOLEIL CORSE
 
 Pour s'assurer que les moteurs thermiques tournent en continu et que les dividendes de la CSPE continuent d'affluer, l'État a instauré un cadenas réglementaire strict :
 
@@ -199,7 +266,7 @@ Pour s'assurer que les moteurs thermiques tournent en continu et que les dividen
 
 ---
 
-## ACTE V. LE CONTRE-FEU DE SAINT-ANTOINE FACE À LA VRAIE SOUVERAINETÉ HYDRAULIQUE
+## 6. LA SOUVERAINETÉ HYDROÉLECTRIQUE ET LE MODÈLE D'ÉMANCIPATION ÉNERGÉTIQUE
 
 ### ☣️ L'Autopsie Médico-Légale de Saint-Antoine : Le Cas d'École du Casse Financier et Écologique
 Pour faire diversion face à la contestation citoyenne et justifier l'abandon des engagements publics, la mairie d'Ajaccio et les services de l'État ont promu le projet privé de **Saint-Antoine (Ajaccio / Alata)**, dont la séance plénière de la **COP de Corse du 2 juillet 2026** confirme l'attribution à **EDF Power Solutions (13 MW)**.
@@ -291,22 +358,88 @@ La Corse possède dans ses vallées un gisement hydroélectrique de premier plan
 
 ---
 
-## ✊ L'ULTIMATUM CITOYEN : 3 RECOURS JURIDIQUES POUR BRISER LE MONOPOLE
+<!-- ==========================================================================
+     ARSENAL D'ÉMANCIPATION CITOYENNE & ARMES JURIDIQUES SOUVERAINES
+     ========================================================================== -->
+<div class="my-12 not-prose rounded-3xl border-2 border-emerald-500/40 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-Ce dossier constitue un arsenal de combat administratif et juridique. Chaque citoyen, chaque élu et chaque collectif peut engager dès aujourd'hui les démarches sur le fondement du Code des relations entre le public et l'administration (CRPA) :
+<div class="space-y-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-widest uppercase">
+<span>⚡</span> Riposte Citoyenne Active
+</div>
+<h3 class="text-2xl md:text-3xl font-serif font-black text-slate-100 tracking-tight">
+ARSENAL D'ÉMANCIPATION CITOYENNE : ÉNERGIE ET HYDROÉLECTRICITÉ
+</h3>
+<p class="text-sm md:text-base text-slate-300 font-sans leading-relaxed max-w-3xl">
+Ne laissez plus l'État et le monopole thermique verrouiller nos barrages et nos toitures au profit de combustibles importés. La cellule L'OCHJU met à disposition les outils officiels pour agir immédiatement.
+</p>
+</div>
 
-1. **📌 Recours n°1 (DGEC / Ministère de l'Énergie — Art. L. 311-1 CRPA)** :  
-   Exiger la communication intégrale du contrat commercial Saipol / EDF PEI portant sur l'approvisionnement des 50 000 tonnes annuelles de bioliquides et son bilan d'émissions certifié. En cas de refus sous 30 jours, saisine de la Commission d'Accès aux Documents Administratifs (CADA).
+<!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
 
-2. **📌 Recours n°2 (Commission de Régulation de l'Énergie - CRE)** :  
-   Exiger la publication officielle du montant annuel exact des dividendes nets et de la rente au taux WACC versés à la filiale EDF PEI sur les charges de service public de la Corse.
+<!-- LEVIER 1 : RECOURS CRE / CONSEIL D'ÉTAT -->
+<a href="/transmissions/enquete-18-monopole-energetique-edf/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Recours CRE / CE</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Juridique Rente CSPE
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Contestation du taux WACC ~9,55 % sur le Ricanto et recours pour excès de pouvoir sur le contrat d'achat bioliquide.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
 
-3. **📌 Recours n°3 (Assemblée de Corse / Parlement — Modification Législative)** :  
-   Exiger la suppression immédiate du verrou des 8 000 kW dans l'article L. 4424-39 du CGCT afin de transférer sans délai la concession intégrale des 199,1 MW des 4 grands barrages à un **Établissement Public Énergétique Souverain de Corse**.
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-18-monopole-energetique-edf/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Art. L. 4424-39</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Note d'Interpellation Parlementaire
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de loi supprimant le verrou des 8 MW pour transférer les 4 grands barrages (~199 MW) à la Collectivité de Corse.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-18-monopole-energetique-edf/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit de Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Radiographie des 6,3 milliards d'euros de CSPE, des 111,9 M€ de dividendes EDF PEI et du bridage des toitures solaires.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+
+</div>
+</div>
 
 ---
-
-> **Verdict de la Cellule L'OCHJU** : L'organisation énergétique de la Corse résulte de choix réglementaires et contractuels structurants. En maintenant les grands aménagements hydroélectriques (~194 à 199 MW) sous le régime des concessions nationales de l'État par l'article L. 4424-39 du CGCT et en engageant 800 Millions d'euros d'investissement dans une centrale de 133,7 MW aux bioliquides importés compensée par la CSPE, le système actuel privilégie une dépendance thermique coûteuse pour la solidarité nationale plutôt qu'une valorisation souveraine des ressources insulaires. Une politique énergétique alternative, fondée sur le stockage hydraulique par pompage (STEP), le déverrouillage de l'intermittance solaire en toiture et une révision du cadre institutionnel des concessions, constitue la voie d'une décarbonation pérenne au bénéfice direct des citoyens de Corse.
 
 <div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
 <strong>La lumière sur notre terre ne viendra jamais des monopoles, mais de notre courage collectif.</strong>
@@ -315,5 +448,6 @@ Ce dossier constitue un arsenal de combat administratif et juridique. Chaque cit
 <br>
 <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation Énergétique L'OCHJU</span>
 </div>
+
 
 
