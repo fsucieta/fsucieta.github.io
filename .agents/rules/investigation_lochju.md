@@ -77,3 +77,23 @@ L'investigation croise obligatoirement 4 disciplines d'intelligence :
 
 ### 12. RÈGLE DE GUIDAGE PÉDAGOGIQUE (`RULE[user_pedagogy]`)
 - **Explication & Accord Étape par Étape** : Expliquer clairement en français simple ce que fait chaque script ou commande avant d'agir, et demander systématiquement l'accord préalable de l'utilisateur.
+
+---
+
+## 📱 PARTIE VI. STANDARD SUPRÊME DES CARROUSELS VIRAUX TIKTOK (PHOTO MODE)
+
+### 13. RÈGLE DES CARROUSELS D'INVESTIGATION TIKTOK (`RULE[tiktok_viral_investigative_carousel]`)
+- **Format & Ratios Stricts** : Toujours au format vertical 9:16 (1080 x 1920 px). Safe-Zone sanctuarisée : 150 px libres en haut (barre de recherche), 320 px libres en bas (légende, son, profil) et 120 px à droite (icônes d'interaction).
+- **Architecture Narrative en 6 à 7 Slides (Standard Johnny Harris / Vox / Bellingcat / Mediapart)** :
+  1. *Slide 1 (Hook Paradoxal Stop-Scroll < 1s)* : Punchline géante en moins de 6 mots + Dissonance cognitive flagrante (ex: TVA réduite mais prix record) + mention « Glisse pour voir les pièces officielles ➔ ».
+  2. *Slide 2 (Le Faux Prétexte Démoli)* : Duel visuel entre le mensonge officiel (ex: coût du fret maritime à 1,8 ct) et la réalité à la pompe (+20 cts). La question qui tue : où va la différence ?
+  3. *Slide 3 (Le Piège Matériel / Géographique)* : Cartographie ou vue satellite annotée montrant le goulot d'étranglement ou le verrou monopolistique.
+  4. *Slide 4 (La Pièce à Conviction Judicialisée - Forensic ISO 27037)* : Scan authentique d'un document officiel ou décision de justice en 3D inclinée avec ombre portée. Fond assombri, seul le chiffre ou la phrase clé est surligné en jaune fluo/rouge avec tampon officiel.
+  5. *Slide 5 (La Double Étagère Citoyenne)* : Chiffre macroéconomique global XXL (ex: 48 M€ siphonnés) traduit immédiatement en coût individuel concret (ex: ~450 € par an et par famille corse).
+  6. *Slide 6 (L'Échéance Légale & Riposte Juridique)* : Briser le sentiment d'impuissance en exposant le recours juridique en cours, la date d'audience ou l'action de riposte.
+  7. *Slide 7 (Appel à l'Action & Arsenal Citoyen)* : Capture de la plateforme avec badges de téléchargement gratuit des pièces scellées et des kits citoyens. Incitation formelle : *« Enregistre ce post 💾 | Partage pour briser le monopole 📢 »*.
+- **Direction Artistique & Typographie** :
+  - Fond texturé d'enquête (ardoise foncée, papier d'archive sombre, cartographie militaire en filigrane, jamais de fond plat).
+  - Couleurs d'impact : Blanc pur (`#ffffff`), Jaune ambre impérial (`#f59e0b` ou fluo `#facc15`), Rouge alerte (`#ef4444`), Vert émeraude de certification (`#10b981`).
+  - Zéro pavé indigeste : maximum 20 à 25 mots par slide, hiérarchisation visuelle en 3 niveaux stricts.
+

@@ -89,9 +89,11 @@ sources:
         <div class="text-[10px] text-slate-500 mt-1">Concession de 9 375 km² d'hydrocarbures en mer au large de Scandola sans consultation insulaire.</div>
       </div>
     </div>
-    <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-slate-400 border-t border-slate-800/60 pt-2">
-      <span>Cotes de référence : Décret JORF 2025-851, Rapport BRGM RP-57640-FR, Archives UNESCO Scandola</span>
-      <span class="text-amber-400 font-bold">ISO/IEC 27037 Scellé</span>
+    <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono border-t border-slate-800/60 pt-3">
+      <span class="text-slate-400">Cotes de référence : Décret JORF 2025-851, Rapport BRGM RP-57640-FR, Arrêt CAA Versailles</span>
+      <a href="../../dossier-sources-cadastre-minier/" class="px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 font-bold transition flex items-center gap-1.5 shadow-sm">
+        <span>🏛️</span> <span>Dossier Complet des Sources Officielles (Accès Élus & Juristes) →</span>
+      </a>
     </div>
   </div>
 </div>
