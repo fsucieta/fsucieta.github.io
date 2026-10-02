@@ -1,0 +1,97 @@
+---
+interface Props {
+  imageAvantUrl: string;
+  imageApresUrl: string;
+  labelAvant?: string;
+  labelApres?: string;
+  titre?: string;
+  description?: string;
+}
+
+const {
+  imageAvantUrl,
+  imageApresUrl,
+  labelAvant = "SATELLITE COPERNICUS (AVANT)",
+  labelApres = "SATELLITE SENTINEL-2 (APRÈS)",
+  titre = "Constat Satellitaire Foncier",
+  description = "Glissez le curseur pour comparer l'état des sols avant et après les travaux."
+} = Astro.props;
+---
+
+<div class="relative my-8 rounded-2xl p-[1px] bg-gradient-to-b from-cyan-500/30 via-slate-800 to-transparent shadow-xl">
+  <div class="bg-slate-900/80 backdrop-blur-xl rounded-2xl p-5 md:p-6 space-y-4 border border-white/5">
+    
+    <!-- En-tête du comparateur -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+      <div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-500/30 px-2 py-0.5 rounded">
+          GEOINT · Satellite Multi-Temporel
+        </span>
+        <h4 class="text-base font-serif font-bold text-slate-100 mt-1">
+          {titre}
+        </h4>
+      </div>
+      <p class="text-xs text-slate-400 font-sans max-w-xs sm:text-right">
+        {description}
+      </p>
+    </div>
+
+    <!-- Conteneur Tactile du Slider -->
+    <div class="relative w-full aspect-video rounded-xl overflow-hidden border border-slate-800 select-none shadow-inner group">
+      
+      <!-- IMAGE APRÈS (Fond) -->
+      <img 
+        src={imageApresUrl} 
+        alt={labelApres} 
+        class="absolute inset-0 w-full h-full object-cover" 
+        loading="lazy"
+      />
+      <div class="absolute top-3 right-3 z-10">
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-red-400 bg-black/70 backdrop-blur px-2.5 py-1 rounded-md border border-red-500/40 shadow">
+          {labelApres}
+        </span>
+      </div>
+
+      <!-- IMAGE AVANT (Superposée et découpée) -->
+      <div class="absolute inset-y-0 left-0 overflow-hidden border-r-2 border-amber-400 z-10" id="slider-before-box" style="width: 50%;">
+        <img 
+          src={imageAvantUrl} 
+          alt={labelAvant} 
+          class="absolute inset-0 w-full h-full object-cover max-w-none" 
+          style="width: 100%; height: 100%; object-fit: cover;"
+          loading="lazy"
+        />
+        <div class="absolute top-3 left-3 z-20">
+          <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-400 bg-black/70 backdrop-blur px-2.5 py-1 rounded-md border border-emerald-500/40 shadow">
+            {labelAvant}
+          </span>
+        </div>
+      </div>
+
+      <!-- Curseur invisible au toucher -->
+      <input 
+        type="range" 
+        min="0" 
+        max="100" 
+        value="50" 
+        class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30" 
+        oninput="const val = this.value + '%'; this.parentElement.querySelector('#slider-before-box').style.width = val; this.parentElement.querySelector('#slider-handle-btn').style.left = val;"
+      />
+
+      <!-- Poignée visuelle -->
+      <div class="absolute inset-y-0 pointer-events-none z-20 flex items-center justify-center -ml-4" id="slider-handle-btn" style="left: 50%;">
+        <div class="w-8 h-8 rounded-full bg-amber-400 text-slate-950 font-black flex items-center justify-center shadow-lg text-xs">
+          ⇄
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Légende citoyenne -->
+    <div class="flex items-center justify-between text-[11px] font-mono text-slate-500 pt-1">
+      <span>Données : Copernicus Open Access Hub / DGFiP</span>
+      <span class="text-amber-400/80">Glisser le curseur ⇄ pour comparer</span>
+    </div>
+
+  </div>
+</div>
