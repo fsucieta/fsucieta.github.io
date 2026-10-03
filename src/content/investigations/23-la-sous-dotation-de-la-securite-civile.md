@@ -1,7 +1,7 @@
 ---
 id: 23
-title: "L'Armure Brisée : Pourquoi Paris Refuse de Doter la Corse d'un Ciel et de Secours Souverains"
-subtitle: "Pendant que chaque foyer insulaire paie ses pompiers deux fois plus cher qu'à Paris pour protéger 3 millions de touristes, l'État bloque les accords avec les Canadairs d'Olbia, annule 52,8 M€ de crédits et maintient des doublons administratifs à 4,5 M€ par an."
+title: "The Right to Save: What If Corsica Built Its Own Sovereign Rescue System?"
+subtitle: "While every island household pays twice as much for its fire brigade as in Paris to protect 3 million tourists, the State blocks agreements with Olbia's Canadairs, cancels €52.8M in funding, and maintains €4.5M/year in duplicate administrative overheads."
 category: "SÉCURITÉ CIVILE & RISQUES"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-23"
