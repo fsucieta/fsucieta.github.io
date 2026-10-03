@@ -186,26 +186,11 @@ Sommer le Préfet de Haute-Corse d'intégrer les forages de la BA 126 dans les a
         }
       });
     </script> <!-- Leaflet JS --> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> </body> </html>  <script>
-  // Empreintes SHA-256 autorisées contenant "l ochju in fronte" :
-  // - "lochju in fronte" : 1d484978c0b6a712d57e21d9dc8df8d64066b3e2bba2942ef0f2e39ad235a96c
-  // - "l ochju in fronte" : 143c6a5ca10f5c3588a766e323c635b67d9eaca363839daae8a511e5187e77a5
-  // - "l'ochju in fronte" : a74a4faecbce0b533a0c5c3789b52495b5ba2026771d93eef1ec44e788bc5f30
-  // - "LOCHJU-IN-FRONTE" : 3c9507d3ee25dcc69a626019d9eea0a3ab28880220d1e02e6db58c3f1ee15000
-  // - "LOCHJU IN FRONTE" : 5b53107adf2c4a18081373b997830c3f9d4b4fcc9240f9888446f48f23afb607
-  // - "L OCHJU IN FRONTE" : a4b107e47d970a6c313c737be7ae042a0b5120d8a87a22680d6c3989135f1ead
-  // - "L'OCHJU IN FRONTE" : 940fa658d35fbfbfde94b6ecfaea75a96db57583726ae0d12e6900f9bbfa3795
-  const AUTHORIZED_HASHES = new Set([
-    "1d484978c0b6a712d57e21d9dc8df8d64066b3e2bba2942ef0f2e39ad235a96c",
-    "143c6a5ca10f5c3588a766e323c635b67d9eaca363839daae8a511e5187e77a5",
-    "a74a4faecbce0b533a0c5c3789b52495b5ba2026771d93eef1ec44e788bc5f30",
-    "3c9507d3ee25dcc69a626019d9eea0a3ab28880220d1e02e6db58c3f1ee15000",
-    "5b53107adf2c4a18081373b997830c3f9d4b4fcc9240f9888446f48f23afb607",
-    "a4b107e47d970a6c313c737be7ae042a0b5120d8a87a22680d6c3989135f1ead",
-    "940fa658d35fbfbfde94b6ecfaea75a96db57583726ae0d12e6900f9bbfa3795"
-  ]);
+  // Empreinte SHA-256 scellée et inviolable du mot de passe souverain "LOCHJU-IN-FRONTE-2026"
+  const TARGET_HASH = "2428b7f92d0a99221f52af2ac9b90df64dedd9486f18114ce36a141dd059447e";
 
   async function sha256(message) {
-    const msgBuffer = new TextEncoder().encode(message);
+    const msgBuffer = new TextEncoder().encode(message.trim());
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
@@ -230,7 +215,7 @@ Sommer le Préfet de Haute-Corse d'intégrer les forages de la BA 126 dans les a
     }
   }
 
-  // Maintien de session active
+  // Maintien de session active si déjà validé
   if (sessionStorage.getItem('lochju_vault_token') === 'authorized') {
     unlockVault();
   }
@@ -243,17 +228,10 @@ Sommer le Préfet de Haute-Corse d'intégrer les forages de la BA 126 dans les a
   if (authForm) {
     authForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const enteredPassword = passwordInput.value.trim();
-      
-      // Test direct du hash brut
-      const hashRaw = await sha256(enteredPassword);
-      // Test du hash en minuscules
-      const hashLower = await sha256(enteredPassword.toLowerCase());
-      // Test du hash normalisé (espaces et tirets remplacés par espace)
-      const normalized = enteredPassword.toLowerCase().replace(/['’\-]/g, ' ').replace(/\s+/g, ' ').trim();
-      const hashNorm = await sha256(normalized);
+      const enteredPassword = passwordInput.value;
+      const hash = await sha256(enteredPassword);
 
-      if (AUTHORIZED_HASHES.has(hashRaw) || AUTHORIZED_HASHES.has(hashLower) || AUTHORIZED_HASHES.has(hashNorm)) {
+      if (hash === TARGET_HASH) {
         sessionStorage.setItem('lochju_vault_token', 'authorized');
         if (authError) authError.classList.add('hidden');
         unlockVault();
@@ -262,6 +240,12 @@ Sommer le Préfet de Haute-Corse d'intégrer les forages de la BA 126 dans les a
         passwordInput.value = '';
         passwordInput.focus();
       }
+    });
+  }
+
+  if (lockVaultBtn) {
+    lockVaultBtn.addEventListener('click', () => {
+      lockVault();
     });
   }
 
