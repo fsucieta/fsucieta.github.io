@@ -9,7 +9,7 @@ author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"
 tool: "Enquête citoyenne sur pièces d'État certifiées"
 chapeau: "Un quart des plaines littorales de Corse est cadenassé sous miradors. Pendant qu'il est devenu impossible de se loger et que les jeunes agriculteurs de l'île sont chassés par la flambée des prix, l'État exploite notre sol comme une entreprise commerciale géante qui rapporte 50 millions d'euros par an à Paris. L'examen minutieux des documents officiels — du traité international déposé à l'ONU au contrat de 91 millions d'euros pour les pistes, en passant par les rapports sur l'eau et les 2 848 terrains recensés au cadastre — démontre que l'armée viole la loi fiscale et doit immédiatement 19,75 millions d'euros d'arriérés aux communes corses."
-image: "img_enquete_11.jpg"
+image: "/img_enquete_11.jpg"
 sources:
   - name: "Accord international officiel France - Armée américaine (Traité ONU n° 38665)"
     url: "https://treaties.un.org/"
