@@ -1,6 +1,6 @@
 ---
 id: 23
-title: "Le Droit de Sauver : Et Si la Corse Bâtissait ses Propres Secours ?"
+title: "Le Droit de Sauver : Pourquoi Paris Laisse la Corse sans Secours Souverains"
 subtitle: "Pendant que chaque foyer insulaire paie ses pompiers deux fois plus cher qu'à Paris pour protéger 3 millions de touristes, l'État bloque les accords avec les Canadairs d'Olbia, annule 52,8 M€ de crédits et maintient des doublons administratifs à 4,5 M€ par an."
 category: "SÉCURITÉ CIVILE & RISQUES"
 status: cloturee
@@ -74,9 +74,9 @@ sources:
         <span class="text-[10px] text-slate-400 block mt-1">Contre 85 € de moyenne nationale (+138 %)</span>
       </div>
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rupture Canadairs</span>
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rupture Canadairs (France)</span>
         <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">5 sur 12</span>
-        <span class="text-[10px] text-slate-400 block mt-1">Disponibles le 24 juillet 2026 au pic de canicule</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Disponibles pour tout l'Hexagone et la Corse le 24 juillet 2026</span>
       </div>
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
         <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Vol Olbia vs Nîmes</span>
@@ -241,7 +241,7 @@ L'autopsie médico-légale du capital de ce prestataire révèle une structure d
 
 En Corse même, Sabena Technics verrouille le ciel : le groupe déploie ses équipes de piste à demeure chaque été sur l'aéroport d'Ajaccio-Campo dell'Oro et sur la Base Aérienne 126 de Ventiseri-Solenzara. Depuis son rachat en 2022 de la société **Héli-Union**, le groupe contrôle également le soutien technique des hélicoptères **Dragon** de la Sécurité Civile et des hélicoptères militaires basés sur l'île.
 
-Pendant que ce cartel de maintenance privé encaisse la rente sous perfusion républicaine, les villages de l'Alta Rocca et du Cap Corse attendent des largages qui n'arrivent jamais.
+Pendant que ce consortium de maintenance privée exécute son marché sans pénalité effective, les villages de l'Alta Rocca et du Cap Corse subissent des délais de projection incompatibles avec l'attaque initiale des feux.
 
 ---
 
@@ -479,39 +479,39 @@ L'indépendance de la protection civile corse ne requiert aucune subvention d'é
 L'autopsie des éléments de langage institutionnels appliquée au terrain insulaire (standard DISARM adapté à la Corse) permet d'anticiper avec exactitude les arguments que les services ministériels et préfectoraux opposeront à cette enquête dans les 48 heures suivant sa diffusion.
 
 <div class="my-8 not-prose bg-slate-900 border border-rose-500/40 rounded-2xl p-6 shadow-2xl">
-  <div class="text-xs font-mono font-bold uppercase tracking-widest text-rose-400 mb-4 flex items-center justify-between">
-    <span>MATRICE DISARM APPLIQUÉE À LA SÉCURITÉ CIVILE CORSE</span>
-    <span class="text-[10px] bg-rose-500/10 text-rose-300 px-2.5 py-0.5 rounded border border-rose-500/30">PREBUNKING ACTIF</span>
-  </div>
-  <div class="space-y-4 font-sans text-xs">
-    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-      <div class="flex items-center gap-2 mb-1.5">
-        <span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 font-mono font-bold rounded">T0095</span>
-        <span class="font-bold text-slate-100 uppercase">Fabrique de l'impuissance : « L'accord direct Olbia-Corse est juridiquement impossible sans Paris »</span>
-      </div>
-      <p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
-        <strong>Riposte L'OCHJU :</strong> Confrontation à l'Art. 2 CEDH (Arrêt <em>Budayeva c. Russie</em>) : l'État a l'obligation positive de protéger la vie humaine. Refuser des aéronefs à 14 min pour imposer 1h30 depuis Nîmes relève de la faute lourde et de la mise en danger délibérée.
-      </p>
-    </div>
-    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-      <div class="flex items-center gap-2 mb-1.5">
-        <span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 font-mono font-bold rounded">T0083</span>
-        <span class="font-bold text-slate-100 uppercase">Déformation comptable : « La Corse est assistée et coûte trop cher à l'État »</span>
-      </div>
-      <p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
-        <strong>Riposte L'OCHJU :</strong> Démonstration bilancielle irréfutable : 203 €/hab en Haute-Corse contre 85 € sur le continent. Le contribuable insulaire subventionne à 80 % la sécurité civile de 3 millions de flux touristiques.
-      </p>
-    </div>
-    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-      <div class="flex items-center gap-2 mb-1.5">
-        <span class="px-2 py-0.5 bg-cyan-500/20 text-cyan-300 font-mono font-bold rounded">T0104</span>
-        <span class="font-bold text-slate-100 uppercase">Noyade d'information : Maintien des deux CODIS et des états-majors doublons</span>
-      </div>
-      <p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
-        <strong>Riposte L'OCHJU :</strong> Rapport d'autopsie L'OCHJU : 4,50 M€/an de doublons administratifs entre Furiani et Ajaccio démontrés, immédiatement réaffectables aux 12 casernes rurales de montagne.
-      </p>
-    </div>
-  </div>
+<div class="text-xs font-mono font-bold uppercase tracking-widest text-rose-400 mb-4 flex items-center justify-between">
+<span>MATRICE DISARM APPLIQUÉE À LA SÉCURITÉ CIVILE CORSE</span>
+<span class="text-[10px] bg-rose-500/10 text-rose-300 px-2.5 py-0.5 rounded border border-rose-500/30">PREBUNKING ACTIF</span>
+</div>
+<div class="space-y-4 font-sans text-xs">
+<div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 font-mono font-bold rounded">T0095</span>
+<span class="font-bold text-slate-100 uppercase">Fabrique de l'impuissance : « L'accord direct Olbia-Corse est juridiquement impossible sans Paris »</span>
+</div>
+<p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
+<strong>Riposte L'OCHJU :</strong> Confrontation à l'Art. 2 CEDH (Arrêt <em>Budayeva c. Russie</em>) : l'État a l'obligation positive de protéger la vie humaine. Refuser des aéronefs à 14 min pour imposer 1h30 depuis Nîmes relève de la faute lourde et de la mise en danger délibérée.
+</p>
+</div>
+<div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 bg-amber-500/20 text-amber-300 font-mono font-bold rounded">T0083</span>
+<span class="font-bold text-slate-100 uppercase">Déformation comptable : « La Corse est assistée et coûte trop cher à l'État »</span>
+</div>
+<p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
+<strong>Riposte L'OCHJU :</strong> Démonstration bilancielle irréfutable : 203 €/hab en Haute-Corse contre 85 € sur le continent. Le contribuable insulaire subventionne à 80 % la sécurité civile de 3 millions de flux touristiques.
+</p>
+</div>
+<div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 bg-cyan-500/20 text-cyan-300 font-mono font-bold rounded">T0104</span>
+<span class="font-bold text-slate-100 uppercase">Noyade d'information : Maintien des deux CODIS et des états-majors doublons</span>
+</div>
+<p class="text-slate-300 leading-relaxed m-0 font-serif text-sm">
+<strong>Riposte L'OCHJU :</strong> Rapport d'autopsie L'OCHJU : 4,50 M€/an de doublons administratifs entre Furiani et Ajaccio démontrés, immédiatement réaffectables aux 12 casernes rurales de montagne.
+</p>
+</div>
+</div>
 </div>
 
 ### Le Prebunking Clinique : Les Trois Contre-Feux Inoculés d'Avance
@@ -526,7 +526,7 @@ L'autopsie des éléments de langage institutionnels appliquée au terrain insul
 
 3. **L'argument du prétendu secret de défense opérationnelle :**  
    *Ce qu'ils diront :* « La disponibilité quotidienne des Canadairs à Nîmes relève de la régulation opérationnelle interne non communicable. »  
-   *La pièce opposable :* Le rapport n° 838 du Sénat de la République (Rapporteur Vogel, scellé sous hash SHA-256 <code class="font-mono text-cyan-400 text-xs">84472a8f...</code>) et les registres BDIFF ont acté la carence fautive systémique : 5 appareils sur 12 en ligne le 24 juillet 2026. L'omission délibérée de secours accessibles à 14 minutes d'envol n'est pas un secret opérationnel : c'est une rupture d'égalité caractérisée devant le service public de survie.
+   *La pièce opposable :* Le rapport n° 838 du Sénat de la République (Rapporteur Vogel, scellé sous hash SHA-256 `84472a8f...`) et les registres BDIFF ont acté la carence fautive systémique : 5 appareils sur 12 en ligne le 24 juillet 2026. L'omission délibérée de secours accessibles à 14 minutes d'envol n'est pas un secret opérationnel : c'est une rupture d'égalité caractérisée devant le service public de survie.
 
 ---
 
@@ -534,48 +534,212 @@ L'autopsie des éléments de langage institutionnels appliquée au terrain insul
      LES MUNITIONS CITOYENNES & LEVIERS D'ACTION (LE TRIPTYQUE)
      ========================================================================== -->
 <div class="my-10 p-6 md:p-8 rounded-3xl bg-slate-950 border-2 border-emerald-500/40 shadow-2xl relative not-prose">
-  <div class="border-b border-slate-800 pb-4 mb-6">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-xs font-mono font-bold tracking-widest uppercase text-emerald-400">⚖️ MUNITIONS CITOYENNES : LE TRIPTYQUE D'INTERPELLATION L'OCHJU</span>
-    </div>
-    <h3 class="text-xl md:text-2xl font-serif font-black text-slate-100 m-0">Ne Subissez Plus. Forcez le Rétablissement de la Souveraineté de Protection Civile.</h3>
-    <p class="text-xs text-slate-400 font-sans mt-1">Les faits sont scellés sous standard ISO/IEC 27037. Téléchargez les dossiers ci-dessous pour agir immédiatement.</p>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <a href="/transmissions/enquete-23-securite-civile/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-400 transition group flex flex-col justify-between">
-      <div>
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-2xl">⚖️</span>
-          <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Recours Juridique</span>
-        </div>
-        <h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">Bordereau Transmission Justice</h4>
-        <p class="text-xs text-slate-400 font-sans leading-relaxed">Les 6 pièces officielles scellées SHA-256 pour rupture d'égalité devant les charges publiques et carence fautive régalienne.</p>
-      </div>
-      <span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">Télécharger le Bordereau →</span>
-    </a>
-    <a href="/transmissions/enquete-23-securite-civile/03_NOTE_INTERPELLATION_PARLEMENTAIRE.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
-      <div>
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-2xl">🏛️</span>
-          <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Assemblée de Corse</span>
-        </div>
-        <h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">Délibération & Amendements PLF</h4>
-        <p class="text-xs text-slate-400 font-sans leading-relaxed">Proposition de délibération clé en main pour la fusion CCPC à Corte et amendement direct débloquant Olbia sous l'Art. 2 CEDH.</p>
-      </div>
-      <span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">Sommer les Élus →</span>
-    </a>
-    <a href="/transmissions/enquete-23-securite-civile/01_KIT_PRESSE_INVESTIGATION.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
-      <div>
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-2xl">📰</span>
-          <span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Dossier Presse</span>
-        </div>
-        <h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">Kit Presse d'Investigation</h4>
-        <p class="text-xs text-slate-400 font-sans leading-relaxed">Synthèse chiffrée, fiches d'impact et contacts sécurisés pour les rédactions régionales, nationales et internationales.</p>
-      </div>
-      <span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">Consulter le Kit Presse →</span>
-    </a>
-  </div>
+<div class="border-b border-slate-800 pb-4 mb-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-mono font-bold tracking-widest uppercase text-emerald-400">
+⚖️ MUNITIONS CITOYENNES : LE TRIPTYQUE D'INTERPELLATION L'OCHJU
+</span>
+</div>
+<h3 class="text-xl md:text-2xl font-serif font-black text-slate-100 m-0">
+Ne Subissez Plus. Forcez le Rétablissement de la Souveraineté de Protection Civile.
+</h3>
+<p class="text-xs text-slate-400 font-sans mt-1">
+Les faits sont scellés sous standard ISO/IEC 27037. Téléchargez les dossiers ci-dessous pour agir immédiatement.
+</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- LEVIER 1 : BORDEREAU JUDICIAIRE -->
+<a href="/transmissions/enquete-23-securite-civile/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Recours Juridique</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
+Bordereau Transmission Justice
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Les 6 pièces officielles scellées SHA-256 pour rupture d'égalité devant les charges publiques et carence fautive régalienne.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
+Télécharger le Bordereau →
+</span>
+</a>
+
+<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+<a href="/transmissions/enquete-23-securite-civile/03_NOTE_INTERPELLATION_PARLEMENTAIRE.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">🏛️</span>
+<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Assemblée de Corse</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
+Délibération & Amendements PLF
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Proposition de délibération clé en main pour la fusion CCPC à Corte et amendement direct débloquant Olbia sous l'Art. 2 CEDH.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
+Sommer les Élus →
+</span>
+</a>
+
+<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+<a href="/transmissions/enquete-23-securite-civile/01_KIT_PRESSE_INVESTIGATION.html" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl">📰</span>
+<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Dossier Presse</span>
+</div>
+<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
+Kit Presse d'Investigation
+</h4>
+<p class="text-xs text-slate-400 font-sans leading-relaxed">
+Synthèse chiffrée, fiches d'impact et contacts sécurisés pour les rédactions régionales, nationales et internationales.
+</p>
+</div>
+<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
+Consulter le Kit Presse →
+</span>
+</a>
+</div>
+</div>
+
+<div class="my-12 p-8 rounded-3xl bg-slate-900/90 border border-slate-700/80 shadow-2xl not-prose">
+<div class="text-center max-w-2xl mx-auto mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-xs uppercase tracking-widest mb-3">
+<span>📂</span> Pièces Justificatives Officielles
+</div>
+<h3 class="text-2xl font-serif font-bold text-slate-100 mb-2">Les 6 Actes Clés en Accès Direct</h3>
+<p class="text-sm text-slate-400 font-sans leading-relaxed">
+Conformément au principe de transparence citoyenne et au standard ISO/IEC 27037, voici les documents officiels originaux cités dans l'enquête, scellés sous empreinte SHA-256 et vérifiables par chacun.
+</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- ACTE 1 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">Préfecture 2B • Arrêté 135</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">HTML • 42 Ko</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">SDACR SIS 2B (2023-2027)</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Arrêté préfectoral constatant les carences ambulancières et la recommandation n°20 de la DGSCGC.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/sdacr-sis-2b-2023-2027-arrete-prefectoral-135.html" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/sdacr-sis-2b-2023-2027-arrete-prefectoral-135.html" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+
+<!-- ACTE 2 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">Sénat • Rapport n° 838</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">PDF • 3,2 Mo</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Flotte Bombardiers d'Eau (Vogel)</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Rapport de la commission des finances actant les 5 Canadairs en ligne sur 12 et la vétusté de la flotte.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+
+<!-- ACTE 3 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">Sénat • Rapport n° 393</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">PDF • 2,1 Mo</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Secours Montagne & Hélicos (Belin)</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Évaluation des bases Dragon de Corse et des ruptures de continuité territoriale des secours.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/senat-r25-393-secours-montagne-helico.pdf" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/senat-r25-393-secours-montagne-helico.pdf" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+
+<!-- ACTE 4 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">Assemblée de Corse • 25/102 AC</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">HTML • 18 Ko</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Création Établissement EPISC</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Délibération territoriale actant le projet de création de l'établissement public de protection civile.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/deliberation-25-102-ac-episc.html" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/deliberation-25-102-ac-episc.html" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+
+<!-- ACTE 5 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">ADLC • Décision 25-D-07</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">PDF • 4,8 Mo</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Entente DPLC Hélicos (187,49 M€)</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Sanction officielle de l'Autorité de la Concurrence sur le cartel des marchés d'hélicoptères de secours.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/decision-25-d-07-autorite-concurrence-officielle.pdf" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/decision-25-d-07-autorite-concurrence-officielle.pdf" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+
+<!-- ACTE 6 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-amber-400 font-semibold">Assemblée Nationale • n° 3779</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">HTML • 8 Ko</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Réponse Ministérielle TSCA 2003</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Réponse au Journal Officiel établissant le gel du reversement de la taxe spéciale sur les contrats d'assurance.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="/docs/reponse-ministerielle-3779-tsca-corse.html" target="_blank" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Visionner
+</a>
+<a href="/docs/reponse-ministerielle-3779-tsca-corse.html" download class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Télécharger
+</a>
+</div>
+</div>
+</div>
 </div>
 
 ---
