@@ -799,8 +799,11 @@ const description = "Instruction forensique médico-légale et institutionnelle 
 </Layout>
 
 <script is:inline>
-  // Empreinte SHA-256 scellée et inviolable du mot de passe souverain "LOCHJU-IN-FRONTE-2026"
-  const TARGET_HASH = "2428b7f92d0a99221f52af2ac9b90df64dedd9486f18114ce36a141dd059447e";
+  // Empreintes SHA-256 autorisées : "LOCHJU-IN-FRONTE-2026" et "LOCHJU-MINES-2026"
+  const VALID_HASHES = [
+    "2428b7f92d0a99221f52af2ac9b90df64dedd9486f18114ce36a141dd059447e", // LOCHJU-IN-FRONTE-2026
+    "174474703cbc8ffeceead5637e1d243af3af8fe40cf08f04b20e86152d6ab853"  // LOCHJU-MINES-2026
+  ];
 
   async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message.trim());
@@ -844,7 +847,7 @@ const description = "Instruction forensique médico-légale et institutionnelle 
       const enteredPassword = passwordInput.value;
       const hash = await sha256(enteredPassword);
 
-      if (hash === TARGET_HASH) {
+      if (VALID_HASHES.includes(hash)) {
         sessionStorage.setItem('lochju_vault_token_mines', 'authorized');
         if (authError) authError.classList.add('hidden');
         unlockVault();
