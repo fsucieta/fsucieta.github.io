@@ -7,7 +7,7 @@ status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-23"
 author: "Cellule d'Investigation Sécurité Civile & Risques L'OCHJU"
 date: "Septembre 2026"
-tool: "OFGL / BDIFF / DGSCGC / SDACR SIS 2B (Arrêté n°135/2023) / Rapports Sénat Vogel n°838 & n°393 / Décision 25-D-07 Autorité Concurrence"
+tool: "OFGL / BDIFF / DGSCGC / SDACR SIS 2B (Arrêté n°135/2023) / Rapports Sénat Vogel n°838 & Belin-Vogel n°393 / Décision 25-D-07 Autorité Concurrence"
 chapeau: "Territoire montagneux soumis à des sécheresses extrêmes et à des tempêtes violentes, la Corse subit un sous-dimensionnement chronique de ses moyens de secours. L'autopsie médico-légale des comptes de l'OFGL, des rapports de la DGSCGC et des registres de la Collectivité de Corse révèle une triple faillite régalienne : un surcoût touristique de 12 à 15 M€ par an financé à 80 % par l'impôt local corse (203 €/hab en Haute-Corse contre 85 € sur le continent), une flotte aérienne nationale vétuste tombée à 5 Canadairs opérationnels sur 12 le 24 juillet 2026, et le refus jacobin de conventionner avec la base italienne d'Olbia située à 15 minutes de Bonifacio. Face à cette impasse, L'OCHJU déploie le plan d'ingénierie d'une protection civile souveraine : 4 ruptures technologiques mondiales (FireSwarm IA, retardants biosourcés, bouclier gravitaire OEHC, 3 Fire Boss amphibies), la création de la Cumpagnia Corsa di Prutezzione Civile à Corte, et une équation financière ISO 27037 soldée au centime près."
 math: "\\text{Indice d'Asymétrie Régalienne (IAR)} = \\frac{\\text{Coût réel par habitant (203 €)} - \\text{Moyenne nationale (85 €)}}{\\text{Dotation d'État au fonctionnement } (\\le 10\\%)} \\times \\frac{\\text{Pic touristique (800 000 hab.)}}{\\text{Population légale (355 528)}}"
 image: "img_enquete_23.jpg"
@@ -35,7 +35,7 @@ sources:
     url: "/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf"
     pdfDirect: "/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf"
     sha256: "84472a8f5bb16f7beb1cca22a4019289128d4b372c428b3fdf86aceb2a07dab5"
-  - name: "Sénat de la République : Rapport n° 393 (11 février 2026) — Secours en montagne et moyens héliportés"
+  - name: "Sénat de la République : Rapport n° 393 (Belin - Vogel, 11 février 2026) — Secours en montagne et moyens héliportés"
     url: "/docs/senat-r25-393-secours-montagne-helico.pdf"
     pdfDirect: "/docs/senat-r25-393-secours-montagne-helico.pdf"
     sha256: "d91dc6dee68ac4fa7adff97eab3a6ffcdb642d4b0b4e88cda4e56bb4e8e09f19"
@@ -112,7 +112,7 @@ sources:
         <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">SHA: 84472a8f ➔</span>
       </a>
       <a href="/docs/senat-r25-393-secours-montagne-helico.pdf" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-cyan-400/60 transition flex items-center justify-between group">
-        <span class="text-slate-300 group-hover:text-cyan-300">📑 <strong>Rapport Sénat Belin n° 393 (Hélicos)</strong></span>
+        <span class="text-slate-300 group-hover:text-cyan-300">📑 <strong>Rapport Sénat Belin-Vogel n° 393 (Hélicos)</strong></span>
         <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">SHA: d91dc6de ➔</span>
       </a>
       <a href="/docs/deliberation-25-102-ac-episc.html" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-emerald-400/60 transition flex items-center justify-between group">
@@ -250,7 +250,7 @@ Pendant que ce consortium de maintenance privée exécute son marché sans péna
 Les deux hélicoptères de la Sécurité Civile basés en Corse — **Dragon 2A** à Ajaccio-Campo dell'Oro et **Dragon 2B** à Bastia-Poretta — constituent les ultimes vigies du relief insulaire. 
 
 Dotées du nouveau **H145 D3 pentapale** (affecté le 30 mai 2025 à Bastia et le 8 octobre 2025 à Ajaccio), ces machines de haute technicité subissent un détournement permanent de leur mandat opérationnel :
-* Le rapport d'information n° 393 du Sénat, déposé le 11 février 2026, établit que **<mark class="forensic-highlight">environ 60 % de l'activité</mark>** de Dragon 2A et 2B est aspirée par des missions d'évacuations sanitaires d'urgence (EVASAN) et de transports inter-hospitaliers pour le compte du SAMU.
+* Le rapport d'information n° 393 du Sénat (Belin-Vogel), déposé le 11 février 2026, établit que **<mark class="forensic-highlight">environ 60 % de l'activité</mark>** de Dragon 2A et 2B est aspirée par des missions d'évacuations sanitaires d'urgence (EVASAN) et de transports inter-hospitaliers pour le compte du SAMU.
 * En l'absence de Centre Hospitalier Universitaire (CHU) sur l'île et faute de SMUR héliportés pérennes financés par l'Agence Régionale de Santé (ARS), le ministère de l'Intérieur transforme ses vecteurs de sauvetage en montagne en ambulances de substitution, au coût unitaire de **4 500 € à 5 500 € l'heure de vol**.
 
 Le marché de maintien en condition opérationnelle (MCO) conclu par l'État ne prévoit **aucun aéronef de substitution positionné en Corse**. Dès qu'un H145 entre en maintenance programmée des 100 heures ou subit une avarie d'avionique, un demi-département se retrouve privé de tout vecteur héliporté lorsque le plafond nuageux interdit le franchissement des cols de Vizzavona ou de Vergio par le second appareil.
