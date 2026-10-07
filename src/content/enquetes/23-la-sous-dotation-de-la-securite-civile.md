@@ -51,6 +51,18 @@ sources:
     url: "/docs/reponse-ministerielle-3779-tsca-corse.html"
     pdfDirect: "/docs/reponse-ministerielle-3779-tsca-corse.html"
     sha256: "c713482c28722192b75319274faeefaf2d3aa8dc6a2a337ffbecb6feb8ff315e"
+  - name: "Premier Ministre : Décret n° 2024-124 du 21 février 2024 (Annulation 52,8 M€ Sécurité civile, JORF n°0044)"
+    url: "/docs/decret-2024-124-annulation-credits-securite-civile.html"
+    pdfDirect: "/docs/decret-2024-124-annulation-credits-securite-civile.html"
+    sha256: "beeb7ac028e7d2181a85f9d3e61852f032e992d905c04d31e52edf4d09c53e71"
+  - name: "Assemblée Nationale : Amendement & Débats Moyens Aériens Corse - Accord Réflexe Sardaigne"
+    url: "/docs/amendement-an-moyens-aeriens-securite-civile-corse.html"
+    pdfDirect: "/docs/amendement-an-moyens-aeriens-securite-civile-corse.html"
+    sha256: "6ca951d34b11d457a6435d3b9800fa4af5b14f2d71ad13e11d6cbfbe25ffa042"
+  - name: "Relevé Terrain L'OCHJU : Mobilisation Unitaire des Sapeurs-Pompiers (Bastia, 28 sept. 2026)"
+    url: "/docs/revue-presse-mobilisation-pompiers-bastia-2026.html"
+    pdfDirect: "/docs/revue-presse-mobilisation-pompiers-bastia-2026.html"
+    sha256: "ed43a9f29f257edc1d2aef9decba89b924e14ceeb395bfb447c65522989b6dbb"
 ---
 
 <!-- ==========================================================================
@@ -126,6 +138,18 @@ sources:
       <a href="/docs/reponse-ministerielle-3779-tsca-corse.html" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-amber-400/60 transition flex items-center justify-between group">
         <span class="text-slate-300 group-hover:text-amber-300">🏛️ <strong>Réponse JOAN n° 3779 (TSCA 2003)</strong></span>
         <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">SHA: c713482c ➔</span>
+      </a>
+      <a href="/docs/decret-2024-124-annulation-credits-securite-civile.html" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-rose-400/60 transition flex items-center justify-between group">
+        <span class="text-slate-300 group-hover:text-rose-300">📉 <strong>Décret 2024-124 (-52,8 M€ Sécurité Civile)</strong></span>
+        <span class="text-[10px] text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-800/40">SHA: beeb7ac0 ➔</span>
+      </a>
+      <a href="/docs/amendement-an-moyens-aeriens-securite-civile-corse.html" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-cyan-400/60 transition flex items-center justify-between group">
+        <span class="text-slate-300 group-hover:text-cyan-300">✈️ <strong>Amendement AN (Base Corse & Olbia)</strong></span>
+        <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">SHA: 6ca951d3 ➔</span>
+      </a>
+      <a href="/docs/revue-presse-mobilisation-pompiers-bastia-2026.html" target="_blank" class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-amber-400/60 transition flex items-center justify-between group">
+        <span class="text-slate-300 group-hover:text-amber-300">🚒 <strong>Mobilisation 200 Pompiers (Bastia 2026)</strong></span>
+        <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">SHA: ed43a9f2 ➔</span>
       </a>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 sm:col-span-2 flex items-center justify-between">
         <span class="text-slate-300">🏢 <strong>Marché Cadre DGSCGC / Sabena Technics FNI (MCO 30 M€/an)</strong></span>
