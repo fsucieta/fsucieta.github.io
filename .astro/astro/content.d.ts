@@ -330,9 +330,9 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
-"28-le-naufrage-organise-de-la-muvitarra.md": {
-	id: "28-le-naufrage-organise-de-la-muvitarra.md";
-  slug: "28-le-naufrage-organise-de-la-muvitarra";
+"28-muvitarra-le-sacrifice-des-bus.md": {
+	id: "28-muvitarra-le-sacrifice-des-bus.md";
+  slug: "28-muvitarra-le-sacrifice-des-bus";
   body: string;
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">

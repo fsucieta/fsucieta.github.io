@@ -1,0 +1,280 @@
+---
+// CarteEnergieCorse.astro
+// Composant cartographique interactif (Leaflet OpenStreetMap)
+// Visualisation médico-légale de l'autonomie électrique de la Corse :
+// - 4 Grands Barrages Publics Confisqués (220,66 MW)
+// - Complexe Thermique & Bioliquide (413,30 MW)
+// - Gisement Solaire Citoyen & Privé ODRE (284,64 MW sur 6 319 sites)
+interface Props {
+  lang?: 'fr' | 'en';
+}
+
+const { lang = 'fr' } = Astro.props;
+
+const labels = {
+  fr: {
+    title: "CARTOGRAPHIE FORENSIQUE : AUTONOMIE CORSE VS RENTE FOSSILE",
+    subtitle: "Visualisation spatiale des 523 MW de potentiel électrique insulaire (220 MW barrages + 284 MW solaires ODRÉ) face aux centrales thermiques",
+    sourceBadge: "DONNÉES OFFICIELLES ODRÉ / DREAL / CRE / WGS84",
+    filterAll: "Tous les Réseaux",
+    filterDams: "Barrages Confisqués (220,7 MW)",
+    filterThermal: "Centrales Thermiques (413,3 MW)",
+    filterSolar: "Potentiel Solaire & Toitures (284,6 MW)",
+    resetZoom: "Réinitialiser la vue",
+  },
+  en: {
+    title: "FORENSIC MAPPING: CORSICAN AUTONOMY VS FOSSIL GRAVY TRAIN",
+    subtitle: "Spatial visualization of 523 MW insular clean capacity (220 MW hydro + 284 MW ODRE solar) vs thermal power plants",
+    sourceBadge: "OFFICIAL DATA ODRE / DREAL / CRE / WGS84",
+    filterAll: "All Networks",
+    filterDams: "Locked Public Dams (220.7 MW)",
+    filterThermal: "Thermal Power Plants (413.3 MW)",
+    filterSolar: "Solar & Rooftop Potential (284.6 MW)",
+    resetZoom: "Reset view",
+  }
+}[lang];
+---
+
+<div class="my-12 bg-slate-950 border border-amber-500/30 rounded-2xl p-6 md:p-8 shadow-2xl space-y-6">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <h3 class="text-lg md:text-xl font-bold font-sans text-amber-400 uppercase tracking-wide">
+          🗺️ {labels.title}
+        </h3>
+      </div>
+      <p class="text-xs text-slate-400 font-mono mt-1">
+        {labels.subtitle}
+      </p>
+    </div>
+    <span class="text-[10px] font-mono bg-amber-500/10 text-amber-300 px-3 py-1 rounded-full border border-amber-500/30 self-start md:self-auto">
+      {labels.sourceBadge}
+    </span>
+  </div>
+
+  <!-- Filtres interactifs par bouton -->
+  <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+    <button id="btn-filter-all" class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/50 hover:bg-amber-500/30 transition">
+      ⚡ {labels.filterAll}
+    </button>
+    <button id="btn-filter-dams" class="px-3 py-1.5 rounded-lg bg-cyan-950/60 text-cyan-300 border border-cyan-500/40 hover:bg-cyan-900/60 transition">
+      💧 {labels.filterDams}
+    </button>
+    <button id="btn-filter-solar" class="px-3 py-1.5 rounded-lg bg-amber-950/60 text-amber-300 border border-amber-500/40 hover:bg-amber-900/60 transition">
+      ☀️ {labels.filterSolar}
+    </button>
+    <button id="btn-filter-thermal" class="px-3 py-1.5 rounded-lg bg-rose-950/60 text-rose-300 border border-rose-500/40 hover:bg-rose-900/60 transition">
+      🔥 {labels.filterThermal}
+    </button>
+  </div>
+
+  <!-- Conteneur Leaflet -->
+  <div class="relative w-full h-[520px] md:h-[580px] rounded-xl overflow-hidden border border-slate-800 bg-slate-900">
+    <div id="map-energie-corse" class="w-full h-full z-10"></div>
+    <button id="btn-reset-map" class="absolute bottom-4 right-4 z-20 bg-slate-950/90 hover:bg-slate-900 text-amber-400 text-xs font-mono px-3 py-1.5 rounded-lg border border-amber-500/30 shadow-lg transition">
+      🎯 {labels.resetZoom}
+    </button>
+  </div>
+
+  <!-- Cartouche analytique au pied de carte -->
+  <div class="text-xs font-mono text-slate-300 bg-slate-900/80 p-4 rounded-xl border border-slate-800 space-y-2 leading-relaxed">
+    <div class="text-emerald-400 font-bold flex items-center gap-2">
+      <span>⚖️ DÉMONSTRATION D'INGÉNIERIE SOUVERAINE (BASE ODRÉ SCELLÉE) :</span>
+    </div>
+    <p>
+      La Corse possède déjà <strong>523,3 MW de potentiel électrique insulaire en service</strong> (220,7 MW d'eau de montagne + 284,6 MW de toitures et fermes solaires), alors que la pointe maximale historique de l'île plafonne à <strong>400 MW</strong>. En couplant ces installations aux 4 grands barrages via des stations de pompage (STEP), <strong>l'ensemble des centrales thermiques (413 MW) devient physiquement et économiquement inutile</strong>.
+    </p>
+  </div>
+</div>
+
+<!-- Styles Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+<!-- Script Client Leaflet -->
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mapContainer = document.getElementById('map-energie-corse');
+    if (!mapContainer || typeof L === 'undefined') return;
+
+    const initialCoords = [42.10, 9.15];
+    const initialZoom = 8;
+    const map = L.map('map-energie-corse', {
+      center: initialCoords,
+      zoom: initialZoom,
+      scrollWheelZoom: false
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      subdomains: ['a', 'b', 'c'],
+      maxZoom: 18
+    }).addTo(map);
+
+    const markerLayers = {
+      dam: L.layerGroup().addTo(map),
+      thermal: L.layerGroup().addTo(map),
+      solar: L.layerGroup().addTo(map)
+    };
+
+    // 1. BARRAGES HYDROÉLECTRIQUES CONFISQUÉS (220,66 MW)
+    const dams = [
+      {
+        name: "Barrage & Centrale de Calacuccia (Haut-Golo)",
+        coords: [42.32948, 9.02256],
+        details: "Puissance : <strong>56,8 MW</strong> (Retenue 53 Mm³)<br>Mise en service : 1968 / 1985<br>Statut Loi 2026-554 : Verrouillé par droit réel d'État pour <strong>70 ans jusqu'en 2096</strong>."
+      },
+      {
+        name: "Barrage & Centrale de Sampolo (Fium'Orbu)",
+        coords: [42.09493, 9.28449],
+        details: "Puissance : <strong>43,0 MW</strong> (Lugo-di-Nazza)<br>Mise en service : 1991<br>Statut : Concession d'État confisquée pour 70 ans."
+      },
+      {
+        name: "Barrage de Tolla / Centrales d'Ocana (Prunelli)",
+        coords: [41.96357, 8.96445],
+        details: "Puissance : <strong>39,3 MW</strong> (Tolla + Ocana)<br>Retenue : 40 Mm³<br>Statut : Clé de voûte de la vallée d'Ajaccio verrouillée jusqu'en 2096."
+      },
+      {
+        name: "Barrage & Centrale du Rizzanese (Alta Rocca)",
+        coords: [41.73485, 9.11452],
+        details: "Puissance : <strong>55,0 MW</strong> (Sainte-Lucie-de-Tallano)<br>Mise en service : 2013<br>Dernier grand barrage public construit, spolié au profit exclusif d'EDF SA."
+      }
+    ];
+
+    dams.forEach(d => {
+      const marker = L.circleMarker(d.coords, {
+        radius: 10,
+        fillColor: '#06B6D4',
+        color: '#FFFFFF',
+        weight: 2,
+        opacity: 0.95,
+        fillOpacity: 0.85
+      }).addTo(markerLayers.dam);
+
+      marker.bindPopup(`
+        <div style="font-family: sans-serif; font-size: 12px; line-height: 1.4; color: #0f172a; min-width: 220px;">
+          <h4 style="font-weight: bold; font-size: 13px; margin: 0 0 6px 0; color: #0891b2; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">
+            💧 ${d.name}
+          </h4>
+          <div>${d.details}</div>
+        </div>
+      `);
+    });
+
+    // 2. THERMIQUE / BIOLIQUIDE (413,30 MW)
+    const thermals = [
+      {
+        name: "Centrale du Vazzio (Ajaccio)",
+        coords: [41.93209, 8.76044],
+        details: "Puissance : <strong>132,3 MW</strong> (Diesels de 1981) + 20 MW TAC<br>Code AIOT : 0007300024<br>Inspection DREAL du 19/06/2026 : NOx maintenus à 625 mg/Nm³ sous AP 2A-2019-12-31-001."
+      },
+      {
+        name: "Centrale du Ricanto (Ajaccio - En construction)",
+        coords: [41.92850, 8.77500],
+        details: "Puissance : <strong>133,7 MW</strong> (8 moteurs MAN 18V51/60)<br>Coût : ~800 M€ | WACC garanti : <strong>9,55 % net</strong> (Arrêté NOR ECOR2410407A)<br>Combustible : 50 000 t/an colza importé (Rente CSPE : 6,3 Mds€)."
+      },
+      {
+        name: "Centrale de Lucciana (Bastia)",
+        coords: [42.52800, 9.44700],
+        details: "Puissance : <strong>112 MW</strong> fioul lourd + 125 MW turbines<br>Total thermique déclaré : <strong>237 MW</strong><br>Monopole d'exploitation EDF PEI."
+      }
+    ];
+
+    thermals.forEach(t => {
+      const marker = L.circleMarker(t.coords, {
+        radius: 9,
+        fillColor: '#EF4444',
+        color: '#FFFFFF',
+        weight: 2,
+        opacity: 0.95,
+        fillOpacity: 0.85
+      }).addTo(markerLayers.thermal);
+
+      marker.bindPopup(`
+        <div style="font-family: sans-serif; font-size: 12px; line-height: 1.4; color: #0f172a; min-width: 220px;">
+          <h4 style="font-weight: bold; font-size: 13px; margin: 0 0 6px 0; color: #dc2626; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">
+            🔥 ${t.name}
+          </h4>
+          <div>${t.details}</div>
+        </div>
+      `);
+    });
+
+    // 3. 100 % DU PARC SOLAIRE INSULAIRE : CHARGEMENT DES 163 COMMUNES (REGISTRE ODRÉ OFFICIEL)
+    fetch('/data_solaire_communes_corse.json')
+      .then(res => res.json())
+      .then(solarCommunes => {
+        solarCommunes.forEach(s => {
+          // Rayon proportionnel à la puissance : minimum 4px, maximum 16px
+          const radius = Math.max(3.5, Math.min(15, Math.sqrt(s.mw) * 2.1));
+          
+          const marker = L.circleMarker([s.lat, s.lng], {
+            radius: radius,
+            fillColor: '#F59E0B',
+            color: '#FFFFFF',
+            weight: 1,
+            opacity: 0.9,
+            fillOpacity: 0.72
+          }).addTo(markerLayers.solar);
+
+          marker.bindPopup(`
+            <div style="font-family: sans-serif; font-size: 12px; line-height: 1.4; color: #0f172a; min-width: 220px;">
+              <h4 style="font-weight: bold; font-size: 13px; margin: 0 0 6px 0; color: #d97706; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">
+                ☀️ ${s.commune}
+              </h4>
+              <div style="margin-bottom: 4px;">
+                Puissance totale : <strong>${s.mw.toFixed(2)} MW</strong> (${(s.mw * 1000).toLocaleString('fr-FR')} kW)<br>
+                Installations recensées : <strong>${s.installations} toitures & fermes</strong><br>
+                Moyenne par site : <strong>${((s.mw * 1000) / s.installations).toFixed(1)} kW</strong>
+              </div>
+              <div style="margin-top: 6px; font-size: 11px; color: #b45309; background: #fef3c7; padding: 4px 6px; border-radius: 4px; border: 1px solid #fde68a;">
+                ⚠️ <strong>Bridage réseau EDF</strong> : Écrêté d'autorité au-delà de 30 % pour forcer les centrales thermiques à tourner.
+              </div>
+            </div>
+          `);
+        });
+      })
+      .catch(err => console.error("Erreur chargement solaire :", err));
+
+    // Pipeline combustible Aspretto -> Ricanto
+    const pipelineCoords = [
+      [41.9280, 8.7620],
+      [41.9282, 8.7680],
+      [41.9285, 8.7750]
+    ];
+    L.polyline(pipelineCoords, {
+      color: '#DC2626',
+      weight: 3,
+      dashArray: '6, 6',
+      opacity: 0.8
+    }).addTo(markerLayers.thermal);
+
+    // Gestion des filtres
+    document.getElementById('btn-filter-all')?.addEventListener('click', () => {
+      markerLayers.dam.addTo(map);
+      markerLayers.thermal.addTo(map);
+      markerLayers.solar.addTo(map);
+    });
+    document.getElementById('btn-filter-dams')?.addEventListener('click', () => {
+      map.removeLayer(markerLayers.thermal);
+      map.removeLayer(markerLayers.solar);
+      markerLayers.dam.addTo(map);
+    });
+    document.getElementById('btn-filter-solar')?.addEventListener('click', () => {
+      map.removeLayer(markerLayers.thermal);
+      map.removeLayer(markerLayers.dam);
+      markerLayers.solar.addTo(map);
+    });
+    document.getElementById('btn-filter-thermal')?.addEventListener('click', () => {
+      map.removeLayer(markerLayers.dam);
+      map.removeLayer(markerLayers.solar);
+      markerLayers.thermal.addTo(map);
+    });
+
+    // Bouton de réinitialisation
+    document.getElementById('btn-reset-map')?.addEventListener('click', () => {
+      map.setView(initialCoords, initialZoom);
+    });
+  });
+</script>
