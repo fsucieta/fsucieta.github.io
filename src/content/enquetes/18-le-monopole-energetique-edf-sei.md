@@ -1,14 +1,14 @@
 ---
 id: 18
-title: "Le Vol de nos Ressources : Le Grand Pillage Énergétique de la Corse"
-subtitle: "De l'accaparement de nos quatre grands barrages aux 111,9 millions transférés sur le continent : comment l'État interdit aux Corses de vivre de leur propre énergie."
+title: "Le Monopole EDF et le Système Colonial de Rente : L'Imposture des Centrales Thermiques Face à l'Abondance de nos Ressources"
+subtitle: "De la confiscation de nos 4 grands barrages jusqu'en 2096 aux 350 millions d'économies avoués sur la STEP d'Ajaccio : comment l'État organise la dépendance pour alimenter une rente à 6,3 milliards d'euros."
 category: "ÉNERGIE & SOUVERAINETÉ"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "Cellule d'Investigation Énergétique L'OCHJU"
 date: "Octobre 2026"
 tool: "CRE / DREAL Corse (Code AIOT 0007300024) / Légifrance / RNE DINUM / Géorisques / Code de l'Énergie / MRAe / TA Bastia / Bufitonu.fr / KPMG 2026"
-chapeau: "523 mégawatts de potentiel électrique insulaire sont déjà en service en Corse : 220,7 MW d'eau pure dans nos 4 grands barrages et 284,6 MW de soleil captés par 6 319 toitures, fermes et hangars. Face à cette puissance naturelle, la consommation maximale de pointe de toute l'île ne dépasse jamais 400 à 440 MW. La Corse produit déjà plus d'électricité décarbonée sur son sol qu'elle n'en consomme au pire de l'hiver. Pourtant, l'État a voté le 29 juin 2026 une loi qui verrouille nos barrages pour 70 ans au profit exclusif d'EDF, bride le solaire de nos foyers sous un plafond arbitraire de 30 %, et impose une usine thermique de 800 millions d'euros au Ricanto pour brûler 50 000 tonnes de colza importé par pétroliers avec un profit garanti de 10 % par an payé par vos impôts. Pourquoi fabriquer une fausse dépendance quand nos toits et nos rivières suffisent déjà à nous éclairer ? Autopsie chiffrée du grand pillage de nos ressources."
+chapeau: "523 mégawatts de potentiel électrique insulaire sont déjà en service en Corse : 220,7 MW d'eau pure dans nos 4 grands barrages et 284,6 MW de soleil captés par 6 319 toitures, fermes et hangars. Face à cette puissance naturelle, la consommation maximale de pointe de toute l'île ne dépasse jamais 400 MW. Les centrales thermiques du Vazzio et du Ricanto sont techniquement inutiles. Pourtant, l'État a voté le 29 juin 2026 une loi qui verrouille nos barrages pour 70 ans au profit exclusif d'EDF, bride le solaire citoyen sous un plafond arbitraire de 30 %, et impose une usine thermique de 800 millions d'euros au Ricanto pour brûler 50 000 tonnes de colza importé par pétroliers avec un profit garanti de 10 % par an payé par vos impôts. Tandis que l'État accorde une rentabilité garantie de 9,75 % à des consortiums privés continentaux pour une station de pompage (STEP) à Saint-Antoine en actant 350 millions d'euros d'économies nettes, il interdit aux Corses d'équiper leurs propres barrages publics. Autopsie chiffrée d'un hold-up énergétique et colonial."
 image: "img_enquete_18.webp"
 imageCaption: "🎨 Vision Souveraine de l'Énergie Pure — Barrage & Retenue Hydroélectrique Corse sous la Nuit Étoilée | ~194 à 199 MW sous Droits Réels d'État de 70 ans"
 sources:

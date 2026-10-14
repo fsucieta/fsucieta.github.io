@@ -1,14 +1,14 @@
 ---
 id: 18
-title: "The Looting of Our Commons: Corsica's Great Energy Plunder"
-subtitle: "From the 70-year dam lockout to the €111.9M siphon to Paris: forensic autopsy of an organized resource theft."
+title: "The EDF Monopoly & the Colonial Rent System: The Thermal Power Plant Sham vs. Corsica's Resource Abundance"
+subtitle: "From the 70-year dam lockout to the €350M in acknowledged savings on the Ajaccio STEP: how the State engineers dependency to feed a €6.3 billion corporate rent."
 category: "ENERGY & STRATEGIC COMMONS"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "L'OCHJU Energy Investigation Desk"
 date: "October 2026"
 tool: "CRE / Légifrance / RNE DINUM / DREAL Corse / TPE 2026 / DGEC / Energy Code / MRAe / TA Bastia / Bufitonu.fr / KPMG 2026"
-chapeau: "523 megawatts of clean insular capacity are already operational across Corsica: 220.7 MW of mountain hydro in our 4 public dams and 284.6 MW of solar energy harvested by 6,319 certified rooftops, farms, and workshops. Faced with this natural power, Corsica's all-time historical peak winter demand never exceeds 400 to 440 MW. The island already generates more decarbonized electricity on its own soil than it consumes at the height of winter. Yet on June 29, 2026, the French Parliament quietly passed a law locking our dams under a 70-year exclusive concession for EDF, capped citizen solar under an arbitrary 30% curtailment threshold, and imposed an €800 million thermal plant at Ricanto to burn 50,000 tons of continental rapeseed oil shipped by sea with a guaranteed 10% annual return paid from public utility taxes. Why engineer artificial dependency when our roofs and rivers already suffice? Forensic autopsy of an organized resource theft."
+chapeau: "523 megawatts of clean insular capacity are already operational across Corsica: 220.7 MW of mountain hydro in our 4 public dams and 284.6 MW of solar energy harvested by 6,319 certified rooftops, farms, and workshops. Faced with this natural power, Corsica's all-time historical peak winter demand never exceeds 400 MW. The Vazzio and Ricanto thermal plants are technically obsolete and useless. Yet on June 29, 2026, the French State quietly passed a law locking our dams under a 70-year exclusive concession for EDF until 2096, capped citizen solar under an arbitrary 30% curtailment threshold, and imposed an €800 million thermal plant at Ricanto to burn 50,000 tons of continental rapeseed oil shipped by sea with a guaranteed 10% annual return paid from public utility taxes. While the State grants a guaranteed 9.75% return to private mainland conglomerates for a pumped-storage unit (STEP) in Ajaccio while acknowledging €350 million in net public savings, it forbids Corsicans from equipping their own public dams. Forensic autopsy of an organized colonial plunder."
 image: "img_enquete_18.webp"
 imageCaption: "🎨 Sovereign Vision of Pure Energy — Corsican Hydroelectric Dam and Mountain Reservoir under Starlight | ~194 to 199 MW under 70-Year State Rights"
 sources:
