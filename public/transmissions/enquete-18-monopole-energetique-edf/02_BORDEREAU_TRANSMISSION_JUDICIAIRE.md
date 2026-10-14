@@ -29,7 +29,7 @@
 - **Pièce n° 1** : Loi n° 2026-554 du 29 juin 2026 (JO du 30 juin 2026) actant la résiliation des concessions > 4,5 MW et l'octroi d'un droit réel de 70 ans à EDF.
 - **Pièce n° 2** : Arrêté du 18 juin 2024 (NOR : ECOR2410407A) fixant le taux de rémunération du capital du Ricanto à 9,55 %.
 - **Pièce n° 3** : Arrêté du 3 mars 2026 (NOR : VLOL2604227A) dérogeant à la loi Littoral pour la SAS de Saint-Antoine à Ajaccio.
-- **Pièce n° 4** : Délibération CRE n° 2026-111 du 26 mai 2026 (sélection et compensation garantie de 9,75 % de la STEP de Saint-Antoine / Next Step Energy - SIREN 917 529 380).
+- **Pièce n° 4** : Délibération CRE n° 2026-111 du 26 mai 2026 & Arrêté Ministériel du 23 avril 2026 (sélection et compensation garantie de 9,75 % de la STEP de Saint-Antoine / Next Step Energy - SIREN 917 529 380, contrôlée par Sorégies SIREN 450 889 225 et Tenergie SIREN 507 981 140, 12 MWe, dénivelé 540 m, dérogation littoral NOR VLOL2604227A).
 - **Pièce n° 5** : Comptes annuels certifiés d'EDF PEI SAS au 31 décembre 2025 (KPMG SA, 25 mars 2026 - SIREN 503 624 990 : 111,9 M€ de dividendes et 101,7 M€ de provisions pour déconstruction).  
   *Scellement SHA-256 : `48b032a65345ecbfd7b4cd1422a9f148860468a7153257fc47e6aaa3eaec7752`*
 - **Pièce n° 6** : Délibération CRE n° 2024-221 du 5 décembre 2024 (compensation intégrale par la CSPE des coûts d'études préliminaires d'EDF PEI pour Ricanto).

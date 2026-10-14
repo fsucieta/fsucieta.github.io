@@ -21,7 +21,7 @@ sources:
   - name: "Ministry of Ecological Transition : Order of March 3, 2026 (NOR : VLOL2604227A) — Coastal Law Exemption L. 121-12-1 for Saint-Antoine Solar Plant"
     url: "https://www.developpement-durable.gouv.fr"
     sha256: "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
-  - name: "Energy Regulatory Commission (CRE) : Deliberation No. 2026-111 of May 26, 2026 (Saint-Antoine Pumped Storage STEP / Next Step Energy - Guaranteed 9.75% WACC)"
+  - name: "Energy Regulatory Commission (CRE) : Deliberation No. 2026-111 of May 26, 2026 & Ministerial Order of April 23, 2026 (Saint-Antoine Pumped Storage STEP / Next Step Energy - Guaranteed 9.75% WACC from Public Funds)"
     url: "https://www.cre.fr"
     sha256: "f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4"
   - name: "EDF PEI SAS : Certified Annual Accounts as of Dec 31, 2025 (KPMG Audit Report of March 25, 2026 - 58 pages, SIREN 489 967 687)"
@@ -243,16 +243,27 @@ To present a veneer of ecological transition while blocking genuine local initia
 
 For over twenty years, EDF and Paris ministries told Corsican engineers that pumped-storage hydro was impossible on an island.
 
-In spring 2026, the State collapsed its own deception.
-
-By **formal Deliberation No. 2026-111 (May 26, 2026)**, the CRE approved a **12 MW Pumped-Storage Plant** at Saint-Antoine:
+By **formal Deliberation No. 2026-111 (May 26, 2026)**, the CRE approved a **12 MW Pumped-Storage Plant** (12 MWe pumping and generation) at Saint-Antoine overlooking the Gravona catchment in Ajaccio:
 - **€350 million in net public savings** over 30 years compared to thermal oil combustion.
-- **Over 75% round-trip efficiency**, proving water outmatches chemical batteries.
-- **A guaranteed 9.75% annual return** paid from public funds.
+- **Over 75% round-trip efficiency**, plus a **synchronous condenser** function securing island grid inertia without burning a drop of fuel.
+- **A guaranteed 9.75% pre-tax capital return rate** funded directly through public utility taxes under a **Ministerial Order signed on April 23, 2026**.
+- **A Coastal Law ministerial exemption (Order NOR: VLOL2604227A of March 3, 2026)** under Article L. 121-12-1 of the French Urban Planning Code (Decree 2023-1311, maps 5 & 6) on municipal brownfields resulting from a City of Ajaccio tender.
+- **Two 40,000 m³ closed-loop artificial reservoirs** linked by a **540-meter vertical drop** between the valley and the ridge.
+- **First pumped-storage plant built in France since 1985**, scheduled for commissioning in 2029.
 
-Yet the State awarded this framework to private mainland corporate entities (**Next Step Energy / Sorégies**).
+### Corporate Forensics & Shareholder Waterfall (RNE / INPI Registries)
+Yet the State awarded this lucrative public concession not to the island community, but to a cascade of private mainland corporations:
+- **Project Vehicle**: **NEXT STEP ENERGY SAS**, capitalized at a nominal €10,000 (SIREN 917 529 380), registered in Fuveau.
+- **President**: **SOREGIES** (SIREN 450 889 225), a mainland municipal utility group from Poitiers (Vienne), which acquired control in September 2026 to capture public CSPE equalization subsidies.
+- **Chief Executive**: **TENERGIE** (SIREN 507 981 140), renewable developer based in Fuveau.
+- **Original Sponsor**: **ENVINERGY** (Montpellier).
+- **Financial Architecture**: A **€50 million capital investment** underwritten, de-risked, and guaranteed at a 9.75% annual return by island citizens' utility taxes.
 
-### The Math: 12 MW Private Project vs. 100 MW on Public Dams
+### The Monopoly Paradox: 12 MW Private Project vs. 100 MW on Public Dams
+This file lays bare the State's colonial double standard:
+- On one side, the State validates a private 12 MW pumped-storage plant at a 9.75% return for Poitiers and Fuveau conglomerates, **proving scientifically that pumped hydro storage works flawlessly in Corsica**.
+- On the other side, the State enacted Law No. 2026-554 on June 29, 2026, **locking out Corsica's 4 major public dams (220.66 MW) for 70 years under an EDF monopoly until 2096**, preventing the Corsican Territorial Authority from upgrading its own dams.
+
 If a small 12 MW private unit saves **€350 million**, what would equipping our 4 existing public dams achieve?
 1. **Calacuccia (Golo)**: 40 MW reversible pumping would store daytime solar across Haute-Corse to power Bastia every evening.
 2. **Lake Tolla (Prunelli)**: 35 MW reversible pumping would power the Ajaccio metropolitan area without smoke.
@@ -262,7 +273,7 @@ If a small 12 MW private unit saves **€350 million**, what would equipping our
 - Capital retrofit cost: **under €250 million**.
 - Contrast this with the **€800 million** spent on Ricanto and **€6.3 billion** in fuel subsidies!
 
-Equipping public dams costs **three times less to build** and saves **over €2 billion in fuel imports**. The 70-year dam lockout was enacted for one reason: to prevent Corsica from demonstrating total energy independence and breaking EDF's captive monopoly.
+Equipping public dams costs **three times less to build**, eliminates Vazzio's toxic emissions, and saves **over €2 billion in fuel imports**. The 70-year dam lockout was enacted for one reason: to prevent Corsica from demonstrating total energy independence and breaking EDF's captive monopoly.
 
 ---
 

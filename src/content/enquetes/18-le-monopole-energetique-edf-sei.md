@@ -24,7 +24,7 @@ sources:
   - name: "Ministère de la Transition Écologique : Arrêté du 3 mars 2026 (NOR : VLOL2604227A) — Dérogation Loi Littoral L. 121-12-1 pour Saint-Antoine 1 et 2 (Décret 2023-1311, Cartes 5 et 6)"
     url: "https://www.developpement-durable.gouv.fr"
     sha256: "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
-  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2026-111 du 26 mai 2026 (Projet de STEP de Saint-Antoine / Next Step Energy - Rémunération Garantie de 9,75 %)"
+  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2026-111 du 26 mai 2026 & Arrêté Ministériel du 23 avril 2026 (Projet de STEP de Saint-Antoine / Next Step Energy - Rémunération Garantie de 9,75 % sur Fonds Publics)"
     url: "https://www.cre.fr"
     sha256: "f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4"
   - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2024-139 du 11 juillet 2024 & Délibération n° 2024-67 du 4 avril 2024 (Surcoûts CSPE & WACC Ricanto)"
@@ -384,42 +384,84 @@ Mais qui tire les ficelles et sur quel terrain s'installe-t-il ?
 
 ---
 
-## 6. L'ARME SECRÈTE DE L'AUTONOMIE : LES STATIONS À EAU (STEP) QUI CONDAMNENT LE THERMIQUE
+## 6. L'ARME SECRÈTE DE L'AUTONOMIE : LA STEP DE SAINT-ANTOINE PROUVE L'IMPOSTURE DU MONOPOLE
 
-Pendant plus de vingt ans, les dirigeants d'EDF et les ministères ont opposé un refus catégorique à tous les ingénieurs corses : *« Impossible de stocker l'électricité avec de l'eau en Corse. Vos montagnes sont trop escarpées, c'est trop cher, la technique ne marche pas sur une île. »*
+Pendant plus de vingt ans, les états-majors parisiens d'EDF et les ministères successifs ont opposé une fin de non-recevoir catégorique à tous les ingénieurs et élus corses : *« Impossible de stocker l'électricité avec de l'eau en Corse. Vos montagnes sont trop escarpées, le relief ne s'y prête pas, c'est hors de prix, la technologie des STEP ne fonctionne pas sur un réseau insulaire non interconnecté. »*
 
-C'était un mensonge érigé en dogme. Et au printemps 2026, l'État a fini par s'avouer vaincu par ses propres chiffres.
+C'était un dogme fabriqué de toutes pièces pour sanctuariser la rente du fioul lourd. Au printemps 2026, l'État a fini par s'avouer vaincu par ses propres actes administratifs opposables.
 
-### L'Aveu Officiel de la Commission de l'Énergie (Délibération du 26 Mai 2026)
-Par une **décision officielle du 26 mai 2026 (n° 2026-111)**, la Commission de Régulation de l'Énergie a validé le projet d'une station de pompage-turbinage (STEP) de **12 mégawatts** sur les hauteurs de Saint-Antoine, près d'Ajaccio.
+### L'Aveu Officiel de l'État : Délibération CRE n° 2026-111 et Arrêtés Ministériels de 2026
+Par une **décision officielle du 26 mai 2026 (Délibération CRE n° 2026-111)**, la Commission de Régulation de l'Énergie a formellement sélectionné le projet d'une Station de Transfert d'Énergie par Pompage (STEP) de **12 MWe** sur les hauteurs de Saint-Antoine et de l'Arbitrone, surplombant le bassin versant de la Gravona à Ajaccio.
 
-Pour justifier ce projet, les fonctionnaires de l'État ont dû écrire noir sur blanc des aveux qui démolissent vingt ans de propagande :
-- **350 millions d'euros d'économies nettes** d'argent public sur 30 ans par rapport aux moteurs brûlant du carburant.
-- **Un rendement exceptionnel de plus de 75 %**, prouvant que l'eau en circuit fermé stocke l'électricité infiniment mieux que n'importe quelle batterie chimique polluante.
-- **Un taux de profit garanti à 9,75 % par an** sur fonds publics.
-- **Deux bassins d'eau de 40 000 m³** grimpant 540 mètres de dénivelé entre la vallée et la crête.
+Pour valider l'éligibilité de cette infrastructure à la compensation intégrale par la CSPE, les régulateurs ont consigné noir sur blanc des aveux qui anéantissent vingt ans de propagande d'État :
+- **350 millions d'euros d'économies nettes** d'argent public scellées sur 30 ans par rapport aux moteurs thermiques brûlant du combustible importé.
+- **Rendement en cycle fermé supérieur à 75 %**, complété par une fonction de **compensateur synchrone** assurant la stabilité et l'inertie du réseau électrique ajaccien sans brûler une goutte de fioul.
+- **Taux de rémunération garanti avant impôt du capital immobilisé fixé à 9,75 %** sur fonds publics par **Arrêté ministériel du 23 avril 2026**.
+- **Dérogation d'exception à la Loi Littoral accordée par Arrêté ministériel du 3 mars 2026 (NOR : VLOL2604227A)** au visa de l'article L. 121-12-1 du Code de l'urbanisme et du décret 2023-1311 (cartes 5 et 6), sur les friches communales de Saint-Antoine 1 et 2 issues d'un Appel à Manifestation d'Intérêt (AMI) de la Ville d'Ajaccio.
+- **Un calendrier historique** : il s'agit de la toute **première STEP construite en France depuis 1985**, programmée pour une mise en service industrielle en 2029.
 
-Mais à qui l'État a-t-il accordé ce projet en or ? Ni à la Corse, ni à une régie publique, mais à des sociétés privées du continent :
-- **Next Step Energy (SAS au capital de 10 000 €, SIREN 917 529 380)**, venue de Fuveau et de Grenoble.
-- Rejointe en septembre 2026 par le groupe continental **Sorégies** (basé dans la Vienne), venu capter les millions d'euros de subventions publiques prélevées sur nos factures.
+### Autopsie FININT & Cascade Sociétaire (Registres RNE / INPI)
+Mais à qui l'État et la régulation accordent-ils ce filon hautement rémunéré à 9,75 % garanti sur les factures d'électricité des citoyens ? Ni à la Collectivité de Corse, ni à une régie publique territoriale, mais à une cascade de holdings privées continentales venues capter la rente insulaire :
+- **La structure porteuse** : **NEXT STEP ENERGY**, société par actions simplifiée au capital dérisoire de 10 000 euros (SIREN 917 529 380), immatriculée à Fuveau (Bouches-du-Rhône).
+- **La Présidence** : **SOREGIES** (SIREN 450 889 225), entreprise locale de distribution et régie historique du département de la Vienne basée à Poitiers, entrée massivement au capital en septembre 2026 pour capter la manne de la péréquation nationale.
+- **La Direction Générale** : **TENERGIE** (SIREN 507 981 140), développeur basé à Fuveau.
+- **Le partenaire d'origine** : la société de conseil et courtage **ENVINERGY** (Montpellier).
+- **L'équation financière** : **50 millions d'euros d'investissement** entièrement sécurisés, solvabilisés et rémunérés à 9,75 % l'an par la CSPE citoyenne au profit exclusif d'actionnaires extérieurs à l'île.
 
-L'État prouve ainsi lui-même que le stockage par l'eau fonctionne parfaitement en Corse, mais il en confie les profits à des investisseurs extérieurs tout en verrouillant nos grands barrages publics.
+<div class="my-6 not-prose rounded-2xl border border-cyan-500/30 bg-slate-900/90 p-5 md:p-6 shadow-xl space-y-4">
+  <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+      <h4 class="font-sans font-bold text-sm md:text-base text-cyan-400 uppercase tracking-wide">
+        Fiche Forensique : STEP de Saint-Antoine (Ajaccio)
+      </h4>
+    </div>
+    <span class="text-[10px] font-mono bg-cyan-500/10 text-cyan-300 px-2.5 py-1 rounded border border-cyan-500/30">
+      CRE n° 2026-111 SCELLÉE
+    </span>
+  </div>
 
-### La Preuve par Dix : 12 MW Privés contre 100 MW sur nos Barrages Publics
-Si un simple projet privé de **12 MW** permet d'économiser **350 millions d'euros**, qu'obtiendrait-on en équipant les quatre grands barrages publics qui appartiennent déjà à la géographie de notre île ?
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-mono">
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Puissance Pompage/Turbinage</div>
+      <div class="text-cyan-300 font-bold text-base">12 MWe</div>
+      <div class="text-[10px] text-slate-400 mt-1">Fonction compensateur synchrone</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Chute & Topographie</div>
+      <div class="text-cyan-300 font-bold text-base">540 m de Dénivelé</div>
+      <div class="text-[10px] text-slate-400 mt-1">Hauteurs Saint-Antoine / Arbitrone</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Volume des 2 Bassins</div>
+      <div class="text-cyan-300 font-bold text-base">2 x 40 000 m³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Circuit fermé sans pompage rivière</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Rémunération Garantie</div>
+      <div class="text-emerald-400 font-bold text-base">9,75 % / an</div>
+      <div class="text-[10px] text-slate-400 mt-1">Arrêté 23/04/2026 sur fonds CSPE</div>
+    </div>
+  </div>
+</div>
 
-Voici le calcul que Paris refuse d'admettre :
-1. **Calacuccia et le Golo** : Avec 53 millions de m³ d'eau et 400 mètres de chute, une pompe réversible de 40 MW stockerait tout le surplus solaire du nord de l'île pour éclairer Bastia et la Plaine chaque soir.
-2. **Le Lac de Tolla et le Prunelli** : Avec 40 millions de m³ et 600 mètres de dénivelé direct vers Ocana, une pompe réversible de 35 MW alimenterait toute la région d'Ajaccio sans fumée.
-3. **Sampolo et le Fium'Orbo** : 25 MW réversibles pour sécuriser toute la Plaine orientale.
+### Le Paradoxe du Monopole : 12 MW Privés Contre 100 MW sur nos Barrages Publics
+Ce dossier met à nu l'arbitrage colonial de l'État :
+- **D'un côté**, l'État et la CRE valident avec enthousiasme une STEP privée de 12 MW sur deux bassins artificiels à creuser de toutes pièces, rémunérée à 9,75 % sur fonds publics pour des consortiums de Poitiers et de Fuveau, démontrant scientifiquement que **le stockage d'énergie par l'eau fonctionne de manière exemplaire en Corse**.
+- **De l'autre côté**, l'État fait voter le 29 juin 2026 la Loi n° 2026-554 qui **verrouille et cadenasse les 4 grands barrages publics de l'île (220,66 MW) au profit exclusif d'EDF jusqu'en 2096**, tout en interdisant à la Collectivité de Corse d'équiper ses propres retenues existantes.
 
-**Total : 100 MW de batterie d'eau naturelle en circuit fermé.**
-- Coût de cet équipement sur les barrages existants : **moins de 250 millions d'euros**.
-- À comparer avec les **800 millions d'euros** jetés dans la nouvelle usine du Ricanto et ses **6,3 milliards d'euros** de taxes sur 25 ans !
+Examinons ce que donnerait l'application de ce modèle aux retenues déjà bâties et payées par les Corses :
+1. **Calacuccia et le Golo** : Avec 53 millions de m³ d'eau et 400 mètres de chute, une pompe réversible de 40 MW stockerait l'intégralité du surplus solaire diurne de Haute-Corse pour alimenter Bastia et la Plaine orientale chaque soir.
+2. **Le Lac de Tolla et le Prunelli** : Avec 40 millions de m³ et 600 mètres de dénivelé direct vers Ocana, une pompe réversible de 35 MW alimenterait l'agglomération d'Ajaccio sans fumée ni rejet toxique.
+3. **Sampolo et le Fium'Orbo** : 25 MW réversibles pour sécuriser le réseau méridional et oriental.
 
-Les barrages équipés coûteraient **trois fois moins cher à installer** et permettraient d'économiser **plus de 2 milliards d'euros de carburant importé**.
+**Total : 100 MW de stockage hydraulique pur en circuit fermé.**
+- Coût d'équipement sur nos barrages publics existants : **moins de 250 millions d'euros**.
+- À comparer aux **800 millions d'euros** engloutis dans l'usine thermique du Ricanto et ses **6,3 milliards d'euros** de rente CSPE sur 25 ans !
 
-Si l'État refuse de réaliser ces travaux et a verrouillé nos barrages pour 70 ans par la loi du 29 juin 2026, ce n'est pas pour une raison technique : **c'est parce que des barrages publics autonomes mettraient fin au monopole d'EDF et prouveraient que la Corse peut vivre de sa propre énergie.**
+Équiper les barrages publics corses coûterait **trois fois moins cher à l'investissement**, éradiquerait la pollution au Vazzio et économiserait **plus de 2 milliards d'euros de combustible importé**.
+
+Si l'État refuse obstinément de moderniser nos barrages publics et a cadenassé les concessions pour 70 ans, ce n'est pas par obstacle technique : **c'est parce qu'un réseau public corse autonome en circuit fermé signerait l'arrêt de mort immédiat du monopole d'EDF et de la rente du thermique.**
 
 ---
 
