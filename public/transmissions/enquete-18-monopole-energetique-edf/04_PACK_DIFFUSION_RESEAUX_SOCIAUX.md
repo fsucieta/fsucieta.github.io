@@ -1,6 +1,6 @@
-# PACK DE DIFFUSION RÉSEAUX SOCIAUX — LOCHJU-AUDIT-ENQUETE-18
+# PACK DE DIFFUSION RÉSEAUX SOCIAUX — LOCHJU-AUDIT-ENQUETE-18-P1
 > **Enquête** : *Le Vol de nos Ressources : Le Grand Pillage Énergétique de la Corse*  
-> **Catégorie** : ÉNERGIE & SOUVERAINETÉ  
+> **Catégorie** : ÉNERGIE & SOUVERAINETÉ POPULAIRE  
 > **Cellule d'Investigation L'OCHJU** • Norme Forensique ISO/IEC 27037 Scellée  
 > **Lien public officiel** : `https://fsucieta.github.io/enquetes/18-le-monopole-energetique-edf-sei/`
 
@@ -8,108 +8,86 @@
 
 ## VOLET 1 : THREAD D'INVESTIGATION X (TWITTER)
 
-*Spécifications de la doctrine : 9 tweets chirurgicaux, tous strictement sous la limite de 280 caractères, adossés à des pièces d'État opposables et métriques brutes.*
+*Spécifications chirurgicales : 9 tweets d'autorité, tous strictement sous la limite technique de 280 caractères, adossés aux pièces administratives officielles et métriques brutes scellées.*
 
-### Tweet 1/9 (Hook & Cotes)
+### Tweet 1/9 (Hook & Pièce Maîtresse)
 ```text
-🧵 1/9 | LE VOL DE NOS RESSOURCES
+1/9 | SCANDALE ÉNERGÉTIQUE : 523 MW PROPRES SUR L'ÎLE, 6,3 Md€ DE RENTE ET LE RICANTO AU COLZA.
 
-Le Grand Pillage Énergétique de la Corse : comment nos rivières ont été confisquées pour 70 ans.
-
-La Loi n° 2026-554 du 29/06/2026 verrouille nos 4 grands barrages au profit exclusif d'EDF jusqu'en 2096.
-
-Autopsie au bit près. 👇
+Pendant que vos factures explosent, l'autopsie des pièces d'État scelle le pillage méthodique de la Corse.
+Barrages confisqués 70 ans, soleil bridé et rente EDF : enquête ouverte. 🧵👇
 ```
 
 ---
 
-### Tweet 2/9 (Barrages & STEP)
+### Tweet 2/9 (L'Équation Binaire & le Hold-up Hydraulique)
 ```text
-2/9 | 220,66 MW D'EAU PURE CONFISQUÉE
+2/9 | 220,66 MW D'EAU PURE. Calacuccia, Sampolo, Tolla et Rizzanese sont 100 % amortis. Coût : 15 à 20 €/MWh.
 
-Calacuccia, Sampolo, Tolla, Rizzanese : nos barrages sont amortis. Coût : 15 à 20 €/MWh.
-
-Équiper ces retenues en stations de pompage (STEP) pour < 250 M€ couvrirait 100 % de la pointe corse sans brûler une goutte de carburant.
+Mais le 29 juin 2026, l'État a voté la Loi n° 2026-554 accordant 70 ANS d'occupation exclusive à EDF. Nos retenues sont cadenassées jusqu'en 2096 au mépris du CGCT.
 ```
 
 ---
 
-### Tweet 3/9 (Rente Ricanto)
+### Tweet 3/9 (La Rente à 9,55 % & la Taxe CSPE)
 ```text
-3/9 | 6,3 MILLIARDS € DE CSPE & WACC 9,55 %
+3/9 | 9,55 % DE PROFIT GARANTI SANS RISQUE. C'est le rendement net fixé par l'Arrêté ministériel (NOR: ECOR2410407A) pour la centrale thermique du Ricanto à 800 M€.
 
-Au lieu des STEP publiques, l'Arrêté ministériel du 18/06/2024 (NOR: ECOR2410407A) garantit 9,55 % de rendement à EDF PEI sur une usine de 800 M€ au Ricanto.
-
-Une rente de 6,3 Md€ payée sur vos factures (~1 975 €/an par client).
+Cette rente de 6,3 Md€ sur 25 ans est prélevée directement sur vos factures : 1 975 €/an par foyer insulaire.
 ```
 
 ---
 
-### Tweet 4/9 (Axe Agro-Industriel)
+### Tweet 4/9 (Le Pont Maritime du Colza Agro-Industriel)
 ```text
-4/9 | LE PONT MARITIME DU COLZA
-
-Ricanto brûlera 50 000 t/an d'huile de colza importée par navires-citernes depuis la Normandie (Saipol / Groupe Avril).
-
-Au lieu de turbiner l'eau de nos montagnes, l'État finance un convoi permanent de pétroliers aux frais des contribuables.
+4/9 | Pourquoi refuser l'eau de nos montagnes ?
+Le Ricanto brûlera 50 000 t/an d'huile de colza importée par cargos depuis la Normandie (Saipol / Groupe Avril).
+Bilan carbone réel : 262 g CO2/kWh. Le convoi maritime permanent est effacé des bilans territoriaux officiels.
 ```
 
 ---
 
-### Tweet 5/9 (Pollution DREAL Vazzio)
+### Tweet 5/9 (Ce qu'Ajaccio Respire & les Dividendes à Paris)
 ```text
-5/9 | VAZZIO : RAPPORT DREAL DU 19/06/2026
+5/9 | VAZZIO : RAPPORT DREAL DU 19/06/2026 (AIOT 0007300024).
+L'État autorise 625 mg/Nm³ de NOx et des métaux lourds cancérigènes en continu.
 
-Code AIOT : 0007300024. L'inspection officielle consigne ce que respire Ajaccio sous l'AP 2A-2019-12-31-001 :
-• NOx autorisés : 625 mg/Nm³
-• Métaux lourds : 5 mg/Nm³
-• HAP Benzo(a)pyrène cancérigène avéré en continu.
+Pendant ce temps, les comptes certifiés KPMG attestent que 111,9 M€ de dividendes nets ont été virés à Paris le 06/05/2025.
 ```
 
 ---
 
-### Tweet 6/9 (Dividende versé à Paris)
+### Tweet 6/9 (L'Arme des STEP contre le Ricanto)
 ```text
-6/9 | 111,9 M€ DE CASH VIRÉS À PARIS
-
-Pendant qu'on taxe les foyers, la Note 2.1 des comptes certifiés par KPMG (25/03/2026) atteste qu'EDF PEI SAS a versé 111,9 M€ de dividendes nets à son siège parisien avenue de Wagram le 06/05/2025.
-
-Bénéfice net annuel : 176,5 M€.
+6/9 | L'ARME DU SABLIER D'EAU (STEP) :
+Pomper l'eau entre deux barrages avec le soleil le jour, la turbiner le soir.
+Pour < 250 M€ (3x moins cher que le Ricanto), équiper nos retenues publiques couvrirait 100 % de la pointe sans brûler 1 goutte de carburant ni rejeter de fumées.
 ```
 
 ---
 
-### Tweet 7/9 (Verrou Solaire)
+### Tweet 7/9 (Le Soleil Interdit & les 6 319 Toitures Bridées)
 ```text
-7/9 | LE SOLEIL INTERDIT : PLAFOND À 30 %
-
-L'Arrêté du 23/04/2008 (art. 22) autorise EDF à brider les toitures solaires dès 30 % d'injection.
-
-180 MW de toitures citoyennes prêtes à l'emploi (hangars agricoles, artisans) sont rejetées pour protéger la rente du thermique.
+7/9 | LE SOLEIL INTERDIT : 284,6 MW solaires déjà raccordés, mais l'Arrêté du 23/04/2008 impose un bridage dès 30 % d'injection.
+180 MW de hangars agricoles et toitures d'artisans sont bloqués par décret pour sanctuariser la rente du thermique fossile et importé.
 ```
 
 ---
 
-### Tweet 8/9 (Perspective Citoyenne BYAF)
+### Tweet 8/9 (La Riposte Souveraine BYAF)
 ```text
-8/9 | PERSPECTIVE CITOYENNE : LA TRIPLE RIPOSTE
-
-L'OCHJU ne transmet rien à la justice. Ce sont les citoyens qui s'emparent des pièces :
-1. Restitution des 4 barrages (Régie Publique)
-2. Déploiement des STEP réversibles
-3. Abrogation du verrou solaire des 30 %
-
-Vous êtes seuls juges.
+8/9 | Zéro résignation. La solution d'ingénierie publique :
+— Abrogation du décret de 2096 et réquisition d'intérêt général (Art. L. 6 CCP).
+— Création de la Régie Énergétique Publique de Corse.
+— Réaffectation des fonds CSPE vers les STEP et le solaire citoyen.
 ```
 
 ---
 
-### Tweet 9/9 (Munitions Téléchargeables)
+### Tweet 9/9 (Munitions Téléchargeables ISO 27037)
 ```text
-9/9 | TÉLÉCHARGEZ LE DOSSIER SCELLÉ
-
-Toutes les pièces (Loi 2026-554, Arrêté WACC, DREAL AIOT 0007300024, KPMG) sont scellées sous SHA-256 ISO 27037 :
-
+9/9 | Preuves scellées (ISO 27037) pour le peuple : l'OCHJU ne transmet rien aux juges.
+Kit Presse, Bordereau et Note pour sommer vos élus :
 🔗 https://fsucieta.github.io/enquetes/18-le-monopole-energetique-edf-sei/
 
 Le Savoir partagé est notre contre-pouvoir.
@@ -119,59 +97,64 @@ Le Savoir partagé est notre contre-pouvoir.
 
 ## VOLET 2 : PUBLICATION MAÎTRESSE FACEBOOK (FORMAT D'AUTORITÉ SANS ÉMOJIS)
 
-*Spécifications : Style magistrat instructeur, zéro émoji, séparateurs de lignes d'autorité '--------------------------------------------------------' et tirets cadratins '—'.*
+*Spécifications médico-légales : Posture du Magistrat Instructeur Impassible, zéro émoji, séparateurs de lignes d'autorité '────────────────────────────────────────────────────────', tirets cadratins '—' et adossement exclusif aux cotes publiques opposables.*
 
 ```text
-L'OTAGE ÉLECTRIQUE : POURQUOI LA CORSE N'A PAS LE DROIT DE VIVRE DE SA PROPRE ÉNERGIE
+CELLULE D'INVESTIGATION L'OCHJU — RAPPORT D'INSTRUCTION FORENSIQUE N° 18
+SYSTÈME ÉNERGÉTIQUE DE LA CORSE — CONFISCATION HYDRAULIQUE ET RENTE DU RICANTO
 
-De la confiscation des grands barrages pour 70 ans aux 800 millions d'euros du Ricanto : autopsie chiffrée d'un hold-up énergétique.
+Pendant que chaque foyer insulaire s'acquitte d'un surcoût moyen de 1 975 euros par an au titre de la taxe CSPE et que les coupures menacent les hivers froids, 523 mégawatts d'énergie propre et souveraine sont d'ores et déjà installés sur notre terre face à un pic historique de consommation qui ne dépasse jamais 400 mégawatts.
 
---------------------------------------------------------
-1. LE CONSTAT MÉDICO-LÉGAL SUR PIÈCES D'ÉTAT
---------------------------------------------------------
-L'examen contradictoire des actes administratifs, des bilans certifiés et des décisions ministérielles établit la mécanique d'une captivité insulaire totale :
+L'autopsie clinique des actes administratifs d'État, des liasses certifiées par commissaire aux comptes et des données cadastrales et satellitaires scelle l'anatomie d'une spoliation méthodique de nos ressources naturelles.
 
-— Confiscation des 4 Grands Barrages (Loi n° 2026-554 du 29 juin 2026) :
-L'État supprime le régime historique des concessions et accorde à EDF un droit d'occupation exclusif de 70 ans. Les 220,66 MW d'hydroélectricité corse (Calacuccia, Sampolo, Tolla, Rizzanese) sont cadenassés jusqu'en 2096, contournant l'article L. 4424-39 du CGCT.
+────────────────────────────────────────────────────────
+1. L'ANATOMIE DU PILLAGE : L'IMPÔT INVISIBLE ET LA RENTE À 10 % GARANTIE
+────────────────────────────────────────────────────────
+Par Arrêté ministériel du 18 juin 2024 (NOR : ECOR2410407A), l'État a fixé à 9,55 % net avant impôt le taux de rentabilité garanti accordé à la société EDF PEI SAS (SIREN 489 967 687) pour la construction de la centrale thermique du Ricanto à Ajaccio, évaluée à plus de 800 millions d'euros.
 
-— La Rente Garantie du Ricanto (Arrêté du 18 juin 2024 NOR ECOR2410407A) :
-Un taux de rémunération du capital de 9,55 % net avant impôt garanti à EDF PEI sur une usine de 800 millions d'euros. Surcoût payé par l'impôt (taxe CSPE) : 6,3 milliards d'euros sur 25 ans (~1 975 € par an et par foyer insulaire).
+Ce mécanisme financier, garanti sans le moindre aléa d'exploitation pour l'opérateur, organise le prélèvement d'une rente publique de 6,3 milliards d'euros sur vingt-cinq ans via la Contribution au Service Public de l'Électricité (CSPE).
 
-— Le Pont Maritime de l'Agro-Industrie :
-50 000 tonnes par an d'huile de colza raffinée importée de métropole (Saipol / Groupe Avril) sous pavillon de navires-citernes pour alimenter les moteurs d'Ajaccio et Bastia, subventionné à 100 % par les fonds publics.
+Tandis que ce surcoût est répercuté sur l'impôt citoyen, la Note 2.1 de l'annexe aux comptes certifiés sans réserve par KPMG en date du 25 mars 2026 atteste noir sur blanc qu'EDF PEI SAS a procédé le 6 mai 2025 à la distribution de 111,9 millions d'euros de dividendes nets, intégralement virés à son actionnaire unique au siège parisien de l'avenue de Wagram, sur un résultat net annuel de 176,5 millions d'euros.
 
-— L'Inspection DREAL du Vazzio (Rapport du 19 juin 2026 - Code AIOT 0007300024) :
-Poursuite autorisée des rejets atmosphériques au-dessus d'Ajaccio sous l'arrêté préfectoral 2A-2019-12-31-001 : oxydes d'azote à 625 mg/Nm³, métaux lourds cumulés à 5 mg/Nm³ et présence continue de Benzo(a)pyrène cancérigène.
+────────────────────────────────────────────────────────
+2. LA CONFISCATION DES 4 GRANDS BARRAGES JUSQU'EN 2096 (LOI N° 2026-554)
+────────────────────────────────────────────────────────
+Le 29 juin 2026, l'Assemblée nationale a promulgué la Loi n° 2026-554. Son article 3 résilie unilatéralement les concessions hydrauliques historiques pour octroyer à l'exploitant national un droit d'occupation exclusif du domaine public hydroélectrique pour une durée sans précédent de soixante-dix ans.
 
-— Dividendes Virés à Paris (Note 2.1 des Comptes Certifiés KPMG du 25 mars 2026) :
-111,9 millions d'euros nets prélevés sur EDF PEI et transférés le 6 mai 2025 au siège parisien avenue de Wagram, sur un bénéfice net annuel de 176,5 millions d'euros.
+Les 4 grands barrages de retenue de l'île — Calacuccia, Sampolo, Tolla et le Rizzanese —, totalisant 220,66 mégawatts de puissance pure, sont ainsi cadenassés jusqu'en 2096.
 
---------------------------------------------------------
-2. LA PREUVE DU MENSONGE : L'ARME DES STEP RÉVERSIBLES
---------------------------------------------------------
-La Commission de Régulation de l'Énergie a elle-même détruit l'argument d'impossibilité technique en validant le 26 mai 2026 (Délibération 2026-111) une station de pompage (STEP) privée de 12 MW à Saint-Antoine, actant 350 millions d'euros d'économies pour les finances publiques.
+Ces ouvrages monumentaux ont été payés, construits sur le sol insulaire et intégralement amortis depuis plusieurs décennies. Le coût de revient de leur électricité oscille entre 15 et 20 euros le mégawattheure. En confisquant cette eau jusqu'à la fin du siècle, l'État interdit à la collectivité territoriale d'exercer ses compétences légales de dévolution hydroélectrique (Article L. 4424-39 du Code général des collectivités territoriales) et maintient l'île sous la dépendance artificielle des carburants importés.
 
-Équiper les barrages publics de Calacuccia, Tolla et Sampolo en STEP (100 MW réversibles en circuit fermé) :
-— Coûterait moins de 250 millions d'euros (trois fois moins cher que le Ricanto).
-— Couvrirait 100 % de la pointe de consommation sans brûler une goutte de carburant.
-— Annulerait l'importation des 50 000 tonnes de colza et économiserait 2 milliards d'euros.
+────────────────────────────────────────────────────────
+3. L'ARME DES STATIONS DE POMPAGE (STEP) CONTRE L'USINE DU RICANTO
+────────────────────────────────────────────────────────
+Pour justifier le chantier thermique du Ricanto et l'importation massive de 50 000 tonnes par an d'huile de colza raffinée par chimiquiers depuis la métropole (contrat Saipol / Groupe Avril générant 262 grammes de CO2 par kilowattheure), l'argumentaire officiel invoque l'intermittence des énergies renouvelables et l'absence de stockage.
 
---------------------------------------------------------
-3. LES MUNITIONS CITOYENNES & RÈGLE DE SOUVERAINETÉ (BYAF)
---------------------------------------------------------
-La Cellule d'Investigation L'OCHJU ne dépose aucune plainte auprès des juridictions. Elle forge les preuves certifiées et les met à la disposition exclusive des citoyens.
+Cet argument est balayé par les données de l'ingénierie hydraulique :
+— Le principe de la Station de Transfert d'Énergie par Pompage (STEP) fonctionne à la manière d'un sablier d'eau perpétuel en circuit fermé. Les pompes réversibles utilisent le surplus solaire de la journée pour remonter l'eau dans la retenue haute, avant de la turbiner à la tombée de la nuit lors du pic de consommation de 20 heures.
+— Équiper les retenues existantes de Calacuccia, Sampolo et Tolla représenterait une capacité de stockage et de déstockage instantané de 100 mégawatts.
+— L'investissement global d'ingénierie hydraulique s'élève à moins de 250 millions d'euros, soit plus de trois fois moins que la centrale thermique d'Ajaccio. Il couvrirait l'intégralité du pic de soirée sans émettre un gramme de polluant et économiserait 2 milliards d'euros de carburant importé sur le cycle d'exploitation.
 
-Vous êtes entièrement libres de vos actes et de vos jugements. Les pièces officielles sont désormais publiques et opposables.
+La faisabilité de cette technologie en Corse n'est pas une hypothèse théorique : la Commission de Régulation de l'Énergie l'a elle-même validée le 26 mai 2026 (Délibération CRE n° 2026-111) en actant 350 millions d'euros d'économies pour les finances publiques sur une STEP privée de 12 mégawatts à Saint-Antoine.
 
-Trois dossiers téléchargeables sont mis à votre disposition :
-— Le Kit de Presse d'Investigation (Grade ICIJ / OCCRP).
-— Le Bordereau de Transmission Juridique (Recours Conseil d'État et CRE).
-— La Note d'Interpellation Parlementaire (Propositions d'amendements législatifs).
+────────────────────────────────────────────────────────
+4. LE SOLEIL INTERDIT : 284 MW ET 6 319 TOITURES BRIDÉES PAR DÉCRET
+────────────────────────────────────────────────────────
+Sur le front photovoltaïque, 284,6 mégawatts sont déjà en service à travers 163 communes insulaires. Pourtant, l'Arrêté ministériel du 23 avril 2008 (Article 22) maintient un plafond d'injection arbitraire fixé à 30 % sur le réseau insulaire non interconnecté.
 
---------------------------------------------------------
-ACCÈS DIRECT AU DOSSIER D'INSTRUCTION
---------------------------------------------------------
-L'enquête complète, la cartographie interactive et les pièces scellées sous hachages SHA-256 ISO 27037 sont consultables en accès libre :
+Dès que la production solaire dépasse ce seuil mathématique, l'opérateur de réseau coupe ou bride les installations citoyennes. Plus de 180 mégawatts de toitures d'artisans, d'entreprises locales et de hangars agricoles sont ainsi rejetés ou paralysés chaque année pour préserver la part thermique garantie au Ricanto et à Lucciana.
+
+Au Vazzio, le rapport officiel d'inspection environnementale de la DREAL Corse du 19 juin 2026 (Code AIOT 0007300024) confirme que l'arrêté préfectoral 2A-2019-12-31-001 continue d'autoriser le rejet d'oxydes d'azote jusqu'à 625 mg/Nm³, de métaux lourds à 5 mg/Nm³ et de Benzo(a)pyrène cancérigène au-dessus du golfe d'Ajaccio.
+
+────────────────────────────────────────────────────────
+5. LE CADRE DE RIPOSTE CITOYENNE SOUVERAINE (BYAF)
+────────────────────────────────────────────────────────
+La Cellule d'Investigation L'OCHJU ne transmet aucun document aux juridictions. Elle ne dépose pas de plainte en lieu et place des citoyens. Les preuves médico-légales sont scellées sous le standard international ISO/IEC 27037 et mises directement entre les mains du peuple corse, seul détenteur de la souveraineté :
+— L'Article L. 6 du Code de la commande publique confère le pouvoir régalien de prononcer la résiliation unilatérale pour motif d'intérêt général des montages financiers exorbitants du Ricanto.
+— La contestation pour excès de pouvoir devant le Conseil d'État de la Loi n° 2026-554 au visa de l'article L. 4424-39 du CGCT permet d'exiger la dévolution immédiate des 4 concessions hydroélectriques à la Collectivité de Corse.
+— La constitution d'une Régie Énergétique Publique de Corse offre le cadre de gestion démocratique pour réallouer les flux financiers de la CSPE vers l'équipement immédiat de nos barrages en STEP réversibles.
+
+Conformément au principe de souveraineté populaire, l'ensemble des pièces brutes de l'enquête, la cartographie interactive des 163 communes solaires, le Kit Presse d'Investigation, le Bordereau de Transmission Juridique et la Note d'Interpellation Parlementaire sont consultables et téléchargeables en accès libre :
 
 https://fsucieta.github.io/enquetes/18-le-monopole-energetique-edf-sei/
 
@@ -181,35 +164,89 @@ Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se 
 
 ---
 
-## VOLET 3 : TIKTOK & INSTAGRAM REELS (LÉGENDE SANS LIEN DIRECT & MATRICE DES 7 SLIDES)
+## VOLET 3 : CARROUSEL PHOTO TIKTOK (FORMAT RÉGLEMENTAIRE ENQUÊTES #04 & #07)
 
-*Spécifications : Zéro lien web direct dans la légende (anti-shadowban algorithmique), appel exclusif au lien en bio. Safe-zones respectées (Top 220px, Bottom 340px, Right 170px), message confiné dans le Golden Sweet Spot (35 % - 65 %).*
+*Conforme à la règle sanctuarisée RULE[tiktok_viral_investigative_carousel] : structure 4 cartouches, zéro lien brut dans la légende, safe-zones 9:16 sanctuarisées, et premier commentaire épinglé pour booster la rétention.*
 
-### Légende TikTok / Reels
+### 1. Légende / Description du Post (Copier-Coller Direct TikTok)
 ```text
-L'OTAGE ÉLECTRIQUE : POURQUOI LA CORSE N'A PAS LE DROIT DE VIVRE DE SA PROPRE ÉNERGIE
+523 mégawatts d’énergie propre déjà installés sur notre île pour une pointe qui ne dépasse jamais 400 MW... Pourtant, chaque foyer corse paie 1 975 € par an de surcoût sur sa facture. ⚡⚖️
 
-La loi du 29 juin 2026 a verrouillé nos 4 grands barrages pour 70 ans au profit d'EDF.
-Pendant ce temps, une centrale thermique à 800 millions d'euros brûlera 50 000 tonnes de colza importé par bateau aux frais des contribuables.
+Voici l'autopsie d'un hold-up énergétique méthodique où l'État et le monopole confisquent notre eau pour imposer du carburant importé :
 
-Pourquoi refuse-t-on d'équiper nos barrages en batteries d'eau (STEP) ?
+🚨 ALERTE CITOYENNE :
+Le 29 juin 2026, l'État a voté en catimini la Loi n° 2026-554. Son article 3 résilie les concessions hydrauliques et accorde 70 ANS d'occupation exclusive à EDF. Nos 4 grands barrages (Calacuccia, Sampolo, Tolla, Rizzanese), amortis depuis des décennies et produisant une eau pure à 15 €/MWh, sont cadenassés jusqu'en 2096 pour nous obliger à brûler du thermique subventionné à 400 €/MWh !
 
-Tous les actes administratifs, arrêtés préfectoraux et liasses certifiées sont scellés sous norme ISO 27037.
+💥 LES RÉVÉLATIONS FACTUELLES (DONNÉES OFFICIELLES) :
+• Rente garantie de 9,55 % net sans risque fixée par Arrêté ministériel (NOR: ECOR2410407A) pour la centrale thermique du Ricanto à Ajaccio (800 M€ de chantier). Une rente de 6,3 milliards d'euros sur 25 ans payée par la taxe CSPE sur vos factures.
+• Le pont maritime de l'absurde : le Ricanto brûlera 50 000 tonnes par an d'huile de colza importée par navires-citernes depuis la Normandie (Saipol / Groupe Avril). Bilan carbone réel : 262 g CO2/kWh. Le transport maritime par cargos est opportunément effacé des bilans officiels.
+• Pollution au Vazzio (Rapport DREAL du 19/06/2026 - AIOT 0007300024) : 625 mg/Nm³ d'oxydes d'azote autorisés et Benzo(a)pyrène cancérigène au-dessus d'Ajaccio. Pendant ce temps, 111,9 M€ de dividendes nets ont été virés à Paris le 6 mai 2025 (comptes certifiés KPMG).
+• Le soleil interdit : 284 MW solaires en service, mais l'Arrêté du 23/04/2008 bloque l'injection dès 30 %. Plus de 180 MW de toitures agricoles et d'artisans sont bridés par décret pour protéger la rente du thermique.
 
-DOSSIER D'INSTRUCTION COMPLET DANS LE LIEN EN BIO.
+✊ NOTRE PLAN DE RECONQUÊTE CITOYENNE :
+1️⃣ Activer l'arme des STEP (Stations de Transfert d'Énergie par Pompage) : équiper Calacuccia, Sampolo et Tolla en circuit fermé réversible pour moins de 250 M€ (3 fois moins cher que le Ricanto). Pomper avec le soleil le jour, turbiner le soir au pic : 100 % de la pointe couverte sans 1 goutte de carburant et 2 milliards d'euros économisés.
+2️⃣ Résiliation unilatérale pour motif d'intérêt général (Art. L. 6 Code de la commande publique) et abrogation de la loi de confiscation de 2096.
+3️⃣ Création d'une Régie Énergétique Publique de Corse pour restituer les barrages et l'énergie à prix coûtant aux résidents.
 
-#Corse #Corsica #Investigation #Lochju #Energie #Scandale #Justice
+📲 PASSE À L'ACTION :
+Retrouve l'enquête médico-légale intégrale, la cartographie interactive des 163 communes solaires et télécharge nos munitions juridiques scellées ISO 27037 :
+👉 Enquête complète & Dossier : Lien direct dans notre profil / bio (fsucieta.github.io).
+
+#Corse #Corsica #Energie #Scandale #Investigation #Ricanto #EDF #ArgentPublic #Justice #OpenData
 ```
 
-### Matrice Visuelle des 7 Slides Carrousel (Format 9:16 — 1080x1920)
+### 2. Premier Commentaire Épinglé (Engagement & Débat Citoyen)
+```text
+⚠️ Précision d'audit médico-légal et d'utilité publique :
+Toutes les données de ce carrousel sont extraites des pièces officielles d'État scellées sous norme ISO/IEC 27037 : Loi n° 2026-554 du 29 juin 2026, Arrêté ministériel NOR ECOR2410407A, Rapport d'inspection DREAL Corse AIOT 0007300024, Délibération CRE n° 2026-111 et comptes certifiés sans réserve par KPMG. Aucune allégation sans document authentique vérifiable.
 
-| Slide | Foyer Central (Golden Sweet Spot 35 % - 65 %) | Équation Binaire du Scandale | Cote Forensique Scellée |
-| :--- | :--- | :--- | :--- |
-| **01 (Hook)** | **L'OTAGE ÉLECTRIQUE**<br>*Vos barrages verrouillés jusqu'en 2096* | 220 MW d'eau pure corse **VS** 70 ans de monopole concédé à Paris | Loi n° 2026-554 du 29 juin 2026 |
-| **02 (Barrages)** | **220,66 MW CONFISQUÉS**<br>*L'énergie la moins chère de l'île interdite* | 15 €/MWh (coût de l'eau) **VS** 400 €/MWh (thermique subventionné) | Registre National ODRÉ / RTE |
-| **03 (Ricanto)** | **LA RENTE DU RICANTO**<br>*800 M€ de chantier, 10 % de profit garanti* | 9,55 % net garanti sans risque **VS** 6,3 Milliards € payés par l'impôt | Arrêté NOR : ECOR2410407A |
-| **04 (Colza)** | **LE PONT MARITIME**<br>*50 000 tonnes de colza par pétroliers* | 0 goutte d'eau locale turbinée **VS** Convoi permanent de chimiquiers | Contrat Saipol / Groupe Avril |
-| **05 (Vazzio)** | **CE QU'AJACCIO RESPIRE**<br>*Rapport d'inspection officiel DREAL* | 625 mg/Nm³ de NOx autorisés **VS** Cocktail de métaux lourds cancérigènes | Code AIOT : 0007300024 |
-| **06 (STEP)** | **L'ARME DES STEP INTERDITE**<br>*100 MW de batteries d'eau naturelles* | < 250 M€ d'équipement public **VS** 800 M€ engloutis dans le thermique | Délibération CRE n° 2026-111 |
-| **07 (Riposte)** | **VOS MUNITIONS LÉGALES**<br>*Téléchargez le dossier d'instruction* | Zéro plainte par la Cellule **VS** Souveraineté populaire entre vos mains | Lien en Bio • `fsucieta.github.io` |
+💬 Trois questions directes pour les habitants de Corse :
+1️⃣ Saviez-vous que nos 4 grands barrages d'eau pure sont 100 % amortis et que leur électricité ne coûte que 15 €/MWh face aux 400 €/MWh du thermique importé ?
+2️⃣ Que pensez-vous du fait que 111,9 millions d'euros de dividendes d'EDF PEI aient été transférés à Paris pendant qu'on fait payer 1 975 € de taxe annuelle par foyer corse ?
+3️⃣ Êtes-vous favorables à équiper nos barrages publics en batteries d'eau (STEP) pour stocker notre propre soleil plutôt que d'importer 50 000 tonnes de colza par bateau ?
 
+📥 Le dossier d'instruction complet, le Kit Presse d'investigation, le Bordereau juridique Conseil d'État/CRE et la Note d'interpellation des élus sont en libre accès dans le lien de notre profil (https://fsucieta.github.io/enquetes/18-le-monopole-energetique-edf-sei/). Enregistrez 💾 et partagez ce post pour faire éclater la vérité.
+```
+
+### 3. Inventaire des 7 Slides Master Cinéma (Dossier `docucu/CARROUSEL_TIKTOK_ENQUETE_18`)
+
+| Slide | Fichier sur disque | Type de Cartouche | Titrage & Golden Sweet Spot (35 % - 65 %) | Équation Binaire & Révélation Forensique |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | `01_SLIDE_1_HOOK.jpg` | **Équation Binaire** | **LE VOL DE NOS RESSOURCES :**<br>LE GRAND PILLAGE ÉNERGÉTIQUE. | **220 MW** (Eau pure amortie) **VS** **70 ANS** (Monopole confisqué)<br>Loi n° 2026-554 du 29/06/2026 : barrages cadenassés jusqu'en 2096. |
+| **02** | `02_SLIDE_2_BARRAGES_AMORTIS.jpg` | **Équation Binaire** | **220,66 MW D'HYDRO.**<br>UN COÛT DE 15 €/MWH. | **15 € / MWh** (Coût réel de l'eau) **VS** **400 € / MWh** (Thermique importé)<br>Calacuccia, Sampolo, Tolla, Rizzanese sont 100 % amortis. |
+| **03** | `03_SLIDE_3_RENTE_RICANTO.jpg` | **Équation Binaire** | **800 MILLIONS D'USINE.**<br>9,55 % DE PROFIT GARANTI. | **9,55 %** (Rentabilité garantie) **VS** **6,3 Md€** (Taxe CSPE sur vos factures)<br>Arrêté NOR ECOR2410407A : 1 975 €/an par foyer insulaire. |
+| **04** | `04_SLIDE_4_COLZA_IMPORTATION.jpg` | **Document Officiel** | **LE PONT MARITIME :**<br>50 000 TONNES DE COLZA. | Contrat Saipol / Groupe Avril : convoi permanent de navires chimiquiers.<br>Bilan carbone réel : **262 g CO2/kWh**. |
+| **05** | `05_SLIDE_5_POLLUTION_VAZZIO_PARIS.jpg` | **Document Officiel** | **VAZZIO : RAPPORT DU 19/06/2026.**<br>CE QU'AJACCIO RESPIRE. | DREAL AIOT 0007300024 : 625 mg/Nm³ NOx, métaux lourds et Benzo(a)pyrène.<br>KPMG : **111,9 M€ de dividendes nets** virés à Paris le 06/05/2025. |
+| **06** | `06_SLIDE_6_SOLUTION_STEP.jpg` | **Équation Binaire** | **L'ARME DES STEP :**<br>100 MW DE BATTERIES D'EAU. | **< 250 M€** (Équiper nos barrages) **VS** **800 M€** (Engloutis au Ricanto)<br>Circuit fermé réversible : 100 % de la pointe couverte, 2 Md€ économisés. |
+| **07** | `07_SLIDE_7_CALL_TO_ACTION.jpg` | **Grand Logo & CTA** | **NE SUBISSEZ PLUS.**<br>SAISISSEZ LES ARMES DE DROIT. | **Grand Logo Officiel Doré L'OCHJU** + Sceau ISO/IEC 27037<br>Bordereau Juridique CE/CRE, Note d'Élus & Kit Presse : **DOSSIER EN BIO**. |
+
+---
+
+## VOLET 4 : PUBLICATION STRATÉGIQUE LINKEDIN (FINANCES PUBLIQUES & SOUVERAINETÉ)
+
+*Spécifications : Registre économique de haut niveau, gouvernance territoriale, régulation CRE et souveraineté énergétique.*
+
+```text
+SOUVERAINETÉ ÉNERGÉTIQUE ET FINANCES PUBLIQUES : L'AUTOPSIE DU MODÈLE CORSE
+
+Peut-on justifier qu'un territoire insulaire disposant de 523 mégawatts de capacités renouvelables installées pour une pointe de 400 mégawatts dépende à 70 % d'importations thermiques et d'un surcoût CSPE de plus de 6 milliards d'euros ?
+
+L'enquête médico-légale menée par la Cellule d'Investigation L'OCHJU sur les pièces d'État opposables met en lumière les arbitrages de régulation qui verrouillent la transition énergétique en Corse :
+
+1. LE RENDEMENT REGULATOIRE DÉCONNECTÉ DU RISQUE INDUSTRIEL (WACC À 9,55 %)
+Par Arrêté ministériel du 18 juin 2024 (NOR: ECOR2410407A), la rémunération du capital allouée à EDF PEI pour la nouvelle centrale du Ricanto (800 M€) a été fixée à un taux garanti de 9,55 % net avant impôt. Dans un cadre où l'aléa de marché et le risque de volume sont intégralement neutralisés par la compensation de péréquation CSPE, ce taux s'apparente à une rente d'infrastructure sans risque économique.
+
+2. L'ÉVICTION DU STOCKAGE HYDRAULIQUE AU PROFIT D'UN PONT MARITIME AGRO-INDUSTRIEL
+La modélisation technique démontre qu'équiper les retenues existantes de Calacuccia, Sampolo et Tolla en Stations de Transfert d'Énergie par Pompage (STEP) réversibles pour moins de 250 millions d'euros permettrait de couvrir la totalité de la pointe du soir par arbitrage solaire/hydroélectrique. 
+Le choix d'orienter le mix vers l'importation de 50 000 tonnes par an d'huile de colza par navires chimiquiers (262 g CO2/kWh) obère la décarbonation réelle tout en transférant 111,9 millions d'euros de dividendes annuels hors de l'île (comptes certifiés KPMG 2026).
+
+3. LE COUPE-CIRCUIT DES 30 % SUR LE PHOTOVOLTAÏQUE LOCAL
+L'application de l'article 22 de l'Arrêté du 23 avril 2008 fige l'injection intermittente à un plafond de 30 % du réseau insulaire. Ce verrou réglementaire paralyse plus de 180 MW de projets solaires sur toitures agricoles et industrielles au détriment des filières d'ingénierie locales.
+
+Une alternative existe : l'application de l'article L. 6 du Code de la commande publique pour réviser les schémas directeurs, la mise en œuvre de la dévolution hydroélectrique (Art. L. 4424-39 CGCT) et la création d'une Régie Énergétique Publique de Corse.
+
+L'intégralité du dossier médico-légal, les pièces sous hachages SHA-256 ISO/IEC 27037 et le bordereau de transmission juridique sont disponibles en libre accès :
+https://fsucieta.github.io/enquetes/18-le-monopole-energetique-edf-sei/
+
+#Energie #FinancePublique #Gouvernance #TransitionEnergetique #Corse #Enquete #Infrastructure
+```

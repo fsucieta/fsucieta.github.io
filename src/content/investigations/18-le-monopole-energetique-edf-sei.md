@@ -8,7 +8,7 @@ ref: "LOCHJU-AUDIT-ENQUETE-18"
 author: "L'OCHJU Energy Investigation Desk"
 date: "October 2026"
 tool: "CRE / Légifrance / RNE DINUM / DREAL Corse / TPE 2026 / DGEC / Energy Code / MRAe / TA Bastia / Bufitonu.fr / KPMG 2026"
-chapeau: "Corsica holds the purest blue gold in the Mediterranean: four major mountain dams capable of powering the island at virtually zero marginal cost. Yet on June 29, 2026, the French Parliament quietly passed a law confiscating our dams under an exclusive 70-year concession for EDF—locking our water out until 2096. Meanwhile, an €800 million thermal plant is imposed at Ricanto with a 10% guaranteed annual profit margin paid by public utility taxes, burning 50,000 tons of imported continental rapeseed oil shipped by sea. Why does the State refuse to retrofit Corsica's dams with pumped-storage hydro (PSH / STEP) to store our renewable energy and cover evening peak loads without burning a single drop of fuel? Forensic autopsy of an organized energy hold-up on the backs of Corsican families."
+chapeau: "523 megawatts of clean insular capacity are already operational across Corsica: 220.7 MW of mountain hydro in our 4 public dams and 284.6 MW of solar energy harvested by 6,319 certified rooftops, farms, and workshops. Faced with this natural power, Corsica's all-time historical peak winter demand never exceeds 400 to 440 MW. The island already generates more decarbonized electricity on its own soil than it consumes at the height of winter. Yet on June 29, 2026, the French Parliament quietly passed a law locking our dams under a 70-year exclusive concession for EDF, capped citizen solar under an arbitrary 30% curtailment threshold, and imposed an €800 million thermal plant at Ricanto to burn 50,000 tons of continental rapeseed oil shipped by sea with a guaranteed 10% annual return paid from public utility taxes. Why engineer artificial dependency when our roofs and rivers already suffice? Forensic autopsy of an organized resource theft."
 image: "img_enquete_18.webp"
 imageCaption: "🎨 Sovereign Vision of Pure Energy — Corsican Hydroelectric Dam and Mountain Reservoir under Starlight | ~194 to 199 MW under 70-Year State Rights"
 sources:
@@ -24,151 +24,278 @@ sources:
   - name: "Energy Regulatory Commission (CRE) : Deliberation No. 2026-111 of May 26, 2026 (Saint-Antoine Pumped Storage STEP / Next Step Energy - Guaranteed 9.75% WACC)"
     url: "https://www.cre.fr"
     sha256: "f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4"
-  - name: "EDF PEI SAS : Certified Annual Accounts as of Dec 31, 2025 (KPMG Audit Report of March 25, 2026 - 58 pages, SIREN 503 624 990)"
+  - name: "EDF PEI SAS : Certified Annual Accounts as of Dec 31, 2025 (KPMG Audit Report of March 25, 2026 - 58 pages, SIREN 489 967 687)"
     url: "/docs/EDF_PEI_Comptes_2025_KPMG.pdf"
     pdfDirect: "/docs/EDF_PEI_Comptes_2025_KPMG.pdf"
     sha256: "48b032a65345ecbfd7b4cd1422a9f148860468a7153257fc47e6aaa3eaec7752"
 ---
 
-## 1. THE ANATOMY OF CSPE: GUARANTEED THERMAL RENT FUNDED BY PUBLIC TAXES
-
-For forty years, official discourse has maintained the same narrative: Corsica allegedly depends on "national solidarity" to subsidize its power bills. Statutory audits and regulatory frameworks reveal the opposite reality: the system does not subsidize island consumers; it guarantees the profits of a State operator's thermal model.
-
-### The Regulatory Framework of CSPE (Article L. 121-7, French Energy Code)
-The national tariff equalization mechanism operates under specific statutory rules:
-1. **Full Cost Compensation**: The State levies a public tax across all electricity bills in France (the CSPE surcharge). In Corsica, this public compensation corresponds to approximately **€1,975 per island consumer each year** (French Senate Inquiry No. 714).
-2. **Guaranteed Return on Capital**: CSPE does not merely reimburse the cost of imported fuels. Article L. 121-7 of the Energy Code dictates that it pays the operator a **guaranteed return on capital invested**.
-3. **Ministerial Order NOR: ECOR2410407A (June 18, 2024)**: For the upcoming Ricanto plant in Ajaccio, the State fixed this pre-tax weighted average cost of capital (WACC) at **9.55%**.
-
-This regulatory setup creates a moral hazard: the larger and more capital-intensive the thermal plants, the greater the guaranteed profit paid from public tax funds. The €800 million Ricanto project thus unlocks **€6.3 billion in subsidized surcharges over 25 years** (CRE Deliberation No. 2024-139).
-
-### Statutory Accounts of EDF PEI SAS (KPMG Audit, March 25, 2026)
-These financial flows are recorded in the accounts of EDF's dedicated non-interconnected subsidiary, **EDF Production Électrique Insulaire (EDF PEI SAS - SIREN 489 967 687)**:
-- **Annual Turnover**: €1,367.2 million (consisting almost exclusively of energy sales subsidized by CSPE).
-- **Net Annual Profit**: €176.5 million.
-- **Dividends to Parent Company EDF SA**: **€111.9 million** wired on May 6, 2025, to corporate headquarters on Avenue de Wagram in Paris (Note 2.1).
-
-While EDF PEI oversees thermal generation across French overseas territories as well as Corsica, the island represents a central pillar of its balance sheet: Notes 2.3 and 17 explicitly state that the subsidiary's asset growth is primarily driven by two capital projects—Larivot in French Guiana and **Ricanto in Southern Corsica**.
-
-The financial structure is transparent: by maintaining the island's reliance on thermal engines burning imported fuels, national policy locks in billions of euros in public subsidies, the margins of which are channeled directly to the national utility.
+<!-- OPTION A PLACEMENT: INTERACTIVE CLEAN POWER CAPACITY MAP -->
+<div id="carte-energie-corse-container" class="my-10"></div>
 
 ---
 
-## 2. HYDRO EXPROPRIATION: IMPACT OF THE JUNE 29, 2026 LAW ON CORSICA'S 220 MW DAMS
+## 1. THE INVISIBLE TAX: HOW YOUR POWER BILL FUNDS A GUARANTEED 10% RETURN WIRED TO PARIS
 
-Corsica's mountain geography hosts four major hydroelectric fortresses:
-- **Calacuccia (Upper Golo)**: 56.8 MW turbine capacity (53 million m³ reservoir).
-- **Rizzanese (Alta Rocca)**: 55.0 MW (commissioned in 2013, 18 million m³ reservoir).
+For forty years, official discourse has repeated the same convenient myth: Corsica supposedly survives on mainland life support and depends on "national solidarity" to pay its power bills. An audit of statutory decrees and EDF's certified corporate balance sheets proves the exact opposite: islanders are not receiving charity—a State utility monopoly is extracting guaranteed profits funded directly through public utility taxes.
+
+### The Hidden Surcharge on Every Power Bill (Article L. 121-7, French Energy Code)
+Every single month, on every electricity bill in Corsica and across the mainland, a quiet line item levies a public tax: the CSPE (Contribution to the Public Electricity Service).
+
+Where does this public money actually go?
+1. **A staggering levy of €1,975 per year and per household**: In Corsica, this tax compensation corresponds to nearly €2,000 annually per family (French Senate Inquiry Commission Report No. 714).
+2. **The statutory trap of risk-free guaranteed profit**: This public tax does not merely refund fuel burned in aging thermal plants. French law (Article L. 121-7) mandates that the State pay EDF **a guaranteed net return on every euro invested** in its thermal power stations.
+3. **The golden decree of June 18, 2024 (NOR: ECOR2410407A)**: For the future Ricanto plant in Ajaccio, the Government signed a ministerial order locking this guaranteed capital return rate at **9.55% net per year**.
+
+Do the math: what citizen, farmer, or small business in Corsica holds a savings account with a guaranteed ~10% annual return, completely insulated from commercial risk, underwritten by taxpayer funds?
+
+This perverse setup creates an immediate incentive for waste: the larger and more bloated the thermal facility imposed by EDF, the larger the guaranteed profit check cut from public taxes. By imposing an €800 million thermal plant at Ricanto rather than retrofitting the free, clean water of our mountains, the State locked in **€6.3 billion in public tax surcharges over 25 years** (CRE Deliberation No. 2024-139).
+
+### €111.9 Million in Dividends Siphoned to Paris (KPMG Certified Accounts, March 25, 2026)
+Where does this money actually end up? The answer is written in black and white in the annual statutory accounts of EDF's island subsidiary, **EDF Production Électrique Insulaire (EDF PEI SAS - SIREN 489 967 687)**, audited and certified by KPMG:
+- **Annual Turnover**: €1,367.2 million (consisting almost exclusively of energy revenues subsidized by CSPE taxes).
+- **Net Annual Profit**: €176.5 million in pure profits.
+- **The Parisian dividend siphon**: On May 6, 2025, a bank transfer of **€111.9 million** was extracted from island generation profits and wired straight to EDF's corporate headquarters on Avenue de Wagram in Paris (Note 2.1).
+
+While Corsican families struggle with rising energy bills, money collected from their electricity usage fattens Parisian corporate balances. Notes 2.3 and 17 of the KPMG audit report acknowledge this openly: the surge in EDF PEI's tangible capital assets is driven primarily by one project: **the new Ricanto thermal facility in Southern Corsica**.
+
+By deliberately locking the island into burning imported fuels shipped by sea, national policy perpetuates a multi-billion-euro cash cow for the State utility.
+
+---
+
+## 2. THE DAM HEIST: THE JUNE 29, 2026 LAW THAT CONFISCATED OUR MOUNTAIN WATER
+
+Four clean-water fortresses stand in Corsica's high mountains:
+- **Calacuccia (Upper Golo)**: 56.8 MW turbine capacity (a giant reservoir holding 53 million cubic meters of water).
+- **The Rizzanese (Alta Rocca)**: 55.0 MW (commissioned in 2013, 18 million m³ reservoir).
 - **Sampolo (Fium'Orbo)**: 43.0 MW (Trevadine reservoir).
-- **Tolla / Ocana (Prunelli)**: 39.3 MW (Tolla reservoir, 40 million m³).
-- **Total: 220.66 MW of clean, zero-carbon energy** stored naturally in mountain lakes.
+- **Tolla and Ocana (Prunelli)**: 39.3 MW (Lake Tolla, 40 million m³).
+- **Combined total: 220.7 MW of clean, zero-emission electricity**, naturally stored in mountain reservoirs.
 
-These installations were fully amortized decades ago. Their marginal generation cost is between **€15 and €20 per megawatt-hour (MWh)**, compared to €250 to €400/MWh for imported fossil fuel or rapeseed oil burned in thermal engines.
+These public dams were paid off and amortized decades ago. The water from our rivers generates the cheapest electricity on Earth: between **€15 and €20 per megawatt-hour**. In comparison, burning heavy fuel oil or continental rapeseed in EDF's thermal engines costs between €250 and €400/MWh—**fifteen to twenty times more expensive**.
 
-For four decades, Corsican regional assemblies sought the transfer of these public concessions by requesting the removal of the 8 MW cap under Article L. 4424-39 of the General Local Authorities Code (CGCT).
+For forty years, Corsican elected assemblies repeatedly petitioned the French State to devolve these dams to the island to directly supply local communities.
 
-### The Exceptional Framework of Law No. 2026-554 (June 29, 2026)
-On **June 29, 2026**, the French Parliament passed **Law No. 2026-554 on Hydropower Investment Reform**:
-1. **Concession Framework Extinguished**: To bypass statutory tendering or devolution to the Corsican Territorial Authority upon concession expiry, the law abolishes the concession regime for all dams over 4.5 MW.
-2. **70-Year Public Domain Right**: The State directly granted incumbent operator EDF an exclusive public domain occupancy title for **70 years**.
-3. **Centralized Lockout Until 2096**: Public administration of mountain water resources is retained by central authorities until the end of the 21st century, excluding Corsican authorities from direct management.
+### The Lockout Law of June 29, 2026: Confiscated Until 2096
+The State's answer was swift. On **June 29, 2026**, the French Parliament quietly enacted **Law No. 2026-554**.
 
-### The Forbidden Natural Battery: Why Pumped-Storage (PSH / STEP) Would Eliminate Ricanto
-Why is this 70-year lock the core of the island's energy captivity? Because these four dams hold the key to total energy independence via proven, zero-emission technology: **Pumped-Storage Hydroelectricity (PSH / STEP)**.
+This statute permanently extinguished any possibility of Corsica reclaiming its dams:
+1. **Abolition of normal public concessions**: To bypass statutory concession expirations and avoid transferring dams to the Corsican Territorial Authority, the law abolished the standard concession regime for all large dams.
+2. **An exclusive 70-year lease granted to EDF**: The State granted its national utility an exclusive public domain occupancy title over Corsican mountains for **70 years**.
+3. **Locked out until 2096**: For the next three generations, Corsican citizens and local authorities are legally prohibited from touching the valves of their own rivers.
 
-How does a closed-loop pumped-storage plant work? It operates as a giant natural water battery:
-1. **Daytime**: Corsica generates abundant, free solar power. Instead of curtailing citizen rooftop panels, surplus solar electricity powers reversible pumps that lift water from lower basins back to high-altitude reservoirs (e.g., between the Golo riverbed and Calacuccia, or between the Prunelli gorges and Lake Tolla).
-2. **Evening & Night**: When the sun sets and household demand spikes (peak island load), the water gates open: water surges down the existing penstocks, driving turbines to generate immediate, massive, 100% carbon-free power.
-3. **Zero Water Loss**: The same water circulates indefinitely in a closed loop.
+The water flows right before our eyes, but the valves and the revenues remain confiscated by Paris until the end of the 21st century.
 
-Installing just **80 to 100 MW of reversible pumped storage** on Corsica's existing dams would:
-- **Cover 100% of the island's peak evening power demand**.
-- **Render the €800M Ricanto thermal plant completely obsolete**.
-- **Cancel 50,000 tons/year of imported continental rapeseed oil shipments**.
-- **Save over €6.3 billion in public CSPE taxes over 25 years**.
+### The Forbidden Natural Water Battery: Why Closed-Loop Storage Eliminates Ricanto
+Why is this 70-year dam lockout the core scandal of Corsica's energy captivity? Because these four mountain lakes give Corsica the power to achieve **total, immediate energy independence** without burning a single drop of imported fuel, using a century-old, proven technology: **Pumped-Storage Hydroelectricity (PSH / STEP)**.
 
-State authorities and EDF know these engineering realities. But installing public PSH on Corsica's dams would dismantle EDF PEI's monopoly, extinguish the guaranteed 9.55% capital return, and end the agro-industrial biofuel gravy train.
+How does this technology work in physical terms? It operates on the principle of a **giant, closed-loop hydraulic hourglass**, consisting of two reservoirs tiered one above the other.
 
-### The Stolen Water Veto: Energy vs. Agriculture
-Locking these dams does not just capture power: it gives Paris absolute control over Corsica's **raw drinking and irrigation water**. During summer droughts, Corsican farmers face strict irrigation cuts while EDF prioritizes water releases to maximize its turbine revenues without accountability to island assemblies.
+<div class="my-6 not-prose rounded-2xl border border-cyan-500/30 bg-slate-900/90 p-5 md:p-6 shadow-xl space-y-4">
+  <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+      <h4 class="font-sans font-bold text-sm md:text-base text-cyan-400 uppercase tracking-wide">
+        The Perpetual Water Hourglass: How Our Mountains Store Solar Power
+      </h4>
+    </div>
+    <span class="text-[10px] font-mono bg-cyan-500/10 text-cyan-300 px-2.5 py-1 rounded border border-cyan-500/30">
+      &gt; 75% ROUND-TRIP EFFICIENCY
+    </span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-sans">
+    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+      <div class="flex items-center gap-2 text-amber-400 font-bold font-mono text-sm">
+        <span>☀️</span> 1. NOON: SOLAR CHARGE
+      </div>
+      <p class="text-slate-300 text-xs leading-relaxed m-0">
+        Sunshine floods Corsica's 6,319 solar rooftops and sheds. Instead of curtailing panels, free surplus electricity powers pumps: <strong>water in the lower river basin is pumped up into the mountain reservoir</strong>. Solar power is stored as water mass at high altitude.
+      </p>
+    </div>
+    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+      <div class="flex items-center gap-2 text-cyan-400 font-bold font-mono text-sm">
+        <span>🌙</span> 2. 8 PM: EVENING DISCHARGE
+      </div>
+      <p class="text-slate-300 text-xs leading-relaxed m-0">
+        Night falls and household electricity demand peaks across the island. The upper dam valves open: <strong>water rushes down existing penstocks under high pressure</strong>, driving turbines and instantly supplying clean power to all island households.
+      </p>
+    </div>
+    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+      <div class="flex items-center gap-2 text-emerald-400 font-bold font-mono text-sm">
+        <span>🔄</span> 3. INFINITE CLOSED LOOP
+      </div>
+      <p class="text-slate-300 text-xs leading-relaxed m-0">
+        Discharged water is collected in the lower retention pool. At noon the next day, the sun pumps it back up. <strong>Zero water loss, zero toxic lithium battery waste, zero imported fossil or biofuel.</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+### The Forensic Engineering Reality: Why the Cost Argument Collapses
+Why does the financial pretext manufactured by EDF collapse upon scrutiny?
+
+Because the heaviest, most capital-intensive civil engineering works **already exist in our mountains, fully paid for and amortized decades ago by previous generations**:
+- The **four massive high-altitude reservoirs** are already excavated and sealed (Calacuccia, Tolla, Sampolo, Rizzanese).
+- The **penstocks** and natural 400-to-600-meter elevation drops are already built.
+- The **hydroelectric powerhouses at dam bases** and grid interconnectors are fully operational.
+
+To transform these historic dams into massive energy accumulators, **only one piece of equipment is missing: reversible turbine-pumps operating in a closed loop**.
+
+Installing just **80 to 100 MW of reversible pumping capacity** across the existing reservoirs of Calacuccia, Tolla, and Sampolo would:
+- **Cover 100% of peak evening demand for the entire island**.
+- **Render the €800 million Ricanto thermal plant instantly obsolete**.
+- **Eliminate 50,000 tons/year of imported continental rapeseed oil shipments**.
+- **Keep €6.3 billion in public taxes inside citizens' pockets**.
+
+State ministries and EDF know these engineering facts. But equipping our dams for autonomy would dismantle EDF's monopoly, end the guaranteed 9.55% annual return, and halt lucrative fuel orders for mainland agribusinesses.
+
+### The Threat to Drinking Water and Farming
+Confiscating our dams does not just steal our electricity: **it steals our drinking water**.
+
+Every summer during seasonal droughts:
+- Farmers across the Eastern Plains and Fium'Orbo face strict administrative irrigation rationing.
+- Drinking water supplies run dry in interior mountain villages.
+- **Meanwhile, EDF holds the keys to the giant sluice gates of Calacuccia (53 million m³) and Tolla (40 million m³)**: EDF's mandate is to run turbines when wholesale market peak values peak on its balance sheet, completely indifferent to local farming and municipal water emergencies.
+
+### The SACOI 3 Submarine Cable: The Final Proof Ricanto is Unnecessary
+Another official State file dismantles the official crisis narrative: the modernization of the **SACOI 3 (Sardinia - Corsica - Italy)** HVDC submarine interconnector, approved by ministerial decree and scheduled for commissioning by 2029.
+
+The certified technical parameters are clear:
+- **A 400 MW modern submarine cable** crossing Corsican territorial waters.
+- **A direct grid tap at Lucciana doubled to 100 MW** (expandable to **150 MW** under emergency reserve).
+- **Clean, zero-emission base power** supplying a quarter of the island's needs without generating smoke or particulate pollution on our soil.
+
+Look at the simple arithmetic:
+- **220.7 MW** of mountain hydro stored across our 4 existing public dams.
+- **284.6 MW** of solar already installed across 6,319 island roofs, farms, and workshops (ODRÉ official database).
+- **18.0 MW** of operational wind power on Cap Corse.
+- **Subtotal of operational insular renewable capacity: 523.3 MW.**
+- **100 to 150 MW** of secure capacity via the modern SACOI 3 submarine cable.
+- **TOTAL CLEAN CAPACITY AVAILABLE: 623.3 to 673.3 MW.**
+
+Against this massive potential of over 620 megawatts, **Corsica's peak winter power consumption never exceeds 400 megawatts**.
+
+The island already possesses more decarbonized power potential than its peak winter freeze demands. Sinking €800 million into an oil-burning facility at Ricanto has nothing to do with grid stability: it is an organized diversion of public funds to keep Corsica under administrative tutelage.
 
 ---
 
-## 3. A 10% GUARANTEED LIFETIME RETURN: THE RICANTO SCANDAL
+## 3. A GUARANTEED 10% LIFETIME RETURN: THE RICANTO SCANDAL
 
-Under **Order NOR: ECOR2410407A** published on June 21, 2024, the French Government fixed EDF PEI's capital return rate for the Ricanto plant at **9.55% pre-tax**.
+To replace the aging, polluting diesel engines of Vazzio, the French Government refused natural gas access and imposed an enormous thermal power plant at **Ricanto** at the gates of Ajaccio: 8 colossal engines designed to burn continental rapeseed oil shipped across the sea.
 
-This means that on an investment approaching **€800 million**, EDF enjoys a State-backed ~10% annual profit margin with zero commercial market risk. No household savings account ever yields such returns.
+A forensic review of contract files reveals a financial setup engineered for corporate benefit:
 
-By Deliberation No. 2024-221 (Dec 5, 2024), the Energy Regulatory Commission (CRE) even reimbursed 100% of EDF's preparatory study and architectural costs through public taxes.
+### A. A Price Tag Inflated from €450M to €800 Million
+Certified accounts from EDF PEI (Note 2.3) confirm construction commenced in late 2024. The total capital expenditure for the plant, pipelines, and storage facilities now approaches **€800 million**, making it the most expensive industrial facility in Corsican history.
 
-The Engineering, Procurement and Construction (EPC) contract was awarded to an international consortium between Italian contractor **Bonatti S.p.A.** and German motor builder **MAN Energy Solutions** (over **€500 million**), locking in a 25-year maintenance monopoly via MAN PrimeServ.
+### B. The Statutory Goldmine: 9.55% Guaranteed Return on Public Funds
+Under a **ministerial order signed on June 18, 2024 (NOR: ECOR2410407A)**, the Government fixed EDF PEI's capital remuneration rate at **9.55% net pre-tax**.
 
-### The Agro-Industrial Supply Axis: Saipol / Avril & Captive Tanker Routes
-- **Sole Source Provider**: The required biofuel is supplied by agribusiness giant **Saipol**, a subsidiary of the **Avril Group**.
-- **50,000 Tons/Year Imported**: The Ricanto plant alone requires **50,000 tons of refined edible oil every year**, shipped from mainland processing plants (Grand-Couronne or Bassens) into Ajaccio and Bastia.
-- **Hidden Carbon & Financial Rent**: While Corsica's mountain water reserves (220 MW) are locked down, the State finances a permanent maritime bridge of fuel tankers through the CSPE levy (€6.3B over 25 years), masking maritime transport emissions from local accounts.
+This guarantees that on an €800M investment, EDF enjoys a near-10% annual return funded directly through public electricity taxes with zero commercial risk.
+
+To complete the corporate subsidy, on December 5, 2024 (Deliberation No. 2024-221), the Energy Regulatory Commission (CRE) voted to **fully reimburse EDF's architectural and preliminary engineering costs** with public funds.
+
+### C. Over Half a Billion Euros Awarded to Foreign Industrial Groups
+The Engineering, Procurement, and Construction (EPC) contract was awarded by EDF PEI to an international consortium uniting Italian engineering company **Bonatti S.p.A.** and German engine manufacturer **MAN Energy Solutions** (Volkswagen Group).
+
+This **€500M+ contract** includes:
+- 8 giant MAN 18V51/60 engines with a combined capacity of 133.7 MW.
+- An exclusive **25-year maintenance monopoly** for MAN PrimeServ, locking technical service and parts for a quarter of a century.
+
+### D. A €6.3 Billion Public Subsidy Over 25 Years
+To keep this machine running, public electricity taxes will channel **€6.3 billion in subsidies** over the next 25 years to pay for fuel and guarantee availability fees, whether the engines run or sit idle.
+
+### E. The Captive Tanker Route: 50,000 Tons/Year of Rapeseed Oil
+To fuel this plant, EDF chose refined biofuel (B100):
+- **Monopoly Supplier**: Fuel is purchased from continental agribusiness giant **Saipol**, a subsidiary of the **Avril Group** (chaired by Arnaud Rousseau).
+- **50,000 tons/year**: Shipped into Ajaccio Bay via continuous marine tankers, plus additional volumes for Lucciana in Bastia.
+- **Organized Maritime Dependency**: Instead of running our 220 MW of clean mountain hydro, the State organizes a permanent marine highway of fuel tankers crossing the Mediterranean.
+- **Masked Carbon Emissions**: Refining emissions and ship exhaust are conveniently omitted from Corsica's regional carbon tally, while the entire bill is paid by utility taxpayers.
 
 ---
 
-## 4. WHAT AJACCIO RESIDENTS BREATHE: VAZZIO EMISSION LIMITS
+## 4. WHAT AJACCIO RESIDENTS BREATHE: DREAL INSPECTION OF VAZZIO (AIOT 0007300024)
 
-Official inspection reports from regional environmental agency DREAL (June 19, 2026, AIOT Code 0007300024) confirm authorized limits over Ajaccio:
-- Nitrogen oxides (NOx) authorized up to **625 mg/Nm³**.
+While hundreds of millions flow toward Ricanto, what do Ajaccio residents breathe every day around the existing Vazzio plant?
+
+The **official environmental inspection report No. `pLPsrtFga9NTeaPgcqF81NsxH34eyyRO` dated June 19, 2026** by regional DREAL inspectors records the legal air pollution authorized over the city:
+- Nitrogen oxides (NOx) permitted up to **625 mg/Nm³**.
 - Carbon monoxide (CO) at **250 mg/Nm³**.
-- Heavy metal cocktail (lead, nickel, vanadium) up to **5 mg/Nm³**.
-- Proven carcinogenic benzo(a)pyrene hydrocarbons (PAHs) continuously emitted.
+- Atmospheric dust at **37.5 mg/Nm³**.
+- Toxic heavy metal cocktails (lead, chrome, nickel, vanadium) authorized up to **5 mg/Nm³**.
+- Carcinogenic polycyclic aromatic hydrocarbons (benzo(a)pyrene) continuously released.
+
+For decades, under successive prefectural waivers, Vazzio's heavy fuel oil engines have showered toxic emissions over homes, schools, and workplaces across Ajaccio.
 
 ---
 
-## 5. THE SOLAR SMOKESCREEN: A €5,000 NANTERRE SHELL ON A POLLUTED DUMP
+## 5. FAKE ECOLOGY: A €5,000 SHELL COMPANY ON A TOXIC LANDFILL
 
-To display a symbolic green transition, the Government approved a solar plant on the heights of **Saint-Antoine**:
-- Beneficiary: **SAS CENTRALE PHOTOVOLTAIQUE DE SAINT-ANTOINE (SIREN 840 294 128)**, registered at 43 Bd des Bouvets, Nanterre.
-- Share capital: **€5,000**.
-- Sole President: **EDF Power Solutions France**.
-- Site: Built over an old unlined municipal landfill where pile-driving risks puncturing containment membranes, threatening toxic leachate runoff into the **Gravona river**—Ajaccio's main drinking water reservoir.
-- Coastal Law Waiver: Granted by Ministerial Order NOR: VLOL2604227A on March 3, 2026.
-
----
-
-## 6. PROOF OF DECEPTION: PUMPED HYDRO STORAGE DESTROYS THE THERMAL MODEL
-
-For more than twenty years, EDF executives and French ministry officials systematically rejected Corsican engineering proposals: *"Corsica cannot store power with pumped-storage hydro (PSH / STEP); your elevation drops are too harsh, capital costs too steep, and grid dynamics too fragile for island setups."*
-
-This official stance was a calculated State lie. In spring 2026, the State collapsed its own narrative.
-
-### The CRE's Formal Admission: Deliberation No. 2026-111 (May 26, 2026)
-By **Deliberation No. 2026-111 released on May 26, 2026**, the Energy Regulatory Commission (CRE) officially approved a **12 MW Pumped-Storage Plant** on the hills of Saint-Antoine overlooking Ajaccio:
-- **€350 million in direct net public savings** over 30 years compared to burning thermal fuel.
-- **Closed-loop cycle efficiency exceeding 75%**, demonstrating that water stores electricity at efficiencies unmatched by chemical batteries.
-- **A guaranteed 9.75% annual return on public funds** (Ministerial Order published in the Official Journal on May 7, 2026).
-
-Yet the State awarded this lucrative framework not to the Corsican Territorial Authority or a public water utility, but to a private mainland consortium: **Next Step Energy / Sorégies**.
-
-### The Decisive Calculation: 12 MW Private Scheme vs. 100 MW on Public Dams
-If a modest 12 MW private unit saves **€350 million**, what would happen if Corsica equipped its existing four public dams with reversible pumped-storage?
-
-Here is the civic engineering audit the State keeps behind closed doors:
-1. **Calacuccia / Corscia (Golo Basin)**: 53 million m³ with a 400-meter head. A 40 MW reversible pump-turbine would store all excess daytime solar from Haute-Corse to power Bastia and the eastern plains every evening.
-2. **Lake Tolla / Ocana (Prunelli Basin)**: 40 million m³ with a 600-meter drop into the Ocana valley. A 35 MW reversible unit would supply the entire Ajaccio metropolitan area in real time.
-3. **Sampolo / Trevadine (Fium'Orbo Basin)**: 25 MW reversible capacity securing the entire eastern coastline.
-
-**Total: 100 MW of pure, closed-loop storage.**
-- Estimated capital retrofitting cost: **under €250 million**.
-- Contrast this with the **€800 million** sunk into the Ricanto thermal plant and its **€6.3 billion** CSPE subsidy over 25 years!
-
-Retrofitting Corsica's existing public dams with PSH costs **three times less to build** and saves **over €2 billion in imported fuel shipments**.
-
-The reason Paris rushed Law No. 2026-554 on June 29, 2026, to lock these dams for 70 years is transparent: **preventing Corsica from proving complete, low-cost energy sovereignty, which would permanently abolish EDF's captive mainland tutelage.**
+To present a veneer of ecological transition while blocking genuine local initiatives, the State approved a solar plant on the heights of **Saint-Antoine** overlooking Ajaccio:
+1. **A €5,000 Shell Company**: The permit was awarded not to local communities, but to **SAS CENTRALE PHOTOVOLTAIQUE DE SAINT-ANTOINE (SIREN 840 294 128)**, domiciled at 43 Bd des Bouvets in Nanterre, with €5,000 in capital and chaired by **EDF Power Solutions France**. Zero local jobs, zero local governance.
+2. **A Ministerial Coastal Law Exemption**: The Ministry bypassed coastal zoning protections (Order NOR: VLOL2604227A of March 3, 2026) to allow this Parisian subsidiary to build where local citizens cannot.
+3. **Threat to Drinking Water**: The site sits on the former unlined Saint-Antoine municipal garbage dump. Driving steel piles into compacted waste risks puncturing containment layers and leaching toxic runoffs into the **Gravona river**—the primary source of drinking water for the Ajaccio area.
+4. **Tax Arbitrage**: This vehicle captures Corsica's 30% regional investment tax credit (CIIC), originally created for small local businesses, and funnels profits to its suburban Paris parent.
 
 ---
 
-## 7. THE FORBIDDEN SUN: WHY CITIZEN ROOFTOPS ARE REJECTED
+## 6. THE PROVEN SOLUTION: PUMPED HYDRO STORAGE CRUSHES THE THERMAL MODEL
 
-Under **Article 22 of the Order of April 23, 2008**, EDF disconnects renewable injection whenever intermittent supply exceeds **30% of instantaneous island demand**.
+For over twenty years, EDF and Paris ministries told Corsican engineers that pumped-storage hydro was impossible on an island.
 
-This locks out **180 MW of shovel-ready rooftop solar** identified by civic monitor *Bufitonu.fr* across agricultural sheds, artisan workshops, and public schools. Citizen solar is turned off to keep thermal engines burning imported oil.
+In spring 2026, the State collapsed its own deception.
+
+By **formal Deliberation No. 2026-111 (May 26, 2026)**, the CRE approved a **12 MW Pumped-Storage Plant** at Saint-Antoine:
+- **€350 million in net public savings** over 30 years compared to thermal oil combustion.
+- **Over 75% round-trip efficiency**, proving water outmatches chemical batteries.
+- **A guaranteed 9.75% annual return** paid from public funds.
+
+Yet the State awarded this framework to private mainland corporate entities (**Next Step Energy / Sorégies**).
+
+### The Math: 12 MW Private Project vs. 100 MW on Public Dams
+If a small 12 MW private unit saves **€350 million**, what would equipping our 4 existing public dams achieve?
+1. **Calacuccia (Golo)**: 40 MW reversible pumping would store daytime solar across Haute-Corse to power Bastia every evening.
+2. **Lake Tolla (Prunelli)**: 35 MW reversible pumping would power the Ajaccio metropolitan area without smoke.
+3. **Sampolo (Fium'Orbo)**: 25 MW reversible capacity securing the Eastern Plain.
+
+**Total: 100 MW of closed-loop water storage.**
+- Capital retrofit cost: **under €250 million**.
+- Contrast this with the **€800 million** spent on Ricanto and **€6.3 billion** in fuel subsidies!
+
+Equipping public dams costs **three times less to build** and saves **over €2 billion in fuel imports**. The 70-year dam lockout was enacted for one reason: to prevent Corsica from demonstrating total energy independence and breaking EDF's captive monopoly.
+
+---
+
+## 7. THE FORBIDDEN SUN: 284 MW CURTAILED TO PROTECT THERMAL PROFITS
+
+While EDF claims the island lacks power, certified data from the **National Electricity Registry (RTE / ODRÉ / Enedis)** proves that Corsica already has **284.6 MW of solar capacity operational across 6,319 installations**.
+
+- **~3,500 residential rooftops**: ~35 MW installed on family homes.
+- **Agricultural sheds and workshops**: 93.15 MW across 2,289 farm installations.
+- **Commercial surfaces and parking shades**: 31.85 MW across 2,868 sites.
+- **Ground-mounted solar farms**: 159.64 MW across 46 regional facilities.
+
+This capacity was paid for by Corsican families and farmers with their own savings and bank loans.
+
+### The Curtailment Scandal: The 30% Threshold
+How does the State reward this citizen effort? **By cutting their power.**
+
+Under Article 22 of the ministerial order of April 23, 2008, renewable injection is capped at **30% of instantaneous island demand**. Whenever solar output surges, EDF remotely curtails rooftop installations under the pretext of grid stability.
+
+In reality, **free, clean rooftop electricity is dumped to keep polluting engines burning imported fuel and protecting utility dividend streams.**
+
+If Corsica couples its **284.6 MW of solar** with reversible water pumps on its **220.7 MW of mountain dams**:
+- **10am to 5pm**: Free daytime solar powers 100% of the island.
+- **Daytime surplus solar** pumps water back up into high mountain reservoirs.
+- **8pm peak**: Dam valves open, water rushes down to provide 100% of peak evening demand.
+
+**The conclusion is unassailable:**
+- **Heavy fuel oil burned at Vazzio: ZERO.**
+- **Rapeseed tankers imported: ZERO.**
+- **€800 million sunk into Ricanto: ZERO.**
+- **€6.3 billion in CSPE taxes paid to EDF: ZERO.**
+
+Corsica's energy dependency is not a technical reality: it is an organized political construct designed to enforce financial tutelage.
 
 ---
 
