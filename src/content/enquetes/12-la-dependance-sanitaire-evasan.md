@@ -127,94 +127,11 @@ Ce flux d'exil médical forcé ne traduit pas une déficience des praticiens loc
 +------------------------------------+--------------------+----------------------------------------+
 ```
 
-### Les Preuves d'Appels d'Offres d'État (BOAMP) : Le Méga-Marché EVASAN Aérien de 46,75 M€ et la Rente CNAM
+### Le verrou du coefficient géographique bridé à 11 %
 
-L'extraction directe des données de la commande publique sur l'API DILA / BOAMP (oamp-datadila.opendatasoft.com) apporte la preuve matérielle de la rente organisée :
+Dans les départements et régions d'outre-mer (Guadeloupe, Martinique, Réunion, Guyane), le surcoût de l'insularité et de l'éloignement fait l'objet d'un coefficient géographique de compensation de la Tarification à l'Activité (T2A) fixé entre 27 % et 31 %.
 
-1. **Le Méga-Marché EVASAN Aérien de 46 750 300,00 € (Avis BOAMP n° 23-6551 / Marché n° 23192)** :
-   - **Pouvoir adjudicateur** : Groupement régional de commandes coordonné conjointement par le **Centre Hospitalier d'Ajaccio (SAMU 2A)** et le **Centre Hospitalier de Bastia (SAMU 2B)**.
-   - **Objet contractuel** : *« Prestations de transports sanitaires aériens liées aux évacuations sanitaires de patients hospitalisés en Corse 365 jours par an, 24 heures sur 24 »*.
-   - **Attribution du 13 janvier 2023** : Montant global de **46 750 300,00 € TTC** attribué à la **Société ALTAGNA** (Aéroport de Bastia Poretta, 20290 Borgo).
-   - Cette convention contractuelle fige pour plusieurs années le transfert obligatoire de milliers de patients corses par pont aérien vers Nice et Marseille, alimentant une rente logistique captive au lieu d'investir ces dizaines de millions d'euros dans la création de services de soins critiques de plein exercice à Bastia et Ajaccio.
-
-2. **L'Explosion des Remboursements CNAM / SNDS de Transports Sanitaires (Région 94)** :
-   L'interrogation certifiée de la base **Open DAMIR / SNDS** (data.ameli.fr) sur le poste de dépenses n° 6 (*« Transports des malades »*) révèle que l'Assurance Maladie a remboursé en Corse :
-   - **2022** : 25 069 121 € (Haute-Corse : 15,20 M€ | Corse-du-Sud : 9,87 M€)
-   - **2023** : 27 573 367 € (+10,0 % ; Haute-Corse : 16,39 M€ | Corse-du-Sud : 11,18 M€)
-   - **2024** : 29 050 860 € (+5,4 % ; Haute-Corse : 17,32 M€ | Corse-du-Sud : 11,73 M€)
-   - **2025** : 28 714 182 € (Consolidé)
-   - **Cumul quadriennal : 110 407 530 €** siphonnés en transports sanitaires (ambulances, VSL, taxis conventionnés et vols sanitaires). La Haute-Corse (2B) concentre à elle seule **59,7 % des dépenses (65,97 M€)** en raison de l'enclavement des vallées rurales et de l'abandon ferroviaire et routier de l'intérieur.
-
-3. **L'Avis BOAMP n° 23-137097 : L'Aveu de Faillite du GHT de Corse-du-Sud** :
-   Parution officielle le 05/10/2023 d'un marché public d'intérim médical passé par le CH d'Ajaccio pour l'ensemble des hôpitaux de Corse-du-Sud (Ajaccio, Bonifacio, Sartène - codes CPV 79625000 et 79620000), confirmant l'incapacité de l'État à titulariser les praticiens et le recours forcé au mercenariat médical temporaire subventionné par le FIR.
-
-### Le verrou du coefficient géographique bridé à 11 % (Arrêtés JORF 2025-2026)
-
-L'examen des derniers arrêtés ministériels fixant les éléments tarifaires MCO publiés au Journal officiel — l'**arrêté du 7 avril 2025** et l'**arrêté du 12 janvier 2026** — apporte la preuve écrite de la discrimination d'État subie par la Corse :
-- **Guadeloupe (971)** : **27,00 %** de majoration géographique d'office.
-- **Guyane (973)** : **33,10 %** de majoration géographique d'office.
-- **La Réunion (974)** : **34,00 %** de majoration géographique d'office.
-- **Corse-du-Sud (2A) et Haute-Corse (2B)** : **11,00 %** (bloqué et reconduit à l'identique au JORF du 12 janvier 2026).
-
-Pourtant, la Corse subit la même discontinuité territoriale maritime, les mêmes surcoûts d'approche pour le fret hospitalier et la même inflation insulaire. Cet écart de 16 à 23 points par rapport aux DROM prive les hôpitaux publics et cliniques corses de **30,27 à 45,50 millions d'euros par an** de recettes d'exploitation légitimes.
-
-Pire encore : l'**arrêté ministériel du 8 juin 2026** fixant la dotation du Fonds d'Intervention Régional (FIR) au JORF du 10 juin 2026 confirme le désengagement d'État avec une baisse de l'enveloppe fongible de l'ARS Corse à **40,475 millions d'euros** (dont à peine 7,33 M€ pour la prévention et 2,68 M€ pour le médico-social), accentuant l'asphyxie financière des établissements insulaires.
-
-### La surtension estivale prouvée par les séries officielles de la DREES
-
-L'interrogation directe des séries longues de la DREES (*Direction de la Recherche, des Études, de l'Évaluation et des Statistiques*) sur le nombre de passages aux urgences en Corse démontre l'asphyxie programmée du système public. Alors que les dotations T2A de l'État sont calibrées sur une population résidente hivernale de 355 000 habitants, les services d'urgences de Bastia, d'Ajaccio, de Porto-Vecchio et de Calvi subissent chaque été un choc de fréquentation violent documenté par les chiffres officiels d'État :
-
-```
-+--------------------------------------------------------------------------------------------------+
-|           CHRONIQUE DREES : FRÉQUENTATION MENSUELLE DES URGENCES EN CORSE (2A & 2B)              |
-+-------------------+--------------------+--------------------+------------------------------------+
-| Année             | Janvier (Basse)    | Août (Pic Estival) | Surtension Saisonnière Constatée   |
-+-------------------+--------------------+--------------------+------------------------------------+
-| 2018              | 7 995 passages     | 13 033 passages    | + 63,0 %                           |
-| 2019              | 7 587 passages     | 12 376 passages    | + 63,1 %                           |
-| 2021              | 5 716 passages     | 12 469 passages    | + 118,2 %                          |
-| 2022              | 6 950 passages     | 12 633 passages    | + 81,8 %                           |
-| 2023              | 7 571 passages     | 11 865 passages    | + 56,7 %                           |
-+-------------------+--------------------+--------------------+------------------------------------+
-| SOURCE OFFICIELLE | API DREES France   | Relevés certifiés  | Surcharge estivale moyenne : +76 % |
-+-------------------+--------------------+--------------------+------------------------------------+
-```
-
-Face à ce pic où la fréquentation bondit jusqu'à **+118 %** en plein mois d'août avec l'afflux de 3 millions de touristes, le ratio de réanimation s'effondre à **2,5 lits pour 100 000 personnes présentes**, plaçant la Corse au dernier rang de tous les territoires sous souveraineté française.
-
-### L'Autopsie des Capacités Réelles SAE 2023 : Sursaturation Publique vs Sous-Utilisation Privée
-
-L'extraction directe des micro-données de la base **SAE 2023 de la DREES** (*Statistique Annuelle des Établissements de santé*, fichiers bruts MCO_2023r.csv, REA_2023r.csv et PERINAT_2023r.csv) démontre scientifiquement la faillite de l'organisation étatique : **l'hôpital public explose sous la sursaturation tandis que les cliniques privées indépendantes sont artificiellement bridées par l'ARS et la décote tarifaire GHS.**
-
-`
-+-----------------------------------------------------------------------------------------------------------------------+
-|  MICRO-DONNÉES OFFICIELLES SAE 2023 (DREES) : CAPACITÉS MCO ET TAUX D'OCCUPATION EN CORSE                             |
-+------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
-| Établissement de Santé             | Statut    | Lits MCO  | Jours Hosp.| Journées   | Taux d'Occup. | Diagnostic     |
-|                                    |           | Installés | Ouvrables  | Réalisées  | Réel MCO      | Clinique/DREES |
-+------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
-| CH Ajaccio (Notre-Dame Miséricorde)| Public    | 183 lits  | 66 795 JLI | 71 692 j.  | 107,33 %      | SURSATURATION  |
-| CH Bastia (Falconaja)              | Public    | 245 lits  | 89 425 JLI | 75 342 j.  |  84,25 %      | TENSION CRIT.  |
-| CH Calvi Balagne                   | Public    |  28 lits  | 10 220 JLI | 10 880 j.  | 106,46 %      | SURSATURATION  |
-| CH Sartène                         | Public    |  19 lits  |  6 935 JLI |  6 681 j.  |  96,33 %      | TENSION MAX    |
-+------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
-| Clinique Clinisud (Ajaccio)        | Privé     |  73 lits  | 26 645 JLI | 15 354 j.  |  57,62 %      | SOUS-UTILISÉ   |
-| Clinique Maymard (Bastia)          | Privé     |  86 lits  | 31 390 JLI | 12 449 j.  |  39,66 %      | SOUS-UTILISÉ   |
-| Clinique Furiani                   | Privé     |  58 lits  | 21 170 JLI |  5 729 j.  |  27,06 %      | CAPACITÉ DORMANTE|
-+------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
-| Source : DREES - SAE 2023 (Fichier MCO_2023r.csv) / Formule officielle : Taux = (Journées MCO / Jours-Lits-Inst.) * 100|
-`
-
-> **En clair pour votre foyer :** Le Centre Hospitalier d'Ajaccio tourne à **107,33 % d'occupation MCO**, ce qui signifie que des patients corses sont contraints de dormir sur des brancards dans les couloirs ou renvoyés chez eux prématurément, alors qu'à quelques kilomètres de là, la clinique Clinisud n'est occupée qu'à **57,62 %** en raison du verrouillage de ses autorisations par l'ARS et de la décote tarifaire d'État ! Le Pacte Sanitaire Corse permettrait de basculer instantanément les malades dans les 110 lits vacants du secteur privé sans couler un seul mètre cube de béton supplémentaire.
-
-#### L'Anomalie Néonatale Absolue : Zéro Lit de Réanimation Néonatale sur Toute l'Île
-
-L'extraction du fichier PERINAT_2023r.csv de la SAE 2023 révèle un constat d'une gravité médicale extrême, soigneusement occulté par le Ministère de la Santé :
-
-- **CH de Bastia (Maternité Type 2B)** : 1 140 accouchements uniques, 26 accouchements multiples, 1 199 naissances vivantes. Lits de soins intensifs néonataux installés : 7 lits (LIT_SOIN = 7, 1 832 journées). **Lits de réanimation néonatale : 0 lit (LIT_REA = 0).**
-- **CH d'Ajaccio (Maternité Type 2B)** : 916 accouchements uniques, 10 accouchements multiples, 941 naissances vivantes. Lits de soins intensifs néonataux installés : 4 lits (LIT_SOIN = 4, 1 092 journées). **Lits de réanimation néonatale : 0 lit (LIT_REA = 0).**
-
-Sur plus de 2 140 nouveau-nés mis au monde chaque année en Corse, **aucun hôpital insulaire ne dispose du moindre lit de réanimation néonatale**. Dès qu'une détresse respiratoire majeure ou une grande prématurité (< 32 semaines) survient, le nouveau-né doit être arraché à sa mère en couveuse de transport pour un vol à haut risque de 3h30 à 5h00 porte-à-porte vers l'Hôpital Lenval à Nice ou La Timone Enfant à Marseille.
+En Corse, bien que les hôpitaux subissent des surcoûts d'approche maritime et aérienne identiques pour chaque compresse, chaque médicament et chaque pièce de maintenance biomédicale, l'État a bloqué ce coefficient à un taux dérisoire de 11 %. Ce différentiel de 14 points représente une spoliation directe de **30,27 millions d'euros par an** confisqués aux hôpitaux publics et aux cliniques insulaires.
 
 ---
 
@@ -352,8 +269,6 @@ Depuis quinze ans, le projet de reconstruction d'un hôpital moderne sur le site
 Pendant que l'on construit des autoroutes et des infrastructures complexes sur le continent, la Haute-Corse attend toujours son premier coup de pioche hospitalier.
 
 ---
-
-
 
 ## 7. LE PACTE SANITAIRE CORSE (40 % SOLUTION) : LE CHU DI CORSICA IMMÉDIAT SOUS GCS
 
