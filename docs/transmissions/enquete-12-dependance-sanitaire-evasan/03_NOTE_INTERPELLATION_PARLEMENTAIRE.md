@@ -52,3 +52,15 @@ destinataires: "Conseillers à l'Assemblée de Corse / Députés et Sénateurs d
 ---
 
 *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*
+
+
+### *ARTICLE ADDITIONNEL (PROPOSITION DE LOI / PLFSS) : L'ACTION SPÉCIFIQUE (« GOLDEN SHARE ») TERRITORIALE*
+
+`	ext
+« Par dérogation aux dispositions générales du Code de commerce et du Code de la santé publique, la Collectivité de Corse est habilitée à détenir une action de préférence dotée de droits spécifiques (« Golden Share » au sens de l'article L. 228-11 du Code de commerce) au capital des établissements de santé privés indépendants d'intérêt territorial situés sur son périmètre insulaire. 
+
+Cette action de préférence confère à la Collectivité de Corse un droit de veto absolu contre :
+1° Toute cession d'actifs immobiliers ou mobiliers concourant à l'exécution du service public hospitalier insulaire ;
+2° Toute prise de participation de contrôle par des fonds d'investissement non résidents ou des groupes sous LBO prédateur ;
+3° Toute fermeture unilatérale de lits d'hospitalisation complète, de blocs chirurgicaux ou de services d'urgence sans accord préalable de l'Assemblée de Corse. »
+`

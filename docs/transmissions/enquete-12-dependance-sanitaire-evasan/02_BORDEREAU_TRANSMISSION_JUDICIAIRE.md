@@ -44,6 +44,38 @@ Signalement de faits susceptibles de caractériser :
 - **Pièce n° 4** : Rapport d'Information n° 393 du Sénat constatant le détournement de 60 % de l'activité des hélicoptères de sécurité civile Dragon 2A/2B pour suppléer les carences SAMU de l'ARS (Empreinte SHA-256 : `d91dc6dee68ac4fa7adff97eab3a6ffcdb642d4b0b4e88cda4e56bb4e8e09f19`).
 - **Pièce n° 5** : Signalement médico-légal et forensique de non-conformité ERP Type U de l'Hôpital du Stiletto (Empreinte SHA-256 : `5f25c52eb581974a875b4be88cdc33880fee5846913e15ca84410e0c117c00a1`).
 - **Pièce n° 6** : Rapport officiel BRGM RP-57640-FR attestant de pollutions à l'arsenic atteignant 4 000 µg/L à Matra (Empreinte SHA-256 : `07381d02eaa95ecc15d886b5951f2db21c26d199f6e55f5c4ba8c2b1f77cb9e7`).
+- **Pièce n° 7** : Avis d'attribution de marché BOAMP n° 23-6551 / Contrat n° 23192 (Marché de 46 750 300,00 € TTC de transport sanitaire aérien 24h/24 par le groupement hospitalier CH Ajaccio SAMU 2A / CH Bastia SAMU 2B attribué à la Société ALTAGNA).
+- **Pièce n° 8** : Extraction certifiée Open DAMIR / SNDS (data.ameli.fr) des dépenses de transports sanitaires en Corse (110 407 530 € cumulés sur 2022-2025).
+- **Pièce n° 9** : Extraction officielle DREES SAE 2023 (Fichiers scellés sous SHA-256 `56f2f2891c4cf3015f255c39f5924f0dc0e13ee83727773ab05491228af67998` : MCO_2023r.csv et PERINAT_2023r.csv attestant de 107,33 % de saturation au CH Ajaccio et de 0 lit de réanimation pédiatrique/néonatale en Corse).
+
+
+
+---
+
+## 3. MODÈLE TYPE D'ACTION CITOYENNE : RÉFÉRÉ-MESURES UTILES (ART. L. 521-3 CJA)
+
+`	ext
+DEVANT LE TRIBUNAL ADMINISTRATIF DE BASTIA
+RÉFÉRÉ TOUTES MESURES UTILES (Article L. 521-3 du Code de Justice Administrative)
+
+POUR :
+- Le Collectif Citoyen de Défense de la Santé en Corse / Les Usagers Hospitaliers de Corse
+Élection de domicile : [Adresse en Corse]
+
+CONTRE :
+- Le Centre Hospitalier Notre-Dame de la Miséricorde (Ajaccio)
+- L'Agence Régionale de Santé (ARS) de Corse
+- Le Ministère du Travail, de la Santé et des Solidarités
+
+OBJET :
+Demande d'injonction sous astreinte de 5 000 € par jour de retard visant à ordonner sans délai :
+1. L'engagement des travaux d'ouverture d'une seconde voie d'accès carrossable indépendante au site hospitalier du Stiletto, conformément aux prescriptions impératives de l'Article U 6 de l'arrêté ministériel du 25 juin 1980 (Règlement de sécurité contre l'incendie dans les ERP de Type U).
+2. La mise en conformité immédiate des capacités de désengorgement par conventionnement d'urgence avec les lits disponibles des cliniques privées de Corse (notamment Clinisud et Ospedale), face au taux d'occupation illicite de 107,33 % constaté par la DREES (SAE 2023) constituant un péril grave et immédiat pour la sécurité des patients.
+
+MOYENS DE DROIT ET D'URGENCE :
+- Sur l'urgence : Le goulet d'étranglement unique actuel expose quotidiennement plus de 1 000 personnes (patients hospitalisés, soignants, visiteurs) à un risque d'emprisonnement thermique en cas de sinistre feux de forêt ou d'accident bloquant la route de Mezzavia / A Madunuccia.
+- Sur l'utilité de la mesure : L'injonction ne préjudicie à aucune décision au fond et s'impose à titre conservatoire pour prévenir un dommage irréversible (Art. 2 CEDH, droit à la vie et à la sécurité).
+`
 
 Fait pour valoir ce que de droit,  
 À disposition des citoyens, collectifs de santé et usagers de Corse.

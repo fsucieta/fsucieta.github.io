@@ -127,11 +127,93 @@ Ce flux d'exil médical forcé ne traduit pas une déficience des praticiens loc
 +------------------------------------+--------------------+----------------------------------------+
 ```
 
-### Le verrou du coefficient géographique bridé à 11 %
+### Official BOAMP Procurement Evidence: The 46.75M EUR Aeromedical EVASAN Mega-Contract and CNAM Rents
 
-Dans les départements et régions d'outre-mer (Guadeloupe, Martinique, Réunion, Guyane), le surcoût de l'insularité et de l'éloignement fait l'objet d'un coefficient géographique de compensation de la Tarification à l'Activité (T2A) fixé entre 27 % et 31 %.
+Direct extraction of public procurement data via the DILA / BOAMP API (boamp-datadila.opendatasoft.com) delivers concrete material proof of this organized rent:
 
-En Corse, bien que les hôpitaux subissent des surcoûts d'approche maritime et aérienne identiques pour chaque compresse, chaque médicament et chaque pièce de maintenance biomédicale, l'État a bloqué ce coefficient à un taux dérisoire de 11 %. Ce différentiel de 14 points représente une spoliation directe de **30,27 millions d'euros par an** confisqués aux hôpitaux publics et aux cliniques insulaires.
+1. **The 46,750,300.00 EUR Aeromedical EVASAN Mega-Contract (BOAMP Notice No. 23-6551 / Contract No. 23192)**:
+   - **Contracting Authority**: Regional purchasing group coordinated jointly by **Ajaccio Hospital Center (SAMU 2A)** and **Bastia Hospital Center (SAMU 2B)**.
+   - **Contract Object**: *"Aeromedical sanitary transport services linked to the medical evacuations of patients hospitalized in Corsica 365 days a year, 24 hours a day"*.
+   - **Award Date: January 13, 2023**: Total contract value of **46,750,300.00 EUR VAT incl.** awarded exclusively to **Societe ALTAGNA** (Bastia Poretta Airport, 20290 Borgo).
+   - This contract locks in the mandatory aerial deportation of thousands of Corsican patients to Nice and Marseille for years, cementing an exorbitant logistics rent rather than allocating these tens of millions of euros into building self-sufficient critical care units in Bastia and Ajaccio.
+
+2. **The Explosion of CNAM / SNDS Medical Transport Reimbursements (Region 94)**:
+   Certified queries on the **Open DAMIR / SNDS** database (data.ameli.fr) regarding Item 6 (*"Patient Transports"*) demonstrate continuous increases reimbursed by French Social Security in Corsica:
+   - **2022**: 25,069,121 EUR (Haute-Corse: 15.20M EUR | Corse-du-Sud: 9.87M EUR)
+   - **2023**: 27,573,367 EUR (+10.0%; Haute-Corse: 16.39M EUR | Corse-du-Sud: 11.18M EUR)
+   - **2024**: 29,050,860 EUR (+5.4%; Haute-Corse: 17.32M EUR | Corse-du-Sud: 11.73M EUR)
+   - **2025**: 28,714,182 EUR (Consolidated)
+   - **Four-Year Cumulative Total: 110,407,530 EUR** drained by medical transports. Haute-Corse (2B) accounts for **59.7% of all spending (65.97M EUR)** due to isolated inland valleys and neglected transport infrastructure.
+
+3. **BOAMP Notice No. 23-137097: Admission of Failure by Corse-du-Sud GHT**:
+   Official publication on October 5, 2023 of a public tender for medical temporary staffing issued by Ajaccio Hospital for all public facilities in southern Corsica (Ajaccio, Bonifacio, Sartene - CPV codes 79625000 and 79620000), demonstrating chronic physician shortages and forced reliance on external agency staffing.
+
+### Le verrou du coefficient géographique bridé à 11 % (Arrêtés JORF 2025-2026)
+
+L'examen des derniers arrêtés ministériels fixant les éléments tarifaires MCO publiés au Journal officiel — l'**arrêté du 7 avril 2025** et l'**arrêté du 12 janvier 2026** — apporte la preuve écrite de la discrimination d'État subie par la Corse :
+- **Guadeloupe (971)** : **27,00 %** de majoration géographique d'office.
+- **Guyane (973)** : **33,10 %** de majoration géographique d'office.
+- **La Réunion (974)** : **34,00 %** de majoration géographique d'office.
+- **Corse-du-Sud (2A) et Haute-Corse (2B)** : **11,00 %** (bloqué et reconduit à l'identique au JORF du 12 janvier 2026).
+
+Pourtant, la Corse subit la même discontinuité territoriale maritime, les mêmes surcoûts d'approche pour le fret hospitalier et la même inflation insulaire. Cet écart de 16 à 23 points par rapport aux DROM prive les hôpitaux publics et cliniques corses de **30,27 à 45,50 millions d'euros par an** de recettes d'exploitation légitimes.
+
+Pire encore : l'**arrêté ministériel du 8 juin 2026** fixant la dotation du Fonds d'Intervention Régional (FIR) au JORF du 10 juin 2026 confirme le désengagement d'État avec une baisse de l'enveloppe fongible de l'ARS Corse à **40,475 millions d'euros** (dont à peine 7,33 M€ pour la prévention et 2,68 M€ pour le médico-social), accentuant l'asphyxie financière des établissements insulaires.
+
+### La surtension estivale prouvée par les séries officielles de la DREES
+
+L'interrogation directe des séries longues de la DREES (*Direction de la Recherche, des Études, de l'Évaluation et des Statistiques*) sur le nombre de passages aux urgences en Corse démontre l'asphyxie programmée du système public. Alors que les dotations T2A de l'État sont calibrées sur une population résidente hivernale de 355 000 habitants, les services d'urgences de Bastia, d'Ajaccio, de Porto-Vecchio et de Calvi subissent chaque été un choc de fréquentation violent documenté par les chiffres officiels d'État :
+
+```
++--------------------------------------------------------------------------------------------------+
+|           CHRONIQUE DREES : FRÉQUENTATION MENSUELLE DES URGENCES EN CORSE (2A & 2B)              |
++-------------------+--------------------+--------------------+------------------------------------+
+| Année             | Janvier (Basse)    | Août (Pic Estival) | Surtension Saisonnière Constatée   |
++-------------------+--------------------+--------------------+------------------------------------+
+| 2018              | 7 995 passages     | 13 033 passages    | + 63,0 %                           |
+| 2019              | 7 587 passages     | 12 376 passages    | + 63,1 %                           |
+| 2021              | 5 716 passages     | 12 469 passages    | + 118,2 %                          |
+| 2022              | 6 950 passages     | 12 633 passages    | + 81,8 %                           |
+| 2023              | 7 571 passages     | 11 865 passages    | + 56,7 %                           |
++-------------------+--------------------+--------------------+------------------------------------+
+| SOURCE OFFICIELLE | API DREES France   | Relevés certifiés  | Surcharge estivale moyenne : +76 % |
++-------------------+--------------------+--------------------+------------------------------------+
+```
+
+Face à ce pic où la fréquentation bondit jusqu'à **+118 %** en plein mois d'août avec l'afflux de 3 millions de touristes, le ratio de réanimation s'effondre à **2,5 lits pour 100 000 personnes présentes**, plaçant la Corse au dernier rang de tous les territoires sous souveraineté française.
+
+### Forensique SAE 2023 : Sursaturation Publique (107 %) vs Cliniques Privées Bridées
+
+The direct extraction of micro-data from the **DREES SAE 2023** database (MCO_2023r.csv, REA_2023r.csv, PERINAT_2023r.csv) scientifically proves the systemic failure organized by the State: **the public hospital collapses under extreme saturation while independent private clinics are deliberately capped by ARS authorisations and the -26.35% GHS tariff discount.**
+
+`
++-----------------------------------------------------------------------------------------------------------------------+
+|  OFFICIAL DREES SAE 2023 MICRO-DATA: MCO CAPACITIES AND OCCUPANCY RATES IN CORSICA                                    |
++------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
+| Healthcare Facility                | Status    | MCO Beds  | Available  | Patient    | Real MCO      | Clinical       |
+|                                    |           | Installed | Bed-Days   | Days Done  | Occup. Rate   | Diagnosis      |
++------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
+| CH Ajaccio (Notre-Dame Miséricorde)| Public    | 183 beds  | 66,795 OBD | 71,692 d.  | 107.33 %      | OVERCAPACITY   |
+| CH Bastia (Falconaja)              | Public    | 245 beds  | 89,425 OBD | 75,342 d.  |  84.25 %      | CRITICAL LOAD  |
+| CH Calvi Balagne                   | Public    |  28 beds  | 10,220 OBD | 10,880 d.  | 106.46 %      | OVERCAPACITY   |
+| CH Sartène                         | Public    |  19 beds  |  6,935 OBD |  6,681 d.  |  96.33 %      | MAXIMUM LOAD   |
++------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
+| Clinique Clinisud (Ajaccio)        | Private   |  73 beds  | 26,645 OBD | 15,354 d.  |  57.62 %      | UNDERUTILIZED  |
+| Clinique Maymard (Bastia)          | Private   |  86 beds  | 31,390 OBD | 12,449 d.  |  39.66 %      | UNDERUTILIZED  |
+| Clinique Furiani                   | Private   |  58 beds  | 21,170 OBD |  5,729 d.  |  27.06 %      | DORMANT RES.   |
++------------------------------------+-----------+-----------+------------+------------+---------------+----------------+
+| Source: DREES - SAE 2023 (File MCO_2023r.csv) / Official formula: Rate = (MCO Days / Available Bed-Days) * 100       |
+`
+
+> **Plain English for citizens:** Ajaccio General Hospital runs at **107.33% occupancy in MCO**, forcing Corsican patients onto emergency gurneys in hallways, while just a few kilometers away, Clinisud clinic sits at **57.62%** occupancy due to ARS administrative locks! The Corsican Healthcare Pact immediately unlocks these 110 empty beds without spending a single euro on new concrete.
+
+#### Neonatal Anomaly: Zero Neonatal Resuscitation Beds Island-Wide
+
+The extraction of PERINAT_2023r.csv from SAE 2023 uncovers an alarming metric:
+- **CH Bastia (Type 2B Maternity)**: 1,140 single deliveries, 26 multiple deliveries, 1,199 live births. Neonatal intensive care beds: 7 (LIT_SOIN = 7). **Neonatal resuscitation beds: 0 (LIT_REA = 0).**
+- **CH Ajaccio (Type 2B Maternity)**: 916 single deliveries, 10 multiple deliveries, 941 live births. Neonatal intensive care beds: 4 (LIT_SOIN = 4). **Neonatal resuscitation beds: 0 (LIT_REA = 0).**
+
+Across more than 2,140 babies born every year in Corsica, **not a single hospital has a neonatal resuscitation bed**. Any acute respiratory failure or severe prematurity forces an emergency aeromedical flight lasting 3.5 to 5.0 hours door-to-door to Nice or Marseille.
 
 ---
 

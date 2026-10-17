@@ -1,61 +1,46 @@
-# L'OCHJU — CELLULE D'INVESTIGATION ENVIRONNEMENTALE & HYDRAULIQUE
-**KIT DE TRANSMISSION PRESSE & RÉDACTIONS D'INVESTIGATION (GRADE ICIJ)**  
-*Dossier d'Enquête : La Marchandisation de l'Eau — Le Plan de 175 Millions de m³ qui Libère l'Île par l'Eau*  
-*Cote de Traçabilité Forensique : LOCHJU-TRANS-2026-ENQ04-PRESS*  
-*Norme de Saisie Probatoire : ISO/IEC 27037:2012*  
-*Date d'Émission Officielle : 25 Septembre 2026*  
+---
+title: "Kit de Presse d'Investigation — Enquête 04 : La Marchandisation de l'Eau en Corse"
+ref: "LOCHJU-PRESSE-ENQUETE-04"
+date: "Octobre 2026"
+author: "Cellule d'Investigation L'OCHJU"
+status: "Diffusable — Format Consortiums ICIJ / OCCRP / Presse Régionale et Nationale"
+---
+
+# DOSSIER DE PRESSE & INVESTIGATION FORENSIQUE : LE SCANDALE DE L'EAU EN CORSE
+
+> **Règle déontologique :** Ce dossier met à la disposition des journalistes d'investigation, rédactions et consortiums les données brutes, cotes administratives et méthodologies de calcul scellées sous empreinte SHA-256 (ISO/IEC 27037).
 
 ---
 
-## 1. COMMUNIQUÉ D'ALERTE CITOYENNE (EMBARGO LEVÉ)
+## 1. LE SYNOPSIS D'ENQUÊTE
 
-### Titre :
-**CRISE DE L'EAU EN CORSE : L'AUTOPSIE MÉDICO-LÉGALE DU « CHÂTEAU D'EAU PERCÉ » — 85 % DE L'EAU PART À LA MER SANS STOCKAGE ET 42 MILLIONS DE M³ D'EAU TRAITÉE PERDUS DANS DES CANALISATIONS VÉTUSTES**
-
-### Accroche Journalistique :
-Alors que la Corse reçoit chaque année plus de 8 à 10 milliards de mètres cubes de précipitations faisant d'elle l'un des plus grands réservoirs naturels de la Méditerranée, les habitants subissent chaque été des restrictions drastiques d'eau potable. Une enquête médico-légale croisant les données nationales SISPEA, les bilans d'exploitation de l'OEHC et les cartes de veille foncière [Bufitonu.fr](https://bufitonu.fr) démontre que la pénurie n'est pas une fatalité climatique mais le résultat d'un sous-investissement criant : plus de 80 à 85 % des eaux de ruissellement s'échappent directement en mer faute de réservoirs publics, et sur l'eau captée, un rendement moyen insulaire médiocre de 58,4 % laisse fuiter 42 millions de m³ d'eau potable par an dans le sous-sol.
-
----
-
-## 2. SYNTHÈSE PROBATOIRE & RÉVÉLATIONS FACTUELLES CLÉS
-
-### A. Le Paradoxe du Stockage : 46 M de m³ en Corse contre 1,8 Milliard en Sardaigne
-- **Les Données Hydrologiques** : Rapports de gestion de l'Office d'Équipement Hydraulique de la Corse (OEHC) (*Doc. Ref. SHA256 : 8a7b6c5d...*).
-- **Le Déséquilibre Majeur** : La capacité totale de stockage public des barrages insulaires ne dépasse pas 46 millions de m³. À potentiel pluviométrique équivalent, l'île voisine de Sardaigne stocke 40 fois plus d'eau (1,8 milliard de m³), lui assurant une souveraineté agricole et énergétique totale.
-
-### B. Le Scandale des Réseaux Fissurés : 42 Millions de m³ Évaporés dans le Sol
-- **La Source Probatoire** : Indicateur national P104.3 de la base SISPEA (*Doc. Ref. SHA256 : 4b3c2d1e...*).
-- **Le Bilan des Pertes** : Avec un rendement moyen insulaire de 58,4 % (contre plus de 80 % au niveau national), près de 41 litres sur 100 d'eau potable traitée sont perdus sous la chaussée avant d'atteindre le compteur des usagers.
-- **La Preuve par la Régie Publique** : La Communauté d'Agglomération de Bastia (*Acqua Publica*), gérée en régie 100 % publique, affiche un rendement de 78 %, démontrant que la rénovation des tuyaux est une question de choix politique et de réinvestissement des recettes d'eau.
-
-### C. La Rente Privée des Délégations de Service Public (DSP)
-- **Le Modèle Financier des Multinationales** : Alors que l'eau brute est captée gratuitement dans nos montagnes et souvent acheminée par les barrages de la collectivité (OEHC), les contrats de DSP délégués à des multinationales privées maximisent la marge opérationnelle sur la distribution et facturent les fuites aux usagers via le prix du m³, sans exécuter les programmes pluriannuels de renouvellement des conduites anciennes.
+Alors que la Corse est présentée chaque été comme une terre aride frappée par le dérèglement climatique, l'investigation menée par **L'OCHJU** établit que la crise de l'eau est d'origine exclusivement capitalistique et administrative :
+- **Pluviométrie brute annuelle** : 8 à 10 milliards de m³.
+- **Taux de perte pluviale vers la mer** : 80 % à 85 % faute de barrages et de retenues publiques.
+- **Turbinage industriel EDF** : 1,09 milliard de m³ par an (23 fois la consommation d'eau potable totale de l'île).
+- **Fuites de réseaux sous terre** : 42 millions de m³ d'eau potable traitée perdus chaque année en raison de la vétusté des canalisations non renouvelées par les opérateurs privés.
+- **Rente tarifaire** : Eau brute cédée à 0,105 €/m³ par l'OEHC, refacturée aux ménages jusqu'à 6,80 €/m³ par les délégataires privés (Kyrnolia/Veolia, Saur).
+- **Embouteillage privé** : Des sources d'exception (Saint-Georges, Zilia, Orezza) concédées à des acteurs privés générant des millions d'euros de profits pour des redevances dérisoires.
 
 ---
 
-## 3. ANGLES D'ATTAQUE INVESTIGATIFS SUGGÉRÉS AUX RÉDACTIONS
+## 2. FAITS FORENSIQUES & COTES OPPOSABLES
 
-1. **Angle Écologique & Aménagement du Territoire** :  
-   *Pourquoi l'absence de retenues collinaires et de micro-barrages d'altitude prive la Corse de son indépendance agricole (maraîchage, élevage) et favorise les incendies.*
-2. **Angle Gestion Publique vs Rente Privée** :  
-   *Comparatif économique entre la régie publique d'Acqua Publica à Bastia et les délégations privées déficitaires en investissement sur le littoral.*
-3. **Angle Plan Souverain « Carré d'Or »** :  
-   *Le projet citoyen d'un plan de stockage public de 175 millions de m³ couplant hydroélectricité (STEP), autonomie alimentaire de l'ODARC et sécurisation de l'eau potable sans nouveau barrage géant destructeur.*
-
----
-
-## 4. BORDEREAU DES PIÈCES PROBATOIRES À TÉLÉCHARGER
-
-| Cote Pièce | Dénomination Officielle | Empreinte Numérique Certifiée (SHA256) | Accès Libre Permanent |
+| Indicateur / Pièce | Source Officielle | Valeur Constatée | Cote & Réf. |
 | :--- | :--- | :--- | :--- |
-| **PIÈCE 01** | Données Nationales SISPEA / EauFrance (Indicateur Rendement P104.3) | `4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c` | `https://www.eaufrance.fr/` |
-| **PIÈCE 02** | Bilans d'Exploitation Hydraulique OEHC (Capacité Barrages & Canaux) | `8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b` | `https://www.banquedesterritoires.fr/` |
-| **PIÈCE 03** | Rapports de Contrôle des Prélèvements en Rivières (Office Français Biodiversité) | `2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b` | `https://www.eaufrance.fr/` |
+| **Prélèvements Turbinage Barrages EDF** | BNPE / Hub'Eau 2021 | 1 091 946 239 m³ | Chroniques 2A / 2B AERMC |
+| **Prélèvements Eau Potable AEP** | BNPE / Hub'Eau 2021 | 47 010 702 m³ | Chroniques 2A / 2B AERMC |
+| **Rendement Réseaux Ruraux** | SISPEA EauFrance | Chute < 50 % | Indicateur P104.3 |
+| **Capacité de Stockage Public** | OEHC (Schéma Acqua Nostra 2050) | 76 Mm³ (322 m³/hab) | Comparatif Sardaigne : 1 100 m³/hab |
+| **Tarif Eau Brute Agricole/Base** | CA OEHC Délibération 05/52 | 0,105 € / m³ | Recueil des Actes Administratifs CDC |
+| **Tarif Eau Potable + Assainissement** | RPQS Communes / Kyrnolia | 3,50 € à 6,80 € / m³ | Factures Usagers & Délibérations DSP |
+| **Résultat Net SODEZ (Zilia) 2023** | API Recherche Entreprises / INPI | 1 163 486 € | SIREN 378 012 694 |
 
 ---
 
-## 5. CONTACTS & PROTOCOLE DE VÉRIFICATION FORENSIQUE
+## 3. CONTACT PRESSE & DROIT DE RÉPONSE
 
-- **Portail d'Investigation Citoyenne (FR)** : [https://fsucieta.github.io/enquetes/04-la-marchandisation-de-l-eau/](https://fsucieta.github.io/enquetes/04-la-marchandisation-de-l-eau/)
-- **Miroir International (English Version)** : [https://fsucieta.github.io/en/investigations/04-la-marchandisation-de-l-eau/](https://fsucieta.github.io/en/investigations/04-la-marchandisation-de-l-eau/)
-- **Partenaire Cartographique & Urbanisme** : Crédit obligatoire à [Bufitonu.fr](https://bufitonu.fr).
+Toutes les pièces brutes (fichiers JSON, extractions BNPE, bilans INPI) sont téléchargeables en accès libre et opposable sur la plateforme citoyenne :
+`https://fsucieta.github.io/enquetes/04-la-marchandisation-de-l-eau/`
+
+*« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*
