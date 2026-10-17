@@ -344,13 +344,6 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
-"30-solutions-mobilites-du-grand-ajaccio.md": {
-	id: "30-solutions-mobilites-du-grand-ajaccio.md";
-  slug: "30-solutions-mobilites-du-grand-ajaccio";
-  body: string;
-  collection: "enquetes";
-  data: InferEntrySchema<"enquetes">
-} & { render(): Render[".md"] };
 };
 "investigations": {
 "01-le-grand-verrou-financier.md": {
