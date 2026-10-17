@@ -3,7 +3,7 @@ id: 12
 title: "L'Exil Médical Organisé : Autopsie Forensique du Black Budget Sanitaire et du Pacte CHU en Corse"
 subtitle: "170,8 millions d'euros par an de fuite financière, 2 222 lits pris en otage, la boîte noire du FIR de l'ARS et le scandale du cyclotron manquant : l'instruction médico-légale sur la spoliation hospitalière insulaire."
 category: "SANTÉ & HÔPITAL"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-12"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"
