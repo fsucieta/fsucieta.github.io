@@ -53,3 +53,11 @@ destinataires: "Conseillers à l'Assemblée de Corse / Députés et Sénateurs d
 ---
 
 *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*
+
+
+---
+
+## ANNEXE OPÉRATIONNELLE : LE PLAN CITOYEN DE 175 MILLIONS DE M³ (IFTS 89,2/100) & BOUCLE STEP
+1. **Court terme (0-2 ans, +41,8 Mm³/an)** : Réparation des conduites percées jusqu'à 85 % de rendement (+26 Mm³/an, Art. L. 2224-7-1 CGCT), barrages souterrains alluvionnaires sous les graviers de la Gravona (+14 Mm³/an sans évaporation), capteurs solaires passifs MOF sur les toits des écoles et mairies isolées (+1,8 Mm³/an).
+2. **Moyen terme (2-5 ans, +85 Mm³/an)** : Réserves agricoles en Plaine Orientale pour 35 000 hectares (+45 Mm³/an), équipement des 4 grands barrages (Calacuccia, Tolla, Sampolo, Rizzanese — confisqués jusqu'en 2096 par la Loi n° 2026-554) en **pompage-turbinage en circuit fermé (STEP)** couplé au solaire du midi et micro-turbines sur conduites d'eau (+40 Mm³/an).
+3. **Long terme (5-8 ans, +48,2 Mm³/an)** : Captage des sources d'eau douce sous-marines côtières (+33,2 Mm³/an) et climatisation des hôpitaux par eau de mer profonde SWAC (+15 Mm³/an).

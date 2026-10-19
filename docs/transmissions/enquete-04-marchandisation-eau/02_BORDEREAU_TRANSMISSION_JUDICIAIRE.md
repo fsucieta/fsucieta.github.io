@@ -26,7 +26,7 @@ Signalement citoyen de faits susceptibles de caractériser :
 ## 1. EXPOSÉ DÉTAILLÉ DES FAITS ET GRIEFS MATÉRIELS
 
 ### A. L'aveu médico-légal de surfacturation : Le cas de Porto-Vecchio (SDEC / Veolia)
-Le rapport d'audit technique, financier et juridique commandé par la commune de Porto-Vecchio sur le contrat d'affermage conclu le 30 juin 2016 avec la **SDEC** (présidée par M. Jérôme Cardineau) et présenté en séance du Conseil municipal du 7 octobre 2026 (Avenant n°1) établit formellement :
+Le rapport d'audit technique, financier et juridique commandé par la commune de Porto-Vecchio sur le contrat d'affermage conclu le 30 juin 2016 avec la **SDEC** (présidée par M. Mandataire Exécutif J. C.) et présenté en séance du Conseil municipal du 7 octobre 2026 (Avenant n°1) établit formellement :
 - **Une formule d'indexation tarifaire biaisée** : L'absence d'indice représentatif des salaires a provoqué une hausse artificielle des tarifs de l'eau supportée par les usagers à hauteur de **+15 %**.
 - **Une rentabilité excessive hors contrat** : La marge réelle dégagée par la SDEC (qui réalise 60,77 M€ de CA annuel et 2,67 M€ de bénéfice net) a excédé les prévisions initiales du contrat de concession.
 - **Un non-respect des dotations de renouvellement** : Retard caractérisé dans le renouvellement du parc de compteurs pourtant financé mensuellement par les abonnés, et carence dans la tenue de l'inventaire électromécanique et du SIG.
@@ -48,3 +48,11 @@ Le rapport d'audit technique, financier et juridique commandé par la commune de
 
 Fait pour valoir ce que de droit,  
 Remis entre les mains souveraines des citoyens et collectifs d'usagers de Corse.
+
+
+---
+
+## ANNEXE OPÉRATIONNELLE : LE PLAN CITOYEN DE 175 MILLIONS DE M³ (IFTS 89,2/100) & BOUCLE STEP
+1. **Court terme (0-2 ans, +41,8 Mm³/an)** : Réparation des conduites percées jusqu'à 85 % de rendement (+26 Mm³/an, Art. L. 2224-7-1 CGCT), barrages souterrains alluvionnaires sous les graviers de la Gravona (+14 Mm³/an sans évaporation), capteurs solaires passifs MOF sur les toits des écoles et mairies isolées (+1,8 Mm³/an).
+2. **Moyen terme (2-5 ans, +85 Mm³/an)** : Réserves agricoles en Plaine Orientale pour 35 000 hectares (+45 Mm³/an), équipement des 4 grands barrages (Calacuccia, Tolla, Sampolo, Rizzanese — confisqués jusqu'en 2096 par la Loi n° 2026-554) en **pompage-turbinage en circuit fermé (STEP)** couplé au solaire du midi et micro-turbines sur conduites d'eau (+40 Mm³/an).
+3. **Long terme (5-8 ans, +48,2 Mm³/an)** : Captage des sources d'eau douce sous-marines côtières (+33,2 Mm³/an) et climatisation des hôpitaux par eau de mer profonde SWAC (+15 Mm³/an).
