@@ -552,20 +552,19 @@ Fini l'injustice actuelle où l'eau pour préparer le biberon d'un enfant coûte
 ---
 
 ### PILIER C : Le Calendrier d'Ingénierie « 175 Millions de m³ » en 3 Étapes (Sans Bétonner la Montagne)
-En plus d'équiper nos **4 grands barrages existants (Calacuccia, Tolla, Sampolo, Rizzanese) de pompes en circuit fermé (STEP)** pour arrêter de jeter à la mer le milliard de mètres cubes turbiné par EDF, voici les **6 solutions techniques concrètes** que la Corse peut déployer en 8 ans pour sécuriser **+175 millions de m³ d'eau douce par an** :
+En plus d'équiper nos **4 grands barrages existants (Calacuccia, Tolla, Sampolo, Rizzanese) de pompes en circuit fermé (STEP)** pour arrêter de jeter à la mer le milliard de mètres cubes turbiné par EDF, voici les **5 solutions techniques concrètes** que la Corse peut déployer en 8 ans pour sécuriser **+175 millions de m³ d'eau douce par an** :
 
 #### 🟢 Étape 1 — L'Urgence Immédiate (0 à 2 ans) : `+41,8 Millions de m³ / an` gagnés tout de suite
-1. **Colmater les fuites des réseaux (passage de 58 % à 85 % de rendement)** : En réinvestissant l'argent qui partait chez Veolia directement dans le remplacement des vieilles conduites percées en fonte et amiante-ciment, on sauve immédiatement **`+26 millions de m³ d'eau potable par an`** qui se perdaient sous le goudron.
+1. **Colmater les fuites des réseaux (passage de 58 % à 85 % de rendement)** : En réinvestissant l'argent qui partait chez Veolia directement dans le remplacement des vieilles conduites percées en fonte et amiante-ciment, on sauve immédiatement **`+27,8 millions de m³ d'eau potable par an`** qui se perdaient sous le goudron.
 2. **Stocker l'eau sous les galets des rivières (Barrages souterrains alluvionnaires — Pilote Gravona)** : Plutôt que de noyer des vallées sous du béton où le soleil d'août fait évaporer l'eau, on installe une paroi étanche sous le lit de graviers des fleuves (comme la Gravona). L'eau reste stockée **sous terre**, fraîche, protégée du soleil et sans abîmer le paysage : **`+14 millions de m³ / an`** dès la première phase.
-3. **Panneaux capteurs d'humidité de l'air (`MOF` solaires passifs) sur les écoles et dispensaires de montagne** : Dans les petits villages isolés souvent coupés du réseau l'été, des capteurs solaires posés sur les toits des mairies, écoles et maisons de santé récoltent l'humidité de l'air la nuit avec `0 kWh` d'électricité pour garantir une eau pure de secours : **`+1,8 million de m³ / an`**.
 
 #### 🟡 Étape 2 — L'Autonomie de nos Paysans et l'Énergie Propre (2 à 5 ans) : `+85 Millions de m³ / an`
-4. **Réserves souterraines et retenues collinaires agricoles en Plaine Orientale** : Créer un maillage de réserves douces et de stockage alluvial pour irriguer **35 000 hectares** de terres agricoles (maraîchage, vergers, fourrage pour nos éleveurs) et libérer la Corse de la dépendance alimentaire : **`+45 millions de m³ / an`** (soit **`60 millions de m³`** au total avec les nappes alluviales).
-5. **Micro-turbines électriques directement dans nos gros tuyaux d'eau + Boucle fermée (STEP)** : Lorsque l'eau descend des montagnes dans les grosses canalisations de l'OEHC et des communes, sa pression naturelle fait tourner de petites turbines logées *à l'intérieur même des tuyaux*. On produit de l'électricité verte gratuite sans perdre une goutte d'eau, ce qui aide à fermer les centrales polluantes au fioul : **`+40 millions de m³ / an`** valorisés.
+3. **Réserves souterraines et retenues collinaires agricoles en Plaine Orientale** : Créer un maillage de réserves douces et de stockage alluvial pour irriguer **35 000 hectares** de terres agricoles (maraîchage, vergers, fourrage pour nos éleveurs) et libérer la Corse de la dépendance alimentaire : **`+45 millions de m³ / an`** (soit **`59 millions de m³`** au total avec les nappes alluviales).
+4. **Micro-turbines électriques directement dans nos gros tuyaux d'eau + Boucle fermée (STEP)** : Lorsque l'eau descend des montagnes dans les grosses canalisations de l'OEHC et des communes, sa pression naturelle fait tourner de petites turbines logées *à l'intérieur même des tuyaux*. On produit de l'électricité verte gratuite sans perdre une goutte d'eau, ce qui aide à fermer les centrales polluantes au fioul : **`+40 millions de m³ / an`** valorisés.
 
 #### 🔵 Étape 3 — La Mer et les Sources Côtières au Secours des Villes (5 à 8 ans) : `+48,2 Millions de m³ / an`
-6. **Capter les rivières d'eau douce qui jaillissent sous la mer (Résurgences sous-marines côtières)** : Tout autour de la Corse, des dizaines de sources d'eau douce souterraines débouchent directement sous l'eau de mer à quelques mètres du rivage. En posant des cloches de captage souples à la sortie de ces sources avant que l'eau douce ne se mélange au sel, on récupère **`+33,2 millions de m³ / an`** pour les villes du littoral !
-7. **Climatiser les hôpitaux et aéroports avec l'eau froide des profondeurs (`SWAC`)** : En été, pomper la fraîcheur naturelle de la mer à grande profondeur pour rafraîchir les hôpitaux et zones d'activités d'Ajaccio et de Bastia permet d'économiser d'immenses volumes d'eau et d'électricité : équivalent **`+15 millions de m³ / an`**.
+5. **Capter les rivières d'eau douce qui jaillissent sous la mer (Résurgences sous-marines côtières)** : Tout autour de la Corse, des dizaines de sources d'eau douce souterraines débouchent directement sous l'eau de mer à quelques mètres du rivage. En posant des cloches de captage souples à la sortie de ces sources avant que l'eau douce ne se mélange au sel, on récupère **`+33,2 millions de m³ / an`** pour les villes du littoral !
+6. **Climatiser les hôpitaux et aéroports avec l'eau froide des profondeurs (`SWAC`)** : En été, pomper la fraîcheur naturelle de la mer à grande profondeur pour rafraîchir les hôpitaux et zones d'activités d'Ajaccio et de Bastia permet d'économiser d'immenses volumes d'eau et d'électricité : équivalent **`+15 millions de m³ / an`**.
 
 <div class="my-8 overflow-x-auto not-prose">
 <table class="w-full text-left text-xs font-mono bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
@@ -581,41 +580,34 @@ En plus d'équiper nos **4 grands barrages existants (Calacuccia, Tolla, Sampolo
 <tbody class="divide-y divide-slate-800/60 text-slate-200">
 <tr class="hover:bg-slate-900/50 transition">
 <td class="p-3.5 font-bold text-slate-100">1. Réparation des tuyaux percés (Objectif 85 %)</td>
-<td class="p-3.5 font-bold text-emerald-400">+26 000 000 m³/an</td>
+<td class="p-3.5 font-bold text-emerald-400">+27 800 000 m³/an</td>
 <td class="p-3.5">Court terme (1 à 3 ans)</td>
 <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">95 / 100</span></td>
 <td class="p-3.5">Fin des fuites sous les routes & mise en Régie Publique</td>
 </tr>
 <tr class="hover:bg-slate-900/50 transition">
-<td class="p-3.5 font-bold text-slate-100">2. Capteurs d'eau solaires (Toits écoles / mairies)</td>
-<td class="p-3.5 font-bold text-emerald-400">+1 800 000 m³/an</td>
-<td class="p-3.5">Immédiat (6 à 18 mois)</td>
-<td class="p-3.5"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">92 / 100</span></td>
-<td class="p-3.5">Eau potable garantie dans les villages isolés à 0 € d'électricité</td>
-</tr>
-<tr class="hover:bg-slate-900/50 transition">
-<td class="p-3.5 font-bold text-slate-100">3. Barrages souterrains sous les rivières & Plaine</td>
+<td class="p-3.5 font-bold text-slate-100">2. Barrages souterrains sous les rivières & Plaine</td>
 <td class="p-3.5 font-bold text-amber-400">+59 000 000 m³/an</td>
 <td class="p-3.5">Moyen terme (2 à 5 ans)</td>
 <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30">88 / 100</span></td>
 <td class="p-3.5">Zéro évaporation l'été & eau garantie pour 35 000 ha agricoles</td>
 </tr>
 <tr class="hover:bg-slate-900/50 transition">
-<td class="p-3.5 font-bold text-slate-100">4. Pompage en boucle (STEP) & Micro-turbines tuyaux</td>
+<td class="p-3.5 font-bold text-slate-100">3. Pompage en boucle (STEP) & Micro-turbines tuyaux</td>
 <td class="p-3.5 font-bold text-amber-400">+40 000 000 m³/an</td>
 <td class="p-3.5">Moyen terme (3 à 5 ans)</td>
 <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30">89 / 100</span></td>
 <td class="p-3.5">On garde l'eau d'EDF en montagne + électricité propre</td>
 </tr>
 <tr class="hover:bg-slate-900/50 transition">
-<td class="p-3.5 font-bold text-slate-100">5. Captage des sources d'eau douce sous-marines</td>
+<td class="p-3.5 font-bold text-slate-100">4. Captage des sources d'eau douce sous-marines</td>
 <td class="p-3.5 font-bold text-cyan-400">+33 200 000 m³/an</td>
 <td class="p-3.5">Long terme (5 à 8 ans)</td>
 <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">84 / 100</span></td>
 <td class="p-3.5">Récupération de l'eau douce qui se perdait sous la mer</td>
 </tr>
 <tr class="hover:bg-slate-900/50 transition">
-<td class="p-3.5 font-bold text-slate-100">6. Climatisation à l'eau de mer profonde (SWAC)</td>
+<td class="p-3.5 font-bold text-slate-100">5. Climatisation à l'eau de mer profonde (SWAC)</td>
 <td class="p-3.5 font-bold text-cyan-400">+15 000 000 m³/an</td>
 <td class="p-3.5">Long terme (5 à 8 ans)</td>
 <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">82 / 100</span></td>
