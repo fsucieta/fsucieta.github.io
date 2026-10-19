@@ -29,8 +29,8 @@ communes:
 sources:
   - name: "Préfecture de Haute-Corse / SIS 2B : SDACR 2023-2027 (Arrêté n° 135/2023 - Recommandation n°20 DGSCGC)"
     url: "/docs/sdacr-sis-2b-2023-2027-arrete-prefectoral-135.html"
-    pdfDirect: "/docs/sdacr-sis-2b-2023-2027-arrete-prefectoral-135.html"
-    sha256: "4396c44a78352cc63fd69f4b461b6bfba99bd1a4f58bd791ff714dc623b750d4"
+    pdfDirect: "/docs/sdacr-sis-2b-2023-2027-arrete-prefectoral-135.pdf"
+    sha256: "029aa2f6f82eda4cd437cf07ec17e2762020486262c22810c5b5515b4a379771"
   - name: "Sénat de la République : Rapport n° 838 (2022-2023) — Flotte d'aéronefs bombardiers d'eau de la sécurité civile"
     url: "/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf"
     pdfDirect: "/docs/senat-r22-838-flotte-aeronauts-bombardiers-eau.pdf"
@@ -41,28 +41,40 @@ sources:
     sha256: "d91dc6dee68ac4fa7adff97eab3a6ffcdb642d4b0b4e88cda4e56bb4e8e09f19"
   - name: "Assemblée de Corse : Délibération n° 25/102 AC du 26 juin 2025 (Création EPISC)"
     url: "/docs/deliberation-25-102-ac-episc.html"
-    pdfDirect: "/docs/deliberation-25-102-ac-episc.html"
-    sha256: "9ddb2e3de6e3fd2c754a3f77af674d21e6fe5613c319ce7d209cb7900170cdba"
+    pdfDirect: "/docs/deliberation-25-102-ac-episc.pdf"
+    sha256: "5ea2397cbff45d98233736fd67d1c7cc280f04247de1bbdd1e4deb8e8d28c0c5"
   - name: "Autorité de la Concurrence : Décision n° 25-D-07 du 17 novembre 2025 (Entente DPLC - 187,49 M€ d'amende)"
     url: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     sha256: "6e067af1700b08a733e6af1e0bf103f828b7be4c2c37cd8dbf1fabcc3db80cd4"
   - name: "Assemblée Nationale : Réponse Ministérielle n° 3779 (TSCA Corse, JO du 7 mars 2023)"
     url: "/docs/reponse-ministerielle-3779-tsca-corse.html"
-    pdfDirect: "/docs/reponse-ministerielle-3779-tsca-corse.html"
-    sha256: "c713482c28722192b75319274faeefaf2d3aa8dc6a2a337ffbecb6feb8ff315e"
+    pdfDirect: "/docs/reponse-ministerielle-3779-tsca-corse.pdf"
+    sha256: "79c41e8ba1e19a206a22c1a52b187c5faf360fa25aefa28a9f62d3cdff7d30b7"
   - name: "Premier Ministre : Décret n° 2024-124 du 21 février 2024 (Annulation 52,8 M€ Sécurité civile, JORF n°0044)"
     url: "/docs/decret-2024-124-annulation-credits-securite-civile.html"
-    pdfDirect: "/docs/decret-2024-124-annulation-credits-securite-civile.html"
-    sha256: "beeb7ac028e7d2181a85f9d3e61852f032e992d905c04d31e52edf4d09c53e71"
+    pdfDirect: "/docs/decret-2024-124-annulation-credits-securite-civile.pdf"
+    sha256: "ac5a21c59463088c99a9c49c4d0f618935803786ea9a6cce2e80d960a003ddd2"
   - name: "Assemblée Nationale : Amendement & Débats Moyens Aériens Corse - Accord Réflexe Sardaigne"
     url: "/docs/amendement-an-moyens-aeriens-securite-civile-corse.html"
-    pdfDirect: "/docs/amendement-an-moyens-aeriens-securite-civile-corse.html"
-    sha256: "6ca951d34b11d457a6435d3b9800fa4af5b14f2d71ad13e11d6cbfbe25ffa042"
+    pdfDirect: "/docs/amendement-an-moyens-aeriens-securite-civile-corse.pdf"
+    sha256: "c49164f3d0433d4b61f863352fffb5c95cbb967a0b7c69f5afe6f8571c40ba95"
   - name: "Relevé Terrain L'OCHJU : Mobilisation Unitaire des Sapeurs-Pompiers (Bastia, 28 sept. 2026)"
     url: "/docs/revue-presse-mobilisation-pompiers-bastia-2026.html"
-    pdfDirect: "/docs/revue-presse-mobilisation-pompiers-bastia-2026.html"
-    sha256: "ed43a9f29f257edc1d2aef9decba89b924e14ceeb395bfb447c65522989b6dbb"
+    pdfDirect: "/docs/revue-presse-mobilisation-pompiers-bastia-2026.pdf"
+    sha256: "2ba1277efe95d82ec6a1deacf1092cc66a5278f4a44788d38132d92f81f34e12"
+  - name: "Protocole Médico-Légal L'OCHJU : Acte d'Opposabilité & Décharge de Responsabilité SAMU 2A/2B, SMUR & SIS 2A/2B"
+    url: "/docs/dossier_sante_corse/12_PROTOCOLE_DECHARGE_RESPONSABILITE_SAMU_SMUR_POMPIERS.html"
+    pdfDirect: "/docs/dossier_sante_corse/12_PROTOCOLE_DECHARGE_RESPONSABILITE_SAMU_SMUR_POMPIERS.pdf"
+    sha256: "f69f634b5cc01c451a25b8fbc405750c2528983716e1554c84a9a3a54e38b1c9"
+  - name: "Délibération Cadre L'OCHJU : Pôle Unifié SAMU-CCPC Corte, 2 HéliSMUR H24, UMH-Air & Carences Rurales à 550 €"
+    url: "/docs/dossier_sante_corse/13_DELIBERATION_POLE_UNIFIE_SAMU_CCPC_HELISMUR_CORTE.html"
+    pdfDirect: "/docs/dossier_sante_corse/13_DELIBERATION_POLE_UNIFIE_SAMU_CCPC_HELISMUR_CORTE.pdf"
+    sha256: "8d3e4a90e04e7d1b24e72a62ed32a429ecd34ad33e88fd2103817f0a6d495516"
+  - name: "Protocole Européen GECT & Art. 2 CEDH : Corridor Vital SAMU 2A & Secours Corse – Sardaigne (Olbia / Sassari en 14 min)"
+    url: "/docs/dossier_sante_corse/14_CONVENTION_CORRIDOR_VITAL_SAMU_SECURITE_CIVILE_SARDAIGNE_OLBIA.html"
+    pdfDirect: "/docs/dossier_sante_corse/14_CONVENTION_CORRIDOR_VITAL_SAMU_SECURITE_CIVILE_SARDAIGNE_OLBIA.pdf"
+    sha256: "d2d92a8eb87c46b7c5dc7dfa42dbe4443b588d013f0904140ca7c057791459e4"
 ---
 
 <!-- ==========================================================================
@@ -278,6 +290,52 @@ Dotées du nouveau **H145 D3 pentapale** (affecté le 30 mai 2025 à Bastia et l
 * En l'absence de Centre Hospitalier Universitaire (CHU) sur l'île et faute de SMUR héliportés pérennes financés par l'Agence Régionale de Santé (ARS), le ministère de l'Intérieur transforme ses vecteurs de sauvetage en montagne en ambulances de substitution, au coût unitaire de **4 500 € à 5 500 € l'heure de vol**.
 
 Le marché de maintien en condition opérationnelle (MCO) conclu par l'État ne prévoit **aucun aéronef de substitution positionné en Corse**. Dès qu'un H145 entre en maintenance programmée des 100 heures ou subit une avarie d'avionique, un demi-département se retrouve privé de tout vecteur héliporté lorsque le plafond nuageux interdit le franchissement des cols de Vizzavona ou de Vergio par le second appareil.
+
+<div class="my-8 not-prose bg-slate-950 border-2 border-emerald-500/40 rounded-2xl p-6 shadow-2xl space-y-4">
+  <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+    <div class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400">
+      🚁 BOUCLIER JURIDIQUE SAMU 2A/2B • SMUR • SAPEURS-POMPIERS (PIÈCES SCELLÉES ISO 27037)
+    </div>
+    <a href="/dossier-secret-sante-corse/" class="text-[11px] font-mono font-bold text-amber-400 hover:underline">
+      Ouvrir la War Room Santé & CHU di Corsica →
+    </a>
+  </div>
+  <p class="text-xs font-sans text-slate-300 m-0 leading-relaxed">
+    Pour protéger les médecins régulateurs des SAMU 2A/2B, les équipes SMUR, les ARM des Centres 15 et les sapeurs-pompiers des SIS 2A/2B contre les conséquences du rationnement de l'ARS, téléchargez directement les 3 actes opposables scellés :
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-sans">
+    <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-2">
+      <div>
+        <span class="text-[10px] font-mono text-emerald-400 font-bold block">ACTE N° 12 • DÉCHARGE MÉDICO-LÉGALE</span>
+        <strong class="text-white block mt-0.5">Protocole d'Opposabilité SAMU / SMUR / SIS face aux Carences ARS</strong>
+      </div>
+      <div class="grid grid-cols-2 gap-1.5 pt-2 border-t border-slate-800">
+        <a href="/docs/dossier_sante_corse/12_PROTOCOLE_DECHARGE_RESPONSABILITE_SAMU_SMUR_POMPIERS.html" target="_blank" class="text-center py-1 rounded bg-slate-950 text-emerald-300 font-mono text-[10px] font-bold uppercase border border-slate-800">👁️ Lire HTML</a>
+        <a href="/docs/dossier_sante_corse/12_PROTOCOLE_DECHARGE_RESPONSABILITE_SAMU_SMUR_POMPIERS.pdf" download class="text-center py-1 rounded bg-emerald-600 text-slate-950 font-mono text-[10px] font-bold uppercase">📥 PDF Scellé</a>
+      </div>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-2">
+      <div>
+        <span class="text-[10px] font-mono text-cyan-400 font-bold block">ACTE N° 13 • PÔLE UNIFIÉ CORTE</span>
+        <strong class="text-white block mt-0.5">Délibération : 2 HéliSMUR H24, UMH-Air & Carences VSAV à 550 €</strong>
+      </div>
+      <div class="grid grid-cols-2 gap-1.5 pt-2 border-t border-slate-800">
+        <a href="/docs/dossier_sante_corse/13_DELIBERATION_POLE_UNIFIE_SAMU_CCPC_HELISMUR_CORTE.html" target="_blank" class="text-center py-1 rounded bg-slate-950 text-cyan-300 font-mono text-[10px] font-bold uppercase border border-slate-800">👁️ Lire HTML</a>
+        <a href="/docs/dossier_sante_corse/13_DELIBERATION_POLE_UNIFIE_SAMU_CCPC_HELISMUR_CORTE.pdf" download class="text-center py-1 rounded bg-cyan-600 text-slate-950 font-mono text-[10px] font-bold uppercase">📥 PDF Scellé</a>
+      </div>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-2">
+      <div>
+        <span class="text-[10px] font-mono text-rose-400 font-bold block">ACTE N° 14 • CORRIDOR ART. 2 CEDH</span>
+        <strong class="text-white block mt-0.5">Convention GECT : SAMU 2A & Secours vers Olbia / CHU Sassari (14 min)</strong>
+      </div>
+      <div class="grid grid-cols-2 gap-1.5 pt-2 border-t border-slate-800">
+        <a href="/docs/dossier_sante_corse/14_CONVENTION_CORRIDOR_VITAL_SAMU_SECURITE_CIVILE_SARDAIGNE_OLBIA.html" target="_blank" class="text-center py-1 rounded bg-slate-950 text-rose-300 font-mono text-[10px] font-bold uppercase border border-slate-800">👁️ Lire HTML</a>
+        <a href="/docs/dossier_sante_corse/14_CONVENTION_CORRIDOR_VITAL_SAMU_SECURITE_CIVILE_SARDAIGNE_OLBIA.pdf" download class="text-center py-1 rounded bg-rose-600 text-white font-mono text-[10px] font-bold uppercase">📥 PDF Scellé</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
