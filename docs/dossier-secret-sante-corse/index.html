@@ -219,7 +219,7 @@ OPPOSABILITÉ SOUVERAINE STRICTE
 Les <strong>11 actes ci-dessus</strong> constituent <span class="text-amber-400 font-bold">l'Arsenal Contentieux</span> (les armes de riposte judiciaire et institutionnelle prêtes à être déposées par les collectifs, soignants et élus).
 </p> <p class="text-slate-400 leading-relaxed">
 L'ensemble des preuves matérielles primaires émanant de l'État (les <strong>60 actes d'État, arrêtés ARS, contrats BOAMP, rapports CRC et micro-données DREES SAE scellées sous ISO/IEC 27037</strong>) sont classées, filtrables et auditables dans l'onglet dédié.
-</p> </div> <div class="flex-shrink-0"> <button onclick="document.querySelector('[data-tab='tab-sources-etat']').click(); window.scrollTo({top: document.getElementById('hud-tabs').offsetTop - 20, behavior: 'smooth'});" class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono text-xs uppercase tracking-wider font-bold transition shadow-lg cursor-pointer flex items-center gap-2"> <span>🏛️ Consulter les 60 Actes d'État (Onglet 7)</span> <span>→</span> </button> </div> </div> </div> </div> <!-- =====================================================================
+</p> </div> <div class="flex-shrink-0"> <button onclick="switchTab('tab-sources-etat')" class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono text-xs uppercase tracking-wider font-bold transition shadow-lg cursor-pointer flex items-center gap-2"> <span>🏛️ Consulter les 60 Actes d'État (Onglet 7)</span> <span>→</span> </button> </div> </div> </div> </div> <!-- =====================================================================
            ONGLET 2 : MUNITIONS JURIDIQUES & RECOURS DES SOIGNANTS
            ===================================================================== --> <div id="tab-assaut" class="hud-tab-content hidden space-y-6"> <div class="border-b border-slate-900 pb-3"> <div class="flex flex-wrap justify-between items-center gap-3"> <div> <h3 class="text-xl font-bold font-serif text-white uppercase">
 Arsenal Opérationnel de Riposte Médico-Légale (Personnels, Soignants & Usagers)
@@ -716,25 +716,42 @@ Il lui demande la création immédiate d'une unité de réanimation néonatale e
   const tabBtns = document.querySelectorAll('.hud-tab-btn');
   const tabContents = document.querySelectorAll('.hud-tab-content');
 
+  window.switchTab = function(target) {
+    tabBtns.forEach(b => {
+      const isTarget = b.getAttribute('data-tab') === target;
+      if (b.getAttribute('data-tab') === 'tab-sources-etat') {
+        if (isTarget) {
+          b.className = 'hud-tab-btn px-4 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition bg-cyan-500 text-slate-950 shadow-lg cursor-pointer border border-cyan-400';
+        } else {
+          b.className = 'hud-tab-btn px-4 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition bg-slate-900 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 cursor-pointer';
+        }
+      } else {
+        if (isTarget) {
+          b.className = 'hud-tab-btn px-4 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition bg-amber-500 text-slate-950 shadow-lg cursor-pointer';
+        } else {
+          b.className = 'hud-tab-btn px-4 py-2.5 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 cursor-pointer';
+        }
+      }
+    });
+
+    tabContents.forEach(c => {
+      if (c.id === target) {
+        c.classList.remove('hidden');
+      } else {
+        c.classList.add('hidden');
+      }
+    });
+
+    const hudEl = document.getElementById('hud-tabs');
+    if (hudEl) {
+      window.scrollTo({ top: hudEl.offsetTop - 20, behavior: 'smooth' });
+    }
+  };
+
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const target = btn.getAttribute('data-tab');
-
-      tabBtns.forEach(b => {
-        b.classList.remove('bg-amber-500', 'text-slate-950', 'shadow-lg');
-        b.classList.add('bg-slate-900', 'text-slate-300');
-      });
-
-      btn.classList.remove('bg-slate-900', 'text-slate-300');
-      btn.classList.add('bg-amber-500', 'text-slate-950', 'shadow-lg');
-
-      tabContents.forEach(c => {
-        if (c.id === target) {
-          c.classList.remove('hidden');
-        } else {
-          c.classList.add('hidden');
-        }
-      });
+      if (target) window.switchTab(target);
     });
   });
 

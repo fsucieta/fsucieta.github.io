@@ -171,6 +171,19 @@ L'extraction médico-légale des données brutes de la **Banque Nationale des Pr
 
 Le résultat est implacable. Les barrages d'EDF turbinent chaque année **plus d'un milliard de mètres cubes d'eau**. C'est vingt-trois fois le volume d'eau potable nécessaire à l'ensemble de la population résidente et touristique de l'île.
 
+### L'inventaire nominatif des ouvrages de captation (Base BNPE / Hub'Eau)
+L'interrogation directe des chroniques d'ouvrages de l'Agence de l'Eau (codes officiels `OPR`) permet d'identifier au mètre cube près où s'opère la ponction :
+- **En Haute-Corse (Vallée du Golo & Fium'Orbu)** :
+  1. **Usine Hydroélectrique de Castirla (`OPR0000049085`)** : **192 819 452 m³ / an** turbinés.
+  2. **Usine Hydroélectrique de Corscia (`OPR0000049086`)** : **178 486 663 m³ / an** turbinés.
+  3. **Centrale Hydroélectrique de Via Nova à Piedicorte-di-Gaggio (`OPR0000611677`)** : **125 816 615 m³ / an**.
+  4. **Aménagement de Sampolo à Ghisoni (`OPR0000049087`)** : **118 710 877 m³ / an**.
+  5. **Aménagement de Sovenzia à Calacuccia (`OPR0000049084`)** : **64 719 853 m³ / an**.
+- **En Corse-du-Sud (Vallées du Prunelli & du Rizzanese)** :
+  1. **Usine Hydroélectrique de Tolla-Ocana (`OPR0000049094`)** : **130 892 481 m³ / an** turbinés.
+  2. **Usine Hydroélectrique du Pont de la Vanna à Ocana (`OPR0000049089`)** : **120 921 680 m³ / an** — alors que sur ce même site du Pont de la Vanna, la prise destinée à l'eau potable (`OPR0000130554`) ne prélève que **2 172 840 m³** (soit **55 fois moins** que la turbine électrique).
+  3. **Usine Hydroélectrique du Rizzanese à Zoza (`OPR0000049095`)** : **94 332 999 m³ / an**.
+
 Lorsque des lâchers d'eau massifs sont effectués pour produire des mégawatts aux heures de pointe, ces volumes colossaux filent directement à la mer sans possibilité d'être réinjectés dans les réseaux d'alimentation en eau potable des villages situés en aval. L'énergie prime sur le bien commun vital.
 
 ---
@@ -268,6 +281,12 @@ Cette cartographie financière démontre la mécanique du groupe :
 - **La COMPAGNIE DES EAUX ET DE L'OZONE CORSE (CEOC, SIREN 817 503 576)** complète le dispositif en facturant **51,11 millions d'euros**.
 
 Toutes ces structures sont sous la direction exécutive d'un même dirigeant, Jérôme Cardineau (né en 1964), et auditées par le même commissaire aux comptes, ERNST & YOUNG AUDIT. 
+
+### La preuve par les registres sanitaires (API Hub'Eau Qualité Eau Potable / ARS)
+L'interrogation directe de la base nationale du contrôle sanitaire de l'eau potable (`qualite_eau_potable/resultats_dis`) démasque le jeu de bonneteau juridique entre la marque commerciale et les sociétés qui encaissent réellement les flux :
+- **À Ajaccio (`INSEE 2A004`) et Propriano (`INSEE 2A249`)** : Le distributeur officiel déclaré auprès de l'Agence Régionale de Santé (ARS) n'est pas la modeste société Kyrnolia (1,06 M€ de CA), mais **« KYRNOLIA CEO »**, c'est-à-dire la **Compagnie des Eaux et de l'Ozone Corse (CEOC, 51,11 M€ de CA)** qui dispose de **19 établissements** répartis sur l'île.
+- **À Porto-Vecchio (`INSEE 2A247`)** : Les 8 unités de distribution (UDI) de la commune sont officiellement rattachées à **« STÉ DES EAUX CORSES (KYRNOLIA-SUD) »**, soit la **SDEC (60,77 M€ de CA)**.
+- **À Corte (`INSEE 2B096`) et Bastia (`INSEE 2B033`)** : Les registres ARS affichent en toute clarté **« RÉGIE DE L'EAU DE CORTE CORT'ACQUA »** et **« ACQUA PUBLICA »**, confirmant la transparence intégrale de la gestion publique directe face à l'empilement de filiales du groupe Veolia.
 
 ### Le tuyau d'évacuation continental : Le GIE Veolia Eau France (SIREN 808 297 980)
 La clé de voûte de l'extraction financière n'est pas située en Corse, mais à Aubervilliers (Seine-Saint-Denis). 
@@ -405,10 +424,22 @@ La véritable prédation s'opère sur l'eau du robinet des familles corses, à t
    - **Une rentabilité hors contrat** : L'audit établit que la marge financière réelle empochée par la SDEC a largement dépassé les prévisions contractuelles initiales, confirmant la surfacturation systématique.
    - **Retard sur le renouvellement des compteurs** : Alors que les usagers financent la dotation de renouvellement à chaque quittance, la SDEC a accumulé un retard lourd dans le remplacement du parc de comptage.
    - **Rendement dégradé et opacité SIG** : Défaillance persistante du rendement réseau et carence dans la remise à jour des inventaires électromécaniques et du système d'information géographique (SIG), contraignant la commune à imposer une sommation de géoréférencement complet avant l'échéance du 30 juin 2028.
+7. **La rente des 45 000 compteurs connectés (Télérelève Kyrnolia)** :
+   Sous couvert de transition numérique, le déploiement de plus de **45 000 compteurs communicants** en télérelève sur les réseaux gérés par Kyrnolia/Veolia s'est accompagné de la facturation de redevances fixes supplémentaires aux abonnés. L'usager est ainsi contraint de payer un surcoût d'abonnement pour surveiller d'éventuelles micro-fuites après son compteur privé, alors que l'opérateur laisse filer **42 millions de mètres cubes d'eau potable** en amont sous la chaussée publique.
 
 ---
 
-## 7. L'INGÉNIERIE DE LA RÉSISTANCE : LE PLAN DE REPRISE EN SOUVERAINETÉ (40 % RÉSOLUTION)
+## 7. SPÉCULATION IMMOBILIÈRE, PISCINES PRIVÉES & RUPTURE DES STATIONS D'ÉPURATION (GEOINT / BUFITONU.FR)
+
+L'analyse spatiale et cadastrale menée à partir des données de la Direction Générale des Finances Publiques (*Données Cadastre DGFiP — Extraction et cartographie réalisées via la plateforme citoyenne Bufitonu.fr*) met en lumière le lien direct entre spéculation foncière et effondrement hydrique estival :
+
+1. **L'imperméabilisation accélérée des bassins versants littoraux** : Le bétonnage des zones côtières (Golfe d'Ajaccio, Extrême-Sud, Balagne, Valinco) empêche l'infiltration naturelle des pluies d'automne et d'hiver dans les nappes phréatiques alluviales, précipitant les eaux de ruissellement directement à la mer.
+2. **La multiplication par 3 à 4,5 de la demande en juillet-août** : Le croisement des permis de construire recensés sur **Bufitonu.fr** avec la capacité nominale des stations d'épuration (STEU) démontre que des centaines d'autorisations d'urbanisme pour des résidences secondaires et villas de luxe avec piscines ont été délivrées sur des réseaux déjà en dépassement de charge.
+3. **L'injustice de la tarification linéaire en pleine sécheresse** : Tandis que les arrêtés préfectoraux de crise frappent les éleveurs, les maraîchers et les habitants permanents, l'application d'un tarif unique au mètre cube permet aux propriétaires de villas spéculatives de remplir leurs piscines à ras bord au même prix unitaire que l'eau vitale d'une famille modeste ou d'un retraité corse.
+
+---
+
+## 8. L'INGÉNIERIE DE LA RÉSISTANCE : LE PLAN DE REPRISE EN SOUVERAINETÉ (40 % RÉSOLUTION)
 
 L'OCHJU refuse de limiter le constat à une déploration stérile. Les outils juridiques et institutionnels existent dans le droit positif pour briser cette rente et restaurer la souveraineté hydraulique du peuple corse.
 
@@ -518,7 +549,7 @@ Consulter le Kit Presse →
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-xs uppercase tracking-widest mb-3">
 <span>📂</span> Pièces Justificatives Officielles
 </div>
-<h3 class="text-2xl font-serif font-bold text-slate-100 mb-2">Les 6 Actes Clés en Accès Direct</h3>
+<h3 class="text-2xl font-serif font-bold text-slate-100 mb-2">Les 7 Actes Clés en Accès Direct</h3>
 <p class="text-sm text-slate-400 font-sans leading-relaxed">
 Conformément au principe de transparence citoyenne et au standard ISO/IEC 27037, voici les documents administratifs et registres légaux cités dans l'instruction, scellés sous empreinte SHA-256 et vérifiables sans intermédiaire.
 </p>

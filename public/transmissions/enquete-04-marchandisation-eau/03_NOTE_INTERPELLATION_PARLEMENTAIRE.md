@@ -2,49 +2,53 @@
 title: "Note d'Interpellation Parlementaire & Proposition de Délibération Territoriale"
 ref: "LOCHJU-ELUS-ENQUETE-04"
 date: "Octobre 2026"
-destinataires: "Conseillers à l'Assemblée de Corse / Députés et Sénateurs de Corse / Présidents d'EPCI"
+destinataires: "Conseillers à l'Assemblée de Corse / Députés et Sénateurs de Corse / Maires et Présidents d'EPCI"
 ---
 
-# NOTE D'INTERPELLATION OFFICIELLE : POUR LA REPRISE EN RÉGIE PUBLIQUE SOUVERAINE DE L'EAU EN CORSE
+# NOTE D'INTERPELLATION OFFICIELLE : POUR LA DÉCHÉANCE DES CONCESSIONS VEOLIA ET LA RÉGIE PUBLIQUE UNIQUE DE L'EAU
 
-> **Contexte citoyen :** Ce document juridique et programmatique est rédigé pour permettre aux élus et aux citoyens d'imposer le débat sur la gestion de l'or bleu au sein de l'Assemblée de Corse et des conseils communautaires.
-
----
-
-## 1. LES FAITS ÉTABLIS PAR L'INSTRUCTION CITOYENNE
-
-1. **85 % des précipitations partent en mer** faute de retenues collinaires et de barrages structurants.
-2. **La Corse ne stocke que 322 m³ d'eau par habitant**, contre 1 100 m³ en Sardaigne.
-3. **1,09 milliard de m³ d'eau sont turbinés par EDF**, soit 23 fois le volume d'eau potable nécessaire à l'ensemble de la population de l'île.
-4. **42 millions de m³ d'eau potable s'évaporent sous la terre chaque année** dans des canalisations non entretenues par les délégataires privés.
-5. **Le prix du m³ d'eau est multiplié par 33 à 65** entre l'eau brute vendue par l'OEHC (0,105 €) et l'eau facturée aux ménages (jusqu'à 6,80 €).
+> **Contexte citoyen :** Ce document juridique et programmatique est forgé pour permettre aux citoyens et aux élus d'imposer la sortie immédiate de la marchandisation de l'eau au sein de l'Assemblée de Corse, des intercommunalités (CAPA, Sud-Corse, Balagne, Sartenais-Valinco) et des conseils municipaux.
 
 ---
 
-## 2. PROPOSITION DE DÉLIBÉRATION CLÉ EN MAIN (POUR VOTE EN ASSEMBLÉE)
+## 1. LES FAITS ÉTABLIS PAR L'INSTRUCTION FORENSIQUE
 
-### *PROJET DE RÉSOLUTION TERRITORIALE :*
-**Portant création de la Régie Publique Unique de l'Eau de Corse et réorientation des crédits du PTIC vers le plan Acqua Nostra 2050.**
+1. **La spoliation financière de 112,94 millions d'euros par an** : À travers trois sociétés imbriquées dirigées par le même mandataire (**SDEC** : 60,77 M€ de CA ; **CEOC** : 51,11 M€ de CA ; **Kyrnolia** : 1,06 M€ de CA), le groupe **Veolia** verrouille plus de 60 communes corses et transfère la valeur ajoutée insulaire vers le **GIE Veolia Eau France (SIREN 808 297 980)** à Aubervilliers.
+2. **La preuve de surfacturation à Porto-Vecchio (+15 %)** : L'audit officiel de la DSP de Porto-Vecchio (Avenant n°1 du 7 octobre 2026) a démontré que l'omission de l'indice salarial dans la formule d'actualisation de la SDEC a infligé un **surcoût indu de +15 %** aux familles, doublé d'une marge excessive du délégataire et d'un retard lourd sur le renouvellement des compteurs.
+3. **La fracture tarifaire insulaire** : Un foyer consommant 120 m³/an paie **343,20 € à Corte** (en régie municipale *Cort'Acqua*) contre **594,00 € à Ajaccio**, **595,20 € à Porto-Vecchio**, **636,00 € à Propriano** et **660,00 € à Calvi** sous pavillon Veolia.
+4. **La confiscation énergétique d'amont** : Les centrales hydroélectriques d'EDF turbinent **1 091 946 239 m³ d'eau par an** (Castirla : 192,8 Mm³, Corscia : 178,5 Mm³, Tolla-Ocana : 130,9 Mm³, Pont de la Vanna : 120,9 Mm³, Rizzanese : 94,3 Mm³), soit **23 fois** la consommation d'eau potable de toute l'île (47,01 Mm³), rejetant des centaines de millions de m³ d'eau douce à la mer sans interconnexion municipale.
+5. **Le sous-équipement en stockage public** : La Corse ne stocke que **322 m³ par habitant** (76 Mm³) contre **1 100 m³ par habitant en Sardaigne** (1 800 Mm³), tandis que **42 millions de m³ d'eau potable traitée** fuient chaque année dans le sous-sol.
 
-**L'Assemblée de Corse,**
-- Vu le Code Général des Collectivités Territoriales (CGCT) ;
-- Vu les articles L. 6 et L. 3131-1 du Code de la Commande Publique relatifs aux prérogatives de résiliation unilatérale pour motif d'intérêt général ;
-- Vu les conclusions de l'audit citoyen ISO/IEC 27037 sur les pertes d'eau insulaires ;
+---
+
+## 2. PROPOSITION DE DÉLIBÉRATION CLÉ EN MAIN (POUR VOTE EN ASSEMBLÉE ET EPCI)
+
+### *PROJET DE RÉSOLUTION TERRITORIALE ET INTERCOMMUNALE :*
+**Portant audit contradictoire général des concessions Veolia (SDEC, CEOC, Kyrnolia), création de la Régie Publique Unique de l'Eau de Corse et réquisition des débits d'amont.**
+
+**L'Assemblée Délibérante,**
+- Vu le Code Général des Collectivités Territoriales, notamment l'article L. 2224-5 ;
+- Vu les articles L. 6 et L. 3136-3 du Code de la Commande Publique relatifs au pouvoir de modification et de résiliation unilatérale pour motif d'intérêt général ;
+- Vu les conclusions de l'audit officiel de la DSP d'eau potable de Porto-Vecchio attestant d'un surcoût tarifaire de 15 % et de marges excessives de la SDEC ;
 
 **DÉCIDE :**
 
-1. **Article 1 : Moratoire et Résiliation des Délégations Privées**
-   Engager un audit patrimonial contradictoire de toutes les conventions de DSP d'eau potable et d'assainissement en Corse. Acter la résiliation unilatérale pour motif d'intérêt général de toute concession présentant un rendement de réseau inférieur à 65 % sans investissement compensatoire avéré.
+1. **Article 1 : Audit Financier Contradictoire des Formules d'Indexation et des Frais de Siège**
+   Ordonner un audit indépendant sur l'ensemble des contrats de concession et d'affermage conclus avec les filiales du groupe Veolia (SDEC, CEOC, Kyrnolia), portant spécifiquement sur :
+   - La conformité des formules d'actualisation tarifaire appliquées depuis 2016 et le remboursement des trop-perçus aux abonnés ;
+   - Le détail exhaustif des sommes versées au **GIE Veolia Eau France (SIREN 808 297 980)** au titre des frais de siège et redevances de marque ;
+   - Le solde réel des **fonds contractuels de renouvellement** perçus sur les factures des usagers et leur restitution intégrale aux budgets publics.
 
-2. **Article 2 : Création de la Régie Publique Territoriale de l'Eau**
-   Fédérer l'OEHC et les régies intercommunales au sein d'un établissement public unique garantissant la gestion en circuit court, sans dividende privé et sous contrôle citoyen direct.
+2. **Article 2 : Sortie des Délégations Privées et Basculement en Régie Publique (Modèles *Cort'Acqua* et *Acqua Publica*)**
+   Engager la procédure de résiliation pour motif d'intérêt général ou de non-renouvellement automatique à échéance (30 juin 2028 à Porto-Vecchio, 31 décembre 2029 à la CAPA) pour intégrer la gestion de l'eau potable et de l'assainissement au sein de régies publiques à autonomie financière, garantissant le réinvestissement de 100 % des recettes dans les réseaux insulaires.
 
-3. **Article 3 : Institution de la Tarification Sociale et Progressive**
-   - **Gratuité absolue des 30 premiers m³ annuels** par foyer au titre du droit fondamental à la vie.
-   - **Surtaxe estivale dissuasive** sur les gros consommateurs non agricoles (piscines privées, résidences secondaires occupées quelques semaines par an) pour financer les travaux de résorption des fuites dans les villages ruraux.
+3. **Article 3 : Tarification Sociale et Dissuasion du Gaspillage Spéculatif**
+   - **Tranche vitale (0 à 30 m³/an)** : **Gratuité intégrale** pour chaque foyer résident principal.
+   - **Tranche courante (31 à 120 m³/an)** : Tarification publique au prix coûtant (cible 2,80 € TTC / m³ sur le modèle de Corte).
+   - **Tranche spéculative (> 150 m³/an et piscines de résidences secondaires en période d'étiage)** : Surtaxe progressive de solidarité hydraulique affectée à la rénovation des conduites rurales.
 
-4. **Article 4 : Financement du Plan Acqua Nostra 2050**
-   Exiger de l'État la réaffectation prioritaire de 350 millions d'euros du Plan de Transformation et d'Investissement pour la Corse (PTIC) pour engager immédiatement les chantiers de surélévation des barrages et de création de retenues d'altitude afin d'atteindre 175 millions de m³ de stockage public avant 2030.
+4. **Article 4 : Souveraineté d'Amont et Plan 175 Millions de m³**
+   Imposer la création de prises d'eau brute prioritaires en amont des rejets en mer des centrales hydroélectriques EDF (Prunelli, Golo, Rizzanese) et sanctuariser 350 millions d'euros du PTIC pour doubler la capacité de stockage public insulaire d'ici 2030.
 
 ---
 
