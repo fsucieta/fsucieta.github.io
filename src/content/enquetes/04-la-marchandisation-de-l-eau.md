@@ -263,11 +263,25 @@ Pendant des années, le débat public s'est focalisé sur la société **KYRNOLI
 </div>
 
 Cette cartographie financière démontre la mécanique du groupe :
-- **KYRNOLIA (SIREN 808 578 181)**, vitrine institutionnelle affichée sur les camions et les factures à Ajaccio, affiche un chiffre d'affaires modeste de 1,06 million d'euros et un résultat négatif de -189 690 €.
-- **La SOCIÉTÉ DES EAUX DE CORSE (SDEC, SIREN 514 709 211)**, domiciliée discrètement à Porto-Vecchio, encaisse en réalité le bloc majeur de l'activité avec **60,77 millions d'euros de chiffre d'affaires** et dégage **2,67 millions d'euros de bénéfice net**.
+- **KYRNOLIA (SIREN 808 578 181)**, vitrine commerciale affichée sur les camions et les factures à Ajaccio, affiche un chiffre d'affaires modeste de 1,06 million d'euros et un résultat négatif de -189 690 €.
+- **La SOCIÉTÉ DES EAUX DE CORSE (SDEC, SIREN 514 709 211)**, domiciliée à Porto-Vecchio, encaisse le bloc majeur de l'activité avec **60,77 millions d'euros de chiffre d'affaires** et dégage **2,67 millions d'euros de bénéfice net**.
 - **La COMPAGNIE DES EAUX ET DE L'OZONE CORSE (CEOC, SIREN 817 503 576)** complète le dispositif en facturant **51,11 millions d'euros**.
 
 Toutes ces structures sont sous la direction exécutive d'un même dirigeant, Jérôme Cardineau (né en 1964), et auditées par le même commissaire aux comptes, ERNST & YOUNG AUDIT. 
+
+### Le tuyau d'évacuation continental : Le GIE Veolia Eau France (SIREN 808 297 980)
+La clé de voûte de l'extraction financière n'est pas située en Corse, mais à Aubervilliers (Seine-Saint-Denis). 
+L'examen des registres d'entreprises et des rapports de transparence financière démontre que la SDEC, la CEOC et Kyrnolia sont toutes affiliées au **GIE VEOLIA EAU FRANCE (SIREN 808 297 980)**, enregistré sous le code de centrale d'achat (46.19A). 
+C'est par ce canal de refacturation intragroupe — sous couvert de « conventions de redevance de marque » et « d'assistance technique » — que les millions d'euros prélevés sur les usagers corses échappent à l'impôt insulaire pour remonter directement vers le siège national.
+
+### Le verrou technique d'Ajaccio : L'Usine de la Confina (40 000 m³ / jour)
+Le monopole de Veolia sur le Pays Ajaccien repose sur un verrou physique stratégique : **l'usine de potabilisation de la Confina**, construite à la fin des années 1990. Dotée d'une capacité nominale de **40 000 m³ par jour** (40 millions de litres traités quotidiennement en pointe estivale), cette infrastructure traite l'eau brute du fleuve Prunelli régulée par les retenues de Tolla et Ocana. 
+Bien que financée par les deniers publics, son exploitation déléguée à Kyrnolia assure à la multinationale un contrôle absolu sur l'alimentation de la cité impériale et des communes périphériques (Afa, Alata, Appietto, Sarrola-Carcopino, Peri).
+
+### L'emprise tentaculaire : plus de 60 communes sous pavillon Veolia
+Les données croisées de la plateforme territoriale révèlent que l'opérateur ne contrôle pas seulement les grands centres urbains, mais verrouille un chapelet de **plus de 60 communes et syndicats intercommunaux** :
+- **Pôles majeurs** : Ajaccio (CAPA), Porto-Vecchio, Calvi, Propriano, Bonifacio, Ghisonaccia, Aléria, Sartène.
+- **Vallées et communes rurales** : Afa, Alata, Algajola, Appietto, Bastelicaccia, Belvédère-Campomoro, Conca, Cuttoli-Corticchiato, Figari, Lecci, Levie, Olmeto, Peri, Pietrosella, Pianottoli-Caldarello, San-Gavino-di-Carbini, Sari-Solenzara, Sarrola-Carcopino, Venzolasca, Vescovato, Vico.
 
 Au total, ce sont **plus de 112,9 millions d'euros** qui sont extraits chaque année des factures des ménages et des budgets communaux de l'île par une seule multinationale privée.
 
@@ -289,28 +303,108 @@ Pourquoi ? Parce que le modèle économique des multinationales délégataires r
 
 ---
 
-## 5. LA MULTIPLICATION DU PRIX : DE 10 CENTIMES À 6,80 EUROS LE MÈTRE CUBE
+## 5. LE GRAND COMPARATIF DES FACTURES EN CORSE : DU SIMPLE AU DOUBLE
 
-L'arithmétique financière de la distribution d'eau en Corse consacre une asymétrie brutale :
-1. **L'Office d'Équipement Hydraulique de la Corse (OEHC)** capte, stocke et gère la grande hydraulique insulaire. Il vend l'eau brute aux exploitants et distributeurs à un tarif moyen officiel de **0,105 € par mètre cube** (Délibération CA OEHC n° 05/52).
-2. **Les ménages corses** reçoivent des factures d'eau potable et d'assainissement oscillant entre **3,50 € et 6,80 € par mètre cube** selon les microrégions (notamment dans le Sartenais-Valinco, le Taravo et les zones côtières touristiques).
+L'analyse des indicateurs **SISPEA / D102.0** et des rapports annuels sur le prix et la qualité du service (RPQS) fait voler en éclats l'illusion d'une tarification équitable sur l'île.
 
-Le coefficient multiplicateur atteint **entre 33 et 65 fois le prix d'achat initial de l'eau brute**.
+Pour une consommation de référence de **120 m³ par an** (standard d'un foyer de trois personnes incluant eau potable, assainissement collectif et redevances d'agence), l'écart entre une régie publique et les villes concédées à Veolia dépasse **250 euros par an** :
 
-Alors que l'usager paie au prix fort l'amortissement d'infrastructures de potabilisation largement cofinancées par des subventions publiques (FEDER, PEI, Agence de l'Eau), les marges d'exploitation sont consolidées dans les comptes des filiales des grands groupes de l'eau.
+<div class="my-8 overflow-x-auto not-prose">
+  <table class="w-full text-left text-xs font-mono bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
+    <thead class="bg-slate-900 border-b border-slate-800 text-slate-300 uppercase tracking-wider">
+      <tr>
+        <th class="p-3.5">Ville / Territoire</th>
+        <th class="p-3.5">Gestionnaire</th>
+        <th class="p-3.5">Eau Potable</th>
+        <th class="p-3.5">Assainissement</th>
+        <th class="p-3.5">Total TTC / m³</th>
+        <th class="p-3.5 text-amber-400">Facture 120 m³</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-800/60 text-slate-200">
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Corte</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Régie Municipale</span></td>
+        <td class="p-3.5">1,63 €</td>
+        <td class="p-3.5">1,23 €</td>
+        <td class="p-3.5 font-bold text-emerald-400">2,86 €</td>
+        <td class="p-3.5 font-black text-emerald-300">343,20 €</td>
+      </tr>
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Ajaccio</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">Kyrnolia (Veolia)</span></td>
+        <td class="p-3.5">2,53 €</td>
+        <td class="p-3.5">2,32 €</td>
+        <td class="p-3.5 font-bold text-slate-100">4,95 €</td>
+        <td class="p-3.5 font-black text-amber-400">594,00 €</td>
+      </tr>
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Porto-Vecchio</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">SDEC (Veolia)</span></td>
+        <td class="p-3.5">2,27 €</td>
+        <td class="p-3.5">2,69 €</td>
+        <td class="p-3.5 font-bold text-slate-100">4,96 €</td>
+        <td class="p-3.5 font-black text-amber-400">595,20 €</td>
+      </tr>
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Bastia (CAB)</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">Acqua Publica (Régie)</span></td>
+        <td class="p-3.5">2,26 €</td>
+        <td class="p-3.5">2,83 €</td>
+        <td class="p-3.5 font-bold text-slate-100">5,09 €</td>
+        <td class="p-3.5 font-black text-slate-100">610,80 €</td>
+      </tr>
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Propriano / Sartenais</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">Kyrnolia (Veolia)</span></td>
+        <td class="p-3.5">2,60 €</td>
+        <td class="p-3.5">2,70 €</td>
+        <td class="p-3.5 font-bold text-slate-100">5,30 €</td>
+        <td class="p-3.5 font-black text-rose-400">636,00 €</td>
+      </tr>
+      <tr class="hover:bg-slate-900/50 transition">
+        <td class="p-3.5 font-bold text-slate-100">Calvi / Balagne</td>
+        <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">Kyrnolia (Veolia)</span></td>
+        <td class="p-3.5">2,65 €</td>
+        <td class="p-3.5">2,85 €</td>
+        <td class="p-3.5 font-bold text-slate-100">5,50 €</td>
+        <td class="p-3.5 font-black text-rose-400">660,00 €</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### L'enseignement clinique de ces chiffres :
+- **À Corte (en régie municipale)**, l'eau est facturée **2,86 € / m³**, soit **343,20 € par an**. Zéro dividende actionnarial, zéro frais de siège parisiens : le coût réel du service public au plus juste pour le citoyen.
+- **À Ajaccio, Porto-Vecchio, Propriano ou Calvi (sous pavillon Veolia)**, la même quantité d'eau coûte entre **594 € et 660 € par an** : **près du double !**
+- **À Bastia**, bien que le tarif s'élève à 5,09 € en raison des investissements de dépollution de l'usine Bastia Sud, **100 % des excédents sont sanctuarisés dans le patrimoine public** via la régie *Acqua Publica*, au lieu de partir alimenter la trésorerie centrale de Veolia.
+- **La marge brute délirante sur l'eau brute** : L'eau brute vendue par l'OEHC à **0,105 € / m³** est refacturée aux ménages ajacciens ou balanins jusqu'à **2,65 € / m³** en eau potable seule (hors assainissement), soit une multiplication par **25 fois le prix d'achat initial**.
 
 ---
 
-## 6. LES SOURCES D'EXCEPTION : L'EXPLOITATION PRIVÉE SANS PARTAGE DU SOUS-SOL
+## 6. L'ASPIRATION HORS DE L'ÎLE : DIVIDENDES, FRAIS DE SIÈGE ET DISSIMULATION COMPTABLE
 
-Au-delà de l'eau du robinet, les nappes phréatiques les plus pures de Corse font l'objet d'une exploitation commerciale lucrative par des acteurs privés détenant des concessions historiques :
-- **Eaux de Saint-Georges (Col Saint-Georges)** : Exploitation par la *Société des Eaux du Col Saint-Georges (SECG)*, SAS au capital privé dirigée par Alexandre Colonna d'Ornano (SIREN 304 892 300). Des dizaines de millions de litres mis en bouteille plastique et distribués sur tout le marché insulaire.
-- **Eaux de Zilia (Balagne)** : Exploitation par la *Société d'Exploitation des Eaux de Zilia (SODEZ)*, SAS (SIREN 378 012 694), contrôlée par la holding *KASINKA* (Famille Ciavaldini, SIREN 521 949 578). Résultats nets déclarés dépassant **1,16 million d'euros** en 2023 pour un chiffre d'affaires préservé.
-- **Eaux d'Orezza (Castagniccia)** : Source historique de Rapaggio, exploitée pendant des décennies par la SNEEMO (groupe Mora) produisant plus de **12 millions de bouteilles par an** pour 8 à 10 millions d'euros de chiffre d'affaires, avant des crises successives de renouvellement de concession et une transition vers un modèle coopératif (SCIC).
+Le cœur du scandale ne réside pas dans l'activité des producteurs d'eaux minérales locales (Saint-Georges, Zilia, Orezza). Ces derniers constituent un fleuron du patrimoine productif corse, créateurs d'emplois locaux non délocalisables et garants d'une souveraineté d'embouteillage insulaire face aux cartels mondiaux Nestlé ou Danone.
 
-Ces exploitations bénéficient d'un accès direct à une ressource naturelle d'exception appartenant au patrimoine collectif du peuple corse. Les redevances d'extraction versées aux communes d'implantation restent dérisoires face aux marges industrielles réalisées sur la vente de bouteilles vendues entre 1,50 € et 4 € le litre dans le commerce et la restauration.
+La véritable prédation s'opère sur l'eau du robinet des familles corses, à travers la mécanique d'évasion financière orchestrée par la multinationale **VEOLIA** :
 
-Pendant que les villages environnants subissent des coupures d'eau en août, les chaînes d'embouteillage tournent à plein régime.
+### Le ciseau comptable de l'affermage (CAPA, Porto-Vecchio, Sud-Corse)
+1. **La mise sous tutelle des agglomérations** : À Ajaccio (CAPA), le contrat de concession eau potable signé pour 12 ans représente un volume d'affaires de plus de **100 millions d'euros** (plus 68 millions pour l'assainissement). À Porto-Vecchio, la DSP a été verrouillée sur 12 ans au bénéfice exclusif de la Société des Eaux de Corse (SDEC).
+2. **Le verrouillage par les « Frais de Siège » et Management Fees** : 
+   Comment une entreprise comme la SDEC peut-elle réaliser 60,77 millions d'euros de chiffre d'affaires et ne déclarer que 2,67 millions de résultat net (4,4 % de rentabilité apparente) ? 
+   L'analyse des pratiques contractuelles décortiquées par les Chambres Régionales des Comptes met en lumière la refacturation systématique de *« frais d'assistance technique et de redevances de marque »* versées aux holdings continentales du groupe Veolia. Ces prestations intragroupe gonflent artificiellement les charges d'exploitation locales, réduisent l'assiette de l'impôt en Corse et transfèrent le cash directement vers la maison-mère à Aubervilliers.
+3. **Le contraste saisissant avec la Régie Publique (Acqua Publica)** :
+   La preuve matérielle de cette dérive existe sur l'île même. À Bastia, la Communauté d'Agglomération de Bastia (CAB) a chassé Veolia pour instaurer dès 2016 la régie publique **Acqua Publica**. Résultat : 100 % des recettes des usagers sont réinvesties dans le patrimoine de tuyauterie et les bassins, sans un seul centime siphonné pour des actionnaires parisiens.
+4. **La socialisation des investissements lourds (L'exemple de Porto-Vecchio)** :
+   Pendant que la SDEC encaisse les abonnements et les mètres cubes facturés aux ménages, **qui paie les travaux structurants ? Les contribuables et les fonds publics.** À Porto-Vecchio, le vaste programme de modernisation des réseaux d'eau et d'assainissement de **44 millions d'euros** (construction de la station d'épuration de Capu di Padolu d'une capacité de 48 000 équivalents-habitants, réservoirs de Nota portés à 5 500 m³) est financé à 100 % par la Ville, l'Agence de l'Eau et la Collectivité de Corse. Les profits sont privatisés, les investissements en capital sont nationalisés aux frais des citoyens.
+5. **Le piège des « Fonds de Renouvellement » épinglé par la CRC** :
+   Dans ses contrôles de gestion des DSP d'eau, la Chambre Régionale des Comptes a mis en lumière l'opacité entourant la gestion des **fonds de renouvellement contractuels**. Ces provisions, payées mois après mois par les usagers sur leur facture d'eau pour financer le remplacement des canalisations et pompes défaillantes, font trop souvent l'objet d'une rétention de trésorerie par le délégataire privé sans restitution intégrale en fin de contrat. L'usager paie deux fois : une première fois sur sa facture via les provisions du fermier, et une seconde fois par ses impôts locaux pour financer les plans d'urgence des communes.
+6. **L'Aveu Officiel : L'Audit de DSP de Porto-Vecchio dévoile un surcoût indu de +15 % infligé aux familles** :
+   Le rapport d'audit technique, financier et juridique commandé par la Ville de Porto-Vecchio et restitué à l'été 2026 (ayant débouché sur l'Avenant n°1 au contrat de concession SDEC/Veolia) apporte la preuve médico-légale irréfutable de la prédation contractuelle :
+   - **Une formule d'actualisation des tarifs biaisée** : L'absence volontaire d'un indice représentatif des salaires a généré un **surcoût indu estimé à 15 %** directement prélevé sur les factures des abonnés porto-vecchiais.
+   - **Une rentabilité hors contrat** : L'audit établit que la marge financière réelle empochée par la SDEC a largement dépassé les prévisions contractuelles initiales, confirmant la surfacturation systématique.
+   - **Retard sur le renouvellement des compteurs** : Alors que les usagers financent la dotation de renouvellement à chaque quittance, la SDEC a accumulé un retard lourd dans le remplacement du parc de comptage.
+   - **Rendement dégradé et opacité SIG** : Défaillance persistante du rendement réseau et carence dans la remise à jour des inventaires électromécaniques et du système d'information géographique (SIG), contraignant la commune à imposer une sommation de géoréférencement complet avant l'échéance du 30 juin 2028.
 
 ---
 
@@ -535,21 +629,42 @@ Conformément au principe de transparence citoyenne et au standard ISO/IEC 27037
 <div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition">
 <div>
 <div class="flex items-center justify-between mb-2">
-<span class="text-xs font-mono text-amber-400 font-semibold">INPI • Eaux Conditionnées</span>
-<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">SODEZ & SECG</span>
+<span class="text-xs font-mono text-amber-400 font-semibold">CAPA • Concession 12 ans</span>
+<span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">Marché • 100 M€</span>
 </div>
-<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Concessions d'Embouteillage Privées</h4>
-<p class="text-xs text-slate-400 leading-relaxed">Fiches légales de la SODEZ Eaux de Zilia (+1,16 M€ résultat net, holding Kasinka) et de la SECG Eaux de Saint-Georges.</p>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Contrat Concession Eau CAPA (Veolia)</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Contrat de concession sur 12 ans liant la CAPA à Kyrnolia / Veolia : 100 M€ eau potable et 68 M€ assainissement.</p>
 </div>
 <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
-<a href="https://annuaire-entreprises.data.gouv.fr/entreprise/378012694" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
-<span>👁️</span> SODEZ (Zilia)
+<a href="https://ca-ajaccien.corsica/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Portail CAPA
 </a>
-<a href="https://annuaire-entreprises.data.gouv.fr/entreprise/304892300" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
-<span>📥</span> St-Georges
+<a href="https://ca-ajaccien.corsica/eau-et-assainissement/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Actes DSP
 </a>
 </div>
 </div>
+
+<!-- ACTE 7 -->
+<div class="p-5 rounded-2xl bg-slate-950/70 border-2 border-rose-500/40 flex flex-col justify-between hover:border-rose-400 transition shadow-lg md:col-span-2 lg:col-span-1">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono text-rose-400 font-semibold">Porto-Vecchio • Audit 2026</span>
+<span class="text-[10px] font-mono text-rose-300 bg-rose-500/20 px-1.5 py-0.5 rounded border border-rose-500/30">+15 % Surcoût Indu</span>
+</div>
+<h4 class="font-serif font-bold text-slate-200 text-sm mb-2">Audit Officiel DSP Eau & Avenant n°1</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Audit de la concession SDEC/Veolia révélant l'absence d'indice salarial (+15% surfacturation abonnés), des marges excessives et des retards de compteurs.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center gap-2">
+<a href="https://portivechju.corsica/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-rose-300 border border-rose-500/30 font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5">
+<span>👁️</span> Délibération
+</a>
+<a href="https://portivechju.corsica/conseil-municipal/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-mono text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+<span>📥</span> Acte Ville
+</a>
+</div>
+</div>
+
 </div>
 </div>
 
