@@ -120,7 +120,7 @@ sources:
 
 2 390 000 euros. 
 
-C'est la somme exacte que la Communauté d'Agglomération du Pays Ajaccien (CAPA) doit verser chaque année à une entreprise privée. Cette facture tombe obligatoirement, quoi qu'il arrive, même si personne ne monte dans les cabines rouges et noires suspendues entre Mezzavia et Saint-Joseph.
+C'est la somme exacte que la Communauté d'Agglomération du Pays Ajaccien (CAPA) doit verser chaque année à une entreprise privée. Cette facture tombe obligatoirement, quoi qu'il arrive, même si personne ne monte dans les cabines vertes suspendues entre Mezzavia et Saint-Joseph.
 
 Pendant que vous passez 45 minutes chaque matin coincé dans les bouchons de la Rocade entre Caldaniccia et Bodiccione, un câble à 38,7 millions d'euros survole le maquis au ralenti. On vous avait promis une révolution : 4 000 passagers par jour, la fin des embouteillages à l'entrée de la ville et une avancée écologique majeure.
 
