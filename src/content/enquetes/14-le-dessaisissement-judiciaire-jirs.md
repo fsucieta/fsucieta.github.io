@@ -3,7 +3,7 @@ id: 14
 title: "La Justice d'Exception en Corse : L'Autopsie du Dessaisissement JIRS et la Déportation Judiciaire à Marseille (Plus de 82 % des Dossiers Apirés)"
 subtitle: "De l'article 706-75 du CPP aux détentions provisoires abusives de 4 ans : comment la Corse a été privée de son juge naturel par l'annexion marseillaise, et l'architecture constitutionnelle d'une Cour d'Assises et d'un Pôle Judiciaire Souverains siégeant à Bastia."
 category: "JUSTICE & LIBERTÉS"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-14"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

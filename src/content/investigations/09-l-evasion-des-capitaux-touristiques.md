@@ -3,7 +3,7 @@ id: 9
 title: "L'Évasion des Capitaux Touristiques en Corse : Radiographie Médico-Légale d'un Siphonnage à 2,2 Milliards d'Euros"
 subtitle: "3,2 millions de visiteurs, 373 millions d'euros de meublés aspirés par Dublin et Amsterdam, surprix de 14 % en grande distribution et 90 millions d'euros d'usure des routes, de l'eau et des déchets payés par les seuls résidents : l'autopsie d'une économie d'enclave et la loi pour reprendre le contrôle."
 category: "ÉCONOMIE & CAPITAL"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-09"
 author: "Cellule d'Investigation Économique & Data L'OCHJU"
 date: "Octobre 2026"

@@ -3,7 +3,7 @@ id: 3
 title: "Nos Enfants N'auront Pas de Terre : Comment la Corse Est Vendue Sous nos Yeux"
 subtitle: "Des millions d'euros venus d'ailleurs pour des villas fermées tout l'hiver, pendant que notre jeunesse est condamnée à l'exil : le visage de la colonisation moderne, et l'ultime sursaut pour que cette terre reste à ses enfants."
 category: "DROIT INTERNATIONAL & SOUVERAINETÉ"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-03-MONDIAL"
 author: "Cellule d'Investigation Internationale L'OCHJU x FSUCIETÀ"
 date: "Août 2026"

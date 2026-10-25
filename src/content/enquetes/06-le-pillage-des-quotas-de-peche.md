@@ -3,7 +3,7 @@ id: 6
 title: "L'Île qui n'a pas le Droit de Pêcher : Comment la Mer Corse Nourrit le Continent et Affame nos Ports"
 subtitle: "4 078 tonnes de thon rouge pour les armateurs de Sète, 26 tonnes autorisées pour toute la Corse : l'autopsie d'une spoliation maritime d'État qui enrichit des barons continentaux et tue nos 180 patrons-pêcheurs."
 category: "MER & PÊCHE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-06"
 author: "Cellule d'Investigation Maritime L'OCHJU"
 date: "Août 2026"

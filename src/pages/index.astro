@@ -7,21 +7,18 @@ import WhistleblowerVault from '../components/WhistleblowerVault.astro';
 import FoncierDvfRadar from '../components/FoncierDvfRadar.astro';
 
 const allEnquetes = await getCollection('enquetes');
-// Trier par ID
-const enquetes = allEnquetes.sort((a, b) => a.data.id - b.data.id);
 
-// Séparation éditoriale claire : Dossiers Clôturés vs Enquêtes en Cours d'Instruction
-const enquetesCloturees = enquetes.filter(e => e.data.status !== 'en_cours');
-const enquetesEnCours = enquetes.filter(e => e.data.status === 'en_cours');
-
-// Les Grandes Enquêtes Clôturées Majeures pour le Carrousel à la Une (Priorité aux dernières révélations certifiées)
-const idsClotures = [11, 23, 26, 7, 29, 2, 3, 4, 6, 18, 27, 28];
-const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id)).filter(Boolean);
+// Sélection souveraine et stricte des 7 Grandes Enquêtes Clôturées & Opposables
+// Ordre d'affichage stratégique : Angelo (27), Mines (7), Sécurité Civile (23), Muvitarra (28), Pétrole (26), Eau (4), Énergie (18)
+const idsFinalises = [27, 7, 23, 28, 26, 4, 18];
+const enquetesFinalisees = idsFinalises
+  .map(id => allEnquetes.find(e => e.data.id === id))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
 ---
 
 <Layout 
   title="L'OCHJU — Média Citoyen d'Investigation & Open Data (L'aveti ?)"
-  description="L'OCHJU — Premier média citoyen d'investigation en Corse fondé sur l'open data et la preuve médico-légale. 29 grandes enquêtes en libre accès."
+  description="L'OCHJU — Premier média citoyen d'investigation en Corse fondé sur l'open data et la preuve médico-légale. Les 7 grandes enquêtes scellées en libre accès."
   canonicalUrl="https://fsucieta.github.io/"
   image="/alerte_censure_lochju.jpg"
   lang="fr"
@@ -69,7 +66,10 @@ const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id
         <span>🏛️</span> <span>MÉMORANDUM SUPRÊME</span>
       </a>
       <a href="#fiches-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-amber-500/40 text-amber-300 hover:border-amber-400 hover:text-amber-200 transition flex items-center gap-1.5 font-bold">
-        <span>📂 29 Enquêtes</span>
+        <span>📂 7 Enquêtes Scellées</span>
+      </a>
+      <a href="#registre-instruction-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5 font-mono">
+        <span>⚖️ Registre d'Instruction</span>
       </a>
       <a href="#gis-map-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
         <span>🗺️ Carte 360 Communes</span>
@@ -104,7 +104,7 @@ const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id
               ACTE D'OPPOSABILITÉ SUPRÊME
             </span>
             <span class="text-xs font-mono text-amber-400 font-bold">
-              • Consolidation Médico-Légale des 29 Enquêtes
+              • Synthèse des 29 Piliers de Souveraineté
             </span>
           </div>
           <h2 class="text-2xl sm:text-3xl font-serif font-black text-white mb-2 leading-tight">
@@ -133,276 +133,29 @@ const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id
     </div>
   </section>
 
-  <!-- ================= CARROUSEL INTERACTIF "À LA UNE" : LES 8 ENQUÊTES CLÔTURÉES ================= -->
-  <section class="max-w-7xl mx-auto px-6 pt-8 pb-4" id="carousel-alaune-section">
-    <div class="hero-card-container border border-amber-500/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden bg-slate-900">
-      <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      
-      <!-- En-tête du Carrousel avec Indicateur d'Édition et Boutons de Navigation -->
-      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800/80 pb-4">
-        <div class="flex flex-wrap items-center gap-3">
-          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full text-xs font-bold uppercase tracking-wider font-mono flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            ★ DOSSIERS MAJEURS À LA UNE (ENQUÊTES CLÔTURÉES)
-          </span>
-          <span class="px-2.5 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-mono font-bold">
-            🗺️ 360 COMMUNES
-          </span>
-          <span class="px-3 py-1 bg-slate-950 text-slate-300 border border-slate-800 rounded-full text-xs font-mono font-bold" id="carouselCounter">
-            Dossier 1 / {enquetesAlaUne.length}
-          </span>
-        </div>
+  
 
-        <!-- Contrôles Précédent / Suivant et Pause -->
-        <div class="flex items-center gap-2">
-          <button 
-            id="carouselPrevBtn" 
-            type="button" 
-            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
-            title="Dossier précédent"
-          >
-            ◀
-          </button>
-          <button 
-            id="carouselPlayPauseBtn" 
-            type="button" 
-            class="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
-            title="Mettre en pause / Relancer le défilement automatique"
-          >
-            ⏸️ Pause
-          </button>
-          <button 
-            id="carouselNextBtn" 
-            type="button" 
-            class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 hover:text-amber-400 hover:border-amber-400 transition cursor-pointer shadow-md"
-            title="Dossier suivant"
-          >
-            ▶
-          </button>
-        </div>
-      </div>
-
-      <!-- Diapositives du Carrousel (Chaque enquête clôturée) -->
-      <div class="relative overflow-hidden min-h-[440px]" id="carouselSlidesContainer">
-        {enquetesAlaUne.map((enq, index) => {
-          const d = enq.data;
-          const isFirst = index === 0;
-          return (
-            <div 
-              class={`carousel-slide transition-opacity duration-700 ${isFirst ? 'opacity-100 relative' : 'opacity-0 absolute inset-0 pointer-events-none'}`}
-              data-slide-index={index}
-            >
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7">
-                  <div class="flex items-center gap-2.5 mb-3">
-                    <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider">
-                      GRAND DOSSIER D'INVESTIGATION #{d.id.toString().padStart(2, '0')}
-                    </span>
-                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] font-bold">
-                      {d.id === 29 ? '⭐ HORS-SÉRIE MONUMENTAL' : '🟢 DOSSIER CLÔTURÉ'}
-                    </span>
-                    {(d.id === 23 || d.id === 26 || d.id === 7) && (
-                      <span class="px-2 py-0.5 rounded-full bg-rose-600 text-white font-mono text-[10px] font-black uppercase tracking-wider shadow-lg shadow-rose-600/40 flex items-center gap-1 animate-pulse">
-                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                        <span>NOUVEAU</span>
-                      </span>
-                    )}
-                  </div>
-
-                  <h2 class="text-2xl md:text-4xl font-black font-serif text-slate-100 mb-4 leading-tight hover:text-amber-400 transition">
-                    <a href={`./enquetes/${enq.slug}/`}>
-                      {d.title}
-                    </a>
-                  </h2>
-
-                  <p class="text-slate-300 text-base md:text-lg font-serif mb-6 leading-relaxed line-clamp-3">
-                    {d.chapeau}
-                  </p>
-
-                  <div class="flex flex-wrap items-center gap-4">
-                    <a 
-                      href={`./enquetes/${enq.slug}/`} 
-                      class="bg-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition font-sans text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20"
-                    >
-                      Lire le Grand Dossier (6 MIN) →
-                    </a>
-                    <a 
-                      href="#fiches-section" 
-                      class="bg-slate-950 border border-slate-700 text-slate-300 font-bold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition font-sans text-xs uppercase tracking-wider"
-                    >
-                      📂 Voir les 29 Enquêtes
-                    </a>
-                  </div>
-                </div>
-
-                <div class="lg:col-span-5">
-                  <div class="relative rounded-xl overflow-hidden border border-slate-800 shadow-2xl group">
-                    <img 
-                      src={d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`} 
-                      alt={d.title} 
-                      class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition duration-500"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      <!-- Puces de Navigation / Pagination -->
-      <div class="flex items-center justify-center gap-2 mt-8 pt-4 border-t border-slate-800/80" id="carouselDots">
-        {enquetesAlaUne.map((_, index) => (
-          <button 
-            type="button" 
-            class={`carousel-dot w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${index === 0 ? 'bg-amber-400 w-8' : 'bg-slate-700 hover:bg-slate-500'}`}
-            data-dot-index={index}
-            title={`Aller au dossier ${index + 1}`}
-          ></button>
-        ))}
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Script du Carrousel Dynamique -->
-  <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
-      const slides = document.querySelectorAll('.carousel-slide');
-      const dots = document.querySelectorAll('.carousel-dot');
-      const prevBtn = document.getElementById('carouselPrevBtn');
-      const nextBtn = document.getElementById('carouselNextBtn');
-      const playPauseBtn = document.getElementById('carouselPlayPauseBtn');
-      const counter = document.getElementById('carouselCounter');
-      const container = document.getElementById('carousel-alaune-section');
-
-      if (!slides.length) return;
-
-      let currentIndex = 0;
-      let isPlaying = true;
-      let autoTimer = null;
-      const total = slides.length;
-
-      function updateSlide(newIndex) {
-        slides.forEach((slide, idx) => {
-          if (idx === newIndex) {
-            slide.classList.remove('opacity-0', 'absolute', 'pointer-events-none');
-            slide.classList.add('opacity-100', 'relative');
-          } else {
-            slide.classList.remove('opacity-100', 'relative');
-            slide.classList.add('opacity-0', 'absolute', 'pointer-events-none');
-          }
-        });
-
-        dots.forEach((dot, idx) => {
-          if (idx === newIndex) {
-            dot.classList.add('bg-amber-400', 'w-8');
-            dot.classList.remove('bg-slate-700');
-          } else {
-            dot.classList.remove('bg-amber-400', 'w-8');
-            dot.classList.add('bg-slate-700');
-          }
-        });
-
-        if (counter) {
-          counter.textContent = `Dossier ${newIndex + 1} / ${total}`;
-        }
-
-        currentIndex = newIndex;
-      }
-
-      function nextSlide() {
-        const next = (currentIndex + 1) % total;
-        updateSlide(next);
-      }
-
-      function prevSlide() {
-        const prev = (currentIndex - 1 + total) % total;
-        updateSlide(prev);
-      }
-
-      function startTimer() {
-        stopTimer();
-        autoTimer = setInterval(nextSlide, 5500);
-      }
-
-      function stopTimer() {
-        if (autoTimer) {
-          clearInterval(autoTimer);
-          autoTimer = null;
-        }
-      }
-
-      if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-          prevSlide();
-          if (isPlaying) startTimer();
-        });
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          nextSlide();
-          if (isPlaying) startTimer();
-        });
-      }
-
-      dots.forEach((dot) => {
-        dot.addEventListener('click', (e) => {
-          const idx = parseInt(e.target.getAttribute('data-dot-index') || '0', 10);
-          updateSlide(idx);
-          if (isPlaying) startTimer();
-        });
-      });
-
-      if (playPauseBtn) {
-        playPauseBtn.addEventListener('click', () => {
-          isPlaying = !isPlaying;
-          if (isPlaying) {
-            playPauseBtn.textContent = '⏸️ Pause';
-            startTimer();
-          } else {
-            playPauseBtn.textContent = '▶️ Lecture';
-            stopTimer();
-          }
-        });
-      }
-
-      if (container) {
-        container.addEventListener('mouseenter', () => {
-          if (isPlaying) stopTimer();
-        });
-        container.addEventListener('mouseleave', () => {
-          if (isPlaying) startTimer();
-        });
-      }
-
-      startTimer();
-    });
-  </script>
-
-  <!-- Section 1 : Grille des Enquêtes d'Impact (100% Cliquables & Filtrage par Statut) -->
-  <!-- Section 1 : Dossiers d'Enquête Clôturés & Scellés (100% Cliquables) -->
-  <section class="max-w-7xl mx-auto px-6 py-8" id="fiches-section">
+  <!-- Section 1 : Grille des 7 Grandes Enquêtes Scellées (100% Opposables) -->
+  <section class="max-w-7xl mx-auto px-6 py-12" id="fiches-section">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-emerald-500/30 pb-4">
       <div>
         <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
           <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          ENQUÊTES COMPLÈTES · PREUVES VÉRIFIÉES
+          ENQUÊTES FINALISÉES · PREUVES SCELLÉES ISO 27037
         </span>
         <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-          🟢 Les Dossiers Majeurs Clôturés ({enquetesCloturees.length})
+          🟢 Les 7 Grandes Enquêtes Scellées & Opposables
         </h2>
-        <p class="text-xs font-mono text-slate-400 mt-1">Enquêtes avec preuves médico-légales complètes, bilans financiers audités et documents officiels consultables.</p>
+        <p class="text-xs font-mono text-slate-400 mt-1">Dossiers d'investigation médico-légale complets, bilans financiers audités et actes officiels consultables.</p>
       </div>
 
       <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
-        <!-- Barre de Recherche intégrée à la section -->
+        <!-- Barre de Recherche intégrée aux 7 dossiers -->
         <div class="w-full sm:w-72">
           <input 
             type="text" 
             id="searchInput" 
-            placeholder="🔍 Filtrer les dossiers..." 
+            placeholder="🔍 Filtrer les 7 dossiers..." 
             aria-label="Rechercher ou filtrer les enquêtes par titre, mot-clé ou commune"
             class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:border-amber-400 transition font-sans shadow-inner"
           />
@@ -410,9 +163,9 @@ const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id
       </div>
     </div>
 
-    <!-- Grille des Fiches Enquêtes Clôturées -->
+    <!-- Grille des 7 Enquêtes Clôturées -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGrid">
-      {enquetesCloturees.map((enquete) => {
+      {enquetesFinalisees.map((enquete) => {
         const d = enquete.data;
         const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
         const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
@@ -487,87 +240,129 @@ const enquetesAlaUne = idsClotures.map(id => enquetes.find(e => e.data.id === id
     </div>
   </section>
 
-  <!-- Section 2 : Enquêtes Ouvertes & Instructions en Cours (Appel à Pièces Citoyennes) -->
-  <section class="max-w-7xl mx-auto px-6 py-8 border-t border-amber-500/20" id="enquetes-en-cours-section">
-    <div class="mb-8 border-b border-amber-500/30 pb-4">
-      <span class="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
-        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-        INSTRUCTION EN COURS · APPEL À PIÈCES ET SIGNALEMENTS
-      </span>
-      <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-        🟡 Enquêtes en Cours d'Instruction ({enquetesEnCours.length})
-      </h2>
-      <p class="text-xs font-mono text-slate-400 mt-1">Dossiers d'investigation actifs : vous détenez des documents officiels, des arrêtés ou des pièces justificatives ? Transmettez-les via notre coffre-fort PGP.</p>
+    <!-- Section 2 : Registre d'Instruction & Prochains Dossiers (Greffe Citoyen) -->
+  <section class="max-w-7xl mx-auto px-6 py-12 border-t border-amber-500/20" id="registre-instruction-section">
+    <div class="mb-8 border-b border-amber-500/30 pb-4 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+      <div>
+        <span class="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          GREFFE CITOYEN · INSTRUCTIONS FORENSIQUES EN COURS
+        </span>
+        <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
+          ⚖️ Registre d'Instruction des Futurs Dossiers
+        </h2>
+        <p class="text-xs font-mono text-slate-400 mt-1">Dossiers en cours d'instruction dans les laboratoires de la cellule. Aucune publication tant que chaque calcul n'est pas scellé au bit près.</p>
+      </div>
+
+      <a 
+        href="#whistleblower-vault" 
+        class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/40 text-xs font-mono font-bold transition shadow-lg"
+      >
+        <span>🔒</span>
+        <span>Transmettre une preuve anonyme</span>
+      </a>
     </div>
 
-    <!-- Grille des Enquêtes en Cours d'Instruction -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGridEnCours">
-      {enquetesEnCours.map((enquete) => {
-        const d = enquete.data;
-        const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
-        const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
-        return (
-          <a 
-            href={`./enquetes/${enquete.slug}/`}
-            class="fiche-card relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-amber-500/30 hover:border-amber-400 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 group cursor-pointer block hover:-translate-y-1"
-            data-title={displayTitle.toLowerCase()}
-            data-category={d.category.toLowerCase()}
-            data-chapeau={d.chapeau.toLowerCase()}
-          >
-            <!-- Liseré supérieur ambre vibrant -->
-            <div class="h-1 w-full bg-gradient-to-r from-transparent via-amber-500/60 to-transparent group-hover:via-amber-400 transition-all duration-500"></div>
-
-            <!-- Visuel carte -->
-            <div class="h-52 bg-slate-950 overflow-hidden relative">
-              <img 
-                src={imgPath} 
-                alt={displayTitle} 
-                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
-              />
-              <div class="absolute top-3.5 left-3.5 pointer-events-none">
-                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-amber-300 border border-amber-500/40 shadow-lg flex items-center gap-1.5">
-                  <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                  <span>EN INSTRUCTION</span>
-                </span>
-              </div>
-            </div>
-
-            <!-- Contenu du Dossier -->
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="flex items-center gap-2 mb-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                  <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-bold">{d.category}</span>
-                </div>
-                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
-                  {displayTitle}
-                </h3>
-                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
-                  {d.chapeau}
-                </p>
-              </div>
-
-              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
-                <span class="text-xs font-mono font-bold text-amber-300 group-hover:text-amber-200 uppercase tracking-wider flex items-center gap-1.5">
-                  <span>Suivre l'Instruction</span>
-                  <span class="transition transform group-hover:translate-x-1">→</span>
-                </span>
-                <button
-                  type="button"
-                  class="card-share-btn inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 hover:bg-amber-500 text-slate-400 hover:text-slate-950 border border-slate-800 hover:border-amber-400 text-[11px] font-mono font-semibold transition duration-200 z-10"
-                  data-share-title={displayTitle}
-                  data-share-url={`./enquetes/${enquete.slug}/`}
-                  data-share-chapeau={d.chapeau}
-                  title="Partager cette enquête"
-                  onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
-                >
-                  <span>📤</span> <span>Partager</span>
-                </button>
-              </div>
-            </div>
-          </a>
-        );
-      })}
+    <!-- Tableau d'Instruction Solennel -->
+    <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/80 shadow-2xl">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b border-slate-800 bg-slate-900/90 text-[11px] font-mono text-slate-400 uppercase tracking-wider">
+            <th class="py-3.5 px-4 font-bold">Réf. Dossier</th>
+            <th class="py-3.5 px-4 font-bold">Thématique & Cible</th>
+            <th class="py-3.5 px-4 font-bold hidden sm:table-cell">Discipline Multi-INT</th>
+            <th class="py-3.5 px-4 font-bold">État d'Instruction</th>
+            <th class="py-3.5 px-4 text-right font-bold">Action Citoyenne</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800/60 text-xs font-mono">
+          <tr class="hover:bg-slate-900/50 transition">
+            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-01</td>
+            <td class="py-4 px-4">
+              <div class="font-bold text-slate-200 font-sans text-sm">Le Grand Verrou Financier</div>
+              <div class="text-[11px] text-slate-400 font-serif">La mécanique secrète des prêts in fine et la captation de l'épargne insulaire</div>
+            </td>
+            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / DGFIP</td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                Audit des flux bancaires
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <a href="#whistleblower-vault" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Déposer une pièce →</a>
+            </td>
+          </tr>
+          <tr class="hover:bg-slate-900/50 transition">
+            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-03</td>
+            <td class="py-4 px-4">
+              <div class="font-bold text-slate-200 font-sans text-sm">Le Manifeste Universel du Sol</div>
+              <div class="text-[11px] text-slate-400 font-serif">Autopsie de la dépossession foncière, des préemptions et des zonages PLU</div>
+            </td>
+            <td class="py-4 px-4 hidden sm:table-cell text-emerald-400 font-bold">GEOINT / Cadastre</td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                Cartographie 360 communes
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <a href="#whistleblower-vault" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Déposer une pièce →</a>
+            </td>
+          </tr>
+          <tr class="hover:bg-slate-900/50 transition">
+            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-05</td>
+            <td class="py-4 px-4">
+              <div class="font-bold text-slate-200 font-sans text-sm">L'Empire des SCI Non-Résidentes</div>
+              <div class="text-[11px] text-slate-400 font-serif">Radiographie des bénéficiaires effectifs (RBE) et cascades de sociétés</div>
+            </td>
+            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">OSINT / INPI RNE</td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                Croisement RBE en cours
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <a href="#whistleblower-vault" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Déposer une pièce →</a>
+            </td>
+          </tr>
+          <tr class="hover:bg-slate-900/50 transition">
+            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-11</td>
+            <td class="py-4 px-4">
+              <div class="font-bold text-slate-200 font-sans text-sm">L'Emprise des Servitudes Militaires</div>
+              <div class="text-[11px] text-slate-400 font-serif">Autopsie des 2 842 hectares domaniaux et rentes d'occupation</div>
+            </td>
+            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">FORENSIQUE ISO</td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                Dépouillement des actes DUP
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <a href="#whistleblower-vault" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Déposer une pièce →</a>
+            </td>
+          </tr>
+          <tr class="hover:bg-slate-900/50 transition">
+            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-21</td>
+            <td class="py-4 px-4">
+              <div class="font-bold text-slate-200 font-sans text-sm">Le Scandale des Déchets du SYVADEC</div>
+              <div class="text-[11px] text-slate-400 font-serif">La rente privée de l'exportation maritime des déchets vers le continent</div>
+            </td>
+            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">DECP / Marchés Publics</td>
+            <td class="py-4 px-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                Audit des bordereaux de prix
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <a href="#whistleblower-vault" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Déposer une pièce →</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -770,8 +565,8 @@ La vérité n'appartient à aucun pouvoir. Partagez massivement ce message pour 
 
       <!-- Bouton d'ancrage rapide vers le haut -->
       <div class="mt-6 text-center">
-        <a href="#carousel-alaune-section" class="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition shadow-lg shadow-amber-500/20">
-          <span>Remonter aux Enquêtes à la Une ↑</span>
+        <a href="#fiches-section" class="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider transition shadow-lg shadow-amber-500/20">
+          <span>Remonter aux 7 Enquêtes Scellées ↑</span>
         </a>
       </div>
 
@@ -800,7 +595,7 @@ La vérité n'appartient à aucun pouvoir. Partagez massivement ce message pour 
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500 font-mono mt-16" role="contentinfo">
-    L'OCHJU — MÉDIA CITOYEN D'INVESTIGATION FORENSIQUE & OPEN DATA | 29 GRANDES ENQUÊTES POUR LA TRANSPARENCE ET LA SOUVERAINETÉ
+    L'OCHJU — MÉDIA CITOYEN D'INVESTIGATION FORENSIQUE & OPEN DATA | LES GRANDES ENQUÊTES SCELLÉES POUR LA TRANSPARENCE ET LA SOUVERAINETÉ
   </footer>
 
   <!-- Script de Recherche Temps Réel (Recherche sur l'Ensemble des Dossiers) -->
@@ -842,18 +637,15 @@ La vérité n'appartient à aucun pouvoir. Partagez massivement ce message pour 
 
       <p class="text-xs text-slate-400 font-sans">Diffusez cette enquête sur vos réseaux pour briser l'omerta et informer les citoyens :</p>
 
-      <div class="grid grid-cols-2 gap-2.5">
+      <div class="grid grid-cols-3 gap-2.5">
         <a id="shareXLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-black text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 text-xs font-mono font-medium transition shadow-sm">
-          <span>✖️</span> <span>X</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> <span>X</span>
         </a>
         <a id="shareFbLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#1877F2] text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2] text-xs font-mono font-medium transition shadow-sm">
-          <span>📘</span> <span>Facebook</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> <span>Facebook</span>
         </a>
         <a id="shareWaLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#25D366] text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366] text-xs font-mono font-medium transition shadow-sm">
-          <span>💬</span> <span>WhatsApp</span>
-        </a>
-        <a id="shareTgLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#0088cc] text-slate-200 hover:text-white border border-slate-800 hover:border-[#0088cc] text-xs font-mono font-medium transition shadow-sm">
-          <span>✈️</span> <span>Telegram</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.77.828 2.791.828 3.18 0 5.767-2.587 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm0 10.518c-.896 0-1.636-.263-2.378-.716l-.17-.104-1.764.463.471-1.721-.115-.183c-.496-.788-.758-1.552-.757-2.49 0-2.618 2.13-4.748 4.748-4.748 2.618 0 4.748 2.13 4.748 4.748 0 2.617-2.13 4.747-4.748 4.747z"/></svg> <span>WhatsApp</span>
         </a>
       </div>
 
@@ -887,8 +679,7 @@ La vérité n'appartient à aucun pouvoir. Partagez massivement ce message pour 
       const waText = `🔴 *Enquête L'OCHJU : ${title}*\n\n${chapeau ? chapeau + '\n\n' : ''}👉 ${fullUrl}`;
       document.getElementById('shareWaLink').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(waText)}`;
 
-      const tgText = `🔴 Enquête L'OCHJU : ${title}`;
-      document.getElementById('shareTgLink').href = `https://t.me/share/url?url=${encodeURIComponent(fullUrl)}&text=${encodeURIComponent(tgText)}`;
+
 
       document.getElementById('cardShareModal').classList.remove('hidden');
     }

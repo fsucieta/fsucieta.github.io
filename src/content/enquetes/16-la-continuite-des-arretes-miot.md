@@ -3,7 +3,7 @@ id: 16
 title: "L'Échafaud Fiscal des Familles Corses : L'Autopsie des Arrêtés Miot et la Menace d'Expropriation Successorale (303 000 Parcelles Prises au Piège)"
 subtitle: "De l'arrêté consulaire de 1801 aux sursis temporaires de l'État : comment l'application aveugle du barème fiscal continental à 60 % menace d'arracher les maisons de village et les terres ancestrales aux héritiers insulaires face à un cadastre qui nécessitera 327 ans pour être apuré."
 category: "FONCIER & BANQUE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-16"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

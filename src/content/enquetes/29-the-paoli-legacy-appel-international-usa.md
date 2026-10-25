@@ -3,7 +3,7 @@ id: 29
 title: "« Remember Paoli ! » : Le Réveil du Pacte Sacré entre la Corse et l'Amérique"
 subtitle: "Avant que l'Amérique ne naisse, nous avions allumé le feu de la liberté moderne : la saisine historique pour la réinscription de la Corse sur la liste des peuples à décoloniser."
 category: "MANIFESTE D'ÉMANCIPATION & GÉOPOLITIQUE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-MANIFESTE-01-CORTE-PHILADELPHIA"
 author: "La Rédaction Citoyenne de L'OCHJU"
 date: "Septembre 2026"

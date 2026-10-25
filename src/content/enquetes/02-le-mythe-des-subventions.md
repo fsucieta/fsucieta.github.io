@@ -3,7 +3,7 @@ id: 2
 title: "Qui Paye pour Qui ? Ce que Chaque Famille Corse Verse à Paris sans Jamais en Voir la Couleur"
 subtitle: "4 800 euros d'impôts par an et par foyer siphonnés vers le continent sans retour : les comptes officiels qui détruisent définitivement le mythe d'une île sous perfusion."
 category: "FISCALITÉ & BUDGET"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-02"
 author: "Cellule d'Investigation Financière L'OCHJU"
 date: "Août 2026"

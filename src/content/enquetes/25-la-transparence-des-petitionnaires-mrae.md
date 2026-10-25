@@ -3,7 +3,7 @@ id: 25
 title: "La Transparence des Pétitionnaires & le Saucillonnage Environnemental MRAe : L'Autopsie du Masquage des Bénéficiaires Effectifs (Articles L. 122-1 et R. 122-2 du Code de l'Environnement)"
 subtitle: "Du découpage artificiel de domaines en cascades de SCI au contournement des études d'impact : comment des holdings immobilières échappent à l'avis environnemental public, et le Registre Ouvert des Maîtres d'Ouvrage Réels."
 category: "ENVIRONNEMENT & TRANSPARENCE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-25"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

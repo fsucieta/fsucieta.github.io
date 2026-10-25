@@ -3,7 +3,7 @@ id: 20
 title: "L'Accaparement des Primes PAC & l'Élevage Spéculatif"
 subtitle: "Radiographie des aides agricoles : comment le système de déclaration de la Politique Agricole Commune (PAC) favorise les grands propriétaires fonciers au détriment des vrais producteurs"
 category: "AGRICULTURE & PAC"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-20"
 author: "Cellule d'Investigation Agro-Économique L'OCHJU"
 date: "Octobre 2026"

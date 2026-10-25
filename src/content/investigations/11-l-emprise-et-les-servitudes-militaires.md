@@ -3,7 +3,7 @@ id: 11
 title: "Le Sanctuaire Confisqué : L'Autopsie des 2 842 Hectares Militaires et le Système des Rentes d'État (50 Millions d'Euros par An)"
 subtitle: "BA 126 Solenzara, Aspretto, Camp Raffalli et Diane : révélations sur l'accord secret avec l'armée américaine, le marché de 91 millions d'euros pour les pistes, les 41 millions de litres d'eau volés à la rivière et les 19,75 millions d'euros d'impôts impayés que l'État doit à nos communes."
 category: "DÉFENSE & TERRITOIRE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-11"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

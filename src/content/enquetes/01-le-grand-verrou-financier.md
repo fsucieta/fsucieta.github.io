@@ -3,7 +3,7 @@ id: 1
 title: "Le Grand Verrou Financier : La Mécanique Secrète des Prêts In Fine et le Siphonnage de l'Épargne Corse (6,42 Milliards d'Euros Captés)"
 subtitle: "Radiographie financière de la dépossession foncière : comment les banques privées continentales et les holdings contournent le HCSF par gage d'assurance-vie pendant que les ménages résidents subissent 41 % de refus de prêt et que 2,7 milliards d'épargne insulaire fuient vers Paris."
 category: "FONCIER & BANQUE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-01"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

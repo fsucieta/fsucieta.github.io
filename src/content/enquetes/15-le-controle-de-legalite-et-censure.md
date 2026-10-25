@@ -3,7 +3,7 @@ id: 15
 title: "Le Contrôle de Légalité Sélectif en Corse : L'Autopsie d'une Justice Administrative à Deux Vitesses (Censure des Villages vs Complaisance Littorale)"
 subtitle: "De l'article L. 2131-6 du CGCT aux déférés préfectoraux d'opportunité politique : comment l'État attaque férocement les arrêtés des maires ruraux pour une bergerie tout en laissant forclore les recours contre les méga-projets spéculatifs du littoral, et le Registre Ouvert du Contrôle Républicain."
 category: "URBANISME & PRÉFECTURE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-15"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

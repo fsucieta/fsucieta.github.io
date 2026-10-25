@@ -3,7 +3,7 @@ id: 21
 title: "Le Scandale des Déchets du SYVADEC : La Rente de l'Exportation Maritime et le Record de France de la TEOM (103 Millions d'Euros Évaporés)"
 subtitle: "De l'échec programmé du tri au cargo d'ordures à 260 € la tonne vers Fos-sur-Mer : comment le système SYVADEC fait payer aux familles corses une taxe d'ordures ménagères de 580 € par an pour exporter 82 500 tonnes de déchets par an par bateau."
 category: "DÉCHETS & RENTES"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-21"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

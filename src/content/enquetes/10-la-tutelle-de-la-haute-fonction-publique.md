@@ -3,7 +3,7 @@ id: 10
 title: "La Tutelle de la Haute Fonction Publique & le Gel des Compétences : L'Autopsie du Zapping Administratif (21 Mois de Séjour Moyen des Préfets)"
 subtitle: "De la valse des directeurs d'État au détournement de l'IRA de Bastia : comment la gestion proconsulaire par intérim permanent paralyse les projets structurants insulaires et étouffe l'émergence d'une haute fonction publique corse souveraine."
 category: "INSTITUTIONS & TUTELLE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-10"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

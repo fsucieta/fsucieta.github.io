@@ -3,7 +3,7 @@ id: 8
 title: "Le Pillage de la Forêt Corse & l'Exportation du Bois Brut : L'Autopsie d'une Spoliation Coloniale (Plus de 75 % des Grumes Sciées en Italie)"
 subtitle: "De la gestion par l'ONF au déficit commercial de 85 M€ : comment l'absence volontaire de scieries industrielles condamne la Corse à exporter ses pins laricio bruts pour les réimporter 8 fois plus cher sous forme de charpentes toscanes, et le modèle d'une Régie Publique Forestière Territoriale."
 category: "FORÊT & FILIÈRE BOIS"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-08"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

@@ -3,7 +3,7 @@ id: 13
 title: "Le Sous-Investissement Éducatif & Universitaire en Corse : L'Autopsie de la Sous-Dotation d'État (25 % de Moins par Étudiant à Corte)"
 subtitle: "De la formule SYMPA du ministère à l'hémorragie des jeunes diplômés : comment Paris maintient l'Université Pasquale Paoli sous tension budgétaire et refuse la sanctuarisation de la recherche insulaire, et l'architecture d'un Pôle Universitaire Européen Souverain."
 category: "ÉDUCATION & RECHERCHE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-13"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

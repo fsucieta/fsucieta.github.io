@@ -3,7 +3,7 @@ id: 5
 title: "L'Empire des SCI Non-Résidentes : La Spéculation Opaque et l'Évasion des Droits de Mutation (205 Millions d'Euros Évaporés)"
 subtitle: "Radiographie financière et fiscale de la dépossession côtière : comment plus de 4 800 SCI domiciliées hors de Corse privatisent le littoral par des cessions de parts sans publicité foncière, privant la Corse de 20,57 M€ par an de DMTO et de taxe de séjour."
 category: "FONCIER & BANQUE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-05"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

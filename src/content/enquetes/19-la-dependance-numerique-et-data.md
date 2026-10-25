@@ -3,7 +3,7 @@ id: 19
 title: "La Dépendance Numérique & la Souveraineté des Données en Corse : L'Autopsie des Câbles Sous-Marins et de l'Évasion du Cloud (Zéro Datacenter Public Insulaire)"
 subtitle: "De la vulnérabilité des trois liaisons de fibre optique sous tutelle d'Orange à l'hébergement des données de santé et fiscales sur des serveurs parisiens et américains : comment la Corse subit un étranglement numérique colonial, et le projet du Datacenter Souverain Territorial."
 category: "NUMÉRIQUE & DATA"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-19"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

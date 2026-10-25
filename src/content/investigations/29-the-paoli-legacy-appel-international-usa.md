@@ -3,7 +3,7 @@ id: 29
 title: "Manifesto from Corte to Philadelphia — An Appeal to Free Nations"
 subtitle: "From the modern world's first democratic Constitution (1755) to America's first military battle cry 'Remember Paoli !' (1777) : the resurgence of a sacred moral pact between Corsica and the free world."
 category: "EMANCIPATION MANIFESTO & GEOPOLITICS"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-MANIFESTO-01-CORTE-PHILADELPHIA"
 author: "The Citizen Editorial Board of L'OCHJU"
 date: "September 2026"

@@ -3,7 +3,7 @@ id: 17
 title: "L'Euthanasie Programmée : L'Autopsie de la Guerre Linguistique d'État et le Verrou de l'Article 2 (La Langue Corse Interdite dans son Hémicycle)"
 subtitle: "Du détournement de la révision constitutionnelle de 1992 à la censure préfectorale de l'Assemblée de Corse en 2024 : comment la République refuse au corse ce que l'Espagne et l'Italie accordent au catalan et au français, et l'écriture de l'article 72-5 pour briser l'extinction."
 category: "SOUVERAINETÉ & CULTURE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-17"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"

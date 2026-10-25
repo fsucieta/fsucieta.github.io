@@ -3,7 +3,7 @@ id: 22
 title: "La Captation Bancaire & l'Évasion de l'Épargne Insulaire"
 subtitle: "Radiographie du siphon financier : comment 2,57 milliards d'euros d'épargne corse sont aspirés chaque soir vers les marchés financiers continentaux pendant que l'économie locale est asphyxiée"
 category: "BANQUE & ÉPARGNE"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-22"
 author: "Cellule d'Investigation Financière L'OCHJU"
 date: "Octobre 2026"

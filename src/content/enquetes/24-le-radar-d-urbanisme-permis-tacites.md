@@ -3,7 +3,7 @@ id: 24
 title: "Le Scandale des Permis Tacites sur le Littoral Corse : L'Autopsie du Silence Administratif Organisé (Article R. 424-1 du Code de l'Urbanisme)"
 subtitle: "Du délai de 2 mois expiré en catimini au bétonnage des zones protégées : comment l'absence volontaire de refus préfectoral et municipal blanchit la spéculation immobilière, et la création du Registre Public Souverain d'Affichage Numérique Décentralisé."
 category: "URBANISME & SITADEL"
-status: cloturee
+status: en_cours
 ref: "LOCHJU-DOSSIER-24"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Octobre 2026"
