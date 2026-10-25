@@ -1,167 +1,204 @@
 ---
 id: 16
-title: "La Continuité Cinquantenaire des Arrêtés Miot & l'Indivision Foncière"
-subtitle: "Spoliation et blocage successoral : comment la fin programmée des arrêtés Miot et le désordre des titres favorisent le rachat spéculatif par les capitaux extérieurs"
-category: "SUCCESSIONS & GIRTEC"
-status: en_cours
-ref: "LOCHJU-AUDIT-ENQUETE-16"
-author: "Cellule d'Investigation Juridique L'OCHJU"
-date: "Août 2026"
-tool: "GIRTEC / Notaires / Code Civil"
-chapeau: "Instaurés en 1798 par le comte André-François Miot de Melito pour adapter le droit de succession aux réalités de la propriété familiale corse, les arrêtés Miot ont été progressivement démantelés par le Législateur. Enquête sur le piège de l'indivision et le rôle clé du GIRTEC."
-math: "\\text{Taux de Blocage par Indivision (TBI)} = \\frac{\\sum \\text{Parcelles Cadastrées sans Titre de Propriété Notarié Valide}}{\\text{Superficie Cadastrale Totale des Terres Privées de la Commune}} \\times 100"
-image: "img_enquete_16.jpg"
+title: "L'Échafaud Fiscal des Familles Corses : L'Autopsie des Arrêtés Miot et la Menace d'Expropriation Successorale (303 000 Parcelles Prises au Piège)"
+subtitle: "De l'arrêté consulaire de 1801 aux sursis temporaires de l'État : comment l'application aveugle du barème fiscal continental à 60 % menace d'arracher les maisons de village et les terres ancestrales aux héritiers insulaires face à un cadastre qui nécessitera 327 ans pour être apuré."
+category: "FONCIER & BANQUE"
+status: cloturee
+ref: "LOCHJU-DOSSIER-16"
+author: "Cellule d'Investigation L'OCHJU"
+date: "Octobre 2026"
+tool: "GIRTEC / DREAL Corse / DGFiP / Conseil Constitutionnel (Décision 2012-662 DC) / Arts. 777 & 1135 bis CGI / Art. 174 TFUE"
+chapeau: "Pendant que les ministres successifs promettent de régler la question foncière en Corse par de simples reports d'échéances sans lendemain, plus de 303 000 parcelles cadastrées (près de 30 % de la Corse) appartiennent toujours à des défunts nés avant 1910. Au rythme actuel des régularisations du GIRTEC, il faudra 327 ans pour reconstituer les titres de propriété. Si le régime protecteur des arrêtés Miot s'éteint pour laisser place au barème continental à 60 % pour les cousins et neveux, des milliers de familles corses seront contraintes de vendre leurs maisons ancestrales aux enchères pour payer des droits de succession calculés sur des prix spéculatifs. Autopsie juridique et dispositif législatif de sanctuarisation pérenne."
+image: "/img_enquete_16.jpg"
 sources:
-  - name: "GIRTEC (Groupement d'Intérêt Public pour la Reconstitution des Titres en Corse) : Rapports d'Activité"
+  - name: "Dossier d'Instruction Juridique & Successorale L'OCHJU (Standards ISO/IEC 27037)"
+    url: "/docs/pieces-publiques-arretes-miot/DOSSIER_INSTRUCTION_OFFICIEL_16_ARRETES_MIOT.md"
+    sha256: "1f509399ea4b052ced828033922bd760348a9142d1f3bb498228f10c5c45a51b"
+  - name: "Conseil Constitutionnel : Décision n° 2012-662 DC du 29 décembre 2012 (Censure égalité charges publiques)"
+    url: "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm"
+    sha256: "c9a576cde955032b95345b104f0b19c404c21706b35085b78e5cf62f515f91f6"
+  - name: "GIRTEC : Bilan Vingt Ans d'Activité et État du Désordre Cadastral en Corse (Rapport d'Activité Officiel)"
     url: "https://www.girtec.corsica/"
-    sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
-  - name: "Conseil Supérieur du Notariat / Chambre des Notaires de Corse : Bilans des Actes de Notoriété"
-    url: "https://www.notaires.fr/"
-    sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
-  - name: "Code Général des Impôts : Articles 750 bis A (Régime de Faveur des Droits de Succession)"
-    url: "https://www.girtec.corsica/"
-    sha256: "6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e"
+    sha256: "997146e3712fd68429bbde0515a61843951f9fb9b40232dc8b97cfeb967aa12f"
 ---
 
-## I. L'histoire des Arrêtés Miot : Une protection fiscale séculaire
+<!-- ==========================================================================
+     CARTOUCHE MAÎTRE À DOUBLE LECTURE : L'IMPACT DIRECT ET LES DOCUMENTS OFFICIELS
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    
+  <!-- NIVEAU POPULAIRE : LES CHIFFRES CHOCS EN CLAIR -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Parcelles Sans Titre Clair</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">303 000</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Près de 30 % du sol corse bloqué au nom de défunts nés avant 1910</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Délai Réel GIRTEC</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">327 Ans</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Nécessaires pour titrer toute l'île au rythme moyen de 925 parcelles/an</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Taxation Droit Commun</span>
+        <span class="text-xl md:text-2xl font-black text-red-500 font-mono">55 % à 60 %</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Droits exigibles pour les neveux et cousins éloignés sous barème ordinaire</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Biens Non Délimités</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">142 000 Hectares</span>
+        <span class="text-[10px] text-slate-400 block mt-1">15 % de la Corse menacée d'incorporation comme biens sans maître</span>
+      </div>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-950/90 border border-amber-500/20 my-3">
+      <p class="font-serif text-sm text-slate-200 leading-relaxed italic m-0">
+        « Si vous héritez d'une maison de famille au village ou d'un terrain transmis de bouche à oreille depuis votre arrière-grand-père, vous vivez avec une épée de Damoclès sur la tête. Paris refuse de comprendre que nos successions n'ont jamais été réglées par des notaires depuis plus d'un siècle par la faute d'un État qui n'a jamais achevé le cadastre. Si les dérogations Miot sautent, le Trésor public exigera jusqu'à 60 % de la valeur de votre maison sous six mois. Aucun enfant de Corse ne pouvant payer de telles sommes, la DGFiP fera saisir votre bien pour le vendre aux enchères à des spéculateurs extérieurs. L'impôt devient une machine d'expulsion légale de notre propre peuple. »
+      </p>
+    </div>
+  </div>
 
-En juin 1798 (An VI du calendrier républicain), l'administrateur général de la Corse, André-François Miot de Melito, adopta un ensemble d'arrêtés fiscaux adaptant le droit des successions au contexte particulier de l'île. Les **Arrêtés Miot** accordaient une exonération de droits de mutation par décès sur les immeubles situés en Corse et réduisaient très fortement les taxes sur les actes de partage et de vente.
-
-    
-
-Pendant plus de deux siècles, ce régime d'exception fiscale permit aux familles corses de conserver leurs maisons de village, leurs oliveraies et leurs châtaigneraies sans être contraintes de les vendre aux enchères pour s'acquitter de droits de succession prohibitifs.
-
-    
-
-## II. Le démantèlement progressif et le piège de l'indivision inexposable
-
-    
-
-Sous la pression des services de Bercy et des jurisprudences du Conseil Constitutionnel et de la Cour de Justice de l'Union Européenne au nom de l'égalité devant l'impôt, les gouvernements successifs ont entrepris l'extinction progressive des Arrêtés Miot. Désormais soumis à un calendrier d'alignement sur le droit commun (disparition complète des abattements fiscaux programmée), les héritiers corses se trouvent confrontés à une charge fiscale démesurée.
-
-    
-
-À cette pression fiscale s'ajoute le fléau de l'**indivision foncière**. Faute d'avoir rédigé des actes de notoriété et des partages successoraux sur plusieurs générations (parfois depuis le XIXe siècle), des dizaines de milliers de parcelles en Corse sont détenues en indivision par des dizaines, voire des centaines de co-héritiers dispersés. Bloquées juridiquement, ces terres ne peuvent être ni entretenues, ni exploitées par les agriculteurs locaux, ni cédées à des résidents.
-
-    
-
-> 
-        « L'absence de titres de propriété validés concerne plus de 40 % de la superficie privée du territoire corse. Ce désordre cadastral constitue une aubaine pour les promoteurs extérieurs qui rachètent les parts d'indivis isolés pour forcer les ventes aux enchères judiciaires. »
-    
-
-    
-
-## III. Le rôle du GIRTEC et la vente forcée par licitation
-
-    
-
-Pour tenter de résorber ce désordre foncier sans précédent, l'État et la Collectivité de Corse ont créé le GIP GIRTEC (Groupement d'Intérêt Public pour la Reconstitution des Titres de Propriété en Corse). Grâce aux généalogistes et aux géomètres, le GIRTEC aide les familles à établir des actes de notoriété acquisitive (prescription trentenaire / usucapion).
-
-    
-
-Cependant, le rythme de reconstitution reste insuffisant face à l'offensive des marchands de biens et des fonds spéculatifs. Ceux-ci exploitent l'article 815 du Code Civil ("Nul ne peut être contraint à demeurer dans l'indivision") en rachetant les rachat de parts d'héritiers déconnectés de l'île, puis en engageant des procédures de **licitation (vente forcée à la barre du tribunal)** pour rafler des domaines entiers à vils prix.
-
-    
-
-## IV. Données GIRTEC et cadastre sur l'indivision corse
-
-### 📊 Données d'Audit Forensique : Arrêtés Miot & Titration GIRTEC
-
-| Indicateur Foncier & Cadastral | Chiffre / Volume | Conséquence Financière / Statut |
-| :--- | :--- | :--- |
-| **Parcelles Sans Propriétaire Identifié** | > 115 000 parcelles | Absence de titres DGFiP valides |
-| **Actes de Notoriété GIRTEC** | > 12 000 dossiers | Résolutions foncières opérées |
-| **Impact Fiscal Communal** | Manque à gagner majeur | Perte sur TFNB (Taxe Foncière Non Bâtie) |
-
-## V. Actions de sécurisation patrimoniale et démarches notariales — Arrêtés Miot
-
-La protection du patrimoine foncier familial corse dans le contexte spécifique des exonérations fiscales héritées des Arrêtés Miot et du régime CGI 750 bis A passe par quatre démarches concrètes :
+  <!-- NIVEAU FORENSIQUE : PIÈCES SCELLÉES ET CONTRÔLE DE LÉGALITÉ -->
+  <div>
+    <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono font-bold tracking-widest uppercase text-slate-300">
+          ⚖️ REGISTRE DES COTES OFFICIELLES & SCELLÉ ISO/IEC 27037
+        </span>
+      </div>
+      <span class="text-[11px] font-mono text-amber-400/80 bg-amber-950/40 px-2.5 py-0.5 rounded border border-amber-500/30">
+        REF GREFFE : LOCHJU-DOSSIER-16 // AUDIT SUCCESSORAL SCELLÉ
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono text-slate-300">
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE HISTORIQUE</span>
+        <span class="text-slate-200 font-bold">Arrêté du 21 Prairial An IX</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">André-François Miot // Exemption perpétuelle de forclusion</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE CONSEIL CONST.</span>
+        <span class="text-slate-200 font-bold">Décision 2012-662 DC</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Censure des prorogations par simple loi de finances ordinaire</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE CADASTRE GIRTEC</span>
+        <span class="text-slate-200 font-bold">Loi n° 2002-92 (Art. 51)</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">303 000 parcelles sans titre // 327 ans d'apurement requis</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
-### 📌 Action CADA n°1 : Accès aux registres des actes de notoriété prescriptifs établis par le GIRTEC
-Demandez au Groupement d'Intérêt Public pour le Remembrement et la Titration en Corse (GIRTEC) les données sur le nombre d'actes de notoriété acquisitive (prescription trentenaire) établis par commune et par année, ainsi que le nombre de dossiers en attente de régularisation.
+## I. L'HÉRITAGE HISTORIQUE : COMMENT L'ÉTAT A FABRIQUÉ LE DÉSORDRE FONCIER
+
+Le 21 prairial an IX (10 juin 1801), André-François Miot de Mélito, administrateur général du Golo et du Liamone nommé par Bonaparte, signe l'arrêté qui porte son nom. L'article 5 suspend toute pénalité de retard et instaure une liquidation forfaitaire symbolique pour les mutations par décès.
+
+Pendant deux siècles (1801–1999), l'État français n'a jamais doté la Corse des moyens de dresser un cadastre régulier. Les successions se sont transmises verbalement, dans le respect de la parole donnée et de l'usage familial, sans formalisme notarié. 
+
+Puis, au tournant des années 2000, l'administration centrale a décidé unilatéralement de mettre fin à cette situation par l'article 51 de la loi du 22 janvier 2002, programmant l'extinction du régime Miot et créant le GIRTEC (Groupement d'Intérêt Public pour la Reconstitution des Titres de Propriété en Corse).
+
+Depuis, les gouvernements successifs gèrent la crise par des rustines législatives précaires :
+- La loi de finances pour 2013 tente une prorogation : elle est **immédiatement censurée par le Conseil constitutionnel le 29 décembre 2012 (Décision n° 2012-662 DC)** au nom de « l'égalité devant l'impôt » ;
+- La loi n° 2017-285 et la LFR 2017 repoussent l'abattement de 50 % au **31 décembre 2027** ;
+- La loi n° 2025-115 du 7 février 2025 repousse l'échéance au **31 décembre 2037**.
+
+Reporter une date de dix ans ne règle rien au fond. C'est un sursis précaire qui maintient les familles sous la menace permanente de l'échafaud fiscal.
 
 ---
 
-### 📌 Action CADA n°2 : Accès aux arrêtés d'exonération de droits de succession appliqués (DRFiP)
-Saisissez la DRFiP de Corse pour obtenir les statistiques agrégées sur l'application de l'exonération de droits de succession des biens immobiliers corses (Art. 750 bis A CGI), avec les montants d'imposition différée et les risques de rappel en cas de cession avant l'expiration du délai légal.
+## II. L'IMPASSE MATHÉMATIQUE : POURQUOI LE DROIT COMMUN EST UN PIÈGE MORTEL
+
+L'application du barème de droit commun du Code général des impôts (art. 777 CGI) sur la terre corse constitue un mécanisme d'expropriation automatique.
+
+### 1. Des successions qui sautent trois ou quatre générations
+Les successions corses n'ayant pas été ouvertes depuis un siècle, les occupants actuels ne sont jamais les enfants en ligne directe du défunt inscrit au cadastre. Ce sont des neveux, petits-neveux ou cousins au 4e degré :
+- Enfant / Ligne directe : 5 % à 45 % (abattement de 100 000 €).
+- Frères et sœurs : 35 % à 45 % (abattement de 15 932 €).
+- **Neveux et nièces (3e degré) : 55 % direct** (abattement de 7 967 €).
+- **Cousins et non-parents au-delà du 4e degré : 60 % forfaitaire de plein fouet** (abattement dérisoire de 1 594 €).
+
+### 2. Le gouffre entre prix spéculatifs et revenus insulaires
+Avec **37,4 % de résidences secondaires** (record de France) et une flambée immobilière de +112 % tirée par les fortunes extérieures, une maison de village modeste avec terrain est aujourd'hui valorisée entre 300 000 € et 900 000 € par les services fiscaux.
+
+```
+    CAS CLINIQUE : MAISON ANCESTRALE SUR LE LITTORAL (VALEUR : 900 000 €)
+    2 cousins héritiers au 4e degré (Revenu médian local : 21 500 € / an)
+    ---
+    Barème de droit commun (60 %) : 538 086 € de droits de succession
+    Frais de notaire et partage : ~ 72 000 €
+    TOTAL EXIGIBLE PAR LE TRÉSOR PUBLIC : 610 086 €
+    Temps d'effort nécessaire : 14,2 ANNÉES DE REVENUS NETS INTÉGRAUX DU FOYER
+    ---
+    RÉSULTAT : IMPOSSIBILITÉ DE PAYER SOUS 6 MOIS.
+    SAISIE PAR LA DGFIP ET VENTE AUX ENCHÈRES PUBLIQUES DU PATRIMOINE FAMILIAL.
+```
 
 ---
 
-### 📌 Action CADA n°3 : Accès aux extraits de la matrice cadastrale pour les parcelles sans maître
-Saisissez la DGFiP pour obtenir les extraits de la matrice cadastrale des parcelles non titrées ou en déshérence susceptibles d'être incorporées au domaine communal ou de faire l'objet de procédures de bornage et d'appropriation par des tiers.
+## III. LA FAILLITE TEMPORELLE DU GIRTEC : 327 ANS POUR TITRER L'ÎLE
+
+L'argument de Paris consistant à dire *« le GIRTEC va régler les titres avant la fin du sursis »* est une imposture arithmétique :
+
+- Nombre de parcelles cadastrées en Corse : **1 055 000 parcelles**.
+- Parcelles appartenant toujours à des personnes nées avant 1910 : **plus de 303 000 parcelles** (soit près de 30 % de la superficie de l'île).
+- Biens Non Délimités (BND) sans contours matériels : **142 000 hectares** (15 % de la Corse).
+- Rythme moyen de régularisation du GIRTEC en 20 ans d'existence : **925 parcelles par an**.
+
+$$\text{Délai d'apurement réel} = \frac{303\,000 \text{ parcelles}}{925 \text{ parcelles / an}} \approx \mathbf{327 \text{ années}}$$
+
+Le cadastre corse ne sera pas régularisé avant l'an **2353**. Exiger des familles corses qu'elles se conforment au droit commun d'ici 2027 ou 2037 relève d'une duplicité d'État caractérisée.
 
 ---
 
-### 📌 Action CADA n°4 : Accès aux procès-verbaux de la Commission Foncière de la Collectivité de Corse
-Demandez à l'Assemblée de Corse les procès-verbaux et comptes-rendus de la Commission Foncière institutionnelle traitant des indivisions successorales, du recensement du foncier non titré et des propositions de simplification de l'acte de notoriété acquisitive.
+## IV. AUTOPSIE MÉDIATIQUE & CADRAGE COGNITIF DE L'OPINION (SOCMINT / MEDIAPINT)
 
+L'analyse des flux médiatiques des 36 derniers mois révèle le cadrage hostile orchestré dans la presse nationale :
 
-## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+### 1. La fabrication du « privilège corse scandaleux »
+Régulièrement, des éditorialistes de la presse économique parisienne dénoncent les arrêtés Miot comme une « niche fiscale anormale » et une « injustice envers les contribuables du continent ».  
+**L'omerta est totale** sur la réalité matérielle : ce régime ne constitue pas un privilège d'enrichissement, mais la seule protection vitale empêchant l'expulsion d'un peuple sur ses propres terres ancestrales privées de cadastre par l'État lui-même.
 
-L'examen forensique et légistique des arrêtés ministériels, délibérations territoriales et actes administratifs relatifs à l'enquête **La Continuite Des Arretes Miot** met en évidence :
+### 2. Le silence sur la jurisprudence européenne et les précédents insulaires
+Aucun média grand public n'évoque les régimes protecteurs pérennes qui s'appliquent en Europe :
+- **Aux îles Åland (Finlande)** : le statut du *Hembygdsrätt* protège la transmission familiale et interdit l'achat aux non-résidents.
+- **Au Tyrol du Sud (Italie)** : le statut du *Maso Chiuso* (*Erbhof*) garantit l'indivisibilité perpétuelle des domaines familiaux, leur exonération fiscale et leur évaluation exclusive à la valeur de rendement agraire (*Ertragswert*), interdisant toute spéculation.
+- **Aux Canaries (Espagne)** : le Régime Économique et Fiscal (REF) garantit une bonification de 99,9 % des droits de succession insulaires.
 
-1. **Audit des arrêtés d'application et décrets d'encadrement :** L'analyse des textes officiels encadrant des arrêtés de notoriété prescriptifs du GIRTEC et des arrêtés fiscaux d'exonération Miot montre une faille juridique majeure favorisant le blocage de la titration foncière de plus de 115 000 parcelles en indivision.
-2. **Dissection des délibérations de tutelle et d'attribution :** L'examen des procès-verbaux des commissions administratives confirme l'absence de clauses de sauvegarde territoriale et d'audit d'impact local.
-3. **Analyse des recours contentieux et avis d'inspection :** Les rapports de contrôle officiels valident l'existence d'écarts systématiques entre les objectifs de service public et la réalité des pratiques observées.
+---
 
-## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+## V. MUNITIONS D'INGÉNIERIE LÉGALE : LE DISPOSITIF CLÉ EN MAIN
 
-Pour imposer la transparence et forcer la communication des preuves administratives cachées dans l'enquête **La Continuite Des Arretes Miot**, la saisine de la CADA (Art. L. 311-1 CRPA) permet d'exiger les 4 séries de documents officiels suivants :
+L'Assemblée de Corse doit intégrer sans délai dans le projet de loi organique relative à la Corse (art. 72-5) les 4 articles de rupture forgés par L'OCHJU :
 
-1. **Les registres d'arbitrage et arrêtés préfectoraux :** Demande de communication formelle de les registres des actes de notoriété prescriptifs établis par le GIRTEC.
-2. **Les procès-verbaux de contrôle et bilans techniques :** Injonction d'accès à les arrêtés d'exonération de droits de succession au titre du CGI 750 bis A.
-3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les extraits de la matrice cadastrale de la DGFiP des parcelles sans maître.
-4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les procès-verbaux de la Commission Foncier de la Collectivité de Corse.
+```text
+ARTICLE 1er : Création de l'article LO 4424-46 du CGCT
+- Institution du statut juridique de « Patrimoine Foncier et Familial Insulaire ».
+- Protection de la maison d'ancrage familial et des terres agropastorales jusqu'au 6e degré.
+- Engagement de conservation de 15 ans conférant l'inaliénabilité et l'insaisissabilité.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
+ARTICLE 2 : Réécriture de l'article 1135 bis du CGI
+- Exonération totale (100 %) des droits de succession pour les biens sous statut familial insulaire, quel que soit le degré de parenté.
+- Assiette fiscale plafonnée à la valeur locative cadastrale d'usage, à l'exclusion formelle des prix spéculatifs du marché secondaire.
+- Verrou anti-spéculation : déchéance de l'exonération et surtaxe de 80 % sur la plus-value en cas de revente spéculative avant 15 ans.
 
-L'enquête sur la **continuité des arrêtés Miot et la fiscalité successorale** cartographie les acteurs qui administrent et bénéficient du régime fiscal dérogatoire corse :
+ARTICLE 3 : Pérennisation de l'article 750 bis B du CGI
+- Exonération totale et définitive du droit de partage sur les partages et licitations en Corse.
 
-- **DGFiP / Direction des Finances Publiques de Corse :** Administre l'application des exonérations de droits de succession (Art. 750 bis A CGI). Produit des statistiques agrégées sans publication des bénéficiaires.
-- **GIRTEC (Groupement d'Intérêt Public pour le Remembrement et la Titration en Corse) :** Accompagne gratuitement les propriétaires dans la régularisation des biens non titrés. Sous-financé par rapport à l'ampleur du chantier (estimé à 100 000 parcelles non titrées).
-- **Chambres des Notaires de Corse-du-Sud et Haute-Corse :** Acteurs centraux de la régularisation des indivisions et de la prescription trentenaire. Leur rôle est indispensable mais le coût des actes reste prohibitif pour les familles rurales.
-- **Collectivité de Corse (Commission Foncière) :** Pilote la politique de titration et peut proposer des Lois du Pays pour adapter le régime successoral insulaire. Sous-dotée en moyens humains pour accélérer le processus.
-- **Investisseurs et promoteurs extérieurs :** Profitent du régime fiscal dérogatoire pour acquérir à prix bas des biens en indivision auprès de familles contraintes de vendre pour sortir d'une indivision complexe.
-- **Propriétaires en indivision successorale :** Principales victimes. Bloqués dans leur patrimoine par l'impossibilité de titrer à coût abordable et menacés par la fin annoncée de l'exonération fiscale.
+ARTICLE 4 : Création du Cadastre Familial Insulaire Inaliénable
+- Titre de propriété inattaquable et irréfragable après 3 ans suivant la publication de l'acte de notoriété acquisitive trentenaire.
+- Moratoire perpétuel interdisant l'incorporation d'office des biens possédés au titre des « biens sans maître » (dérogation expresse au CGPPP).
+```
 
+---
 
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
-
-### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
-
-| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
-| :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
-| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
-| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
-
-### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Continuité Des Arrêtés Miot Et La Fiscalité Successorale*
-
-| Administration à Saisir | Document Officiel à Demander | Base Légale |
-| :--- | :--- | :--- |
-| **GIRTEC** | Données sur les actes de notoriété acquisitive établis par commune et par année | `Art. L. 311-1 CRPA` |
-| **DRFiP de Corse** | Statistiques agrégées d'application de l'exonération Art. 750 bis A CGI | `Art. L. 311-1 CRPA` |
-| **DGFiP** | Extraits de la matrice cadastrale des parcelles sans maître ou non titrées | `Art. L. 311-1 CRPA` |
-| **Assemblée de Corse** | PV et comptes-rendus de la Commission Foncière institutionnelle | `Art. L. 2121-26 CGCT` |
-
-
-## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Code Civil & Régime de l'Indivision Foncière)
-
-### 📊 Matrice d'Audit et Données Chiffrées : Arrêtés Miot & Titration GIRTEC
-
-| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
-| :--- | :--- | :--- | :--- |
-| **Parcelles Non Titrées** | > 115 000 Unités | GIRTEC Actes | 🔴 Écart Majeur |
-| **Contrôle & Conformité** | > 12 000 Dossiers | Norme Légale Nationale | ⚠️ Vigilance Requis |
-| **Parcelles Non Titrées Corse** | > 115 000 (estimation GIRTEC 2023) | GIRTEC / Collectivité | 🔴 Blocage Foncier |
-| **Coût Acte Notarial Titration** | 1 800 à 4 500 € (prohibitif pour familles) | Chambres Notaires 2A+2B | 🔴 Inégalité d'Accès |
-| **Durée Prescription Trentenaire** | Requiert preuves 30 ans impossibles à réunir | Art. 2258 Code Civil | 🔴 Complexité Bloquante |
-
-### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
-1. **Pérennisation Intégrale de l'Exonération de Droits de Succession Miot :** Inscrire au Code Civil la pérennité du régime fiscal d'exonération pour la reconstitution des titres de propriété corses.
-2. **Création du Cadastre Titré Insulaire Garanti par l'État :** Conférer valeur d'acte authentique d'État aux titres de notoriété établis par le GIRTEC après 5 ans d'affichage sans contestation.
+> *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*

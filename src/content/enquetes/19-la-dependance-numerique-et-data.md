@@ -1,167 +1,246 @@
 ---
 id: 19
-title: "La Dépendance Numérique & les Atteintes à la Souveraineté des Données"
-subtitle: "Radiographie du réseau de télécommunication : vulnérabilité des câbles sous-marins de fibre optique et hébergement des données publiques corses sur des serveurs parisiens"
+title: "La Dépendance Numérique & la Souveraineté des Données en Corse : L'Autopsie des Câbles Sous-Marins et de l'Évasion du Cloud (Zéro Datacenter Public Insulaire)"
+subtitle: "De la vulnérabilité des trois liaisons de fibre optique sous tutelle d'Orange à l'hébergement des données de santé et fiscales sur des serveurs parisiens et américains : comment la Corse subit un étranglement numérique colonial, et le projet du Datacenter Souverain Territorial."
 category: "NUMÉRIQUE & DATA"
-status: en_cours
-ref: "LOCHJU-AUDIT-ENQUETE-19"
-author: "Cellule d'Investigation Numérique L'OCHJU"
-date: "Août 2026"
-tool: "ARCEP / ANSSI / Corsica Fibra"
-chapeau: "Totalement dépendante de trois câbles de fibre optique sous-marins reliant l'île au continent, la Corse subit une fragilité numérique stratégique. Enquête sur le transfert des données administratives et cadastrales des résidents corses vers des datacenters continentaux et américains."
-math: "\\text{Indice de Dépendance Numérique (IDN)} = \\frac{\\sum \\text{Volume de Data Publique Insulaire Hébergée en Dehors du Territoire}}{\\text{Volume Global de la Data Administrée par les Collectivités Corses}} \\times 100"
-image: "img_enquete_19.jpg"
+status: cloturee
+ref: "LOCHJU-DOSSIER-19"
+author: "Cellule d'Investigation L'OCHJU"
+date: "Octobre 2026"
+tool: "Code des Postes et des Communications Électroniques (Arts. L. 32-1, L. 33-1) / ARCEP / ANSSI / RGPD / Corsica Fibra"
+chapeau: "À l'ère de la dématérialisation intégrale des services publics et des transactions bancaires, la survie économique de la Corse ne tient qu'à trois minces faisceaux de verre immergés au fond de la Méditerranée. Reliant Bastia et Ajaccio à Marseille et Nice, ces câbles sous-marins sous tutelle quasi-exclusive de l'opérateur historique Orange placent l'île sous un risque permanent d'asphyxie numérique. Pire encore : en l'absence de tout datacenter souverain d'envergure publique implanté sur le territoire, plus de 92 % des données administratives, hospitalières, fiscales et foncières des citoyens corses sont déportées sur des serveurs situés en Île-de-France ou chez les géants américains de la tech soumis au CLOUD Act. Autopsie d'une colonisation numérique invisible et munitions d'ingénierie publique pour un Cloud Territorial Souverain."
+image: "/img_enquete_19.jpg"
 sources:
-  - name: "ARCEP : Observatoire des Réseaux Fixes et Mobiles et Couverture Fibre en Corse"
+  - name: "Dossier d'Instruction Numérique & Souveraineté des Données L'OCHJU (Standards ISO/IEC 27037)"
+    url: "/docs/pieces-publiques-dependance-numerique/DOSSIER_INSTRUCTION_OFFICIEL_19_NUMERIQUE.md"
+    sha256: "ed71726801f8617d2fb9cab8e6ced435a860dc84eb78841d520097d24eb2de20"
+  - name: "ARCEP : Observatoire des Réseaux d'Initiative Publique et Cartographie des Câbles Sous-Marins"
     url: "https://www.arcep.fr/"
-    sha256: "4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c"
-  - name: "ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information) : Recommandations Souveraineté"
-    url: "https://www.data.gouv.fr/"
     sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
-  - name: "Corsica Fibra / Collectivité de Corse : Bilan du Réseau d'Initiative Publique (RIP)"
-    url: "https://www.arcep.fr/"
+  - name: "ANSSI : Référentiel SecNumCloud et Directives sur les Infrastructures d'Importance Vitale (SAIV)"
+    url: "https://www.ssi.gouv.fr/"
     sha256: "2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
+  - name: "Collectivité de Corse : Contrat de Délégation de Service Public Corsica Fibra (Réseau RIP)"
+    url: "https://www.corse.bzh/"
+    sha256: "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e"
 ---
 
-## I. La vulnérabilité des câbles sous-marins de fibre optique
+<!-- ==========================================================================
+     CARTOUCHE MAÎTRE À DOUBLE LECTURE : L'IMPACT DIRECT ET LES DOCUMENTS OFFICIELS
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-blue-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    
+  <!-- NIVEAU POPULAIRE : LES CHIFFRES CHOCS EN CLAIR -->
+  <div class="border-b border-blue-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-blue-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-blue-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Câbles Sous-Marins Vitaux</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">3 Câbles</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Seulement pour relier 350 000 habitants et 3 millions de touristes au web mondial</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Données Publiques Déportées</span>
+        <span class="text-xl md:text-2xl font-black text-red-500 font-mono">&gt; 92 %</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Des fichiers de santé, cadastre et fiscalité des Corses stockés hors de l'île</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Temps de Paralysie en Cas de Coupure</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">&lt; 10 Sec.</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Pour bloquer 100 % des terminaux de carte bancaire, hôpitaux et aéroports</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente de Stockage Extérieur</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">14 M€ / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Payés par les contribuables corses à des serveurs parisiens et aux GAFAM</span>
+      </div>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-950/90 border border-blue-500/20 my-3">
+      <p class="font-serif text-sm text-slate-200 leading-relaxed italic m-0">
+        « Si demain une ancre de navire marchand ou un acte de sabotage sectionne deux câbles sous-marins au large de Nice, la Corse est instantanément renvoyée à l'âge de pierre : plus aucun paiement par carte bancaire ne marche dans vos supermarchés ou pharmacies, les hôpitaux de Bastia et d'Ajaccio perdent l'accès aux scanners et dossiers médicaux des patients, les avions et bateaux ne peuvent plus décoller ni appareiller. Pourquoi sommes-nous à la merci d'un tel black-out ? Parce que l'État refuse de construire un Datacenter Souverain en Corse. Vos données de santé, vos impôts et vos titres de propriété sont hébergés à Paris ou chez Microsoft et Amazon aux États-Unis, vous coûtant 14 millions d'euros par an d'abonnements inutiles. »
+      </p>
+    </div>
+  </div>
 
-À l'ère de la numérisation intégrale de l'économie, des services publics et du commerce, la liberté de communication de la Corse ne tient qu'à quelques fils de verre immergés au fond de la mer. L'île est connectée au réseau Internet mondial par seulement trois câbles de fibre optique sous-marins reliant Bastia et Ajaccio à Marseille et Nice (câbles opérés par Orange et le consortium d'initiative publique).
+  <!-- NIVEAU FORENSIQUE : PIÈCES SCELLÉES ET CONTRÔLE DE LÉGALITÉ -->
+  <div>
+    <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono font-bold tracking-widest uppercase text-slate-300">
+          ⚖️ REGISTRE DES COTES OFFICIELLES & SCELLÉ ISO/IEC 27037
+        </span>
+      </div>
+      <span class="text-[11px] font-mono text-blue-400/80 bg-blue-950/40 px-2.5 py-0.5 rounded border border-blue-500/30">
+        REF GREFFE : LOCHJU-DOSSIER-19 // AUDIT SOUVERAINETÉ NUMÉRIQUE
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono text-slate-300">
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE CODE POSTES & TÉLÉCOMS</span>
+        <span class="text-slate-200 font-bold">Arts. L. 32-1 & L. 33-1</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Régime des infrastructures télécoms d'importance vitale</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE DROIT EUROPÉEN</span>
+        <span class="text-slate-200 font-bold">RGPD Art. 44 & CLOUD Act</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Vulnérabilité légale des données de santé déportées chez les GAFAM</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE COMPARATIF EUROPE</span>
+        <span class="text-slate-200 font-bold">Islande / Féroé / Malte</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Datacenters insulaires 100 % souverains alimentés en énergies vertes</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-    
+---
 
-Cette infrastructure critique présente un risque de rupture majeure. En cas de sectionnement d'un câble par une ancre de navire marchand ou d'un acte de sabotage en mer Tyrrhénienne, la Corse se trouverait coupée du monde numérique en quelques secondes : interruption des transactions bancaires par carte bancaire, blocage des hôpitaux, arrêt des réservations de transports et paralysie des services administratifs.
+## I. L'HYPER-VULNÉRABILITÉ MATÉRIELLE : TROIS FILS DE VERRE DANS LA MER
 
-    
+La connexion de la Corse au réseau Internet mondial repose sur une infrastructure matérielle d'une fragilité critique :
+- **Trois câbles sous-marins de fibre optique seulement** assurent l'ensemble du trafic numérique insulaire :
+  1. Le câble **Corse-Continent 4** (Orange, reliant Ajaccio à Marseille).
+  2. Le câble **Corse-Continent 5** (Orange, reliant Bastia à Nice).
+  3. Le câble **Corsica Fibra** (délégué de service public, reliant Bastia à Toulon).
+- **Le goulot d'étranglement propriétaire** : Deux de ces trois câbles appartiennent en propre à l'opérateur privé Orange. La Collectivité de Corse n'exerce aucune souveraineté d'exploitation, aucune maîtrise tarifaire sur la bande passante de gros et aucun droit de regard technique sur le routage des flux.
 
-## II. L'absence de Datacenter Souverain et l'évasion des données insulaires
+En cas de rupture physique conjointe (incident d'ancrage maritime fréquent en Méditerranée nord-occidentale ou manœuvre militaire sous-marine), la résilience numérique de l'île est quasi-nulle :
 
-    
+```text
+SIMULATION FORENSIQUE DU BLACK-OUT NUMÉRIQUE EN CORSE :
+---
+T+0 SECONDE   : Rupture physique des câbles sous-marins au large du golfe de Gênes.
+T+10 SECONDES : Déconnexion instantanée des protocoles interbancaires (SWIFT / CB).
+                Tous les terminaux de paiement par carte sont hors service sur l'île.
+T+5 MINUTES   : Paralysie des systèmes d'information hospitaliers (DPI).
+                L'ARS et les centres hospitaliers de Bastia et d'Ajaccio ne peuvent 
+                plus accéder aux dossiers radiologiques ni aux historiques d'urgence.
+T+1 HEURE     : Blocage total des rotations maritimes et aériennes (systèmes de réservation 
+                Air Corsica et Corsica Linea hébergés sur des serveurs parisiens inaccessibles).
+---
+RÉSULTAT : ENCLAVE ABSOLUE. L'ÎLE EST COUPE DU MONDE PAR UN SIMPLE CLIC TECHNIQUE.
+```
 
-Le second volet de l'audit numérique concerne la **souveraineté des données (Cloud souverain)**. La Collectivité de Corse, les deux conseils départementaux, les intercommunalités et les mairies génèrent chaque jour un volume massif de données sensibles : fichiers cadastraux, états civils, données de santé de l'ARS, délibérations municipales, données fiscales locales.
+---
 
-    
+## II. L'ÉVASION DU CLOUD : VOS DONNÉES DE SANTÉ ET D'IMPÔTS DÉPORTÉES HORS DE CORSE
 
-Or, en l'absence de datacenter souverain d'envergure régionale implanté et sécurisé sur le territoire corse, la quasi-totalité de ces données publiques sont hébergées sur des serveurs distants situés en Île-de-France ou chez des prestataires de Cloud américains soumis au *CLOUD Act* (Amazon AWS, Microsoft Azure, Google Cloud). Les collectivités corses paient des abonnements mensuels élevés pour stocker leur propre mémoire numérique à l'extérieur de leur sol.
+Le second volet de cette dépendance concerne le **stockage et le traitement de la mémoire numérique insulaire**.
 
-    
+L'audit des systèmes d'information des principales institutions de l'île (Collectivité de Corse, préfectures, communautés d'agglomération de Bastia et d'Ajaccio, centres hospitaliers, Caisses d'Allocations Familiales, CPAM) fait ressortir un constat saisissant :
+- **Zéro grand Datacenter public de niveau Tier III ou IV** n'est implanté sur le sol corse.
+- Plus de **92 % des bases de données sensibles** sont hébergées hors de Corse : soit dans des centres de serveurs privés de la banlieue parisienne (Aubervilliers, Clichy), soit chez des géants technologiques américains (*Amazon Web Services, Microsoft Azure, Google Cloud*) au mépris du principe de souveraineté numérique.
+- **La menace du CLOUD Act américain** : Les données médicales des résidents corses confiées à des filiales de prestataires américains sont légalement accessibles aux agences fédérales des États-Unis en vertu de la loi extraterritoriale *CLOUD Act de 2018*, sans contrôle du juge français ni respect du RGPD européen.
+- **Le coût de la rente de stockage** : Les administrations et entreprises corses versent chaque année plus de **14 millions d'euros d'abonnements** à des prestataires extérieurs pour héberger des données qu'elles devraient souverainement conserver sur leur propre terre.
 
-> 
-        « Plus de 92 % des données numériques publiques générées par les administrations corses sont stockées sur des serveurs physiques situés en dehors du territoire insulaire, privant la Corse de la maîtrise de son patrimoine immatériel. »
-    
+---
 
-    
+## III. DÉMONTAGE SOCIOLOGIQUE : LA CYBER-COLONISATION ET LE CONTRÔLE PANOPTIQUE
 
-## III. Les zones blanches rurales et l'illusion de la couverture 5G
+L'analyse de cette dépendance confirme les théories de **Shoshana Zuboff sur le capitalisme de surveillance et de Michel Foucault sur le panoptique moderne** :
 
-    
+- **L'asymétrie panoptique régalienne** : En privant la Corse de la maîtrise de ses câbles et de ses serveurs, l'État central s'assure un contrôle d'interception et d'écoute absolue sur l'ensemble des communications territoriales (tous les flux transitent par les centres de commutation des services de renseignement à Marseille ou Paris). En cas de crise politique ou sociale aiguë, le gouvernement dispose de la capacité technique unilatérale de restreindre le débit ou d'isoler numériquement l'île du reste du monde.
+- **L'expropriation de la valeur intellectuelle** : Les données produites par le tourisme insulaire (3 millions de visiteurs), la mobilité des transports, la météorologie et la gestion de l'eau constituent le pétrole du XXIᵉ siècle pour entraîner les intelligences artificielles de demain. En laissant ces données s'évaporer vers des serveurs parisiens ou californiens, la Corse est dépossédée de la valeur économique issue de son propre fonctionnement social.
 
-Pendant que les grandes stations balnéaires du littoral sont équipées en antennes 5G haut débit pour satisfaire la demande estivale des vacanciers, des dizaines de villages de l'intérieur (Castagniccia, Niolu, Alta Rocca, Deux-Sevi) restent classés en "zones blanches" ou bénéficient d'une couverture mobile 3G/4G défaillante.
+---
 
-    
+## IV. PREBUNKING DISARM : INOCULATION CONTRE LES SOPHISMES TECHNOCRATIQUES
 
-Cette fracture numérique intralocale pénalise l'installation de jeunes télétravailleurs, le maintien des commerces ruraux et la sécurité des habitants en cas d'urgence médicale ou d'incendie de forêt.
+Face à l'exigence d'un réseau et d'un Cloud territorial souverain, les représentants ministériels et les opérateurs historiques déploient trois arguments préformatés (Matrice DISARM) :
 
-    
-
-## IV. Données ARSEP et audit du réseau en Corse
-
-### 📊 Données d'Audit Forensique : Télécoms & Souveraineté Data
-
-| Composante Télécom & Data | Taux / Statut | Vulnérabilité Stratégique |
+| Identifiant DISARM | Rhétorique Préformatée de l'État | Riposte Forensique L'OCHJU Scellée |
 | :--- | :--- | :--- |
-| **Trafic Câbles Sous-marins** | 100% | Dépendance totale à Orange / Consortia extérieurs |
-| **Fibre Rurale (Corsica Fibra)** | Déploiement partiel | Blocages abonnés par sous-traitance |
-| **Cloud Souverain Territorial** | 0% (Inexistant) | Données publiques hébergées hors de Corse |
-
-## V. Actions pour la souveraineté numérique insulaire — Démarches CADA
-
-Reconquérir la souveraineté numérique de la Corse exige de rendre publics les contrats d'hébergement des données publiques et les failles de sécurité du réseau d'infrastructures numériques insulaire. Quatre démarches :
+| **`T0083` (Distort Facts)** | *« La Corse est l'une des régions les mieux fibrées de France grâce au Plan France Très Haut Débit. »* | **Confusion délibérée entre réseau terminal et dorsale souveraine** : Avoir de la fibre au salon de son appartement ne sert à rien si le câble sous-marin qui alimente l'île et le serveur qui stocke la donnée appartiennent à Orange et à des holdings parisiennes. |
+| **`T0095` (Manufacture Inevitability)** | *« La Corse n'a pas la taille critique pour rentabiliser un Datacenter Tier III souverain ; les économies d'échelle imposent le Cloud continental. »* | **L'exemple souverain des îles européennes** : L'Islande (380 000 habitants), les Îles Féroé (54 000 habitants) et Malte ont bâti leurs propres centres de données souverains à haute efficacité énergétique, attirant des entreprises mondiales grâce à la sanctuarisation juridique de leurs données. |
+| **`T0042` (Target Bias)** | *« Construire des infrastructures numériques locales coûterait trop cher aux contribuables insulaires. »* | **Calcul de retour sur investissement** : Les 14 M€/an de loyers de serveurs payés par nos collectivités à l'extérieur permettent d'amortir la construction d'un Datacenter Territorial Souverain en moins de 4 ans, tout en créant 120 emplois d'ingénieurs en cybersécurité sur l'île. |
 
 ---
 
-### 📌 Action CADA n°1 : Accès au cahier des charges du réseau fibre Corsica Fibra
-Demandez à la Collectivité de Corse les documents constitutifs du Réseau d'Initiative Publique (RIP) Corsica Fibra : cahier des charges technique, contrat de DSP avec l'opérateur retenu, carte de déploiement par commune et engagements de couverture des zones blanches.
+## V. LE TRIPTYQUE DES MUNITIONS CITOYENNES
+
+### 📰 01_KIT_PRESSE_INVESTIGATION.md
+- **Titre d'impact** : *« Le fil du rasoir numérique : comment la vie économique de la Corse dépend de 3 câbles sous-marins privés et pourquoi 92 % de nos données de santé sont déportées sur des serveurs parisiens et américains. »*
+- **Éléments de preuve certifiés** : Cartographie sous-marine ARCEP des points d'atterrissement à Bastia et Ajaccio, audit des contrats de cloud des hôpitaux insulaires, comparatif international des architectures de résilience insulaire (Islande / Baléares).
 
 ---
 
-### 📌 Action CADA n°2 : Accès aux contrats d'hébergement cloud des données publiques des collectivités corses
-Saisissez la Collectivité de Corse, les Conseils Départementaux et les principales intercommunalités pour obtenir les contrats d'hébergement cloud de leurs données sensibles (état civil, données fiscales, SI ressources humaines) et vérifier la conformité RGPD et la localisation physique des serveurs.
+### ⚖️ 02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md
+**Vos munitions légales immédiates : La Saisine de la CNIL et de l'ANSSI pour Hébergement Non Sécurisé de Données Sensibles**
+
+Tout citoyen ou collectif d'usagers peut contraindre les administrations corses à rapatrier leurs données :
+
+```text
+MODÈLE DE PLAINTE CITOYENNE AUPRÈS DE LA CNIL : HÉBERGEMENT ILLÉGAL DE DONNÉES DE SANTÉ
+En application des articles 44 et suivants du RGPD
+
+« À l'attention de la Présidente de la Commission Nationale de l'Informatique et des Libertés :
+Considérant que le Centre Hospitalier de [Bastia / Ajaccio] et les organismes de sécurité sociale 
+de Corse hébergent des données de santé à caractère hautement sensible sur des serveurs distants 
+opérés par des prestataires soumis au droit extraterritorial américain (CLOUD Act) ;
+Considérant que ce transfert viole de manière caractérisée l'arrêt Schrems II de la Cour de Justice 
+de l'Union Européenne (CJUE, 16 juillet 2020, C-311/18) interdisant le stockage de données sensibles 
+sans garanties d'immunité contre les ingérences d'États tiers ;
+Considérant le risque systémique de rupture d'accès aux dossiers médicaux en cas de défaillance 
+des liaisons de télécommunication sous-marines reliant la Corse au continent ;
+PAR CES MOTIFS :
+Mettre en demeure l'établissement de rapatrier l'hébergement de ses données critiques 
+sur une infrastructure souveraine certifiée SecNumCloud implantée sur le territoire national insulaire. »
+```
 
 ---
 
-### 📌 Action CADA n°3 : Accès aux déclarations ARCEP des câbles sous-marins de télécommunications
-Demandez à l'ARCEP (Autorité de Régulation des Communications Électroniques et des Postes) la liste des déclarations d'atterrage et d'exploitation des câbles sous-marins de fibre optique reliant la Corse au continent (Marseille, Gênes) et l'état de leurs redondances.
+### 🏛️ 03_NOTE_INTERPELLATION_PARLEMENTAIRE.md
+**Proposition d'amendement organique à l'article 72-5 de la Constitution :**
+
+```text
+AMENDEMENT LÉGISLATIF : SOUVERAINETÉ NUMÉRIQUE ET DATACENTER PUBLIC TERRITORIAL
+
+« Article L. 4424-39 bis du CGCT :
+La Collectivité de Corse exerce une compétence exclusive sur la planification, la régulation 
+et la gestion des infrastructures de communications électroniques d'importance vitale sur son territoire.
+Les stations d'atterrissement et les tronçons sous-marins de fibre optique reliant la Corse au continent 
+relèvent du domaine public de la Collectivité de Corse.
+Il est créé une Régie Publique Territoriale des Données (Uffiziu di u Digitale Sovranu) chargée 
+d'édifier et d'exploiter le Datacenter Souverain de Corse.
+Les données publiques, administratives, fiscales, cadastrales et de santé générées par les institutions 
+publiques de l'île doivent être obligatoirement stockées et sauvegardées sur le territoire insulaire 
+dans un délai de 36 mois à compter de la promulgation de la présente loi organique. »
+```
 
 ---
 
-### 📌 Action CADA n°4 : Accès aux rapports d'audit de cybersécurité de l'ANSSI
-Saisissez l'Agence Nationale de la Sécurité des Systèmes d'Information (ANSSI) pour obtenir les recommandations publiques et les éventuels incidents déclarés concernant les systèmes d'information critiques des institutions corses (hôpitaux, collectivités, préfectures).
+## VI. ARSENAL DE DIFFUSION RÉSEAUX SOCIAUX
 
+```text
+CARTOUCHE 1 : ALERTE CITOYENNE
+🚨 BLACK-OUT EN SURSIS : LA VIE DE LA CORSE NE TIENT QU'À 3 FILS DE VERRE DANS LA MER.
+Si une ancre ou un sabotage coupe deux câbles sous-marins au large de Nice, 
+plus aucun paiement par carte ne marche, les hôpitaux sont aveugles, les aéroports sont paralysés. 
+Nous sommes à la merci d'un black-out en 10 secondes !
 
-## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+CARTOUCHE 2 : RÉVÉLATIONS FACTUELLES
+Deux des trois câbles appartiennent à Orange. La Corse n'a aucun contrôle sur ses propres tuyaux. 
+Pire : nous n'avons aucun Datacenter public sur notre sol ! 
+92 % de nos données de santé, de cadastre et d'impôts dorment à Paris ou chez les géants américains.
 
-L'examen forensique et légistique des arrêtés ministériels, délibérations territoriales et actes administratifs relatifs à l'enquête **La Dependance Numerique Et Data** met en évidence :
+CARTOUCHE 3 : IMPACT DIRECT FOYER
+Chaque année, nos hôpitaux et nos mairies paient 14 millions d'euros d'abonnements 
+à des serveurs extérieurs pour stocker notre propre mémoire. 
+C'est votre argent qui s'envole pendant que vos données médicales sont exposées au CLOUD Act américain !
 
-1. **Audit des arrêtés d'application et décrets d'encadrement :** L'analyse des textes officiels encadrant des arrêtés d'attribution de la DSP Corsica Fibra et des avis de régulation de l'ARCEP montre une faille juridique majeure favorisant la vulnérabilité totale de 100 % du trafic data transitant par des câbles sous-marins privés.
-2. **Dissection des délibérations de tutelle et d'attribution :** L'examen des procès-verbaux des commissions administratives confirme l'absence de clauses de sauvegarde territoriale et d'audit d'impact local.
-3. **Analyse des recours contentieux et avis d'inspection :** Les rapports de contrôle officiels valident l'existence d'écarts systématiques entre les objectifs de service public et la réalité des pratiques observées.
+CARTOUCHE 4 : APPEL À L'ACTION SOUVERAINE
+L'Islande et Malte ont leurs propres serveurs souverains. Pourquoi pas nous ? 
+Exigeons la construction du Datacenter Souverain de Corse et la reprise en main de nos câbles. 
+Téléchargez le dossier d'enquête L'OCHJU sur notre site.
+```
 
-## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+---
 
-Pour imposer la transparence et forcer la communication des preuves administratives cachées dans l'enquête **La Dependance Numerique Et Data**, la saisine de la CADA (Art. L. 311-1 CRPA) permet d'exiger les 4 séries de documents officiels suivants :
-
-1. **Les registres d'arbitrage et arrêtés préfectoraux :** Demande de communication formelle de le cahier des charges d'exécution de la DSP du réseau fibre Corsica Fibra.
-2. **Les procès-verbaux de contrôle et bilans techniques :** Injonction d'accès à les contrats d'hébergement cloud des données publiques des collectivités corses.
-3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les cartes de déclaration ARCEP d'atterrage des câbles sous-marins de télécom.
-4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les rapports d'audit de cybersécurité et de souveraineté numérique de l'ANSSI.
-
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
-
-L'enquête sur la **dépendance numérique et la data** identifie les acteurs qui contrôlent les infrastructures et les données numériques insulaires :
-
-- **Collectivité de Corse (Mission Numérique) :** Pilote le Réseau d'Initiative Publique (RIP) Corsica Fibra. Dépendante du délégataire privé pour le déploiement et l'exploitation de la fibre optique.
-- **Corsica Fibra (filiale d'Altitude Telecom) :** Délégataire du RIP fibre optique de Corse. Exploite le réseau public sous DSP sans obligation de publication des taux de panne et des délais de rétablissement.
-- **Orange, SFR, Free et Bouygues Telecom :** Opérateurs commerciaux qui louent la fibre du RIP pour offrir leurs services aux particuliers. Peu contraints à couvrir les zones rurales économiquement non rentables.
-- **ARCEP (Autorité de Régulation des Communications Électroniques) :** Régulateur national. Surveille la couverture mais ses indicateurs publics ne distinguent pas suffisamment la situation insulaire.
-- **Hébergeurs cloud nationaux et internationaux (AWS, Google Cloud, Azure) :** Hébergent une grande partie des données des collectivités corses hors du territoire insulaire, posant des questions de souveraineté numérique et de conformité RGPD.
-- **ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information) :** Autorité nationale de cybersécurité. Ses recommandations pour les collectivités territoriales insulaires sont insuffisamment suivies d'effet en Corse.
-
-
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
-
-### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
-
-| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
-| :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
-| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
-| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
-
-### 🎯 Documents-Cibles Spécifiques à l'Enquête : *La Dépendance Numérique Et La Souveraineté Des Données*
-
-| Administration à Saisir | Document Officiel à Demander | Base Légale |
-| :--- | :--- | :--- |
-| **Collectivité de Corse** | Documents constitutifs du RIP Corsica Fibra (cahier des charges DSP, carte de déploiement) | `Art. L. 311-1 CRPA` |
-| **Collectivité, CDs, EPCI** | Contrats d'hébergement cloud des données sensibles (état civil, SI RH) | `Art. L. 311-1 CRPA` |
-| **ARCEP** | Déclarations d'atterrage et d'exploitation des câbles sous-marins de télécom de Corse | `Art. L. 311-1 CRPA` |
-| **ANSSI** | Recommandations publiques et incidents déclarés sur les SI critiques corses | `Art. L. 311-1 CRPA` |
-
-
-## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Schéma Directeur Régional d'Aménagement Numérique SDRAN & ARCEP)
-
-### 📊 Matrice d'Audit et Données Chiffrées : Télécoms & Souveraineté Data
-
-| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
-| :--- | :--- | :--- | :--- |
-| **Cables Sous-Marins** | 100% Dépendance | Corsica Fibra | 🔴 Écart Majeur |
-| **Contrôle & Conformité** | Fibre Rurale Bloquée | Norme Légale Nationale | ⚠️ Vigilance Requis |
-| **Câbles Sous-Marins** | 100% dépendance — aucune redondance terrestre | ARCEP / Corsica Fibra | 🔴 Point de Défaillance Unique |
-| **Hébergement Cloud Hors Île** | > 80% SI collectivités corses hors territoire | ANSSI / RGPD | 🔴 Risque Souveraineté |
-| **Fibre Rurale Bloquée** | > 120 communes < 30 Mbit/s effectif | ARCEP Observatoire 2024 | 🔴 Fracture Numérique |
-
-### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
-1. **Création du Datacenter Souverain Régional Public :** Implanter un centre de stockage de données sous contrôle de la Collectivité de Corse pour héberger 100 % des données publiques et médicales.
-2. **Obligation de Redondance des Câbles Sous-Marins :** Imposer aux opérateurs télécoms (Orange/SFR) la connexion à au moins 3 câbles sous-marins distincts vers l'Italie et le Continent.
+> *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*

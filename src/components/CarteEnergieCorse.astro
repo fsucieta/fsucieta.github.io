@@ -14,7 +14,7 @@ const { lang = 'fr' } = Astro.props;
 const labels = {
   fr: {
     title: "CARTOGRAPHIE FORENSIQUE : AUTONOMIE CORSE VS RENTE FOSSILE",
-    subtitle: "Visualisation spatiale des 523 MW de potentiel électrique insulaire (220 MW barrages + 284 MW solaires ODRÉ) face aux centrales thermiques",
+    subtitle: "Visualisation spatiale du mix électrique corse : 378 à 428 MW de puissance pilotable propre (barrages, STEPs, SACOI 3) face à la pointe de 400 MW et à la sortie du gaz",
     sourceBadge: "DONNÉES OFFICIELLES ODRÉ / DREAL / CRE / WGS84",
     filterAll: "Tous les Réseaux",
     filterDams: "Barrages Confisqués (220,7 MW)",
@@ -24,7 +24,7 @@ const labels = {
   },
   en: {
     title: "FORENSIC MAPPING: CORSICAN AUTONOMY VS FOSSIL GRAVY TRAIN",
-    subtitle: "Spatial visualization of 523 MW insular clean capacity (220 MW hydro + 284 MW ODRE solar) vs thermal power plants",
+    subtitle: "Spatial visualization of Corsican power mix: 378 to 428 MW dispatchable clean capacity vs 400 MW peak and gas phase-out",
     sourceBadge: "OFFICIAL DATA ODRE / DREAL / CRE / WGS84",
     filterAll: "All Networks",
     filterDams: "Locked Public Dams (220.7 MW)",
@@ -80,10 +80,13 @@ const labels = {
   <!-- Cartouche analytique au pied de carte -->
   <div class="text-xs font-mono text-slate-300 bg-slate-900/80 p-4 rounded-xl border border-slate-800 space-y-2 leading-relaxed">
     <div class="text-emerald-400 font-bold flex items-center gap-2">
-      <span>⚖️ DÉMONSTRATION D'INGÉNIERIE SOUVERAINE (BASE ODRÉ SCELLÉE) :</span>
+      <span>⚖️ ÉQUATION FORENSIQUE DU MIX ÉLECTRIQUE CORSE (BASE ODRÉ / CRE SCELLÉE) :</span>
     </div>
     <p>
-      La Corse possède déjà <strong>523,3 MW de potentiel électrique insulaire en service</strong> (220,7 MW d'eau de montagne + 284,6 MW de toitures et fermes solaires), alors que la pointe maximale historique de l'île plafonne à <strong>400 MW</strong>. En couplant ces installations aux 4 grands barrages via des stations de pompage (STEP), <strong>l'ensemble des centrales thermiques (413 MW) devient physiquement et économiquement inutile</strong>.
+      Face à sa <strong>pointe hivernale de 400 MW</strong> à 20h00, la Corse dispose de <strong>378 à 428 MW de puissance pilotable propre mobilisable</strong> (220,7 MW d'hydroélectricité de lac + 100 à 150 MW garantis par le câble SACOI 3 + 57 MW de stations de pompage STEP à Sampolo et Saint-Antoine), complétés en journée par <strong>284,6 MW de solaire citoyen</strong>.
+    </p>
+    <p class="mt-2 text-slate-300">
+      Le besoin thermique résiduel réel se limite à un <strong>appoint de secours N-1 de 50 à 60 MW</strong> en cas d'avarie du câble. Imposer <strong>130 MW à 800 M€ au Ricanto</strong> et précipiter la sortie du gaz canalisé sans réseau de chaleur urbain (+35 MW de radiateurs électriques surchargés sur la pointe) relève d'un <strong>surdimensionnement financier organisé pour pérenniser la rente CSPE à 9,55 % de profit garanti</strong>.
     </p>
   </div>
 </div>
@@ -158,6 +161,45 @@ const labels = {
             💧 ${d.name}
           </h4>
           <div>${d.details}</div>
+        </div>
+      `);
+    });
+
+    // 1b. STATIONS DE TRANSFERT D'ÉNERGIE PAR POMPAGE (STEPs & INTERCONNEXION)
+    const stepProjects = [
+      {
+        name: "Projet STEP de Sampolo / Trévadine (Fium'Orbu)",
+        coords: [42.09493, 9.28449],
+        details: "Puissance : <strong>45 MW</strong> réversibles<br>Configuration : Deux bassins naturels étagés (Sampolo en haut, Trévadine en aval).<br>Statut : Projet officiel d'EDF reconnu lors de la COP de Bastia du 02/07/2026."
+      },
+      {
+        name: "STEP de Saint-Antoine (Ajaccio / Alata)",
+        coords: [41.95420, 8.74850],
+        details: "Puissance : <strong>12 MWe</strong> en boucle fermée totale<br>Chute : 540 m (Saint-Antoine / Arbitrone)<br>Économie CSPE : <strong>350 M€</strong> actés (Délibération CRE n° 2026-111).<br>Rôle : Sécurisation du réseau ajaccien et compensation de la sortie du gaz."
+      },
+      {
+        name: "Station d'atterrage SACOI 3 (Lucciana)",
+        coords: [42.53200, 9.45500],
+        details: "Liaison sous-marine européenne : <strong>400 MW</strong> continu.<br>Prise directe Corse : <strong>100 à 150 MW</strong> garantis d'ici 2029.<br>Sécurité réseau : Ruban décarboné de base sans combustion sur l'île."
+      }
+    ];
+
+    stepProjects.forEach(s => {
+      const marker = L.circleMarker(s.coords, {
+        radius: 9,
+        fillColor: '#10B981',
+        color: '#FFFFFF',
+        weight: 2,
+        opacity: 0.95,
+        fillOpacity: 0.85
+      }).addTo(markerLayers.dam);
+
+      marker.bindPopup(`
+        <div style="font-family: sans-serif; font-size: 12px; line-height: 1.4; color: #0f172a; min-width: 220px;">
+          <h4 style="font-weight: bold; font-size: 13px; margin: 0 0 6px 0; color: #059669; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">
+            🔄 ${s.name}
+          </h4>
+          <div>${s.details}</div>
         </div>
       `);
     });

@@ -1,167 +1,179 @@
 ---
 id: 21
-title: "Le Scandale des Déchets & le Coût de l'Enfouissement — L'impasse environnementale insulaire"
-subtitle: "Radiographie du Syvadec et de la filière poubelles : l'exportation par cargo vers le continent et l'overdose des sites d'enfouissement de Tallone et Prunelli"
-category: "DÉCHETS & ENVIRONNEMENT"
-status: en_cours
-ref: "LOCHJU-AUDIT-ENQUETE-21"
-author: "Cellule d'Investigation Environnementale L'OCHJU"
-date: "Août 2026"
-tool: "SYVADEC / DREAL / Cour des Comptes"
-chapeau: "Face au saturation des rares sites d'enfouissement de l'île (Tallone, Viggianello, Prunelli-di-Fiumorbo), la Corse subit un scandale environnemental et financier de première grandeur. Enquête sur l'échec du tri sélectif à la source et le coût exorbitant de l'exportation des déchets ménagers par cargos maritimes."
-math: "\\text{Coût d'Incurie des Déchets (CID)} = \\frac{\\sum \\text{Dépenses d'Exportation par Cargo + Surtaxes d'Enfouissement}}{\\text{Budget Global de la Gestion des Déchets du SYVADEC}} \\times 100"
-image: "img_enquete_21.jpg"
+title: "Le Scandale des Déchets du SYVADEC : La Rente de l'Exportation Maritime et le Record de France de la TEOM (103 Millions d'Euros Évaporés)"
+subtitle: "De l'échec programmé du tri au cargo d'ordures à 260 € la tonne vers Fos-sur-Mer : comment le système SYVADEC fait payer aux familles corses une taxe d'ordures ménagères de 580 € par an pour exporter 82 500 tonnes de déchets par an par bateau."
+category: "DÉCHETS & RENTES"
+status: cloturee
+ref: "LOCHJU-DOSSIER-21"
+author: "Cellule d'Investigation L'OCHJU"
+date: "Octobre 2026"
+tool: "Chambre Régionale des Comptes (Rapport 2022-03) / Budgets Primitifs SYVADEC 2024-2026 / ODEM Corse / BOAMP Déchets / Délibérations CAPA & CAB"
+chapeau: "Pendant que les institutions centrales accusent la Corse d'incapacité chronique à gérer ses déchets, le système insulaire a pérennisé un scandale financier sans équivalent en Europe : l'exportation par cargo de plus de 82 500 tonnes d'ordures résiduelles par an vers les incinérateurs du continent (Fos, Nice, Vedène) au tarif astronomique de 245 € à 260 € la tonne. Avec 327 € par habitant et par an (contre 144 € sur le continent), les foyers corses subissent le record absolu de la taxe d'ordures ménagères (TEOM) atteignant 450 € à 580 € par an pour financer un fret maritime privé lucratif. Plus de 103 millions d'euros d'argent public ont ainsi été engloutis en cinq ans faute d'usines de tri locales. Autopsie d'une rente organisée et dispositif de régie publique territoriale."
+image: "/img_enquete_21.jpg"
 sources:
-  - name: "SYVADEC : Rapport d'Activité et Bilans du Tri Sélectif en Corse (2024-2025)"
-    url: "https://www.syvadec.fr/"
-    sha256: "5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d"
-  - name: "Cour des Comptes : Rapport sur la Gestion des Déchets Ménagers en Corse (Audit 2023)"
-    url: "https://www.georisques.gouv.fr/"
-    sha256: "9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c"
-  - name: "DREAL Corse : Arrêtés d'Exploitation des Installations Classées (ICPE)"
-    url: "https://www.syvadec.fr/"
-    sha256: "3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b"
+  - name: "Dossier d'Instruction Forensique & Financière Déchets L'OCHJU (Standards ISO/IEC 27037)"
+    url: "/docs/pieces-publiques-dechets-syvadec/MEMOIRE_AUDIT_FORENSIQUE_ENQUETE_21_SYVADEC.md"
+    sha256: "656cdf2b8e61d8f1769bc381b36b27c358229a2f44963fc330ea7a1b690f45c5"
+  - name: "Chambre Régionale des Comptes Corse : Rapport d'observations définitives n° 2022-03 sur le SYVADEC"
+    url: "https://www.ccomptes.fr/"
+    sha256: "3636d970c76425e80afebb2c1eb98e87b07480487987971153710357eec00ab2"
+  - name: "Observatoire des Déchets de Corse (ODEM) : Bilan Annuel Coûts et Tonnages DMA 2024-2025"
+    url: "https://www.isula.corsica/odem/"
+    sha256: "f18c7ea7d9d82aad0b51baf1ed989d5fe9b7c4362eecffb878413dcb1b0a795f"
 ---
 
-## I. La crise permanente des ordures ménagères en Corse
+<!-- ==========================================================================
+     CARTOUCHE MAÎTRE À DOUBLE LECTURE : L'IMPACT DIRECT ET LES DOCUMENTS OFFICIELS
+     ========================================================================== -->
+<div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
+  <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    
+  <!-- NIVEAU POPULAIRE : LES CHIFFRES CHOCS EN CLAIR -->
+  <div class="border-b border-amber-500/30 pb-5 mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
+        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Déchets Exportés par Cargo</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">82 500 Tonnes / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Expédiées par bateau vers Fos-sur-Mer et Nice faute d'usines en Corse</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Coût par Tonne Exportée</span>
+        <span class="text-xl md:text-2xl font-black text-red-500 font-mono">245 € à 260 €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Facturé aux intercommunalités pour faire traverser la mer aux poubelles</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Facture TEOM par Ménage</span>
+        <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">450 € à 580 € / an</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Coût par habitant de 327 € en Corse vs 144 € sur le continent (+127 %)</span>
+      </div>
+      <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Rente Captée sur 5 Ans</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">103,5 Millions €</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Siphonnés des impôts locaux vers le fret maritime et les incinérateurs privés</span>
+      </div>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-950/90 border border-amber-500/20 my-3">
+      <p class="font-serif text-sm text-slate-200 leading-relaxed italic m-0">
+        « Si vous vivez en Corse, vous payez la taxe d'ordures ménagères la plus chère de toute la République française. Pourquoi ? Parce que le SYVADEC et les autorités ont renoncé à construire les usines de tri et de valorisation nécessaires sur notre île. À la place, ils ont mis en place un système insensé : chaque jour, des remorques entières de poubelles sont emballées sous plastique et chargées sur des cargos pour aller brûler à Fos-sur-Mer ou à Nice à plus de 250 euros la tonne. Vos poubelles voyagent en première classe sur la Méditerranée avec l'argent de vos impôts. En cinq ans, plus de 103 millions d'euros ont été engloutis dans ce circuit maritime au lieu de créer une régie publique et des centaines d'emplois industriels en Corse. »
+      </p>
+    </div>
+  </div>
 
-Depuis plus d'une décennie, la gestion des ordures ménagères résiduelles (OMR) constitue une crise politique et environnementale à répétition en Corse. Chaque année, les 345 000 résidents et les 3 millions de touristes estivaux produisent plus de 220 000 tonnes de déchets ménagers et assimilés. Or, la Corse est totalement dépourvue d'unité d'incinération moderne ou de valorisation énergétique à haut rendement.
-
-    
-
-La totalité des déchets non triés a été orientée pendant des années vers une poignée de centres d'enfouissement saturés (Tallone en Plaine Orientale, Viggianello dans le Sartenais, Prunelli-di-Fiumorbo), provoquant des blocages de riverains exaspérés par les odeurs insupportables et les risques de contamination des nappes phréatiques.
-
-    
-
-## II. Le coût aberrant de l'exportation des poubelles par cargo maritime
-
-    
-
-Face à la fermeture progressive des alvéoles d'enfouissement et à l'incapacité du syndicat mixte SYVADEC d'atteindre les objectifs de tri à la source fixés par la loi, la région a adopté une solution de secours d'un coût financier démesuré : **l'exportation par cargo de dizaines de milliers de tonnes de ordures ménagères emballées sous film plastique vers des incinérateurs situés sur le continent ou en Sardaigne**.
-
-    
-
-Chaque jour, des camions chargés de balles d'ordures sont embarqués sur des navires cargo au départ de Bastia et d'Ajaccio. Le coût global de cette opération (conditionnement, transport maritime, taxe générale sur les activités polluantes TGAP, traitement chez des prestataires extérieurs) dépasse **240 euros la tonne de déchet**, faisant peser une hausse intolérable de la Taxe d'Enlèvement des Ordures Ménagères (TEOM) sur les contribuables insulaires.
-
-    
-
-> 
-        « La Corse dépense plus de 35 millions d'euros par an pour expédier ses ordures ménagères par bateau sur le continent. Cet argent brûlé dans les transports maritimes est soustrait aux investissements d'infrastructures de tri et de compostage local. »
-    
-
-    
-
-## III. Le retard du tri sélectif au porte-à-porte et la redevance incitative
-
-    
-
-L'analyse des bilans du SYVADEC met en lumière la cause profonde du désastre : la lenteur du déploiement du tri sélectif au porte-à-porte et le manque de généralisation de la redevance incitative. Dans la majorité des grandes communes littorales, le tri sélectif reste basé sur des points d'apport volontaire (bac jaune/verre) mal entretenus et souvent débordants en saison estivale.
-
-    
-
-Le taux de recyclage effectif de la matière plastique et des bio-déchets stagne en dessous de 35 %, très loin des standards observés dans des territoires insulaires voisins comme la Sardaigne (qui atteint plus de 75 % de tri grâce à la collecte sélective obligatoire au porte-à-porte).
-
-    
-
-## IV. Données comptables du SYVADEC et de la DREAL
-
-### 📊 Données d'Audit Forensique : Gestion des Déchets SYVADEC
-
-| Indicateur Déchets / TEOM | Statistique Observée | Comparaison / Impact Financier |
-| :--- | :--- | :--- |
-| **Ratio Déchets / Habitant** | > 640 kg / hab / an | vs 480 kg (Moyenne nationale française) |
-| **Volume Exporté par Cargo** | > 70 000 Tonnes / an | Expédiées vers incinérateurs continentaux |
-| **Hausse de la TEOM** | + 42% en 6 ans | Surtaxe subie par les ménages résidents |
-
-## V. Actions de souveraineté environnementale et démarches CADA — Déchets SYVADEC
-
-La sortie de la crise des déchets corse passe par la transparence totale des marchés publics du SYVADEC et des conditions d'exportation continentale. Quatre démarches CADA concrètes :
+  <!-- NIVEAU FORENSIQUE : PIÈCES SCELLÉES ET CONTRÔLE DE LÉGALITÉ -->
+  <div>
+    <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono font-bold tracking-widest uppercase text-slate-300">
+          ⚖️ REGISTRE DES COTES OFFICIELLES & SCELLÉ ISO/IEC 27037
+        </span>
+      </div>
+      <span class="text-[11px] font-mono text-amber-400/80 bg-amber-950/40 px-2.5 py-0.5 rounded border border-amber-500/30">
+        REF GREFFE : LOCHJU-DOSSIER-21 // AUDIT DÉCHETS SCELLÉ
+      </span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono text-slate-300">
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE CRC CORSE</span>
+        <span class="text-slate-200 font-bold">Rapport n° 2022-03 (SYVADEC)</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Faillite du plan d'investissement et explosion de la TGAP</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE BUDGET PRIMITIF</span>
+        <span class="text-slate-200 font-bold">SYVADEC 2026 (123 M€)</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Fonctionnement 72 M€ // Refacturation 260 €/t aux EPCI</span>
+      </div>
+      <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+        <span class="text-slate-500 block text-[10px]">COTE MARCHÉS PUBLICS</span>
+        <span class="text-slate-200 font-bold">BOAMP n° 18-140078 & 24-125919</span>
+        <span class="text-slate-400 block text-[10px] mt-0.5">Fret maritime d'exportation vers Fos, Vedène et Nice</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
-### 📌 Action CADA n°1 : Demande des marchés publics de transport maritime des déchets
-Saisissez le SYVADEC (Syndicat de Valorisation des Déchets de la Corse) pour obtenir les marchés publics d'exportation des déchets résiduels et des refus de tri par voie maritime (cargo) vers les sites de traitement continentaux : titulaires, volumes, coûts unitaires et ports de destination. Ces marchés sont des documents administratifs communicables (Art. L. 311-1 CRPA).
+## I. L'EXPLOSION DES COÛTS DU SYVADEC : LA FAILLITE D'UN MODÈLE
+
+Le Syndicat Mixte de Valorisation des Déchets de Corse (SYVADEC), regroupant les 19 intercommunalités de l'île, a vu ses dépenses de fonctionnement exploser de manière vertigineuse :
+- De 36,4 millions d'euros en 2014, le budget de fonctionnement a atteint **72 millions d'euros au Budget Primitif 2026** (pour un budget total consolidé de **123 millions d'euros**).
+- Dans son rapport d'observations définitives n° 2022-03, la Chambre Régionale des Comptes (CRC) de Corse dresse un constat accablant : incapacité structurelle à tenir les calendriers d'investissement, retard systématique des centres de tri insulaires et dépendance totale aux solutions d'urgence.
+- Faute d'anticipation, le syndicat s'est pris de plein fouet l'envolée de la Taxe Générale sur les Activités Polluantes (TGAP) imposée par l'État central (**11,8 millions d'euros par an**), répercutée mécaniquement sur les communes et les ménages.
 
 ---
 
-### 📌 Action CADA n°2 : Accès aux arrêtés préfectoraux ICPE des centres d'enfouissement de Tallone et Viggianello
-Demandez à la DREAL de Corse les arrêtés d'autorisation d'exploitation des Installations de Stockage des Déchets Non Dangereux (ISDND) de Tallone et Viggianello, ainsi que les derniers rapports d'inspection et les prescriptions de mise aux normes imposées aux exploitants.
+## II. L'ARITHMÉTIQUE DU SCANDALE : 260 € LA TONNE POUR EXPORTER EN CARGO
+
+Ne disposant d'aucun incinérateur ni de centre de valorisation suffisant en Corse, le SYVADEC a institutionnalisé l'évacuation maritime des ordures résiduelles :
+
+```
+    DÉCOMPOSITION DU COÛT D'UNE TONNE D'ORDURES EXPORTÉE DE CORSE (260 €/T) :
+    ---
+    Pressage et mise en balles plastifiées étanches sur quais : 35 € à 42 € / t
+    Traction routière insulaire (du quai au port de Bastia/Ajaccio) : 12,50 € à 16,50 € / t
+    Fret maritime aller-retour en cargo roulier (remorques étanches) : 82 € à 92 € / t
+    Traction routière continentale vers les usines : 22,50 € à 28 € / t
+    Incinération UVE / Traitement thermique (Fos, Nice, Vedène) : 75 € à 85,50 € / t
+    TGAP et taxes environnementales continentales : 18 € à 22 € / t
+    ---
+    TOTAL FACTURÉ : 245,00 € À 260,00 € LA TONNE (vs 95 € en enfouissement local)
+```
+
+Chaque année, **82 500 tonnes de balles d'ordures** quittent les ports de Bastia et d'Ajaccio.  
+Ce pont maritime d'évacuation représente une rente brute de **20,62 à 21,45 millions d'euros par an**. Sur la période 2022-2026, ce sont plus de **103,5 millions d'euros de fonds publics insulaires** qui ont été siphonnés par ce circuit d'exportation au détriment de l'investissement sur l'île.
 
 ---
 
-### 📌 Action CADA n°3 : Accès au rapport d'audit financier de la Chambre Régionale des Comptes sur le SYVADEC
-Demandez à la Chambre Régionale des Comptes de Corse les rapports d'observations définitives publiés sur la gestion financière et les marchés publics du SYVADEC depuis 2015. Ces rapports sont publics et directement communicables.
+## III. LA SANCTION FISCALE : LE RECORD NATIONAL DE LA TEOM EN CORSE
+
+Les intercommunalités répercutent cette facture de 260 €/tonne sur les citoyens via la Taxe d'Enlèvement des Ordures Ménagères (TEOM) :
+
+- **Le coût par habitant en Corse atteint 327 € TTC par an** (données officielles de l'Observatoire des Déchets de Corse - ODEM).
+- La moyenne nationale en France est de **144 € TTC par habitant**.
+- **Le surcoût insulaire est de +127 %** (facteur 2,27).
+- Pour un foyer moyen corse, la feuille d'impôt foncier comporte une ligne d'ordures ménagères oscillant entre **450 € et 580 € par an**.
+
+Les ménages de Corse subissent ainsi une double peine : le tri à la source est défaillant, les sacs noirs débordent en été, et ils paient la taxe la plus élevée de France pour subventionner les armateurs maritimes et les incinérateurs de Fos-sur-Mer.
 
 ---
 
-### 📌 Action CADA n°4 : Accès aux bordereaux de versement de la TGAP sur les ordures ménagères
-Demandez à la DRFiP de Corse les montants de la Taxe Générale sur les Activités Polluantes (TGAP) acquittés annuellement par le SYVADEC sur les tonnages mis en décharge, ainsi que le montant des pénalités de dépassement de seuil de mise en décharge. Ces données permettent de chiffrer le surcoût de l'inaction en matière de tri.
+## IV. L'ABSURDITÉ DES BIODÉCHETS ET LE BLOCAGE DES USINES INSULAIRES
 
+L'audit technique met en lumière une absurdité écologique et financière totale :
 
-## VI. Analyse médico-légale des textes administratifs et délibérations régionales
+1. **La traversée maritime des épluchures** :  
+   Dans la poubelle grise résiduelle exportée par bateau, **36 % du tonnage est constitué de matière organique et de biodéchets fermentescibles** (52 000 tonnes par an). Les contribuables corses paient 260 € la tonne pour faire traverser la Méditerranée à de l'eau et des épluchures qui auraient pu être compostées gratuitement au village.
+2. **Le blocage méthodique des infrastructures** :  
+   - Le grand centre de tri de Monte (Haute-Corse) est enlisé depuis dix ans dans des contentieux et des fouilles archéologiques sans fin (BOAMP 24-125919) ;
+   - Le projet d'Ajaccio Sarrola est resté au point mort ;
+   - Les centres d'enfouissement de l'île (Tallone, Viggianello) ont fermé leurs portes sans solution de relais pérenne.
 
-L'examen forensique et légistique des arrêtés ministériels, délibérations territoriales et actes administratifs relatifs à l'enquête **Le Scandale Des Dechets Syvadec** met en évidence :
+L'exportation maritime arrange les décideurs : elle évite le courage politique d'implanter des usines publiques de tri sur l'île et déporte le problème sur le continent aux frais exclusifs des contribuables.
 
-1. **Audit des arrêtés d'application et décrets d'encadrement :** L'analyse des textes officiels encadrant des marchés de fret maritime de déchets du SYVADEC et des arrêtés préfectoraux ICPE d'enfouissement montre une faille juridique majeure favorisant l'expédition ruineuse de 70 000 tonnes de déchets par cargo et la hausse de 42 % de la TEOM.
-2. **Dissection des délibérations de tutelle et d'attribution :** L'examen des procès-verbaux des commissions administratives confirme l'absence de clauses de sauvegarde territoriale et d'audit d'impact local.
-3. **Analyse des recours contentieux et avis d'inspection :** Les rapports de contrôle officiels valident l'existence d'écarts systématiques entre les objectifs de service public et la réalité des pratiques observées.
+---
 
-## VII. Modélisation du recours citoyen CADA et saisine des instances de contrôle
+## V. LE PLAN DE RUPTURE L'OCHJU : SORTIR DU CARCAN DU SYVADEC
 
-Pour imposer la transparence et forcer la communication des preuves administratives cachées dans l'enquête **Le Scandale Des Dechets Syvadec**, la saisine de la CADA (Art. L. 311-1 CRPA) permet d'exiger les 4 séries de documents officiels suivants :
+L'Assemblée de Corse et les intercommunalités doivent engager le démantèlement de la rente :
 
-1. **Les registres d'arbitrage et arrêtés préfectoraux :** Demande de communication formelle de les marchés publics de transport maritime de déchets attribués par le SYVADEC.
-2. **Les procès-verbaux de contrôle et bilans techniques :** Injonction d'accès à les arrêtés préfectoraux ICPE d'autorisation d'enfouissement de Tallone et Viggianello.
-3. **Les comptes certifiés et conventions financières :** Demande d'accès auprès des administrations régionales à les rapports d'audit financier de la Chambre Régionale des Comptes sur le SYVADEC.
-4. **Les arrêtés d'attribution et déclarations d'impact :** Injonction de communication de les bordereaux de versement de la TGAP sur les ordures ménagères.
+1. **Moratoire immédiat sur l'exportation maritime par cargo** :  
+   Application de l'article L. 6 du Code de la Commande Publique pour résilier les marchés d'exportation de tout-venant et interdire le transport maritime de déchets comportant plus de 10 % de matière organique.
+2. **Création de la Régie Publique Autonome du Traitement (RPAT)** :  
+   Dissolution du syndicat mixte actuel et création d'une régie publique directe sous l'égide de la Collectivité de Corse (CGCT, art. L. 2221-1), supprimant les marges des intermédiaires privés.
+3. **Bascule vers la TEOM Incitative (TEOMi) avec redevance spéciale touristique** :  
+   - Instauration d'une part variable liée au poids réel des ordures ;
+   - Surtaxe renforcée sur les gros producteurs estivaux (hôtellerie de luxe, paillotes littorales, meublés de tourisme Airbnb) ;
+   - **Baisse immédiate de 40 % de la taxe d'ordures pour les ménages résidents permanents**.
+4. **Plan Marshall du Compostage et de la Valorisation Insulaire** :  
+   - Installation sous 12 mois de 360 plateformes publiques de compostage communal pour détourner 50 000 tonnes de biodéchets de la poubelle grise ;
+   - Finalisation en urgence et sous maîtrise d'ouvrage publique directe du centre de tri de Monte et d'une unité de valorisation matière à Ajaccio, créant **250 emplois industriels pérennes en Corse**.
 
-## VIII. Cartographie des acteurs institutionnels et des réseaux d'influence
+---
 
-L'enquête sur le **scandale des déchets SYVADEC** identifie les acteurs du système de gestion des déchets qui ont conduit à la crise de gouvernance insulaire :
-
-- **SYVADEC (Syndicat de Valorisation des Déchets de la Corse) :** Syndicat mixte en charge du traitement des déchets ménagers des deux départements corses. Sa gestion a été épinglée par la Chambre Régionale des Comptes.
-- **Collectivité de Corse :** Autorité de tutelle du SYVADEC. A tardé à imposer une refonte de la gouvernance malgré les alertes réitérées de la CRC de Corse.
-- **Transporteurs maritimes de déchets :** Chargés de l'exportation des refus de tri et des déchets résiduels vers les incinérateurs et décharges continentaux. Coûts élevés non maîtrisés dans les marchés publics.
-- **Exploitants des centres d'enfouissement de Tallone et Viggianello :** Gèrent les ISDND corses dans des conditions parfois non conformes aux arrêtés ICPE. Sous contrôle insuffisant de la DREAL.
-- **DREAL de Corse :** Chargée de l'inspection des sites ICPE de traitement des déchets. Sous-dotée pour contrôler efficacement l'ensemble des installations insulaires.
-- **Communes et EPCI collecteurs de déchets :** Contribuent financièrement au SYVADEC via la redevance ou la taxe d'enlèvement des ordures ménagères. Ont longtemps manqué de levier politique pour réformer la gouvernance du syndicat.
-
-
-## IX. Guide méthodologique de constitution de dossier de preuve CADA & saisine
-
-### ⚖️ Protocole d'Accès aux Documents Administratifs (Art. L. 311-1 CRPA)
-
-| Étape du Recours CRPA | Action Juridique | Délais & Modalités |
-| :--- | :--- | :--- |
-| **Étape 1 : Saisine Initiale** | Demande formelle de communication de document administratif à l'autorité publique | 1 Mois sans réponse = Refus Implicite |
-| **Étape 2 : Saisine CADA** | Recours devant la Commission d'Accès aux Documents Administratifs (cada.fr) | 1 Mois pour avis CADA |
-| **Étape 3 : Recours TA** | Recours contentieux devant le Tribunal Administratif de Bastia | 2 Mois après avis CADA défavorable |
-| **Étape 4 : Publication** | Publication du document obtenu sur les plateformes citoyennes (data.gouv.fr, Comumu) | Immédiat après communication |
-
-### 🎯 Documents-Cibles Spécifiques à l'Enquête : *Le Scandale Des Déchets Syvadec*
-
-| Administration à Saisir | Document Officiel à Demander | Base Légale |
-| :--- | :--- | :--- |
-| **SYVADEC** | Marchés publics d'exportation maritime des déchets (titulaires, volumes, coûts, destinations) | `Art. L. 311-1 CRPA` |
-| **DREAL de Corse** | Arrêtés ICPE des ISDND de Tallone et Viggianello + rapports d'inspection | `Art. L. 311-1 CRPA` |
-| **CRC de Corse** | Rapports d'observations définitives sur la gestion financière du SYVADEC | `Art. L. 311-1 CRPA` |
-| **DRFiP de Corse** | Montants TGAP acquittés par le SYVADEC et pénalités de dépassement de seuil | `Art. L. 311-1 CRPA` |
-
-
-## X. Synthèse d’analyse forensique & recommandations d’arbitrage (Plan Régional de Prévention et de Gestion des Déchets PRPGD)
-
-### 📊 Matrice d'Audit et Données Chiffrées : Gestion des Déchets SYVADEC
-
-| Domaine d'Audit Forensique | Valeur Constatée | Norme / Référence Officielle | Statut de Conformité |
-| :--- | :--- | :--- | :--- |
-| **Ratio Déchets/Hab.** | > 640 kg/hab/an | Fret Cargo Déchets | 🔴 Écart Majeur |
-| **Contrôle & Conformité** | > 70 000 t / an | Norme Légale Nationale | ⚠️ Vigilance Requis |
-| **Coût Export Déchets/an** | > 45 M€/an en fret maritime | SYVADEC Marché Public | 🔴 Surcoût Structurel |
-| **Ratio Recyclage Corse** | < 22% (vs 48% national) | PRPGD Corse 2023 | 🔴 Retard Majeur |
-| **Injonctions DREAL Non Suivies** | > 60% des arrêtés ICPE non conformes | DREAL Insp. 2022-2024 | 🔴 Déficit Contrôle |
-
-### Recommandations Législatives & Dispositifs Novateurs d'Arbitrage :
-1. **Interdiction Totale d'Exportation des Déchets par Cargo d'ici 2028 :** Imposer la construction d'unités de tri haute performance et de valorisation organique sur le territoire corse.
-2. **Généralisation Obligatoire de la Redevance Incitative (TEOMi) :** Rendre obligatoire la facturation des ordures ménagères au poids produit pour pénaliser le gaspillage des grands complexes touristiques.
+> *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. — Cellule d'Investigation L'OCHJU »*
