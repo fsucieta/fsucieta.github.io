@@ -286,6 +286,8 @@ To enforce total transparency, any citizen, elected representative, or civic ass
 
 ### 🎯 Strategic Documents to Requisition :
 
+<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
+
 | Custodian Public Body | Specific Document to Requisition | Statutory Ground & Direct Link |
 | :--- | :--- | :--- |
 | **Prefecture of Corse-du-Sud & DREAL** | **Prefectural Order n° 2A-2021-04-29-0006 of April 29, 2021** (Operating licenses for DPLC Vazzio terminal, lower-tier SEVESO) and annual inspection audits | [Géorisques Vazzio](https://www.georisques.gouv.fr/) / `Art. L. 124-1 C. Env.` |
@@ -295,9 +297,13 @@ To enforce total transparency, any citizen, elected representative, or civic ass
 | **Ministry of Economy & Finance / IGF** | **IGF Report n° 2018-M-072-03** (*"For a 21st Century Corsican Economy"*, maritime freight surcharges, wholesale margins) | [IGF Public Archives](https://www.vie-publique.fr/) / `Art. L. 311-1 CRPA` |
 | **Bercy / Fraud Directorate (DGCCRF)** | Regional audit reports on verified refining and retail fuel margins across Corsica since 2020 | `Art. L. 311-1 CRPA` (Formal CADA Request) |
 
+</div>
+
 ---
 
 ### 📊 Forensic Audit Matrix : The Corsican Fuel Bottleneck
+
+<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
 
 | Investigation Vector | Officially Established Finding | Judicial Reference & Source | Forensic Assessment |
 | :--- | :--- | :--- | :--- |
@@ -308,6 +314,8 @@ To enforce total transparency, any citizen, elected representative, or civic ass
 | **Intercepted Tax Relief** | **13% VAT instead of 20%** (CGI Art. 297) | IGF Report 2018 & Prefecture Audit 2018 | 🔴 Public Tax Subsidy Intercepted |
 | **Missing Biofuel Surcharge** | **0 Stations Offering SP95-E10** | Opinion 20-A-11 / A4C Price Database | 🔴 Forced 20 c€/L Penalty on Gasoline |
 | **Aviation Jet Fuel Lockout** | **Territorial Duopoly (BP & TEMC)** | Decision 25-D-07 (Points 44, 79 and 80) | 🔴 Surcharged Public Flight Subsidies |
+
+</div>
 
 ---
 

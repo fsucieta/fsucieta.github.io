@@ -340,6 +340,8 @@ Pour maintenir une pression démocratique totale et briser l'omerta, chaque cito
 
 ### 🎯 Les Pièces Officielles à Réquisitionner :
 
+<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
+
 | Autorité Dépositaire | Acte Officiel Précis à Exiger | Base Légale & Lien Direct |
 | :--- | :--- | :--- |
 | **Préfecture de Corse-du-Sud & DREAL** | **Arrêté n° 2A-2021-04-29-0006 du 29 avril 2021** (Prescriptions d'exploitation ICPE du dépôt Vazzio à Ajaccio) et rapports annuels d'inspection SEVESO | [Géorisques Vazzio](https://www.georisques.gouv.fr/) / `Art. L. 124-1 C. Env.` |
@@ -349,9 +351,13 @@ Pour maintenir une pression démocratique totale et briser l'omerta, chaque cito
 | **Ministère de l'Économie & IGF** | **Rapport IGF n° 2018-M-072-03** (*« Pour une économie corse du XXIe siècle »*, volet fret maritime, surcoûts et marges brutes de raffinage) | [Archives IGF / Vie-Publique](https://www.vie-publique.fr/) / `Art. L. 311-1 CRPA` |
 | **Bercy / DGCCRF** | Rapports d'enquête régionaux de la DGCCRF sur la structure des marges réelles de gros et de détail pratiquées en Corse depuis 2020 | `Art. L. 311-1 CRPA` (Saisine CADA) |
 
+</div>
+
 ---
 
 ### 📊 Matrice d'Audit Forensique : Le Bilan du Verrou Pétrolier
+
+<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
 
 | Axe d'Investigation | Constat Officiellement Établi | Référence Judiciaire & Source | Qualification Forensique |
 | :--- | :--- | :--- | :--- |
@@ -362,6 +368,8 @@ Pour maintenir une pression démocratique totale et briser l'omerta, chaque cito
 | **Régime Fiscal Détourné** | **TVA 13 % au lieu de 20 %** (Article 297 CGI) | Rapports IGF 2018 & Préfecture 2018 | 🔴 Avantage Public Totalement Confisqué |
 | **Pénurie Organisée de Biocarburant** | **0 Station distribuant le SP95-E10** en Corse | Avis 20-A-11 / Relevés Citoyens A4C | 🔴 Surcoût Forcé de 20 cts/L sur l'Essence |
 | **Verrouillage du Kérosène** | **Partage Territorial Exclusif (BP & TEMC)** | Décision 25-D-07 (Points 44, 79 et 80) | 🔴 Renchérissement DSP Aérienne Publique |
+
+</div>
 
 ---
 

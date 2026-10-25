@@ -155,6 +155,8 @@ On vous explique partout qu'il n'y a plus de terres disponibles pour loger nos f
 
 Regardez l'inventaire précis des terrains que le Ministère des Armées garde sous clé en Corse, issu du registre national des propriétés de l'État :
 
+<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
+
 | Lieu Militaire Sanctuarisé | Commune Siège | Surface Cadastrée | Utilisation Réelle sur le Terrain | Ce que la Mairie Reçoit en Impôts |
 | :--- | :--- | :--- | :--- | :--- |
 | **Base Aérienne 126** | Ventiseri | **600 Hectares** | Pistes, escale d'avions étrangers, dépôts de bombes | **0 € de taxe foncière** |
@@ -163,6 +165,8 @@ Regardez l'inventaire précis des terrains que le Ministère des Armées garde s
 | **Base Navale du Lazaret d'Aspretto** | Ajaccio | **18 Hectares** | Port militaire, bureaux et logements de passage | **0 € de taxe foncière** |
 | **Champs de tir, radars et casemates** | Multi-communes | **1 314 Hectares** | Saint-Florent (Casta), Bonifacio, Pigno, Chiappa | **0 € de taxe foncière** |
 | **TOTAL DES TERRES CONFISQUÉES** | **Toute la Corse** | **2 842 HECTARES** | **24,8 % des plaines littorales plates de l'île** | **0,00 € versé à nos villages** |
+
+</div>
 
 ### Le Flagrant Délit des 327 Hectares de Bonne Terre Laissés à l'Abandon
 Regardons ce qui se passe à l'intérieur des clôtures de la base de Ventiseri :
