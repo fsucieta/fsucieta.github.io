@@ -63,50 +63,11 @@ La Corse ne coûte rien à la France. C'est l'économie corse qui subventionne d
 
 ---
 
-## CHAPITRE II. L'AUTOPSIE SOCIOLOGIQUE : LE PENTAGONE MÉDIATIQUE & LA FABRIQUE DU SILENCE
+## CHAPITRE II. L'ANESTHÉSIE DE L'OPINION : FRAGMENTATION DE L'INFORMATION & GUERRE COGNITIVE
 
 Comment une spoliation de 4,7 milliards d'euros par an peut-elle se perpétuer sans provoquer un soulèvement civique unanime ? 
 
 La réponse réside dans l'architecture de l'écosystème médiatique insulaire et dans la guerre cognitive documentée par le Framework DISARM.
-
-### 1. Le Scanner Clinique des 5 Médias Insulaires (Le Pentagone)
-
-L'audit algorithmique direct réalisé par L'OCHJU sur 167 dépêches publiées en octobre 2026 dans les rédactions de l'île révèle la spécialisation fonctionnelle du contrôle de l'opinion :
-
-```
-                                 LE PENTAGONE DE L'INFORMATION INSULAIRE
-                                                   
-                             [ CORSE-MATIN (CMA CGM) ]
-                           L'Anesthésie & le Verrou Capitaliste
-                                     ▲               ▲
-                                    ╱                 ╲
-                                   ╱                   ╲
-     [ FRANCE 3 VIASTELLA ] ◄─────                     ─────► [ ici RCFM (Radio France) ]
-    L'Arène Institutionnelle & Débat                         Le Pouls Quotidien des Villages &
-      (In Tantu / Tutelle Paris)                             la Tribune Citoyenne (Dite a vostra)
-                                   ╲                   ╱
-                                    ╲                 ╱
-                                     ▼               ▼
-               [ ALTA FREQUENZA ] ◄─────────────────────► [ CORSE NET INFOS (CNI) ]
-             Le Sismographe des Luttes                  La Sentinelle Digitale en Flux Continu
-               & de la Colère Sociale                     (Foncier, Santé, Rentes, Dépêches)
-```
-
-1. **`Corse-Matin` (Propriété CMA CGM)** :
-   - *Statistique forensique :* **0 % d'enquête sur le foncier**, 4 % sur les rentes.
-   - *Rôle sociologique :* Filtrer l'information économique structurelle. Le quotidien est détenu par le premier logisticien et armateur maritime mondial (CMA CGM) et dépend des budgets publicitaires des supermarchés et des banques. Les scandales de fret, les surcoûts portuaires et les marges de la grande distribution y sont méthodiquement neutralisés. L'actualité y est réduite aux faits divers sanglants et aux marronniers.
-2. **`France 3 Corse ViaStella` (Groupe France Télévisions)** :
-   - *Statistique forensique :* **43,3 % des dépêches sur la souveraineté et le droit**.
-   - *Rôle sociologique :* Le parlement audiovisuel de l'île. ViaStella offre des débats démocratiques exemplaires (*In Tantu*, retransmission de l'Assemblée de Corse), mais demeure enfermée dans le cadre de la légalité républicaine unitaire : elle documente les refus du Sénat mais ne peut jamais promouvoir l'architecture de rupture souveraine.
-3. **`ici RCFM` (Radio France / Réseau ici)** :
-   - *Statistique forensique :* Écoute populaire maximale dans le monde rural et les villages.
-   - *Rôle sociologique :* Cordon ombilical de la vie locale. À travers ses émissions de libre antenne (*« Dite a vostra »*, *« Le Forum »*), elle absorbe la souffrance des usagers (vie chère, pannes de réseau, isolement) en la traitant comme une somme de doléances individuelles sans jonction systémique.
-4. **`Alta Frequenza` (Radio Indépendante Historique)** :
-   - *Statistique forensique :* Taux record de dépêches sur les rentes et la cherté de la vie (**16,7 %**).
-   - *Rôle sociologique :* L'héritière des radios libres de 1981 donne la parole brute aux syndicats ouvriers (STC), aux collectifs de défense citoyenne et aux lanceurs d'alerte. Elle exprime la colère du terrain mais manque de moyens pour financer des audits médico-légaux lourds.
-5. **`Corse Net Infos - CNI` (Pure Player Gratuit)** :
-   - *Statistique forensique :* Seul média couvrant simultanément les 4 fronts (20 % rentes, 18 % foncier, 12 % souveraineté, 10 % santé).
-   - *Rôle sociologique :* Média de breaking news réactif, CNI diffuse les recours juridiques et les communiqués de terrain en temps réel, sans toutefois disposer du format long nécessaire pour unifier les pièces comptables.
 
 ### 2. Le Mécanisme de la « Fragmentation Cognitive » (Chomsky / Bourdieu)
 
