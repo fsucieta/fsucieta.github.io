@@ -1,0 +1,100 @@
+---
+/**
+ * MODALE GLOBALE EN VERRE FUMÉ — SOUTIEN CITOYEN L'OCHJU
+ * 
+ * S'active au clic sur tout élément doté de la classe '.open-soutien-modal-btn'.
+ * Conçue avec défilement interne borné (max-h-[90vh]) pour une lisibilité intégrale
+ * sur mobile comme sur poste de bureau, sans coupure verticale.
+ */
+import SoutienCitoyen from './SoutienCitoyen.astro';
+---
+
+<div 
+  id="soutienModalOverlay" 
+  class="fixed inset-0 bg-slate-950/88 backdrop-blur-md z-[110] hidden items-center justify-center p-3 sm:p-6 transition-opacity duration-200 opacity-0 pointer-events-none"
+  role="dialog" 
+  aria-modal="true"
+  aria-label="Fenêtre de soutien financier indépendant L'OCHJU"
+>
+  <div 
+    id="soutienModalBox"
+    class="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-slate-950 border border-amber-500/45 rounded-2xl shadow-2xl shadow-black/80 p-3 sm:p-5 transform transition-transform duration-200 scale-95"
+  >
+    <!-- Barre supérieure de contrôle de la modale -->
+    <div class="sticky top-0 z-20 flex items-center justify-between bg-slate-950/95 backdrop-blur px-3 py-2 border-b border-slate-800/80 mb-2">
+      <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">
+        PROTOCOLE DE SOUTIEN CITOYEN — SESSION LOCALE SÉCURISÉE
+      </span>
+      <button 
+        type="button" 
+        id="closeSoutienModalBtn"
+        class="px-3 py-1 rounded bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-amber-400 border border-slate-700 hover:border-amber-500/50 text-xs font-mono uppercase tracking-wider transition cursor-pointer"
+        aria-label="Fermer la fenêtre"
+      >
+        Fermer [ESC]
+      </button>
+    </div>
+
+    <SoutienCitoyen 
+      variant="compact" 
+      idPrefix="modal_sc_" 
+      title="Soutenir l'Indépendance de L'OCHJU" 
+      subtitle="Aucun compte bancaire saisissable. Aucune subvention publique. Deux voies souveraines : le Bon Prépayé Air-Gap par carte bancaire ou le transfert cryptographique direct."
+    />
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.getElementById('soutienModalOverlay');
+    const box = document.getElementById('soutienModalBox');
+    const closeBtn = document.getElementById('closeSoutienModalBtn');
+    const openBtns = document.querySelectorAll('.open-soutien-modal-btn');
+
+    function openModal() {
+      if (!overlay) return;
+      overlay.classList.remove('hidden', 'pointer-events-none', 'opacity-0');
+      overlay.classList.add('flex', 'pointer-events-auto', 'opacity-100');
+      if (box) {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+      }
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      if (!overlay) return;
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      if (box) {
+        box.classList.remove('scale-100');
+        box.classList.add('scale-95');
+      }
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+        document.body.style.overflow = '';
+      }, 200);
+    }
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay && !overlay.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  });
+</script>

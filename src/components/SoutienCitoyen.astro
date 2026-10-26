@@ -1,0 +1,492 @@
+---
+/**
+ * COMPOSANT MAÎTRE DE SOUVERAINETÉ FINANCIÈRE — L'OCHJU
+ * 
+ * Architecture bicéphale incensurable et conforme MiCA 2026 :
+ * - VOLET 01 : Pont Carte Bancaire Air-Gap via Bon Prépayé Azteco (aucun compte marchand
+ *              L'OCHJU, relevé bancaire banalisé 'DUNDLE.COM', coupure cryptographique totale).
+ * - VOLET 02 : Transfert direct non-custodial (01 Monero XMR, 02 USDC/EURC EVM, 03 Bitcoin BTC)
+ *              avec génération statique locale des QR Codes SVG et verrou anti-erreur tant que
+ *              les clés froides définitives ne sont pas scellées dans crypto_config.ts.
+ * 
+ * Doctrine cognitive : Ton du Magistrat Instructeur (zéro émoji gadget) + Clause BYAF.
+ */
+import QRCode from 'qrcode';
+import { CRYPTO_WALLETS, VOUCHER_CONFIG } from '../data/crypto_config';
+
+interface Props {
+  variant?: 'full' | 'compact';
+  title?: string;
+  subtitle?: string;
+  idPrefix?: string;
+}
+
+const {
+  variant = 'full',
+  title = "Soutenir l'Instruction Citoyenne",
+  subtitle = "L'OCHJU refuse toute subvention d'État ou de collectivité et proscrit toute régie publicitaire. L'indépendance matérielle de nos investigations repose exclusivement sur les citoyens.",
+  idPrefix = 'sc_'
+} = Astro.props;
+
+// Pré-génération statique au build des QR Codes SVG uniquement pour les portefeuilles configurés
+// Zéro requête réseau externe, zéro fuite d'adresse IP des visiteurs
+const walletsWithQr = await Promise.all(
+  CRYPTO_WALLETS.map(async (wallet) => {
+    let qrSvg = '';
+    if (wallet.configured && wallet.address && !wallet.address.startsWith('EN_ATTENTE')) {
+      qrSvg = await QRCode.toString(wallet.address, {
+        type: 'svg',
+        margin: 1,
+        color: { dark: '#06080d', light: '#f8fafc' },
+        width: 176
+      });
+    }
+    return { ...wallet, qrSvg };
+  })
+);
+---
+
+<section 
+  class={`bg-slate-950 border border-amber-500/35 rounded-2xl shadow-2xl overflow-hidden not-prose ${variant === 'compact' ? 'p-5 md:p-7 my-2' : 'p-6 md:p-10 my-10'}`} 
+  id={`${idPrefix}container`}
+  aria-label="Protocole de soutien financier indépendant L'OCHJU"
+>
+  <!-- En-tête Institutionnel Sobre -->
+  <div class="border-b border-slate-800 pb-6 mb-6">
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded text-[11px] font-mono font-bold uppercase tracking-widest">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+        <span>CELLULE L'OCHJU — PROTOCOLE D'INDÉPENDANCE MATÉRIELLE</span>
+      </div>
+      <div class="text-[11px] font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded border border-slate-800 flex flex-wrap items-center gap-2">
+        <span class="text-emerald-400 font-semibold">ZÉRO SUBVENTION PUBLIQUE</span>
+        <span class="text-slate-700">|</span>
+        <span class="text-cyan-400 font-semibold">ARCHITECTURE AIR-GAP</span>
+      </div>
+    </div>
+
+    <h3 class={`${variant === 'compact' ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl'} font-black text-slate-100 font-serif leading-tight tracking-tight`}>
+      {title}
+    </h3>
+    <p class="text-slate-300 text-sm md:text-base font-serif mt-2.5 max-w-3xl leading-relaxed opacity-90">
+      {subtitle}
+    </p>
+  </div>
+
+  <!-- Sélecteur de Volet : Pont Carte Bancaire Air-Gap vs Transfert Cryptographique Direct -->
+  <div class="flex flex-col sm:flex-row border-b border-slate-800 pb-5 gap-3 mb-7" role="tablist">
+    <button 
+      type="button" 
+      role="tab"
+      aria-selected="true"
+      class="sc-tab-cb px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 border border-amber-400 cursor-pointer shadow-lg shadow-amber-500/15 transition text-left sm:text-center"
+      data-prefix={idPrefix}
+    >
+      VOLET 01 — Carte Bancaire (Bon Prépayé Air-Gap)
+    </button>
+    
+    <button 
+      type="button" 
+      role="tab"
+      aria-selected="false"
+      class="sc-tab-direct px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider text-slate-300 bg-slate-900 border border-slate-800 hover:border-cyan-400/60 hover:text-cyan-300 cursor-pointer transition text-left sm:text-center"
+      data-prefix={idPrefix}
+    >
+      VOLET 02 — Transfert Crypto Direct (XMR · USDC · BTC)
+    </button>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- VOLET 01 : PONT CARTE BANCAIRE DÉCOUPLÉ PAR BON PRÉPAYÉ AZTECO (AIR-GAP)  -->
+  <!-- ========================================================================= -->
+  <div id={`${idPrefix}panel_cb`} class="space-y-6">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- COLONNE GAUCHE : ÉTAPE 01 — ACQUISITION DU BON PRÉPAYÉ -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 md:p-6 flex flex-col justify-between space-y-5">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest">
+              ÉTAPE 01 — ACQUISITION DU BON
+            </span>
+            <span class="text-[10px] font-mono text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
+              CB / Apple Pay / Espèces
+            </span>
+          </div>
+
+          <p class="text-xs md:text-sm font-serif text-slate-300 leading-relaxed">
+            Plutôt que d'exposer votre carte bancaire sur un terminal militant censurable, procurez-vous un <strong>Bon Prépayé Azteco</strong> (équivalent d'une recharge numérique) auprès d'un distributeur européen de cartes-cadeaux.
+          </p>
+
+          <!-- Sélection indicative de valeur faciale -->
+          <div>
+            <span class="block text-[11px] font-mono uppercase text-slate-400 tracking-wider mb-2">
+              Paliers standards disponibles :
+            </span>
+            <div class="grid grid-cols-4 gap-2">
+              {VOUCHER_CONFIG.denominationsEur.map((amt) => (
+                <button
+                  type="button"
+                  class={`sc-voucher-amt py-2.5 rounded-lg border font-mono font-bold text-xs md:text-sm transition cursor-pointer ${amt === 25 ? 'bg-amber-500/20 border-amber-400 text-amber-300' : 'bg-slate-950 border-slate-800 text-slate-300 hover:border-slate-700'}`}
+                  data-amount={amt}
+                >
+                  {amt} €
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <!-- Explication Double Étagère : Ce qui apparaît sur le relevé -->
+          <div class="bg-slate-950 border border-slate-800/90 rounded-lg p-3.5 space-y-2 text-xs">
+            <div class="font-mono font-bold text-slate-200 uppercase text-[11px] tracking-wide">
+              En clair pour votre sécurité bancaire :
+            </div>
+            <ul class="space-y-1.5 text-slate-400 font-serif leading-snug list-none pl-0">
+              <li>
+                <span class="text-amber-400 font-mono font-bold mr-1.5">—</span>
+                <strong>Relevé bancaire banalisé :</strong> l'opération affiche uniquement <code class="text-amber-300 font-mono text-[11px]">KINGUIN</code> (boutique européenne de jeux vidéo), jamais L'OCHJU ni un courtier crypto bloqué par les banques régionales.
+              </li>
+              <li>
+                <span class="text-amber-400 font-mono font-bold mr-1.5">—</span>
+                <strong>Zéro contrôle biométrique :</strong> aucune copie de pièce d'identité ni selfie exigé pour émettre le code à 16 chiffres.
+              </li>
+              <li>
+                <span class="text-amber-400 font-mono font-bold mr-1.5">—</span>
+                <strong>Transparence sur les frais :</strong> le revendeur prélève environ 10 à 14 % de frais de distribution (comparable aux 3 à 5 € de frais fixes des passerelles CB crypto sur les petits montants, mais avec une coupure totale de traçabilité).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-2.5 pt-2">
+          <a 
+            href={VOUCHER_CONFIG.primaryResellerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 bg-gradient-to-r from-amber-500 to-amber-400 hover:brightness-110 text-slate-950 font-mono font-black text-xs uppercase tracking-wider rounded-lg shadow-lg shadow-amber-500/15 transition flex items-center justify-center gap-2 text-center"
+          >
+            <span id={`${idPrefix}voucher_cta_label`}>1. Acquérir un Bon Azteco (25 €) sur Kinguin</span>
+            <span>→</span>
+          </a>
+          <div class="flex items-center justify-between text-[11px] font-mono text-slate-500 px-1">
+            <span>Choisir « Azteco Bitcoin Lightning » de préférence</span>
+            <a 
+              href={VOUCHER_CONFIG.officialDirectoryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-slate-400 hover:text-amber-400 underline underline-offset-2 transition"
+            >
+              Autres revendeurs / Espèces
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLONNE DROITE : ÉTAPE 02 — REMISE DU CODE À 16 CHIFFRES À LA CELLULE -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 md:p-6 flex flex-col justify-between space-y-4">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <span class="text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest">
+              ÉTAPE 02 — DÉPÔT DU CODE (16 CHIFFRES)
+            </span>
+            <span class="text-[10px] font-mono text-emerald-400 bg-slate-950 px-2 py-0.5 rounded border border-emerald-500/30">
+              Relais TutaMail Actif
+            </span>
+          </div>
+
+          <p class="text-xs md:text-sm font-serif text-slate-300 leading-relaxed">
+            Une fois votre code Azteco à 16 chiffres reçu, transmettez-le ci-dessous sans indiquer ni nom ni adresse courriel. La Cellule l'encaisse hors-ligne sur une clé vierge unique : <strong>le lien entre votre carte bancaire et L'OCHJU est mathématiquement rompu</strong>.
+          </p>
+
+          <form 
+            action={VOUCHER_CONFIG.relayEndpoint}
+            method="POST"
+            class="space-y-3.5 sc-voucher-form"
+          >
+            <input type="hidden" name="_subject" value="[SOUTIEN AIR-GAP L'OCHJU] Bon prépayé transmis" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for={`${idPrefix}voucher_type`} class="block text-[11px] font-mono text-slate-400 uppercase mb-1">
+                  Nature du bon :
+                </label>
+                <select 
+                  id={`${idPrefix}voucher_type`}
+                  name="type_bon"
+                  class="w-full px-3 py-2.5 bg-slate-950 border border-slate-800 rounded-lg text-xs font-mono text-slate-200 focus:outline-none focus:border-cyan-400"
+                >
+                  <option value="Azteco Lightning (Recommandé)">Azteco Lightning</option>
+                  <option value="Azteco On-Chain">Azteco On-Chain</option>
+                  <option value="Autre carte prépayée">Autre bon prépayé</option>
+                </select>
+              </div>
+
+              <div>
+                <label for={`${idPrefix}voucher_nominal`} class="block text-[11px] font-mono text-slate-400 uppercase mb-1">
+                  Montant indicatif :
+                </label>
+                <input 
+                  type="text"
+                  id={`${idPrefix}voucher_nominal`}
+                  name="montant_indicatif"
+                  value="25 EUR"
+                  placeholder="Ex: 25 EUR"
+                  class="w-full px-3 py-2.5 bg-slate-950 border border-slate-800 rounded-lg text-xs font-mono text-amber-300 focus:outline-none focus:border-cyan-400"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for={`${idPrefix}voucher_code`} class="block text-[11px] font-mono text-slate-400 uppercase mb-1">
+                Code du bon prépayé (16 chiffres) :
+              </label>
+              <input 
+                type="text"
+                id={`${idPrefix}voucher_code`}
+                name="code_bon_16_chiffres"
+                required
+                minlength="16"
+                maxlength="25"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="0000 0000 0000 0000"
+                class="sc-code-input w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-sm md:text-base font-mono font-bold tracking-widest text-cyan-300 placeholder:text-slate-700 focus:outline-none focus:border-cyan-400"
+              />
+            </div>
+
+            <div>
+              <label for={`${idPrefix}voucher_note`} class="block text-[11px] font-mono text-slate-400 uppercase mb-1">
+                Mention libre anonyme (Optionnel — ne saisissez aucune donnée personnelle) :
+              </label>
+              <input 
+                type="text"
+                id={`${idPrefix}voucher_note`}
+                name="mention_citoyenne"
+                autocomplete="off"
+                placeholder="Ex: Soutien aux investigations foncières / eau..."
+                class="w-full px-3 py-2 bg-slate-950 border border-slate-800 rounded-lg text-xs font-serif text-slate-300 focus:outline-none focus:border-cyan-400"
+              />
+            </div>
+
+            <button 
+              type="submit"
+              class="w-full py-3.5 px-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono font-black text-xs uppercase tracking-wider rounded-lg shadow-lg shadow-cyan-500/15 transition cursor-pointer"
+            >
+              2. Transmettre le Code à la Cellule L'OCHJU
+            </button>
+          </form>
+        </div>
+
+        <!-- Canal alternatif de bout en bout (TutaMail / PGP) -->
+        <div class="border-t border-slate-800 pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px] font-mono text-slate-400">
+          <span>
+            Alternative chiffrée directe : <strong class="text-slate-200 select-all">{VOUCHER_CONFIG.directEncryptedEmail}</strong>
+          </span>
+          <a href="/#whistleblower-vault" class="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
+            Clé PGP 4096-bit
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- VOLET 02 : TRANSFERT CRYPTOGRAPHIQUE DIRECT (XMR · USDC MiCA · BTC)       -->
+  <!-- ========================================================================= -->
+  <div id={`${idPrefix}panel_direct`} class="hidden space-y-6">
+    
+    <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-xs font-serif text-slate-300 leading-relaxed flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <div>
+        <strong class="font-mono text-cyan-400 uppercase tracking-wide mr-2">Protocole Non-Custodial :</strong>
+        Si vous détenez déjà des actifs numériques, privilégiez <strong>Monero (XMR)</strong> pour une opacité totale sur le registre public, ou <strong>USDC</strong> (conforme au règlement européen MiCA 2026) pour un transfert sans volatilité.
+      </div>
+      <span class="text-[10px] font-mono text-slate-400 shrink-0 bg-slate-950 px-2.5 py-1 rounded border border-slate-800">
+        QR Codes générés hors-ligne (0 appel tiers)
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      {walletsWithQr.map((wallet) => (
+        <div class={`bg-slate-900 border ${wallet.accentClasses.border} rounded-xl p-5 flex flex-col justify-between space-y-4 transition`}>
+          <div class="space-y-3">
+            <!-- En-tête de la carte actif -->
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xs font-mono text-slate-500 font-bold">{wallet.rank}</span>
+                <span class="text-base font-bold font-serif text-slate-100">{wallet.name}</span>
+              </div>
+              <span class={`text-[10px] font-mono font-bold px-2 py-0.5 rounded border ${wallet.accentClasses.badge}`}>
+                {wallet.symbol}
+              </span>
+            </div>
+
+            <div class={`text-[10px] font-mono font-bold uppercase tracking-wider ${wallet.accentClasses.text}`}>
+              {wallet.badge}
+            </div>
+
+            <p class="text-xs text-slate-400 font-serif leading-relaxed">
+              {wallet.description}
+            </p>
+
+            <div class="text-[10px] font-mono text-slate-400 bg-slate-950/70 px-2.5 py-1.5 rounded border border-slate-800/80">
+              <span class="text-slate-500 block uppercase text-[9px]">Réseau requis :</span>
+              <span class="text-slate-200">{wallet.network}</span>
+            </div>
+
+            <!-- Zone QR Code ou Verrou de Sécurité si clé non encore insérée -->
+            {wallet.configured ? (
+              <div class="pt-1 space-y-3">
+                <div class="bg-white p-2.5 rounded-lg mx-auto w-fit shadow-md" set:html={wallet.qrSvg} />
+                <div class="space-y-1">
+                  <span class="text-[10px] font-mono uppercase text-slate-500 block">
+                    Clé publique {wallet.symbol} :
+                  </span>
+                  <div class={`bg-slate-950 border border-slate-800 p-2.5 rounded text-[10px] font-mono ${wallet.accentClasses.text} break-all select-all leading-snug`}>
+                    {wallet.address}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div class="bg-slate-950 border border-dashed border-slate-700 rounded-lg p-4 text-center space-y-2 my-2">
+                <div class="inline-block px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider">
+                  Verrou de Sécurité Actif
+                </div>
+                <p class="text-[11px] font-mono text-slate-400 leading-relaxed">
+                  Clé publique froide {wallet.symbol} en attente de scellage hors-ligne dans <code class="text-slate-300">crypto_config.ts</code>.
+                </p>
+                <p class="text-[10px] font-serif text-slate-500">
+                  Aucun transfert direct ne peut être émis par erreur tant que la clé définitive n'est pas activée. Utilisez le Volet 01 (Bon Azteco).
+                </p>
+              </div>
+            )}
+          </div>
+
+          <!-- Bouton de copie (actif uniquement si la vraie clé est scellée) -->
+          {wallet.configured ? (
+            <button 
+              type="button" 
+              class={`sc-copy-addr w-full py-2.5 rounded-lg border text-xs font-mono font-bold uppercase tracking-wider transition cursor-pointer ${wallet.accentClasses.button}`}
+              data-address={wallet.address}
+              data-label={`Copier la clé ${wallet.symbol}`}
+            >
+              Copier la clé {wallet.symbol}
+            </button>
+          ) : (
+            <button 
+              type="button" 
+              disabled
+              class="w-full py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-600 text-[11px] font-mono uppercase tracking-wider cursor-not-allowed"
+            >
+              Clé {wallet.symbol} non activée
+            </button>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Clause Psychologique BYAF (But You Are Free) & Sanctuarisation du Libre Accès -->
+  <div class="mt-7 pt-5 border-t border-slate-800/90 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-slate-400 font-serif">
+    <p class="leading-relaxed max-w-3xl">
+      <strong class="font-mono text-[11px] text-slate-200 uppercase tracking-wider mr-1.5">Clause de Libre Accès Inaliénable —</strong>
+      L'intégralité des enquêtes, des preuves scellées (ISO/IEC 27037) et des bordereaux de recours produits par L'OCHJU demeure gratuite, sans abonnement ni mur payant. Vous êtes entièrement libre de consulter, télécharger et saisir la justice avec nos dossiers sans verser le moindre centime.
+    </p>
+    <a 
+      href="/soutenir/" 
+      class="shrink-0 font-mono text-[11px] text-amber-400 hover:text-amber-300 uppercase tracking-wider underline underline-offset-4 transition"
+    >
+      Charte d'indépendance →
+    </a>
+  </div>
+</section>
+
+<!-- Logique Interactive Isolée par Instance (idPrefix) -->
+<script is:inline define:vars={{ idPrefix }}>
+  (function() {
+    const container = document.getElementById(idPrefix + 'container');
+    if (!container) return;
+
+    const panelCb = document.getElementById(idPrefix + 'panel_cb');
+    const panelDirect = document.getElementById(idPrefix + 'panel_direct');
+    const tabBtnCb = container.querySelector('.sc-tab-cb');
+    const tabBtnDirect = container.querySelector('.sc-tab-direct');
+
+    // 1. Bascule sobre entre Volet 01 (CB Air-Gap) et Volet 02 (Crypto Directe)
+    if (tabBtnCb && tabBtnDirect && panelCb && panelDirect) {
+      tabBtnCb.addEventListener('click', () => {
+        panelCb.classList.remove('hidden');
+        panelDirect.classList.add('hidden');
+        tabBtnCb.setAttribute('aria-selected', 'true');
+        tabBtnDirect.setAttribute('aria-selected', 'false');
+        tabBtnCb.className = 'sc-tab-cb px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 border border-amber-400 cursor-pointer shadow-lg shadow-amber-500/15 transition text-left sm:text-center';
+        tabBtnDirect.className = 'sc-tab-direct px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider text-slate-300 bg-slate-900 border border-slate-800 hover:border-cyan-400/60 hover:text-cyan-300 cursor-pointer transition text-left sm:text-center';
+      });
+
+      tabBtnDirect.addEventListener('click', () => {
+        panelCb.classList.add('hidden');
+        panelDirect.classList.remove('hidden');
+        tabBtnCb.setAttribute('aria-selected', 'false');
+        tabBtnDirect.setAttribute('aria-selected', 'true');
+        tabBtnDirect.className = 'sc-tab-direct px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider bg-cyan-500 text-slate-950 border border-cyan-400 cursor-pointer shadow-lg shadow-cyan-500/15 transition text-left sm:text-center';
+        tabBtnCb.className = 'sc-tab-cb px-4 py-2.5 rounded-lg text-xs font-mono font-bold uppercase tracking-wider text-slate-300 bg-slate-900 border border-slate-800 hover:border-amber-400/60 hover:text-amber-300 cursor-pointer transition text-left sm:text-center';
+      });
+    }
+
+    // 2. Sélection d'un palier indicatif pour le Bon Prépayé Azteco
+    const voucherBtns = container.querySelectorAll('.sc-voucher-amt');
+    const ctaLabel = document.getElementById(idPrefix + 'voucher_cta_label');
+    const nominalInput = document.getElementById(idPrefix + 'voucher_nominal');
+
+    voucherBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        voucherBtns.forEach(b => {
+          b.classList.remove('bg-amber-500/20', 'border-amber-400', 'text-amber-300');
+          b.classList.add('bg-slate-950', 'border-slate-800', 'text-slate-300');
+        });
+        btn.classList.remove('bg-slate-950', 'border-slate-800', 'text-slate-300');
+        btn.classList.add('bg-amber-500/20', 'border-amber-400', 'text-amber-300');
+
+        const amt = btn.getAttribute('data-amount') || '25';
+        if (ctaLabel) {
+          ctaLabel.textContent = `1. Acquérir un Bon Azteco (${amt} €) sur Kinguin`;
+        }
+        if (nominalInput) {
+          nominalInput.value = `${amt} EUR`;
+        }
+      });
+    });
+
+    // 3. Formatage ergonomique par blocs de 4 caractères du code à 16 chiffres
+    const codeInput = document.getElementById(idPrefix + 'voucher_code');
+    if (codeInput) {
+      codeInput.addEventListener('input', (e) => {
+        const raw = e.target.value.replace(/[^a-zA-Z0-9]/g, '').toUpperCase().slice(0, 20);
+        const grouped = raw.match(/.{1,4}/g);
+        e.target.value = grouped ? grouped.join(' ') : raw;
+      });
+    }
+
+    // 4. Copie sécurisée des clés publiques configurées
+    const copyBtns = container.querySelectorAll('.sc-copy-addr');
+    copyBtns.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const addr = btn.getAttribute('data-address') || '';
+        const defaultLabel = btn.getAttribute('data-label') || 'Copier la clé';
+        if (!addr) return;
+        try {
+          await navigator.clipboard.writeText(addr);
+          btn.textContent = 'Clé copiée dans le presse-papier';
+          setTimeout(() => {
+            btn.textContent = defaultLabel;
+          }, 2500);
+        } catch (err) {
+          window.prompt('Copiez manuellement cette clé publique :', addr);
+        }
+      });
+    });
+  })();
+</script>
