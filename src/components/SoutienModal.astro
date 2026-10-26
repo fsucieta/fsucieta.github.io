@@ -1,45 +1,45 @@
 ---
 /**
  * MODALE GLOBALE EN VERRE FUMÉ — SOUTIEN CITOYEN L'OCHJU
- * 
- * S'active au clic sur tout élément doté de la classe '.open-soutien-modal-btn'.
- * Conçue avec défilement interne borné (max-h-[90vh]) pour une lisibilité intégrale
- * sur mobile comme sur poste de bureau, sans coupure verticale.
+ *
+ * S'ouvre au clic sur tout bouton porteur de la classe '.open-soutien-modal-btn'.
+ * Comporte un confinement du focus clavier (WAI-ARIA Dialog), une barre de défilement
+ * discrète dédiée (.custom-scrollbar) et une exclusion automatique à l'impression (.no-print).
  */
 import SoutienCitoyen from './SoutienCitoyen.astro';
 ---
 
-<div 
-  id="soutienModalOverlay" 
-  class="fixed inset-0 bg-slate-950/88 backdrop-blur-md z-[110] hidden items-center justify-center p-3 sm:p-6 transition-opacity duration-200 opacity-0 pointer-events-none"
-  role="dialog" 
+<div
+  id="soutienModalOverlay"
+  class="no-print fixed inset-0 bg-slate-950/88 backdrop-blur-md z-[110] hidden items-center justify-center p-2.5 sm:p-6 transition-opacity duration-200 opacity-0 pointer-events-none"
+  role="dialog"
   aria-modal="true"
-  aria-label="Fenêtre de soutien financier indépendant L'OCHJU"
+  aria-labelledby="soutienModalHeaderLabel"
 >
-  <div 
+  <div
     id="soutienModalBox"
-    class="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-slate-950 border border-amber-500/45 rounded-2xl shadow-2xl shadow-black/80 p-3 sm:p-5 transform transition-transform duration-200 scale-95"
+    class="custom-scrollbar relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-slate-950 border border-amber-500/45 rounded-2xl shadow-2xl shadow-black/80 px-3 pb-3 pt-0 sm:px-5 sm:pb-5 sm:pt-0 transform transition-transform duration-200 scale-95"
   >
-    <!-- Barre supérieure de contrôle de la modale -->
-    <div class="sticky top-0 z-20 flex items-center justify-between bg-slate-950/95 backdrop-blur px-3 py-2 border-b border-slate-800/80 mb-2">
-      <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">
-        PROTOCOLE DE SOUTIEN CITOYEN — SESSION LOCALE SÉCURISÉE
+    <!-- Barre supérieure collée au sommet sans fuite visuelle du contenu en arrière-plan -->
+    <div class="sticky top-0 z-20 flex items-center justify-between gap-3 bg-slate-950/98 backdrop-blur px-2 sm:px-3 py-3 border-b border-slate-800 mb-3">
+      <span id="soutienModalHeaderLabel" class="text-[10px] font-mono uppercase tracking-widest text-slate-400 leading-tight">
+        CHARTE DE SOUTIEN CITOYEN — ADRESSES PUBLIQUES VÉRIFIÉES HORS-LIGNE
       </span>
-      <button 
-        type="button" 
+      <button
+        type="button"
         id="closeSoutienModalBtn"
-        class="px-3 py-1 rounded bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-amber-400 border border-slate-700 hover:border-amber-500/50 text-xs font-mono uppercase tracking-wider transition cursor-pointer"
-        aria-label="Fermer la fenêtre"
+        class="shrink-0 px-3 py-1.5 rounded bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-amber-400 border border-slate-700 hover:border-amber-500/50 text-xs font-mono uppercase tracking-wider transition cursor-pointer"
+        aria-label="Fermer la fenêtre de soutien"
       >
         Fermer [ESC]
       </button>
     </div>
 
-    <SoutienCitoyen 
-      variant="compact" 
-      idPrefix="modal_sc_" 
-      title="Soutenir l'Indépendance de L'OCHJU" 
-      subtitle="Aucun compte bancaire saisissable. Aucune subvention publique. Deux voies souveraines : le Bon Prépayé Air-Gap par carte bancaire ou le transfert cryptographique direct."
+    <SoutienCitoyen
+      variant="compact"
+      idPrefix="modal_sc_"
+      title="Soutenir l'Indépendance de L'OCHJU"
+      subtitle="Contribution volontaire libre, sans montant conseillé ni abonnement. Choisissez votre situation : parcours débutant guidé ou accès direct aux adresses publiques."
     />
   </div>
 </div>
@@ -50,9 +50,11 @@ import SoutienCitoyen from './SoutienCitoyen.astro';
     const box = document.getElementById('soutienModalBox');
     const closeBtn = document.getElementById('closeSoutienModalBtn');
     const openBtns = document.querySelectorAll('.open-soutien-modal-btn');
+    let lastFocusedElement = null;
 
-    function openModal() {
+    function openModal(triggerEl) {
       if (!overlay) return;
+      lastFocusedElement = triggerEl || document.activeElement;
       overlay.classList.remove('hidden', 'pointer-events-none', 'opacity-0');
       overlay.classList.add('flex', 'pointer-events-auto', 'opacity-100');
       if (box) {
@@ -60,6 +62,9 @@ import SoutienCitoyen from './SoutienCitoyen.astro';
         box.classList.add('scale-100');
       }
       document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        if (closeBtn) closeBtn.focus();
+      }, 30);
     }
 
     function closeModal() {
@@ -73,13 +78,16 @@ import SoutienCitoyen from './SoutienCitoyen.astro';
         overlay.classList.add('hidden');
         overlay.classList.remove('flex');
         document.body.style.overflow = '';
+        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+          lastFocusedElement.focus();
+        }
       }, 200);
     }
 
-    openBtns.forEach(btn => {
+    openBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal();
+        openModal(btn);
       });
     });
 
@@ -89,11 +97,48 @@ import SoutienCitoyen from './SoutienCitoyen.astro';
       overlay.addEventListener('click', (e) => {
         if (e.target === overlay) closeModal();
       });
+
+      // Si l'utilisateur clique sur une action à 0 € pointant vers une ancre de la page courante, fermer la modale
+      const zeroEuroLinks = overlay.querySelectorAll('.sc-zero-euro-link');
+      zeroEuroLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          const href = link.getAttribute('href') || '';
+          const path = window.location.pathname.replace(/\/+$/, '');
+          if (href.startsWith('/#') && (path === '' || path === '/index.html')) {
+            closeModal();
+          }
+        });
+      });
     }
 
+    // Gestion clavier : fermeture par Échap et confinement du focus (Tab / Shift+Tab) dans la modale
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && overlay && !overlay.classList.contains('hidden')) {
+      if (!overlay || overlay.classList.contains('hidden')) return;
+
+      if (e.key === 'Escape') {
+        e.preventDefault();
         closeModal();
+        return;
+      }
+
+      if (e.key === 'Tab' && box) {
+        const focusables = Array.from(
+          box.querySelectorAll(
+            'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
+          )
+        ).filter((el) => el.offsetParent !== null);
+
+        if (!focusables.length) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     });
   });
