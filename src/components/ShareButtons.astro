@@ -1,18 +1,19 @@
 ---
 // ====================================================================
 // COMPOSANT MAÎTRE DE PARTAGE CITOYEN — L'OCHJU
-// Supporte : X (Twitter), Facebook, WhatsApp, Partage Mobile (SMS/Signal) & Copie directe
+// Supporte : X (Twitter), WhatsApp, Telegram, Facebook, Partage Mobile Natif & Copie de Lien
 // ====================================================================
 interface Props {
   title: string;
   url?: string;
   chapeau?: string;
+  variant?: 'inline' | 'card';
 }
 
-const { title, url = '', chapeau = '' } = Astro.props;
+const { title, url = '', chapeau = '', variant = 'inline' } = Astro.props;
 ---
 
-<div class="share-buttons-container flex flex-wrap items-center gap-2" data-title={title} data-url={url} data-chapeau={chapeau}>
+<div class={`share-buttons-container flex flex-wrap items-center gap-2 ${variant === 'card' ? 'justify-center sm:justify-start' : ''}`} data-title={title} data-url={url} data-chapeau={chapeau}>
   <!-- Bouton X / Twitter -->
   <button 
     type="button"
@@ -20,20 +21,10 @@ const { title, url = '', chapeau = '' } = Astro.props;
     title="Diffuser cette enquête sur X (Twitter)"
   >
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    <span class="hidden sm:inline">X</span>
+    <span class="hidden sm:inline">X (Twitter)</span>
   </button>
 
-  <!-- Bouton Facebook Officiel -->
-  <button 
-    type="button"
-    class="share-fb-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-[#1877F2]/20 text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2]/60 text-xs font-mono font-medium transition-all duration-200 cursor-pointer shadow-sm active:scale-95"
-    title="Partager cette enquête sur Facebook"
-  >
-    <svg class="w-3.5 h-3.5 fill-current text-[#1877F2]" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    <span class="hidden sm:inline">Facebook</span>
-  </button>
-
-  <!-- Bouton WhatsApp Proximité -->
+  <!-- Bouton WhatsApp -->
   <button 
     type="button"
     class="share-wa-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-[#25D366]/20 text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366]/60 text-xs font-mono font-medium transition-all duration-200 cursor-pointer shadow-sm active:scale-95"
@@ -41,6 +32,26 @@ const { title, url = '', chapeau = '' } = Astro.props;
   >
     <svg class="w-3.5 h-3.5 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.77.828 2.791.828 3.18 0 5.767-2.587 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm0 10.518c-.896 0-1.636-.263-2.378-.716l-.17-.104-1.764.463.471-1.721-.115-.183c-.496-.788-.758-1.552-.757-2.49 0-2.618 2.13-4.748 4.748-4.748 2.618 0 4.748 2.13 4.748 4.748 0 2.617-2.13 4.747-4.748 4.747z"/></svg>
     <span class="hidden sm:inline">WhatsApp</span>
+  </button>
+
+  <!-- Bouton Telegram -->
+  <button 
+    type="button"
+    class="share-tg-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-[#229ED9]/20 text-slate-200 hover:text-white border border-slate-800 hover:border-[#229ED9]/60 text-xs font-mono font-medium transition-all duration-200 cursor-pointer shadow-sm active:scale-95"
+    title="Partager sur Telegram"
+  >
+    <svg class="w-3.5 h-3.5 fill-current text-[#229ED9]" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    <span class="hidden sm:inline">Telegram</span>
+  </button>
+
+  <!-- Bouton Facebook -->
+  <button 
+    type="button"
+    class="share-fb-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-[#1877F2]/20 text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2]/60 text-xs font-mono font-medium transition-all duration-200 cursor-pointer shadow-sm active:scale-95"
+    title="Partager cette enquête sur Facebook"
+  >
+    <svg class="w-3.5 h-3.5 fill-current text-[#1877F2]" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    <span class="hidden sm:inline">Facebook</span>
   </button>
 
   <!-- Bouton Partage Mobile Natif (SMS, Signal, etc.) -->
@@ -64,72 +75,82 @@ const { title, url = '', chapeau = '' } = Astro.props;
 </div>
 
 <script>
-  // Initialisation dynamique et robuste des boutons de partage
+  // Initialisation dynamique et robuste des boutons de partage L'OCHJU
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.share-buttons-container').forEach((container) => {
       const el = container as HTMLElement;
-      const getShareUrl = () => {
+      
+      const getCanonicalShareUrl = () => {
+        // En production, toujours renvoyer l'URL publique absolue
         const rawUrl = el.dataset.url;
         if (rawUrl && rawUrl.startsWith('http')) return rawUrl;
-        if (rawUrl) {
-          const origin = window.location.origin;
-          return `${origin}/${rawUrl.replace(/^\.\//, '').replace(/^\//, '')}`;
-        }
-        return window.location.href;
+        
+        const path = window.location.pathname;
+        return `https://fsucieta.github.io${path}`;
       };
 
       const title = el.dataset.title || document.title;
       const chapeau = el.dataset.chapeau || '';
+      const shortChapeau = chapeau ? (chapeau.length > 120 ? chapeau.slice(0, 117) + '...' : chapeau) : '';
 
-      // 1. Partage X (Twitter) avec texte pré-rempli
+      // 1. Partage X (Twitter)
       el.querySelector('.share-x-btn')?.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const url = getShareUrl();
-        const tweetText = `🔴 Enquête L'OCHJU : ${title}\n\n${chapeau ? chapeau.slice(0, 140) + '...' : ''}\n\nÀ lire ici :`;
-        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer,width=600,height=400');
+        const url = getCanonicalShareUrl();
+        const tweetText = `🔴 ENQUÊTE L'OCHJU : ${title}\n\n${shortChapeau}\n\n👉 Preuves & Actes scellés :\n${url}\n\n#Corse #LOchju`;
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`, '_blank', 'noopener,noreferrer,width=600,height=440');
       });
 
-      // 2. Partage Facebook
-      el.querySelector('.share-fb-btn')?.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const url = getShareUrl();
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer,width=600,height=400');
-      });
-
-      // 3. Partage WhatsApp
+      // 2. Partage WhatsApp
       el.querySelector('.share-wa-btn')?.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const url = getShareUrl();
-        const text = `🔴 *Enquête L'OCHJU : ${title}*\n\n${chapeau ? chapeau + '\n\n' : ''}👉 ${url}`;
+        const url = getCanonicalShareUrl();
+        const text = `🔴 *Enquête L'OCHJU : ${title}*\n\n${chapeau ? chapeau + '\n\n' : ''}⚖️ *Dossier d'instruction et preuves scellées :*\n👉 ${url}\n\n_« Le Savoir partagé est notre contre-pouvoir. »_`;
         window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
       });
 
-      // 4. Partage Mobile Natif (Web Share API)
+      // 3. Partage Telegram
+      el.querySelector('.share-tg-btn')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const url = getCanonicalShareUrl();
+        const text = `🔴 Enquête L'OCHJU : ${title}\n\n${chapeau ? chapeau + '\n\n' : ''}⚖️ Dossier d'instruction et preuves scellées :`;
+        window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+      });
+
+      // 4. Partage Facebook
+      el.querySelector('.share-fb-btn')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const url = getCanonicalShareUrl();
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer,width=600,height=400');
+      });
+
+      // 5. Partage Mobile Natif
       el.querySelector('.share-native-btn')?.addEventListener('click', async (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const url = getShareUrl();
+        const url = getCanonicalShareUrl();
         if (navigator.share) {
           try {
             await navigator.share({
               title: `Enquête L'OCHJU : ${title}`,
-              text: chapeau ? chapeau.slice(0, 140) + '...' : `Enquête L'OCHJU : ${title}`,
+              text: shortChapeau || `Enquête L'OCHJU : ${title}`,
               url: url
             });
           } catch (err) {
-            // Annulation normale
+            // Annulation utilisateur
           }
         }
       });
 
-      // 5. Copier le lien
+      // 6. Copier le lien
       el.querySelector('.share-copy-btn')?.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const url = getShareUrl();
+        const url = getCanonicalShareUrl();
         navigator.clipboard.writeText(url).then(() => {
           const btn = el.querySelector('.share-copy-btn') as HTMLElement;
           const label = btn?.querySelector('.copy-label') as HTMLElement;

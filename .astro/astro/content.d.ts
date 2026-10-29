@@ -218,6 +218,13 @@ declare module 'astro:content' {
   collection: "enquetes";
   data: InferEntrySchema<"enquetes">
 } & { render(): Render[".md"] };
+"12-la-dependance-sanitaire-evasan.md": {
+	id: "12-la-dependance-sanitaire-evasan.md";
+  slug: "12-la-dependance-sanitaire-evasan";
+  body: string;
+  collection: "enquetes";
+  data: InferEntrySchema<"enquetes">
+} & { render(): Render[".md"] };
 "13-le-sous-investissement-educatif.md": {
 	id: "13-le-sous-investissement-educatif.md";
   slug: "13-le-sous-investissement-educatif";

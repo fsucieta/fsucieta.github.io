@@ -10,7 +10,7 @@ import AudioBriefing from '../../components/AudioBriefing.astro';
 export async function getStaticPaths() {
   const enquetes = await getCollection('enquetes');
   // SANCTUARISATION STRICTE : Uniquement les 7 enquêtes officiellement finalisées
-  const allowedIds = [27, 7, 23, 28, 26, 4, 18, 11];
+  const allowedIds = [27, 7, 23, 28, 26, 4, 18, 11, 22];
   return enquetes.filter((entry) => allowedIds.includes(entry.data.id)).map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
@@ -157,7 +157,7 @@ const enSlug = enMatch ? enMatch.slug : entry.slug;
     )}
 
     <!-- SECTION DES SOURCES ET PIÈCES D'ÉTAT CERTIFIÉES (VISUALISATEUR CITOYEN) -->
-    {data.id !== 4 && data.id !== 7 && data.id !== 11 && data.id !== 12 && data.id !== 18 && data.id !== 23 && data.id !== 27 && data.id !== 28 && data.sources && data.sources.length > 0 && (
+    {data.id !== 4 && data.id !== 7 && data.id !== 11 && data.id !== 12 && data.id !== 18 && data.id !== 22 && data.id !== 23 && data.id !== 27 && data.id !== 28 && data.sources && data.sources.length > 0 && (
       <div class="mt-16 bg-slate-950 border border-emerald-500/30 p-6 md:p-8 rounded-2xl shadow-2xl space-y-6">
         <div class="flex items-center justify-between border-b border-slate-800 pb-4">
           <h3 class="text-lg md:text-xl font-bold font-sans text-emerald-400 flex items-center gap-2">
@@ -357,14 +357,38 @@ const enSlug = enMatch ? enMatch.slug : entry.slug;
       });
     </script>
 
-    <!-- Module de Soutien Citoyen & Souveraineté Financière (Option B) -->
-    <div class="hidden print:block my-6 pt-3 border-t border-slate-300 text-[10pt] font-mono text-slate-800">Indépendance financière totale (zéro subvention publique) — Charte &amp; soutien citoyen : https://fsucieta.github.io/soutenir/</div><div class="no-print my-16 border-t border-amber-500/30 pt-10">
-      <SoutienCitoyen 
-        variant="full" 
-        idPrefix="enq_sc_" 
-        title="Soutenir cette Investigation Citoyenne" 
-        subtitle="Cette enquête a exigé des centaines d'heures de décryptage médico-légal et d'accès aux actes publics. Soutenez nos prochaines révélations en totale indépendance." 
-      />
+    <!-- BLOC DE DIFFUSION CITOYENNE EN FIN D'ENQUÊTE -->
+    <div class="no-print my-12 p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-amber-500/30 text-center space-y-4 shadow-xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono text-xs uppercase tracking-widest">
+        <span>📢</span> DIFFUSION POPULAIRE
+      </div>
+      <h3 class="text-xl sm:text-2xl font-serif font-bold text-slate-100">
+        Le Savoir partagé est notre contre-pouvoir
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
+        Cette enquête est une arme citoyenne. Diffusez-la dans vos cercles, vos groupes de village et vos réseaux pour briser le silence.
+      </p>
+      <div class="pt-2 flex justify-center">
+        <ShareButtons title={data.title} chapeau={data.chapeau} variant="card" />
+      </div>
+    </div>
+
+    <!-- CARTOUCHE DE SOUTIEN CITOYEN DISCRET ET NOBLE -->
+    <div class="no-print my-10 p-6 rounded-2xl bg-slate-950 border border-slate-800/80 text-center max-w-xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-slate-900 text-slate-400 font-mono text-[10px] uppercase tracking-wider border border-slate-800">
+        <span>🛡️</span> INDÉPENDANCE TOTALE • 0 € DE SUBVENTION PUBLIQUE
+      </div>
+      <p class="text-xs text-slate-400 leading-relaxed font-sans">
+        L'OCHJU ne dépend d'aucun parti, d'aucun groupe de presse et d'aucun intérêt privé. Nos investigations vivent exclusivement du relais et de la solidarité citoyenne.
+      </p>
+      <div class="pt-1">
+        <button 
+          type="button" 
+          class="open-soutien-modal-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 hover:text-amber-200 border border-amber-400/40 text-xs font-mono font-bold transition shadow-sm cursor-pointer"
+        >
+          <span>🤝</span> <span>Consulter la Charte de Soutien Citoyen</span>
+        </button>
+      </div>
     </div>
 
     <!-- Bouton de retour -->

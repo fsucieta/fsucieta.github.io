@@ -3,10 +3,10 @@ id: 22
 title: "Banking Capture & The Flight of Insular Savings Deposits"
 subtitle: "Radiography of the insular banking system : how private banks reinject less than 40% of Corsican savings deposits into the local productive economy."
 category: "BANKING & LIQUID SAVINGS"
-status: en_cours
+status: cloturee
 ref: "LOCHJU-AUDIT-INVESTIGATION-22"
 author: "L'OCHJU Financial Investigation Desk"
-date: "August 2026"
+date: "October 2026"
 tool: "IEDOM / Banque de France / ACPR / Retail Banking Data"
 chapeau: "Considered by major French banking cartels as an exceptionally profitable deposit collection basin, Corsica suffers from chronic local credit rationing. An investigation into the siphoning of family savings books and deposits toward Parisian financial markets."
 math: "\\text{Local Reinvestment Ratio (LRR)} = \\frac{\\sum \\text{Productive Loans Granted to Corsican SMEs & Artisans}}{\\text{Total Customer Deposits Collected Across Island Branches}} \\times 100"
