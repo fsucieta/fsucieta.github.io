@@ -380,7 +380,7 @@ const intercommunalites = [
       <div class="w-full h-[560px] rounded-xl border border-slate-800 bg-slate-900 relative overflow-hidden shadow-inner" id="gisMapContainer"></div>
       <div class="mt-3 flex items-center justify-between text-xs font-mono text-slate-400 bg-slate-900/90 px-4 py-2 rounded-lg border border-slate-800">
         <span>📍 Survolez ou cliquez sur les repères pour auditer une intercommunalité</span>
-        <span class="text-amber-400 font-bold">CARTO OpenStreetMap Dark</span>
+        <span class="text-amber-400 font-bold">ESRI Dark Gray Canvas</span>
       </div>
     </div>
 
@@ -488,10 +488,21 @@ const intercommunalites = [
       zoomControl: true
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      subdomains: 'abcd',
-      maxZoom: 19
+    // 1. Fond de Carte Sombre Mondial ESRI (100% sans filigrane ni clé d'API requise)
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri &mdash; DeLorme, NAVTEQ',
+      maxZoom: 16
+    }).addTo(map);
+
+    // Couche de labels toponymiques ESRI sur pane dédié
+    map.createPane('labelsPane');
+    map.getPane('labelsPane').style.zIndex = 450;
+    map.getPane('labelsPane').style.pointerEvents = 'none';
+
+    // 2. Toponymie Discrète ESRI
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+      pane: 'labelsPane',
+      maxZoom: 16
     }).addTo(map);
 
     // Création de 2 couches séparées (Panes) pour supprimer 100% des conflits et bugs d'affichage
