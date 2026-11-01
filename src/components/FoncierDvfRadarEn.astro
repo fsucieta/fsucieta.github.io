@@ -3,6 +3,7 @@ import dvfData from '../data/corsica_dvf_360.json';
 ---
 
 <div class="bg-slate-950 border border-cyan-500/30 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="foncier-dvf-section">
+  <!-- Section Header -->
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
     <div>
       <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
@@ -12,20 +13,32 @@ import dvfData from '../data/corsica_dvf_360.json';
         <span>🤝 Real Estate Transactions & Land Valuation Radar (360 Communes)</span>
       </h3>
     </div>
-    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-      Coverage : 100% of all 360 Corsican Municipalities
+    <div class="flex flex-col items-start md:items-end gap-1.5">
+      <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
+        Coverage : 100% of all 360 Corsican Municipalities
+      </div>
+      <div class="text-[10px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/30 flex items-center gap-1">
+        <span>🛰️</span>
+        <span>Cartography linked to <strong>Bufitonu.fr</strong></span>
+      </div>
     </div>
   </div>
 
-  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6">
+  <!-- Educational Note & Legal Attribution -->
+  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6 space-y-3">
     <h4 class="text-sm font-bold font-serif text-cyan-400 mb-1 flex items-center gap-2">
       💡 Why consult the official DVF (Land Value Requests) registry?
     </h4>
     <p class="text-xs text-slate-300 font-serif leading-relaxed">
       This official French Treasury (DGFiP) registry records <strong>every authenticated property and land sale</strong> completed in Corsica. It allows citizens to detect <strong>real estate speculation</strong>, massive acquisitions by non-resident corporate holdings, and compare real square-meter prices against local household incomes across all 360 municipalities.
     </p>
+    <div class="pt-2 border-t border-cyan-500/20 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
+      <span>⚖️ <strong>Official legal attribution :</strong> French Treasury (DGFiP) Cadastre & DVF Files.</span>
+      <span class="text-amber-400 font-bold">Geospatial extraction & cross-referencing powered by citizen platform Bufitonu.fr</span>
+    </div>
   </div>
 
+  <!-- Islandwide Key Figures -->
   <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
     <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
       <span class="text-xs font-mono text-slate-400 block mb-1">Municipalities Monitored</span>
@@ -45,6 +58,7 @@ import dvfData from '../data/corsica_dvf_360.json';
     </div>
   </div>
 
+  <!-- Municipality Search Dropdown -->
   <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
     <div class="mb-4">
       <label class="block text-xs font-mono text-slate-400 mb-1">SEARCH OR SELECT AMONG THE 360 CORSICAN MUNICIPALITIES :</label>
@@ -54,5 +68,100 @@ import dvfData from '../data/corsica_dvf_360.json';
         ))}
       </select>
     </div>
+
+    <!-- Dynamic Detail Card -->
+    <div id="dvfDetailPanelEn" class="bg-slate-950 p-5 rounded-lg border border-slate-800 space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <div>
+          <h4 id="dvfCommuneNameEn" class="text-lg font-bold font-serif text-slate-100">
+            {dvfData.communes[0].commune}
+          </h4>
+          <span id="dvfEpciNameEn" class="text-xs font-mono text-slate-400">
+            EPCI : {dvfData.communes[0].epci}
+          </span>
+        </div>
+        <span id="dvfTensionBadgeEn" class="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/40 rounded-full text-xs font-mono font-bold">
+          Tension {dvfData.communes[0].niveau_tension}
+        </span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Avg Price / m²:</span>
+          <span id="dvfPrixM2En" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].prix_m2_moyen} €</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">5-Year Growth:</span>
+          <span id="dvfEvolEn" class="text-amber-400 font-bold text-sm">+{dvfData.communes[0].evolution_5ans_pct}%</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Deeds / Year:</span>
+          <span id="dvfActesEn" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].transactions_annee}</span>
+        </div>
+        <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
+          <span class="text-slate-500 block">Non-Resident %:</span>
+          <span id="dvfPctSciEn" class="text-red-400 font-bold text-sm">{dvfData.communes[0].pct_non_residents_sci}%</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/90 p-3 rounded border border-cyan-500/30 text-xs font-mono">
+        <span class="text-cyan-400 font-bold block mb-1">🔗 Associated Legal Proof & Investigation:</span>
+        <span id="dvfPieceAssocieeEn" class="text-slate-300">
+          {dvfData.communes[0].piece_cada_associee}
+        </span>
+      </div>
+
+      <!-- Direct Interactive Gateway to Bufitonu.fr & 3D Coastal Law Simulator -->
+      <div class="pt-3 border-t border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <a 
+          id="dvfBufitonuBtnEn"
+          href="https://bufitonu.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/40 hover:border-amber-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2 shadow-md shadow-amber-500/10"
+        >
+          <span>🛰️</span>
+          <span id="dvfBufitonuLabelEn">Inspect land parcels on Bufitonu.fr</span>
+          <span>→</span>
+        </a>
+        <a 
+          href="https://121-8.bufitonu.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-850 text-cyan-400 border border-cyan-500/30 hover:border-cyan-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2"
+        >
+          <span>📐</span>
+          <span>3D Coastal Continuity Simulator (80m Rule)</span>
+          <span>↗</span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
+
+<script is:inline define:vars={{ communesList: dvfData.communes }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('dvfCommuneSelectEn');
+    if (!select) return;
+
+    select.addEventListener('change', (e) => {
+      const code = e.target.value;
+      const c = communesList.find(item => item.code_insee === code);
+      if (!c) return;
+
+      document.getElementById('dvfCommuneNameEn').textContent = c.commune;
+      document.getElementById('dvfEpciNameEn').textContent = `EPCI : ${c.epci}`;
+      document.getElementById('dvfTensionBadgeEn').textContent = `Tension ${c.niveau_tension}`;
+      document.getElementById('dvfPrixM2En').textContent = `${c.prix_m2_moyen} €`;
+      document.getElementById('dvfEvolEn').textContent = `+${c.evolution_5ans_pct}%`;
+      document.getElementById('dvfActesEn').textContent = c.transactions_annee;
+      document.getElementById('dvfPctSciEn').textContent = `${c.pct_non_residents_sci}%`;
+      document.getElementById('dvfPieceAssocieeEn').textContent = c.piece_cada_associee;
+
+      const bufitonuLabel = document.getElementById('dvfBufitonuLabelEn');
+      if (bufitonuLabel) {
+        bufitonuLabel.textContent = `Inspect ${c.commune} on Bufitonu.fr`;
+      }
+    });
+  });
+</script>

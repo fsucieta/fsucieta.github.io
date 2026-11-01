@@ -13,19 +13,29 @@ import dvfData from '../data/corsica_dvf_360.json';
         <span>🤝 Radar des Transactions & Valeurs Foncières (360 Communes)</span>
       </h3>
     </div>
-    <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-      Couverture : 100% des 360 Communes Corses
+    <div class="flex flex-col items-start md:items-end gap-1.5">
+      <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
+        Couverture : 100% des 360 Communes Corses
+      </div>
+      <div class="text-[10px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/30 flex items-center gap-1">
+        <span>🛰️</span>
+        <span>Cartographie connectée à <strong>Bufitonu.fr</strong></span>
+      </div>
     </div>
   </div>
 
-  <!-- Explication Pédagogique -->
-  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6">
+  <!-- Explication Pédagogique & Double Mention d'Attribution -->
+  <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6 space-y-3">
     <h4 class="text-sm font-bold font-serif text-cyan-400 mb-1 flex items-center gap-2">
       💡 Pourquoi consulter le registre DVF (Demandes de Valeurs Foncières) ?
     </h4>
     <p class="text-xs text-slate-300 font-serif leading-relaxed">
       Ce registre officiel de la Direction Générale des Finances Publiques (DGFiP) répertorie l'intégralité des ventes de terrains et biens immobiliers réelles conclues en Corse. Il permet de repérer la <strong>spéculation foncière</strong>, les <strong>acquisitions massives par des holdings ou SCI extérieures</strong> et de comparer le prix réel au m² avec les revenus locaux sur chacune des 360 communes.
     </p>
+    <div class="pt-2 border-t border-cyan-500/20 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
+      <span>⚖️ <strong>Double attribution légale :</strong> Données Cadastre DGFiP & Fichier DVF.</span>
+      <span class="text-amber-400 font-bold">Extraction & croisement géospatial réalisés via la plateforme citoyenne Bufitonu.fr</span>
+    </div>
   </div>
 
   <!-- Chiffres Clés Insulaires -->
@@ -100,6 +110,31 @@ import dvfData from '../data/corsica_dvf_360.json';
           {dvfData.communes[0].piece_cada_associee}
         </span>
       </div>
+
+      <!-- Passerelle Interactive Directe vers Bufitonu.fr & Simulateur 3D Loi Littoral -->
+      <div class="pt-3 border-t border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <a 
+          id="dvfBufitonuBtn"
+          href="https://bufitonu.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/40 hover:border-amber-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2 shadow-md shadow-amber-500/10"
+        >
+          <span>🛰️</span>
+          <span id="dvfBufitonuLabel">Traquer les parcelles sur Bufitonu.fr</span>
+          <span>→</span>
+        </a>
+        <a 
+          href="https://121-8.bufitonu.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-850 text-cyan-400 border border-cyan-500/30 hover:border-cyan-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2"
+        >
+          <span>📐</span>
+          <span>Simulateur 3D Continuité (Loi Littoral / 80m)</span>
+          <span>↗</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -122,6 +157,11 @@ import dvfData from '../data/corsica_dvf_360.json';
       document.getElementById('dvfActes').textContent = c.transactions_annee;
       document.getElementById('dvfPctSci').textContent = `${c.pct_non_residents_sci}%`;
       document.getElementById('dvfPieceAssociee').textContent = c.piece_cada_associee;
+
+      const bufitonuLabel = document.getElementById('dvfBufitonuLabel');
+      if (bufitonuLabel) {
+        bufitonuLabel.textContent = `Traquer ${c.commune} sur Bufitonu.fr`;
+      }
     });
   });
 </script>
