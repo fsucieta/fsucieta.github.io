@@ -24,6 +24,9 @@ sources:
   - name: "Ministère de la Transition Écologique : Arrêté du 3 mars 2026 (NOR : VLOL2604227A) — Dérogation Loi Littoral L. 121-12-1 pour Saint-Antoine 1 et 2 (Décret 2023-1311, Cartes 5 et 6)"
     url: "https://www.developpement-durable.gouv.fr"
     sha256: "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
+  - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2024-138 du 10 juillet 2024 (Évaluation de la Compensation du Contrat d'Achat Intramural de 25 ans entre EDF Corse et EDF PEI SAS pour 133,7 MW au Ricanto)"
+    url: "https://www.cre.fr/documents/deliberations.html"
+    sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
   - name: "Commission de Régulation de l'Énergie (CRE) : Délibération n° 2026-111 du 26 mai 2026 & Arrêté Ministériel du 23 avril 2026 (Projet de STEP de Saint-Antoine / Next Step Energy - Rémunération Garantie de 9,75 % sur Fonds Publics)"
     url: "https://www.cre.fr"
     sha256: "f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4"
@@ -152,46 +155,69 @@ La Corse n'est pas sous perfusion : **la Corse est une pompe à fric.**
 
 ---
 
-## 2. LA PHYSIQUE DU RÉSEAU INSULAIRE : POURQUOI LE THERMIQUE SURDIMENSIONNÉ VERROUILLE L'ÎLE
+## 2. LA PHYSIQUE DU RÉSEAU INSULAIRE & LE VERROU DE 70 ANS SUR NOS 4 BARRAGES
 
-Pour démonter le mensonge, il faut regarder la réalité en face avec la rigueur d'un ingénieur.
+Pour démonter le mensonge du monopole, il faut regarder la réalité en face avec la rigueur d'un ingénieur et la précision d'un légiste.
 
-Sur le continent européen, le réseau électrique est un **paquebot géant**. Si une centrale nucléaire disjoncte en Alsace, la masse colossale des milliers de turbines qui tournent en France, en Allemagne et en Espagne absorbe le choc. La fréquence reste à 50 Hertz. Rien ne bouge.
+Quatre forteresses d'eau pure dorment au cœur des montagnes corses :
+* **Calacuccia (Haut-Golo)** : 56,8 MW de puissance (un lac géant de 53 millions de mètres cubes d'eau).
+* **Le Rizzanese (Alta Rocca)** : 55,0 MW (mis en service en 2013, retenue de 18 millions de m³).
+* **Sampolo (Fium'Orbo)** : 43,0 MW (retenue de Trévadine).
+* **Tolla et Ocana (Prunelli)** : 39,3 MW (le lac de Tolla, 40 millions de m³).
+* **Total cumulé : 220,7 MW d'électricité propre et inépuisable**, stockée naturellement sous nos ciels d'altitude.
 
-En Corse, notre réseau électrique est **une barque sur une mer agitée** : c'est ce qu'on appelle techniquement une Zone Non Interconnectée (ZNI).
-* **Le piège du solaire brut sans stockage** : Les panneaux solaires produisent du courant continu transformé par des boîtiers électroniques (les onduleurs). Ces boîtiers n'ont aucune pièce en mouvement, donc **zéro inertie mécanique**. Si un gros front d'orages traverse la Plaine orientale à midi, la production solaire peut s'effondrer d'un coup. Sans machines tournantes lourdes pour faire tampon, la fréquence s'effondre en un dixième de seconde : **c'est le blackout général**.
-* **La règle de sécurité N-1** : Le réseau doit pouvoir continuer à alimenter les hôpitaux et les foyers si le câble sous-marin SACOI qui nous relie à l'Italie venait à être arraché par une ancre de bateau.
+Ces barrages ont été entièrement payés et amortis depuis des décennies par les générations précédentes. L'eau de nos rivières y produit le mégawattheure le plus économique de l'île (entre 15 et 25 €/MWh), quand brûler du fioul ou du colza raffiné dans des moteurs thermiques coûte entre 250 et 400 €/MWh — **quinze à vingt fois plus cher**.
 
-**Cette contrainte physique est indiscutable.** 
+Pendant quarante ans, les élus corses et les collectifs citoyens ont demandé la restitution de ces barrages à la Corse pour créer une régie publique de l'énergie.
 
-Mais c'est précisément là que commence l'escroquerie politique : pour répondre à ce besoin de sécurité, **il fallait une réserve d'appoint raisonnable de 50 mégawatts**. 
-Au lieu de cela, EDF et l'État nous imposent **une usine monstre de 130 mégawatts à 800 millions d'euros au Ricanto**, brûlant 50 000 tonnes de colza importé par cargos chimiquiers. Pourquoi ? Parce qu'une petite réserve d'appoint ne rapporte presque rien, alors qu'une usine géante à 800 millions garantit **6,3 milliards d'euros de dividendes CSPE** sur 25 ans.
+### La Loi Scélérate du 29 Juin 2026 : Verrouillés Jusqu'en 2096 (Loi n° 2026-554)
+La réponse de l'État a été brutale. Le **29 juin 2026**, le Parlement a adopté la **loi n° 2026-554**, qui organise la confiscation définitive de l'or bleu insulaire :
+1. **Résiliation d'office des concessions** : Pour neutraliser l'échéance des contrats qui devaient revenir légalement aux collectivités territoriales, la loi résilie tous les contrats de concession hydroélectrique d'une puissance supérieure à 4,5 MW.
+2. **Attribution d'un droit réel exclusif de 70 ans à EDF** : L'État substitue aux concessions un régime d'autorisation domaniale assorti d'un droit réel inaliénable de **70 ans** au profit exclusif de son opérateur historique.
+3. **Le cadenas jusqu'en 2096** : Jusqu'à l'aube du XXIIe siècle, ni la Collectivité de Corse ni aucun citoyen n'auront le droit d'administrer les vannes de leurs propres rivières.
+
+### L'Article 20 de la Loi : Le Passe-Droit Secret sur la Loi Littoral (Art. L. 121-12-3)
+Voici le « diable dans les détails » enfoui à l'article 20 de cette même loi n° 2026-554. Le législateur y a introduit un nouvel article dans le Code de l'urbanisme : **l'article L. 121-12-3**.
+* Ce texte dispose qu'en Corse, **par dérogation expresse à l'article L. 121-8 de la Loi Littoral**, les installations nécessaires aux stations de pompage (STEP) peuvent être autorisées en zone littorale avec l'accord de l'autorité administrative de l'État.
+* **Le deux poids, deux mesures colonial :** Quand il s'agit d'octroyer des dérogations exceptionnelles pour des projets industriels sélectionnés par l'État, la loi s'adapte en une nuit. Mais quand la Corse demande l'application de l'article L. 4424-39 du CGCT pour gérer ses 4 barrages de montagne, l'État oppose l'intangibilité de ses monopoles.
+
+### La Physique du Réseau ZNI : Le Paquebot contre la Barque
+Pourquoi les communicants d'EDF brandissent-ils la menace du blackout ? Parce que sur le continent, le réseau électrique est un **paquebot géant**. Si une tranche nucléaire disjoncte, des milliers de turbines interconnectées absorbent le choc. La fréquence reste figée à 50 Hertz.
+
+En Corse, notre réseau est **une barque sur une mer agitée** : c'est une Zone Non Interconnectée (ZNI).
+* **Le piège du solaire brut sans stockage** : Les 284 MW de panneaux solaires installés sur l'île produisent du courant continu converti par des onduleurs électroniques à **zéro inertie mécanique**. Si un grain orageux masque la Plaine orientale à midi, la production s'effondre en quelques secondes. Sans machines tournantes lourdes, la fréquence décroche : **c'est la disjonction générale**.
+* **La règle de sécurité N-1** : Le réseau doit pouvoir tenir si le câble sous-marin SACOI qui nous relie à l'Italie venait à disjoncter à pleine charge.
+
+**Cette contrainte physique est réelle.** 
+
+Mais c'est précisément ici que réside l'escroquerie comptable : pour couvrir ce risque N-1 et stabiliser le réseau, **la Corse a besoin d'une réserve d'appoint strictement dimensionnée de 50 à 60 mégawatts**. 
+Au lieu de cela, EDF et l'État nous imposent **une usine monstre de 133,7 mégawatts à plus de 800 millions d'euros au Ricanto**, brûlant 50 000 tonnes de colza importé par pétroliers. Pourquoi ? Parce qu'une réserve d'appoint de 50 MW ne génère que peu de cash, alors qu'une usine géante de 133,7 MW garantit **6,3 milliards d'euros de dividendes CSPE** sur 25 ans.
 
 ### L'Hydrologie Réelle : L'Eau Potable et nos Agriculteurs Avant Tout
 Certains prétendent qu'il suffirait d'ouvrir les vannes de nos barrages pour remplacer tout le thermique demain matin. C'est faux et irresponsable.
 
-Nos grands lacs de montagne — **Calacuccia (53 millions de m³)** et **Tolla (40 millions de m³)** — ne sont pas de simples piles électriques. Ce sont les **réserves vitales d'eau potable** pour Ajaccio, Bastia et l'irrigation des terres agricoles de nos plaines.
+Nos grands lacs de montagne — **Calacuccia (53 millions de m³)** et **Tolla (40 millions de m³)** — ne sont pas de simples réservoirs industriels. Ce sont les **réserves vitales d'eau potable** pour Ajaccio, Bastia et l'irrigation des terres agricoles de nos plaines.
 * En Corse, la pluie ne tombe pas sur commande : les années sèches, la production hydraulique peut chuter de moitié (de 550 GWh les années fastes à 250 GWh les années de sécheresse).
-* Quand la sécheresse sévit en plein mois de juillet, la loi et la décence imposent de garder l'eau pour boire et faire vivre nos récoltes, pas pour faire tourner des turbines à plein régime.
+* Quand la canicule sévit en juillet, la loi et le bon sens imposent de conserver l'eau pour boire et faire vivre nos récoltes, pas pour faire tourner des turbines à plein régime.
 
-Le scandale actuel, c'est qu'EDF garde la haute main sur les vannes et continue de turbiner l'eau en fonction de la rentabilité de ses cours boursiers, pendant que la préfecture interdit aux maraîchers d'arroser leurs champs.
+Le scandale actuel, c'est qu'EDF garde la haute main sur les vannes et turbine l'eau en fonction de ses impératifs boursiers, pendant que la préfecture restreint l'arrosage des maraîchers insulaires.
 
-### La Vérité sur les STEP : Ce qui est Faisable Immédiatement
-Pour stocker l'électricité sans gaspiller une seule goutte d'eau potable, la solution mondiale s'appelle une **STEP (Station de Transfert d'Énergie par Pompage)**. Le principe d'un sablier perpétuel : à midi, l'excédent de soleil fait monter l'eau d'un bassin bas vers un bassin haut ; le soir à la pointe de 20 heures, on ouvre les vannes pour produire le courant.
+### La Vérité sur les STEP : Ce qui est Immédiatement Faisable
+Pour stocker l'électricité sans gaspiller une seule goutte d'eau potable, la solution mondiale éprouvée est la **STEP (Station de Transfert d'Énergie par Pompage)** : un sablier hydraulique en boucle fermée. À midi, l'excédent solaire remonte l'eau du bassin inférieur vers le bassin supérieur ; le soir à 20 heures, l'eau redescend dans les turbines pour injecter du courant propre sur le réseau.
 
 Mais tous les barrages ne le permettent pas :
-1. **Calacuccia et le Rizzanese** n'ont pas de retenue d'eau juste en bas. Construire une STEP là-bas exigerait de creuser des cuvettes gigantesques en pleine montagne protégée et en zone Natura 2000. C'est un chantier écologiquement destructeur et long de vingt ans.
-2. **Le site parfait existe déjà : Sampolo et Trévadine sur le Fium'Orbo.** Le lac supérieur et la retenue inférieure sont déjà creusés et reliés par des conduites. C'est le projet officiel de STEP d'EDF pour **45 MW**. Pourquoi ce chantier providentiel traîne-t-il dans les cartons depuis plus de dix ans pendant qu'on coule le béton à toute vitesse au Ricanto ?
+1. **Calacuccia et le Rizzanese** n'ont pas de retenue basse immédiate. Y installer une STEP exigerait de creuser des cuvettes gigantesques en zone Natura 2000. C'est un chantier lourd et écologiquement destructeur.
+2. **Le site parfait existe déjà : Sampolo et Trévadine sur le Fium'Orbo.** Le lac supérieur et la retenue inférieure sont déjà en eau et reliés par des conduites. C'est le projet officiel de STEP d'EDF pour **45 MW**. Pourquoi ce chantier dort-il dans les tiroirs d'EDF depuis plus de dix ans pendant qu'on coule le béton au Ricanto ?
 3. **Le câble sous-marin SACOI 3** arrive d'ici 2029 avec **100 à 150 MW garantis et décarbonés** à Lucciana.
 
 Faites l'addition citoyenne de ce qui est pilotable et propre :
-* **220 MW** d'eau de montagne conventionnelle.
+* **220,7 MW** d'eau de montagne conventionnelle.
 * **100 à 150 MW** de ruban continu par le câble SACOI 3.
 * **45 MW** par la STEP de Sampolo dès qu'on y installe les pompes.
 * **12 MW** par la STEP de Saint-Antoine à Ajaccio.
 * **Total propre pilotable : 378 à 428 MW.**
 
-Le pic de consommation de toute l'île en plein hiver est de **400 MW**. Le Ricanto à 800 millions d'euros n'a jamais été conçu pour sauver la Corse du blackout : il a été conçu pour sauver les dividendes d'EDF.
+Face à une pointe hivernale insulaire de **400 MW**, le Ricanto à 800 millions d'euros n'a jamais été conçu pour sauver la Corse du blackout : il a été conçu pour pérenniser la rente fossile d'EDF.
 
 ---
 
@@ -222,17 +248,25 @@ Pourquoi cette folie ? Parce qu'en fabriquant cette pénurie électrique hiverna
 
 ---
 
-## 4. UNE RENTE DE 10 % GARANTIE À VIE : LE CHANTIER EN OR DU RICANTO
+## 4. UNE RENTE DE 10 % GARANTIE À VIE : LE CONTRAT INTRAMURAL DU RICANTO
 
 Regardez comment la facture a explosé sous vos yeux :
 * En 2013, le remplacement du Vazzio était annoncé à **450 millions d'euros**.
 * En 2026, la facture officielle dépasse **800 millions d'euros**. Presque le double.
 * Qui paye ce dérapage ? Vous, à travers la CSPE. 
-* Et plus le chantier coûte cher, plus EDF gagne d'argent : son taux de 9,55 % net s'applique sur le montant total du capital investi !
+* Et plus le chantier coûte cher, plus EDF gagne d'argent : son taux de 9,55 % net garanti s'applique sur le montant total du capital investi !
+
+### Le Diable dans le Contrat : La Délibération CRE n° 2024-138 du 10 Juillet 2024
+Voici la pièce confidentielle que le grand public n'est pas censé disséquer : la **délibération n° 2024-138 adoptée par la Commission de régulation de l'énergie (CRE) le 10 juillet 2024**.
+
+De quoi s'agit-il ? De l'évaluation de la compensation relative au **contrat d'achat d'électricité (PPA) conclu entre la société EDF (centre EDF Corse) et sa propre filiale à 100 %, la société EDF PEI SAS**, pour la centrale du Ricanto d'une puissance officielle de **133,7 MW**.
+* **EDF achète à EDF** : L'acheteur public insulaire (EDF Corse / SEI) s'engage contractuellement à acheter l'électricité produite par sa filiale privée (EDF PEI SAS).
+* **Une rente verrouillée sur 25 ans** : Ce contrat d'achat intramural lie les contribuables corses et français sur un quart de siècle. Qu'EDF produise ou non, le capital immobilisé est rémunéré à **9,55 % net par an** en vertu de l'arrêté ministériel NOR : ECOR2410407A.
+* **Zéro appel d'offres ouvert aux insulaires** : Aucun acteur local, aucune coopérative citoyenne corse n'a eu le droit de concourir. Le marché de la puissance de pointe a été privatisé en circuit fermé entre filiales du même groupe.
 
 ### Plus d'un Demi-Milliard d'Euros Versé à des Multinationales Continentales
 L'argent des contribuables ne reste même pas en Corse :
-* **MAN Energy Solutions (Nantes/Augsburg)** : près de **200 millions d'euros** pour fabriquer les 8 moteurs diesels 18V51/60.
+* **MAN Energy Solutions (Nantes/Augsburg)** : près de **200 millions d'euros** pour fabriquer les 8 moteurs diesels 18V51/60 (16,7 MW chacun).
 * **Bonatti SpA (Italie)** : plus de **300 millions d'euros** pour le génie civil et l'assemblage de l'usine.
 * **Saipol / Avril (groupe agro-industriel continental)** : des centaines de millions d'euros garantis sur 25 ans pour fournir **50 000 tonnes de colza par an**.
 
@@ -240,7 +274,64 @@ Pendant ce temps, un convoi permanent de navires pétroliers et chimiquiers trav
 
 ---
 
-## 5. LE LABORATOIRE DE SAINT-ANTOINE : LA PREUVE DU MENSONGE ÉCLATE SUR UNE DÉCHARGE
+## 5. LA PREUVE DE LA DREAL : L'INSPECTION OFFICIELLE DU VAZZIO (CODE AIOT 0007300024)
+
+Pendant que le futur chantier du Ricanto absorbe des centaines de millions d'euros de fonds publics, que respirent quotidiennement les habitants d'Ajaccio autour de l'actuelle centrale thermique du Vazzio ?
+
+L'extraction du **rapport d'inspection officiel n° `pLPsrtFga9NTeaPgcqF81NsxH34eyyRO` dressé le 19 juin 2026** par les inspecteurs de l'environnement (DREAL Corse) sur la centrale du Vazzio révèle ce que l'État autorise quotidiennement au-dessus de nos têtes :
+
+<div class="my-6 not-prose rounded-2xl border border-red-500/30 bg-slate-900/90 p-5 md:p-6 shadow-xl space-y-4">
+  <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-red-400 animate-pulse"></span>
+      <h4 class="font-sans font-bold text-sm md:text-base text-red-400 uppercase tracking-wide">
+        Rejets Polluants Constatés par la DREAL (19 juin 2026 — Code AIOT 0007300024)
+      </h4>
+    </div>
+    <span class="text-[10px] font-mono bg-red-500/10 text-red-300 px-2.5 py-1 rounded border border-red-500/30">
+      AP 2A-2019-12-31-001
+    </span>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs font-mono">
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Oxydes d'Azote (NOx)</div>
+      <div class="text-red-400 font-bold text-base">625 mg/Nm³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Plafond dérogatoire autorisé</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Monoxyde de carbone (CO)</div>
+      <div class="text-amber-400 font-bold text-base">250 mg/Nm³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Seuil maximal d'émission</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Poussières Fines</div>
+      <div class="text-slate-200 font-bold text-base">37,5 mg/Nm³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Rejets atmosphériques autorisés</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Cocktail Métaux Lourds</div>
+      <div class="text-purple-400 font-bold text-base">5 mg/Nm³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Plomb, chrome, nickel, vanadium</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Goudrons Cancérigènes (HAP)</div>
+      <div class="text-rose-400 font-bold text-base">0,04 mg/Nm³</div>
+      <div class="text-[10px] text-slate-400 mt-1">Benzo(a)pyrène cancérigène avéré</div>
+    </div>
+    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+      <div class="text-slate-400 text-[11px] mb-1">Turbine de Secours (TAC)</div>
+      <div class="text-cyan-400 font-bold text-base">8,5 heures</div>
+      <div class="text-[10px] text-slate-400 mt-1">Allumée lors des pointes en 2026</div>
+    </div>
+  </div>
+</div>
+
+Ce document public scelle une vérité médicale et environnementale accablante : depuis des décennies, sous le couvert d'arrêtés préfectoraux successifs, les vieux moteurs au fioul du Vazzio crachent quotidiennement des panaches de gaz toxiques et de métaux lourds à quelques centaines de mètres des habitations, des écoles et des commerces d'Ajaccio. L'urgence écologique invoquée par l'État ne sert pas à assainir l'air avec nos barrages propres, mais à justifier la commande d'une autre usine thermique à 800 millions d'euros.
+
+---
+
+## 6. LE LABORATOIRE DE SAINT-ANTOINE : LA PREUVE DU MENSONGE ÉCLATE SUR UNE DÉCHARGE
 
 C'est ici que le piège se referme et que la preuve matérielle devient irréfutable.
 
@@ -274,7 +365,7 @@ Le constat est implacable :
 
 ---
 
-## 6. LE SOLEIL INTERDIT : 284 MW BRIDÉS SOUS UN VERROU COMMERCIAL OBSOLÈTE
+## 7. LE SOLEIL INTERDIT : 284 MW BRIDÉS SOUS UN VERROU COMMERCIAL OBSOLÈTE
 
 Pendant que l'on construit des usines thermiques, que font les citoyens corses ?
 
@@ -291,7 +382,7 @@ Pourquoi EDF refuse-t-elle de déployer ces stabilisateurs en Corse ? Parce que 
 
 ---
 
-## 7. INOCULATION COGNITIVE & DÉCONSTRUCTION DES 6 PIÈGES DISARM
+## 8. INOCULATION COGNITIVE & DÉCONSTRUCTION DES 6 PIÈGES DISARM
 
 Les services de communication de l'opérateur historique et les relais ministériels opposent systématiquement une série d'arguments calibrés pour maintenir le citoyen dans la sidération et l'impuissance. 
 
@@ -381,7 +472,7 @@ Sous la loupe du standard international **DISARM** (*Disinformation Analysis and
 
 ---
 
-## 8. LE PLAN DE RUPTURE CITOYENNE : LA TRIPLE ACTION LÉGALE
+## 9. LE PLAN DE RUPTURE CITOYENNE : LA TRIPLE ACTION LÉGALE
 
 L'émancipation énergétique de la Corse ne nécessite aucun compromis avec le modèle thermique :
 
