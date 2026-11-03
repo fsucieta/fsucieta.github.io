@@ -1,0 +1,148 @@
+---
+// Vision 2 : Le Grand Journal d'Investigation Déclassifié (Editorial Cinema)
+// localhost:4330/proto/vision-2-cinema/
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allEnquetes = await getCollection('enquetes');
+const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
+const dossiers = idsFinalises
+  .map(id => allEnquetes.find(e => e.data.id === id))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
+---
+
+<Layout title="L'OCHJU — Grand Journal d'Investigation Déclassifié (Vision 2)">
+  <div class="min-h-screen bg-[#07090e] text-[#e2e8f0] font-serif selection:bg-amber-500 selection:text-black">
+    
+    <!-- EN-TÊTE DE PRESSE D'INVESTIGATION MONUMENTALE -->
+    <header class="border-b-2 border-stone-800 bg-[#05060a] px-6 py-6 sticky top-0 z-40 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <!-- Switch Prototypes -->
+        <div class="font-mono text-xs flex items-center gap-2">
+          <span class="text-stone-500">Switch :</span>
+          <a href="../vision-1-console/" class="px-2.5 py-1 bg-stone-900 hover:bg-stone-800 text-stone-300 rounded text-[11px] border border-stone-700">V1 : CONSOLE</a>
+          <a href="./" class="px-2.5 py-1 bg-amber-500 text-black font-bold rounded text-[11px]">V2 : JOURNAL CINÉMA</a>
+          <a href="../vision-3-scanner/" class="px-2.5 py-1 bg-stone-900 hover:bg-stone-800 text-stone-300 rounded text-[11px] border border-stone-700">V3 : SCANNER FOYER</a>
+        </div>
+
+        <!-- Titre de Greffe Suprême -->
+        <div class="text-center">
+          <h1 class="text-3xl sm:text-4xl font-black tracking-widest text-[#f8fafc] font-serif uppercase">
+            L'OCHJU
+          </h1>
+          <p class="font-mono text-[9px] uppercase tracking-[0.3em] text-amber-400/90 mt-1">
+            Revue Médico-Légale & Pièces Déclassifiées de Corse
+          </p>
+        </div>
+
+        <!-- Sceau Officiel -->
+        <div class="font-mono text-right text-[10px] text-stone-500 hidden md:block">
+          <div>ÉDITION DU GREFFE SOUVERAIN</div>
+          <div class="text-amber-400 font-bold">100% OPPOSABLE EN JUSTICE</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MANCHETTE ÉDITORIALE MONUMENTALE (The Big Short Style) -->
+    <section class="max-w-5xl mx-auto px-6 py-16 border-b border-stone-800">
+      <div class="font-mono text-xs text-amber-400 uppercase tracking-widest mb-4 flex items-center gap-3">
+        <span class="w-2.5 h-2.5 bg-amber-400"></span>
+        <span>ACTE D'AUTORITÉ PUBLIQUE · RÉVÉLATION PRINCIPALE</span>
+      </div>
+
+      <h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-[1.05] mb-8 font-serif">
+        1 725 000 000 € siphonnes chaque annee. <br/>
+        <span class="italic text-stone-400 font-normal">Voici les preuves physiques et les noms des societes.</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-stone-800 font-sans">
+        <div class="space-y-1">
+          <span class="font-mono text-[11px] uppercase text-stone-500">Coût direct par famille</span>
+          <span class="block text-3xl font-mono font-black text-amber-300">10 475,51 €</span>
+          <span class="text-xs text-stone-400 block">Pour chacune des 164 675 résidences principales de l'île.</span>
+        </div>
+        <div class="space-y-1">
+          <span class="font-mono text-[11px] uppercase text-stone-500">Statut des 9 Enquêtes</span>
+          <span class="block text-3xl font-mono font-black text-emerald-400">9 SCELLÉES</span>
+          <span class="text-xs text-stone-400 block">Adossées aux rapports de la Cour des Comptes et cadastre DGFiP.</span>
+        </div>
+        <div class="space-y-1">
+          <span class="font-mono text-[11px] uppercase text-stone-500">Doctrine Citoyenne</span>
+          <span class="block text-3xl font-mono font-black text-white">ZÉRO PROCÈS</span>
+          <span class="text-xs text-stone-400 block">L'OCHJU forge les munitions, les citoyens saisissent les tribunaux.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LE FEUILLETOIR DES 9 DOSSIERS DÉCLASSIFIÉS -->
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+      {dossiers.map((dossier, i) => {
+        const d = dossier.data;
+        const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+        const imgPath = d.image.startsWith('http') ? d.image : `../../${d.image.replace(/^\//, '')}`;
+        return (
+          <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-stone-800 pb-20 group">
+            
+            <!-- Index & Cote Latérale -->
+            <div class="md:col-span-3 font-mono space-y-2">
+              <span class="text-4xl font-black text-stone-800 group-hover:text-amber-400/80 transition font-mono">
+                #{String(i + 1).padStart(2, '0')}
+              </span>
+              <div class="text-xs text-amber-400 font-bold uppercase tracking-wider">
+                [{d.reference || `DOSSIER-${d.id}`}]
+              </div>
+              <div class="text-[10px] text-stone-500 uppercase tracking-widest">
+                {d.category}
+              </div>
+              <div class="pt-4 text-[10px] text-emerald-400 border-t border-stone-800">
+                SCELLÉ ISO 27037 : INTÈGRE
+              </div>
+            </div>
+
+            <!-- Manchette & Récit Clinique -->
+            <div class="md:col-span-9 space-y-6">
+              <h3 class="text-2xl sm:text-3xl font-black text-white group-hover:text-amber-300 transition font-serif leading-tight">
+                <a href={`../../enquetes/${dossier.slug}/`} class="hover:underline">
+                  {displayTitle}
+                </a>
+              </h3>
+
+              <!-- Document Scellé en Vis-à-Vis -->
+              <div class="relative h-64 sm:h-80 overflow-hidden bg-black border border-stone-800">
+                <img 
+                  src={imgPath} 
+                  alt={displayTitle} 
+                  class="w-full h-full object-cover filter grayscale contrast-125 opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
+                />
+                <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black via-black/80 to-transparent flex items-center justify-between font-mono text-xs">
+                  <span class="text-stone-300 text-[11px]">PIÈCE ADMINISTRATIVE SOURCE DU DOSSIER</span>
+                  <span class="text-amber-400 font-bold">CONSULTER LA PIÈCE →</span>
+                </div>
+              </div>
+
+              <p class="text-stone-300 font-sans text-sm sm:text-base leading-relaxed">
+                {d.chapeau}
+              </p>
+
+              <!-- Munitions Prêtes à l'Emploi -->
+              <div class="p-4 bg-stone-900/60 border border-stone-800 flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+                <div class="text-[11px] text-stone-400">
+                  <strong class="text-amber-400">MUNITION CITOYENNE :</strong> Téléchargez le bordereau prêt pour le tribunal administratif.
+                </div>
+                <a 
+                  href={`../../enquetes/${dossier.slug}/`}
+                  class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-black font-bold uppercase tracking-wider text-[11px] transition"
+                >
+                  OUVRIR L'INSTRUCTION DU DOSSIER
+                </a>
+              </div>
+            </div>
+
+          </article>
+        );
+      })}
+    </main>
+
+  </div>
+</Layout>

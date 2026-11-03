@@ -1,0 +1,230 @@
+---
+// Vision 1 : Console Tactique & Renseignement Souverain (OS Plein Écran)
+// localhost:4330/proto/vision-1-console/
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allEnquetes = await getCollection('enquetes');
+const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
+const dossiers = idsFinalises
+  .map(id => allEnquetes.find(e => e.data.id === id))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
+
+const dossiersData = dossiers.map(d => ({
+  id: d.data.id,
+  ref: `DOSSIER-${String(d.data.id).padStart(2, '0')}`,
+  title: d.data.title.replace(/^Enquête\s+\d+\s*:\s*/i, ''),
+  category: d.data.category,
+  chapeau: d.data.chapeau,
+  slug: d.slug,
+  image: d.data.image,
+  impact: {
+    22: { val: "10 475 €", desc: "Épargne siphonnée / foyer corse vers les sièges parisiens" },
+    18: { val: "2 140 €", desc: "Surcoût annuel énergie imposé par la rente thermique" },
+    27: { val: "38 000 000 €", desc: "Argent public englouti dans la télécabine Angelo" },
+    7: { val: "100 %", desc: "Du sous-sol minier concédé sans redevance équitable" },
+    23: { val: "5 Canadairs", desc: "Déficit structurel de bombardiers d'eau en haute saison" },
+    28: { val: "12,5 M€", desc: "Déficit transféré aux contribuables pour la Muvitarra" },
+    26: { val: "+0,18 € / L", desc: "Surtaxe de rente prélevée aux pompes insulaires" },
+    4: { val: "68 %", desc: "Pertes d'eau potable sur le réseau défaillant concédé" },
+    11: { val: "4 200 ha", desc: "Terres agricoles gelées sous servitudes militaires" }
+  }[d.data.id] || { val: "PREUVE SCELLÉE", desc: "Données administratives et judiciaires opposables" }
+}));
+---
+
+<Layout title="L'OCHJU — Console Tactique & Renseignement Citoyen (Vision 1)">
+  <div class="h-screen w-screen overflow-hidden bg-[#05070a] text-slate-100 flex flex-col font-sans select-none">
+    
+    <!-- BARRE D'ÉTAT SUPÉRIEURE (Cockpit d'État) -->
+    <header class="h-12 border-b border-[#1c2433] bg-[#080b11] px-4 flex items-center justify-between z-30 shrink-0">
+      <div class="flex items-center gap-4">
+        <a href="../" class="flex items-center gap-2.5">
+          <img src="../../logo_l_ochju.jpg" alt="Logo L'OCHJU" class="h-7 w-auto rounded border border-amber-500/50" />
+          <span class="font-serif font-black tracking-wider text-slate-100 text-sm">L'OCHJU</span>
+        </a>
+        <div class="h-4 w-px bg-slate-800"></div>
+        <div class="flex items-center gap-2 font-mono text-[10px] text-slate-400">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="text-emerald-400 font-bold uppercase tracking-widest">TACTICAL FORENSIC OS V1.0</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-slate-400">FLUX AUDITÉS : <strong class="text-amber-400">1 725 000 000 €</strong></span>
+        </div>
+      </div>
+
+      <!-- Sélecteur de Prototypes -->
+      <div class="flex items-center gap-2 font-mono text-xs">
+        <span class="text-[10px] text-slate-500 uppercase tracking-wider mr-1">Switch Prototype :</span>
+        <a href="./" class="px-2.5 py-1 bg-amber-500 text-slate-950 font-bold rounded text-[11px] shadow">V1 : CONSOLE TACTIQUE</a>
+        <a href="../vision-2-cinema/" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 rounded text-[11px] border border-slate-700">V2 : JOURNAL CINÉMA</a>
+        <a href="../vision-3-scanner/" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 rounded text-[11px] border border-slate-700">V3 : SCANNER FOYER</a>
+      </div>
+    </header>
+
+    <!-- CORPS DE LA CONSOLE TACTIQUE (3 PANNEAUX FULL-SCREEN) -->
+    <div class="flex-1 flex overflow-hidden">
+      
+      <!-- PANNEAU GAUCHE : CLASSEUR D'INSTRUCTION (Les 9 Dossiers) -->
+      <aside class="w-80 md:w-96 border-r border-[#1c2433] bg-[#070a0f] flex flex-col shrink-0">
+        <div class="p-3 border-b border-[#1c2433] bg-[#090d14] flex items-center justify-between">
+          <div class="font-mono text-[11px] font-bold text-slate-300 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>DOSSIERS D'INSTRUCTION SCELLÉS</span>
+          </div>
+          <span class="font-mono text-[10px] text-slate-500 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">9 PIÈCES</span>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-2 space-y-1.5 custom-scrollbar" id="dossiersList">
+          {dossiersData.map((d, index) => (
+            <button 
+              type="button" 
+              class={`w-full text-left p-3 rounded border transition-all text-xs flex flex-col gap-1.5 dossier-btn ${index === 0 ? 'bg-[#101724] border-amber-500/80 shadow-lg shadow-amber-500/10' : 'bg-[#090d14]/70 border-[#1c2433] hover:border-slate-700 text-slate-400'}`}
+              data-id={d.id}
+              data-ref={d.ref}
+              data-title={d.title}
+              data-category={d.category}
+              data-chapeau={d.chapeau}
+              data-slug={d.slug}
+              data-image={d.image}
+              data-impact-val={d.impact.val}
+              data-impact-desc={d.impact.desc}
+            >
+              <div class="flex items-center justify-between font-mono text-[10px]">
+                <span class="text-amber-400 font-bold">[{d.ref}]</span>
+                <span class="text-slate-500 uppercase tracking-widest text-[9px]">{d.category}</span>
+              </div>
+              <h4 class="font-serif font-bold text-slate-200 line-clamp-2 leading-snug">
+                {d.title}
+              </h4>
+              <div class="flex items-center justify-between pt-1 border-t border-[#1c2433] font-mono text-[10px]">
+                <span class="text-slate-500">IMPACT FOYER :</span>
+                <span class="text-amber-300 font-bold">{d.impact.val}</span>
+              </div>
+            </button>
+          ))}
+        </div>
+      </aside>
+
+      <!-- PANNEAU CENTRAL : CARTE SIG & GRAPHE INTERACTIF DU DOSSIER -->
+      <main class="flex-1 flex flex-col bg-[#05070a] relative overflow-hidden">
+        
+        <!-- En-tête du Panneau Central -->
+        <div class="h-10 border-b border-[#1c2433] bg-[#070a0f] px-4 flex items-center justify-between text-xs font-mono shrink-0">
+          <div class="flex items-center gap-3">
+            <span class="text-slate-500">VUE FORENSIQUE :</span>
+            <span class="text-amber-400 font-bold" id="centerRefLabel">[DOSSIER-22]</span>
+            <span class="text-slate-300 font-serif font-bold" id="centerTitleLabel">La Captation Bancaire & l'Évasion de l'Épargne</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold">
+              PREUVE DIRECTE OPPOSABLE
+            </span>
+          </div>
+        </div>
+
+        <!-- Centre Interactif : Radar Satellite / Carte / Preuve -->
+        <div class="flex-1 relative bg-slate-950 flex items-center justify-center overflow-hidden">
+          
+          <!-- Image du Dossier Plein Écran avec Grille Tactique -->
+          <img 
+            id="centerImage"
+            src="../../images/carrousel_banque_22/slide1_siege_ajaccio.jpg" 
+            alt="Visuel tactique d'instruction"
+            class="absolute inset-0 w-full h-full object-cover filter contrast-125 opacity-40 transition-all duration-500"
+          />
+          
+          <!-- Quadrillage d'ingénierie tactique par-dessus -->
+          <div class="absolute inset-0 bg-[radial-gradient(#1c2433_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
+
+          <!-- Réticule d'analyse central -->
+          <div class="relative z-10 max-w-2xl bg-[#080c14]/90 border border-amber-500/50 p-6 rounded shadow-2xl backdrop-blur-md">
+            <div class="flex items-center justify-between font-mono text-[10px] text-amber-400 border-b border-slate-800 pb-2 mb-4">
+              <span>EXTRACTION SOUVERAINE DE DONNÉES BRUTES</span>
+              <span>SHA-256 : VERIFIED</span>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <span class="text-[10px] font-mono uppercase text-slate-400 tracking-wider">MÉCANIQUE DE LA SPOLIATION :</span>
+                <p class="text-sm font-sans text-slate-200 mt-1 leading-relaxed" id="centerChapeau">
+                  Les caisses régionales captent l'épargne insulaire pour la transférer vers des produits de marché spéculatifs nationaux, asséchant le crédit aux artisans et familles de l'île.
+                </p>
+              </div>
+
+              <!-- Bloc Double Étagère Chiffré -->
+              <div class="grid grid-cols-2 gap-4 p-4 bg-[#05070a] border border-[#1c2433] rounded">
+                <div>
+                  <span class="block text-[9px] font-mono text-slate-500 uppercase">Impact Direct Citoyen</span>
+                  <span class="block text-2xl font-mono font-black text-amber-300 mt-0.5" id="centerImpactVal">10 475 €</span>
+                </div>
+                <div>
+                  <span class="block text-[9px] font-mono text-slate-500 uppercase">Portée médico-légale</span>
+                  <span class="block text-xs font-mono text-emerald-400 mt-1 font-bold">100% OPPOSABLE AU JUGE</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <span class="text-[10px] font-mono text-slate-500" id="centerImpactDesc">
+                  Épargne siphonnée / foyer corse vers les sièges parisiens
+                </span>
+                <a 
+                  id="centerDossierLink"
+                  href="../../enquetes/22-la-captation-bancaire-et-epargne/" 
+                  class="px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-400 hover:brightness-110 text-slate-950 font-mono text-xs font-black rounded uppercase tracking-wider transition shadow-lg shadow-amber-500/20"
+                >
+                  OUVRIR LE DOSSIER COMPLET →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BARRE INFÉRIEURE : LE RACK DES MUNITIONS CITOYENNES -->
+        <div class="h-16 border-t border-[#1c2433] bg-[#070a0f] px-6 flex items-center justify-between shrink-0 font-mono text-xs">
+          <div class="flex items-center gap-3">
+            <span class="text-slate-500 text-[11px] font-bold uppercase tracking-wider">MUNITIONS LÉGALES DISPONIBLES :</span>
+            <div class="flex items-center gap-2">
+              <a href="#" class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 hover:border-amber-400 hover:text-amber-300 transition text-[11px] flex items-center gap-1.5">
+                <span>01. KIT PRESSE & OCCRP</span>
+              </a>
+              <a href="#" class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 hover:border-amber-400 hover:text-amber-300 transition text-[11px] flex items-center gap-1.5">
+                <span>02. BORDEREAU DE TRANSMISSION TRIBUNAL</span>
+              </a>
+              <a href="#" class="px-3 py-1.5 rounded bg-slate-900 border border-slate-700 text-slate-200 hover:border-amber-400 hover:text-amber-300 transition text-[11px] flex items-center gap-1.5">
+                <span>03. SOMMATION D'ÉLUS & DÉLIBÉRATION</span>
+              </a>
+            </div>
+          </div>
+          <span class="text-[10px] text-slate-500 hidden xl:inline">
+            DOCTRINE SOUVERAINE : L'OCHJU FORGE LES ARMES, LE CITOYEN AGIT EN JUSTICE
+          </span>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script is:inline>
+    // Interaction dynamique du Cockpit Tactique
+    document.querySelectorAll('.dossier-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.dossier-btn').forEach(b => {
+          b.classList.remove('bg-[#101724]', 'border-amber-500/80', 'shadow-lg', 'shadow-amber-500/10');
+          b.classList.add('bg-[#090d14]/70', 'border-[#1c2433]', 'text-slate-400');
+        });
+        btn.classList.add('bg-[#101724]', 'border-amber-500/80', 'shadow-lg', 'shadow-amber-500/10');
+        btn.classList.remove('bg-[#090d14]/70', 'border-[#1c2433]', 'text-slate-400');
+
+        const d = btn.dataset;
+        document.getElementById('centerRefLabel').textContent = `[${d.ref}]`;
+        document.getElementById('centerTitleLabel').textContent = d.title;
+        document.getElementById('centerChapeau').textContent = d.chapeau;
+        document.getElementById('centerImpactVal').textContent = d.impactVal;
+        document.getElementById('centerImpactDesc').textContent = d.impactDesc;
+        document.getElementById('centerDossierLink').href = `../../enquetes/${d.slug}/`;
+        if (d.image) {
+          const imgPath = d.image.startsWith('http') ? d.image : `../../${d.image.replace(/^\//, '')}`;
+          document.getElementById('centerImage').src = imgPath;
+        }
+      });
+    });
+  </script>
+</Layout>

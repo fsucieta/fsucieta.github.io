@@ -1,0 +1,115 @@
+---
+// CarteDossierScelle.astro - Composant exclusif L'OCHJU
+// Remplace le style "carte blog/SaaS IA" par une chemise d'instruction scellée
+interface Props {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  chapeau: string;
+  image: string;
+  reference?: string;
+  coutFoyer?: string;
+}
+
+const { id, slug, title, category, chapeau, image, reference = `DOSSIER-${String(id).padStart(2, '0')}`, coutFoyer } = Astro.props;
+const imgPath = image.startsWith('http') ? image : `./${image.replace(/^\//, '')}`;
+const displayTitle = title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+
+// Montants de spoliation directe ou impact citoyen par dossier
+const impactsFoyer: Record<number, { montant: string; label: string }> = {
+  22: { montant: "10 475 €", label: "Captation / foyer" },
+  18: { montant: "2 140 €", label: "Surcoût énergie / foyer" },
+  27: { montant: "38 000 000 €", label: "Argent public englouti" },
+  7: { montant: "100 %", label: "Minerais concédés au privé" },
+  23: { montant: "5 Canadairs", label: "Déficit sécurité civile" },
+  28: { montant: "12 500 000 €", label: "Dette transport transférée" },
+  26: { montant: "+0,18 € / L", label: "Rente monopole carburant" },
+  4: { montant: "68 %", label: "Réseau d'eau fuyard" },
+  11: { montant: "4 200 ha", label: "Emprise militaire gelée" }
+};
+
+const impact = impactsFoyer[id];
+---
+
+<article 
+  class="dossier-scelle-card group relative flex flex-col bg-[#0b0f17] border border-[#1e293b] hover:border-amber-500/70 transition-all duration-300 shadow-2xl hover:shadow-amber-500/10 overflow-hidden"
+  data-title={displayTitle.toLowerCase()}
+  data-category={category.toLowerCase()}
+  data-chapeau={chapeau.toLowerCase()}
+  data-id={id}
+>
+  <!-- Bande supérieure de cote officielle (En-tête de chemise judiciaire) -->
+  <header class="flex items-center justify-between px-4 py-2 bg-[#06080d] border-b border-[#1e293b] font-mono text-[10px]">
+    <div class="flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      <span class="text-amber-400 font-bold tracking-wider">[{reference}]</span>
+      <span class="text-slate-400 uppercase tracking-widest hidden sm:inline">· {category}</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-slate-500">ISO 27037 SCELLÉ</span>
+    </div>
+  </header>
+
+  <!-- Visuel avec texture documentaire et ratio cinéma -->
+  <div class="relative h-48 bg-slate-950 overflow-hidden">
+    <img 
+      src={imgPath} 
+      alt={displayTitle} 
+      class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f17] via-transparent to-transparent opacity-80"></div>
+    
+    <!-- Tampon Impact direct foyer (Le Double Étagère) -->
+    {impact && (
+      <div class="absolute bottom-3 left-3 bg-[#06080d]/95 border border-amber-500/50 px-3 py-1.5 rounded-sm shadow-xl backdrop-blur">
+        <span class="block text-[9px] font-mono uppercase text-slate-400 tracking-wider leading-none">{impact.label}</span>
+        <span class="block text-base font-mono font-black text-amber-300 leading-tight mt-0.5">{impact.montant}</span>
+      </div>
+    )}
+
+    <!-- Tampon statut d'instruction -->
+    <div class="absolute top-3 right-3 bg-[#06080d]/90 border border-emerald-500/40 text-emerald-400 px-2.5 py-1 text-[9px] font-mono font-bold uppercase tracking-widest">
+      SCELLÉ & OPPOSABLE
+    </div>
+  </div>
+
+  <!-- Corps de la pièce -->
+  <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+    <div>
+      <h3 class="text-base sm:text-lg font-serif font-bold text-slate-100 group-hover:text-amber-300 transition duration-200 leading-snug">
+        <a href={`./enquetes/${slug}/`} class="hover:underline">
+          {displayTitle}
+        </a>
+      </h3>
+      <p class="text-slate-400 text-xs line-clamp-3 mt-2.5 leading-relaxed font-sans">
+        {chapeau}
+      </p>
+    </div>
+
+    <!-- Barre d'action et munitions citoyennes -->
+    <div class="pt-3 border-t border-[#1e293b] flex items-center justify-between text-xs font-mono">
+      <a 
+        href={`./enquetes/${slug}/`}
+        class="inline-flex items-center gap-1.5 text-amber-400 group-hover:text-amber-300 font-bold uppercase tracking-wider text-[11px] hover:underline"
+      >
+        <span>OUVRIR LE DOSSIER</span>
+        <span class="transition-transform group-hover:translate-x-1 font-sans">→</span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          class="card-share-btn px-2.5 py-1 rounded bg-[#06080d] hover:bg-amber-500 hover:text-slate-950 text-slate-400 border border-slate-800 hover:border-amber-400 text-[10px] font-mono uppercase tracking-wider transition"
+          data-share-title={displayTitle}
+          data-share-url={`./enquetes/${slug}/`}
+          data-share-chapeau={chapeau}
+          title="Partager les pièces du dossier"
+          onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
+        >
+          Diffuser
+        </button>
+      </div>
+    </div>
+  </div>
+</article>

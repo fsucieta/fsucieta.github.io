@@ -1,0 +1,261 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import GisMap from '../../components/GisMap.astro';
+import CadaGenerator from '../../components/CadaGenerator.astro';
+import DoctrinePreuves from '../../components/DoctrinePreuves.astro';
+import FoncierDvfRadar from '../../components/FoncierDvfRadar.astro';
+
+const allEnquetes = await getCollection('enquetes');
+const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
+const enquetesFinalisees = idsFinalises
+  .map(id => allEnquetes.find(e => e.data.id === id))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
+---
+
+<Layout 
+  title="L'OCHJU — コルシカ市民調査・法科学オープンデータメディア (L'aveti ?)"
+  description="コルシカ初の市民法科学調査メディア。ISO/IEC 27037認証済みの9大調査記録を完全公開。"
+  canonicalUrl="https://fsucieta.github.io/ja/"
+  image="/alerte_censure_lochju.jpg"
+  lang="ja"
+>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <style is:global>
+    :root {
+      --lochju-bg: #030304;
+      --lochju-surface: #0a0b0e;
+      --lochju-surface-hover: #12141a;
+      --lochju-border: #1a1d24;
+      --lochju-border-active: #d4af37;
+      --lochju-text-title: #ffffff;
+      --lochju-text-body: #d1d5db;
+      --lochju-text-muted: #848a96;
+      --lochju-gold: #f59e0b;
+      --lochju-gold-light: #fbbf24;
+      --lochju-gold-glow: rgba(245, 158, 11, 0.25);
+    }
+    body {
+      background-color: var(--lochju-bg) !important;
+      color: var(--lochju-text-body) !important;
+      font-family: 'Inter', system-ui, sans-serif !important;
+    }
+    .font-press {
+      font-family: 'Newsreader', Georgia, serif !important;
+      letter-spacing: -0.015em;
+    }
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace !important;
+      font-variant-numeric: tabular-nums;
+    }
+    .theme-surface {
+      background-color: var(--lochju-surface) !important;
+      border-color: var(--lochju-border) !important;
+    }
+    .theme-surface:hover {
+      background-color: var(--lochju-surface-hover) !important;
+      border-color: var(--lochju-border-active) !important;
+    }
+    .theme-gold-text {
+      color: var(--lochju-gold-light) !important;
+    }
+  </style>
+
+  <!-- HEADER OFFICIEL L'OCHJU -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-2.5 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-1 sm:gap-4">
+      
+      <!-- Gauche : Ancrage -->
+      <div class="hidden md:block w-44 lg:w-48 shrink-0">
+        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block opacity-75 hover:opacity-100 transition">
+          Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong>
+        </span>
+        <span class="text-[9px] font-mono text-slate-600 block">
+          国際調査デスク
+        </span>
+      </div>
+
+      <!-- Centre : Logo Officiel Authentique Intact 100% -->
+      <a href="/ja/" class="group flex items-center py-1 shrink min-w-0" aria-label="L'OCHJU">
+        <img 
+          src="/logo_l_ochju_intact_100pct.png" 
+          alt="L'OCHJU" 
+          class="h-6 sm:h-9 md:h-12 w-auto max-w-[130px] sm:max-w-none object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.25)] transition duration-300"
+        />
+      </a>
+
+      <!-- Droite : Actions Soutien & Sélecteur Langue Global -->
+      <div class="flex items-center justify-end gap-1.5 sm:gap-2 shrink-0">
+        <a href="./soutenir/" class="text-xs font-mono bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-amber-400/50 transition flex items-center gap-1 sm:gap-1.5 font-bold text-[10px] sm:text-xs tracking-wider shrink-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> <span>活動を支援する</span>
+        </a>
+        
+        <!-- Dropdown Sélecteur International -->
+        <div class="relative group/lang">
+          <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-2.5 py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold">
+            <span>JA</span> <span class="text-[10px]">▼</span>
+          </button>
+          <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-32 z-50 font-mono text-xs">
+            <a href="/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Français</span> <span class="text-[10px] text-slate-500">FR</span></a>
+            <a href="/en/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>English</span> <span class="text-[10px] text-slate-500">EN</span></a>
+            <a href="/it/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Italiano</span> <span class="text-[10px] text-slate-500">IT</span></a>
+            <a href="/es/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Español</span> <span class="text-[10px] text-slate-500">ES</span></a>
+            <a href="/pt/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Português</span> <span class="text-[10px] text-slate-500">PT</span></a>
+            <a href="/ru/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Русский</span> <span class="text-[10px] text-slate-500">RU</span></a>
+            <a href="/zh/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>中文</span> <span class="text-[10px] text-slate-500">ZH</span></a>
+            <a href="/ja/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>日本語</span> <span class="text-[10px] text-slate-500">JA</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- NAVIGATION RAPIDE STICKY -->
+  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[64px] md:top-[80px] z-40 py-2 px-4 shadow-md overflow-x-auto" aria-label="Section navigation">
+    <div class="max-w-7xl mx-auto flex flex-nowrap overflow-x-auto whitespace-nowrap scrollbar-none items-center justify-start sm:justify-center gap-1.5 sm:gap-2 text-xs font-mono-tech px-2">
+      <a href="#memorandum" class="px-3.5 py-1.5 rounded-lg text-amber-300 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 transition font-bold">最高覚書</a>
+      <a href="#enquetes" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">封印された9大調査</a>
+      <a href="#gis-map" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">360マップ</a>
+      <a href="#cada" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">CADA開示請求</a>
+      <a href="#foncier-dvf" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">DVFレーダー</a>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-20">
+    
+    <!-- 1. LE GRAND MÉMORANDUM -->
+    <section class="relative rounded-3xl theme-surface border p-6 sm:p-10 shadow-2xl overflow-hidden" id="memorandum">
+      <div class="max-w-4xl space-y-6">
+        <div class="flex flex-wrap items-center gap-2.5 font-mono-tech text-xs">
+          <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-black tracking-wider uppercase">
+            ISO/IEC 27037 国際標準封印最高審査文書
+          </span>
+          <span class="text-amber-400 font-bold">• FSUCIETÀ</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-press font-black text-white leading-tight">
+          債務の逆転： <br/>
+          <span class="theme-gold-text">コルシカ解放覚書</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-200 font-press leading-relaxed">
+          毎年コルシカから吸い上げられる47.2億ユーロ（1世帯あたり28,693ユーロ）の法科学的実証と国民主権のための法的枠組み。
+        </p>
+
+        <div class="pt-4 flex flex-wrap gap-4 font-mono-tech text-xs">
+          <a href="./soutenir/" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-black font-black uppercase tracking-wider shadow-lg hover:brightness-110 transition">
+            活動を支援する
+          </a>
+          <a href="#enquetes" class="px-5 py-2.5 rounded-xl bg-black/60 border border-white/20 text-slate-200 hover:text-white hover:border-amber-400 transition font-bold">
+            封印された9大調査 ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LES 9 ENQUÊTES SCELLÉES -->
+    <section class="space-y-8" id="enquetes">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono-tech theme-gold-text font-bold uppercase tracking-widest block mb-2">
+            CORPUS JURIDIQUE OPPOSABLE
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-press font-black text-white">
+            封印された9大司法級調査記録
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1 max-w-2xl font-press">
+            全地籍データ、利権契約書、監査計算はISO/IEC 27037に準拠して公開されています。
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {enquetesFinalisees.map((enquete, index) => {
+          const d = enquete.data;
+          const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+          const imgPath = d.image.startsWith('http') ? d.image : `/${d.image.replace(/^\//, '')}`;
+          const isLead = index === 0;
+
+          return (
+            <article class={`enquete-card theme-surface border rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 group ${isLead ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'}`}>
+              <div class="p-4 bg-black/40 border-b border-white/10 flex items-center justify-between font-mono-tech text-[11px]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span class="theme-gold-text font-bold">[{d.reference || `DOSSIER-${d.id}`}]</span>
+                  <span class="text-slate-400 uppercase tracking-wider hidden sm:inline">· {d.category}</span>
+                </div>
+                <span class="bg-emerald-500/10 text-emerald-400 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-emerald-500/30 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>封印記録</span>
+                </span>
+              </div>
+
+              <div class={`relative overflow-hidden bg-black ${isLead ? 'h-64 sm:h-72' : 'h-48'}`}>
+                <img 
+                  src={imgPath} 
+                  alt={displayTitle} 
+                  class="w-full h-full object-cover filter brightness-90 contrast-110 group-hover:scale-105 group-hover:brightness-100 transition duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div>
+                  <h3 class={`font-press font-bold text-white group-hover:text-amber-300 transition leading-snug ${isLead ? 'text-2xl sm:text-3xl' : 'text-lg sm:text-xl'}`}>
+                    <a href={`/enquetes/${enquete.slug}/`} class="hover:underline">
+                      {displayTitle}
+                    </a>
+                  </h3>
+                  <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mt-3 leading-relaxed font-press">
+                    {d.chapeau}
+                  </p>
+                </div>
+
+                <div class="pt-4 border-t border-white/10 flex items-center justify-between font-mono-tech text-xs">
+                  <a href={`/enquetes/${enquete.slug}/`} class="text-amber-400 group-hover:text-amber-300 font-bold flex items-center gap-1.5">
+                    <span>記録を閲覧する</span> <span>→</span>
+                  </a>
+                  <span class="text-[10px] text-slate-500 uppercase">ISO 27037 SCELLÉ</span>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- 3. OUTILS SOUVERAINS (SIG 360, CADA, DVF) -->
+    <div id="gis-map" class="space-y-4">
+      <GisMap />
+    </div>
+
+    <div id="foncier-dvf" class="space-y-4">
+      <FoncierDvfRadar />
+    </div>
+
+    <div id="cada" class="space-y-4">
+      <CadaGenerator />
+    </div>
+
+    <!-- OUTRO RITUELLE -->
+    <div class="pt-8 border-t border-white/10 text-center space-y-4">
+      <p class="font-press italic text-amber-400/90 text-sm max-w-3xl mx-auto">
+        « 共有された知識こそが我らの対抗権力。L'OCHJU、それは二度と逸らさない眼差し。— L'OCHJU 調査班 »
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-10 px-6 mt-20 text-center font-mono-tech text-xs text-slate-500 space-y-3">
+    <div class="text-slate-300 font-bold uppercase tracking-widest">
+      L'OCHJU — CELLULE D'INVESTIGATION CITOYENNE & OPEN DATA
+    </div>
+    <div class="text-[11px] text-slate-600 font-sans max-w-3xl mx-auto leading-relaxed">
+      Édition citoyenne non professionnelle à but non lucratif (LCEN) · ISO/IEC 27037.
+    </div>
+  </footer>
+</Layout>

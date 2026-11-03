@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'OCHJU — Laboratoire de Rupture UI/UX</title>
+  
+  <!-- Polices Éditoriales de Prestige : Cinzel Decorative + Syne + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=JetBrains+Mono:wght@400;600;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      /* Palette par défaut : 1. Granit de Bavella */
+      --bg-body: #101216;
+      --bg-card: #171a21;
+      --border-card: #272c38;
+      --text-hero: #ffffff;
+      --text-sub: #94a3b8;
+      --gold-accent: #fbbf24;
+      --gold-glow: rgba(251, 191, 36, 0.35);
+      --font-display: 'Syne', sans-serif;
+      --font-title: 'Cinzel', serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body[data-palette="palette3"] {
+      /* Palette 3 : Noir Absolu & Or Pur 24K */
+      --bg-body: #000000;
+      --bg-card: #080808;
+      --border-card: #1f1f1f;
+      --text-hero: #ffffff;
+      --text-sub: #737373;
+      --gold-accent: #ffd700;
+      --gold-glow: rgba(255, 215, 0, 0.5);
+    }
+
+    body[data-palette="palette5"] {
+      /* Palette 5 : Émeraude Profonde & Maquis */
+      --bg-body: #040d07;
+      --bg-card: #08170d;
+      --border-card: #13331d;
+      --text-hero: #f0fdf4;
+      --text-sub: #86efac;
+      --gold-accent: #f59e0b;
+      --gold-glow: rgba(245, 158, 11, 0.4);
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-hero);
+      font-family: var(--font-display);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .font-cinzel { font-family: var(--font-title); }
+    .font-mono-custom { font-family: var(--font-mono); }
+
+    .gold-text {
+      color: var(--gold-accent);
+      text-shadow: 0 0 25px var(--gold-glow);
+    }
+
+    .gold-border {
+      border-color: var(--gold-accent);
+    }
+
+    .card-dynamic {
+      background-color: var(--bg-card);
+      border-color: var(--border-card);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card-dynamic:hover {
+      border-color: var(--gold-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -10px var(--gold-glow);
+    }
+
+    /* Grille de fond animée discrète */
+    .bg-grid {
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-grid selection:bg-amber-400 selection:text-black" data-palette="palette1">
+
+  <!-- ================= SWITCHER DE PALETTES VISIBLE & FRONTAL ================= -->
+  <aside class="fixed top-24 right-6 z-50 bg-black/90 border-2 border-amber-400 p-4 rounded-2xl shadow-2xl backdrop-blur-2xl flex flex-col gap-2 font-mono-custom text-xs">
+    <div class="flex items-center justify-between gap-3 pb-2 border-b border-white/20">
+      <span class="text-amber-400 font-black tracking-widest text-[11px] uppercase">SÉLECTEUR DE PALETTE</span>
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+    </div>
+    <div class="flex flex-col gap-1.5 pt-1">
+      <button onclick="setPalette('palette1')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#171a21] hover:border-amber-400 text-left flex items-center justify-between gap-3 text-slate-200 transition font-bold">
+        <span>1. Granit de Bavella</span>
+        <span class="w-3 h-3 rounded-full bg-[#fbbf24]"></span>
+      </button>
+      <button onclick="setPalette('palette3')" class="px-3 py-2 rounded-xl border border-stone-700 bg-black hover:border-amber-400 text-left flex items-center justify-between gap-3 text-white transition font-bold">
+        <span>3. Noir 24K Absolu</span>
+        <span class="w-3 h-3 rounded-full bg-[#ffd700]"></span>
+      </button>
+      <button onclick="setPalette('palette5')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#08170d] hover:border-amber-400 text-left flex items-center justify-between gap-3 text-emerald-200 transition font-bold">
+        <span>5. Émeraude Maquis</span>
+        <span class="w-3 h-3 rounded-full bg-[#15803d]"></span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= HEADER SUPRÊME : LE LOGO PUR DÉGAGÉ ================= -->
+  <header class="border-b border-white/10 sticky top-0 z-40 backdrop-blur-xl bg-black/40 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo Pur Détouré (Zéro cadre bleu) -->
+      <a href="../" class="flex items-center gap-4 group">
+        <img 
+          src="../logo_l_ochju_pur_dore.png" 
+          alt="L'OCHJU" 
+          class="h-12 md:h-14 w-auto object-contain filter drop-shadow-[0_0_15px_rgba(251,191,36,0.5)] group-hover:drop-shadow-[0_0_25px_rgba(251,191,36,0.8)] transition duration-300" 
+        />
+        <div class="hidden sm:block">
+          <span class="font-cinzel text-xl font-black tracking-widest text-white block leading-none">L'OCHJU</span>
+          <span class="font-mono-custom text-[9px] uppercase tracking-[0.25em] text-amber-400 block mt-1">Cellule d'Investigation Médico-Légale</span>
+        </div>
+      </a>
+
+      <!-- Actions Rapides -->
+      <div class="flex items-center gap-3 font-mono-custom text-xs">
+        <a href="../analyse-globale-finale/" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-black font-black uppercase tracking-wider shadow-lg transition">
+          Mémorandum
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MANCHETTE DE CHOC (RUPTURE ÉDITORIALE) ================= -->
+  <section class="max-w-7xl mx-auto px-6 pt-16 pb-12">
+    
+    <div class="flex items-center gap-3 font-mono-custom text-xs uppercase tracking-widest text-amber-400 mb-4">
+      <span class="w-2.5 h-2.5 bg-amber-400 animate-ping"></span>
+      <span>INVERSION DE LA DETTE · PREUVES OPPOSABLES AU JUGE</span>
+    </div>
+
+    <!-- Le Grand Titre de Rupture -->
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.02] max-w-5xl mb-8">
+      La Corse n'est pas pauvre. <br/>
+      <span class="gold-text">On lui vole 4,72 milliards chaque année.</span>
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/10 font-mono-custom">
+      <div class="p-5 rounded-2xl card-dynamic border">
+        <span class="text-[10px] uppercase text-stone-400 block">Confisqué par Foyer</span>
+        <span class="text-3xl sm:text-4xl font-black gold-text block mt-1">28 693 € <span class="text-xs text-stone-400">/ an</span></span>
+        <span class="text-xs text-stone-400 block mt-2">Pour chacune des 164 675 résidences principales insulaires.</span>
+      </div>
+
+      <div class="p-5 rounded-2xl card-dynamic border">
+        <span class="text-[10px] uppercase text-stone-400 block">Dossiers d'Instruction</span>
+        <span class="text-3xl sm:text-4xl font-black text-white block mt-1">9 GRANDES ENQUÊTES</span>
+        <span class="text-xs text-stone-400 block mt-2">Banques, fioul lourd, Angelo, cadastre minier, fret, eau potable.</span>
+      </div>
+
+      <div class="p-5 rounded-2xl card-dynamic border">
+        <span class="text-[10px] uppercase text-stone-400 block">Statut Juridique</span>
+        <span class="text-3xl sm:text-4xl font-black text-emerald-400 block mt-1">ISO/IEC 27037</span>
+        <span class="text-xs text-stone-400 block mt-2">Preuves scellées sous SHA-256. 100% opposables en justice.</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= BENTO GRID DYNAMIQUE DES 9 ENQUÊTES ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    
+    <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-cinzel font-black text-white">Les 9 Dossiers d'Instruction</h2>
+        <p class="font-mono-custom text-xs text-stone-400 mt-1">Cliquez sur un dossier pour ouvrir les pièces et les preuves chiffrées.</p>
+      </div>
+      <span class="font-mono-custom text-xs px-3 py-1 rounded-full border border-amber-400/40 text-amber-400 bg-amber-400/10 font-bold hidden sm:inline">
+        TOUTES PIÈCES DÉCLASSIFIÉES
+      </span>
+    </div>
+
+    <!-- Grille Asymétrique Évoluée -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- DOSSIER 22 (Grand Format Asymétrique) -->
+      <a href="../enquetes/22-la-captation-bancaire-et-epargne/" class="md:col-span-2 card-dynamic border rounded-3xl p-6 sm:p-8 flex flex-col justify-between group overflow-hidden relative">
+        <div class="flex items-center justify-between font-mono-custom text-xs mb-4">
+          <span class="px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 font-bold border border-amber-400/40">
+            [DOSSIER-22] · ÉPARGNE & BANQUES
+          </span>
+          <span class="text-rose-400 font-black text-sm">10 475 € / FOYER</span>
+        </div>
+        
+        <div class="space-y-3 z-10 my-4">
+          <h3 class="text-2xl sm:text-3xl font-black text-white group-hover:text-amber-300 transition">
+            La Captation Bancaire & l'Évasion de l'Épargne Insulaire
+          </h3>
+          <p class="text-sm text-stone-300 max-w-xl font-normal leading-relaxed">
+            Comment les caisses régionales siphonnent l'argent des familles corses pour alimenter les marchés spéculatifs parisiens, asséchant le crédit à nos artisans et paysans.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between font-mono-custom text-xs z-10">
+          <span class="text-amber-400 font-bold group-hover:translate-x-1 transition">OUVRIR L'INSTRUCTION COMPLÈTE →</span>
+          <span class="text-stone-500">SHA-256 SCELLÉ</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 18 : ÉNERGIE EDF -->
+      <a href="../enquetes/18-le-monopole-energetique-edf-sei/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-18]</span>
+            <span class="text-rose-400 font-bold">2 140 € / AN</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Le Monopole Énergétique EDF & Le Fioul Lourd
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            L'imposture des centrales polluantes face à l'abondance de nos rivières et de notre soleil.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 27 : TÉLÉPHÉRIQUE ANGELO -->
+      <a href="../enquetes/27-le-telepherique-angelo-ajaccio/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-27]</span>
+            <span class="text-cyan-400 font-bold">38 M€ ENGLOUTIS</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Angelo : Le Mirage à 38 M€ qui Rançonne Ajaccio
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            Déficit d'exploitation structurel et sacrifice du réseau de bus pour une télécabine touristique.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 26 : MONOPOLE CARBURANT -->
+      <a href="../enquetes/26-le-verrou-des-depots-petroliers/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-26]</span>
+            <span class="text-rose-400 font-bold">+0,18 € / LITRE</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Le Verrou des Dépôts Pétroliers
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            La rente monopolistique sur les cuves qui fait du carburant en Corse le plus cher d'Europe.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 07 : CADASTRE MINIER -->
+      <a href="../enquetes/07-le-cadastre-minier-secret/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-07]</span>
+            <span class="text-emerald-400 font-bold">100% CONCÉDÉ</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Le Cadastre Minier Secret de Corse
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            L'accaparement des concessions de sous-sol sans aucune retombée financière pour nos communes.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 23 : SÉCURITÉ CIVILE -->
+      <a href="../enquetes/23-la-sous-dotation-de-la-securite-civile/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-23]</span>
+            <span class="text-rose-400 font-bold">5 CANADAIRS MANQUANTS</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Le Sacrifice de la Sécurité Civile
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            La flotte aérienne bombardier d'eau sous-dimensionnée qui met nos forêts et villages en péril.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 28 : MUVITARRA -->
+      <a href="../enquetes/28-muvitarra-le-sacrifice-des-bus/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-28]</span>
+            <span class="text-amber-400 font-bold">12,5 M€ DE DETTE</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            Muvitarra : Le Naufrage Organisé des Bus
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            Comment la gestion des transports publics ajacciens a été volontairement coulée pour Angelo.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 04 : L'EAU -->
+      <a href="../enquetes/04-la-marchandisation-de-l-eau/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-04]</span>
+            <span class="text-cyan-400 font-bold">68% DE FUITES</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            La Marchandisation de l'Eau Potable
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            Les multinationales privées qui empochent les dividendes pendant que les tuyaux fuient.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+      <!-- DOSSIER 11 : EMPRISE MILITAIRE -->
+      <a href="../enquetes/11-l-emprise-et-les-servitudes-militaires/" class="card-dynamic border rounded-3xl p-6 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between font-mono-custom text-xs mb-3">
+            <span class="text-amber-400 font-bold">[DOSSIER-11]</span>
+            <span class="text-emerald-400 font-bold">4 200 HECTARES</span>
+          </div>
+          <h3 class="text-lg font-black text-white group-hover:text-amber-300 transition leading-snug">
+            L'Emprise et les Servitudes Militaires
+          </h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-3">
+            Des milliers d'hectares de terres agricoles et littorales gelées sous le secret défense.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 font-mono-custom text-xs text-amber-400 font-bold flex items-center justify-between mt-4">
+          <span>CONSULTER →</span>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SCRIPT DU SWITCHER DE PALETTES ================= -->
+  <script>
+    function setPalette(name) {
+      document.body.setAttribute('data-palette', name);
+    }
+  </script>
+
+</body>
+</html>

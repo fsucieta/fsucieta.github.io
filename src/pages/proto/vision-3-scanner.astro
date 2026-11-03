@@ -1,0 +1,149 @@
+---
+// Vision 3 : Le Scanner de Spoliation Foyer & Commune (Approche Portefeuille Directe)
+// localhost:4330/proto/vision-3-scanner/
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allEnquetes = await getCollection('enquetes');
+const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
+const dossiers = idsFinalises
+  .map(id => allEnquetes.find(e => e.data.id === id))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
+---
+
+<Layout title="L'OCHJU — Scanner de Spoliation Foyer & Commune (Vision 3)">
+  <div class="min-h-screen bg-[#08090d] text-slate-100 font-sans">
+    
+    <!-- HEADER ÉPURÉ -->
+    <header class="border-b border-slate-800 bg-[#050608] px-6 py-4 sticky top-0 z-40 backdrop-blur-md">
+      <div class="max-w-5xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img src="../../logo_l_ochju.jpg" alt="Logo L'OCHJU" class="h-8 w-auto rounded border border-amber-500/50" />
+          <div>
+            <span class="block text-base font-serif font-black tracking-wider text-slate-100">L'OCHJU</span>
+            <span class="block text-[9px] font-mono tracking-widest text-amber-400 uppercase">Scanner Public de Spoliation</span>
+          </div>
+        </div>
+
+        <!-- Switch Prototypes -->
+        <div class="font-mono text-xs flex items-center gap-2">
+          <a href="../vision-1-console/" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 rounded text-[11px] border border-slate-700">V1 : CONSOLE</a>
+          <a href="../vision-2-cinema/" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 rounded text-[11px] border border-slate-700">V2 : JOURNAL</a>
+          <a href="./" class="px-2.5 py-1 bg-amber-500 text-slate-950 font-bold rounded text-[11px]">V3 : SCANNER FOYER</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- LE SCANNER CENTRAL (La Question Directe) -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+      <span class="px-3 py-1 bg-rose-500/10 text-rose-400 border border-rose-500/30 rounded text-xs font-mono font-bold uppercase tracking-widest inline-block mb-4">
+        AUDIT POPULAIRE IMMÉDIAT
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl font-serif font-black text-white leading-tight mb-4">
+        Combien a-t-on prélevé sur votre foyer ce mois-ci ?
+      </h1>
+      
+      <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-serif">
+        En Corse, chaque famille paie en moyenne <strong>10 475 € par an</strong> de surcoûts invisibles et de rentes concédées. Entrez votre commune ou inspectez la facture officielle ci-dessous.
+      </p>
+
+      <!-- LE CALCULATEUR DE QUITTANCE CITOYENNE -->
+      <div class="bg-[#0e121a] border-2 border-amber-500/60 rounded-xl p-6 sm:p-8 text-left shadow-2xl relative overflow-hidden">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+          <div>
+            <span class="text-[10px] font-mono uppercase text-slate-500">Commune analysée :</span>
+            <div class="text-2xl font-serif font-bold text-amber-300 flex items-center gap-2">
+              <span>Ajaccio / Bastia / Toutes Communes</span>
+            </div>
+          </div>
+          <div class="text-right sm:text-right">
+            <span class="text-[10px] font-mono uppercase text-slate-500 block">Total Confisqué / Foyer :</span>
+            <span class="text-3xl sm:text-4xl font-mono font-black text-rose-400">10 475,51 € <span class="text-xs text-slate-400 font-normal">/ an</span></span>
+          </div>
+        </div>
+
+        <!-- Décomposition des Lignes de Facture (Liées directement aux 9 Enquêtes) -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="text-[10px] uppercase text-slate-500 font-bold tracking-wider mb-2">
+            VENTILATION FORENSIQUE PAR DOSSIER OFFICIEL :
+          </div>
+
+          <!-- Ligne 1 : Épargne & Banque -->
+          <a href="../../enquetes/22-la-captation-bancaire-et-epargne/" class="p-3 bg-[#080a0f] hover:bg-[#121824] border border-slate-800 hover:border-amber-500/60 rounded flex items-center justify-between gap-4 transition group">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 font-bold">[DOSSIER-22]</span>
+              <span class="text-slate-200 group-hover:text-amber-300 transition">Captation bancaire & fuite de l'épargne insulaire</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-rose-400 font-bold text-sm">+4 120 €</span>
+              <span class="text-[10px] text-slate-500 block">Détail des pièces →</span>
+            </div>
+          </a>
+
+          <!-- Ligne 2 : Énergie & Rente EDF -->
+          <a href="../../enquetes/18-le-monopole-energetique-edf-sei/" class="p-3 bg-[#080a0f] hover:bg-[#121824] border border-slate-800 hover:border-amber-500/60 rounded flex items-center justify-between gap-4 transition group">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 font-bold">[DOSSIER-18]</span>
+              <span class="text-slate-200 group-hover:text-amber-300 transition">Surcoût rente thermique fioul lourd vs énergies insulaires</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-rose-400 font-bold text-sm">+2 140 €</span>
+              <span class="text-[10px] text-slate-500 block">Détail des pièces →</span>
+            </div>
+          </a>
+
+          <!-- Ligne 3 : Carburant & Monopole Dépôts -->
+          <a href="../../enquetes/26-le-verrou-des-depots-petroliers/" class="p-3 bg-[#080a0f] hover:bg-[#121824] border border-slate-800 hover:border-amber-500/60 rounded flex items-center justify-between gap-4 transition group">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 font-bold">[DOSSIER-26]</span>
+              <span class="text-slate-200 group-hover:text-amber-300 transition">Rente de monopole sur les dépôts de carburants (+0,18 €/L)</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-rose-400 font-bold text-sm">+540 €</span>
+              <span class="text-[10px] text-slate-500 block">Détail des pièces →</span>
+            </div>
+          </a>
+
+          <!-- Ligne 4 : Télécabine Angelo -->
+          <a href="../../enquetes/27-le-telepherique-angelo-ajaccio/" class="p-3 bg-[#080a0f] hover:bg-[#121824] border border-slate-800 hover:border-amber-500/60 rounded flex items-center justify-between gap-4 transition group">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 font-bold">[DOSSIER-27]</span>
+              <span class="text-slate-200 group-hover:text-amber-300 transition">Angelo : Dette d'emprunt et subventions englouties (38 M€)</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-rose-400 font-bold text-sm">+760 €</span>
+              <span class="text-[10px] text-slate-500 block">Détail des pièces →</span>
+            </div>
+          </a>
+
+          <!-- Ligne 5 : Eau potable fuyarde -->
+          <a href="../../enquetes/04-la-marchandisation-de-l-eau/" class="p-3 bg-[#080a0f] hover:bg-[#121824] border border-slate-800 hover:border-amber-500/60 rounded flex items-center justify-between gap-4 transition group">
+            <div class="flex items-center gap-3">
+              <span class="text-amber-400 font-bold">[DOSSIER-04]</span>
+              <span class="text-slate-200 group-hover:text-amber-300 transition">Tarification privée & 68% de fuites d'eau payées par l'usager</span>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-rose-400 font-bold text-sm">+380 €</span>
+              <span class="text-[10px] text-slate-500 block">Détail des pièces →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Appel à l'action légale -->
+        <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <span class="text-xs text-slate-400 font-serif">
+            Toutes les lignes sont opposables et adossées aux rapports de la Cour des Comptes.
+          </span>
+          <a 
+            href="../../analyse-globale-finale/"
+            class="w-full sm:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-black rounded uppercase tracking-wider transition shadow-lg text-center"
+          >
+            Télécharger le Dossier d'Action Citoyenne →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</Layout>

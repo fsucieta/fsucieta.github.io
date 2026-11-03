@@ -1,0 +1,119 @@
+---
+// BentoEnqueteCard.astro - Carte d'enquête UI/UX Moderne (Inspirée MagicUI / Aceternity / FMHY)
+// Spotlight effect, border-beam, micro-interactions, typographie ciselée
+interface Props {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  chapeau: string;
+  image: string;
+  reference?: string;
+  isLarge?: boolean;
+}
+
+const { id, slug, title, category, chapeau, image, reference = `DOSSIER-${String(id).padStart(2, '0')}`, isLarge = false } = Astro.props;
+const imgPath = image.startsWith('http') ? image : `../../${image.replace(/^\//, '')}`;
+const displayTitle = title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+
+// Données d'impact par enquête
+const impacts: Record<number, { val: string; label: string; badgeColor: string }> = {
+  22: { val: "10 475 € / foyer", label: "Captation Épargne", badgeColor: "text-amber-400 border-amber-500/40 bg-amber-500/10" },
+  18: { val: "2 140 € / an", label: "Rente Thermique", badgeColor: "text-amber-400 border-amber-500/40 bg-amber-500/10" },
+  27: { val: "38 M€ engloutis", label: "Angelo Ajaccio", badgeColor: "text-cyan-400 border-cyan-500/40 bg-cyan-500/10" },
+  7: { val: "100% concédé", label: "Cadastre Minier", badgeColor: "text-emerald-400 border-emerald-500/40 bg-emerald-500/10" },
+  23: { val: "5 Canadairs manquants", label: "Sécurité Civile", badgeColor: "text-rose-400 border-rose-500/40 bg-rose-500/10" },
+  28: { val: "12,5 M€ de dette", label: "Muvitarra Bus", badgeColor: "text-amber-400 border-amber-500/40 bg-amber-500/10" },
+  26: { val: "+0,18 € / L", label: "Monopole Pétrole", badgeColor: "text-rose-400 border-rose-500/40 bg-rose-500/10" },
+  4: { val: "68% de fuites", label: "Réseau d'Eau", badgeColor: "text-cyan-400 border-cyan-500/40 bg-cyan-500/10" },
+  11: { val: "4 200 ha gelés", label: "Servitude Militaire", badgeColor: "text-emerald-400 border-emerald-500/40 bg-emerald-500/10" }
+};
+
+const impact = impacts[id] || { val: "SCELLÉ ISO 27037", label: "Données Officielles", badgeColor: "text-amber-400 border-amber-500/40 bg-amber-500/10" };
+---
+
+<div 
+  class={`bento-card group relative rounded-2xl bg-[#0e0d0b]/80 backdrop-blur-xl border border-[#26231e] hover:border-amber-500/50 transition-all duration-500 overflow-hidden flex flex-col justify-between shadow-2xl hover:shadow-amber-500/10 ${isLarge ? 'md:col-span-2 md:row-span-2' : 'col-span-1'}`}
+  data-title={displayTitle.toLowerCase()}
+  data-category={category.toLowerCase()}
+  data-chapeau={chapeau.toLowerCase()}
+>
+  <!-- Effet Spotlight suiveur de souris (Hover Glow) -->
+  <div class="spotlight pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" style="background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(197, 155, 39, 0.15), transparent 40%);"></div>
+
+  <!-- En-tête de la carte avec Badges Stylisés Modernes -->
+  <div class="relative z-20 p-5 flex items-center justify-between font-mono text-[11px]">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase border bg-[#0f0e0c]/90 backdrop-blur text-[#cfc9be] border-[#3a352e]">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span>{reference}</span>
+      </span>
+      <span class="text-[#a8a296] text-[10px] tracking-widest uppercase hidden sm:inline">
+        {category}
+      </span>
+    </div>
+
+    <!-- Badge Impact Direct -->
+    <span class={`px-2.5 py-1 rounded-full text-[10px] font-bold border tracking-wider uppercase backdrop-blur ${impact.badgeColor}`}>
+      {impact.val}
+    </span>
+  </div>
+
+  <!-- Visuel Immersif avec Masque Dégradé & Zoom fluide -->
+  <div class={`relative overflow-hidden bg-[#070605] z-10 ${isLarge ? 'h-72 sm:h-80' : 'h-48'}`}>
+    <img 
+      src={imgPath} 
+      alt={displayTitle} 
+      class="w-full h-full object-cover filter brightness-90 contrast-110 group-hover:scale-105 group-hover:brightness-100 transition-transform duration-700 ease-out"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0e0d0b] via-[#0e0d0b]/40 to-transparent"></div>
+    
+    <!-- Chip flottant catégorie -->
+    <div class="absolute bottom-3 left-5 pointer-events-none">
+      <span class="text-[10px] font-mono text-amber-300 uppercase tracking-widest bg-[#070605]/80 px-2.5 py-1 rounded border border-amber-500/30 backdrop-blur">
+        {impact.label}
+      </span>
+    </div>
+  </div>
+
+  <!-- Corps de texte et Titrage Éditorial Pro -->
+  <div class="relative z-20 p-6 flex-1 flex flex-col justify-between space-y-4">
+    <div>
+      <h3 class={`font-serif font-black text-[#f4f1ea] group-hover:text-amber-300 transition-colors duration-300 leading-tight ${isLarge ? 'text-xl sm:text-2xl' : 'text-base sm:text-lg'}`}>
+        <a href={`../../enquetes/${slug}/`} class="hover:underline focus:outline-none">
+          {displayTitle}
+        </a>
+      </h3>
+
+      <p class="text-[#a8a296] text-xs sm:text-sm line-clamp-3 mt-3 leading-relaxed font-sans font-normal">
+        {chapeau}
+      </p>
+    </div>
+
+    <!-- Actions & Munitions Citoyennes Modernes -->
+    <div class="pt-4 border-t border-[#26231e] flex items-center justify-between text-xs font-mono">
+      <a 
+        href={`../../enquetes/${slug}/`}
+        class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-bold uppercase tracking-wider text-[11px] group/link"
+      >
+        <span>Consulter l'Enquête</span>
+        <span class="inline-block transition-transform duration-300 group-hover/link:translate-x-1">→</span>
+      </a>
+
+      <!-- Bouton d'action rapide -->
+      <div class="flex items-center gap-1.5">
+        <button
+          type="button"
+          class="card-share-btn px-2.5 py-1 rounded-lg bg-[#0f0e0c]/90 hover:bg-amber-500 hover:text-slate-950 text-[#a8a296] border border-slate-700 hover:border-amber-400 text-[10px] font-mono font-semibold transition-all duration-200"
+          data-share-title={displayTitle}
+          data-share-url={`../../enquetes/${slug}/`}
+          data-share-chapeau={chapeau}
+          title="Partager cette enquête"
+          onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
+        >
+          Partager
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

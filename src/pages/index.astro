@@ -1,4 +1,7 @@
 ---
+// index.astro - VERSION OFFICIELLE COMPLÈTE L'OCHJU
+// Typographie Presse d'Investigation Mondiale (Newsreader / Publico + Inter + JetBrains Mono)
+// Intégralité des outils : 9 Enquêtes + SIG 360 Communes + Radar DVF + CADA + Doctrine ISO 27037
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import GisMap from '../components/GisMap.astro';
@@ -7,28 +10,119 @@ import DoctrinePreuves from '../components/DoctrinePreuves.astro';
 import FoncierDvfRadar from '../components/FoncierDvfRadar.astro';
 
 const allEnquetes = await getCollection('enquetes');
-
-// Sélection souveraine et stricte des 7 Grandes Enquêtes Clôturées & Opposables
-// Ordre d'affichage stratégique : Angelo (27), Mines (7), Sécurité Civile (23), Muvitarra (28), Pétrole (26), Eau (4), Énergie (18)
 const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
 const enquetesFinalisees = idsFinalises
   .map(id => allEnquetes.find(e => e.data.id === id))
   .filter((e): e is NonNullable<typeof e> => Boolean(e));
+
+const impactFoyer: Record<number, { val: string; label: string }> = {
+  22: { val: "10 475 €", label: "Captation Épargne / foyer" },
+  18: { val: "2 140 €", label: "Surcoût Énergie / an" },
+  27: { val: "38 M€", label: "Argent Public Englouti" },
+  7: { val: "100 %", label: "Sous-Sol Minier Concédé" },
+  23: { val: "5 Canadairs", label: "Déficit Sécurité Civile" },
+  28: { val: "12,5 M€", label: "Dette Transports Transférée" },
+  26: { val: "+0,18 € / L", label: "Rente Monopole Carburant" },
+  4: { val: "68 %", label: "Fuites d'Eau Facturées" },
+  11: { val: "4 200 ha", label: "Emprise Militaire Gelée" }
+};
 ---
 
 <Layout 
-  title="L'OCHJU — Média Citoyen d'Investigation & Open Data (L'aveti ?)"
-  description="L'OCHJU — Premier média citoyen d'investigation en Corse fondé sur l'open data et la preuve médico-légale. Les 8 grandes enquêtes scellées en libre accès."
-  canonicalUrl="https://fsucieta.github.io/"
-  image="/alerte_censure_lochju.jpg"
-  lang="fr"
+  title="L'OCHJU — Média Citoyen d'Investigation Médico-Légale (L'aveti ?)"
+  description="L'OCHJU — Premier média d'investigation en Corse fondé sur l'open data et la preuve médico-légale. Les 9 grandes enquêtes scellées en libre accès."
 >
-  <!-- En-tête / Header Éditorial L'OCHJU Centré & Épuré -->
-  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-4 px-6 shadow-2xl">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+  <!-- TYPOGRAPHIE PRESSE D'INVESTIGATION PRESTIGE : Newsreader (Éditorial ProPublica/NYT) + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,700&display=swap" rel="stylesheet">
+
+  <style is:global>
+    :root {
+      /* Thème actif par défaut : Noir Absolu & Or Pur 24K (Thème 3) */
+      --lochju-bg: #030304;
+      --lochju-surface: #0a0b0e;
+      --lochju-surface-hover: #12141a;
+      --lochju-border: #1a1d24;
+      --lochju-border-active: #d4af37;
+      --lochju-text-title: #ffffff;
+      --lochju-text-body: #d1d5db;
+      --lochju-text-muted: #848a96;
+      --lochju-gold: #f59e0b;
+      --lochju-gold-light: #fbbf24;
+      --lochju-gold-glow: rgba(245, 158, 11, 0.25);
+    }
+
+    [data-theme="granit"] {
+      --lochju-bg: #111215;
+      --lochju-surface: #18191e;
+      --lochju-surface-hover: #21232a;
+      --lochju-border: #2b2e38;
+      --lochju-border-active: #fbbf24;
+      --lochju-text-title: #f8fafc;
+      --lochju-text-body: #cbd5e1;
+      --lochju-text-muted: #94a3b8;
+      --lochju-gold: #fbbf24;
+      --lochju-gold-light: #fde047;
+      --lochju-gold-glow: rgba(251, 191, 36, 0.25);
+    }
+
+    [data-theme="emeraude"] {
+      --lochju-bg: #040d07;
+      --lochju-surface: #09190e;
+      --lochju-surface-hover: #0f2717;
+      --lochju-border: #163821;
+      --lochju-border-active: #f59e0b;
+      --lochju-text-title: #f0fdf4;
+      --lochju-text-body: #dcfce7;
+      --lochju-text-muted: #86efac;
+      --lochju-gold: #f59e0b;
+      --lochju-gold-light: #fbbf24;
+      --lochju-gold-glow: rgba(245, 158, 11, 0.25);
+    }
+
+    body {
+      background-color: var(--lochju-bg) !important;
+      color: var(--lochju-text-body) !important;
+      font-family: 'Inter', system-ui, sans-serif !important;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .font-press {
+      font-family: 'Newsreader', Georgia, serif !important;
+      letter-spacing: -0.015em;
+    }
+
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace !important;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .theme-surface {
+      background-color: var(--lochju-surface) !important;
+      border-color: var(--lochju-border) !important;
+    }
+
+    .theme-surface:hover {
+      background-color: var(--lochju-surface-hover) !important;
+      border-color: var(--lochju-border-active) !important;
+    }
+
+    .theme-gold-text {
+      color: var(--lochju-gold-light) !important;
+    }
+
+    .theme-gold-glow {
+      box-shadow: 0 0 25px var(--lochju-gold-glow) !important;
+    }
+  </style>
+
+  <!-- HEADER OFFICIEL L'OCHJU : LOGO OFFICIEL HISTORIQUE CENTRÉ ET MAJESTUEUX -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-2.5 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-1 sm:gap-4">
       
       <!-- Gauche : Mention Discrète d'Ancrage -->
-      <div class="w-48 hidden md:block">
+      <div class="hidden md:block w-44 lg:w-48 shrink-0">
         <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest block opacity-75 hover:opacity-100 transition">
           Powered by <strong class="text-amber-500/80 font-bold">FSUCIETÀ</strong>
         </span>
@@ -37,730 +131,332 @@ const enquetesFinalisees = idsFinalises
         </span>
       </div>
 
-      <!-- Centre : Logo Officiel Géant Centré Majestueux -->
-      <a href="./" class="group flex justify-center" aria-label="Retour à l'accueil de L'OCHJU">
-        <div class="relative">
-          <div class="absolute -inset-2 bg-gradient-to-r from-amber-500/40 via-amber-300/30 to-amber-500/40 rounded-2xl blur-md opacity-40 group-hover:opacity-100 transition duration-500"></div>
-          <img 
-            src="./logo_l_ochju.jpg" 
-            alt="L'OCHJU — Média Citoyen (L'aveti ?)" 
-            class="relative h-20 md:h-28 w-auto object-contain rounded-xl border-2 border-amber-500/60 group-hover:border-amber-400 transition duration-300 shadow-2xl shadow-amber-500/40"
-          />
-        </div>
+      <!-- Centre : Logo Officiel L'OCHJU Authentique (100% Intact, Zéro Rognage) -->
+      <a href="./" class="group flex items-center py-1 shrink min-w-0" aria-label="Retour à l'accueil de L'OCHJU">
+        <img 
+          src="./logo_l_ochju_intact_100pct.png" 
+          alt="L'OCHJU — Média Citoyen (L'aveti ?)" 
+          class="h-6 sm:h-9 md:h-12 w-auto max-w-[130px] sm:max-w-none object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.25)] transition duration-300"
+        />
       </a>
 
-      <!-- Droite : Sélecteur Langue -->
-      <div class="w-48 flex justify-end items-center gap-3">
-        <a href="./soutenir/" class="text-xs font-mono bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 px-3 py-1.5 rounded-lg border border-amber-400/50 transition flex items-center gap-1.5 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> <span>SOUTENIR</span>
+      <!-- Droite : Actions Citoyennes & Sélecteur Langue Global 8 Langues -->
+      <div class="flex items-center justify-end gap-1.5 sm:gap-2 shrink-0">
+        <a href="./soutenir/" class="text-xs font-mono bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-amber-400/50 transition flex items-center gap-1 sm:gap-1.5 font-bold text-[10px] sm:text-xs tracking-wider shrink-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> <span class="hidden sm:inline">SOUTENIR</span><span class="sm:hidden">DON</span>
         </a>
-        <a href="./en/" class="text-xs font-mono bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 px-3 py-1.5 rounded-lg border border-amber-500/30 transition flex items-center gap-1.5 font-bold">
-          <span>🇬🇧</span> <span>EN</span>
-        </a>
+        
+        <!-- Dropdown Sélecteur International 8 Langues -->
+        <div class="relative group/lang">
+          <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
+            <span>FR</span> <span class="text-[10px] text-amber-400">▼</span>
+          </button>
+          <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-32 z-50 font-mono text-xs">
+            <a href="./" class="px-3 py-1 hover:bg-white/10 rounded text-amber-400 font-bold flex items-center justify-between"><span>Français</span> <span class="text-[10px] text-slate-500">FR</span></a>
+            <a href="./en/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>English</span> <span class="text-[10px] text-slate-500">EN</span></a>
+            <a href="./it/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Italiano</span> <span class="text-[10px] text-slate-500">IT</span></a>
+            <a href="./es/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Español</span> <span class="text-[10px] text-slate-500">ES</span></a>
+            <a href="./pt/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Português</span> <span class="text-[10px] text-slate-500">PT</span></a>
+            <a href="./ru/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Русский</span> <span class="text-[10px] text-slate-500">RU</span></a>
+            <a href="./zh/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>中文</span> <span class="text-[10px] text-slate-500">ZH</span></a>
+            <a href="./ja/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>日本語</span> <span class="text-[10px] text-slate-500">JA</span></a>
+          </div>
+        </div>
       </div>
 
     </div>
   </header>
 
-  <!-- Navigation Rapide Sticky (Confort Ergonomique Mobile & Desktop) -->
-  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[112px] md:top-[144px] z-40 py-2 px-4 shadow-md overflow-hidden" style="scrollbar-width: none; -ms-overflow-style: none;" aria-label="Navigation rapide par sections">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 text-xs font-mono">
-      <button type="button" class="open-soutien-modal-btn px-3.5 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-400/60 font-mono text-xs font-bold shadow-md shadow-amber-500/10 transition flex items-center gap-1.5 cursor-pointer">
-        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> <span>SOUTENIR LA CELLULE</span>
-      </button>
-      <a href="./analyse-globale-finale/" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-mono text-xs font-black shadow-lg shadow-amber-500/20 hover:brightness-110 transition flex items-center gap-1.5 border border-amber-300">
-        <span>🏛️</span> <span>MÉMORANDUM SUPRÊME</span>
-      </a>
-      <a href="#fiches-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-amber-500/40 text-amber-300 hover:border-amber-400 hover:text-amber-200 transition flex items-center gap-1.5 font-bold">
-        <span>📂 9 Enquêtes Scellées</span>
-      </a>
-      <a href="#registre-instruction-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5 font-mono">
-        <span>⚖️ Registre d'Instruction</span>
-      </a>
-      <a href="#gis-map-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
-        <span>🗺️ Carte 360 Communes</span>
-      </a>
-      <a href="#foncier-dvf-section" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-400 hover:text-cyan-400 transition flex items-center gap-1.5">
-        <span>🤝 Radar DVF</span>
-      </a>
-      <a href="#cada-generator" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
-        <span>⚖️ Droit de Savoir (CADA)</span>
-      </a>
-      <a href="#doctrine-preuves" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 hover:text-amber-400 transition flex items-center gap-1.5">
-        <span>⚖️ Doctrine des Preuves</span>
-      </a>
+  <!-- Navigation Rapide Sticky par Sections -->
+  <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[64px] md:top-[80px] z-40 py-2 px-4 shadow-md overflow-x-auto" aria-label="Navigation rapide par sections">
+    <div class="max-w-7xl mx-auto flex flex-nowrap overflow-x-auto whitespace-nowrap scrollbar-none items-center justify-start sm:justify-center gap-1.5 sm:gap-2 text-xs font-mono-tech px-2">
+      <a href="#memorandum" class="px-3 py-1.5 rounded-lg text-amber-300 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 transition font-bold">Mémorandum</a>
+      <a href="#enquetes" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">9 Enquêtes</a>
+      <a href="#gis-map" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Carte 360</a>
+      <a href="#foncier-dvf" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Radar DVF</a>
+      <a href="#cada" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Recours CADA</a>
+      <a href="#doctrine" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Chaîne ISO</a>
     </div>
   </nav>
 
-  <main id="main-content">
-
-  <!-- ================= BANDEAU D'ÉTAT CITOYEN : LE GRAND MÉMORANDUM D'ÉMANCIPATION ================= -->
-  <section class="max-w-7xl mx-auto px-6 pt-6 pb-2">
-    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-950 border-2 border-amber-500/60 p-6 md:p-8 shadow-2xl shadow-amber-500/10">
-      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-        <div class="max-w-3xl">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="px-2.5 py-1 rounded bg-amber-500 text-slate-950 text-xs font-mono font-black uppercase tracking-wider">
-              ACTE D'OPPOSABILITÉ SUPRÊME
-            </span>
-            <span class="text-xs font-mono text-amber-400 font-bold">
-              • Synthèse des 29 Piliers de Souveraineté
-            </span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-serif font-black text-white mb-2 leading-tight">
-            L'Inversion de la Dette : Mémorandum d'Émancipation de la Corse
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
-            La démonstration chiffrée de <strong>4,72 milliards d'euros</strong> siphonnés chaque année hors de notre île (28 693 € par foyer) et l'architecture de rupture constitutionnelle (Titre XIII, Protocole Åland).
-          </p>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-20">
+    
+    <!-- ================= 1. LE GRAND MÉMORANDUM D'ÉMANCIPATION (L'Espoir Démontré) ================= -->
+    <section class="relative rounded-3xl theme-surface border p-6 sm:p-10 shadow-2xl overflow-hidden" id="memorandum">
+      <div class="max-w-4xl space-y-6">
+        
+        <div class="flex flex-wrap items-center gap-2.5 font-mono-tech text-xs">
+          <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-black tracking-wider uppercase">
+            RÉVÉLATION MAJEURE
+          </span>
+          <span class="theme-gold-text font-bold">
+            • Consolidation des 29 Piliers d'Instruction
+          </span>
+          <span class="text-slate-500 hidden sm:inline">• NORME ISO/IEC 27037</span>
         </div>
-        <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 w-full lg:w-auto">
+
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-press font-black text-white leading-[1.08] tracking-tight">
+          L'Inversion de la Dette : <br/>
+          <span class="theme-gold-text">Le Mémorandum d'Émancipation de la Corse</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-press">
+          La démonstration comptable et juridique de <strong>4,72 milliards d'euros</strong> siphonnés chaque année hors de notre île (28 693 € par foyer) et l'architecture républicaine pour reprendre en main notre destin populaire.
+        </p>
+
+        <!-- 3 Métriques Fondatrices -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10 font-mono-tech">
+          <div class="p-4 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-[10px] uppercase text-slate-400 block">Siphonné par an</span>
+            <span class="text-2xl sm:text-3xl font-black text-rose-400 block mt-1">4,72 Md€</span>
+            <span class="text-[10px] text-slate-400">Rentes, banques, fioul, fret</span>
+          </div>
+          <div class="p-4 rounded-xl bg-black/40 border border-amber-500/40">
+            <span class="text-[10px] uppercase theme-gold-text block">Impact par Foyer</span>
+            <span class="text-2xl sm:text-3xl font-black theme-gold-text block mt-1">28 693 € / an</span>
+            <span class="text-[10px] text-slate-400">5 mois et demi de salaire</span>
+          </div>
+          <div class="p-4 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-[10px] uppercase text-emerald-400 block">Solde Net pour la Corse</span>
+            <span class="text-2xl sm:text-3xl font-black text-emerald-400 block mt-1">+1,72 Md€</span>
+            <span class="text-[10px] text-slate-400">La Corse est créancière</span>
+          </div>
+        </div>
+
+        <!-- CTA Mémorandum -->
+        <div class="flex flex-wrap items-center gap-3 pt-2 font-mono-tech text-xs">
           <a 
             href="./analyse-globale-finale/" 
-            class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-mono text-xs font-black tracking-wide text-center transition shadow-xl shadow-amber-500/20"
+            class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-black font-black uppercase tracking-wider hover:brightness-110 shadow-lg transition"
           >
-            👁️ LIRE LE MÉMORANDUM
+            Consulter le Mémorandum Complet →
           </a>
           <a 
             href="./docs/MEMORANDUM_EMANCIPATION_CORSE_LOCHJU_OFFICIEL.pdf" 
             download="MEMORANDUM_EMANCIPATION_CORSE_LOCHJU_OFFICIEL.pdf" 
-            class="w-full sm:w-auto px-4 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-300 border border-amber-500/40 font-mono text-xs font-bold text-center transition"
+            class="px-5 py-3.5 rounded-xl border border-white/20 hover:border-amber-400 text-slate-200 transition font-bold"
           >
-            📥 Mémorandum Officiel (PDF)
+            Télécharger l'Acte Officiel (PDF)
           </a>
         </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  
+    <!-- ================= 2. LES 9 GRANDES ENQUÊTES SCELLÉES ================= -->
+    <section class="space-y-6" id="enquetes">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-white/10 pb-4">
+        <div>
+          <div class="flex items-center gap-2 font-mono-tech text-xs font-bold text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>PREUVES SCELLÉES · SOUS NORME ISO/IEC 27037</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-press font-bold text-white mt-1">
+            Les 9 Grandes Enquêtes d'Instruction
+          </h2>
+          <p class="font-mono-tech text-xs text-slate-400 mt-1">
+            Autopsies médico-légales complètes, bilans financiers certifiés et pièces opposables au juge.
+          </p>
+        </div>
 
-  <!-- Section 1 : Grille des 8 Grandes Enquêtes Scellées (100% Opposables) -->
-  <section class="max-w-7xl mx-auto px-6 py-12" id="fiches-section">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 border-b border-emerald-500/30 pb-4">
-      <div>
-        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
-          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          ENQUÊTES FINALISÉES · PREUVES SCELLÉES ISO 27037
-        </span>
-        <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-          🟢 Les 9 Grandes Enquêtes Scellées & Opposables
-        </h2>
-        <p class="text-xs font-mono text-slate-400 mt-1">Dossiers d'investigation médico-légale complets, bilans financiers audités et actes officiels consultables.</p>
-      </div>
-
-      <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
-        <!-- Barre de Recherche intégrée aux 7 dossiers -->
-        <div class="w-full sm:w-72">
+        <!-- Recherche instantanée en direct -->
+        <div class="w-full sm:w-80 font-mono-tech">
           <input 
             type="text" 
             id="searchInput" 
-            placeholder="🔍 Filtrer les 9 dossiers..." 
-            aria-label="Rechercher ou filtrer les enquêtes par titre, mot-clé ou commune"
-            class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:border-amber-400 transition font-sans shadow-inner"
+            placeholder="Filtrer les 9 enquêtes..." 
+            class="w-full px-4 py-2.5 rounded-xl bg-black/50 border border-white/20 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 transition"
           />
         </div>
       </div>
-    </div>
 
-    <!-- Grille des 7 Enquêtes Clôturées -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="fichesGrid">
-      {enquetesFinalisees.map((enquete) => {
-        const d = enquete.data;
-        const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
-        const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
-        return (
-          <a 
-            href={`./enquetes/${enquete.slug}/`}
-            class="fiche-card relative bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800/80 hover:border-emerald-500/60 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 group cursor-pointer block hover:-translate-y-1"
-            data-title={displayTitle.toLowerCase()}
-            data-category={d.category.toLowerCase()}
-            data-chapeau={d.chapeau.toLowerCase()}
-          >
-            <!-- Liseré supérieur émeraude de certification -->
-            <div class="h-1 w-full bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent group-hover:via-emerald-400 transition-all duration-500"></div>
+      <!-- Grille des 9 Dossiers -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="enquetesGrid">
+        {enquetesFinalisees.map((enquete, index) => {
+          const d = enquete.data;
+          const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+          const imgPath = d.image.startsWith('http') ? d.image : `./${d.image.replace(/^\//, '')}`;
+          const impact = impactFoyer[d.id];
+          const isLead = index === 0;
 
-            <!-- Visuel carte -->
-            <div class="h-52 bg-slate-950 overflow-hidden relative">
-              <img 
-                src={imgPath} 
-                alt={displayTitle} 
-                class="w-full h-full object-cover grayscale-[20%] contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition duration-700 ease-out"
-              />
-              <div class="absolute top-3.5 left-3.5 pointer-events-none flex items-center gap-2">
-                <span class="bg-slate-950/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold text-emerald-400 border border-emerald-500/40 shadow-lg flex items-center gap-1.5">
-                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                  <span>ENQUÊTE COMPLÈTE</span>
-                </span>
-                {d.id === 22 && (
-                  <span class="bg-rose-600 text-white font-mono font-black text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider shadow-lg shadow-rose-600/40 flex items-center gap-1.5 animate-pulse">
-                    <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                    <span>NOUVEAU</span>
-                  </span>
-                )}
-                {d.id === 18 && (
-                  <span class="bg-amber-500 text-slate-950 font-mono font-black text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider shadow-lg shadow-amber-500/40 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-950"></span>
-                    <span>MISE À JOUR LE 02/11/26</span>
-                  </span>
-                )}
-              </div>
-            </div>
-
-            <!-- Contenu du Dossier Scellé -->
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="flex items-center gap-2 mb-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
-                  <span class="text-[11px] font-mono uppercase tracking-widest text-cyan-400 font-bold">{d.category}</span>
+          return (
+            <article 
+              class={`enquete-card theme-surface border rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 group ${isLead ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'}`}
+              data-title={displayTitle.toLowerCase()}
+              data-category={d.category.toLowerCase()}
+              data-chapeau={d.chapeau.toLowerCase()}
+            >
+              <!-- En-tête de la chemise d'enquête -->
+              <div class="p-4 bg-black/40 border-b border-white/10 flex items-center justify-between font-mono-tech text-[11px]">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span class="theme-gold-text font-bold">[{d.reference || `DOSSIER-${d.id}`}]</span>
+                  <span class="text-slate-400 uppercase tracking-wider hidden sm:inline">· {d.category}</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-slate-100 group-hover:text-amber-300 transition duration-300 leading-snug">
-                  {displayTitle}
-                </h3>
-                <p class="text-slate-400 text-sm line-clamp-3 mt-2.5 leading-relaxed font-serif">
-                  {d.chapeau}
-                </p>
+                {d.id === 22 ? (
+                  <span class="bg-rose-600/90 text-white font-mono-tech font-black text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-md shadow-rose-600/30 flex items-center gap-1.5 animate-pulse border border-rose-400/50">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+                    <span>NOUVELLE ENQUÊTE</span>
+                  </span>
+                ) : d.id === 18 ? (
+                  <span class="bg-amber-500/20 text-amber-300 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-amber-500/40 shadow-sm flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                    <span>MISE À JOUR RÉCENTE</span>
+                  </span>
+                ) : (
+                  <span class="bg-emerald-500/10 text-emerald-400 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-emerald-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>DOSSIER SCELLÉ</span>
+                  </span>
+                )}
               </div>
 
-              <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
-                <span class="text-xs font-mono font-bold text-amber-400 group-hover:text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
-                  <span>Consulter le Dossier</span>
-                  <span class="transition transform group-hover:translate-x-1">→</span>
-                </span>
-                <button
-                  type="button"
-                  class="card-share-btn inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 hover:bg-amber-500 text-slate-400 hover:text-slate-950 border border-slate-800 hover:border-amber-400 text-[11px] font-mono font-semibold transition duration-200 z-10"
-                  data-share-title={displayTitle}
-                  data-share-url={`./enquetes/${enquete.slug}/`}
-                  data-share-chapeau={d.chapeau}
-                  title="Partager cette enquête"
-                  onclick="event.preventDefault(); event.stopPropagation(); openShareModal(this);"
-                >
-                  <span>📤</span> <span>Partager</span>
-                </button>
+              <!-- Visuel Documentaire -->
+              <div class={`relative overflow-hidden bg-black ${isLead ? 'h-64 sm:h-72' : 'h-48'}`}>
+                <img 
+                  src={imgPath} 
+                  alt={displayTitle} 
+                  class="w-full h-full object-cover filter brightness-90 contrast-110 group-hover:scale-105 group-hover:brightness-100 transition duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                {impact && (
+                  <div class="absolute bottom-3 left-4 font-mono-tech text-[10px] text-slate-300 bg-black/90 px-2.5 py-1 rounded border border-white/20 backdrop-blur">
+                    {impact.label}
+                  </div>
+                )}
               </div>
-            </div>
-          </a>
-        );
-      })}
-    </div>
-  </section>
 
-    <!-- Section 2 : Registre d'Instruction & Prochains Dossiers (Greffe Citoyen) -->
-  <section class="max-w-7xl mx-auto px-6 py-12 border-t border-amber-500/20" id="registre-instruction-section">
-    <div class="mb-8 border-b border-amber-500/30 pb-4 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
-      <div>
-        <span class="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 w-fit">
-          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-          GREFFE CITOYEN · INSTRUCTIONS FORENSIQUES EN COURS
-        </span>
-        <h2 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-          ⚖️ Registre d'Instruction des Futurs Dossiers
-        </h2>
-        <p class="text-xs font-mono text-slate-400 mt-1">Dossiers en cours d'instruction dans les laboratoires de la cellule. Aucune publication tant que chaque calcul n'est pas scellé au bit près.</p>
+              <!-- Corps Éditorial -->
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div>
+                  <h3 class={`font-press font-bold text-white group-hover:text-amber-300 transition leading-snug ${isLead ? 'text-2xl sm:text-3xl' : 'text-lg sm:text-xl'}`}>
+                    <a href={`./enquetes/${enquete.slug}/`} class="hover:underline">
+                      {displayTitle}
+                    </a>
+                  </h3>
+                  <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mt-3 leading-relaxed font-press">
+                    {d.chapeau}
+                  </p>
+                </div>
+
+                <div class="pt-4 border-t border-white/10 flex items-center justify-between font-mono-tech text-xs">
+                  <a 
+                    href={`./enquetes/${enquete.slug}/`} 
+                    class="theme-gold-text font-bold uppercase tracking-wider text-[11px] group-hover:underline flex items-center gap-1.5"
+                  >
+                    <span>Consulter le Dossier</span>
+                    <span>→</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    class="px-2.5 py-1 rounded bg-black/60 hover:bg-amber-400 hover:text-black text-slate-400 border border-white/20 hover:border-amber-400 text-[10px] font-bold transition"
+                    data-share-title={displayTitle}
+                    data-share-url={`./enquetes/${enquete.slug}/`}
+                    data-share-chapeau={d.chapeau}
+                    onclick="event.preventDefault(); openShareModal(this);"
+                  >
+                    Partager
+                  </button>
+                </div>
+              </div>
+
+            </article>
+          );
+        })}
       </div>
 
-      <a 
-        href="#doctrine-preuves" 
-        class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/40 text-xs font-mono font-bold transition shadow-lg"
-      >
-        <span>⚖️</span>
-        <span>Doctrine & Pureté des Preuves</span>
-      </a>
-    </div>
+    </section>
 
-    <!-- Tableau d'Instruction Solennel -->
-    <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/80 shadow-2xl">
-      <table class="w-full text-left border-collapse">
-        <thead>
-          <tr class="border-b border-slate-800 bg-slate-900/90 text-[11px] font-mono text-slate-400 uppercase tracking-wider">
-            <th class="py-3.5 px-4 font-bold">Réf. Dossier</th>
-            <th class="py-3.5 px-4 font-bold">Thématique & Cible</th>
-            <th class="py-3.5 px-4 font-bold hidden sm:table-cell">Discipline Multi-INT</th>
-            <th class="py-3.5 px-4 font-bold">État d'Instruction</th>
-            <th class="py-3.5 px-4 text-right font-bold">Action Citoyenne</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-slate-800/60 text-xs font-mono">
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-01</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Grand Verrou Financier</div>
-              <div class="text-[11px] text-slate-400 font-serif">La mécanique secrète des prêts in fine et la captation de l'épargne insulaire</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / DGFiP</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Audit des flux bancaires
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-02</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Mythe des Subventions : Qui Paye pour Qui ?</div>
-              <div class="text-[11px] text-slate-400 font-serif">Autopsie des 4 800 € d'impôts par an et par foyer transférés vers le continent sans retour</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / Cour des Comptes</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Recoupement budgétaire
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-03</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Manifeste Universel du Sol</div>
-              <div class="text-[11px] text-slate-400 font-serif">Autopsie de la dépossession foncière, des préemptions et des zonages PLU</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-emerald-400 font-bold">GEOINT / Cadastre</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Cartographie 360 communes
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-05</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">L'Empire des SCI Non-Résidentes</div>
-              <div class="text-[11px] text-slate-400 font-serif">Radiographie des bénéficiaires effectifs (RBE) et cascades de sociétés</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">OSINT / INPI RNE</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Croisement RBE en cours
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-06</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Pillage des Quotas de Pêche</div>
-              <div class="text-[11px] text-slate-400 font-serif">Confiscation des quotas de thon rouge et captures illégales dans les eaux territoriales</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">OSINT / DPMA / IFREMER</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Traçabilité des captures
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-08</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Pillage de la Forêt Corse & le Bois Brut</div>
-              <div class="text-[11px] text-slate-400 font-serif">Exportation massive de grumes brutes et spéculation sur la biomasse insulaire</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-emerald-400 font-bold">OSINT / ONF / Douanes</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Traque des exportations
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-09</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">L'Évasion des Capitaux Touristiques</div>
-              <div class="text-[11px] text-slate-400 font-serif">Fuite des marges hôtelières via des holdings offshore et sous-déclaration de taxe de séjour</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / DGFIP / INSEE</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Audit des holdings
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-10</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">La Tutelle de la Haute Fonction Publique</div>
-              <div class="text-[11px] text-slate-400 font-serif">Le pantouflage préfectoral et le gel administratif des réformes foncières</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">OSINT / DGAFP / CGFP</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Recoupement des carrières
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-12</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">La Dépendance Sanitaire & Équipement Hospitalier</div>
-              <div class="text-[11px] text-slate-400 font-serif">Sous-dotation des CHU insulaires et explosion des surcoûts d'évacuation sanitaire</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-rose-400 font-bold">SOCMINT / ARS / DREES</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Audit des bilans ARS
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-13</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Sous-Investissement Éducatif & Universitaire</div>
-              <div class="text-[11px] text-slate-400 font-serif">L'asymétrie de dotation par étudiant et la fuite forcée des jeunes diplômés</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / MESR / SYMPA</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Analyse des clés de dotation
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-14</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">La Justice d'Exception & Dessaisissement JIRS</div>
-              <div class="text-[11px] text-slate-400 font-serif">Le déracinement des procédures judiciaires et les détentions préventives hors-normes</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">JURINT / CPP / CEDH</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Analyse de jurisprudence
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-15</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Contrôle de Légalité Sélectif en Corse</div>
-              <div class="text-[11px] text-slate-400 font-serif">Déférés préfectoraux asymétriques contre les petites communes vs impunité des grands projets</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">OSINT / TA Bastia / CGCT</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Recensement des jugements TA
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-16</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">L'Échafaud Fiscal des Familles & Arrêtés Miot</div>
-              <div class="text-[11px] text-slate-400 font-serif">La fin programmée des exonérations successorales et le risque d'expropriation massive</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">FININT / GIRTEC / DGFIP</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Modélisation successorale
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-17</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">L'Euthanasie Linguistique & Article 2</div>
-              <div class="text-[11px] text-slate-400 font-serif">L'autopsie juridique de l'interdiction de la langue corse dans les assemblées élues</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-rose-400 font-bold">SOCMINT / Conseil Const.</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Audit du droit comparé UE
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-19</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">La Dépendance Numérique & Câbles Sous-Marins</div>
-              <div class="text-[11px] text-slate-400 font-serif">Vulnérabilité critique des liaisons fibre continentales et absence de souveraineté cloud</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">CYBERINT / ARCEP / ANSSI</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Cartographie des liaisons optiques
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-20</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">L'Accaparement des Primes PAC & Élevage Spéculatif</div>
-              <div class="text-[11px] text-slate-400 font-serif">Audit du registre parcellaire graphique (RPG) et captations illégales des aides européennes</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-emerald-400 font-bold">GEOINT / RPG / TéléPAC</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Croisement cadastral en cours
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-21</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Scandale des Déchets du SYVADEC</div>
-              <div class="text-[11px] text-slate-400 font-serif">La rente privée de l'exportation maritime des déchets vers le continent</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-cyan-400 font-bold">DECP / Marchés Publics</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Audit des bordereaux de prix
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-24</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">Le Scandale des Permis Tacites sur le Littoral</div>
-              <div class="text-[11px] text-slate-400 font-serif">Contournement de la Loi Littoral par l'inaction des services de l'État et permis frauduleux</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-emerald-400 font-bold">GEOINT / SITADEL / Urbanisme</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Croisement base SITADEL
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-25</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">La Transparence des Pétitionnaires MRAe</div>
-              <div class="text-[11px] text-slate-400 font-serif">Le saucissonnage des projets immobiliers pour échapper à l'évaluation environnementale</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">OSINT / MRAe / DREAL</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Dépouillement des avis MRAe
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-          <tr class="hover:bg-slate-900/50 transition">
-            <td class="py-4 px-4 font-bold text-amber-400">DOSSIER-29</td>
-            <td class="py-4 px-4">
-              <div class="font-bold text-slate-200 font-sans text-sm">« Remember Paoli ! » Réveil du Pacte Corse-USA</div>
-              <div class="text-[11px] text-slate-400 font-serif">L'héritage constitutionnel de Pasquale Paoli et l'activation du droit international</div>
-            </td>
-            <td class="py-4 px-4 hidden sm:table-cell text-amber-400 font-bold">DIPLOINT / Archives / ONU</td>
-            <td class="py-4 px-4">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                Dépouillement des correspondances
-              </span>
-            </td>
-            <td class="py-4 px-4 text-right">
-              <a href="#cada-generator" class="text-xs text-amber-400 hover:text-amber-300 underline font-sans">Exiger la pièce (CADA) →</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <!-- ================= 3. LE SYSTEME SIG & CADASTRE 360 COMMUNES ================= -->
+    <section class="space-y-4 pt-10 border-t border-white/10" id="gis-map">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div>
+          <span class="font-mono-tech text-xs theme-gold-text uppercase tracking-widest block">GÉOLOCALISATION FORENSIQUE</span>
+          <h2 class="text-2xl sm:text-3xl font-press font-bold text-white">Carte Interactive des 360 Communes de Corse</h2>
+        </div>
+        <span class="font-mono-tech text-xs text-slate-400">Cadastre DGFiP · Coordonnées WGS84</span>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+        <GisMap />
+      </div>
+    </section>
 
-  <!-- Section 3 : Cartographie SIG 360 Communes -->
-  <section class="max-w-7xl mx-auto px-6 py-4" id="gis-map-section">
-    <GisMap />
-  </section>
+    <!-- ================= 4. LE RADAR FONCIER DVF ================= -->
+    <section class="space-y-4 pt-10 border-t border-white/10" id="foncier-dvf">
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="font-mono-tech text-xs theme-gold-text uppercase tracking-widest block">DONNÉES OFFICIELLES DVF</span>
+          <h2 class="text-2xl sm:text-3xl font-press font-bold text-white">Radar des Transactions & Spéculation Foncière</h2>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+        <FoncierDvfRadar />
+      </div>
+    </section>
 
-  <!-- Section DVF Open Data : Radar des Transactions Foncières & Tension -->
-  <section class="max-w-7xl mx-auto px-6 py-4" id="dvf-foncier-section">
-    <FoncierDvfRadar />
-  </section>
+    <!-- ================= 5. LE DROIT DE SAVOIR : GÉNÉRATEUR CADA ================= -->
+    <section class="space-y-4 pt-10 border-t border-white/10" id="cada">
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="font-mono-tech text-xs text-emerald-400 uppercase tracking-widest block">SOUVERAINETÉ POPULAIRE DIRECTE</span>
+          <h2 class="text-2xl sm:text-3xl font-press font-bold text-white">Générateur Automatique de Recours CADA</h2>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+        <CadaGenerator />
+      </div>
+    </section>
 
-  <!-- Section 4 : Boîte à Outils CADA (Action Citoyenne) -->
-  <section class="max-w-7xl mx-auto px-6 py-4" id="cada-generator-section">
-    <CadaGenerator />
-  </section>
+    <!-- ================= 6. DOCTRINE DES PREUVES & CHAÎNE ISO 27037 ================= -->
+    <section class="space-y-4 pt-10 border-t border-white/10" id="doctrine">
+      <DoctrinePreuves />
+    </section>
 
-  <!-- Section 5 : Doctrine Forensique & Souveraineté des Preuves -->
-  <section class="max-w-7xl mx-auto px-6 py-4" id="doctrine-section">
-    <DoctrinePreuves lang="fr" />
-  </section>
   </main>
 
-  <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500 font-mono mt-16" role="contentinfo">
-    L'OCHJU — MÉDIA CITOYEN D'INVESTIGATION FORENSIQUE & OPEN DATA | LES GRANDES ENQUÊTES SCELLÉES POUR LA TRANSPARENCE ET LA SOUVERAINETÉ
-  </footer>
-
-  <!-- Script de Recherche Temps Réel (Recherche sur l'Ensemble des Dossiers) -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
-      const allCards = document.querySelectorAll<HTMLElement>('.fiche-card');
-
-      if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-          const term = (e.target as HTMLInputElement).value.toLowerCase().trim();
-
-          allCards.forEach((card) => {
-            const title = card.getAttribute('data-title') || '';
-            const category = card.getAttribute('data-category') || '';
-            const chapeau = card.getAttribute('data-chapeau') || '';
-
-            if (!term || title.includes(term) || category.includes(term) || chapeau.includes(term)) {
-              card.style.display = 'flex';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-        });
-      }
-    });
-  </script>
-
-  <!-- MODAL GLOBAL DE PARTAGE D'ENQUÊTE -->
-  <div id="cardShareModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden" onclick="if(event.target === this) closeShareModal();">
-    <div class="bg-slate-900 border border-amber-500/40 w-full max-w-md rounded-2xl shadow-2xl overflow-hidden p-6 space-y-5">
-      <div class="flex justify-between items-start">
-        <div class="space-y-1">
-          <span class="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-wider">📤 Mobilisation Citoyenne</span>
-          <h3 id="modalShareTitle" class="text-base font-bold font-serif text-slate-100 leading-snug"></h3>
-        </div>
-        <button onclick="closeShareModal()" class="text-slate-400 hover:text-white p-1.5 rounded-lg bg-slate-800 hover:bg-rose-500/80 transition cursor-pointer text-sm">✕</button>
-      </div>
-
-      <p class="text-xs text-slate-400 font-sans">Diffusez cette enquête sur vos réseaux pour briser l'omerta et informer les citoyens :</p>
-
-      <div class="grid grid-cols-3 gap-2.5">
-        <a id="shareXLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-black text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 text-xs font-mono font-medium transition shadow-sm">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> <span>X</span>
-        </a>
-        <a id="shareFbLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#1877F2] text-slate-200 hover:text-white border border-slate-800 hover:border-[#1877F2] text-xs font-mono font-medium transition shadow-sm">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> <span>Facebook</span>
-        </a>
-        <a id="shareWaLink" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-950 hover:bg-[#25D366] text-slate-200 hover:text-white border border-slate-800 hover:border-[#25D366] text-xs font-mono font-medium transition shadow-sm">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.77.828 2.791.828 3.18 0 5.767-2.587 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm0 10.518c-.896 0-1.636-.263-2.378-.716l-.17-.104-1.764.463.471-1.721-.115-.183c-.496-.788-.758-1.552-.757-2.49 0-2.618 2.13-4.748 4.748-4.748 2.618 0 4.748 2.13 4.748 4.748 0 2.617-2.13 4.747-4.748 4.747z"/></svg> <span>WhatsApp</span>
-        </a>
-      </div>
-
-      <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-        <span class="text-[11px] font-mono text-slate-400">Lien direct :</span>
-        <button id="shareCopyModalBtn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/30 text-xs font-mono font-bold transition cursor-pointer">
-          <span id="shareCopyModalIcon">🔗</span> <span id="shareCopyModalLabel">Copier le lien</span>
-        </button>
+  <!-- FOOTER OFFICIEL SOUVERAIN -->
+  <footer class="border-t border-white/10 bg-black/90 py-12 px-6 text-center font-mono-tech text-xs text-slate-500 mt-20">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <p class="font-press text-base italic text-slate-300">
+        « Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. »
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-[10px]">
+        <span>CELLULE D'INVESTIGATION L'OCHJU</span>
+        <span>•</span>
+        <span>SOUVERAINETÉ POPULAIRE</span>
+        <span>•</span>
+        <span>NORME ISO/IEC 27037 SCELLÉE</span>
       </div>
     </div>
-  </div>
+  </footer>
 
+  <!-- SCRIPT DU MOTEUR DE THÈMES & RECHERCHE INSTANTANÉE -->
   <script is:inline>
-    let activeShareUrl = '';
-
-    function openShareModal(button) {
-      const title = button.getAttribute('data-share-title') || '';
-      const rawUrl = button.getAttribute('data-share-url') || '';
-      const chapeau = button.getAttribute('data-share-chapeau') || '';
-      
-      const fullUrl = rawUrl.startsWith('http') ? rawUrl : (window.location.origin + '/' + rawUrl.replace(/^\.\//, '').replace(/^\//, ''));
-      activeShareUrl = fullUrl;
-
-      document.getElementById('modalShareTitle').textContent = title;
-
-      const tweetText = `🔴 Enquête L'OCHJU : ${title}\n\n${chapeau ? chapeau.slice(0, 140) + '...' : ''}\n\nÀ lire ici :`;
-      document.getElementById('shareXLink').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(fullUrl)}`;
-
-      document.getElementById('shareFbLink').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`;
-
-      const waText = `🔴 *Enquête L'OCHJU : ${title}*\n\n${chapeau ? chapeau + '\n\n' : ''}👉 ${fullUrl}`;
-      document.getElementById('shareWaLink').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(waText)}`;
-
-
-
-      document.getElementById('cardShareModal').classList.remove('hidden');
+    function setGlobalTheme(name) {
+      document.documentElement.setAttribute('data-theme', name);
+      localStorage.setItem('lochju_theme', name);
     }
 
-    function closeShareModal() {
-      document.getElementById('cardShareModal').classList.add('hidden');
-    }
+    const savedTheme = localStorage.getItem('lochju_theme') || 'noir';
+    setGlobalTheme(savedTheme);
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const copyBtn = document.getElementById('shareCopyModalBtn');
-      if (copyBtn) {
-        copyBtn.addEventListener('click', () => {
-          if (!activeShareUrl) return;
-          navigator.clipboard.writeText(activeShareUrl).then(() => {
-            const label = document.getElementById('shareCopyModalLabel');
-            const icon = document.getElementById('shareCopyModalIcon');
-            if (label && icon) {
-              label.textContent = 'Copié !';
-              icon.textContent = '✅';
-              setTimeout(() => {
-                label.textContent = 'Copier le lien';
-                icon.textContent = '🔗';
-              }, 2500);
-            }
-          });
+    // Filtrage dynamique des 9 enquêtes
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.enquete-card');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', e => {
+        const query = e.target.value.toLowerCase().trim();
+        cards.forEach(card => {
+          const title = card.getAttribute('data-title') || '';
+          const category = card.getAttribute('data-category') || '';
+          const chapeau = card.getAttribute('data-chapeau') || '';
+          const matches = title.includes(query) || category.includes(query) || chapeau.includes(query);
+          card.style.display = matches ? 'flex' : 'none';
         });
-      }
-    });
+      });
+    }
   </script>
 </Layout>

@@ -1,0 +1,158 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import ShareButtons from '../../../components/ShareButtons.astro';
+import CarteEnergieCorse from '../../../components/CarteEnergieCorse.astro';
+import AudioBriefing from '../../../components/AudioBriefing.astro';
+import SoutienCitoyen from '../../../components/SoutienCitoyen.astro';
+
+export async function getStaticPaths() {
+  const enquetes = await getCollection('enquetes');
+  const allowedIds = [27, 7, 23, 28, 26, 4, 18, 11, 22];
+  return enquetes.filter((entry) => allowedIds.includes(entry.data.id)).map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'enquetes'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const data = entry.data;
+const imgPath = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}`;
+const ogImage = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}`;
+---
+
+<Layout 
+  title={`${data.title} — L'OCHJU`} 
+  description={data.chapeau}
+  image={ogImage}
+  canonicalUrl={`https://fsucieta.github.io/es/enquetes/${entry.slug}/`}
+  lang="es"
+>
+  <!-- Navigation Supérieure Miroir -->
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-4 px-6 shadow-2xl">
+    <div class="max-w-6xl mx-auto flex justify-between items-center gap-4">
+      <a href="/es/" class="flex items-center gap-2 text-amber-400 font-bold text-xs md:text-sm hover:text-amber-300 transition font-mono-tech">
+        <span>← INVESTIGACIONES SOBERANAS L'OCHJU</span>
+      </a>
+      
+      <div class="flex items-center gap-3">
+        <a href={`/enquetes/${entry.slug}/`} class="text-xs font-mono bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 px-3 py-1.5 rounded-lg border border-amber-500/30 transition flex items-center gap-1.5 font-bold">
+          <span>FR</span>
+        </a>
+        <a href={`/en/investigations/${entry.slug}/`} class="text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5 font-bold">
+          <span>EN</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-16 space-y-12">
+    
+    <!-- En-tête Dossier -->
+    <header class="space-y-6">
+      <div class="flex flex-wrap items-center gap-3 font-mono-tech text-xs">
+        <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-black uppercase tracking-wider text-[10px]">
+          ACTO OPONIBLE SELLADO
+        </span>
+        <span class="theme-gold-text font-bold">[{data.ref || `DOSSIER-${data.id}`}]</span>
+        <span class="text-slate-400 uppercase tracking-widest">• {data.category}</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-press font-black text-white leading-tight">
+        {data.title}
+      </h1>
+
+      <p class="text-lg sm:text-xl font-press text-slate-300 leading-relaxed border-l-2 border-amber-500 pl-5">
+        {data.chapeau}
+      </p>
+
+      <!-- Métadonnées ISO -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-xl bg-black/60 border border-white/10 font-mono-tech text-xs text-slate-400">
+        <div>
+          <div class="text-[10px] text-slate-500 uppercase">CÉLULA DE INSTRUCCIÓN</div>
+          <div class="text-slate-200 font-bold truncate">{data.author}</div>
+        </div>
+        <div>
+          <div class="text-[10px] text-slate-500 uppercase">FECHA DE PUBLICACIÓN</div>
+          <div class="text-slate-200 font-bold">{data.date}</div>
+        </div>
+        <div>
+          <div class="text-[10px] text-slate-500 uppercase">OUTILS OPEN DATA</div>
+          <div class="text-slate-200 font-bold truncate">{data.tool}</div>
+        </div>
+        <div>
+          <div class="text-[10px] text-slate-500 uppercase">NORME FORENSIQUE</div>
+          <div class="text-emerald-400 font-bold">ISO/IEC 27037</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Visuel Enquête -->
+    <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black">
+      <img src={imgPath} alt={data.title} class="w-full h-auto object-cover max-h-[500px]" />
+      {data.imageCaption && (
+        <div class="p-3 bg-black/80 text-center font-mono-tech text-xs text-slate-400 border-t border-white/10">
+          {data.imageCaption}
+        </div>
+      )}
+    </div>
+
+    <!-- Corps de l'Investigation -->
+    <div class="prose prose-invert prose-amber max-w-none font-press leading-relaxed text-slate-200 space-y-6">
+      <Content />
+    </div>
+
+    <!-- Sources Officielles Opposables -->
+    {data.sources && data.sources.length > 0 && (
+      <section class="p-6 rounded-2xl bg-black/70 border border-white/10 space-y-4 font-mono-tech text-xs">
+        <div class="flex items-center justify-between border-b border-white/10 pb-3">
+          <div class="text-amber-400 font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>⚖️</span> REGISTRO OFICIAL DE PRUEBAS BAJO NORMA ISO/IEC 27037
+          </div>
+          <span class="text-[10px] text-emerald-400 font-bold">SHA-256 SCELLÉ</span>
+        </div>
+        <p class="text-slate-400 text-[11px] font-sans">
+          Todos los actos públicos, peritajes y registros catastrales citados en esta investigación son accesibles y verificables.
+        </p>
+        <div class="space-y-2">
+          {data.sources.map((s) => (
+            <div class="p-3 rounded-lg bg-black/50 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-amber-300 font-bold hover:underline">
+                  {s.name}
+                </a>
+                {s.sha256 && (
+                  <div class="text-[10px] text-slate-500 break-all">
+                    SHA-256 : {s.sha256}
+                  </div>
+                )}
+              </div>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" class="shrink-0 px-3 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 hover:bg-amber-500/20 text-[11px] font-bold text-center">
+                CONSULTER L'ACTE →
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Module de Soutien Citoyen -->
+    <SoutienCitoyen variant="compact" idPrefix="enq_soutien_" />
+
+    <!-- Retour Enquêtes -->
+    <div class="pt-8 border-t border-white/10 flex items-center justify-between font-mono-tech text-xs">
+      <a href="/es/#enquetes" class="text-amber-400 hover:text-amber-300 font-bold flex items-center gap-1.5">
+        <span>← Volver al conjunto de las 9 investigaciones</span>
+      </a>
+      <a href="/soutenir/" class="px-4 py-2 rounded-xl bg-amber-500 text-black font-black uppercase">
+        APOYAR LA INVESTIGACIÓN
+      </a>
+    </div>
+
+  </article>
+</Layout>
