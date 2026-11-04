@@ -1,0 +1,511 @@
+Delivered-To: dj.antonini@gmail.com
+Received: by 2002:ac8:4745:0:0:0:0:0 with SMTP id k5csp697188qtp;
+        Thu, 11 Mar 2021 13:48:35 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxihcFx0JKT5ZIxaOy3s3Hcx0uGcMp/NTnE9/u3irUVAoqhS5jnv/v08zC67vUGg6hiiFDN
+X-Received: by 2002:a5d:4fc5:: with SMTP id h5mr11123671wrw.33.1615499315511;
+        Thu, 11 Mar 2021 13:48:35 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1615499315; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hAA7r2/bz59CEgQkOCcPCiyGZialHMUbUPc23Sji8O8ysuBoqNnn5qon04N/gk8nWV
+         Gfkfs4TQ8dNytRRGuripCmhx5VlVQePyjhlmIl8NPDx44i4nIYCa8ed8KPXBBI44mqjs
+         pS6uSX0ilOFvLfp0OmTUFfhUdWC/q1wJC1xJIYyoH7cKquHpeSDirYpO6uPWmiq8DBPe
+         yON2BDPfUZ4rQoBnH/RGvGSpZMnEP++yhHu9GiUqIchI9mClCZFqO9+k0PhwX0ccK+MP
+         cqu7q4UfFtyjYRlmWMIoCl+HYe4w4p754ySRPQDY0yBIr7snvKNoyY+UmILKtspGJPIm
+         kCbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:date:list-unsubscribe:message-id:subject
+         :reply-to:to:from:dkim-signature:dkim-signature;
+        bh=J3EPMtw6PfJECQ48iDzJYLHiWmH5QeMGB86FRBF+emo=;
+        b=oQb5UZ1zbcCiPfc3Tz4YKVE3NLX5iquMWS471jedTjgxeidd8SViuYIett82F2At0j
+         lCZqSjN7zgiLRvR4qWhUggqB8xTdIK5FFxPrTL6IPj8pYiSZvEcvyXPI2CbYyV1FbHzu
+         ZCQiHu6pKmVCjcTFLEPMOAvtO9DxLWCle+qq5G1kfKpbaU3E1rLO7A7VA4qsFMT5TIgP
+         TiKAfunMJPuTVam7jvD4eYl0DmwLQtyNODY0Dj4iXQshoppfrSdqR7zS2+Jy2AagN7wG
+         /Omjc1CbD4ouMHduwCf4cEHnSlMNqaKkF8XQqdoItQkZbEY243OnFPFeMFpF0xRjNcyn
+         FsYw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@qwertee.com header.s=5geikgtcllhfksq6znhq5tgpmkzgsnoc header.b=R5GayJZV;
+       dkim=pass header.i=@amazonses.com header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b=IBVO0156;
+       spf=pass (google.com: domain of 0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com designates 54.240.50.157 as permitted sender) smtp.mailfrom=0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com
+Return-Path: <0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com>
+Received: from a50-157.smtp-out.eu-west-1.amazonses.com (a50-157.smtp-out.eu-west-1.amazonses.com. [54.240.50.157])
+        by mx.google.com with ESMTPS id m5si128053wma.24.2021.03.11.13.48.35
+        for <dj.antonini@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Thu, 11 Mar 2021 13:48:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of 0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com designates 54.240.50.157 as permitted sender) client-ip=54.240.50.157;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@qwertee.com header.s=5geikgtcllhfksq6znhq5tgpmkzgsnoc header.b=R5GayJZV;
+       dkim=pass header.i=@amazonses.com header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b=IBVO0156;
+       spf=pass (google.com: domain of 0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com designates 54.240.50.157 as permitted sender) smtp.mailfrom=0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=5geikgtcllhfksq6znhq5tgpmkzgsnoc; d=qwertee.com; t=1615499315;
+	h=Content-Type:From:To:Reply-To:Subject:Message-ID:List-Unsubscribe:Date:MIME-Version;
+	bh=IqEJSrDdSOpSOA/41tPmDdA65q1EJVLfz5RhUcpY4Hs=;
+	b=R5GayJZV0Einlx9yioII+ZMowLA6qnenz4OEwlxjL4P6HD0JSz4PjNNMmZH0M6eb
+	Sq/FEDSrnmwF3yR/hH+yyo0SBqHdoH1PzF98ZD9gznl450Pgq6eooBYb6+0dusZCq1n
+	e6BRMZca7on8wJ9JWY6AO00gLWT7RyJgloPfBUwE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=shh3fegwg5fppqsuzphvschd53n6ihuv; d=amazonses.com; t=1615499315;
+	h=Content-Type:From:To:Reply-To:Subject:Message-ID:List-Unsubscribe:Date:MIME-Version:Feedback-ID;
+	bh=IqEJSrDdSOpSOA/41tPmDdA65q1EJVLfz5RhUcpY4Hs=;
+	b=IBVO0156f1IJ8FO20DPHyXSp326G2wcKBQmsU7plrsVqr7lYG8pqvYqcFeMmxHKj
+	43kYiUmDnL4YFGC3nfWoSuhIgg8McwK+jiP4GukWpJXvXdCQ8efFM8XaDdK/mBTg8KY
+	Y1xuJNznA4ap/+sSbxeC/pKsTlWhLzAHf4l1yUKE=
+Content-Type: multipart/alternative;
+ boundary="--_NmP-a801853bf99fe3ac-Part_1"
+From: "Qwertee Daily Tee-Mail" <newsletter@qwertee.com>
+To: dj.antonini@gmail.com
+Reply-To: "Qwertee Daily Tee-Mail" <newsletter@qwertee.com>
+Subject: Always suspected the cats were planning an apocalypse...
+Message-ID: <0102017823434724-b60ba4e6-e6a5-4203-988e-4be9adada81e-000000@eu-west-1.amazonses.com>
+List-Unsubscribe:
+ <https://www.qwertee.com/newsletter/daily-unsubscribe/dj.antonini@gmail.com>
+ (Unsubcribe)
+Date: Thu, 11 Mar 2021 21:48:34 +0000
+MIME-Version: 1.0
+X-SES-Outgoing: 2021.03.11-54.240.50.157
+Feedback-ID: 1.eu-west-1.0NuehSMcd0fr4F3efCqj4ycvgtnFF2t/rWRwRuxMQvU=:AmazonSES
+
+----_NmP-a801853bf99fe3ac-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+                       Ensure you get our newsletter and daily tee updates,=
+ add newsletter@qwertee.com to your safe sender list
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                            =20
+                        Welcome to your new and improved Daily Tee-Mail =
+from Qwertee.                         As always we have 3 great new limited=
+ edition designs that are about to go live in a few minutes on www.qwertee.=
+com - https://www.qwertee.com/  when the timer hits zero on the homepage =
+that we wanted to share just with you.                         But better =
+still, as a much appreciated Daily Tee-Mail reader you now get an exclusive=
+ discount code EVERY DAY to get =E2=82=AC1/=C2=A31/$1 off any of Today's =
+Tees.                         Just use the code C7YT4G6JSJLZF when checking=
+ out to get your discount.                         PS this code will only =
+work for you and expires when Today's Daily Tees have finished being on =
+Sale. But don't worry, there will be a new code for you with tomorrow's =
+Daily Tee-Mail also:)                                                      =
+                         =20
+                                                                           =
+                                                                           =
+                        Kitten Spread                        by =
+tobiasfonseca                                                              =
+                                                                           =
+                                                                           =
+              =20
+                                                                           =
+                                                                           =
+                        Fly me to the Moon                        by =
+Naolito                                                                    =
+                                                                           =
+                                                                           =
+        =20
+                                                                           =
+                                                                           =
+                        CATastrophic                        by BlancaVidal =
+                                                                           =
+                                                                           =
+                                                                           =
+        =20
+                                                                Not =
+interested in Today's Tees? Well the good news is we have a further 150+ =
+designs in the Qwertee Tee Shop - https://www.qwertee.com/shop  so you're =
+sure to find something you like.                  Here's today's featured =
+design
+                                                                           =
+                                           Odin&#39;s Ravens               =
+         featured tee shop design                                          =
+                                                                           =
+                                                            =20
+
+                                                                           =
+                                                                     Tees =
+not your thing? We've also got a huge collection of fantastic wall art =
+available in the Qwertee Print Shop - https://www.qwertee.com/prints . =
+Here's today's featured design                                             =
+                                                                         =
+Amourosaurus                        featured print shop design             =
+                                                                           =
+                                                                           =
+              =20
+
+                               =20
+
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                  =20
+You are receiving this email from Qwertee because you signed up for our =
+daily tee updates. If you don't want to receive our daily tee updates =
+anymore just Click Here to Unsubscribe - https://www.qwertee.=
+com/newsletter/daily-unsubscribe/dj.antonini@gmail.com  | Thanks!
+               =20
+                               =20
+                All Content Copyright Qwertee.com 2021 =C2=A9 All rights =
+reserved.
+                Qwertee, Block 3, Harcourt Centre, Harcourt Road, Dublin 2,=
+ Ireland               =20
+                                                                     =
+=20
+----_NmP-a801853bf99fe3ac-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<table width=3D"100%" cellspacing=3D"0" style=3D"text-align: =
+center;border:none;background-color: #ffffff;color:#000;font-family: =
+Helvetica, Arial, sans-serif;line-height: 150%;">
+    <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top">
+        <span =
+style=3D"font-size: 11px;"> Ensure you get our newsletter and daily tee =
+updates, add newsletter@qwertee.com to your safe sender list</span><br>
+    <div>
+        <table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border:none;">
+            <tbody>
+          <tr>
+            <td width=3D"600" style=3D"border-bottom:10px solid =
+#000;background-color:#000">
+              <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+                <tbody>
+                <tr>
+                  <td width=3D"435" height=3D"70" =
+align=3D"center">
+                    <a href=3D"https://www.qwertee.=
+com"><img src=3D"https://cdn.qwertee.com/images/newsletter/daily-header06.=
+png" alt=3D"Daily Tee Mail" width=3D"435" height=3D"70" =
+border=3D"0"></a></td>
+                    <td width=3D"52" height=3D"70" =
+align=3D"center"><a href=3D"https://www.qwertee.com"><img =
+src=3D"https://cdn.qwertee.com/images/newsletter/daily-header02.png" =
+alt=3D"Shop Qwertee" width=3D"52" height=3D"70" border=3D"0"></a></td>
+                    <td width=3D"53" height=3D"70" align=3D"center"><a =
+href=3D"https://www.qwertee.com/tees/vote/selected"><img src=3D"https://cdn=
+.qwertee.com/images/newsletter/daily-header03.png" alt=3D"Vote Qwertee" =
+width=3D"53" height=3D"70" border=3D"0"></a></td>
+                    <td =
+width=3D"60" height=3D"70" align=3D"center"><a href=3D"https://www.qwertee.=
+com/tees/free-tees"><img src=3D"https://cdn.qwertee.=
+com/images/newsletter/daily-header05.png" alt=3D"Win" width=3D"60" =
+height=3D"70" border=3D"0"></a></td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+            <tr>
+               <td width=3D"600" =
+class=3D"defaultText" style=3D"font-size: 14px;color: #333333;line-height: =
+150%;font-family: Helvetica;background-color: #FFFFFF;padding: 10px 0;">
+                    <p>
+                        <br>
+                        Welcome to your new and improved Daily Tee-Mail =
+from Qwertee.=20
+                        As always we have 3 great new =
+limited edition designs that are about to go live in a few minutes on <a =
+href=3D"https://www.qwertee.com/">www.qwertee.com</a> when the timer hits =
+zero on the homepage that we wanted to share just with you.=20
+                        But better still, as a much appreciated Daily =
+Tee-Mail reader you now get an exclusive discount code EVERY DAY to get =
+=E2=82=AC1/=C2=A31/$1 off any of Today's Tees.=20
+                        =
+Just use the code C7YT4G6JSJLZF when checking out to get your discount.=20
+                        PS this code will only work for you and expires =
+when Today's Daily Tees have finished being on Sale. But don't worry, there=
+ will be a new code for you with tomorrow's Daily Tee-Mail also:)
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <br>
+        <div>
+          <table cellspacing=3D"0" cellpadding=3D"0" style=3D"border: 0px =
+none #000000;">
+            <tbody>
+            <tr>
+              <td width=3D"600">
+                <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+                  <tbody>
+                  <tr>
+                    <td colspan=3D"4">
+                      <div>
+                        <h1 =
+style=3D"letter-spacing: -2px;margin:0;padding:0 0 10px =
+0;font-size:50px;font-weight:bold;text-align: center;text-transform: =
+uppercase;border-bottom:1px solid #ccc;line-height:50px;">Kitten =
+Spread</h1>
+                        <h2 style=3D"letter-spacing: =
+1px;margin:10px 0 10px 0;padding:0;font-size:25px;font-weight:normal;text-a=
+lign: center;line-height:25px;">by tobiasfonseca</h2>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width=3D"566" colspan=3D"4" align=3D"center" =
+valign=3D"top" style=3D"border-top:4px solid #000;padding-top:10px">
+                <p style=3D"text-align: center; "> <a href=3D"https://www.=
+qwertee.com"><img src=3D"https://cdn.qwertee.com/images/designs/product-thu=
+mbs/1615291141-174934-mens-500x600.jpg" alt=3D"" border=3D"0"></a></p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div>
+          <table cellspacing=3D"0" cellpadding=3D"0" style=3D"border: 0px =
+none #000000;">
+            <tbody>
+            <tr>
+              <td width=3D"600">
+                <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+                  <tbody>
+                  <tr>
+                    <td colspan=3D"4">
+                      <div>
+                        <h1 =
+style=3D"letter-spacing: -2px;margin:0;padding:0 0 10px =
+0;font-size:50px;font-weight:bold;text-align: center;text-transform: =
+uppercase;border-bottom:1px solid #ccc;line-height:50px;">Fly me to the =
+Moon</h1>
+                        <h2 style=3D"letter-spacing: =
+1px;margin:10px 0 10px 0;padding:0;font-size:25px;font-weight:normal;text-a=
+lign: center;line-height:25px;">by Naolito</h2>
+                      =
+</div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width=3D"566" =
+colspan=3D"4" align=3D"center" valign=3D"top" style=3D"border-top:4px solid=
+ #000;padding-top:10px">
+                <p style=3D"text-align: center; ">=
+ <a href=3D"https://www.qwertee.com"><img src=3D"https://cdn.qwertee.=
+com/images/designs/product-thumbs/1615222688-174985-mens-500x600.jpg" =
+alt=3D"" border=3D"0"></a></p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div>
+          <table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border: 0px none #000000;">
+            <tbody>
+            <tr>
+              <td width=3D"600">
+                <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+                  <tbody>
+                  <tr>
+                    <td colspan=3D"4">
+                      <div>
+                        <h1 =
+style=3D"letter-spacing: -2px;margin:0;padding:0 0 10px =
+0;font-size:50px;font-weight:bold;text-align: center;text-transform: =
+uppercase;border-bottom:1px solid #ccc;line-height:50px;">CATastrophic</h1>
+                        <h2 style=3D"letter-spacing: 1px;margin:10px 0 10px=
+ 0;padding:0;font-size:25px;font-weight:normal;text-align: =
+center;line-height:25px;">by BlancaVidal</h2>
+                      </div>
+                    </td>
+                  </tr>
+                  =
+</tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width=3D"566" colspan=3D"4" =
+align=3D"center" valign=3D"top" style=3D"border-top:4px solid =
+#000;padding-top:10px">
+                <p style=3D"text-align: center; "> =
+<a href=3D"https://www.qwertee.com"><img src=3D"https://cdn.qwertee.=
+com/images/designs/product-thumbs/1615223146-175143-mens-500x600.jpg" =
+alt=3D"" border=3D"0"></a></p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+        <br>
+          <table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border: 0px none #000000;">
+            <tbody>
+            <tr>
+              <td width=3D"600">
+                <p>Not interested in =
+Today's Tees? Well the good news is we have a further 150+ designs in the =
+<a href=3D"https://www.qwertee.com/shop">Qwertee Tee Shop</a> so you're =
+sure to find something you like.
+                  Here's today's featured =
+design</p><br>
+                <table width=3D"600" cellpadding=3D"0" =
+cellspacing=3D"0">
+                  <tbody>
+                  <tr>
+                    <td colspan=3D"4">
+                      <div>
+                        <h1 style=3D"letter-spacing: =
+-2px;margin:0;padding:0 0 10px 0;font-size:50px;font-weight:bold;text-align=
+: center;text-transform: uppercase;border-bottom:1px solid =
+#ccc;line-height:50px;">Odin&#39;s Ravens</h1>
+                        <h2 =
+style=3D"letter-spacing: 1px;margin:10px 0 10px 0;padding:0;font-size:25px;=
+font-weight:normal;text-align: center;line-height:25px;">featured tee shop =
+design</h2>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width=3D"566" colspan=3D"4" align=3D"center" =
+valign=3D"top" style=3D"border-top:4px solid #000;padding-top:10px">
+                <p style=3D"text-align: center; ">
+                <a =
+href=3D"https://www.qwertee.com/product/odin-s-ravens"><img border=3D"0" =
+src=3D"https://cdn.qwertee.com/images/designs/product-thumbs/1614959366-171=
+876-zoom-500x600.jpg" alt=3D""></a><br><br>
+                </p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border: 0px none #000000;">
+            <tbody>
+            <tr>
+              <td width=3D"600">
+                <p style=3D"text-align: center">Tees not your thing? We've =
+also got a huge collection of fantastic wall art available in the <a =
+href=3D"https://www.qwertee.com/prints">Qwertee Print Shop</a>. Here's =
+today's featured design</p>
+                <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+                  <tbody>
+                  <tr>
+                    <td colspan=3D"4">
+                      <div>
+                        <h1 =
+style=3D"letter-spacing: -2px;margin:0;padding:0 0 10px =
+0;font-size:50px;font-weight:bold;text-align: center;text-transform: =
+uppercase;border-bottom:1px solid #ccc;line-height:50px;">Amourosaurus</h1>
+                        <h2 style=3D"letter-spacing: 1px;margin:10px 0 10px=
+ 0;padding:0;font-size:25px;font-weight:normal;text-align: =
+center;line-height:25px;">featured print shop design</h2>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width=3D"566" colspan=3D"4" align=3D"center" =
+valign=3D"top" style=3D"border-top:4px solid #000;padding-top:10px">
+                <p style=3D"text-align: center; ">
+                <a =
+href=3D"https://www.qwertee.com/print/amourosaurus"><img border=3D"0" =
+src=3D"https://cdn.qwertee.com/images/designs/product-thumbs/1501586541-101=
+215-printleft-500x717.jpg" alt=3D""></a><br><br>
+                </p>
+                <p style=3D"text-align: center; "><br><br></p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <table width=3D"600" =
+cellpadding=3D"0" cellspacing=3D"0">
+            <tbody>
+          <tr>
+            <td width=3D"151" height=3D"50" align=3D"center">
+              <a href=3D"https://www.qwertee.com/">
+                <img alt=3D"" src=3D"https://cdn.qwertee.=
+com/images/newsletter/footer01.png" width=3D"151" height=3D"50" =
+border=3D"0">
+                </a>
+              </td>
+            <td width=3D"156" height=3D"50" align=3D"center">
+              <a href=3D"https://www.facebook.com/qwertee">
+                <img alt=3D"" src=3D"https://cdn.qwertee.=
+com/images/newsletter/footer02.png" width=3D"156" height=3D"50" =
+border=3D"0">
+              </a>
+            </td>
+            <td =
+width=3D"136" height=3D"50" align=3D"center">
+              <a =
+href=3D"https://twitter.com/qwertee">
+                <img alt=3D"" =
+src=3D"https://cdn.qwertee.com/images/newsletter/footer03.png" =
+width=3D"136" height=3D"50" border=3D"0">
+              </a>
+            </td>
+            <td width=3D"157" height=3D"50" =
+align=3D"center">
+              <a href=3D"https://instagram.com/qwertee">
+                <img alt=3D"" src=3D"https://cdn.qwertee.=
+com/images/newsletter/footer05.png" width=3D"157" height=3D"50" =
+border=3D"0">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=3D"4" align=3D"left" valign=3D"top" =
+style=3D"padding-bottom:10px;border-bottom:20px solid #000">
+                <div style=3D"font-size:11px"><br>You are receiving this =
+email from Qwertee because you signed up for our daily tee updates. If you =
+don't want to receive our daily tee updates anymore just <a =
+style=3D"color:#000;font-weight: bold;" href=3D"https://www.qwertee.=
+com/newsletter/daily-unsubscribe/dj.antonini@gmail.com">Click Here to =
+Unsubscribe</a> | Thanks!<br>
+                <br>
+                <hr>
+                <br>
+                <em>All Content Copyright Qwertee.com =
+2021 =C2=A9 All rights reserved.</em><br>
+                Qwertee, Block 3,=
+ Harcourt Centre, Harcourt Road, Dublin 2, Ireland
+                <br>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <img src=3D"https://cdn.qwertee.com/images/pixel.png?id=3D20210311">
+
+----_NmP-a801853bf99fe3ac-Part_1--

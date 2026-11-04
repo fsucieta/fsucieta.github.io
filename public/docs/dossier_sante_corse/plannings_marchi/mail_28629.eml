@@ -1,0 +1,559 @@
+Delivered-To: dj.antonini@gmail.com
+Received: by 2002:a05:6214:598a:b0:571:1592:2e18 with SMTP id ll10csp1303040qvb;
+        Sun, 19 Feb 2023 23:30:40 -0800 (PST)
+X-Google-Smtp-Source: AK7set+OqIiAdFyQvKebwngzjecsip0hfEZQpRfcANOQjJ6PBOw2iYFDV/iIms1W+gkUgkZJ53/G
+X-Received: by 2002:a05:600c:180a:b0:3df:ef18:b0a1 with SMTP id n10-20020a05600c180a00b003dfef18b0a1mr7066746wmp.12.1676878240759;
+        Sun, 19 Feb 2023 23:30:40 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1676878240; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Q5hTKGNQDG4pXm68aNZ7OrUYqWG+FXreDprqGVyvXWRfquH1IoHyhlFIoehAENc7wW
+         XmYFhe71WtyHn2POKf914Mq650w/2ko5BsYxdzY+rYUkHdFveL96ixQkddNVg44c703G
+         8Q2Cn2r5VcVfuPrs6AOy7ZhrEK7YMQVWn/4IymEE8F66l3B73Fq/dRNzDlyv0QsTvWkw
+         NU9OViQ3DS1EHoAdLrI406gJjWSIkwTdvEj+xxhPRgZwZZcBPYUNCySh/Q1IXAtmEBgW
+         TvngJzNy1/V3JzhHXxf9aXDeEG4SA8AXapbFNxR0miL4uOjM29jiba+F1AQMD27/M8t6
+         BeTQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:to:from;
+        bh=it7vnIaUaXKhIugTBVHOc+D4MwkRTBwSkI/ye22sIl0=;
+        b=QYfhHWrFOT/mErLmWO1JdyUZ+PZhRiDw1ht3qphnyXn1oFNRjPQ4QR/LRMfuJgQxe8
+         kYO3WvTwEOk28g3r43NMX0bBEMdiV+9rgSuYLChQ1bt03uQWNSKMrUmE6cnOc36Iobi7
+         Rsxyj/r29+D+uyMBcdgboVvFU78sSH4W1OGYUdnSPW9dH4VrRDhygMrKZeAlqqIRWd1z
+         TDBGWAQNvVzswfk07XSCcAXUiX9bhR7YAPPKAmEUIAUuwLsmFfUAJlfEQseKQXU5NjL+
+         cKIKT2cp8nvjTCiXfrOEzau+t12e9R1Gv4USsNLwnWKy4fI0Y3Oy9360K1BjTOO60Dyf
+         Iy0Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of philippe.marchi@ch-ajaccio.fr designates 217.74.103.251 as permitted sender) smtp.mailfrom=philippe.marchi@ch-ajaccio.fr
+Return-Path: <philippe.marchi@ch-ajaccio.fr>
+Received: from mx01-out.cloud.vadesecure.com (mx01-out.cloud.vadesecure.com. [217.74.103.251])
+        by mx.google.com with ESMTPS id j8-20020a056000124800b002c66c2922e7si2926020wrx.123.2023.02.19.23.30.40
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 19 Feb 2023 23:30:40 -0800 (PST)
+Received-SPF: pass (google.com: domain of philippe.marchi@ch-ajaccio.fr designates 217.74.103.251 as permitted sender) client-ip=217.74.103.251;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of philippe.marchi@ch-ajaccio.fr designates 217.74.103.251 as permitted sender) smtp.mailfrom=philippe.marchi@ch-ajaccio.fr
+Received: from mail.ch-ajaccio.fr (unknown [185.15.24.118])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx01-out.cloud.vadesecure.com (vcfr1mtao01p) with ESMTPS id 4PKvGS27xpz1nrn;
+	Mon, 20 Feb 2023 08:30:40 +0100 (CET)
+Received: from SRV-EXCH-2016-1.CHG-AJ.local (172.20.102.51) by
+ SRV-EXCH-2016-1.CHG-AJ.local (172.20.102.51) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.16; Mon, 20 Feb 2023 08:30:35 +0100
+Received: from SRV-EXCH-2016-1.CHG-AJ.local ([fe80::2999:69d6:9f94:c7dd]) by
+ SRV-EXCH-2016-1.CHG-AJ.local ([fe80::2999:69d6:9f94:c7dd%5]) with mapi id
+ 15.01.2507.016; Mon, 20 Feb 2023 08:30:35 +0100
+From: Marchi Philippe <philippe.marchi@ch-ajaccio.fr>
+To: Helec Sylvain <sylvain.helec@ch-ajaccio.fr>, ADRIEN HELEC
+	<aitone@hotmail.fr>, "MUSELLI ANGELIQUE " <muselli.angie@hotmail.fr>,
+	"BARTOLI ANTHONY " <anthobartoli@orange.fr>, ANTHONY BENATI
+	<anthony.benati@gmail.com>, ANTHONY CANI <anthony.cani@laposte.net>, "BENATI
+ TONY" <tonybenati@laposte.net>, "MASSON CHRISTOPHE "
+	<christophe.masson61@orange.fr>, EUGENE CANAPA <eugenetaipan@gmail.com>,
+	"SINI FLORENT" <florent.sini@outlook.fr>, "VERNET FREDERIC "
+	<fredvernet@wanadoo.fr>, GILLES GIACOMONI <gilles.giacomoni@gmail.com>, "JEAN
+ CLAUDE TEDDE" <jctedde@icloud.com>, JEAN LUC ARMANI
+	<jeanluc.armani@akeonet.com>, "CASANOVA JEAN FRANCOIS "
+	<jfcasanov2a@gmail.com>, JEROME ANTOLINI <antoni.antolini@gmail.com>, "JOSEPH
+ SINI" <josud63@hotmail.fr>, mariana m <mariana30@live.fr>, NICOLAS PAONE
+	<clanipaone@free.fr>, Agent SSIAP EUGENIE <agentssiap.eugenie@ch-ajaccio.fr>,
+	Agent SSIAP CHA <agentssiap.cha@ch-ajaccio.fr>, "GALANTI STEPHANE "
+	<S.GALANTI@HOTMAIL.FR>, SYLVAIN HELEC <helecsylvain@gmail.com>, "CHEF
+ D'EQUIPE SSIAP" <black-wolf@laposte.net>, YANNICK NAVARRO
+	<yannicknavarro.mi2@gmail.com>, "dj.antonini@gmail.com"
+	<dj.antonini@gmail.com>
+Subject: RE: Utilisation pass (clef)
+Thread-Topic: Utilisation pass (clef)
+Thread-Index: AdlC4CF7devsW9I1SxyXAcoxkEhxQQCHOv2A
+Date: Mon, 20 Feb 2023 07:30:35 +0000
+Message-ID: <ca17962290424ccb9adce82c5146ecbf@ch-ajaccio.fr>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [172.20.102.13]
+Content-Type: multipart/alternative;
+	boundary="_000_ca17962290424ccb9adce82c5146ecbfchajacciofr_"
+MIME-Version: 1.0
+X-VRC-SPAM-STATUS: 0,-100,gggruggvucftvghtrhhoucdtuddrgedvhedrudejgedguddtiecutefuodetggdotefrodftvfcurfhrohhfihhlvgemucggtfevpdfqfgfvnecuuegrihhlohhuthemuceftddtnecusecvtfgvtghiphhivghnthhsucdlqddutddtmdenucfjughrpefhvffuthffkfhitgggsegrtdhjredttddunecuhfhrohhmpeforghrtghhihcurfhhihhlihhpphgvuceophhhihhlihhpphgvrdhmrghrtghhihestghhqdgrjhgrtggtihhordhfrheqnecuggftrfgrthhtvghrnhepvedtueehudegtefhhedttefftdefkeeiudfgvddviefhieegudehtdeuffdvledtnecukfhppedukeehrdduhedrvdegrdduudekpddujedvrddvtddruddtvddrudefnecuvehluhhsthgvrhfuihiivgeptdenucfrrghrrghmpehmohguvgepshhmthhpohhuthdpmhgrgihmshhgshhiiigvpedutdegkeehjeeipdhinhgvthepudekhedrudehrddvgedruddukedphhgvlhhopehmrghilhdrtghhqdgrjhgrtggtihhordhfrhdpmhgrihhlfhhrohhmpehphhhilhhiphhpvgdrmhgrrhgthhhisegthhdqrghjrggttghiohdrfhhrpdhnsggprhgtphhtthhopedvfedprhgtphhtthhopegrihhtohhnvgeshhhothhmrghilhdrfhhrpdhrtghpthhtohepmhhushgvlhhlihdrrghnghhivgeshhhothhmrghilhdrfhhrpdhrtghpthhtoheprghnthhhohgsrghrthholhhisehorhgrnhhgvgdrfhhrpdhrtghpthhtohep
+ rghnthhhohhnhidrsggvnhgrthhisehgmhgrihhlrdgtohhm
+X-VRC-SPAM-STATE: legit
+X-VRC-POLICY-STATUS: t=1,a=1,l=0
+
+--_000_ca17962290424ccb9adce82c5146ecbfchajacciofr_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Erratum prendre en compte le MAIL pr=E9c=E9dant
+
+Cordialement.
+
+Mr MARCHI Philippe
+TSH / SSIAP 3
+Chef de service Securite Incendie
+CH Ajaccio
+27 Avenue Imp=E9ratrice Eug=E9nie
+BP 411, 20303 Ajaccio
+T=E9l :      04.95.29.93.75
+E-Mail : philippe.marchi@ch-ajaccio.fr<mailto:philippe.marchi@ch-ajaccio.fr=
+>
+            securite.incendie@ch-ajaccio.fr<mailto:securite.incendie@ch-aja=
+ccio.fr>
+
+De : Marchi Philippe
+Envoy=E9 : vendredi 17 f=E9vrier 2023 16:09
+=C0 : Helec Sylvain; 'ADRIEN HELEC'; 'MUSELLI ANGELIQUE '; 'BARTOLI ANTHONY=
+ '; 'ANTHONY BENATI'; 'ANTHONY CANI'; 'BENATI TONY'; 'MASSON CHRISTOPHE '; =
+'EUGENE CANAPA'; 'SINI FLORENT'; 'VERNET FREDERIC '; 'GILLES GIACOMONI'; 'J=
+EAN CLAUDE TEDDE'; 'JEAN LUC ARMANI'; 'CASANOVA JEAN FRANCOIS '; 'JEROME AN=
+TOLINI'; 'JOSEPH SINI'; 'mariana m'; 'NICOLAS PAONE'; Agent SSIAP EUGENIE; =
+Agent SSIAP CHA; 'GALANTI STEPHANE '; 'SYLVAIN HELEC'; 'CHEF D'EQUIPE SSIAP=
+'; 'YANNICK NAVARRO'; 'dj.antonini@gmail.com'
+Objet : Utilisation pass (clef)
+
+Merci de prendre en compte la consigne concernant l'utilisation du passe vo=
+ir (PJ).
+
+Cependant les consignes transmises ult=E9rieurement n'ayant pas =E9t=E9 sui=
+vi par tous, je vous demande l'ouverture des diff=E9rents locaux (consultat=
+ions) pour le m=E9nage, les portes devront rester d=E9verrouill=E9es, en au=
+cun cas vous ne devrez les refermer (contr=F4le d'acc=E8s aux entr=E9es des=
+ services op=E9rationnels) cadres inform=E9s.
+
+
+
+Cordialement.
+
+Mr MARCHI Philippe
+TSH / SSIAP 3
+Chef de service Securite Incendie
+CH Ajaccio
+27 Avenue Imp=E9ratrice Eug=E9nie
+BP 411, 20303 Ajaccio
+T=E9l :      04.95.29.93.75
+E-Mail : philippe.marchi@ch-ajaccio.fr<mailto:philippe.marchi@ch-ajaccio.fr=
+>
+            securite.incendie@ch-ajaccio.fr<mailto:securite.incendie@ch-aja=
+ccio.fr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--_000_ca17962290424ccb9adce82c5146ecbfchajacciofr_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle27
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle28
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle29
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle30
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle31
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle32
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle33
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle34
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle35
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle36
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle37
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle38
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle39
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle40
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle41
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle42
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle43
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle44
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle45
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle46
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle47
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle48
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle49
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle50
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle51
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle52
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle53
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle54
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle55
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle56
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle57
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026">
+<o:colormenu v:ext=3D"edit" fillcolor=3D"none [2412]" />
+</o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body bgcolor=3D"#BFBFBF" lang=3D"FR" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;font-family:&quot=
+;Calibri&quot;,&quot;sans-serif&quot;;color:#1F497D">Erratum prendre en com=
+pte le MAIL pr=E9c=E9dant<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri&quot;,&quot=
+;sans-serif&quot;;color:#1F497D">Cordialement.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,&quot;sans-serif&quot;;color:#1F497D">Mr MARCHI Philippe</span=
+></b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sa=
+ns-serif&quot;;color:#1F497D"><br>
+TSH / SSIAP 3<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">Chef de service Securite In=
+cendie
+<br>
+CH Ajaccio<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">27 Avenue Imp=E9ratrice Eug=
+=E9nie<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">BP 411, 20303 Ajaccio<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">T=E9l :&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; 04.95.29.93.75
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">E-Mail&nbsp;:</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quo=
+t;;color:#31849B">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;=
+sans-serif&quot;;color:#002060"><a href=3D"mailto:philippe.marchi@ch-ajacci=
+o.fr"><span style=3D"color:#002060">philippe.marchi@ch-ajaccio.fr</span></a=
+><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#002060">&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u><a href=3D"mailto:securite.incendie@ch-ajaccio.fr"><span style=3D"color:=
+#002060">securite.incendie@ch-ajaccio.fr</span></a><o:p></o:p></u></span></=
+p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">De&nbsp;:</span></b><span style=3D"fo=
+nt-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Marc=
+hi Philippe
+<br>
+<b>Envoy=E9&nbsp;:</b> vendredi 17 f=E9vrier 2023 16:09<br>
+<b>=C0&nbsp;:</b> Helec Sylvain; 'ADRIEN HELEC'; 'MUSELLI ANGELIQUE '; 'BAR=
+TOLI ANTHONY '; 'ANTHONY BENATI'; 'ANTHONY CANI'; 'BENATI TONY'; 'MASSON CH=
+RISTOPHE '; 'EUGENE CANAPA'; 'SINI FLORENT'; 'VERNET FREDERIC '; 'GILLES GI=
+ACOMONI'; 'JEAN CLAUDE TEDDE'; 'JEAN LUC
+ ARMANI'; 'CASANOVA JEAN FRANCOIS '; 'JEROME ANTOLINI'; 'JOSEPH SINI'; 'mar=
+iana m'; 'NICOLAS PAONE'; Agent SSIAP EUGENIE; Agent SSIAP CHA; 'GALANTI ST=
+EPHANE '; 'SYLVAIN HELEC'; 'CHEF D'EQUIPE SSIAP'; 'YANNICK NAVARRO'; 'dj.an=
+tonini@gmail.com'<br>
+<b>Objet&nbsp;:</b> Utilisation pass (clef)<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;font-family:&quot=
+;Calibri&quot;,&quot;sans-serif&quot;;color:#1F497D">Merci de prendre en co=
+mpte la consigne concernant l&#8217;utilisation du passe voir (PJ).<o:p></o=
+:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;font-family:&quot=
+;Calibri&quot;,&quot;sans-serif&quot;;color:#1F497D">Cependant les consigne=
+s transmises ult=E9rieurement n&#8217;ayant pas =E9t=E9 suivi par tous, je =
+vous demande l&#8217;ouverture des diff=E9rents locaux (consultations) pour
+ le m=E9nage, les portes devront rester d=E9verrouill=E9es, <u>en aucun cas=
+ vous ne devrez les refermer</u> (contr=F4le d&#8217;acc=E8s aux entr=E9es =
+des services op=E9rationnels) cadres inform=E9s.</span></b><span style=3D"f=
+ont-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;colo=
+r:#1F497D">
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri&quot;,&quot=
+;sans-serif&quot;;color:#1F497D">Cordialement.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,&quot;sans-serif&quot;;color:#1F497D">Mr MARCHI Philippe</span=
+></b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sa=
+ns-serif&quot;;color:#1F497D"><br>
+TSH / SSIAP 3<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">Chef de service Securite In=
+cendie
+<br>
+CH Ajaccio<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">27 Avenue Imp=E9ratrice Eug=
+=E9nie<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">BP 411, 20303 Ajaccio<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">T=E9l :&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; 04.95.29.93.75
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#1F497D">E-Mail&nbsp;:</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quo=
+t;;color:#31849B">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;=
+sans-serif&quot;;color:#002060"><a href=3D"mailto:philippe.marchi@ch-ajacci=
+o.fr"><span style=3D"color:#002060">philippe.marchi@ch-ajaccio.fr</span></a=
+><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,&quot;sans-serif&quot;;color:#002060">&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u><a href=3D"mailto:securite.incendie@ch-ajaccio.fr"><span style=3D"color:=
+#002060">securite.incendie@ch-ajaccio.fr</span></a><o:p></o:p></u></span></=
+p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Ca=
+libri&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<div id=3D"divtagdefaultwrapper">
+<p><span style=3D"font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;co=
+lor:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_ca17962290424ccb9adce82c5146ecbfchajacciofr_--

@@ -1,0 +1,351 @@
+---
+interface SourceItem {
+  name: string;
+  url: string;
+  pdfDirect?: string;
+  sha256?: string;
+}
+
+interface Props {
+  sources: SourceItem[];
+  id?: number;
+  refCode?: string;
+  date?: string;
+  lang?: string;
+}
+
+const { 
+  sources = [], 
+  id, 
+  refCode = '', 
+  date = '', 
+  lang = 'fr' 
+} = Astro.props;
+
+// Normalisation de la langue
+const currentLang = ['fr', 'en', 'it', 'es', 'pt', 'ru', 'zh', 'ja'].includes(lang) ? lang : 'fr';
+
+// Dictionnaire multilingue complet des libellés forensiques
+const i18n = {
+  fr: {
+    sectionTitle: "Registres & Pièces d'État Certifiées",
+    badgeSha: "EMPREINTES SHA-256 INVIOLABLES",
+    badgeIso: "NORME ISO/IEC 27037:2012 SCELLÉE",
+    howItWorksTitle: "Comment fonctionne notre système de preuves & d'accès aux actes d'État ?",
+    howItWorksClick: "(Cliquez pour comprendre)",
+    whyShaTitle: "Pourquoi une empreinte cryptographique SHA-256 ?",
+    whyShaDesc: "Sur Internet, les délibérations et arrêtés d'État peuvent être modifiés ou supprimés. L'empreinte SHA-256 constitue la signature numérique immuable du document au bit près. C'est une preuve médico-légale inviolable et opposable devant les juridictions.",
+    whyCadaTitle: "Comment exercer votre droit d'accès citoyen ?",
+    whyCadaDesc: "Ces actes relèvent des archives et pièces administratives communicables de plein droit (Loi CADA / Art. L. 311-1 CRPA). Vous pouvez consulter directement chaque document, le télécharger, ou exiger la communication de l'original physique.",
+    docCertified: "DOCUMENT OFFICIEL CERTIFIÉ",
+    instantConsult: "Consultation immédiate sans intermédiaire",
+    openDoc: "Consulter la Pièce",
+    downloadDoc: "Télécharger",
+    copyHash: "Copier le SHA-256",
+    hashCopied: "Empreinte SHA-256 copiée dans le presse-papier !",
+    cadaHelp: "Droit d'accès citoyen : Si un lien institutionnel externe expire, saisissez la CADA avec notre générateur pour forcer la communication de la pièce physique.",
+    cadaBtn: "⚖️ Générateur de Saisine CADA",
+  },
+  en: {
+    sectionTitle: "Certified State Registries & Primary Archives",
+    badgeSha: "TAMPER-PROOF SHA-256 HASHES",
+    badgeIso: "SEALED ISO/IEC 27037:2012 STANDARD",
+    howItWorksTitle: "How our evidence verification and primary source system works",
+    howItWorksClick: "(Click to inspect)",
+    whyShaTitle: "Why a cryptographic SHA-256 checksum?",
+    whyShaDesc: "On the internet, government decrees and official records can be altered or scrubbed. The SHA-256 hash is the document's immutable digital fingerprint down to the exact bit. It constitutes tamper-proof forensic evidence admissible in court.",
+    whyCadaTitle: "How to exercise your citizen right to know (FOIA)?",
+    whyCadaDesc: "These records are public administrative documents disclosable by law (FOIA / CRPA Art. L. 311-1). You can inspect each record directly, download it, or request official physical disclosure from the state prefecture.",
+    docCertified: "CERTIFIED OFFICIAL RECORD",
+    instantConsult: "Direct inspection with zero intermediaries",
+    openDoc: "Inspect Record",
+    downloadDoc: "Download",
+    copyHash: "Copy SHA-256",
+    hashCopied: "SHA-256 cryptographic hash copied to clipboard!",
+    cadaHelp: "Citizen Right to Know: If an external government link expires, submit an official FOIA request using our legal template.",
+    cadaBtn: "⚖️ FOIA Legal Request Template",
+  },
+  it: {
+    sectionTitle: "Registri e Documenti Ufficiali Certificati",
+    badgeSha: "IMPRONTE SHA-256 INVIOLABILI",
+    badgeIso: "NORMA ISO/IEC 27037:2012 SCELLATA",
+    howItWorksTitle: "Come funziona il nostro sistema di prove e accesso agli atti di Stato?",
+    howItWorksClick: "(Clicca per approfondire)",
+    whyShaTitle: "Perché un'impronta crittografica SHA-256?",
+    whyShaDesc: "Su Internet, le delibere e i decreti ufficiali possono essere modificati o cancellati. L'impronta SHA-256 è la firma digitale immutabile del documento al bit esatto. Costituisce una prova forense inviolabile e opponibile in giudizio.",
+    whyCadaTitle: "Come esercitare il diritto di accesso civico (FOIA)?",
+    whyCadaDesc: "Questi atti appartengono agli archivi amministrativi liberamente accessibili. Puoi consultare direttamente ogni documento, scaricarlo o richiederne la copia ufficiale integrale.",
+    docCertified: "DOCUMENTO UFFICIALE CERTIFICATO",
+    instantConsult: "Consultazione immediata senza intermediari",
+    openDoc: "Consulta l'Atto",
+    downloadDoc: "Scarica",
+    copyHash: "Copia SHA-256",
+    hashCopied: "Impronta SHA-256 copiata negli appunti!",
+    cadaHelp: "Diritto di accesso civico: se un link istituzionale esterno decade, genera la richiesta formale di accesso agli atti con il nostro modello.",
+    cadaBtn: "⚖️ Generatore Istanza di Accesso",
+  },
+  es: {
+    sectionTitle: "Registros y Documentos Oficiales Certificados",
+    badgeSha: "HUELLAS SHA-256 INVIOLABLES",
+    badgeIso: "NORMA ISO/IEC 27037:2012 SELLADA",
+    howItWorksTitle: "¿Cómo funciona nuestro sistema de pruebas y acceso a documentos del Estado?",
+    howItWorksClick: "(Clic para consultar)",
+    whyShaTitle: "¿Por qué una huella criptográfica SHA-256?",
+    whyShaDesc: "En internet, las resoluciones y decretos oficiales pueden alterarse o eliminarse. La huella SHA-256 representa la firma digital inmutable del documento con exactitud de bit. Constituye una prueba pericial inviolable y oponible ante tribunales.",
+    whyCadaTitle: "¿Cómo ejercer el derecho ciudadano de acceso (Transparencia)?",
+    whyCadaDesc: "Estos documentos forman parte del archivo público consultable por ley. Puede acceder directamente a cada documento, descargarlo o solicitar su remisión administrativa oficial.",
+    docCertified: "DOCUMENTO OFICIAL CERTIFICADO",
+    instantConsult: "Consulta directa sin intermediarios",
+    openDoc: "Consultar Documento",
+    downloadDoc: "Descargar",
+    copyHash: "Copiar SHA-256",
+    hashCopied: "¡Huella SHA-256 copiada al portapapeles!",
+    cadaHelp: "Derecho a la información: si un enlace administrativo externo deja de responder, interponga la solicitud oficial de transparencia con nuestra herramienta.",
+    cadaBtn: "⚖️ Solicitud de Acceso Ciudadano",
+  },
+  pt: {
+    sectionTitle: "Registos e Documentos Oficiais Certificados",
+    badgeSha: "HASHES SHA-256 INVIOLÁVEIS",
+    badgeIso: "NORMA ISO/IEC 27037:2012 SELADA",
+    howItWorksTitle: "Como funciona o nosso sistema de provas e acesso a atos de Estado?",
+    howItWorksClick: "(Clique para compreender)",
+    whyShaTitle: "Por que uma assinatura criptográfica SHA-256?",
+    whyShaDesc: "Na internet, despachos e certidões estatais podem ser adulterados ou removidos. O hash SHA-256 constitui a assinatura digital imutável do documento ao nível do bit, servindo de prova pericial incontestável em tribunal.",
+    whyCadaTitle: "Como exercer o direito de acesso cidadão à informação?",
+    whyCadaDesc: "Estes registos são do domínio público administrativo e transmissíveis por lei. Pode consultar livremente o documento, descarregá-lo ou solicitar a certidão original.",
+    docCertified: "DOCUMENTO OFICIAL CERTIFICADO",
+    instantConsult: "Consulta direta sem intermediários",
+    openDoc: "Consultar Documento",
+    downloadDoc: "Descarregar",
+    copyHash: "Copiar SHA-256",
+    hashCopied: "Hash SHA-256 copiado para a área de transferência!",
+    cadaHelp: "Direito de Acesso: se um link público expirar, solicite a certidão administrativa formalmente com a nossa minuta legal.",
+    cadaBtn: "⚖️ Minuta de Acesso à Informação",
+  },
+  ru: {
+    sectionTitle: "Официальные государственные реестры и заверенные акты",
+    badgeSha: "НЕИЗМЕНЯЕМЫЙ ХЕШ SHA-256",
+    badgeIso: "СТАНДАРТ ISO/IEC 27037:2012",
+    howItWorksTitle: "Как устроена наша система проверки доказательств и доступа к актам?",
+    howItWorksClick: "(Нажмите для пояснения)",
+    whyShaTitle: "Зачем нужен криптографический хеш SHA-256?",
+    whyShaDesc: "В сети нормативные акты и постановления могут быть удалены или отредактированы. Хеш SHA-256 гарантирует абсолютную цифровую идентичность файла до единого бита и признается в качестве судебного доказательства.",
+    whyCadaTitle: "Как реализовать законное право на информацию?",
+    whyCadaDesc: "Все представленные акты являются открытыми публичными документами. Вы можете просмотреть их, скачать или сформировать юридический запрос на предоставление заверенной копии.",
+    docCertified: "ОФИЦИАЛЬНЫЙ ЗАВЕРЕННЫЙ АКТ",
+    instantConsult: "Прямой доступ без посредников",
+    openDoc: "Открыть документ",
+    downloadDoc: "Скачать",
+    copyHash: "Скопировать SHA-256",
+    hashCopied: "Хеш SHA-256 скопирован в буфер обмена!",
+    cadaHelp: "Право на доступ: при неработоспособности внешней ссылки используйте наш юридический шаблон официального запроса.",
+    cadaBtn: "⚖️ Шаблон юридического запроса",
+  },
+  zh: {
+    sectionTitle: "官方公证登记簿与核心原始证据",
+    badgeSha: "不可篡改 SHA-256 哈希印章",
+    badgeIso: "ISO/IEC 27037:2012 司法鉴定标准",
+    howItWorksTitle: "我们的证据核验体系与官方文献访问机制如何运作？",
+    howItWorksClick: "(点击展开说明)",
+    whyShaTitle: "为何必须附带 SHA-256 密码学指纹？",
+    whyShaDesc: "在互联网上，行政令与官方决议可能被下架或篡改。SHA-256 哈希值是文件逐位对应的唯一数字指纹，具备不可辩驳的司法证据效力。",
+    whyCadaTitle: "公民如何行使知情权与文献查阅权？",
+    whyCadaDesc: "本专题所引用的全部行政公文均属法定公开档案。您可以直接查阅原件、下载副本，或依法向行政机关索取纸质原卷。",
+    docCertified: "认证官方公文",
+    instantConsult: "去中介化即时核查",
+    openDoc: "查阅公文原件",
+    downloadDoc: "下载副本",
+    copyHash: "复制 SHA-256",
+    hashCopied: "SHA-256 密码指纹已复制至剪贴板！",
+    cadaHelp: "公民信息获取权：若外部官方链接失效，可使用我们预设的法律模版直接申请信息公开。",
+    cadaBtn: "⚖️ 生成法定信息公开申请书",
+  },
+  ja: {
+    sectionTitle: "公的登記簿・真正認定済み行政証拠書類",
+    badgeSha: "改ざん不能 SHA-256 ハッシュ",
+    badgeIso: "ISO/IEC 27037:2012 規格準拠",
+    howItWorksTitle: "証拠検証システムおよび行政文書アクセス基準について",
+    howItWorksClick: "(詳細を確認)",
+    whyShaTitle: "なぜ暗号化 SHA-256 ハッシュが必要なのか？",
+    whyShaDesc: "インターネット上の公的文書は改ざんや削除のリスクを伴います。SHA-256 ハッシュは1ビットの狂いもない完全性を証明し、裁判でも有効な客観的物証となります。",
+    whyCadaTitle: "市民の情報公開請求権をどのように行使するか？",
+    whyCadaDesc: "掲載されている文書はすべて開示義務のある公文書です。ワンクリックで原典を閲覧・ダウンロードできるほか、正式な開示請求書を発行できます。",
+    docCertified: "公認真正行政文書",
+    instantConsult: "仲介者なしの直接検証",
+    openDoc: "原典文書を閲覧",
+    downloadDoc: "ダウンロード",
+    copyHash: "SHA-256をコピー",
+    hashCopied: "SHA-256 暗号ハッシュをクリップボードにコピーしました！",
+    cadaHelp: "情報公開請求権：外部行政リンクのリンク切れが生じた場合は、当機構の開示請求テンプレートをご利用ください。",
+    cadaBtn: "⚖️ 法定情報公開請求書を作成",
+  }
+};
+
+const t = i18n[currentLang as keyof typeof i18n] || i18n.fr;
+
+// Résolution intelligente des liens selon la langue et la structure d'URL
+function resolveDocHref(rawTarget: string, langKey: string): string {
+  if (!rawTarget) return '#';
+  if (rawTarget.startsWith('http')) return rawTarget;
+  const clean = rawTarget.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+  
+  if (langKey === 'fr') {
+    return `/${clean}`;
+  } else if (langKey === 'en') {
+    return `/${clean}`;
+  } else {
+    return `/${clean}`;
+  }
+}
+---
+
+{sources && sources.length > 0 && (
+  <section id="pieces-justificatives-officielles" class="mt-16 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border border-emerald-500/30 p-6 md:p-8 rounded-3xl shadow-2xl space-y-6 not-prose">
+    
+    <!-- En-tête de la section des pièces -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-5">
+      <div class="space-y-1">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📂</span>
+          <h3 class="text-lg md:text-xl font-bold font-sans text-emerald-400 m-0">
+            {t.sectionTitle} <span class="text-emerald-300/80 font-mono text-sm">({sources.length})</span>
+          </h3>
+        </div>
+        <p class="text-[11px] font-mono text-slate-400 m-0">
+          {t.badgeIso}
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-[10px] font-mono bg-emerald-500/15 text-emerald-300 px-3 py-1.5 rounded-full border border-emerald-500/30 font-bold tracking-wide">
+          🔒 {t.badgeSha}
+        </span>
+      </div>
+    </div>
+
+    <!-- Bandeau pédagogique dépliable -->
+    <details class="bg-slate-900/90 border border-cyan-500/30 rounded-2xl p-4 cursor-pointer group transition">
+      <summary class="font-sans font-bold text-xs text-cyan-300 flex items-center justify-between select-none">
+        <span class="flex items-center gap-2">
+          <span>💡</span> 
+          <span>{t.howItWorksTitle}</span> 
+          <span class="text-cyan-400/70 font-normal">{t.howItWorksClick}</span>
+        </span>
+        <span class="text-cyan-400 group-open:rotate-180 transition transform text-xs font-mono">▼</span>
+      </summary>
+      
+      <div class="mt-4 text-xs font-sans text-slate-300 space-y-3 leading-relaxed border-t border-slate-800 pt-3">
+        <div class="space-y-1">
+          <div class="font-bold text-cyan-300 font-mono text-[11px] flex items-center gap-1.5">
+            <span>🔒</span> <span>{t.whyShaTitle}</span>
+          </div>
+          <p class="text-slate-400 text-[11px] m-0">
+            {t.whyShaDesc}
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="font-bold text-amber-300 font-mono text-[11px] flex items-center gap-1.5">
+            <span>🏛️</span> <span>{t.whyCadaTitle}</span>
+          </div>
+          <p class="text-slate-400 text-[11px] m-0">
+            {t.whyCadaDesc}
+          </p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Grille des pièces justificatives avec actions directes -->
+    <div class="grid grid-cols-1 gap-4 pt-2">
+      {sources.map((src, index) => {
+        const rawTarget = src.pdfDirect || src.url;
+        const finalHref = resolveDocHref(rawTarget, currentLang);
+        const isPdfOrCsv = rawTarget.toLowerCase().endsWith('.pdf') || rawTarget.toLowerCase().endsWith('.csv');
+        const isExternal = rawTarget.startsWith('http');
+
+        return (
+          <div class="bg-slate-900/80 hover:bg-slate-900 border border-slate-800 hover:border-emerald-500/50 p-5 rounded-2xl transition duration-200 flex flex-col lg:flex-row lg:items-center justify-between gap-4 shadow-lg group">
+            
+            <!-- Informations de la pièce -->
+            <div class="space-y-2 min-w-0 flex-1">
+              <div class="flex items-start gap-2.5">
+                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono font-bold text-xs border border-emerald-500/30 shrink-0 mt-0.5">
+                  #{String(index + 1).padStart(2, '0')}
+                </span>
+                <div class="min-w-0">
+                  <h4 class="text-sm font-sans font-bold text-slate-100 group-hover:text-emerald-300 transition leading-snug m-0">
+                    {src.name}
+                  </h4>
+                  <div class="flex flex-wrap items-center gap-2 mt-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-semibold">
+                      ✓ {t.docCertified}
+                    </span>
+                    <span>• {t.instantConsult}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Empreinte SHA-256 avec bouton de copie -->
+              {src.sha256 && (
+                <div class="pt-1 flex flex-wrap items-center gap-2 font-mono text-[11px]">
+                  <span class="text-slate-500 uppercase text-[10px] font-bold">SHA-256:</span>
+                  <code class="text-amber-300/90 bg-black/40 px-2 py-0.5 rounded border border-white/5 select-all truncate max-w-[280px] sm:max-w-md font-mono text-[10px]">
+                    {src.sha256}
+                  </code>
+                  <button 
+                    type="button"
+                    onclick={`navigator.clipboard.writeText('${src.sha256}'); alert('${t.hashCopied}');`}
+                    class="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2 py-0.5 rounded border border-slate-700 transition cursor-pointer font-bold inline-flex items-center gap-1"
+                    title={t.copyHash}
+                  >
+                    <span>📋</span> <span>{t.copyHash}</span>
+                  </button>
+                </div>
+              )}
+            </div>
+
+            <!-- Boutons d'accès directs (Consulter / Télécharger) -->
+            <div class="flex items-center gap-2 shrink-0 w-full lg:w-auto pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-800">
+              <a 
+                href={finalHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 lg:flex-none px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl font-mono text-xs transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-1.5 cursor-pointer uppercase tracking-wider"
+              >
+                <span>↗️</span> <span>{t.openDoc}</span>
+              </a>
+
+              {isPdfOrCsv && !isExternal && (
+                <a 
+                  href={finalHref}
+                  download
+                  class="px-3.5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-mono text-xs font-bold rounded-xl border border-slate-700 transition flex items-center justify-center gap-1.5 cursor-pointer"
+                  title={t.downloadDoc}
+                >
+                  <span>📥</span> <span class="hidden sm:inline">{t.downloadDoc}</span>
+                </a>
+              )}
+            </div>
+
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Note d'appui citoyen & CADA -->
+    <div class="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+      <div class="flex items-center gap-2 text-slate-400 text-[11px]">
+        <span>⚖️</span>
+        <span>{t.cadaHelp}</span>
+      </div>
+
+      <a 
+        href={currentLang === 'fr' ? "/#cada-generator" : `/${currentLang}/#cada-generator`}
+        class="shrink-0 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 border border-amber-500/30 text-xs font-mono font-bold transition flex items-center gap-2"
+      >
+        <span>{t.cadaBtn} →</span>
+      </a>
+    </div>
+
+  </section>
+)}

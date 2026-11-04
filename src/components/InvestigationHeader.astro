@@ -1,0 +1,110 @@
+---
+interface Props {
+  currentLang?: string;
+  slug?: string;
+  refCode?: string;
+  id?: number;
+}
+
+const { 
+  currentLang = 'fr', 
+  slug = '', 
+  refCode = '', 
+  id 
+} = Astro.props;
+
+// Configuration des langues
+const languages = [
+  { code: 'fr', label: 'Français', path: slug ? `/enquetes/${slug}/` : '/' },
+  { code: 'en', label: 'English', path: slug ? `/en/investigations/${slug}/` : '/en/' },
+  { code: 'it', label: 'Italiano', path: slug ? `/it/enquetes/${slug}/` : '/it/' },
+  { code: 'es', label: 'Español', path: slug ? `/es/enquetes/${slug}/` : '/es/' },
+  { code: 'pt', label: 'Português', path: slug ? `/pt/enquetes/${slug}/` : '/pt/' },
+  { code: 'ru', label: 'Русский', path: slug ? `/ru/enquetes/${slug}/` : '/ru/' },
+  { code: 'zh', label: '中文', path: slug ? `/zh/enquetes/${slug}/` : '/zh/' },
+  { code: 'ja', label: '日本語', path: slug ? `/ja/enquetes/${slug}/` : '/ja/' },
+];
+
+const homePath = currentLang === 'fr' ? '/' : `/${currentLang}/`;
+const soutenirPath = currentLang === 'fr' ? '/soutenir/' : `/${currentLang}/soutenir/`;
+
+// Libellés selon la langue
+const labels = {
+  fr: { back: "ENQUÊTES", support: "SOUTENIR", don: "DON", case: "DOSSIER" },
+  en: { back: "INVESTIGATIONS", support: "SUPPORT", don: "DONATE", case: "FILE" },
+  it: { back: "INCHIESTE", support: "SOSTENERE", don: "DONA", case: "FASCICOLO" },
+  es: { back: "INVESTIGACIONES", support: "APOYAR", don: "DONAR", case: "EXPEDIENTE" },
+  pt: { back: "INVESTIGAÇÕES", support: "APOIAR", don: "DOAR", case: "PROCESSO" },
+  ru: { back: "РАССЛЕДОВАНИЯ", support: "ПОДДЕРЖАТЬ", don: "ДОНАТ", case: "ДЕЛО" },
+  zh: { back: "调查档案", support: "支持调查", don: "捐助", case: "公文" },
+  ja: { back: "調査報道", support: "活動支援", don: "寄付", case: "事件" }
+};
+
+const l = labels[currentLang as keyof typeof labels] || labels.fr;
+---
+
+<header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-2.5 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 shadow-2xl">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-1 sm:gap-4">
+    
+    <!-- Gauche : Lien Retour Accueil / Enquêtes avec Logo Intact -->
+    <div class="flex items-center gap-2 sm:gap-3 shrink min-w-0">
+      <a href={homePath} class="group flex items-center py-1 shrink-0" aria-label="Retour à l'accueil de L'OCHJU">
+        <img 
+          src="/logo_l_ochju_intact_100pct.png" 
+          alt="L'OCHJU — Média Citoyen" 
+          class="h-6 sm:h-8 md:h-10 w-auto max-w-[120px] sm:max-w-none object-contain filter drop-shadow-[0_2px_10px_rgba(245,158,11,0.25)] transition duration-300"
+        />
+      </a>
+      
+      <a href={`${homePath}#enquetes`} class="hidden sm:inline-flex items-center gap-1 text-[11px] font-mono font-bold text-amber-400/90 hover:text-amber-300 transition uppercase tracking-wider pl-2 border-l border-slate-800">
+        <span>←</span> <span>{l.back}</span>
+      </a>
+    </div>
+
+    <!-- Centre : Numéro / Référence de l'Enquête (Masqué sur mobile étroit) -->
+    {(id || refCode) && (
+      <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span class="text-slate-400 font-bold uppercase">{l.case}</span>
+        {id && <span class="text-amber-400 font-bold">#{String(id).padStart(2, '0')}</span>}
+        {refCode && <span class="text-slate-400">| {refCode}</span>}
+      </div>
+    )}
+
+    <!-- Droite : Actions Citoyennes & Sélecteur Langue Global 8 Langues -->
+    <div class="flex items-center justify-end gap-1.5 sm:gap-2 shrink-0">
+      
+      <!-- Bouton Soutenir / Modal -->
+      <a href={soutenirPath} class="text-xs font-mono bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-amber-400/50 transition flex items-center gap-1 sm:gap-1.5 font-bold text-[10px] sm:text-xs tracking-wider shrink-0">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> <span class="hidden sm:inline">{l.support}</span><span class="sm:hidden">{l.don}</span>
+      </a>
+      
+      <!-- Dropdown Sélecteur International 8 Langues -->
+      <div class="relative group/lang">
+        <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
+          <span class="uppercase">{currentLang}</span> <span class="text-[10px] text-amber-400">▼</span>
+        </button>
+        <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-36 z-50 font-mono text-xs">
+          {languages.map((lng) => {
+            const isCurrent = lng.code === currentLang;
+            return (
+              <a 
+                href={lng.path} 
+                class={`px-3 py-1 rounded flex items-center justify-between transition ${
+                  isCurrent 
+                    ? 'bg-amber-500/20 text-amber-300 font-bold' 
+                    : 'text-slate-300 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                <span>{lng.label}</span> 
+                <span class="text-[10px] text-slate-500 uppercase">{lng.code}</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</header>
