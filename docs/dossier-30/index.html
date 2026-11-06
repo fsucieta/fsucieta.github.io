@@ -33,20 +33,7 @@
     }
     html { scroll-behavior: smooth; }
   </style>
-<script>
-    // Bypass automatique pour affichage immédiat
-    document.addEventListener('DOMContentLoaded', () => {
-      const authWall = document.getElementById('auth-wall');
-      const vaultContent = document.getElementById('vault-content');
-      const lockBtn = document.getElementById('lock-btn');
-      if (authWall) authWall.style.display = 'none';
-      if (vaultContent) {
-        vaultContent.classList.remove('hidden');
-        vaultContent.style.display = 'block';
-      }
-      if (lockBtn) lockBtn.classList.remove('hidden');
-    });
-</script></head>
+</head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
 
   <!-- EN-TÊTE SUPRÊME D'AUTORITÉ JURIDIQUE -->
@@ -68,6 +55,9 @@
     <div class="flex items-center space-x-3 text-xs font-mono">
       <span class="px-2.5 py-1 rounded badge-iso font-semibold">CLASSIFICATION SOUVERAINE</span>
       <span class="px-2.5 py-1 rounded bg-black/80 text-amber-400 border border-amber-500/30">ISO/IEC 27037 SCELLÉ</span>
+      <button id="lock-btn" class="hidden px-2.5 py-1 rounded bg-red-950/80 hover:bg-red-900 border border-red-500/50 text-red-300 font-bold tracking-wider transition-colors" title="Verrouiller le coffre">
+        🔒 VERROUILLER
+      </button>
     </div>
   </header>
 
@@ -116,7 +106,7 @@
   </main>
 
   <!-- VOLUME MAÎTRE UNIFIÉ (DÉVERROUILLÉ) -->
-  <div id="vault-content" class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+  <div id="vault-content" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
 
     <!-- SOMMAIRE DIRECT D'AUTORITÉ SANS EFFET STICKY CONFLICTUEL -->
     <div class="card-glass p-5 rounded-2xl border gold-border shadow-2xl bg-black/95">
@@ -2134,35 +2124,59 @@
     const errorMsg = document.getElementById('error-msg');
     const lockBtn = document.getElementById('lock-btn');
 
-    if (sessionStorage.getItem('ochju_vault_d30') === 'authenticated') {
+    function unlockVault() {
       authGate.classList.add('hidden');
+      authGate.style.display = 'none';
       vaultContent.classList.remove('hidden');
+      vaultContent.style.display = 'block';
+      if (lockBtn) lockBtn.classList.remove('hidden');
     }
 
-    vaultForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      errorMsg.classList.add('hidden');
-      
-      const entered = passwordInput.value;
-      const hashed = await sha256(entered);
-
-      if (constantTimeCompare(hashed, TARGET_HASH)) {
-        sessionStorage.setItem('ochju_vault_d30', 'authenticated');
-        authGate.classList.add('hidden');
-        vaultContent.classList.remove('hidden');
-      } else {
-        errorMsg.classList.remove('hidden');
+    function lockVault() {
+      sessionStorage.removeItem('ochju_vault_d30');
+      vaultContent.classList.add('hidden');
+      vaultContent.style.display = 'none';
+      authGate.classList.remove('hidden');
+      authGate.style.display = 'flex';
+      if (lockBtn) lockBtn.classList.add('hidden');
+      if (passwordInput) {
         passwordInput.value = '';
         passwordInput.focus();
       }
-    });
+    }
 
-    lockBtn.addEventListener('click', () => {
-      sessionStorage.removeItem('ochju_vault_d30');
-      vaultContent.classList.add('hidden');
-      authGate.classList.remove('hidden');
-      passwordInput.value = '';
-    });
+    if (sessionStorage.getItem('ochju_vault_d30') === 'authenticated') {
+      unlockVault();
+    } else {
+      lockVault();
+    }
+
+    if (vaultForm) {
+      vaultForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (errorMsg) errorMsg.classList.add('hidden');
+        
+        const entered = passwordInput ? passwordInput.value : '';
+        const hashed = await sha256(entered);
+
+        if (constantTimeCompare(hashed, TARGET_HASH)) {
+          sessionStorage.setItem('ochju_vault_d30', 'authenticated');
+          unlockVault();
+        } else {
+          if (errorMsg) errorMsg.classList.remove('hidden');
+          if (passwordInput) {
+            passwordInput.value = '';
+            passwordInput.focus();
+          }
+        }
+      });
+    }
+
+    if (lockBtn) {
+      lockBtn.addEventListener('click', () => {
+        lockVault();
+      });
+    }
   </script>
 
 
