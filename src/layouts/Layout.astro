@@ -99,7 +99,137 @@ if (!noindex) {
   }
 }
 
-// 4. Construction du graphe JSON-LD Schema.org (NewsMediaOrganization + NewsArticle + BreadcrumbList)
+// 4. Base de Questions/Réponses Citoyennes Scellées (Schema.org FAQPage) pour les 9 Grandes Enquêtes
+const faqByFrSlug: Record<string, Array<{ q: string; a: string }>> = {
+  "27-le-telepherique-angelo-ajaccio": [
+    {
+      q: "Combien coûte réellement le téléphérique urbain Angelo aux contribuables d'Ajaccio ?",
+      a: "Selon les Rapports d'Orientations Budgétaires (ROB 2025 et 2026) de la CAPA et l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001, le téléphérique Angelo a coûté 38,7 millions d'euros de travaux (jusqu'à 62 M€ consolidés) et garantit une rente d'exploitation forfaitaire de 2,39 millions d'euros par an pendant 10 ans à une filiale privée dotée de 50 000 € de capital."
+    },
+    {
+      q: "Comment la CAPA a-t-elle financé le déficit d'exploitation du téléphérique Angelo ?",
+      a: "Les pièces budgétaires officielles démontrent que la CAPA a d'abord repris 1,5 million d'euros sur la provision des ordures ménagères en 2025 (ROB 2025, page 6), avant d'augmenter la fiscalité locale de 7 millions d'euros en 2026 (ROB 2026, page 4)."
+    },
+    {
+      q: "Pourquoi le tracé du téléphérique Angelo s'arrête-t-il à Saint-Joseph loin du centre-ville ?",
+      a: "La gare G1 de Saint-Joseph s'arrête à près de deux kilomètres du centre-ville d'Ajaccio sur d'anciennes parcelles industrielles polluées aux hydrocarbures et métaux lourds (parcelle BH 144), tandis que la gare G3 du Stiletto valorise le foncier environnant."
+    }
+  ],
+  "07-le-cadastre-minier-secret": [
+    {
+      q: "Quelle est la valeur des ressources minières et offshore recensées en Corse ?",
+      a: "L'audit des concessions officielles, des rapports géologiques du BRGM et du permis d'hydrocarbures Rhône-Maritime (9 300 km² au large de Scandola) établit un potentiel stratégique évalué à 19,19 milliards d'euros (pétrole offshore, cuivre, argent, antimoine et terres rares)."
+    },
+    {
+      q: "Quel est le niveau de pollution à l'arsenic mesuré sur l'ancienne mine de Matra en Haute-Corse ?",
+      a: "Selon le rapport scientifique d'État BRGM RP-57640-FR, les rejets de l'ancienne mine d'arsenic de Matra atteignent 4 000 microgrammes d'arsenic par litre dans les eaux de ruissellement, soit 400 fois la norme sanitaire de potabilité fixée à 10 µg/L."
+    },
+    {
+      q: "Que prévoit le décret n° 2025-851 du 27 août 2025 sur le Code minier en Corse ?",
+      a: "Le décret n° 2025-851 du 27 août 2025 maintient le monopole régalien de l'État sur l'octroi des titres miniers en Corse (contrairement aux compétences transférées outre-mer) et écarte tout droit de veto décisionnel des maires et de la Collectivité de Corse."
+    }
+  ],
+  "23-la-sous-dotation-de-la-securite-civile": [
+    {
+      q: "Combien paie chaque habitant de Corse pour les services d'incendie et de secours (SIS) ?",
+      a: "D'après les données comptables de l'OFGL, le coût de la sécurité civile supporté par le contribuable local atteint 203 € par habitant en Haute-Corse contre 85 € en moyenne nationale, car les collectivités corses financent à plus de 80 % le surcoût lié à la protection de 3 millions de touristes."
+    },
+    {
+      q: "Combien de Canadairs étaient réellement opérationnels au pic de l'été 2026 ?",
+      a: "Les rapports parlementaires du Sénat (n° 838 et n° 393) et les relevés de disponibilité de la DGSCGC montrent que sur une flotte théorique de 12 Canadairs CL-415, seuls 5 appareils étaient en état de voler le 24 juillet 2026."
+    },
+    {
+      q: "Quelle solution opérationnelle propose L'OCHJU pour la sécurité civile en Corse ?",
+      a: "L'OCHJU documente la création d'une Cumpagnia Corsa di Prutezzione Civile basée à Corte, le conventionnement transfrontalier immédiat avec la base de Canadairs d'Olbia (située à 15 minutes de vol de Bonifacio) et l'acquisition d'une flotte dédiée de bombardiers amphibies Fire Boss."
+    }
+  ],
+  "28-muvitarra-le-sacrifice-des-bus": [
+    {
+      q: "Pourquoi le réseau de bus Muvitarra d'Ajaccio subit-il des suppressions et retards chroniques ?",
+      a: "L'analyse du Contrat d'Obligations de Service Public (COSP 2026-2032, délibération CAPA 2026-071) démontre que la dotation d'exploitation des bus a été plafonnée et gelée pendant que les ressources publiques étaient orientées vers le financement du téléphérique Angelo."
+    },
+    {
+      q: "Quel est le problème d'accès routier et de sécurité au nouvel hôpital du Stiletto à Ajaccio ?",
+      a: "Le nouvel hôpital d'Ajaccio au Stiletto a été mis en service dans une configuration d'impasse routière soumise aux embouteillages quotidiens de l'entrée de ville, en contradiction avec les exigences d'accès d'urgence des établissements de soins (ERP de type U)."
+    },
+    {
+      q: "Pourquoi le terminus historique des bus de la Place du Diamant a-t-il été déplacé ?",
+      a: "Le déplacement du pôle d'échanges de la Place du Diamant a éloigné les usagers des bus du centre-ville et du parking souterrain tout en libérant près de 9 hectares d'emprises foncières stratégiques dans l'agglomération ajaccienne."
+    }
+  ],
+  "26-le-verrou-des-depots-petroliers": [
+    {
+      q: "Pourquoi le carburant est-il plus cher en Corse malgré une TVA réduite à 13 % ?",
+      a: "Bien que la Corse bénéficie d'un taux de TVA réduit à 13 % sur les produits pétroliers (contre 20 % sur le continent), le contrôle exclusif des deux dépôts pétroliers de l'île (DPLC au Vazzio et à Lucciana) engendre une surfacturation évaluée à 48 millions d'euros par an pour les ménages et entreprises corses."
+    },
+    {
+      q: "Quelle condamnation l'Autorité de la concurrence a-t-elle prononcée dans la décision 25-D-07 ?",
+      a: "Par sa décision n° 25-D-07 du 17 novembre 2025 (80 pages), l'Autorité de la concurrence a infligé une amende historique de 187,49 millions d'euros aux actionnaires des Dépôts Pétroliers de la Corse (Rubis/Vito, TotalEnergies, Esso) pour entente illicite et verrouillage du marché."
+    },
+    {
+      q: "Comment sortir du monopole privé sur les carburants en Corse ?",
+      a: "Le dossier juridique instruit par L'OCHJU détaille la réquisition ou le retour en régie publique d'intérêt général des infrastructures portuaires et de stockage stratégique (DPLC), ainsi que l'application stricte de l'article L. 410-2 du Code de commerce sur le plafonnement des marges."
+    }
+  ],
+  "04-la-marchandisation-de-l-eau": [
+    {
+      q: "Pourquoi la Corse connaît-elle des restrictions d'eau alors qu'elle est le château d'eau de la Méditerranée ?",
+      a: "D'après les données officielles SISPEA et BNPE Hub'Eau, 85 % des précipitations repartent à la mer faute de capacités de stockage (3 fois moins d'eau stockée par habitant qu'en Sardaigne), tandis que 42 millions de m³ d'eau potable se perdent chaque année dans des canalisations vétustes."
+    },
+    {
+      q: "Quelle est la différence de prix de l'eau en Corse entre une régie publique et une délégation privée ?",
+      a: "L'audit comparatif des factures SISPEA montre qu'un foyer paie en moyenne 620 € par an sous délégation privée (Veolia/Kyrnolia, qui encaisse 112,9 M€/an sur l'île) contre 343 € par an en régie publique municipale comme à Corte, soit 277 € de surcoût annuel par foyer."
+    },
+    {
+      q: "Quel volume d'eau douce est prélevé par EDF dans les barrages corses ?",
+      a: "Les relevés de la Banque Nationale des Prélèvements en Eau (BNPE) établissent qu'EDF turbine environ 1,09 milliard de m³ d'eau douce par an dans les barrages insulaires pour la production hydroélectrique, prenant régulièrement le pas sur les réserves agricoles et citoyennes."
+    }
+  ],
+  "18-le-monopole-energetique-edf-sei": [
+    {
+      q: "Que contient la loi n° 2026-554 du 29 juin 2026 sur les barrages hydroélectriques en Corse ?",
+      a: "La loi n° 2026-554 du 29 juin 2026 octroie à EDF des droits réels d'exploitation de 70 ans (jusqu'en 2096) sur les grands barrages hydroélectriques corses (Calacuccia, Tolla, Ocana, Sampolo), privant la Collectivité de Corse de la maîtrise publique de sa première source d'énergie renouvelable."
+    },
+    {
+      q: "Combien coûte le projet de nouvelle centrale thermique du Ricanto à Ajaccio ?",
+      a: "Le projet de centrale thermique bio-liquide de 130 MW au Ricanto représente un coût global de 800 millions d'euros pour brûler 50 000 tonnes d'agrocarburants importés par navires, avec une rentabilité garantie de 10 % à 11 % financée par la solidarité énergétique nationale (CSPE)."
+    },
+    {
+      q: "La Corse peut-elle atteindre l'autonomie électrique sans centrale thermique polluante ?",
+      a: "Oui : les propres chiffrages de la CRE montrent que l'équipement en stations de transfert d'énergie par pompage (STEP, qui génèrent 350 M€ d'économies nettes avouées sur le seul site d'Ajaccio), couplé aux barrages existants, au câble SACOI 3 et au solaire citoyen, couvre l'intégralité de la pointe hivernale de 400 MW."
+    }
+  ],
+  "11-l-emprise-et-les-servitudes-militaires": [
+    {
+      q: "Quelle surface de foncier l'armée occupe-t-elle sur le littoral et le territoire corse ?",
+      a: "Le croisement des 2 848 parcelles cadastrales DGFiP révèle que le ministère des Armées occupe 2 842 hectares (et génère plus de 4 200 hectares de servitudes), dont la base aérienne BA 126 de Solenzara, le camp Raffalli à Calvi, Aspretto à Ajaccio et l'étang de Diane."
+    },
+    {
+      q: "Combien d'impôts locaux impayés l'État doit-il aux communes corses pour ses bases militaires ?",
+      a: "L'audit fiscal et cadastral établit que l'exploitation des emprises militaires (notamment via l'accord bilatéral franco-américain déposé à l'ONU sous le n° 38665 et le marché BOAMP de 91 M€ à Solenzara) laisse un arriéré de 19,75 millions d'euros de fiscalité locale dû aux communes corses."
+    },
+    {
+      q: "Quel volume d'eau potable est prélevé par la base militaire de Solenzara ?",
+      a: "Selon l'avis de l'Autorité environnementale (MRAe 2025-DKCOR3), la base aérienne BA 126 prélève jusqu'à 41 millions de litres d'eau par an dans la nappe du Travo sans compteur public opposable aux communes riveraines."
+    }
+  ],
+  "22-la-captation-bancaire-et-epargne": [
+    {
+      q: "Combien d'épargne corse est aspirée hors de l'île par les banques chaque jour ?",
+      a: "D'après les statistiques officielles de la Banque de France (série Webstat CFTDC), sur 6,42 milliards d'euros de dépôts bancaires à vue et à terme collectés en Corse (et 11,54 milliards d'épargne totale), seuls 59,97 % sont reprêtés dans l'île : 2,57 milliards d'euros d'épargne insulaire sont aspirés chaque soir vers les trésoreries continentales."
+    },
+    {
+      q: "Combien rapporte chaque année l'épargne des Corses aux sièges bancaires continentaux ?",
+      a: "Placée sur le marché interbancaire européen via les mécanismes de centralisation automatique de trésorerie (cash pooling), cette manne de 2,57 milliards d'euros génère plus de 93,8 millions d'euros par an de produits financiers hors de Corse, soit une captation équivalente à 10 475 € d'épargne par foyer."
+    },
+    {
+      q: "Comment fonctionne le modèle de Banque Territoriale de Corse proposé par L'OCHJU ?",
+      a: "Inspirée des caisses publiques cantonales suisses et du modèle coopératif insulaire, la Banque Territoriale de Corse sanctuarise un ratio de réinvestissement local supérieur à 90 % des dépôts corses pour financer le logement des résidents, les PME, l'agriculture et les infrastructures communales."
+    }
+  ]
+};
+
+// 5. Construction du graphe JSON-LD Schema.org (NewsMediaOrganization + NewsArticle + BreadcrumbList + FAQPage)
 const orgEntity = {
   "@type": "NewsMediaOrganization",
   "@id": `${siteUrl}/#organization`,
@@ -203,6 +333,26 @@ if (isArticle && !noindex) {
       }
     ]
   });
+
+  if (enqMatch) {
+    const rawSlug = enqMatch[1];
+    const baseFrSlug = enToFrSlug[rawSlug] || rawSlug;
+    const faqItems = faqByFrSlug[baseFrSlug];
+    if (faqItems && faqItems.length > 0) {
+      jsonLdGraph.push({
+        "@type": "FAQPage",
+        "@id": `${cleanCanonical}#faq`,
+        "mainEntity": faqItems.map((item) => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.a
+          }
+        }))
+      });
+    }
+  }
 }
 
 const jsonLdPayload = JSON.stringify({
@@ -258,7 +408,7 @@ const jsonLdPayload = JSON.stringify({
     <meta name="twitter:description" content={seoDescription} />
     <meta name="twitter:image" content={fullImageUrl} />
 
-    <!-- Données Structurées Schema.org (NewsArticle, NewsMediaOrganization, BreadcrumbList) -->
+    <!-- Données Structurées Schema.org (NewsArticle, NewsMediaOrganization, BreadcrumbList, FAQPage) -->
     {!noindex && <script type="application/ld+json" set:html={jsonLdPayload} />}
 
     <!-- Mesure d'Audience Éthique & Souveraine sans cookies (GoatCounter) -->
