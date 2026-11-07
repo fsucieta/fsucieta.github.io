@@ -1,5 +1,12 @@
 ---
 import SoutienModal from '../components/SoutienModal.astro';
+
+interface SourceItem {
+  name: string;
+  url?: string;
+  sha256?: string;
+}
+
 interface Props {
   title: string;
   description?: string;
@@ -7,6 +14,9 @@ interface Props {
   canonicalUrl?: string;
   lang?: string;
   noindex?: boolean;
+  category?: string;
+  refCode?: string;
+  sources?: SourceItem[];
 }
 
 const { 
@@ -15,12 +25,190 @@ const {
   image = "/alerte_censure_lochju.jpg",
   canonicalUrl = Astro.url.href,
   lang = "fr",
-  noindex = false
+  noindex = false,
+  category = "Investigation Forensique",
+  refCode = "",
+  sources = []
 } = Astro.props;
 
 const siteUrl = "https://fsucieta.github.io";
 const cleanCanonical = canonicalUrl.startsWith("http") ? canonicalUrl : `${siteUrl}/${canonicalUrl.replace(/^\//, '')}`;
 const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.replace(/^\//, '')}`;
+
+// 1. Calibrage chirurgical de la meta description pour Google SERP (max 158 caractères sans couper un mot)
+const seoDescription = description.length > 160
+  ? description.slice(0, 156).replace(/\s+\S*$/, '') + '…'
+  : description;
+
+// 2. Détection automatique d'une page d'enquête vs page portail
+const isArticle = /\/(enquetes|investigations)\/[^/]+/.test(cleanCanonical) || cleanCanonical.includes('/dossier-sources-') || cleanCanonical.includes('/analyse-globale-finale');
+const ogType = isArticle ? "article" : "website";
+
+const localeMap: Record<string, string> = {
+  fr: "fr_FR",
+  en: "en_US",
+  it: "it_IT",
+  es: "es_ES",
+  pt: "pt_PT",
+  ru: "ru_RU",
+  zh: "zh_CN",
+  ja: "ja_JP"
+};
+const ogLocale = localeMap[lang] || "fr_FR";
+
+// 3. Correspondance automatique des slugs FR <-> EN pour les balises hreflang multilingues
+const frToEnSlug: Record<string, string> = {
+  "26-le-verrou-des-depots-petroliers": "26-the-fuel-depot-monopoly",
+  "28-muvitarra-le-sacrifice-des-bus": "28-le-naufrage-organise-de-la-muvitarra"
+};
+const enToFrSlug: Record<string, string> = {
+  "26-the-fuel-depot-monopoly": "26-le-verrou-des-depots-petroliers",
+  "28-le-naufrage-organise-de-la-muvitarra": "28-muvitarra-le-sacrifice-des-bus"
+};
+
+const supportedLangs = ["fr", "en", "it", "es", "pt", "ru", "zh", "ja"];
+let hreflangLinks: Array<{ code: string; href: string }> = [];
+
+const urlPath = cleanCanonical.replace(siteUrl, '') || '/';
+const enqMatch = urlPath.match(/^(?:\/(?:en|it|es|pt|ru|zh|ja))?\/(?:enquetes|investigations)\/([^/]+)\/?$/);
+
+if (!noindex) {
+  if (enqMatch) {
+    const rawSlug = enqMatch[1];
+    const baseFrSlug = enToFrSlug[rawSlug] || rawSlug;
+    const baseEnSlug = frToEnSlug[baseFrSlug] || baseFrSlug;
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href:
+        code === "fr"
+          ? `${siteUrl}/enquetes/${baseFrSlug}/`
+          : code === "en"
+          ? `${siteUrl}/en/investigations/${baseEnSlug}/`
+          : `${siteUrl}/${code}/enquetes/${baseFrSlug}/`
+    }));
+  } else if (/^\/(?:(en|it|es|pt|ru|zh|ja)\/)?$/.test(urlPath)) {
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href: code === "fr" ? `${siteUrl}/` : `${siteUrl}/${code}/`
+    }));
+  } else if (/^\/(?:(en|it|es|pt|ru|zh|ja)\/)?soutenir\/?$/.test(urlPath)) {
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href: code === "fr" ? `${siteUrl}/soutenir/` : `${siteUrl}/${code}/soutenir/`
+    }));
+  }
+}
+
+// 4. Construction du graphe JSON-LD Schema.org (NewsMediaOrganization + NewsArticle + BreadcrumbList)
+const orgEntity = {
+  "@type": "NewsMediaOrganization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Cellule d'Investigation L'OCHJU",
+  "alternateName": "L'OCHJU — Cellule d'Investigation Citoyenne Corse",
+  "url": `${siteUrl}/`,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/logo_l_ochju.jpg`,
+    "width": 800,
+    "height": 800
+  },
+  "sameAs": [
+    "https://www.tiktok.com/@lochjulaveti"
+  ]
+};
+
+const publisherEntity = {
+  "@type": "NewsMediaOrganization",
+  "name": "L'OCHJU — Cellule d'Investigation Citoyenne Corse",
+  "url": `${siteUrl}/`,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/logo_l_ochju.jpg`
+  }
+};
+
+const cleanHeadline = title.replace(/\s*—\s*L'OCHJU.*$/i, '').trim();
+
+const jsonLdGraph: Record<string, any>[] = [
+  orgEntity,
+  {
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    "url": `${siteUrl}/`,
+    "name": "L'OCHJU",
+    "description": "Média citoyen d'investigation forensique et open data en Corse (Norme ISO/IEC 27037).",
+    "publisher": { "@id": `${siteUrl}/#organization` },
+    "inLanguage": lang
+  }
+];
+
+if (isArticle && !noindex) {
+  const articleNode: Record<string, any> = {
+    "@type": "NewsArticle",
+    "@id": `${cleanCanonical}#article`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": cleanCanonical
+    },
+    "headline": cleanHeadline.slice(0, 110),
+    "name": cleanHeadline,
+    "description": description,
+    "image": [fullImageUrl],
+    "datePublished": "2026-10-15T08:00:00+02:00",
+    "dateModified": "2026-11-07T08:00:00+01:00",
+    "inLanguage": lang,
+    "articleSection": category,
+    "isAccessibleForFree": true,
+    "author": {
+      "@type": "NewsMediaOrganization",
+      "name": "Cellule d'Investigation L'OCHJU",
+      "url": `${siteUrl}/`,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/logo_l_ochju.jpg`
+      }
+    },
+    "publisher": publisherEntity
+  };
+
+  if (refCode) {
+    articleNode.identifier = refCode;
+  }
+
+  if (sources && sources.length > 0) {
+    articleNode.citation = sources.map((s) => ({
+      "@type": "CreativeWork",
+      "name": s.name,
+      ...(s.url ? { "url": s.url.startsWith('http') ? s.url : `${siteUrl}/${s.url.replace(/^(\.\.\/)+|^\//, '')}` } : {}),
+      ...(s.sha256 ? { "identifier": `SHA-256:${s.sha256}` } : {})
+    }));
+  }
+
+  jsonLdGraph.push(articleNode);
+  jsonLdGraph.push({
+    "@type": "BreadcrumbList",
+    "@id": `${cleanCanonical}#breadcrumb`,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "L'OCHJU",
+        "item": `${siteUrl}/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": cleanHeadline,
+        "item": cleanCanonical
+      }
+    ]
+  });
+}
+
+const jsonLdPayload = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": jsonLdGraph
+});
 ---
 
 <!DOCTYPE html>
@@ -33,26 +221,45 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.repl
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- SEO Primaire (Google Core Standard) -->
+    <!-- SEO Primaire (Google Core Standard & Calibrage SERP) -->
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={seoDescription} />
     <link rel="canonical" href={cleanCanonical} />
-    {noindex && <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />}
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    ) : (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    )}
+
+    <!-- Balises Multilingues Hreflang (8 Langues + x-default) -->
+    {hreflangLinks.map((link) => (
+      <link rel="alternate" hreflang={link.code} href={link.href} />
+    ))}
+    {hreflangLinks.length > 0 && (
+      <link rel="alternate" hreflang="x-default" href={hreflangLinks[0].href} />
+    )}
 
     <!-- Open Graph / Facebook / WhatsApp (Social Graph) -->
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:site_name" content="L'OCHJU" />
     <meta property="og:url" content={cleanCanonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={fullImageUrl} />
     <meta property="og:image:alt" content={title} />
+    {isArticle && <meta property="article:author" content="Cellule d'Investigation L'OCHJU" />}
+    {isArticle && <meta property="article:section" content={category} />}
+    {isArticle && <meta property="article:published_time" content="2026-10-15T08:00:00+02:00" />}
 
     <!-- Twitter Card (Format Grand Angle) -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={seoDescription} />
     <meta name="twitter:image" content={fullImageUrl} />
+
+    <!-- Données Structurées Schema.org (NewsArticle, NewsMediaOrganization, BreadcrumbList) -->
+    {!noindex && <script type="application/ld+json" set:html={jsonLdPayload} />}
 
     <!-- Mesure d'Audience Éthique & Souveraine sans cookies (GoatCounter) -->
     <script data-goatcounter="https://lochju.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
