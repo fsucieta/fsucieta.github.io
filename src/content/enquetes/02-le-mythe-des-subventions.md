@@ -1,14 +1,14 @@
----
+﻿---
 id: 2
 title: "Qui Paye pour Qui ? Ce que Chaque Famille Corse Verse à Paris sans Jamais en Voir la Couleur"
-subtitle: "4 800 euros d'impôts par an et par foyer siphonnés vers le continent sans retour : les comptes officiels qui détruisent définitivement le mythe d'une île sous perfusion."
+subtitle: "Pilier Budgétaire du Grand Mémorandum : comment l'État collecte 1,45 milliard d'euros d'impôts sur l'île et n'en réinjecte que 1,03 milliard, dégageant un excédent fiscal net de 420 millions d'euros par an expédié à Paris."
 category: "FISCALITÉ & BUDGET"
 status: en_cours
 ref: "LOCHJU-AUDIT-ENQUETE-02"
 author: "Cellule d'Investigation Financière L'OCHJU"
 date: "Août 2026"
 tool: "DGFiP / Cour des Comptes / Insee / Banque de France / BODACC / États 1259 / Bufitonu.fr / Sénat r488"
-chapeau: "Pendant que certains discours accusent la Corse de dépendre financièrement de l'aide nationale, l'examen des comptes publics montre une autre réalité : chaque année, l'État collecte environ 1,45 milliard d'euros sur l'île (TVA, carburants, impôts) et y réinjecte environ 1,03 milliard en dotations et dépenses directes. Selon l'estimation méthodologique de L'OCHJU croisant les déclarations fiscales, les budgets municipaux et les rapports du Sénat, un solde net d'environ 420 millions d'euros par an part vers le budget central sans revenir dans l'économie insulaire, soit un ordre de grandeur de 1 200 € par habitant pour les 355 000 résidents de l'île."
+chapeau: "Pendant que le discours parisien accuse la Corse de dépendre de la perfusion nationale, l'examen médico-légal des comptes de la DGFiP et de la Cour des comptes établit le premier étage du Mémorandum : l'État collecte chaque année 1,45 milliard d'euros d'impôts sur l'île (TVA, taxes carburants, impôt sur le revenu) mais n'y réinjecte que 1,03 milliard en services régaliens. Résultat brut : un excédent fiscal net de 420 millions d'euros par an (1 200 € par habitant) qui part vers Bercy sans retour. La brique budgétaire d'une mécanique de spoliation globale chiffrée à 4,72 milliards d'euros."
 image: "img_enquete_02.webp"
 imageCaption: "📷 Document Photographique Officiel — Palais Lantivy (Hôtel de Préfecture & Siège de l'État en Corse)"
 sources:
