@@ -1,4 +1,4 @@
----
+﻿---
 id: 26
 title: "L'Arme de notre Soumission : Pourquoi Paris ne Lâchera Jamais le Verrou Pétrolier Corse"
 subtitle: "Lâcher le carburant, ce serait perdre la Corse : les pièces d'un monopole d'État verrouillé pour s'assurer que notre île ne puisse jamais vivre debout."
@@ -6,9 +6,9 @@ category: "ÉNERGIE & MONOPOLES"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-26"
 author: "Cellule d'Investigation Énergie & Concurrence L'OCHJU"
-date: "Septembre 2026"
-tool: "Autorité de la Concurrence (Décision 25-D-07) / Conseil d'État (Requête A4C) / TAE Marseille / DREAL / DGEC / Code de Commerce L. 420-1 & L. 410-2"
-chapeau: "Pourquoi les familles et les artisans corses paient-ils leurs carburants 10 à 25 centimes plus cher qu'en métropole alors que l'île bénéficie d'une TVA réduite légale à 13 % au lieu de 20 % ? La réponse ne relève ni de la fatalité géographique ni des lois du marché, mais d'une machinerie contractuelle occulte et de 37 ans de complaisance d'État. À travers l'autopsie des 80 pages de la décision 25-D-07 de l'Autorité de la concurrence, les aveux sous serment du procès de Marseille et la base médico-légale de 191 000 relevés citoyens, plongée au cœur d'un cartel qui confisque 48 millions d'euros par an et verrouille l'île, de la pompe de village jusqu'au ciel des aéroports."
+date: "Octobre 2026 (Actualisée Novembre 2026)"
+tool: "Autorité de la Concurrence (Décision 25-D-07) / Conseil d'État (Arrêt n° 512989 du 21/10/2026) / TAE Marseille / DREAL / DGEC / Code de Commerce L. 420-1 & L. 410-2"
+chapeau: "Pourquoi les familles et les artisans corses paient-ils leurs carburants 10 à 25 centimes plus cher qu'en métropole alors que l'île bénéficie d'une TVA réduite légale à 13 % au lieu de 20 % ? La réponse ne relève ni de la fatalité géographique ni des lois du marché, mais d'une machinerie contractuelle occulte et de 37 ans de complaisance d'État. Après la condamnation historique à 187,5 M€ de l'Autorité de la concurrence et l'arrêt solennel du Conseil d'État du 21 octobre 2026 confirmant que le gouvernement conserve le pouvoir discrétionnaire de ne rien faire, plongée au cœur d'un cartel qui confisque 48 millions d'euros par an et verrouille l'île, de la pompe de village jusqu'au ciel des aéroports."
 math: "\\text{Rente de Racket Pétrolier (RRP)} = \\text{Volume Annuel (400 Millions L)} \\times \\left( \\text{Surcoût Brut HT} - \\text{Fret Réel Maritime} \\right) \\approx 48\\,000\\,000\\text{ € / an}"
 image: "img_enquete_26.jpg"
 imageCaption: "🎨 Illustration Studio Ghibli d'après cliché de terrain (IGN / Panoramax) — Les cuves de stockage de carburants du dépôt DPLC du Vazzio (Ajaccio), avec le réservoir 7 Jet A-1 au centre | Cœur névralgique de l'entente condamnée à 187,5 M€"
@@ -46,7 +46,46 @@ sources:
     sha256: "7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a"
 ---
 
-## Le Vertige du Totem : La Fiction Républicaine Face à la Réalité du Plein
+<!-- ==========================================================================
+     SOMMAIRE INTERACTIF CLINIQUE & FIL CONDUCTEUR CITOYEN
+     ========================================================================== -->
+<div class="my-8 not-prose p-6 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/30 shadow-2xl">
+  <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-800">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+      <span class="font-mono-tech text-xs font-bold uppercase tracking-widest text-amber-300 m-0 inline-block leading-tight">🧭 FIL CONDUCTEUR DE L'INSTRUCTION · 6 AXES MAJEURS</span>
+    </div>
+    <span class="text-[10px] font-mono-tech text-slate-400">12 Chapitres Scellés</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 font-mono-tech text-xs">
+    <a href="#vertige-totem" class="p-3 rounded-xl bg-slate-950/80 hover:bg-amber-500/10 border border-slate-800 hover:border-amber-400/50 text-slate-300 hover:text-amber-300 transition flex items-center justify-between">
+      <span>1. L'Arithmétique du Racket</span>
+      <span class="text-amber-400 font-bold">→</span>
+    </a>
+    <a href="#deux-tuyaux" class="p-3 rounded-xl bg-slate-950/80 hover:bg-amber-500/10 border border-slate-800 hover:border-amber-400/50 text-slate-300 hover:text-amber-300 transition flex items-center justify-between">
+      <span>2. Lucciana & Vazzio</span>
+      <span class="text-amber-400 font-bold">→</span>
+    </a>
+    <a href="#cartel-demasque" class="p-3 rounded-xl bg-slate-950/80 hover:bg-amber-500/10 border border-slate-800 hover:border-amber-400/50 text-slate-300 hover:text-amber-300 transition flex items-center justify-between">
+      <span>3. Amende de 187,5 M€</span>
+      <span class="text-amber-400 font-bold">→</span>
+    </a>
+    <a href="#mystere-e10" class="p-3 rounded-xl bg-slate-950/80 hover:bg-amber-500/10 border border-slate-800 hover:border-amber-400/50 text-slate-300 hover:text-amber-300 transition flex items-center justify-between">
+      <span>4. L'Éviction du SP95-E10</span>
+      <span class="text-amber-400 font-bold">→</span>
+    </a>
+    <a href="#arret-conseil-etat" class="p-3 rounded-xl bg-slate-950/80 hover:bg-rose-500/10 border border-rose-500/30 hover:border-rose-400/50 text-rose-300 hover:text-rose-200 transition flex items-center justify-between">
+      <span>5. Conseil d'État (21 Oct.)</span>
+      <span class="text-rose-400 font-bold">→</span>
+    </a>
+    <a href="#chiffrage-feuille-route" class="p-3 rounded-xl bg-slate-950/80 hover:bg-emerald-500/10 border border-slate-800 hover:border-emerald-400/50 text-slate-300 hover:text-emerald-300 transition flex items-center justify-between">
+      <span>6. Munitions Citoyennes</span>
+      <span class="text-emerald-400 font-bold">→</span>
+    </a>
+  </div>
+</div>
+
+<h2 id="vertige-totem" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Le Vertige du Totem : La Fiction Républicaine Face à la Réalité du Plein</h2>
 
 Il est sept heures du matin dans une station-service de la périphérie de Bastia ou sur les hauteurs de Corte. Devant le pistolet automatique, un artisan du bâtiment voit défiler les litres sur l'écran numérique : 60 litres de gazole, 122 euros. Pour les familles insulaires contraintes d'effectuer des dizaines de kilomètres quotidiens sur des routes sinueuses dépourvues d'alternatives ferroviaires crédibles, la facture énergétique est devenue une hémorragie silencieuse.
 
@@ -96,7 +135,7 @@ Pourtant, dans les recueils officiels de la République, une autre histoire est 
     <div class="text-xs font-mono text-slate-400 grid grid-cols-1 sm:grid-cols-2 gap-2 bg-slate-950/80 p-3 rounded-xl border border-slate-800/80">
       <div>• <strong>Autorité de la Concurrence :</strong> Décision 25-D-07 du 17/11/2025 (80 pages).</div>
       <div>• <strong>Sanction pécuniaire infligée :</strong> 187,49 M€ pour entente illicite.</div>
-      <div>• <strong>Conseil d'État (Chambres réunies) :</strong> Audience du 30/09/2026 (Recours A4C / L. 410-2).</div>
+      <div>• <strong>Conseil d'État (Chambres réunies) :</strong> Décision n° 512989 du 21/10/2026 (Rejet : pouvoir discrétionnaire de l'État).</div>
       <div>• <strong>Rapport IGF n° 2018-M-072-03 :</strong> Fret maritime réel chiffré à 1,5-2,5 cts/L.</div>
     </div>
   </div>
@@ -106,11 +145,21 @@ Ce hold-up silencieux n'est pas le fruit du hasard. Il est le produit d'un syst�
 
 ---
 
-## Deux Tuyaux pour Toute une Île : Le Verrou Physique de Lucciana et du Vazzio
+<h2 id="deux-tuyaux" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Deux Tuyaux pour Toute une Île : Le Verrou Physique de Lucciana et du Vazzio</h2>
 
 Pour comprendre comment une poignée de multinationales a pu asservir le marché de l'énergie en Corse, il faut d'abord regarder la carte. L'île ne possède aucune raffinerie. Chaque goutte de supercarburant, de gazole ou de kérosène consommée sur le territoire insulaire doit être raffinée sur le continent, principalement dans les terminaux de Fos-sur-Mer et de Lavéra, avant d'être acheminée par bateaux-citernes à travers la Méditerranée.
 
 Mais lorsque le navire pétrolier touche les côtes corses, il ne peut pas accoster n'importe où. Les hydrocarbures doivent être pompés à grand débit par des conduites maritimes sous-marines pour être injectés dans des cuves de stockage sous haute sécurité. Or, sur l'ensemble de la Corse, il n'existe que **deux portes d'entrée physiques, et deux seulement** :
+
+<!-- CARTOUCHE DOUBLE ÉTAGÈRE — COMPRENDRE LE VERROU PHYSIQUE -->
+<div class="my-6 not-prose p-5 rounded-xl bg-amber-500/10 border-l-4 border-amber-400 font-mono text-xs">
+  <div class="flex items-center gap-2 mb-2 text-amber-300 font-bold uppercase tracking-wider">
+    <span>👁️ EN CLAIR POUR VOTRE FOYER : LE GOULET D'ÉTRANGLEMENT</span>
+  </div>
+  <p class="text-slate-300 font-sans text-sm m-0 leading-relaxed">
+    Imaginez qu'une ville entière n'ait que <strong>deux ponts d'accès</strong>, et que deux transporteurs concurrents en possèdent les péages exclusifs. Nul ne peut entrer sans leur payer un tribut ou leur acheter directement la marchandise. C'est exactement le sort de la Corse : sans accès direct aux tuyaux sous-marins de Lucciana et du Vazzio, aucun distributeur indépendant ne peut casser les prix.
+  </p>
+</div>
 
 1. Au nord, **le terminal de Lucciana** (Haute-Corse), niché au lieu-dit Pineto (`42.5432° N, 9.4444° E`), relié à un poste de déchargement en mer à quelques encablures de la plage.
 2. Au sud, **le terminal du Vazzio** (Corse-du-Sud), posé au fond du golfe d'Ajaccio (`41.9360° N, 8.7610° E`), raccordé à l'appontement pétrolier Saint-Joseph.
@@ -121,7 +170,7 @@ Dans son arrêt du 17 novembre 2025, l'Autorité de la concurrence a tranché au
 
 ---
 
-## Le Cartel Démasqué : L'Onde de Choc des 187,5 Millions d'Euros d'Amendes
+<h2 id="cartel-demasque" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Le Cartel Démasqué : L'Onde de Choc des 187,5 Millions d'Euros d'Amendes</h2>
 
 Pendant des décennies, toute critique sur les prix des carburants se heurtait au même refrain des compagnies pétrolières : *« L'insularité coûte cher, le transport maritime est complexe, les volumes sont faibles. »* Le 17 novembre 2025, ce narratif bien rodé s'est effondré sous le poids d'une décision judiciaire historique.
 
@@ -174,7 +223,7 @@ La sanction financière infligée à l'Article 2 résonne comme un coup de tonne
 
 ---
 
-## L'Ingénierie de l'Exclusion : Les Secrets du Pacte DPLC
+<h2 id="ingenierie-exclusion" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">L'Ingénierie de l'Exclusion : Les Secrets du Pacte DPLC</h2>
 
 Comment un tel cartel a-t-il pu fonctionner pendant des années sans être inquiété ? En plongeant dans les 80 pages de l'instruction et les cotes confidentielles annexées au dossier, on découvre une machinerie contractuelle d'une redoutable perversité.
 
@@ -193,7 +242,7 @@ Enfin, **l'élimination physique des entrepreneurs corses** (points 67 et 254-25
 
 ---
 
-## Le Kérosène des Quatre Aéroports et la Rente de l'Annexe 3
+<h2 id="kerosene-aeroports" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Le Kérosène des Quatre Aéroports et la Rente de l'Annexe 3</h2>
 
 L'investigation de l'Autorité de la concurrence révèle un pan encore plus stupéfiant et resté totalement méconnu du grand public : le cartel des cuves ne s'est pas arrêté à l'asphalte des routes. Il a régné en maître absolu sur le ciel corse.
 
@@ -214,7 +263,7 @@ Pour parachever l'extraction, les membres du cartel avaient annexé au contrat d
 
 ---
 
-## Le Mystère du Carburant E10 Absent : La Rançon Forcée sur l'Essence
+<h2 id="mystere-e10" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Le Mystère du Carburant E10 Absent : La Rançon Forcée sur l'Essence</h2>
 
 Parmi toutes les aberrations vécues par les usagers insulaires, il en est une qui frappe chaque propriétaire de véhicule essence : **pourquoi est-il rigoureusement impossible de trouver du SP95-E10 en Corse ?**
 
@@ -254,7 +303,7 @@ Les conséquences pour les familles et les jeunes conducteurs corses sont mathé
 
 ---
 
-## Trente-Sept Ans de Silence à Bercy : L'Autopsie d'une Défaillance d'État
+<h2 id="silence-bercy" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Trente-Sept Ans de Silence à Bercy : L'Autopsie d'une Défaillance d'État</h2>
 
 Si l'appétit de profit des multinationales est tristement prévisible, l'aspect le plus scandaleux de ce dossier réside dans l'attitude de l'État : **une défaillance prolongée, documentée et coupable pendant près de quatre décennies**.
 
@@ -275,7 +324,7 @@ Le deux poids, deux mesures républicain devient criant lorsqu'on tourne le rega
 
 ---
 
-## La Preuve par les Données : Les 191 000 Relevés Citoyens du Collectif A4C
+<h2 id="releves-a4c" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">La Preuve par les Données : Les 191 000 Relevés Citoyens du Collectif A4C</h2>
 
 Pendant que les cabinets ministériels tergiversaient, les citoyens ont mené le travail d'enquête médico-légale que l'administration refusait de faire. Sous l'impulsion du collectif **A4C**, une infrastructure de surveillance citoyenne a collecté et scanné quotidiennement les totems de **384 stations-service** réparties entre la Corse et les Bouches-du-Rhône, compilant une base géante de **191 000 relevés journaliers**.
 
@@ -289,7 +338,7 @@ Cette rigidité est la signature clinique du monopole : sur 1 000 observations e
 
 ---
 
-## La Guerre Secrète devant les Tribunaux : Aveux de Bénéfices et Dossiers Classifiés
+<h2 id="guerre-tribunaux" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">La Guerre Secrète devant les Tribunaux : Aveux de Bénéfices et Dossiers Classifiés</h2>
 
 Pendant que les automobilistes insulaires se serraient la ceinture, les deux géants du cartel se livraient une guerre fratricide à huis clos devant le tribunal de commerce.
 
@@ -307,7 +356,7 @@ Le cynisme a atteint son paroxysme lorsque la direction de ViTO a publiquement b
 
 ---
 
-## Le Chiffrage du Prélèvement et la Feuille de Route pour le Bien Commun
+<h2 id="chiffrage-feuille-route" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Le Chiffrage du Prélèvement et la Feuille de Route pour le Bien Commun</h2>
 
 Le calcul médico-légal de ce pillage économique est aujourd'hui scientifiquement établi :
 
@@ -334,84 +383,81 @@ Face à ce constat accablant, la résignation citoyenne n'est plus permise. La d
 
 ---
 
-## Réquisition Citoyenne CADA : Les Documents Stratégiques à Exiger
+<h2 id="requisition-cada" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">Réquisition Citoyenne CADA : Les Documents Stratégiques à Exiger</h2>
 
 Pour maintenir une pression démocratique totale et briser l'omerta, chaque citoyen, élu, syndicat ou association peut exiger la communication immédiate des documents administratifs et judiciaires stratégiques au titre du Code des Relations entre le Public et l'Administration (CRPA, art. L. 311-1) et du Code de l'Environnement (art. L. 124-1) :
 
-### 🎯 Les Pièces Officielles à Réquisitionner :
+#<h2 id="arret-conseil-etat" class="scroll-mt-24 text-2xl sm:text-3xl font-press font-bold text-white mt-12 mb-4 border-b border-amber-500/20 pb-2">⚖️ 21 Octobre 2026 : L'Arrêt du Conseil d'État et le Masque Républicain Tombé</h2>
 
-<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
+Le verdict tant attendu par l'ensemble de la société corse est tombé le **21 octobre 2026**. Par sa décision contentieuse **n° 512989**, rendue solennellement en **9e et 10e chambres réunies**, le **Conseil d'État** a rejeté le recours en excès de pouvoir introduit par Frédéric Poletti et le collectif citoyen **A4C**.
 
-| Autorité Dépositaire | Acte Officiel Précis à Exiger | Base Légale & Lien Direct |
-| :--- | :--- | :--- |
-| **Préfecture de Corse-du-Sud & DREAL** | **Arrêté n° 2A-2021-04-29-0006 du 29 avril 2021** (Prescriptions d'exploitation ICPE du dépôt Vazzio à Ajaccio) et rapports annuels d'inspection SEVESO | [Géorisques Vazzio](https://www.georisques.gouv.fr/) / `Art. L. 124-1 C. Env.` |
-| **Préfecture de Haute-Corse & DREAL** | **Arrêté n° 2B-2022-06-21-00006 du 21 juin 2022** (Prescriptions d'exploitation ICPE du dépôt de Lucciana, lieu-dit Pineto) et historique des arrêtés complémentaires | [Géorisques Lucciana](https://www.georisques.gouv.fr/) / `Art. L. 124-1 C. Env.` |
-| **CCI de Corse / Aéroports Insulaires** | **Conventions d'avitaillement en Jet A-1 & contrats de sous-concession de carburéacteur** (Aéroports de Bastia, Ajaccio, Calvi et Figari - contrats BP et TEMC) | [Portail OpenData corse.cci.fr](https://www.corse.cci.fr/) / `Art. L. 311-1 CRPA` |
-| **Collectivité de Corse (Assemblée)** | **Délibérations n° 18/422 AC, 21/087 AC et 21/172 AC** relatives au coût des carburants, aux conférences sociales et aux rapports sur la distribution insulaire | [Portail OpenData isula.corsica](https://www.isula.corsica/) / `Art. L. 2121-26 CGCT` |
-| **Ministère de l'Économie & IGF** | **Rapport IGF n° 2018-M-072-03** (*« Pour une économie corse du XXIe siècle »*, volet fret maritime, surcoûts et marges brutes de raffinage) | [Archives IGF / Vie-Publique](https://www.vie-publique.fr/) / `Art. L. 311-1 CRPA` |
-| **Bercy / DGCCRF** | Rapports d'enquête régionaux de la DGCCRF sur la structure des marges réelles de gros et de détail pratiquées en Corse depuis 2020 | `Art. L. 311-1 CRPA` (Saisine CADA) |
-
-</div>
-
----
-
-### 📊 Matrice d'Audit Forensique : Le Bilan du Verrou Pétrolier
-
-<div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
-
-| Axe d'Investigation | Constat Officiellement Établi | Référence Judiciaire & Source | Qualification Forensique |
-| :--- | :--- | :--- | :--- |
-| **Condamnation pour Entente** | **187,49 Millions d'Euros d'Amendes** | Autorité de la Concurrence (Décision 25-D-07) | 🔴 Infraction Pénale & Civile Scellée |
-| **Monopole des Cuves Côtières** | **85 000 m³** sous contrôle DPLC (Lucciana/Vazzio) | DREAL Corse / Registres ICPE | 🔴 Facilité Essentielle Non Réplicable |
-| **Consommation Annuelle** | **400 Millions de Litres d'Hydrocarbures** | DGEC / Bilan Énergétique Insulaire | ⚠️ Marché Captif Total |
-| **Prélèvement Rente Captive** | **48 Millions d'Euros siphonnés par an** | Calcul Forensique L'OCHJU (0,12 €/L net) | 🔴 Transfert Indu de Pouvoir d'Achat |
-| **Régime Fiscal Détourné** | **TVA 13 % au lieu de 20 %** (Article 297 CGI) | Rapports IGF 2018 & Préfecture 2018 | 🔴 Avantage Public Totalement Confisqué |
-| **Pénurie Organisée de Biocarburant** | **0 Station distribuant le SP95-E10** en Corse | Avis 20-A-11 / Relevés Citoyens A4C | 🔴 Surcoût Forcé de 20 cts/L sur l'Essence |
-| **Verrouillage du Kérosène** | **Partage Territorial Exclusif (BP & TEMC)** | Décision 25-D-07 (Points 44, 79 et 80) | 🔴 Renchérissement DSP Aérienne Publique |
-
-</div>
-
----
-
-### Recommandations Souveraines Immédiates :
-1. **Mise en Place Immédiate du Statut d'Accès Tiers Régulé (ATR) :** Obligation stricte pour les dépôts de Lucciana et du Vazzio de publier des tarifs de stockage transparents et non discriminatoires pour tout importateur.
-2. **Création d'un Observatoire Citoyen des Prix à la Pompe :** Publication hebdomadaire des marges brutes de raffinage, transport maritime et stockage pour chaque station-service de Corse.
-3. **Pôle Public Insulaire de Sécurité Énergétique :** Entrée au capital de la Collectivité de Corse dans les infrastructures de stockage pour garantir la résilience de l'île.
-
----
-
-## ⏱️ 30 Septembre 2026 : Le Racket Pétrolier devant le Conseil d'État
-
-Alors que les sanctions de 187,5 millions d'euros infligées aux compagnies ont frappé le passé, une étape historique se joue au présent pour l'avenir de chaque foyer corse. 
-
-Par un avis officiel notifié le **22 septembre 2026**, le **Conseil d'État** a inscrit à l'audience du **mercredi 30 septembre 2026** le recours contentieux porté par Frédéric Poletti au nom de l'association citoyenne **A4C** contre le refus implicite du Gouvernement français d'encadrer les prix des carburants dans l'île.
+Cette décision constitue un tournant capital pour la vérité citoyenne. Loin d'exonérer le cartel, la plus haute juridiction administrative de la République française a apporté la preuve éclatante que **le maintien de ce racket est un choix politique conscient et assumé de l'État**.
 
 <div class="my-6 not-prose bg-slate-900/90 border border-amber-500/40 rounded-2xl p-6 shadow-xl">
   <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
     <div class="flex items-center gap-2">
       <span class="text-xl">⚖️</span>
-      <h4 class="text-base font-bold text-amber-300 font-sans m-0">L'ÉTAU RÉPUBLICAIN : L'ACTION CONTENTIEUSE & PARLEMENTAIRE</h4>
+      <span class="text-sm font-bold text-amber-300 font-mono tracking-tight m-0 inline-block">AUTOPSIE JURIDIQUE DE L'ARRÊT DU CONSEIL D'ÉTAT (N° 512989 DU 21 OCT. 2026)</span>
     </div>
-    <span class="text-[11px] font-mono bg-amber-500/10 text-amber-300 px-3 py-1 rounded-full border border-amber-500/30">
-      AUDIENCE DU 30 SEPTEMBRE 2026
+    <span class="text-[11px] font-mono bg-rose-500/20 text-rose-300 px-3 py-1 rounded-full border border-rose-500/40 font-bold">
+      DÉCISION CONTENTIEUSE SCELLÉE
     </span>
   </div>
   <p class="text-xs text-slate-300 font-sans leading-relaxed mb-4">
-    L'affaire est audiencée devant les <strong>9e et 10e chambres réunies</strong>, une formation solennelle réservée aux litiges présentant une difficulté juridique majeure. Le recours se fonde sur l'<strong>article L. 410-2 alinéa 2 du Code de commerce</strong>, qui confère au Premier ministre et au ministre de l'Économie le pouvoir d'encadrer par décret en Conseil d'État les prix des produits de première nécessité dans les zones géographiques où la concurrence est annihilée.
+    Le Conseil d'État ne s'est pas rangé derrière les mensonges habituels des compagnies pétrolières. Il n'a **jamais prétendu que les prix des carburants en Corse étaient équitables**, il n'a **pas affirmé que la concurrence s'y exerçait normalement**, et il n'a **nullement validé la thèse de l'insularité** pour justifier un surcoût de 18 centimes par litre alors que la TVA insulaire est à 13 % au lieu de 20 %.
   </p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
     <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
-      <span class="text-slate-400 text-[10px] uppercase block mb-1">🔍 Front Juridictionnel (A4C)</span>
-      <p class="text-slate-200 m-0">Injonction demandée à l'État sous astreinte de réexaminer la demande de régulation des prix des carburants en Corse sous un délai strict de <strong>2 mois</strong>.</p>
+      <span class="text-cyan-400 text-[10px] uppercase font-bold block mb-1">📜 Le Verrou Juridique : Une simple "Faculté"</span>
+      <p class="text-slate-300 m-0">Le Conseil d'État a jugé que l'<strong>article L. 410-2 alinéa 2 du Code de commerce</strong> confère au Gouvernement une <em>faculté</em> de réglementer les prix par décret, sans lui en imposer l'<em>obligation légale</em>. Le refus de Bercy de plafonner les prix relève donc de son pouvoir d'opportunité purement politique et ne peut être censuré pour excès de pouvoir.</p>
     </div>
     <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
-      <span class="text-slate-400 text-[10px] uppercase block mb-1">🏛️ Front Parlementaire (Député Colombani)</span>
-      <p class="text-slate-200 m-0">Mission d'évaluation parlementaire à l'Assemblée nationale prenant l'État en tenaille face à l'inertie de l'Exécutif territorial (délibération 2021-172 AC restée lettre morte).</p>
+      <span class="text-amber-400 text-[10px] uppercase font-bold block mb-1">🎯 La Responsabilité Régalienne Directe</span>
+      <p class="text-slate-300 m-0">La conséquence citoyenne est limpide : <strong>le cartel ne tient pas contre l'État, il tient PAR le consentement passif de l'État</strong>. Dès lors que le gouvernement refuse d'actionner le décret prévu pour les situations de monopole insulaire, il protège objectivement les 48 millions d'euros annuels de rente privée prélevés sur les usagers corses.</p>
     </div>
   </div>
 </div>
 
-Après huit années d'un combat opiniâtre mené au nom de ceux qui souffrent en silence devant les totems des stations, le Conseil d'État est placé devant ses responsabilités républicaines : mettre fin à la rente du cartel ou entériner la confiscation de l'avantage fiscal insulaire.
+Comme l'a formulé avec dignité Frédéric Poletti au lendemain de la notification de l'arrêt :  
+> *« Nous n'allons pas travestir cette décision : nous avons perdu cette bataille juridique. Mais attention ! Le Conseil d'État n'a pas dit que les prix en Corse étaient normaux. Il a dit que le gouvernement a le droit de choisir de ne rien faire. La question n'est plus juridique, elle est désormais purement politique : pourquoi Paris choisit-il délibérément d'affamer les usagers corses pour préserver la marge des pétroliers ? »*
+
+---
+
+<!-- ==========================================================================
+     DIAGRAMME FORENSIQUE : LE CIRCUIT DU SIPHONNAGE DU CARBURANT
+     ========================================================================== -->
+<div class="my-8 not-prose p-6 rounded-2xl bg-slate-950 border border-slate-800">
+  <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-800 font-mono text-xs">
+    <span class="text-amber-400 font-bold uppercase tracking-wider">🔬 Schéma Forensique L'OCHJU : Cascade du Verrou Pétrolier</span>
+    <span class="text-slate-400">Flux Physique vs Rente Captée</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-center font-mono text-xs">
+    <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+      <span class="text-[10px] text-slate-400 uppercase block mb-1">Étape 1 · Raffinerie</span>
+      <strong class="text-white block text-sm">Fos / Lavéra</strong>
+      <span class="text-[10px] text-slate-400 mt-1 block">Prix Platts Méditerranée</span>
+      <div class="mt-2 text-emerald-400 text-[11px] font-bold">Base Neutre</div>
+    </div>
+    <div class="p-3 bg-slate-900 rounded-xl border border-slate-800">
+      <span class="text-[10px] text-slate-400 uppercase block mb-1">Étape 2 · Fret Réel</span>
+      <strong class="text-white block text-sm">Navire Citerne</strong>
+      <span class="text-[10px] text-slate-400 mt-1 block">Traversée Fos ➔ Corse</span>
+      <div class="mt-2 text-cyan-400 text-[11px] font-bold">1,5 à 2,5 cts / L (Rapport IGF)</div>
+    </div>
+    <div class="p-3 bg-slate-900 rounded-xl border border-rose-500/40 bg-rose-950/20">
+      <span class="text-[10px] text-rose-400 uppercase block mb-1">Étape 3 · Le Verrou</span>
+      <strong class="text-rose-300 block text-sm">DPLC Lucciana / Vazzio</strong>
+      <span class="text-[10px] text-slate-400 mt-1 block">Droit de passage fermé</span>
+      <div class="mt-2 text-rose-400 text-[11px] font-bold">Amende 187,5 M€ (Entente)</div>
+    </div>
+    <div class="p-3 bg-slate-900 rounded-xl border border-amber-500/40 bg-amber-950/20">
+      <span class="text-[10px] theme-gold-text uppercase block mb-1">Étape 4 · Totem Station</span>
+      <strong class="theme-gold-text block text-sm">La Pompe Citoyenne</strong>
+      <span class="text-[10px] text-slate-400 mt-1 block">TVA corse légale 13 % (CGI 297)</span>
+      <div class="mt-2 text-amber-300 text-[11px] font-bold">+18 cts/L captés (48 M€/an)</div>
+    </div>
+  </div>
+</div>
 
 ---
 

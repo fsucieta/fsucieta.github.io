@@ -1,4 +1,4 @@
-# BORDEREAU DE TRANSMISSION JUDICIAIRE & SIGNALEMENT OFFICIEL
+﻿# BORDEREAU DE TRANSMISSION JUDICIAIRE & SIGNALEMENT OFFICIEL
 **AU TITRE DE L'ARTICLE 40 DU CODE DE PROCÉDURE PÉNALE & DES ARTICLES L. 420-1 ET SUIVANTS DU CODE DE COMMERCE**
 
 **À l'attention de :**
@@ -38,14 +38,13 @@ Conformément aux protocoles de saisie forensique ISO/IEC 27037 garantissant l'a
 - **Taille** : 1 405 220 octets.
 - **Points Saillants** : Établissement probatoire du monopole d'importation, de la surfacturation d'accès aux cuves et du verrouillage du SP95-E10.
 
-#### COTE P-02 : REQUÊTE INTRODUCTIVE D'INSTANCE POUR FAUTE LOURDE DE L'ÉTAT
-- **Juridiction Saisie** : Conseil d'État (Section du Contentieux).
-- **Plaignant** : Association Citoyenne des Usagers et Consommateurs (A4C).
-- **Date d'Enregistrement** : 20 février 2026.
+#### COTE P-02 : DÉCISION CONTENTIEUSE DU CONSEIL D'ÉTAT (9E ET 10E CHAMBRES RÉUNIES)
+- **Juridiction Émettrice** : Conseil d'État (Section du Contentieux — 9e et 10e chambres réunies).
+- **Référence Officielle** : Décision n° 512989 du 21 octobre 2026 (M. Frédéric Poletti / Collectif A4C c/ Ministre de l'Économie).
+- **Date de Notification** : 21 octobre 2026.
 - **Empreinte Cryptographique SHA-256** :
-  `939860b56b8ad81ec8901c5ebba9a61aeb295be88bf4d88bf56b5df888e879e3`
-- **Taille** : 1 111 213 octets.
-- **Points Saillants** : Inaction coupable des ministères de tutelle (Énergie / Économie) refusant d'user des prérogatives de l'article L. 410-2 du Code de commerce pour bloquer les prix du carburant en Corse malgré la carence structurelle de concurrence.
+  c4ee5c3733b9a57173c3f24edf9be86d846b4cb78eb395149f08a093091de6f0
+- **Portée Juridique & Opposabilité Pénale** : Établissement solennel que l'article L. 410-2 du Code de commerce accorde une faculté discrétionnaire au Gouvernement. Le maintien du cartel et de la surfacturation insulaire (+18 cts/L captés indûment malgré la TVA à 13 %) relève dès lors du refus d'agir assumé et de la responsabilité politique directe de l'Exécutif régalien.
 
 #### COTE P-03 : JUGEMENT COMMERCIAL SUR L'ENTENTE CONTRACTUELLE DES BAUX PÉTROLIERS
 - **Juridiction** : Tribunal des Activités Économiques de Marseille.

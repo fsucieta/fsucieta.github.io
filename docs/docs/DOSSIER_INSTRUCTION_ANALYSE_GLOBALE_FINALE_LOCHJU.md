@@ -6,7 +6,8 @@
 
 **Classification :** Renseignement Macro-Économique, Audit Constitutionnel & Munitions d'Émancipation Populaire  
 **Norme de Conservation :** ISO/IEC 27037 (Preuve Numérique Intègre & Auditabilité au Bit Près)  
-**Date d'Arrêté des Comptes & Cotes :** Octobre 2026  
+**Date d'Arrêté des Comptes & Cotes :** Octobre 2026 (Mise à jour d'actualité forensique : 8 Novembre 2026)  
+**Mention Spéciale :** *Mémorandum mis à jour suite au rejet du Sénat (26 octobre 2026) et à la rupture officielle du processus de Beauvau.*  
 **Autorité Émettrice :** Cellule d'Investigation L'OCHJU  
 **Destinataires Souverains :** Le Peuple Corse, l'Assemblée de Corse, les Collectifs Citoyens, les Juridictions Européennes (CJUE, CEDH), la Diaspora Internationale  
 **Devise Rituelle :** *« Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. »*
@@ -90,21 +91,22 @@ Le Framework DISARM met en lumière les 3 techniques psychologiques utilisées c
 
 ## CHAPITRE III. L'IMPASSE CONSTITUTIONNELLE : LE PIÈGE DE L'ARTICLE 89 ET DU SÉNAT
 
-Le prétendu « processus de Beauvau » engagé après la mort d'Yvan Colonna en 2022 est une impasse juridique programmée.
+Le prétendu « processus de Beauvau » engagé après la mort d'Yvan Colonna en 2022 a trouvé son dénouement prévisible : une impasse juridique et politique totale.
 
-### 1. Le Verrou Constitutionnel de l'Article 89
+### 1. Le Verrou Constitutionnel de l'Article 89 & La Rupture Historique d'Octobre-Novembre 2026
 
-La voie choisie par les négociateurs territoriaux et le gouvernement — l'inscription d'un article 72-5 dans la Constitution — relève de la procédure de révision de l'Article 89.
+La voie choisie par les négociateurs territoriaux et le gouvernement — l'inscription d'un article 72-5 dans la Constitution — relevait de la procédure de révision de l'Article 89.
 Or, l'Article 89 impose un vote conforme **dans les mêmes termes par l'Assemblée Nationale et par le Sénat**.
 
 Le Sénat, dominé par une majorité jacobine attachée au dogme de l'indivisibilité territoriale, détient un **droit de veto absolu et discrétionnaire**.
-Le dépouillement des travaux de la commission des lois du Sénat en octobre 2026 confirme ce que L'OCHJU avait anticipé :
-- Suppression pure et simple de la notion de **« communauté corse »**.
-- Suppression de la reconnaissance du **« lien singulier à la terre »**.
-- Refus de tout pouvoir législatif plein et entier dans les matières régaliennes économiques et foncières.
-- Rejet du statut de résident et de la co-officialité linguistique.
 
-Négocier sous le régime de l'Article 89 revient à demander aux rentiers de voter l'abolition de leurs propres rentes.
+Les faits historiques récents sont venus clore définitivement cette illusion républicaine :
+- **Le saccage par la Commission des Lois (21 octobre 2026) :** Suppression unilatérale de la reconnaissance de la **« communauté corse »** et du **« lien singulier à la terre »**, refus d'un pouvoir législatif plein et entier et rejet du statut de résident.
+- **Le rejet solennel en séance (26-27 octobre 2026) :** Par **181 voix contre 134**, la Haute Assemblée a formellement rejeté le projet de loi constitutionnelle issu de Beauvau.
+- **La rupture officielle du camp autonomiste (26 octobre 2026) :** En direct de l'hémicycle sénatorial, le sénateur autonomiste Paul-Toussaint Parigi (*Femu a Corsica*) a acté la rupture et annoncé le **retrait officiel et irrévocable du camp autonomiste du processus de Beauvau**, dénonçant le sabotage d'un accord politique équilibré par une majorité archaïque.
+- **La Résolution Solennelle de l'Assemblée de Corse (Novembre 2026) :** Les élus de la majorité territoriale ont refusé l'invitation de conciliation à Paris et voté une résolution actant l'impasse institutionnelle totale de la procédure ordinaire.
+
+Négocier sous le régime de l'Article 89 revenait à demander aux rentiers de voter l'abolition de leurs propres rentes. Le constat est scellé.
 
 ### 2. Le Détournement de l'Article 2 de la Constitution
 
