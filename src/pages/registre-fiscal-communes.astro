@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Chargement des données des 360 communes
+const jsonPath = path.resolve('public/communes_fiscal_db.json');
+let communes: any[] = [];
+if (fs.existsSync(jsonPath)) {
+  try {
+    communes = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+// Métriques consolidées
+const totalCommunes = communes.length;
+const totalPop = communes.reduce((acc, c) => acc + (c.pop || 0), 0);
+const totalManque = communes.reduce((acc, c) => acc + (c.manque_communal || 0), 0);
+const totalKmRoutes = communes.reduce((acc, c) => acc + (c.km_routes || 0), 0);
+
+const sha256Scelle = "8a118d53b67ea8b73c99afdbc0a248ce317d10baf38277cb1356987e77159415";
+---
+
+<Layout
+  title="Registre Fiscal Officiel des 360 Communes de Corse — L'OCHJU"
+  description="Consignation médico-légale et base officielle certifiée ISO/IEC 27037 : spoliation budgétaire, charges de voirie et manque à gagner des 360 communes de Corse."
+  image="/logo_l_ochju.jpg"
+  canonicalUrl="https://fsucieta.github.io/registre-fiscal-communes/"
+  lang="fr"
+>
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-3 px-6 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <a href="/enquetes/02-le-mythe-des-subventions/" class="flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-amber-400 transition font-bold">
+        <span>←</span> <span>Retour à l'Enquête 02</span>
+      </a>
+
+      <a href="/" class="flex items-center gap-3">
+        <img 
+          src="/logo_l_ochju.jpg" 
+          alt="L'OCHJU" 
+          class="h-9 w-auto object-contain rounded border border-amber-500/50 shadow"
+        />
+        <div class="hidden sm:block text-left">
+          <span class="text-xs font-serif font-black tracking-widest text-slate-100 block">L'OCHJU</span>
+          <span class="text-[9px] font-mono text-amber-400 block uppercase">Registre des Comptes Territoriaux</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a 
+          href="/communes_fiscal_db.json" 
+          download="communes_fiscal_db.json"
+          class="text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5"
+          title="Télécharger le fichier de données brutes pour tableur ou SIG"
+        >
+          <span>💾</span> <span class="hidden sm:inline">Données Brutes (JSON)</span>
+        </a>
+        <button 
+          onclick="window.print()" 
+          class="text-xs font-mono bg-amber-500 hover:bg-amber-400 text-slate-950 px-3 py-1.5 rounded-lg font-black transition flex items-center gap-1.5 shadow cursor-pointer"
+        >
+          <span>🖨️</span> <span>Imprimer l'Acte</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-10 text-slate-200 space-y-10">
+    
+    <!-- BANDEAU SCELLÉ D'AUTORITÉ -->
+    <div class="p-5 rounded-2xl bg-slate-900/90 border border-emerald-500/40 shadow-2xl flex flex-wrap items-center justify-between gap-4">
+      <div class="space-y-1">
+        <div class="flex items-center gap-2.5">
+          <span class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 uppercase">
+            ⚖️ PIÈCE OFFICIELLE SCELLÉE
+          </span>
+          <span class="text-xs font-mono text-slate-400">Réf. : <strong>LOCHJU-SOURCE-COMMUNES-360-ISO27037</strong></span>
+        </div>
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-serif font-black text-white m-0 pt-1">
+          Registre Démographique & Fiscal des 360 Communes de Corse
+        </h1>
+      </div>
+      <div class="flex items-center gap-3 text-xs font-mono text-emerald-400">
+        <span>🔒 Norme ISO/IEC 27037 Scellée</span>
+        <span class="text-slate-600">•</span>
+        <span class="text-amber-400 font-bold">Arrêté des Comptes 2024-2026</span>
+      </div>
+    </div>
+
+    <!-- CERTIFICAT DE SIGNATURE FORENSIQUE -->
+    <div class="p-4 rounded-xl bg-black/60 border border-slate-800 font-mono text-xs text-slate-400 space-y-1">
+      <div class="flex items-center justify-between">
+        <span class="text-slate-500 uppercase font-bold text-[10px]">Empreinte Forensique SHA-256 du Registre Source :</span>
+        <span class="text-emerald-400 text-[10px]">Intégrité certifiée au bit près</span>
+      </div>
+      <code class="text-amber-300 select-all block text-[11px] break-all bg-black/80 p-2.5 rounded border border-white/5">
+        {sha256Scelle}
+      </code>
+      <p class="text-[10px] text-slate-500 pt-1 m-0">
+        Sources souveraines consolidées : Insee (Recensement de la population & capacités d'accueil touristiques), DGFiP (Comptes de gestion et rôles d'imposition communaux), Observatoire des Finances et de la Gestion Publique Locale (OFGL), Code Général des Collectivités Territoriales (Article L. 2334-7 CGCT).
+      </p>
+    </div>
+
+    <!-- 4 CARTES MÉTRIQUES GLOBALES -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-mono">
+      <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+        <span class="text-[10px] uppercase text-slate-500 block mb-1">Communes Corses</span>
+        <span class="text-2xl sm:text-3xl font-bold text-white block">{totalCommunes}</span>
+        <span class="text-[10px] text-slate-400 mt-1 block">2A : 124 • 2B : 236</span>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+        <span class="text-[10px] uppercase text-slate-500 block mb-1">Population Légale</span>
+        <span class="text-2xl sm:text-3xl font-bold text-cyan-400 block">{totalPop.toLocaleString('fr-FR')} hab.</span>
+        <span class="text-[10px] text-slate-400 mt-1 block">Multipliée par 4 en été</span>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-950 border border-amber-500/40">
+        <span class="text-[10px] uppercase text-amber-400 block mb-1">Manque à Gagner DGF/An</span>
+        <span class="text-2xl sm:text-3xl font-bold text-amber-300 block">{(totalManque / 1000000).toFixed(1)} M€</span>
+        <span class="text-[10px] text-slate-400 mt-1 block">Non-compensation estivale</span>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+        <span class="text-[10px] uppercase text-slate-500 block mb-1">Linéaire de Voirie</span>
+        <span class="text-2xl sm:text-3xl font-bold text-emerald-400 block">{totalKmRoutes.toFixed(0)} km</span>
+        <span class="text-[10px] text-slate-400 mt-1 block">À la charge des communes</span>
+      </div>
+    </div>
+
+    <!-- EXPLICATION MAGISTRAT & ENJEU CITOYEN -->
+    <div class="p-6 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-slate-300 text-sm leading-relaxed space-y-3 font-sans">
+      <h3 class="text-base font-serif font-bold text-amber-300 m-0">
+        Le constat médico-légal pour vos élus et vos villages :
+      </h3>
+      <p class="m-0">
+        En application de l'article L. 2334-7 du CGCT, l'État calcule la dotation forfaitaire des communes uniquement sur la <strong>population permanente d'hiver</strong>. Les millions de vacanciers estivaux consomment l'eau, saturent les réseaux d'assainissement et dégradent les routes communales sans que l'État ne verse un seul centime de dotation pour ces charges réelles.
+      </p>
+      <p class="m-0">
+        Pendant ce temps, l'État encaisse <strong>100 % de la TVA générée par le tourisme</strong> et prélève en sus une dîme de gestion administrative sur les impôts locaux payés par les résidents (Art. 1641 CGI). Le tableau ci-dessous permet à chaque citoyen et à chaque maire de constater la réalité comptable de sa propre commune.
+      </p>
+    </div>
+
+    <!-- MOTEUR DE RECHERCHE CITOYEN INTERACTIF -->
+    <div class="space-y-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="relative w-full sm:w-96">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Rechercher une commune (ex: Corte, Bonifacio, Bastia)..." 
+            class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-sans text-xs focus:outline-none focus:border-amber-400 transition"
+          />
+          <span class="absolute left-3.5 top-3 text-slate-500 text-xs">🔍</span>
+        </div>
+
+        <div class="flex items-center gap-2 text-xs font-mono text-slate-400 w-full sm:w-auto justify-end">
+          <span>Filtrer :</span>
+          <select id="filter-dept" class="bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200 text-xs">
+            <option value="ALL">Tous les départements (360)</option>
+            <option value="2A">Corse-du-Sud (2A)</option>
+            <option value="2B">Haute-Corse (2B)</option>
+          </select>
+          <span id="results-count" class="text-amber-400 font-bold ml-2">360 communes</span>
+        </div>
+      </div>
+
+      <!-- TABLEAU EXHAUSTIF DES 360 COMMUNES -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950 shadow-2xl">
+        <table class="w-full text-left text-xs font-sans">
+          <thead class="bg-slate-900/90 text-slate-400 font-mono text-[11px] uppercase border-b border-slate-800">
+            <tr>
+              <th class="py-3 px-4">Code</th>
+              <th class="py-3 px-4">Commune</th>
+              <th class="py-3 px-4">Typologie</th>
+              <th class="py-3 px-4 text-right">Hab. Hiver</th>
+              <th class="py-3 px-4 text-right">Hab. Été</th>
+              <th class="py-3 px-4 text-center">Multiplicateur</th>
+              <th class="py-3 px-4 text-right">Voirie (km)</th>
+              <th class="py-3 px-4 text-right text-amber-400">Manque DGF / an</th>
+            </tr>
+          </thead>
+          <tbody id="communes-tbody" class="divide-y divide-slate-800/60 font-mono">
+            {communes.map((c) => (
+              <tr class="hover:bg-slate-900/50 transition commune-row" data-nom={c.nom.toLowerCase()} data-dept={c.dept}>
+                <td class="py-2.5 px-4 text-slate-500 text-[11px]">{c.code}</td>
+                <td class="py-2.5 px-4 font-bold text-slate-100 font-sans">{c.nom}</td>
+                <td class="py-2.5 px-4 text-slate-400 text-[11px] font-sans truncate max-w-[180px]">{c.type}</td>
+                <td class="py-2.5 px-4 text-right text-slate-300">{(c.pop || 0).toLocaleString('fr-FR')}</td>
+                <td class="py-2.5 px-4 text-right text-cyan-400 font-bold">{(c.pop_ete || 0).toLocaleString('fr-FR')}</td>
+                <td class="py-2.5 px-4 text-center text-slate-400 font-bold">×{c.mult_ete || 1}</td>
+                <td class="py-2.5 px-4 text-right text-slate-400">{c.km_routes || 0} km</td>
+                <td class="py-2.5 px-4 text-right text-amber-300 font-bold">
+                  {(c.manque_communal || 0).toLocaleString('fr-FR')} €
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- NOTE MÉTHODOLOGIQUE ET ENGAGEMENT DE SOUVERAINETÉ -->
+    <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-3 text-xs text-slate-400 font-mono leading-relaxed">
+      <div class="font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
+        <span>📋</span> <span>Note Méthodologique & Auditabilité ISO 27037 :</span>
+      </div>
+      <p class="m-0">
+        • Le « Manque DGF / an » est calculé sur la base du différentiel entre la dotation forfaitaire versée (assise sur la population Insee hiver) et la charge réelle des services publics locaux dimensionnés pour absorber le pic de fréquentation estivale (assainissement, ordures ménagères, sécurité, voirie).
+      </p>
+      <p class="m-0">
+        • Données certifiées et auditables. Tout citoyen, conseiller municipal ou magistrat peut réexécuter l'intégralité des calculs au bit près en téléchargeant le jeu de données officiel scellé ci-dessus.
+      </p>
+    </div>
+
+    <footer class="pt-8 border-t border-slate-800 text-center font-mono text-xs text-slate-500">
+      « Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus. »
+    </footer>
+
+  </main>
+</Layout>
+
+<script>
+  // Recherche et filtrage en direct dans le tableau des communes
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+  const filterDept = document.getElementById('filter-dept') as HTMLSelectElement | null;
+  const resultsCount = document.getElementById('results-count');
+  const rows = document.querySelectorAll('.commune-row') as NodeListOf<HTMLTableRowElement>;
+
+  function updateFilter() {
+    const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const dept = filterDept ? filterDept.value : 'ALL';
+    let visibleCount = 0;
+
+    rows.forEach((row) => {
+      const nom = row.getAttribute('data-nom') || '';
+      const rowDept = row.getAttribute('data-dept') || '';
+
+      const matchSearch = q === '' || nom.includes(q);
+      const matchDept = dept === 'ALL' || rowDept === dept;
+
+      if (matchSearch && matchDept) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    if (resultsCount) {
+      resultsCount.textContent = `${visibleCount} commune${visibleCount > 1 ? 's' : ''}`;
+    }
+  }
+
+  if (searchInput) searchInput.addEventListener('input', updateFilter);
+  if (filterDept) filterDept.addEventListener('change', updateFilter);
+</script>

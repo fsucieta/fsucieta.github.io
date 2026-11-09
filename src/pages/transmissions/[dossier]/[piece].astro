@@ -1,0 +1,204 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const baseDir = path.resolve('public/transmissions');
+  const results: { params: { dossier: string; piece: string } } = [];
+
+  if (fs.existsSync(baseDir)) {
+    const dossiers = fs.readdirSync(baseDir, { withFileTypes: true });
+    for (const d of dossiers) {
+      if (d.isDirectory()) {
+        const dossierDir = path.join(baseDir, d.name);
+        const files = fs.readdirSync(dossierDir);
+        for (const f of files) {
+          if (f.endsWith('.md')) {
+            const pieceName = f.replace(/\.md$/, '');
+            results.push({
+              params: {
+                dossier: d.name,
+                piece: pieceName,
+              },
+            });
+          }
+        }
+      }
+    }
+  }
+
+  return results;
+}
+
+const { dossier, piece } = Astro.params;
+const rawMdPath = path.resolve(`public/transmissions/${dossier}/${piece}.md`);
+let mdContent = '';
+let renderedHtml = '';
+let errorMsg = '';
+
+if (fs.existsSync(rawMdPath)) {
+  mdContent = fs.readFileSync(rawMdPath, 'utf-8');
+  renderedHtml = await marked.parse(mdContent);
+} else {
+  errorMsg = 'Pièce justificative introuvable au greffe citoyen.';
+}
+
+// Empreinte SHA-256 calculée à la volée pour certification
+import crypto from 'node:crypto';
+let sha256Hash = '';
+if (mdContent) {
+  sha256Hash = crypto.createHash('sha256').update(mdContent, 'utf8').digest('hex');
+}
+
+// Titre déduit du fichier
+const titleLabel = piece ? piece.replace(/_/g, ' ') : 'Pièce Légale Citoyenne';
+const downloadUrl = `/transmissions/${dossier}/${piece}.md`;
+---
+
+<Layout
+  title={`${titleLabel} — Transmission Légale L'OCHJU`}
+  description={`Consultation officielle et opposable de la pièce citoyenne : ${titleLabel}`}
+  image="/logo_l_ochju.jpg"
+  canonicalUrl={`https://fsucieta.github.io/transmissions/${dossier}/${piece}/`}
+  lang="fr"
+>
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-3 px-6 shadow-2xl">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-4">
+      <a href={`/enquetes/02-le-mythe-des-subventions/`} class="flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-amber-400 transition font-bold">
+        <span>←</span> <span>Retour à l'Enquête</span>
+      </a>
+
+      <a href="/" class="flex items-center gap-3">
+        <img 
+          src="/logo_l_ochju.jpg" 
+          alt="L'OCHJU" 
+          class="h-9 w-auto object-contain rounded border border-amber-500/50 shadow"
+        />
+        <div class="hidden sm:block text-left">
+          <span class="text-xs font-serif font-black tracking-widest text-slate-100 block">L'OCHJU</span>
+          <span class="text-[9px] font-mono text-amber-400 block uppercase">Greffe & Munitions Légales</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <button 
+          onclick="window.print()" 
+          class="text-xs font-mono bg-slate-900 hover:bg-slate-800 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5 cursor-pointer"
+          title="Imprimer cette pièce officielle"
+        >
+          <span>🖨️</span> <span class="hidden sm:inline">Imprimer</span>
+        </button>
+        <a 
+          href={downloadUrl} 
+          download={`${piece}.md`}
+          class="text-xs font-mono bg-amber-500 hover:bg-amber-400 text-slate-950 px-3 py-1.5 rounded-lg font-black transition flex items-center gap-1.5 shadow"
+        >
+          <span>📥</span> <span>Télécharger (.MD)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-10 text-slate-200">
+    <!-- BANDEAU FORENSIQUE -->
+    <div class="mb-8 p-4 rounded-xl bg-slate-900/90 border border-amber-500/40 shadow-xl flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 uppercase">
+          ⚖️ ACTE DE TRANSMISSION CITOYENNE
+        </span>
+        <span class="text-xs font-mono text-slate-400">
+          Dossier : <strong class="text-slate-200">{dossier}</strong>
+        </span>
+      </div>
+      <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
+        <span>🔒 Norme ISO/IEC 27037 Scellée</span>
+      </div>
+    </div>
+
+    <!-- CERTIFICAT DE SCELLÉ CRYPTOGRAPHIQUE -->
+    <div class="mb-8 p-4 rounded-xl bg-black/60 border border-slate-800 font-mono text-xs text-slate-400 space-y-1">
+      <div class="flex items-center justify-between">
+        <span class="text-slate-500 uppercase font-bold text-[10px]">Empreinte Forensique SHA-256 :</span>
+        <span class="text-emerald-400 text-[10px]">Conforme au bit près</span>
+      </div>
+      <code class="text-amber-300 select-all block text-[11px] break-all bg-black/80 p-2 rounded border border-white/5">
+        {sha256Hash}
+      </code>
+      <div class="text-[10px] text-slate-500 pt-1">
+        Pièce opposable au titre de l'exception de vérité et de l'exercice citoyen du droit d'alerte républicain.
+      </div>
+    </div>
+
+    {errorMsg ? (
+      <div class="p-6 rounded-2xl bg-red-950/50 border border-red-500 text-red-200 font-mono text-sm">
+        {errorMsg}
+      </div>
+    ) : (
+      <article class="prose prose-invert max-w-none bg-slate-950/80 border border-slate-800/80 p-6 sm:p-10 rounded-2xl shadow-2xl leading-relaxed text-slate-200 space-y-6 transmission-content">
+        <div set:html={renderedHtml} />
+      </article>
+    )}
+
+    <!-- RAPPEL DOCTRINAL DE SOUVERAINETÉ POPULAIRE -->
+    <div class="mt-10 p-5 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-amber-200 text-xs sm:text-sm leading-relaxed space-y-2">
+      <p class="font-bold text-amber-300">
+        🏛️ Doctrine de Souveraineté Populaire de L'OCHJU :
+      </p>
+      <p class="text-slate-300 text-xs">
+        L'OCHJU ne transmet aucune plainte ni dossier à la justice pour son propre compte. La cellule d'investigation établit les faits, certifie les pièces selon la norme ISO 27037 et les remet au peuple : ce sont les citoyens, les contribuables, les élus et les collectifs qui s'emparent souverainement de ces armes juridiques pour faire valoir leurs droits.
+      </p>
+    </div>
+
+    <footer class="pt-8 mt-12 border-t border-slate-800 text-center font-mono text-xs text-slate-500">
+      L'OCHJU — CELLULE D'INVESTIGATION CITOYENNE SOUVERAINE
+    </footer>
+  </main>
+</Layout>
+
+<style is:global>
+  .transmission-content h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f8fafc;
+    border-bottom: 2px solid #f59e0b;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .transmission-content h2, .transmission-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .transmission-content h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .transmission-content p, .transmission-content ul, .transmission-content ol {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+  .transmission-content hr {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 1.5rem 0;
+  }
+  .transmission-content code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    color: #fbbf24;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+</style>

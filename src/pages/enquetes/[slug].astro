@@ -1,18 +1,20 @@
----
+﻿---
 import SoutienCitoyen from '../../components/SoutienCitoyen.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import SimulateurFiscalCommunes from '../../components/SimulateurFiscalCommunes.astro';
 import CarteEnergieCorse from '../../components/CarteEnergieCorse.astro';
+import SimulateurRacketCarburant from '../../components/SimulateurRacketCarburant.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 import AudioBriefing from '../../components/AudioBriefing.astro';
 import InvestigationHeader from '../../components/InvestigationHeader.astro';
 import PiecesJustificativesSection from '../../components/PiecesJustificativesSection.astro';
+import DebatCitoyenGiscus from '../../components/DebatCitoyenGiscus.astro';
 
 export async function getStaticPaths() {
   const enquetes = await getCollection('enquetes');
   // SANCTUARISATION STRICTE : Uniquement les 7 enquêtes officiellement finalisées
-  const allowedIds = [27, 7, 23, 28, 26, 4, 18, 11, 22];
+  const allowedIds = [2, 27, 7, 23, 28, 26, 4, 18, 11, 22];
   return enquetes.filter((entry) => allowedIds.includes(entry.data.id)).map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
@@ -151,12 +153,13 @@ const enSlug = enMatch ? enMatch.slug : entry.slug;
       </div>
     )}
 
-    <!-- SIMULATEUR CITOYEN DU VOL FISCAL DES 360 COMMUNES (Spécifique Enquête 02 - Outil d'Action Citoyenne) -->
-    {data.id === 2 && (
+    <!-- SIMULATEUR CITOYEN DU RACKET À LA POMPE (Spécifique Enquête 26 - Outil d'Action Citoyenne) -->
+    {(data.id === 26 || data.id === '26' || entry.slug.includes('26')) && (
       <div class="my-16">
-        <SimulateurFiscalCommunes />
+        <SimulateurRacketCarburant />
       </div>
     )}
+
 
     <!-- SECTION FORENSIQUE DES SOURCES ET PIÈCES D'ÉTAT (ISO/IEC 27037) -->
     <PiecesJustificativesSection 
@@ -166,6 +169,9 @@ const enSlug = enMatch ? enMatch.slug : entry.slug;
       date={data.date} 
       lang="fr" 
     />
+
+    <!-- ESPACE DE DÉBAT CITOYEN & LIKES SOUVERAINS (GISCUS / GITHUB DISCUSSIONS) -->
+    <DebatCitoyenGiscus lang="fr" mapping="pathname" />
 
     <!-- BLOC DE DIFFUSION CITOYENNE EN FIN D'ENQUÊTE -->
     <div class="no-print my-12 p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-amber-500/30 text-center space-y-4 shadow-xl">

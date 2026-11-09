@@ -1,0 +1,1108 @@
+---
+import SoutienModal from '../components/SoutienModal.astro';
+
+interface SourceItem {
+  name: string;
+  url?: string;
+  sha256?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+  lang?: string;
+  noindex?: boolean;
+  category?: string;
+  refCode?: string;
+  sources?: SourceItem[];
+}
+
+const { 
+  title, 
+  description = "L'OCHJU — Média Citoyen d'Investigation, Participatif & Open Data en Corse. Révélations forensiques et données d'intérêt public. L'aveti ?",
+  image = "/alerte_censure_lochju.jpg",
+  canonicalUrl = Astro.url.href,
+  lang = "fr",
+  noindex = false,
+  category = "Investigation Forensique",
+  refCode = "",
+  sources = []
+} = Astro.props;
+
+const siteUrl = "https://fsucieta.github.io";
+const cleanCanonical = canonicalUrl.startsWith("http") ? canonicalUrl : `${siteUrl}/${canonicalUrl.replace(/^\//, '')}`;
+const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}/${image.replace(/^\//, '')}`;
+
+// 1. Calibrage chirurgical de la meta description pour Google SERP (max 158 caractères sans couper un mot)
+const seoDescription = description.length > 160
+  ? description.slice(0, 156).replace(/\s+\S*$/, '') + '…'
+  : description;
+
+// 2. Détection automatique d'une page d'enquête vs page portail
+const isArticle = /\/(enquetes|investigations)\/[^/]+/.test(cleanCanonical) || cleanCanonical.includes('/dossier-sources-') || cleanCanonical.includes('/analyse-globale-finale');
+const ogType = isArticle ? "article" : "website";
+
+const localeMap: Record<string, string> = {
+  fr: "fr_FR",
+  en: "en_US",
+  it: "it_IT",
+  es: "es_ES",
+  pt: "pt_PT",
+  ru: "ru_RU",
+  zh: "zh_CN",
+  ja: "ja_JP"
+};
+const ogLocale = localeMap[lang] || "fr_FR";
+
+// 3. Correspondance automatique des slugs FR <-> EN pour les balises hreflang multilingues
+const frToEnSlug: Record<string, string> = {
+  "26-le-verrou-des-depots-petroliers": "26-the-fuel-depot-monopoly",
+  "28-muvitarra-le-sacrifice-des-bus": "28-le-naufrage-organise-de-la-muvitarra"
+};
+const enToFrSlug: Record<string, string> = {
+  "26-the-fuel-depot-monopoly": "26-le-verrou-des-depots-petroliers",
+  "28-le-naufrage-organise-de-la-muvitarra": "28-muvitarra-le-sacrifice-des-bus"
+};
+
+const supportedLangs = ["fr", "en", "it", "es", "pt", "ru", "zh", "ja"];
+let hreflangLinks: Array<{ code: string; href: string }> = [];
+
+const urlPath = cleanCanonical.replace(siteUrl, '') || '/';
+const enqMatch = urlPath.match(/^(?:\/(?:en|it|es|pt|ru|zh|ja))?\/(?:enquetes|investigations)\/([^/]+)\/?$/);
+
+if (!noindex) {
+  if (enqMatch) {
+    const rawSlug = enqMatch[1];
+    const baseFrSlug = enToFrSlug[rawSlug] || rawSlug;
+    const baseEnSlug = frToEnSlug[baseFrSlug] || baseFrSlug;
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href:
+        code === "fr"
+          ? `${siteUrl}/enquetes/${baseFrSlug}/`
+          : code === "en"
+          ? `${siteUrl}/en/investigations/${baseEnSlug}/`
+          : `${siteUrl}/${code}/enquetes/${baseFrSlug}/`
+    }));
+  } else if (/^\/(?:(en|it|es|pt|ru|zh|ja)\/)?$/.test(urlPath)) {
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href: code === "fr" ? `${siteUrl}/` : `${siteUrl}/${code}/`
+    }));
+  } else if (/^\/(?:(en|it|es|pt|ru|zh|ja)\/)?soutenir\/?$/.test(urlPath)) {
+    hreflangLinks = supportedLangs.map((code) => ({
+      code,
+      href: code === "fr" ? `${siteUrl}/soutenir/` : `${siteUrl}/${code}/soutenir/`
+    }));
+  }
+}
+
+// 4. Base de Questions/Réponses Citoyennes Scellées (Schema.org FAQPage) pour les 9 Grandes Enquêtes
+const faqByFrSlug: Record<string, Array<{ q: string; a: string }>> = {
+  "27-le-telepherique-angelo-ajaccio": [
+    {
+      q: "Combien coûte réellement le téléphérique urbain Angelo aux contribuables d'Ajaccio ?",
+      a: "Selon les Rapports d'Orientations Budgétaires (ROB 2025 et 2026) de la CAPA et l'arrêté préfectoral de DUP n° 2A-2023-12-04-00001, le téléphérique Angelo a coûté 38,7 millions d'euros de travaux (jusqu'à 62 M€ consolidés) et garantit une rente d'exploitation forfaitaire de 2,39 millions d'euros par an pendant 10 ans à une filiale privée dotée de 50 000 € de capital."
+    },
+    {
+      q: "Comment la CAPA a-t-elle financé le déficit d'exploitation du téléphérique Angelo ?",
+      a: "Les pièces budgétaires officielles démontrent que la CAPA a d'abord repris 1,5 million d'euros sur la provision des ordures ménagères en 2025 (ROB 2025, page 6), avant d'augmenter la fiscalité locale de 7 millions d'euros en 2026 (ROB 2026, page 4)."
+    },
+    {
+      q: "Pourquoi le tracé du téléphérique Angelo s'arrête-t-il à Saint-Joseph loin du centre-ville ?",
+      a: "La gare G1 de Saint-Joseph s'arrête à près de deux kilomètres du centre-ville d'Ajaccio sur d'anciennes parcelles industrielles polluées aux hydrocarbures et métaux lourds (parcelle BH 144), tandis que la gare G3 du Stiletto valorise le foncier environnant."
+    }
+  ],
+  "07-le-cadastre-minier-secret": [
+    {
+      q: "Quelle est la valeur des ressources minières et offshore recensées en Corse ?",
+      a: "L'audit des concessions officielles, des rapports géologiques du BRGM et du permis d'hydrocarbures Rhône-Maritime (9 300 km² au large de Scandola) établit un potentiel stratégique évalué à 19,19 milliards d'euros (pétrole offshore, cuivre, argent, antimoine et terres rares)."
+    },
+    {
+      q: "Quel est le niveau de pollution à l'arsenic mesuré sur l'ancienne mine de Matra en Haute-Corse ?",
+      a: "Selon le rapport scientifique d'État BRGM RP-57640-FR, les rejets de l'ancienne mine d'arsenic de Matra atteignent 4 000 microgrammes d'arsenic par litre dans les eaux de ruissellement, soit 400 fois la norme sanitaire de potabilité fixée à 10 µg/L."
+    },
+    {
+      q: "Que prévoit le décret n° 2025-851 du 27 août 2025 sur le Code minier en Corse ?",
+      a: "Le décret n° 2025-851 du 27 août 2025 maintient le monopole régalien de l'État sur l'octroi des titres miniers en Corse (contrairement aux compétences transférées outre-mer) et écarte tout droit de veto décisionnel des maires et de la Collectivité de Corse."
+    }
+  ],
+  "23-la-sous-dotation-de-la-securite-civile": [
+    {
+      q: "Combien paie chaque habitant de Corse pour les services d'incendie et de secours (SIS) ?",
+      a: "D'après les données comptables de l'OFGL, le coût de la sécurité civile supporté par le contribuable local atteint 203 € par habitant en Haute-Corse contre 85 € en moyenne nationale, car les collectivités corses financent à plus de 80 % le surcoût lié à la protection de 3 millions de touristes."
+    },
+    {
+      q: "Combien de Canadairs étaient réellement opérationnels au pic de l'été 2026 ?",
+      a: "Les rapports parlementaires du Sénat (n° 838 et n° 393) et les relevés de disponibilité de la DGSCGC montrent que sur une flotte théorique de 12 Canadairs CL-415, seuls 5 appareils étaient en état de voler le 24 juillet 2026."
+    },
+    {
+      q: "Quelle solution opérationnelle propose L'OCHJU pour la sécurité civile en Corse ?",
+      a: "L'OCHJU documente la création d'une Cumpagnia Corsa di Prutezzione Civile basée à Corte, le conventionnement transfrontalier immédiat avec la base de Canadairs d'Olbia (située à 15 minutes de vol de Bonifacio) et l'acquisition d'une flotte dédiée de bombardiers amphibies Fire Boss."
+    }
+  ],
+  "28-muvitarra-le-sacrifice-des-bus": [
+    {
+      q: "Pourquoi le réseau de bus Muvitarra d'Ajaccio subit-il des suppressions et retards chroniques ?",
+      a: "L'analyse du Contrat d'Obligations de Service Public (COSP 2026-2032, délibération CAPA 2026-071) démontre que la dotation d'exploitation des bus a été plafonnée et gelée pendant que les ressources publiques étaient orientées vers le financement du téléphérique Angelo."
+    },
+    {
+      q: "Quel est le problème d'accès routier et de sécurité au nouvel hôpital du Stiletto à Ajaccio ?",
+      a: "Le nouvel hôpital d'Ajaccio au Stiletto a été mis en service dans une configuration d'impasse routière soumise aux embouteillages quotidiens de l'entrée de ville, en contradiction avec les exigences d'accès d'urgence des établissements de soins (ERP de type U)."
+    },
+    {
+      q: "Pourquoi le terminus historique des bus de la Place du Diamant a-t-il été déplacé ?",
+      a: "Le déplacement du pôle d'échanges de la Place du Diamant a éloigné les usagers des bus du centre-ville et du parking souterrain tout en libérant près de 9 hectares d'emprises foncières stratégiques dans l'agglomération ajaccienne."
+    }
+  ],
+  "26-le-verrou-des-depots-petroliers": [
+    {
+      q: "Pourquoi le carburant est-il plus cher en Corse malgré une TVA réduite à 13 % ?",
+      a: "Bien que la Corse bénéficie d'un taux de TVA réduit à 13 % sur les produits pétroliers (contre 20 % sur le continent), le contrôle exclusif des deux dépôts pétroliers de l'île (DPLC au Vazzio et à Lucciana) engendre une surfacturation évaluée à 48 millions d'euros par an pour les ménages et entreprises corses."
+    },
+    {
+      q: "Quelle condamnation l'Autorité de la concurrence a-t-elle prononcée dans la décision 25-D-07 ?",
+      a: "Par sa décision n° 25-D-07 du 17 novembre 2025 (80 pages), l'Autorité de la concurrence a infligé une amende historique de 187,49 millions d'euros aux actionnaires des Dépôts Pétroliers de la Corse (Rubis/Vito, TotalEnergies, Esso) pour entente illicite et verrouillage du marché."
+    },
+    {
+      q: "Comment sortir du monopole privé sur les carburants en Corse ?",
+      a: "Le dossier juridique instruit par L'OCHJU détaille la réquisition ou le retour en régie publique d'intérêt général des infrastructures portuaires et de stockage stratégique (DPLC), ainsi que l'application stricte de l'article L. 410-2 du Code de commerce sur le plafonnement des marges."
+    }
+  ],
+  "04-la-marchandisation-de-l-eau": [
+    {
+      q: "Pourquoi la Corse connaît-elle des restrictions d'eau alors qu'elle est le château d'eau de la Méditerranée ?",
+      a: "D'après les données officielles SISPEA et BNPE Hub'Eau, 85 % des précipitations repartent à la mer faute de capacités de stockage (3 fois moins d'eau stockée par habitant qu'en Sardaigne), tandis que 42 millions de m³ d'eau potable se perdent chaque année dans des canalisations vétustes."
+    },
+    {
+      q: "Quelle est la différence de prix de l'eau en Corse entre une régie publique et une délégation privée ?",
+      a: "L'audit comparatif des factures SISPEA montre qu'un foyer paie en moyenne 620 € par an sous délégation privée (Veolia/Kyrnolia, qui encaisse 112,9 M€/an sur l'île) contre 343 € par an en régie publique municipale comme à Corte, soit 277 € de surcoût annuel par foyer."
+    },
+    {
+      q: "Quel volume d'eau douce est prélevé par EDF dans les barrages corses ?",
+      a: "Les relevés de la Banque Nationale des Prélèvements en Eau (BNPE) établissent qu'EDF turbine environ 1,09 milliard de m³ d'eau douce par an dans les barrages insulaires pour la production hydroélectrique, prenant régulièrement le pas sur les réserves agricoles et citoyennes."
+    }
+  ],
+  "18-le-monopole-energetique-edf-sei": [
+    {
+      q: "Que contient la loi n° 2026-554 du 29 juin 2026 sur les barrages hydroélectriques en Corse ?",
+      a: "La loi n° 2026-554 du 29 juin 2026 octroie à EDF des droits réels d'exploitation de 70 ans (jusqu'en 2096) sur les grands barrages hydroélectriques corses (Calacuccia, Tolla, Ocana, Sampolo), privant la Collectivité de Corse de la maîtrise publique de sa première source d'énergie renouvelable."
+    },
+    {
+      q: "Combien coûte le projet de nouvelle centrale thermique du Ricanto à Ajaccio ?",
+      a: "Le projet de centrale thermique bio-liquide de 130 MW au Ricanto représente un coût global de 800 millions d'euros pour brûler 50 000 tonnes d'agrocarburants importés par navires, avec une rentabilité garantie de 10 % à 11 % financée par la solidarité énergétique nationale (CSPE)."
+    },
+    {
+      q: "La Corse peut-elle atteindre l'autonomie électrique sans centrale thermique polluante ?",
+      a: "Oui : les propres chiffrages de la CRE montrent que l'équipement en stations de transfert d'énergie par pompage (STEP, qui génèrent 350 M€ d'économies nettes avouées sur le seul site d'Ajaccio), couplé aux barrages existants, au câble SACOI 3 et au solaire citoyen, couvre l'intégralité de la pointe hivernale de 400 MW."
+    }
+  ],
+  "11-l-emprise-et-les-servitudes-militaires": [
+    {
+      q: "Quelle surface de foncier l'armée occupe-t-elle sur le littoral et le territoire corse ?",
+      a: "Le croisement des 2 848 parcelles cadastrales DGFiP révèle que le ministère des Armées occupe 2 842 hectares (et génère plus de 4 200 hectares de servitudes), dont la base aérienne BA 126 de Solenzara, le camp Raffalli à Calvi, Aspretto à Ajaccio et l'étang de Diane."
+    },
+    {
+      q: "Combien d'impôts locaux impayés l'État doit-il aux communes corses pour ses bases militaires ?",
+      a: "L'audit fiscal et cadastral établit que l'exploitation des emprises militaires (notamment via l'accord bilatéral franco-américain déposé à l'ONU sous le n° 38665 et le marché BOAMP de 91 M€ à Solenzara) laisse un arriéré de 19,75 millions d'euros de fiscalité locale dû aux communes corses."
+    },
+    {
+      q: "Quel volume d'eau potable est prélevé par la base militaire de Solenzara ?",
+      a: "Selon l'avis de l'Autorité environnementale (MRAe 2025-DKCOR3), la base aérienne BA 126 prélève jusqu'à 41 millions de litres d'eau par an dans la nappe du Travo sans compteur public opposable aux communes riveraines."
+    }
+  ],
+  "22-la-captation-bancaire-et-epargne": [
+    {
+      q: "Combien d'épargne corse est aspirée hors de l'île par les banques chaque jour ?",
+      a: "D'après les statistiques officielles de la Banque de France (série Webstat CFTDC), sur 6,42 milliards d'euros de dépôts bancaires à vue et à terme collectés en Corse (et 11,54 milliards d'épargne totale), seuls 59,97 % sont reprêtés dans l'île : 2,57 milliards d'euros d'épargne insulaire sont aspirés chaque soir vers les trésoreries continentales."
+    },
+    {
+      q: "Combien rapporte chaque année l'épargne des Corses aux sièges bancaires continentaux ?",
+      a: "Placée sur le marché interbancaire européen via les mécanismes de centralisation automatique de trésorerie (cash pooling), cette manne de 2,57 milliards d'euros génère plus de 93,8 millions d'euros par an de produits financiers hors de Corse, soit une captation équivalente à 10 475 € d'épargne par foyer."
+    },
+    {
+      q: "Comment fonctionne le modèle de Banque Territoriale de Corse proposé par L'OCHJU ?",
+      a: "Inspirée des caisses publiques cantonales suisses et du modèle coopératif insulaire, la Banque Territoriale de Corse sanctuarise un ratio de réinvestissement local supérieur à 90 % des dépôts corses pour financer le logement des résidents, les PME, l'agriculture et les infrastructures communales."
+    }
+  ]
+};
+
+// 5. Construction du graphe JSON-LD Schema.org (NewsMediaOrganization + NewsArticle + BreadcrumbList + FAQPage)
+const orgEntity = {
+  "@type": "NewsMediaOrganization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Cellule d'Investigation L'OCHJU",
+  "alternateName": "L'OCHJU — Cellule d'Investigation Citoyenne Corse",
+  "url": `${siteUrl}/`,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/logo_l_ochju.jpg`,
+    "width": 800,
+    "height": 800
+  },
+  "sameAs": [
+    "https://www.tiktok.com/@lochjulaveti"
+  ]
+};
+
+const publisherEntity = {
+  "@type": "NewsMediaOrganization",
+  "name": "L'OCHJU — Cellule d'Investigation Citoyenne Corse",
+  "url": `${siteUrl}/`,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/logo_l_ochju.jpg`
+  }
+};
+
+const cleanHeadline = title.replace(/\s*—\s*L'OCHJU.*$/i, '').trim();
+
+const jsonLdGraph: Record<string, any>[] = [
+  orgEntity,
+  {
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    "url": `${siteUrl}/`,
+    "name": "L'OCHJU",
+    "description": "Média citoyen d'investigation forensique et open data en Corse (Norme ISO/IEC 27037).",
+    "publisher": { "@id": `${siteUrl}/#organization` },
+    "inLanguage": lang
+  }
+];
+
+if (isArticle && !noindex) {
+  const articleNode: Record<string, any> = {
+    "@type": "NewsArticle",
+    "@id": `${cleanCanonical}#article`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": cleanCanonical
+    },
+    "headline": cleanHeadline.slice(0, 110),
+    "name": cleanHeadline,
+    "description": description,
+    "image": [fullImageUrl],
+    "datePublished": "2026-10-15T08:00:00+02:00",
+    "dateModified": "2026-11-07T08:00:00+01:00",
+    "inLanguage": lang,
+    "articleSection": category,
+    "isAccessibleForFree": true,
+    "author": {
+      "@type": "NewsMediaOrganization",
+      "name": "Cellule d'Investigation L'OCHJU",
+      "url": `${siteUrl}/`,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/logo_l_ochju.jpg`
+      }
+    },
+    "publisher": publisherEntity
+  };
+
+  if (refCode) {
+    articleNode.identifier = refCode;
+  }
+
+  if (sources && sources.length > 0) {
+    articleNode.citation = sources.map((s) => ({
+      "@type": "CreativeWork",
+      "name": s.name,
+      ...(s.url ? { "url": s.url.startsWith('http') ? s.url : `${siteUrl}/${s.url.replace(/^(\.\.\/)+|^\//, '')}` } : {}),
+      ...(s.sha256 ? { "identifier": `SHA-256:${s.sha256}` } : {})
+    }));
+  }
+
+  jsonLdGraph.push(articleNode);
+  jsonLdGraph.push({
+    "@type": "BreadcrumbList",
+    "@id": `${cleanCanonical}#breadcrumb`,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "L'OCHJU",
+        "item": `${siteUrl}/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": cleanHeadline,
+        "item": cleanCanonical
+      }
+    ]
+  });
+
+  if (enqMatch) {
+    const rawSlug = enqMatch[1];
+    const baseFrSlug = enToFrSlug[rawSlug] || rawSlug;
+    const faqItems = faqByFrSlug[baseFrSlug];
+    if (faqItems && faqItems.length > 0) {
+      jsonLdGraph.push({
+        "@type": "FAQPage",
+        "@id": `${cleanCanonical}#faq`,
+        "mainEntity": faqItems.map((item) => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.a
+          }
+        }))
+      });
+    }
+  }
+}
+
+const jsonLdPayload = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": jsonLdGraph
+});
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Primaire (Google Core Standard & Calibrage SERP) -->
+    <title>{title}</title>
+    <meta name="description" content={seoDescription} />
+    <link rel="canonical" href={cleanCanonical} />
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    ) : (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    )}
+
+    <!-- Balises Multilingues Hreflang (8 Langues + x-default) -->
+    {hreflangLinks.map((link) => (
+      <link rel="alternate" hreflang={link.code} href={link.href} />
+    ))}
+    {hreflangLinks.length > 0 && (
+      <link rel="alternate" hreflang="x-default" href={hreflangLinks[0].href} />
+    )}
+
+    <!-- Open Graph / Facebook / WhatsApp (Social Graph) -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:site_name" content="L'OCHJU" />
+    <meta property="og:url" content={cleanCanonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:image:alt" content={title} />
+    {isArticle && <meta property="article:author" content="Cellule d'Investigation L'OCHJU" />}
+    {isArticle && <meta property="article:section" content={category} />}
+    {isArticle && <meta property="article:published_time" content="2026-10-15T08:00:00+02:00" />}
+
+    <!-- Twitter Card (Format Grand Angle) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta name="twitter:image" content={fullImageUrl} />
+
+    <!-- Données Structurées Schema.org (NewsArticle, NewsMediaOrganization, BreadcrumbList, FAQPage) -->
+    {!noindex && <script type="application/ld+json" set:html={jsonLdPayload} />}
+
+    <!-- Mesure d'Audience Éthique & Souveraine sans cookies (GoatCounter) -->
+    <script data-goatcounter="https://lochju.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+    <!-- Mode Nuit Souverain Inaltérable L'OCHJU -->
+    
+    <!-- Tailwind CSS CDN avec directive is:inline obligatoire pour Astro -->
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+    <script is:inline>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // PALETTE FUSION L'OCHJU : OBSIDIENNE + ENCRE CHAUDE + OR IMPÉRIAL (Zéro bleu logiciel)
+              slate: {
+                950: '#070605', /* Noir d'encre chaud / Obsidienne pure de fond */
+                900: '#0e0d0b', /* Surface de papier d'archive sombre / cartes */
+                850: '#151412', /* Élévation intermédiaire */
+                800: '#211f1c', /* Bordures d'encre et filets d'acier fin */
+                700: '#36332e', /* Séparateurs secondaires */
+                600: '#57524a',
+                500: '#7d776d', /* Métadonnées tertiaires */
+                400: '#a8a296', /* Typographie de lecture reposante */
+                300: '#cfc9be', /* Sous-titres ivoire */
+                200: '#e7e2d7', /* Textes principaux ivoire chaud */
+                100: '#f4f1ea', /* Papier d'archive immaculé */
+                50: '#faf8f5'
+              },
+              amber: {
+                50: '#fefce8',
+                100: '#fef9c3',
+                200: '#fef08a',
+                300: '#fde047',
+                400: '#eab308', /* Or Ancien lumineux */
+                500: '#c59b27', /* Or Souverain officiel L'OCHJU */
+                600: '#a17c1b',
+                700: '#785b13',
+                800: '#523e0d',
+                900: '#332707',
+                950: '#1a1303'
+              },
+              rose: {
+                400: '#f87171',
+                500: '#b91c1c', /* Rouge Sceau de Cire / Alerte Médicale */
+                600: '#991b1b',
+                900: '#450a0a',
+                950: '#230404'
+              },
+              emerald: {
+                400: '#4ade80',
+                500: '#15803d', /* Vert Olive / Souveraineté */
+                900: '#052e16',
+                950: '#02180b'
+              }
+            },
+            fontFamily: {
+              serif: ['Merriweather', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              cinzel: ['Cinzel', 'serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Polices Google Fonts : Inter, Merriweather, JetBrains Mono & Cinzel (Édition Régale) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles Forensiques Globaux : Scrollytelling, Surlignage Lumineux & Chiaroscuro -->
+    <style is:global>
+      :root {
+        --color-bg-body: #121316;
+        --color-bg-card: #1a1c22;
+        --color-bg-header: rgba(18, 19, 22, 0.85);
+        --color-border-card: #2e323b;
+        --color-text-primary: #f8fafc;
+        --color-text-secondary: #cbd5e1;
+        --color-text-muted: #94a3b8;
+        --color-gold-main: #fbbf24;
+        --color-grid: rgba(255, 255, 255, 0.05);
+      }
+      body {
+        background-color: var(--color-bg-body) !important;
+        color: var(--color-text-primary) !important;
+        transition: background-color 0.4s ease, color 0.4s ease;
+      }
+      .bento-card {
+        background-color: var(--color-bg-card) !important;
+        border-color: var(--color-border-card) !important;
+        transition: all 0.4s ease;
+      }
+      header.backdrop-blur-xl {
+        background-color: var(--color-bg-header) !important;
+      }
+
+      /* Éradication absolue de toute barre de défilement (horizontale ou verticale) */
+      html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+      }
+
+      /* Adaptation universelle des tableaux à tous les modes de lecture (Mobile / Tablette / Bureau) */
+      article table,
+      .article-body table,
+      main table:not([data-no-auto-scroll]) {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      /* Masquage universel des barres de défilement sur tous les moteurs (WebKit, Firefox, Edge) */
+      *:not(.custom-scrollbar) {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+      }
+      *:not(.custom-scrollbar)::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+
+      .custom-scrollbar { scrollbar-width: thin !important; scrollbar-color: rgba(212, 175, 55, 0.45) #0b0f17 !important; } .custom-scrollbar::-webkit-scrollbar { display: block !important; width: 6px !important; height: 6px !important; } .custom-scrollbar::-webkit-scrollbar-track { background: #0b0f17 !important; } .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(212, 175, 55, 0.45) !important; border-radius: 9999px !important; }
+      /* Chiffres tabulaires alignés d'orfèvrerie financière */
+      .font-mono, [data-tabular-nums] {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Effet de surlignage dynamique au défilement (Forensic Highlight) */
+      mark.forensic-highlight {
+        background: transparent;
+        color: #f1f5f9;
+        padding: 0.12em 0.3em;
+        border-radius: 0.25em;
+        border-bottom: 2px solid transparent;
+        transition: background 0.8s ease, color 0.5s ease, border-color 0.8s ease, box-shadow 0.8s ease;
+      }
+      mark.forensic-highlight.illuminated {
+        background: linear-gradient(120deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.45) 100%);
+        color: #fef08a;
+        border-bottom: 2px solid #f59e0b;
+        box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+      }
+      mark.forensic-highlight:hover {
+        background: rgba(245, 158, 11, 0.55);
+        box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+      }
+
+      /* Fond d'archives et ambiance Chiaroscuro subtile */
+      body {
+        background-color: #070605;
+        background-image: radial-gradient(circle at 50% 0%, rgba(197, 155, 39, 0.05) 0%, transparent 60%);
+      }
+    </style>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+      <!-- Elimination universelle des barres de defilement intempestives -->
+    <style is:inline>
+      html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+      }
+      *:not(.custom-scrollbar) {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+      }
+      *:not(.custom-scrollbar)::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+    </style>
+  
+    <style is:global>
+      /* ================= THÈMES GLOBAUX SOUVERAINS L'OCHJU ================= */
+      :root, [data-theme="noir"] {
+        --theme-bg: #000000 !important;
+        --theme-card: #080808 !important;
+        --theme-card-subtle: #111111 !important;
+        --theme-border: #1e1e1e !important;
+        --theme-border-gold: #ffd700 !important;
+        --theme-gold: #ffd700 !important;
+        --theme-gold-glow: rgba(255, 215, 0, 0.4) !important;
+        --theme-text-title: #ffffff !important;
+        --theme-text-body: #e5e5e5 !important;
+        --theme-text-muted: #888888 !important;
+        --theme-header-bg: rgba(0, 0, 0, 0.85) !important;
+      }
+
+      [data-theme="granit"] {
+        --theme-bg: #111317 !important;
+        --theme-card: #181b22 !important;
+        --theme-card-subtle: #222631 !important;
+        --theme-border: #2d3340 !important;
+        --theme-border-gold: #fbbf24 !important;
+        --theme-gold: #fbbf24 !important;
+        --theme-gold-glow: rgba(251, 191, 36, 0.35) !important;
+        --theme-text-title: #f8fafc !important;
+        --theme-text-body: #cbd5e1 !important;
+        --theme-text-muted: #94a3b8 !important;
+        --theme-header-bg: rgba(17, 19, 23, 0.90) !important;
+      }
+
+      [data-theme="emeraude"] {
+        --theme-bg: #030d06 !important;
+        --theme-card: #07170c !important;
+        --theme-card-subtle: #0d2815 !important;
+        --theme-border: #163d22 !important;
+        --theme-border-gold: #f59e0b !important;
+        --theme-gold: #f59e0b !important;
+        --theme-gold-glow: rgba(245, 158, 11, 0.35) !important;
+        --theme-text-title: #f0fdf4 !important;
+        --theme-text-body: #dcfce7 !important;
+        --theme-text-muted: #86efac !important;
+        --theme-header-bg: rgba(3, 13, 6, 0.90) !important;
+      }
+
+      /* Application forcée sur TOUS les éléments du site */
+      body {
+        background-color: var(--theme-bg) !important;
+        color: var(--theme-text-body) !important;
+        transition: background-color 0.4s ease, color 0.4s ease !important;
+      }
+
+      /* Les cartes, conteneurs, bannières et sous-sections */
+      .bg-slate-950, .bg-slate-900, .bg-slate-900\/90, .bg-slate-900\/80, 
+      .bg-\[\#06080d\], .bg-\[\#070605\], .bg-\[\#0c1017\], .bg-\[\#0e0d0b\],
+      .bg-black\/40, .bg-black\/50, .bg-black\/60, .bg-black\/80, .bg-black\/90,
+      .enquete-card, .theme-surface {
+        background-color: var(--theme-card) !important;
+        border-color: var(--theme-border) !important;
+        transition: background-color 0.4s ease, border-color 0.4s ease !important;
+      }
+
+      /* Les bordures */
+      .border-slate-800, .border-slate-800\/80, .border-slate-700, 
+      .border-white\/10, .border-white\/20, .border-\[\#1e293b\], .border-\[\#26231e\] {
+        border-color: var(--theme-border) !important;
+      }
+
+      /* Le Header */
+      header {
+        background-color: var(--theme-header-bg) !important;
+        border-color: var(--theme-border) !important;
+      }
+
+      /* Les Titres et Textes */
+      h1, h2, h3, h4, .text-white {
+        color: var(--theme-text-title) !important;
+      }
+
+      /* Les touches d'Or Souverain */
+      .theme-gold-text, .text-amber-400, .text-amber-300 {
+        color: var(--theme-gold) !important;
+      }
+    </style>
+
+    <style is:global>
+      /* Classes d'impact visuel unifiées pour toutes les pages */
+      .font-press {
+        font-family: 'Newsreader', Georgia, serif !important;
+        letter-spacing: -0.015em;
+      }
+
+      .font-mono-tech {
+        font-family: 'JetBrains Mono', monospace !important;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .theme-surface {
+        background-color: var(--theme-card, #080808) !important;
+        border-color: var(--theme-border, #1e1e1e) !important;
+      }
+
+      .theme-gold-text {
+        color: var(--theme-gold, #ffd700) !important;
+      }
+
+      .theme-gold-glow {
+        box-shadow: 0 0 25px var(--theme-gold-glow, rgba(255, 215, 0, 0.35)) !important;
+      }
+
+      /* Typographie éditoriale d'élite pour les articles */
+      .article-body h2 {
+        font-family: 'Newsreader', Georgia, serif !important;
+        font-size: 1.85rem !important;
+        font-weight: 800 !important;
+        color: #f8fafc !important;
+        margin-top: 3rem !important;
+        margin-bottom: 1.25rem !important;
+        padding-bottom: 0.5rem !important;
+        border-bottom: 2px solid var(--theme-gold, #ffd700) !important;
+        letter-spacing: -0.02em !important;
+      }
+
+      .article-body h3 {
+        font-family: 'Newsreader', Georgia, serif !important;
+        font-size: 1.45rem !important;
+        font-weight: 700 !important;
+        color: var(--theme-gold, #ffd700) !important;
+        margin-top: 2.25rem !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .article-body p {
+        font-family: 'Newsreader', Georgia, serif !important;
+        font-size: 1.18rem !important;
+        line-height: 1.95 !important;
+        color: #e2e8f0 !important;
+        margin-bottom: 1.75rem !important;
+      }
+
+      .article-body li {
+        font-family: 'Newsreader', Georgia, serif !important;
+        font-size: 1.15rem !important;
+        line-height: 1.85 !important;
+        color: #cbd5e1 !important;
+      }
+
+      .article-body blockquote {
+        border-left: 3px solid var(--theme-gold, #ffd700) !important;
+        background: var(--theme-card, #080808) !important;
+        border-radius: 0 16px 16px 0 !important;
+        padding: 1.5rem 2rem !important;
+        margin: 2.5rem 0 !important;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7) !important;
+      }
+
+      .article-body blockquote p {
+        font-family: 'Newsreader', Georgia, serif !important;
+        font-style: italic !important;
+        font-size: 1.22rem !important;
+        line-height: 1.9 !important;
+        color: #f1f5f9 !important;
+      }
+    </style>
+
+</head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300 antialiased selection:bg-amber-500 selection:text-slate-950">
+    <slot />
+    <SoutienModal />
+    
+    <!-- Barre de Progression de Lecture Furtive (Stealth Reading Bar) -->
+    <div id="readingProgressBar" class="no-print fixed top-0 left-0 h-[2.5px] bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 z-[100] w-0 transition-all duration-150 pointer-events-none opacity-90"></div>
+
+    <!-- Bouton Flottant "Retour en Haut" -->
+    <button 
+      id="backToTopBtn" 
+      class="no-print fixed bottom-6 right-6 p-3.5 rounded-2xl bg-amber-500/90 text-slate-950 font-bold shadow-2xl backdrop-blur border border-amber-400 hover:bg-amber-400 transition-all duration-300 opacity-0 pointer-events-none translate-y-4 z-50 flex items-center justify-center cursor-pointer group"
+      aria-label="Retourner en haut de la page"
+    >
+      <span class="text-sm font-mono flex items-center gap-1">
+        <span>▲</span>
+        <span class="hidden sm:inline text-xs font-bold font-sans">HAUT</span>
+      </span>
+    </button>
+
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('backToTopBtn');
+        const progressBar = document.getElementById('readingProgressBar');
+        
+        window.addEventListener('scroll', function() {
+          const scrollY = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          
+          if (progressBar && docHeight > 0) {
+            const progress = (scrollY / docHeight) * 100;
+            progressBar.style.width = `${progress}%`;
+          }
+
+          if (btn) {
+            if (scrollY > 400) {
+              btn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+              btn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            } else {
+              btn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+              btn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+          }
+        });
+
+        if (btn) {
+          btn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      });
+    </script>
+
+    <!-- Moteur de Scrollytelling Forensique (Illumination fluide des preuves) -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        const highlights = document.querySelectorAll('mark.forensic-highlight');
+        if (!highlights.length) return;
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('illuminated');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.25, rootMargin: '0px 0px -50px 0px' });
+
+          highlights.forEach((h) => observer.observe(h));
+        } else {
+          highlights.forEach((h) => h.classList.add('illuminated'));
+        }
+      });
+    </script>
+
+    <!-- Leaflet JS -->
+    <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Script universel d'enveloppement responsive des tableaux de données pour lecture mobile -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('article table, .article-body table').forEach((tbl) => {
+          if (!tbl.closest('.overflow-x-auto') && !tbl.closest('.table-responsive-wrapper')) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'table-responsive-wrapper overflow-x-auto max-w-full my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-xl';
+            tbl.parentNode.insertBefore(wrapper, tbl);
+            wrapper.appendChild(tbl);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+<style is:global>
+      :root {
+        --color-bg-body: #121316;
+        --color-bg-card: #1a1c22;
+        --color-bg-header: rgba(18, 19, 22, 0.85);
+        --color-border-card: #2e323b;
+        --color-text-primary: #f8fafc;
+        --color-text-secondary: #cbd5e1;
+        --color-text-muted: #94a3b8;
+        --color-gold-main: #fbbf24;
+        --color-grid: rgba(255, 255, 255, 0.05);
+      }
+      body {
+        background-color: var(--color-bg-body) !important;
+        color: var(--color-text-primary) !important;
+        transition: background-color 0.4s ease, color 0.4s ease;
+      }
+      .bento-card {
+        background-color: var(--color-bg-card) !important;
+        border-color: var(--color-border-card) !important;
+        transition: all 0.4s ease;
+      }
+      header.backdrop-blur-xl {
+        background-color: var(--color-bg-header) !important;
+      }
+
+      /* Éradication absolue de toute barre de défilement (horizontale ou verticale) */
+      html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+      }
+
+      /* Masquage universel des barres de défilement sur tous les moteurs (WebKit, Firefox, Edge) */
+      *:not(.custom-scrollbar) {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+      }
+      *:not(.custom-scrollbar)::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+
+  /* ==========================================================================
+     DESIGN SYSTEM SOUVERAIN L'OCHJU — MODE SOMBRE PERMANENT
+     Obsidienne Minérale, Chiaroscuro & Or Antique Régalien
+     ========================================================================== */
+
+  :root, html, html.dark {
+    scroll-behavior: smooth; scroll-padding-top: 205px;
+    --bg-main:          #06080d;
+    --bg-card:          #0b0f17;
+    --bg-card-hover:    #101724;
+    --bg-header:        rgba(6, 8, 13, 0.95);
+    --text-main:        #f1f5f9;
+    --text-muted:       #94a3b8;
+    --border-color:     #151d2c;
+    --border-highlight: #d4af37;
+    --accent-primary:   #d4af37;
+    --accent-hover:     #facc15;
+    --accent-glow:      rgba(212, 175, 55, 0.12);
+    --accent-card:      rgba(212, 175, 55, 0.14);
+    --body-gradient:
+      radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 60%),
+      radial-gradient(circle at 85% 30%, rgba(194, 109, 67, 0.04) 0%, transparent 50%);
+  }
+
+  /* ---------- APPLICATION DU FOND ET DE L'AMBIANCE BODY ---------- */
+  body {
+    background-color: var(--bg-main) !important;
+    background-image: var(--body-gradient) !important;
+    color: var(--text-main) !important;
+  }
+
+  /* ---------- HEADER, NAVIGATION & CONTENEURS NOBLES ---------- */
+  header {
+    background-color: var(--bg-header) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  nav {
+    background-color: rgba(6, 8, 13, 0.90) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  /* Cartes d'enquête & conteneurs de données */
+  .fiche-card,
+  .hero-card-container {
+    border-color: var(--border-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .fiche-card:hover {
+    border-color: var(--border-highlight) !important;
+  }
+
+  /* --------------------------------------------------------------------------
+     STYLES SPÉCIFIQUES POUR LES ARTICLES (STANDARD FORENSIC PULITZER)
+     -------------------------------------------------------------------------- */
+
+  .article-body h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-top: 2.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d4af37;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .article-body h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-body p {
+    color: #e2e8f0;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  /* ==========================================================================
+     ENCARTS DE RÉVÉLATION FORENSIQUE & CITATIONS NOBLES (BLOOMBERG / FT STYLE)
+     ========================================================================== */
+  .article-body blockquote {
+    position: relative !important;
+    border-left: 3px solid var(--accent-primary, #d4af37) !important;
+    background: var(--bg-card, rgba(11, 15, 23, 0.75)) !important;
+    backdrop-filter: blur(12px) !important;
+    padding: 1.5rem 1.75rem !important;
+    margin: 2.5rem 0 !important;
+    border-radius: 0 12px 12px 0 !important;
+    border-top: 1px solid var(--border-color, rgba(212, 175, 55, 0.15)) !important;
+    border-right: 1px solid var(--border-color, rgba(21, 29, 44, 0.6)) !important;
+    border-bottom: 1px solid var(--border-color, rgba(21, 29, 44, 0.6)) !important;
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  /* Suppression définitive de l'ampoule CSS artificielle ::before */
+  .article-body blockquote::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  .article-body blockquote p {
+    color: #e2e8f0 !important;
+    font-family: 'Merriweather', serif !important;
+    font-size: 1.05rem !important;
+    line-height: 1.85 !important;
+    margin-bottom: 0.5rem !important;
+    font-style: normal !important;
+  }
+
+  .article-body blockquote strong, .article-body blockquote b {
+    color: #fef08a !important;
+    font-weight: 700 !important;
+  }
+
+  /* CODES & LABELS FORENSIQUES */
+  .article-body code {
+    background-color: #090d16;
+    color: #38bdf8;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.88em;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+  }
+
+  /* SURBRILLANCES FORENSIQUES LUMINEUSES SOBRES (HIGH-END MINIMALIST) */
+  mark.forensic-highlight {
+    background-color: rgba(245, 158, 11, 0.08);
+    color: #fef08a;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border-bottom: 2px solid rgba(245, 158, 11, 0.4);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  mark.forensic-highlight.illuminated {
+    background-color: rgba(245, 158, 11, 0.18);
+    color: #ffffff;
+    border-bottom-color: #f59e0b;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+  }
+
+  /* ==========================================================================
+     STANDARD D'IMPRESSION A4 CITOYEN (AFFICHAGE VILLAGE / TRACT D'ACTION)
+     ========================================================================== */
+  @media print {
+    /* Masquer les éléments interactifs et de navigation superflus sur papier */
+    header, nav, footer, .no-print, [data-no-print], button {
+      display: none !important;
+    }
+
+    body, html {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      font-size: 11pt !important;
+      line-height: 1.5 !important;
+    }
+
+    /* Forcer l'encre noire et les contrastes nets pour les textes */
+    p, span, li, td, th {
+      color: #1e293b !important;
+    }
+
+    h1, h2, h3, h4 {
+      color: #000000 !important;
+      page-break-after: avoid;
+    }
+
+    /* Mise en valeur des surbrillances sur papier (soulignement élégant) */
+    mark.forensic-highlight {
+      background: transparent !important;
+      color: #000000 !important;
+      font-weight: 700 !important;
+      text-decoration: underline 2px solid #b8860b !important;
+      box-shadow: none !important;
+    }
+
+    /* Préservation des tableaux et bordures nettes */
+    table {
+      width: 100% !important;
+      border-collapse: collapse !important;
+      page-break-inside: avoid;
+    }
+
+    th, td {
+      border: 1px solid #94a3b8 !important;
+      padding: 6px 10px !important;
+      font-size: 10pt !important;
+    }
+
+    th {
+      background-color: #f1f5f9 !important;
+      font-weight: bold !important;
+    }
+
+    /* Gestion des ruptures de page */
+    article {
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+</style>
