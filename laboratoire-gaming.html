@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'OCHJU — Univers Gaming & Geek (Cyberdeck / Pip-Boy / Metal Gear / Polygon)</title>
+
+  <!-- Polices Geek & Gaming : Orbitron + Share Tech Mono + Rajdhani + Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Syne:wght@700;800&family=Newsreader:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* 
+      MOTEUR DES 4 UNIVERS GAMING & GEEK
+    */
+    :root {
+      /* Univers 1 par défaut : CYBERDECK (Cyberpunk 2077 / Deus Ex) */
+      --g-bg: #0b0c10;
+      --g-surface: #141720;
+      --g-surface-hover: #1c212d;
+      --g-border: #fcee0a;
+      --g-border-subtle: #2d3345;
+      --g-primary: #fcee0a; /* Jaune Cyberpunk éclatant */
+      --g-primary-glow: rgba(252, 238, 10, 0.4);
+      --g-secondary: #ff003c; /* Rouge Cyberpunk */
+      --g-text-title: #ffffff;
+      --g-text-body: #d1d5db;
+      --g-font-title: 'Orbitron', sans-serif;
+      --g-font-mono: 'Share Tech Mono', monospace;
+      --clip-angle: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+    }
+
+    [data-theme="pipboy"] {
+      /* Univers 2 : PIP-BOY AMBRE CHAUD (Fallout / Rétro-Futuriste CRT) */
+      --g-bg: #1a120b;
+      --g-surface: #261b11;
+      --g-surface-hover: #332417;
+      --g-border: #ffb833;
+      --g-border-subtle: #4d3622;
+      --g-primary: #ffb833; /* Ambre Phosphorescent chaud */
+      --g-primary-glow: rgba(255, 184, 51, 0.45);
+      --g-secondary: #ff5722;
+      --g-text-title: #ffdf99;
+      --g-text-body: #fce8cb;
+      --g-font-title: 'Share Tech Mono', monospace;
+      --g-font-mono: 'Share Tech Mono', monospace;
+      --clip-angle: none;
+    }
+
+    [data-theme="metalgear"] {
+      /* Univers 3 : CONSOLE TACTIQUE / iDroid (Metal Gear Solid V / The Division) */
+      --g-bg: #090e12;
+      --g-surface: #101920;
+      --g-surface-hover: #17242e;
+      --g-border: #00e5ff;
+      --g-border-subtle: #1f3240;
+      --g-primary: #00e5ff; /* Cyan Holographique */
+      --g-primary-glow: rgba(0, 229, 255, 0.4);
+      --g-secondary: #ffab00; /* Ambre d'alerte tactique */
+      --g-text-title: #ffffff;
+      --g-text-body: #cfd8dc;
+      --g-font-title: 'Rajdhani', sans-serif;
+      --g-font-mono: 'Share Tech Mono', monospace;
+      --clip-angle: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    }
+
+    [data-theme="polygon"] {
+      /* Univers 4 : MÉDIA GEEK HIGH-ENERGY (The Verge / Polygon) */
+      --g-bg: #111116;
+      --g-surface: #191922;
+      --g-surface-hover: #222230;
+      --g-border: #ff2a5f;
+      --g-border-subtle: #2d2d3d;
+      --g-primary: #ff2a5f; /* Rose néon brutaliste */
+      --g-primary-glow: rgba(255, 42, 95, 0.4);
+      --g-secondary: #facc15; /* Jaune énergie */
+      --g-text-title: #ffffff;
+      --g-text-body: #e2e8f0;
+      --g-font-title: 'Syne', sans-serif;
+      --g-font-mono: 'Share Tech Mono', monospace;
+      --clip-angle: none;
+    }
+
+    body {
+      background-color: var(--g-bg);
+      color: var(--g-text-body);
+      transition: all 0.3s ease;
+    }
+
+    .font-game-title {
+      font-family: var(--g-font-title);
+    }
+
+    .font-game-mono {
+      font-family: var(--g-font-mono);
+    }
+
+    .clip-corner {
+      clip-path: var(--clip-angle);
+    }
+
+    .game-card {
+      background-color: var(--g-surface);
+      border: 1px solid var(--g-border-subtle);
+      transition: all 0.25s ease;
+    }
+
+    .game-card:hover {
+      background-color: var(--g-surface-hover);
+      border-color: var(--g-primary);
+      box-shadow: 0 0 20px var(--g-primary-glow);
+      transform: translateY(-2px);
+    }
+
+    .glow-primary-text {
+      color: var(--g-primary);
+      text-shadow: 0 0 15px var(--g-primary-glow);
+    }
+
+    .glow-primary-border {
+      border-color: var(--g-primary);
+      box-shadow: 0 0 25px -5px var(--g-primary-glow);
+    }
+
+    /* Grille de radar et scanlines optionnelles */
+    .scanlines {
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+      background-size: 100% 3px, 6px 100%;
+    }
+  </style>
+</head>
+<body class="min-h-screen scanlines selection:bg-yellow-400 selection:text-black">
+
+  <!-- ================= SÉLECTEUR FLOTTANT GAMING & GEEK ================= -->
+  <aside class="fixed top-6 right-6 z-50 p-4 rounded-2xl shadow-2xl border-2 glow-primary-border backdrop-blur-xl bg-black/90 font-game-mono text-xs flex flex-col gap-2.5">
+    <div class="flex items-center justify-between gap-3 pb-2 border-b border-white/20">
+      <span class="glow-primary-text font-black uppercase text-[11px] tracking-wider">SELECTEUR D'UNIVERS GAMING</span>
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+    </div>
+    
+    <div class="flex flex-col gap-1.5 pt-1">
+      <button onclick="setGameTheme('')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#141720] hover:border-yellow-400 text-left flex items-center justify-between text-yellow-300 font-bold transition">
+        <span>1. Cyberdeck (Cyberpunk 2077)</span>
+        <span class="w-3 h-3 rounded-full bg-[#fcee0a]"></span>
+      </button>
+
+      <button onclick="setGameTheme('pipboy')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#261b11] hover:border-amber-400 text-left flex items-center justify-between text-amber-200 font-bold transition">
+        <span>2. Pip-Boy Ambre (Fallout)</span>
+        <span class="w-3 h-3 rounded-full bg-[#ffb833]"></span>
+      </button>
+
+      <button onclick="setGameTheme('metalgear')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#101920] hover:border-cyan-400 text-left flex items-center justify-between text-cyan-200 font-bold transition">
+        <span>3. Console iDroid (Metal Gear)</span>
+        <span class="w-3 h-3 rounded-full bg-[#00e5ff]"></span>
+      </button>
+
+      <button onclick="setGameTheme('polygon')" class="px-3 py-2 rounded-xl border border-stone-700 bg-[#191922] hover:border-rose-400 text-left flex items-center justify-between text-rose-200 font-bold transition">
+        <span>4. Média Geek (The Verge / Polygon)</span>
+        <span class="w-3 h-3 rounded-full bg-[#ff2a5f]"></span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= HEADER SUPRÊME GEEK / TACTIQUE ================= -->
+  <header class="border-b border-white/10 sticky top-0 z-40 px-6 py-4 backdrop-blur-xl bg-black/60 transition">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo Pur en Or Libre avec Scanline -->
+      <a href="../" class="flex items-center gap-4 group">
+        <img 
+          src="../logo_l_ochju_pur_dore.png" 
+          alt="L'OCHJU" 
+          class="h-12 sm:h-14 w-auto object-contain filter drop-shadow-[0_0_12px_rgba(252,238,10,0.4)] group-hover:drop-shadow-[0_0_22px_rgba(252,238,10,0.8)] transition duration-300" 
+        />
+        <div class="hidden sm:block">
+          <span class="font-game-title text-xl font-black tracking-widest text-white block leading-none">L'OCHJU</span>
+          <span class="font-game-mono text-[10px] uppercase tracking-[0.25em] glow-primary-text block mt-1">SYSTÈME FORENSIQUE CITOYEN // V4.0</span>
+        </div>
+      </a>
+
+      <!-- Statut Système & HUD -->
+      <div class="font-game-mono text-xs flex items-center gap-4">
+        <div class="hidden md:flex flex-col text-right">
+          <span class="text-[10px] text-stone-400 uppercase">ÉTAT DU REGISTRE :</span>
+          <span class="glow-primary-text font-bold">100% DÉCLASSIFIÉ</span>
+        </div>
+        <span class="px-3 py-1.5 rounded-lg border glow-primary-border bg-black/60 font-bold text-xs uppercase tracking-wider glow-primary-text">
+          OPPOSABLE AU JUGE
+        </span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MISSION BRIEFING : L'INVERSION DE LA DETTE ================= -->
+  <section class="max-w-7xl mx-auto px-6 pt-12 pb-8">
+    <div class="p-6 sm:p-10 rounded-2xl game-card border-2 glow-primary-border clip-corner relative overflow-hidden">
+      
+      <!-- Bandeau Tactique -->
+      <div class="flex flex-wrap items-center justify-between font-game-mono text-xs pb-4 border-b border-white/10 mb-6 gap-2">
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 bg-red-600 text-white font-bold rounded text-[10px] uppercase tracking-wider animate-pulse">
+            ALERTE SPOLIATION MAJEURE
+          </span>
+          <span class="text-stone-400">ZONE : CORSE (360 COMMUNES)</span>
+        </div>
+        <span class="glow-primary-text">NORME ISO/IEC 27037 SCELLÉE // HASH VALIDE</span>
+      </div>
+
+      <!-- Grand Titre de Mission -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-game-title font-black text-white leading-tight mb-6">
+        La Corse n'est pas sous perfusion. <br/>
+        <span class="glow-primary-text">Elle est créancière de 4,72 milliards d'euros.</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-stone-300 font-sans max-w-4xl leading-relaxed mb-8">
+        Les actes administratifs et bilans financiers certifiés déclassifiés ci-dessous démontrent la mécanique mathématique : les grands monopoles retirent <strong>4,72 milliards d'euros chaque année</strong> de notre île pendant que l'on culpabilise notre peuple. 
+        <strong class="text-white block mt-2">
+          L'OCHJU ne demande rien à l'État : nous déverrouillons les armes pour que le peuple reprenne le contrôle.
+        </strong>
+      </p>
+
+      <!-- HUD 3 STATS CLÉS (Compteurs d'Impact Foyer) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-game-mono pt-4 border-t border-white/10">
+        <div class="p-4 bg-black/50 border border-white/10 rounded-xl clip-corner">
+          <span class="text-[10px] uppercase text-stone-400 block">Siphonné chaque année</span>
+          <span class="text-3xl sm:text-4xl font-black text-rose-500 block mt-1">4,72 Md€</span>
+          <span class="text-xs text-stone-400 mt-1 block">Rentes, banques, fioul, fret.</span>
+        </div>
+
+        <div class="p-4 bg-black/50 border-2 border-yellow-400/50 rounded-xl clip-corner">
+          <span class="text-[10px] uppercase glow-primary-text block">Prélevé par Foyer</span>
+          <span class="text-3xl sm:text-4xl font-black glow-primary-text block mt-1">28 693 € / an</span>
+          <span class="text-xs text-stone-300 mt-1 block">5 mois et demi de salaire par famille.</span>
+        </div>
+
+        <div class="p-4 bg-black/50 border border-emerald-500/50 rounded-xl clip-corner">
+          <span class="text-[10px] uppercase text-emerald-400 block">Solde Net pour l'Île</span>
+          <span class="text-3xl sm:text-4xl font-black text-emerald-400 block mt-1">+1,72 Md€</span>
+          <span class="text-xs text-stone-300 mt-1 block">La France est débitrice de la Corse.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LE REGISTRE DES 9 MISSIONS / ENQUÊTES SCELLÉES ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    
+    <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-8 font-game-mono">
+      <div>
+        <span class="glow-primary-text font-bold uppercase tracking-widest text-xs block">DOSSIERS D'INSTRUCTION EN LIBRE ACCÈS</span>
+        <h2 class="text-2xl sm:text-3xl font-game-title font-black text-white mt-1">Les 9 Enquêtes Opposables</h2>
+      </div>
+      <span class="text-xs text-stone-300 px-3 py-1.5 rounded border border-white/20 bg-black/60 font-bold">
+        9 PIÈCES SCELLÉES
+      </span>
+    </div>
+
+    <!-- Grille de Cartes Gaming / Cyberdeck -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-game-mono">
+      
+      <!-- DOSSIER 22 : BANQUE (Carte Leader) -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner relative md:col-span-2">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2 py-0.5 rounded bg-amber-400/20 text-yellow-300 font-bold border border-yellow-400/40">
+              [DOSSIER-22] // CAPTATION BANCAIRE
+            </span>
+            <span class="text-rose-400 font-black text-sm">10 475 € / FOYER</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-3">
+            <a href="../enquetes/22-la-captation-bancaire-et-epargne/">
+              La Captation Bancaire & l'Évasion de l'Épargne
+            </a>
+          </h3>
+          <p class="text-sm font-sans text-stone-300 leading-relaxed mb-4">
+            Comment les caisses régionales siphonnent l'argent des familles corses pour alimenter les marchés spéculatifs de La Défense au détriment du crédit local pour nos artisans et paysans.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+          <a href="../enquetes/22-la-captation-bancaire-et-epargne/" class="glow-primary-text font-bold uppercase tracking-wider group-hover:translate-x-1 transition flex items-center gap-1.5">
+            <span>DÉVERROUILLER L'INSTRUCTION</span>
+            <span>→</span>
+          </a>
+          <span class="text-stone-500">BILANS CERTIFIÉS</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 18 : ÉNERGIE EDF -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-18]</span>
+            <span class="text-rose-400 font-bold">2 140 € / AN</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/18-le-monopole-energetique-edf-sei/">
+              Le Monopole EDF & Le Fioul Lourd
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            L'imposture des centrales polluantes du Vazzio et de Lucciana face à l'abondance hydroélectrique et solaire de l'île.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/18-le-monopole-energetique-edf-sei/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">COTES CRE</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 27 : ANGELO AJACCIO -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-27]</span>
+            <span class="text-cyan-400 font-bold">38 M€ ENGLOUTIS</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/27-le-telepherique-angelo-ajaccio/">
+              Angelo : Le Mirage à 38 M€
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            Déficit d'exploitation structurel d'une télécabine touristique imposée au détriment du réseau de bus des quartiers populaires.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/27-le-telepherique-angelo-ajaccio/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">CONTRATS CAPA</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 26 : MONOPOLE PÉTROLE -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-26]</span>
+            <span class="text-rose-400 font-bold">+0,18 € / LITRE</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/26-le-verrou-des-depots-petroliers/">
+              Le Verrou des Dépôts Pétroliers
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            La rente sur des cuves amorties depuis 40 ans qui fait du carburant en Corse le plus cher d'Europe.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/26-le-verrou-des-depots-petroliers/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">ACTES JORF</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 07 : CADASTRE MINIER -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-07]</span>
+            <span class="text-emerald-400 font-bold">100% CONCÉDÉ</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/07-le-cadastre-minier-secret/">
+              Le Cadastre Minier Secret
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            L'accaparement des concessions de sous-sol privant les communes rurales de toute souveraineté sur leurs ressources.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/07-le-cadastre-minier-secret/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">CARTES BRGM</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 23 : SÉCURITÉ CIVILE -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-23]</span>
+            <span class="text-rose-400 font-bold">5 CANADAIRS</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/23-la-sous-dotation-de-la-securite-civile/">
+              Le Sacrifice de la Sécurité Civile
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            La flotte aérienne bombardier d'eau sous-dimensionnée qui met en péril nos forêts et nos vies chaque été.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/23-la-sous-dotation-de-la-securite-civile/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">AUDITS ÉTAT</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 28 : MUVITARRA -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-28]</span>
+            <span class="text-yellow-400 font-bold">12,5 M€ DETTE</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/28-muvitarra-le-sacrifice-des-bus/">
+              Muvitarra : Le Naufrage des Bus
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            Comment la faillite des transports urbains a été organisée pour justifier le transfert de charges aux contribuables.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/28-muvitarra-le-sacrifice-des-bus/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">AUDITS CRC</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 04 : L'EAU POTABLE -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-04]</span>
+            <span class="text-cyan-400 font-bold">68% DE FUITES</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/04-la-marchandisation-de-l-eau/">
+              La Marchandisation de l'Eau
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            Les multinationales privées qui empochent les dividendes pendant que les tuyaux d'eau potable fuient.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/04-la-marchandisation-de-l-eau/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">SISPEA DATA</span>
+        </div>
+      </article>
+
+      <!-- DOSSIER 11 : EMPRISE MILITAIRE -->
+      <article class="game-card p-6 rounded-2xl border flex flex-col justify-between group clip-corner">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="glow-primary-text font-bold">[DOSSIER-11]</span>
+            <span class="text-emerald-400 font-bold">4 200 HECTARES</span>
+          </div>
+          <h3 class="text-xl font-game-title font-black text-white group-hover:glow-primary-text transition mb-2">
+            <a href="../enquetes/11-l-emprise-et-les-servitudes-militaires/">
+              L'Emprise et Servitudes Militaires
+            </a>
+          </h3>
+          <p class="text-xs font-sans text-stone-300 leading-relaxed">
+            Des milliers d'hectares de terres agricoles et de littoraux gelés sous le secret défense.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs mt-4">
+          <a href="../enquetes/11-l-emprise-et-les-servitudes-militaires/" class="glow-primary-text font-bold">OUVRIR →</a>
+          <span class="text-stone-500">MATRICES DGFIP</span>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ================= L'ARMURERIE CITOYENNE (L'Inventaire des Munitions) ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-12 border-t border-white/10 mb-16">
+    <div class="p-8 sm:p-10 rounded-2xl game-card border-2 glow-primary-border clip-corner font-game-mono">
+      <div class="max-w-3xl mb-8">
+        <span class="glow-primary-text font-bold uppercase tracking-widest text-xs block mb-2">
+          INVENTAIRE D'ARMES RÉPUBLICAINES // SOUVERAINETÉ POPULAIRE
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-game-title font-black text-white leading-tight mb-3">
+          Vos Munitions d'Action Immédiate
+        </h2>
+        <p class="text-stone-300 font-sans text-sm sm:text-base leading-relaxed">
+          Toutes les preuves sont scellées sous SHA-256. L'OCHJU ne dépose aucune plainte. Téléchargez vos armes certifiées et portez le fer devant les tribunaux ou dans vos conseils municipaux.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-xs">
+        <a href="../analyse-globale-finale/" class="p-5 rounded-xl bg-black/60 border border-white/20 hover:border-yellow-400 transition block group clip-corner">
+          <span class="glow-primary-text font-bold block mb-1">01 // DOSSIER DE PRESSE</span>
+          <span class="text-white font-game-title font-bold text-sm block mb-2">Médias & Réseaux</span>
+          <span class="text-stone-400 text-[11px] block font-sans">Les faits bruts et visuels opposables prêts à diffuser.</span>
+        </a>
+
+        <a href="../analyse-globale-finale/" class="p-5 rounded-xl bg-black/60 border-2 border-yellow-400/50 hover:border-yellow-400 transition block group clip-corner">
+          <span class="glow-primary-text font-bold block mb-1">02 // BORDEREAU TRIBUNAL</span>
+          <span class="text-white font-game-title font-bold text-sm block mb-2">Munitions Judiciaires</span>
+          <span class="text-stone-300 text-[11px] block font-sans">Pour saisir le tribunal administratif ou le procureur.</span>
+        </a>
+
+        <a href="../analyse-globale-finale/" class="p-5 rounded-xl bg-black/60 border border-white/20 hover:border-yellow-400 transition block group clip-corner">
+          <span class="glow-primary-text font-bold block mb-1">03 // SOMMATION D'ÉLUS</span>
+          <span class="text-white font-game-title font-bold text-sm block mb-2">Interpellation en Conseil</span>
+          <span class="text-stone-400 text-[11px] block font-sans">Modèles de délibérations pour forcer le vote public.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 bg-black/90 py-12 px-6 text-center font-game-mono text-xs text-stone-400">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <p class="font-game-title text-sm tracking-wider glow-primary-text">
+        « LE SAVOIR PARTAGÉ EST NOTRE CONTRE-POUVOIR. L'OCHJU, C'EST LE REGARD QUI NE SE DÉTOURNE PLUS. »
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-[10px] text-stone-500">
+        <span>CELLULE FORENSIQUE L'OCHJU</span>
+        <span>//</span>
+        <span>NORME ISO/IEC 27037</span>
+        <span>//</span>
+        <span>SOUVERAINETÉ POPULAIRE</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setGameTheme(name) {
+      if (name) {
+        document.body.setAttribute('data-theme', name);
+      } else {
+        document.body.removeAttribute('data-theme');
+      }
+    }
+  </script>
+
+</body>
+</html>
