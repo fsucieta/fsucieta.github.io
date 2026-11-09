@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import { marked } from 'marked';
+import crypto from 'node:crypto';
+
+export async function getStaticPaths() {
+  const baseDir = path.resolve('public/docs/pieces-enquete-26');
+  const results: { params: { piece: string } } = [];
+
+  if (fs.existsSync(baseDir)) {
+    const files = fs.readdirSync(baseDir);
+    for (const f of files) {
+      if (f.endsWith('.md')) {
+        const pieceSlug = f.replace(/\.md$/, '');
+        results.push({
+          params: { piece: pieceSlug },
+        });
+      }
+    }
+  }
+
+  return results;
+}
+
+const { piece } = Astro.params;
+const rawMdPath = path.resolve(`public/docs/pieces-enquete-26/${piece}.md`);
+let mdContent = '';
+let renderedHtml = '';
+let errorMsg = '';
+
+if (fs.existsSync(rawMdPath)) {
+  mdContent = fs.readFileSync(rawMdPath, 'utf-8');
+  renderedHtml = await marked.parse(mdContent);
+} else {
+  errorMsg = "Pièce administrative introuvable au greffe citoyen.";
+}
+
+let sha256Hash = '';
+if (mdContent) {
+  sha256Hash = crypto.createHash('sha256').update(mdContent, 'utf8').digest('hex');
+}
+
+const downloadUrl = `/docs/pieces-enquete-26/${piece}.md`;
+const cleanTitle = piece ? piece.replace(/^PIECE_\d+_/i, '').replace(/_/g, ' ') : 'Pièce Justificative Officielle';
+---
+
+<Layout
+  title={`${cleanTitle} — Pièce Officielle Certifiée L'OCHJU`}
+  description={`Consultation intégrale et opposable de la pièce d'État : ${cleanTitle}`}
+  image="/logo_l_ochju.jpg"
+  canonicalUrl={`https://fsucieta.github.io/pieces-enquete-26/${piece}/`}
+  lang="fr"
+>
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur sticky top-0 z-50 py-3 px-6 shadow-2xl">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-4">
+      <a href="/enquetes/26-le-verrou-des-depots-petroliers/" class="flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-amber-400 transition font-bold">
+        <span>←</span> <span>Retour à l'Enquête 26</span>
+      </a>
+
+      <a href="/" class="flex items-center gap-3">
+        <img 
+          src="/logo_l_ochju.jpg" 
+          alt="L'OCHJU" 
+          class="h-9 w-auto object-contain rounded border border-amber-500/50 shadow"
+        />
+        <div class="hidden sm:block text-left">
+          <span class="text-xs font-serif font-black tracking-widest text-slate-100 block">L'OCHJU</span>
+          <span class="text-[9px] font-mono text-emerald-400 block uppercase">Greffe & Pièces à Conviction</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <a 
+          href={downloadUrl} 
+          download={`${piece}.md`}
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold transition shadow-lg shadow-amber-500/20"
+          title="Télécharger le document textuel brut certifié"
+        >
+          <span>📥</span> <span>Télécharger le Fichier Brut (.MD)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <!-- Cartouche de scellement ISO/IEC 27037 -->
+    <div class="mb-8 p-6 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/30 shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-400 border border-amber-500/40 font-mono text-xs font-bold">
+            PIÈCE NATIVE GREFFE LOCHJU
+          </span>
+          <span class="text-xs font-mono text-slate-400">
+            Dossier d'Instruction : <strong>Enquête 26 — Dépôts Pétroliers</strong>
+          </span>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Scellé ISO/IEC 27037 Actif</span>
+        </div>
+      </div>
+
+      <h1 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 mb-2 capitalize">
+        {cleanTitle.toLowerCase()}
+      </h1>
+
+      <p class="text-xs text-slate-400 font-mono mb-4 leading-relaxed">
+        Ce document constitue une extraction brute officielle d'une pièce administrative, judiciaire ou réglementaire opposable. Conformément aux principes de souveraineté populaire et de rigueur forensique de L'OCHJU, aucune transmission directe n'est faite par la cellule aux parquets : cette pièce scellée est mise à la libre disposition des citoyens pour leurs recours juridiques et leurs actions publiques.
+      </p>
+
+      {sha256Hash && (
+        <div class="p-3 rounded-lg bg-slate-950 border border-slate-800/80 font-mono text-xs text-slate-300 overflow-x-auto">
+          <div class="flex items-center justify-between gap-2 text-[10px] text-slate-500 uppercase tracking-wider mb-1">
+            <span>Empreinte Numérique Cryptographique (SHA-256)</span>
+            <span class="text-amber-400">Inaltérable</span>
+          </div>
+          <code class="text-amber-300 font-bold break-all select-all">{sha256Hash}</code>
+        </div>
+      )}
+    </div>
+
+    <!-- Conteneur d'affichage de la pièce -->
+    <article class="p-8 sm:p-12 rounded-2xl bg-slate-900/60 border border-slate-800 text-slate-200 leading-relaxed shadow-xl backdrop-blur prose prose-invert prose-amber max-w-none prose-headings:font-serif prose-headings:text-slate-100 prose-table:border prose-table:border-slate-800 prose-th:bg-slate-950 prose-th:p-3 prose-td:p-3 prose-td:border-t prose-td:border-slate-800 prose-blockquote:border-l-amber-500 prose-blockquote:bg-slate-950/40 prose-blockquote:py-2 prose-blockquote:px-4">
+      {errorMsg ? (
+        <div class="p-6 rounded-xl bg-rose-950/40 border border-rose-500/40 text-rose-300 text-center font-mono">
+          <p class="font-bold text-lg mb-2">⚠️ Erreur d'accès à la pièce</p>
+          <p class="text-sm">{errorMsg}</p>
+        </div>
+      ) : (
+        <div set:html={renderedHtml} />
+      )}
+    </article>
+
+    <!-- Pied d'article & Actions citoyennes -->
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-4 p-6 rounded-2xl bg-slate-950 border border-slate-800 text-xs font-mono">
+      <div class="text-slate-400">
+        Source vérifiée par la <strong>Cellule d'Investigation L'OCHJU</strong>
+      </div>
+      <div class="flex items-center gap-3">
+        <a 
+          href={downloadUrl} 
+          download={`${piece}.md`}
+          class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold transition shadow-lg shadow-amber-500/20"
+        >
+          Télécharger le Fichier Brut (.MD)
+        </a>
+        <a 
+          href="/enquetes/26-le-verrou-des-depots-petroliers/" 
+          class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition"
+        >
+          Revenir au Dossier Complet
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

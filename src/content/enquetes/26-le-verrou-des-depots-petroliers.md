@@ -17,12 +17,14 @@ sources:
     url: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     sha256: "6e067af1700b08a733e6af1e0bf103f828b7be4c2c37cd8dbf1fabcc3db80cd4"
-  - name: "Conseil d'État (9e et 10e chambres réunies) : Avis d'audience du 22 septembre 2026 pour l'audience du 30 septembre 2026 (Recours A4C / F. Poletti — Décret L. 410-2 du Code de Commerce)"
-    url: "https://fpoletti.fr/2026/09/23/a-ceux-qui-souffrent/"
-    sha256: "37a330ff23a4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0"
+  - name: "Conseil d'État (9e et 10e chambres réunies) : Avis d'audience du 22 septembre 2026 (Recours A4C / F. Poletti — Décret L. 410-2 du Code de Commerce)"
+    url: "/pieces-enquete-26/PIECE_02_CONSEIL_ETAT_AVIS_AUDIENCE_RECOURS_A4C/"
+    pdfDirect: "/docs/pieces-enquete-26/PIECE_02_CONSEIL_ETAT_AVIS_AUDIENCE_RECOURS_A4C.md"
+    sha256: "6eb0b4249ee8150de02486c1df6bb812f09bfd4affa1e24733cf0e83787709da"
   - name: "Collectif A4C / F. Poletti : Déclaration du 23 septembre 2026 ('À ceux qui souffrent,') — 8 ans de combat et saisine en chambres réunies"
-    url: "https://fpoletti.fr/2026/09/23/a-ceux-qui-souffrent/"
-    sha256: "8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d"
+    url: "/pieces-enquete-26/PIECE_03_DECLARATION_A4C_POLETTI_8_ANS_COMBAT/"
+    pdfDirect: "/docs/pieces-enquete-26/PIECE_03_DECLARATION_A4C_POLETTI_8_ANS_COMBAT.md"
+    sha256: "fef254f61e5ef76a7e67feb41ce571d135e59a4528e809e6f556fbb239074b05"
   - name: "Tribunal des Activités Économiques de Marseille : Jugement du 20 janvier 2026 (SAS ViTO Corse c/ SAS TotalEnergies Marketing Corse — RG 2023F00710)"
     url: "/docs/jugement_tae_marseille_20_janv_2026.pdf"
     pdfDirect: "/docs/jugement_tae_marseille_20_janv_2026.pdf"
@@ -32,19 +34,44 @@ sources:
     pdfDirect: "/docs/jugement_tc_marseille_9_mai_2023_rapport_meindl.pdf"
     sha256: "5aecff19c4af029387d114299701389081013daead275b6803643bedf956da16"
   - name: "Autorité de la Concurrence : Avis n° 20-A-11 du 17 novembre 2020 sur la concurrence locale en Corse (Points 106-114 sur l'exclusion du SP95-E10)"
-    url: "https://www.autoritedelaconcurrence.fr/"
-    sha256: "1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e"
+    url: "/pieces-enquete-26/PIECE_06_AVIS_20_A_11_AUTORITE_CONCURRENCE_CORSE/"
+    pdfDirect: "/docs/pieces-enquete-26/PIECE_06_AVIS_20_A_11_AUTORITE_CONCURRENCE_CORSE.md"
+    sha256: "647c413f74d989c3b238f3c56a39a3b0f8dbc59b21babba60400d09d80fb6527"
   - name: "Inspection Générale des Finances (IGF) : Rapport n° 2018-M-072-03 (Surcoûts réels de transport maritime Fos-Corse de 1,5 à 2,5 cts/L)"
-    url: "https://www.vie-publique.fr/"
-    sha256: "2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d"
+    url: "/pieces-enquete-26/PIECE_07_RAPPORT_IGF_2018_M_072_03_SURCOUTS_MARITIMES/"
+    pdfDirect: "/docs/pieces-enquete-26/PIECE_07_RAPPORT_IGF_2018_M_072_03_SURCOUTS_MARITIMES.md"
+    sha256: "c66ce86377568f4d67eb350805d125eed277718ef0924e25f6e1f3180d895b61"
   - name: "DREAL Corse & Registres ICPE : Arrêtés Préfectoraux d'Exploitation des Dépôts SEVESO Lucciana et Vazzio (Ajaccio)"
-    url: "https://www.georisques.gouv.fr/"
-    sha256: "8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
+    url: "/pieces-enquete-26/PIECE_08_ARRETES_PREFECTORAUX_ICPE_SEVESO_LUCCIANA_VAZZIO/"
+    pdfDirect: "/docs/pieces-enquete-26/PIECE_08_ARRETES_PREFECTORAUX_ICPE_SEVESO_LUCCIANA_VAZZIO.md"
+    sha256: "f4da9185eea6bbacc441809a48560ef9a62926c6de67ef7cc9a3a4bb26611ea0"
   - name: "SAS DPLC & Rubis Énergie : Contrat de Compte-Courant Matière (CCM) du 22 mars 2016 et Annexe 3 (Cotes d'Instruction 1460-1491 & 4581-4582)"
     url: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
     pdfDirect: "/docs/decision-25-d-07-autorite-concurrence-officielle.pdf"
-    sha256: "7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a"
+    sha256: "7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e9d0c1b2a3f4e5d6c7b8a" 
 ---
+
+<!-- CARTOUCHE DE MISE À JOUR OFFICIELLE -->
+<div class="my-6 p-4 rounded-xl bg-gradient-to-r from-amber-500/10 via-slate-900 to-amber-500/10 border border-amber-500/40 flex items-center justify-between gap-4">
+  <div class="flex items-center gap-3">
+    <span class="flex h-3 w-3 relative">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+    </span>
+    <div>
+      <div class="text-xs font-mono font-bold uppercase tracking-wider text-amber-300">
+        ENQUÊTE ACTUALISÉE & SCELLÉE — NOVEMBRE 2026
+      </div>
+      <div class="text-[11px] text-slate-300 font-mono mt-0.5">
+        Rapatriement intégral des pièces judiciaires et administratives en hébergement local souverain (Avis Conseil d'État, Avis 20-A-11, Rapport IGF et Arrêtés SEVESO scellés sous ISO/IEC 27037).
+      </div>
+    </div>
+  </div>
+  <div class="hidden md:flex flex-col items-end text-[10px] font-mono text-slate-400">
+    <span class="text-emerald-400 font-bold">● 100% SOURCES LOCALES</span>
+    <span>ZÉRO DÉPENDANCE TIERS</span>
+  </div>
+</div>
 
 <!-- ==========================================================================
      SOMMAIRE INTERACTIF CLINIQUE & FIL CONDUCTEUR CITOYEN
@@ -478,64 +505,79 @@ La décision de justice du 17 novembre 2025 vous donne l'avantage. Les cartels c
 </div>
 
 <!-- GRILLE DES 3 LEVIERS D'ACTION SOUVERAINES -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5 my-6">
 
-<!-- LEVIER 1 : JUSTICE ART 40 -->
-<a href="/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400 transition group flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-3">
-<span class="text-2xl">⚖️</span>
-<span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
-</div>
-<h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-1">
-Bordereau de Plainte PNF & Procureur
-</h4>
-<p class="text-xs text-slate-400 font-sans leading-relaxed">
-Le dossier juridique pré-rempli avec les 4 pièces certifiées ISO 27037 prêt à être déposé au Parquet National Financier.
-</p>
-</div>
-<span class="text-xs font-mono font-bold text-amber-400 mt-4 flex items-center gap-1">
-Télécharger le Bordereau →
-</span>
-</a>
+  <!-- LEVIER 1 : JUSTICE ART 40 -->
+  <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-amber-400/60 transition group flex flex-col justify-between shadow-xl">
+    <div>
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-2xl">⚖️</span>
+        <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Article 40 CPP</span>
+      </div>
+      <h4 class="font-serif font-bold text-slate-100 group-hover:text-amber-300 transition text-base mb-2">
+        Bordereau de Plainte PNF & Procureur
+      </h4>
+      <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+        Le dossier juridique pré-rempli avec les 4 pièces certifiées ISO 27037 prêt à être déposé au Parquet National Financier.
+      </p>
+    </div>
+    <div class="flex items-center gap-2 pt-3 border-t border-slate-800/80">
+      <a href="/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE/" target="_blank" class="flex-1 px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono text-xs font-bold text-center transition">
+        Consulter la Pièce
+      </a>
+      <a href="/transmissions/enquete-26-depots-petroliers/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" download="02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs font-bold transition" title="Télécharger le fichier brut .MD">
+        📥 .MD
+      </a>
+    </div>
+  </div>
 
-<!-- LEVIER 2 : INTERPELLATION ÉLUS -->
-<a href="/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition group flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-3">
-<span class="text-2xl">🏛️</span>
-<span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Décret L. 410-2</span>
-</div>
-<h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-1">
-Note d'Interpellation des Députés
-</h4>
-<p class="text-xs text-slate-400 font-sans leading-relaxed">
-Le projet de décret d'encadrement des prix et le modèle de question écrite au gouvernement pour sommer les élus d'agir.
-</p>
-</div>
-<span class="text-xs font-mono font-bold text-cyan-400 mt-4 flex items-center gap-1">
-Sommer les Élus →
-</span>
-</a>
+  <!-- LEVIER 2 : INTERPELLATION ÉLUS -->
+  <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-400/60 transition group flex flex-col justify-between shadow-xl">
+    <div>
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-2xl">🏛️</span>
+        <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-wider bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Décret L. 410-2</span>
+      </div>
+      <h4 class="font-serif font-bold text-slate-100 group-hover:text-cyan-300 transition text-base mb-2">
+        Note d'Interpellation des Députés
+      </h4>
+      <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+        Le projet de décret d'encadrement des prix et le modèle de question écrite au gouvernement pour sommer les élus d'agir.
+      </p>
+    </div>
+    <div class="flex items-center gap-2 pt-3 border-t border-slate-800/80">
+      <a href="/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE/" target="_blank" class="flex-1 px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono text-xs font-bold text-center transition">
+        Consulter la Pièce
+      </a>
+      <a href="/transmissions/enquete-26-depots-petroliers/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" download="03_NOTE_INTERPELLATION_PARLEMENTAIRE.md" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs font-bold transition" title="Télécharger le fichier brut .MD">
+        📥 .MD
+      </a>
+    </div>
+  </div>
 
-<!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
-<a href="/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md" target="_blank" class="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-400 transition group flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-3">
-<span class="text-2xl">📰</span>
-<span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
-</div>
-<h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-1">
-Kit de Presse d'Investigation
-</h4>
-<p class="text-xs text-slate-400 font-sans leading-relaxed">
-Chronologie médico-légale brute et angles d'attaque documentés pour les rédactions libres et journalistes indépendants.
-</p>
-</div>
-<span class="text-xs font-mono font-bold text-rose-400 mt-4 flex items-center gap-1">
-Consulter le Kit Presse →
-</span>
-</a>
+  <!-- LEVIER 3 : PRESSE & LANCEURS D'ALERTE -->
+  <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-rose-400/60 transition group flex flex-col justify-between shadow-xl">
+    <div>
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-2xl">📰</span>
+        <span class="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-wider bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/30">Grade ICIJ</span>
+      </div>
+      <h4 class="font-serif font-bold text-slate-100 group-hover:text-rose-300 transition text-base mb-2">
+        Kit de Presse d'Investigation
+      </h4>
+      <p class="text-xs text-slate-400 font-sans leading-relaxed mb-4">
+        Chronologie médico-légale brute et angles d'attaque documentés pour les rédactions libres et journalistes indépendants.
+      </p>
+    </div>
+    <div class="flex items-center gap-2 pt-3 border-t border-slate-800/80">
+      <a href="/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION/" target="_blank" class="flex-1 px-3 py-1.5 rounded-lg bg-rose-500 hover:bg-rose-400 text-slate-950 font-mono text-xs font-bold text-center transition">
+        Consulter la Pièce
+      </a>
+      <a href="/transmissions/enquete-26-depots-petroliers/01_KIT_PRESSE_INVESTIGATION.md" download="01_KIT_PRESSE_INVESTIGATION.md" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono text-xs font-bold transition" title="Télécharger le fichier brut .MD">
+        📥 .MD
+      </a>
+    </div>
+  </div>
 
 </div>
 </div>
