@@ -14,7 +14,7 @@
 
 ### I. EXPOSÉ SOMMAIRE DES FAITS PORTÉS À SIGNALEMENT
 
-Il est porté à la connaissance des autorités judiciaires et financières compétentes des distorsions fiscales et budgétaires structurelles caractérisant une rupture d'égalité républicaine et un préjudice financier continu pour la collectivité :
+Il est porté à la connaissance des autorités judiciaires et financières compétentes des distorsions fiscales et budgétaires structurelles caractérisant une rupture d'égalité républicaine et un préjudice financier cumulé et continu évalué à 809,15 millions d'euros par an (soit 4 919 € par foyer fiscal) pour la collectivité insulaire :
 1. **Rupture caractérisée de l'égalité devant les charges publiques** (Art. 13 de la Déclaration des Droits de l'Homme et du Citoyen) résultant de la non-indexation volontaire et du blocage unilatéral par l'État de la Dotation de Continuité Territoriale (DCT à 187 M€ depuis 2009), malgré les préconisations du rapport d'information du Sénat n° 488 constatant un déficit cumulé imposé aux finances de la Collectivité de Corse.
 2. **Opacité de l'assiette territoriale de l'Impôt sur les Sociétés** généré sur le marché insulaire corse et centralisé sans redistribution par les filiales des grands groupes de distribution, d'énergie et de télécoms au préjudice des recettes territoriales.
 3. **Absence de compensation financière des surcoûts d'infrastructures publiques causés par la surpression touristique estivale** (collecte intégrale de la TVA par l'État sans mécanisme de péréquation écologique ou d'entretien des réseaux).

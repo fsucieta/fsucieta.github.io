@@ -11,12 +11,13 @@ import DoctrinePreuves from '../components/DoctrinePreuves.astro';
 import FoncierDvfRadar from '../components/FoncierDvfRadar.astro';
 
 const allEnquetes = await getCollection('enquetes');
-const idsFinalises = [22, 18, 27, 7, 23, 28, 26, 4, 11];
+const idsFinalises = [2, 22, 18, 27, 7, 23, 28, 26, 4, 11];
 const enquetesFinalisees = idsFinalises
   .map(id => allEnquetes.find(e => e.data.id === id))
   .filter((e): e is NonNullable<typeof e> => Boolean(e));
 
 const impactFoyer: Record<number, { val: string; label: string }> = {
+  2: { val: "- 4 919 €", label: "Ponction Nette / foyer" },
   22: { val: "10 475 €", label: "Captation Épargne / foyer" },
   18: { val: "2 140 €", label: "Surcoût Énergie / an" },
   27: { val: "38 M€", label: "Argent Public Englouti" },
@@ -295,10 +296,15 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
                   <span class="theme-gold-text font-bold">[{d.reference || `DOSSIER-${d.id}`}]</span>
                   <span class="text-slate-400 uppercase tracking-wider hidden sm:inline">· {d.category}</span>
                 </div>
-                {d.id === 22 ? (
+                {d.id === 2 ? (
                   <span class="bg-rose-600/90 text-white font-mono-tech font-black text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-md shadow-rose-600/30 flex items-center gap-1.5 animate-pulse border border-rose-400/50">
                     <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
                     <span>NOUVELLE ENQUÊTE</span>
+                  </span>
+                ) : d.id === 22 ? (
+                  <span class="bg-emerald-500/10 text-emerald-400 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-emerald-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>DOSSIER SCELLÉ</span>
                   </span>
                 ) : (d.id === 18 || d.id === 26) ? (
                   <span class="bg-amber-500/20 text-amber-300 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-amber-500/40 shadow-sm flex items-center gap-1.5 animate-pulse">
@@ -322,8 +328,10 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 {impact && (
-                  <div class="absolute bottom-3 left-4 font-mono-tech text-[10px] text-slate-300 bg-black/90 px-2.5 py-1 rounded border border-white/20 backdrop-blur">
-                    {impact.label}
+                  <div class="absolute bottom-3 left-4 font-mono-tech text-[10px] text-slate-300 bg-black/90 px-2.5 py-1 rounded border border-white/20 backdrop-blur flex items-center gap-1.5 shadow-lg">
+                    <span class="text-amber-400 font-bold">{impact.val}</span>
+                    <span class="text-slate-500">·</span>
+                    <span>{impact.label}</span>
                   </div>
                 )}
               </div>

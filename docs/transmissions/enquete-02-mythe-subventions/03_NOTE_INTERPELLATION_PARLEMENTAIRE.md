@@ -16,7 +16,7 @@
 
 L'enquête démontre de manière irréfutable que la Corse dégage un solde fiscal net positif au profit de l'État :
 1. **L'État encaisse environ 1,45 milliard € par an sur l'île** et n'en redistribue qu'environ 1,03 milliard € sous forme de dotations et services régaliens.
-2. **Le solde net sortant de 420 millions € par an** (environ 1 200 € par résident) dément catégoriquement le discours de la perfusion financière insulaire.
+2. **Le solde net sortant de 809,15 millions € par an** (environ 4 919 € net par foyer corse) dément catégoriquement le discours de la perfusion financière insulaire.
 3. **185 M€ d'Impôt sur les Sociétés** réalisés en Corse sont déclarés à Paris par les sièges sociaux des grands groupes (Leclerc, Carrefour, TotalEnergies, Orange, banques).
 4. **La Dotation de Continuité Territoriale (187 M€)** est gelée depuis 17 ans au mépris de l'inflation maritime et aérienne, accumulant plus de 450 M€ de spoliation d'infrastructure.
 

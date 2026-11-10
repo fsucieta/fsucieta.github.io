@@ -3,7 +3,7 @@ id: 2
 title: "La Fausse Dette Corse : Ce que Paris Vous Coûte Vraiment"
 subtitle: "809 millions d'euros par an aspirés sur l'île — soit 4 919 € net par foyer corse : autopsie médico-légale du grand mensonge de la « solidarité nationale »."
 category: "FISCALITÉ & BUDGET"
-status: en_cours
+status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-02"
 author: "Cellule d'Investigation L'OCHJU"
 date: "Novembre 2026"

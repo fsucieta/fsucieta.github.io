@@ -1,6 +1,6 @@
 # L'OCHJU — CELLULE D'INVESTIGATION FINANCIÈRE
 **KIT DE TRANSMISSION PRESSE & RÉDACTIONS D'INVESTIGATION (GRADE ICIJ)**  
-*Dossier d'Enquête : Le Hold-Up des 420 Millions — L'Effondrement Définitif du Mythe de l'Assistanat*  
+*Dossier d'Enquête : Le Hold-Up des 809 Millions (809,15 M€/an) — L'Effondrement Définitif du Mythe de l'Assistanat*  
 *Cote de Traçabilité Forensique : LOCHJU-TRANS-2026-ENQ02-PRESS*  
 *Norme de Saisie Probatoire : ISO/IEC 27037:2012*  
 *Date d'Émission Officielle : 25 Septembre 2026*  
@@ -10,10 +10,10 @@
 ## 1. COMMUNIQUÉ D'ALERTE CITOYENNE (EMBARGO LEVÉ)
 
 ### Titre :
-**FINANCES PUBLIQUES EN CORSE : L'AUTOPSIE MÉDICO-LÉGALE DU « MYTHE DE L'ASSISTANAT » — L'ÉTAT COLLECTE 1,45 MILLIARD € ET DÉGAGE UN SOLDE NET POSITIF DE 420 MILLIONS € PAR AN SUR LE DOS DE L'ÎLE**
+**FINANCES PUBLIQUES EN CORSE : L'AUTOPSIE MÉDICO-LÉGALE DU « MYTHE DE L'ASSISTANAT » — L'ÉTAT COLLECTE 1,45 MILLIARD € ET DÉGAGE UN SOLDE NET POSITIF DE 809,15 MILLIONS € PAR AN SUR LE DOS DE L'ÎLE**
 
 ### Accroche Journalistique :
-Alors que le discours politique et médiatique parisien entretient depuis des décennies l'image d'une Corse vivant sous perfusion financière permanente aux dépens du contribuable continental, une analyse forensique croisant les déclarations fiscales des entreprises, les états 1259 des 360 communes, les rapports budgétaires du Sénat (n° 488 et n° 714) et les données de la Banque de France renverse totalement la table. Chaque année, la Corse expédie vers le budget central environ 1,45 milliard d'euros et ne reçoit en retour qu'environ 1,03 milliard d'euros : un tribut net de 420 millions d'euros par an (soit environ 1 200 € par habitant) quitte l'île sans jamais faire l'objet de réinvestissement local.
+Alors que le discours politique et médiatique parisien entretient depuis des décennies l'image d'une Corse vivant sous perfusion financière permanente aux dépens du contribuable continental, une analyse forensique croisant les déclarations fiscales des entreprises, les états 1259 des 360 communes, les rapports budgétaires du Sénat (n° 488 et n° 714) et les données de la Banque de France renverse totalement la table. Chaque année, la Corse expédie vers le budget central environ 1,45 milliard d'euros et ne reçoit en retour qu'environ 1,03 milliard d'euros : un tribut net de 809,15 millions d'euros par an (soit environ 4 919 € net par foyer fiscal corse) quitte l'île sans jamais faire l'objet de réinvestissement local.
 
 ---
 
@@ -42,7 +42,7 @@ Alors que le discours politique et médiatique parisien entretient depuis des d�
 1. **Angle Économique & Justice Fiscale** :  
    *Pourquoi l'absence de territorialisation de l'Impôt sur les Sociétés transforme la Corse en colonie de consommation pour les grands groupes du CAC 40 sans retour fiscal.*
 2. **Angle Budgétaire & Démystification Politique** :  
-   *Comment déconstruire point par point le narratif de la "perfusion corse" face aux élus nationaux en s'appuyant sur le solde net positif de 420 M€ calculé à partir des documents du Sénat.*
+   *Comment déconstruire point par point le narratif de la "perfusion corse" face aux élus nationaux en s'appuyant sur le solde net positif de 809,15 M€ calculé à partir des documents du Sénat.*
 3. **Angle Souveraineté & Banque Populaire Insulaire** :  
    *Le potentiel d'un Fonds Souverain d'Investissement Insulaire adossé aux 11,2 milliards d'euros d'épargne locale captée par les banques continentales.*
 
