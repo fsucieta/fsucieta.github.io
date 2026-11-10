@@ -1,7 +1,7 @@
 ---
 id: 2
-title: "The Corsican Sovereign Balance : The Real Cost of Paris"
-subtitle: "€809 million per year drained from the island — €4,919 net per Corsican household : forensic autopsy of the grand myth of 'national solidarity'."
+title: "The Inverted Myth : When Corsica Subsidizes the French State"
+subtitle: "Bercy management fees, summer tourism VAT and frozen transport grants : the €809 million annual surplus Paris refuses to return to insular households (€4,919 net per family)."
 category: "TAXATION & PUBLIC BUDGET"
 status: cloturee
 ref: "LOCHJU-AUDIT-INVESTIGATION-02"

@@ -1,7 +1,7 @@
 ---
 id: 2
-title: "La Fausse Dette Corse : Ce que Paris Vous Coûte Vraiment"
-subtitle: "809 millions d'euros par an aspirés sur l'île — soit 4 919 € net par foyer corse : autopsie médico-légale du grand mensonge de la « solidarité nationale »."
+title: "Le Mythe Inversé : Quand la Corse Subventionne l'État"
+subtitle: "Dîme de Bercy, TVA touristique et gel des transports : les 809 millions d'euros annuels que Paris refuse de rendre aux familles insulaires (soit 4 919 € net par foyer)."
 category: "FISCALITÉ & BUDGET"
 status: cloturee
 ref: "LOCHJU-AUDIT-ENQUETE-02"
