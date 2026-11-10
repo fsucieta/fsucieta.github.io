@@ -10,7 +10,7 @@ date: "Octobre 2026"
 tool: "Banque de France (Série Webstat CFTDC) / BALO / ACPR / Greffes RNE / CESECC / Rapports Financiers CRCAM Corse & CEPAC"
 chapeau: "Présentée à tort comme une terre assistée, la Corse est un réservoir net de liquidités bancaires spolié par les grands réseaux. Sur 6,42 milliards d'euros de dépôts collectés (et 11,54 milliards d'épargne financière brute totale), moins de 60 % sont réinjectés aux résidents. Chaque soir à 17h30, 2,57 milliards d'euros d'épargne dormante sont aspirés par nivellement automatique (cash pooling) vers Montrouge et Marseille pour nourrir le marché interbancaire et générer plus de 93,8 M€ de rente de trésorerie hors-sol. Révélations sur le projet d'absorption du Crédit Agricole Corse par PCA, l'abandon bancaire de 295 communes et modélisation de la Banque Territoriale de Corse."
 math: "\\text{Ratio de Transformation Réel Insulaire (RTRI)} = \\frac{\\sum \\text{Crédits Productifs aux Résidents (3,85 Mld €)}}{\\text{Dépôts Bancaires Collectés dans l'Île (6,42 Mld €)}} \\times 100 = 59,97\\ \\%"
-image: "img_enquete_22.jpg"
+image: "img_enquete_22_v2.jpg"
 imageCaption: "Illustration éditoriale peinte style Studio Ghibli inspirée du siège historique du Crédit Agricole de la Corse (Avenue Napoléon III, Ajaccio) | Création artistique L'OCHJU"
 sources:
   - name: "Dossier d'Instruction Officiel L'OCHJU — Enquête 22 : Captation Bancaire & Évasion de l'Épargne"

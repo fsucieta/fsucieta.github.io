@@ -9,7 +9,7 @@ author: "L'OCHJU Investigation Desk"
 date: "November 2026"
 tool: "DGFiP / French Court of Accounts / Insee / Banque de France / Senate r488 / Senate r714 / Senate r302 / CGCT / CGI"
 chapeau: "For half a century, an official political narrative has depicted Corsica as a territory 'under life support' and 'costing a fortune' to continental taxpayers. L'OCHJU opened the master general ledgers of the Ministry of Economy & Finance, Road Safety, water agencies, the French Senate, and the General Tax Code. The clinical forensic verdict completely dismantles the myth: the French central state collects €1.45 billion in annual taxes from the island while allocating only €1.03 billion in real operational civilian expenditures. Adding the management commission seized on local taxes (Art. 1641 CGI), the 17-year freeze on the territorial continuity grant, civil aviation taxes, corporate tax flight from retail conglomerates, state gambling levies, and automated speed cameras, a total of €809.15 million per year — exactly €4,919 per household — is drained toward Paris without local return. Including the carbon sink provided free of charge to France's national climate ledger, the extracted annual value reaches €906 million, reflecting a macroeconomic sovereign debt re-evaluated at €2.09 billion."
-image: "img_enquete_02.webp"
+image: "img_enquete_02_v2.webp"
 imageCaption: "📷 Evidence File No. 1 — Palais Lantivy (Prefecture & French State Headquarters in Ajaccio)"
 sources:
   - name: "French Senate : Information Report No. 488 (268 pages) — Territorial Continuity, Transport & Frozen €187M"

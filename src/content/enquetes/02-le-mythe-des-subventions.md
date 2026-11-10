@@ -9,7 +9,7 @@ author: "Cellule d'Investigation L'OCHJU"
 date: "Novembre 2026"
 tool: "DGFiP / Cour des Comptes / Insee / Banque de France / Sénat r488 / Sénat r714 / Sénat r302 / CGCT / CGI"
 chapeau: "Depuis un demi-siècle, un narratif officiel accuse la Corse d'être « sous perfusion » et de « coûter un pognon de dingue » aux contribuables français. L'OCHJU a ouvert les grands livres de comptes du ministère des Finances, de la Sécurité routière, des agences de l'eau, du Sénat et du Code général des impôts. Le verdict clinique pulvérise le mythe : l'État collecte 1,45 milliard d'euros d'impôts sur l'île pour 1,03 milliard de dépenses réelles. En ajoutant la dîme de gestion sur les impôts locaux (Art. 1641 CGI), le gel de la continuité territoriale, les taxes de l'aviation civile, l'évasion de l'IS des enseignes nationales, le siphon des jeux et les amendes radars, ce sont 809,15 millions d'euros par an — soit 4 919 € par foyer — qui partent vers le continent. Et en intégrant le puits de carbone offert gratuitement au bilan climat de la France, la valeur extraite atteint 906 millions d'euros par an, s'inscrivant dans une créance macroéconomique historique réévaluée à 2,09 milliards d'euros."
-image: "img_enquete_02.webp"
+image: "img_enquete_02_v2.webp"
 imageCaption: "📷 Pièce à Conviction n° 1 — Le Palais Lantivy (Hôtel de Préfecture d'Ajaccio & Siège de la Représentation de l'État en Corse)"
 sources:
   - name: "Sénat de la République : Rapport d'Information n° 488 (268 pages) — Continuité Territoriale, Transports & Gel des 187 M€"

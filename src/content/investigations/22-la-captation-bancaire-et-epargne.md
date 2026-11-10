@@ -10,7 +10,7 @@ date: "October 2026"
 tool: "IEDOM / Banque de France / ACPR / Retail Banking Data"
 chapeau: "Considered by major French banking cartels as an exceptionally profitable deposit collection basin, Corsica suffers from chronic local credit rationing. An investigation into the siphoning of family savings books and deposits toward Parisian financial markets."
 math: "\\text{Local Reinvestment Ratio (LRR)} = \\frac{\\sum \\text{Productive Loans Granted to Corsican SMEs & Artisans}}{\\text{Total Customer Deposits Collected Across Island Branches}} \\times 100"
-image: "img_enquete_22.jpg"
+image: "img_enquete_22_v2.jpg"
 sources:
   - name: "IEDOM / Banque de France : Deposit Collection and Credit Statistics in Corsica (2024)"
     url: "https://www.acpr.banque-france.fr/"
