@@ -3,18 +3,213 @@ import { getCollection } from 'astro:content';
 import communes360Official from '../data/communes_official_360.json';
 
 interface Props {
-  lang?: 'fr' | 'en';
+  lang?: string;
 }
 
 const { lang = 'fr' } = Astro.props;
-const basePath = lang === 'en' ? './investigations' : './enquetes';
-const labelPrefix = lang === 'en' ? 'Investigation' : 'Enquête';
+const currentLang = ['fr', 'en', 'it', 'es', 'pt', 'ru', 'zh', 'ja'].includes(lang) ? lang : 'fr';
+const basePath = currentLang === 'fr' ? '/enquetes' : currentLang === 'en' ? '/en/investigations' : `/${currentLang}/enquetes`;
+
+const frToEnSlug: Record<string, string> = {
+  "26-le-verrou-des-depots-petroliers": "26-the-fuel-depot-monopoly",
+  "28-muvitarra-le-sacrifice-des-bus": "28-le-naufrage-organise-de-la-muvitarra"
+};
+
+const i18nGis = {
+  fr: {
+    badge: "SIG SOUVERAIN & BAROMÈTRE — 19 INTERCOMMUNALITÉS (360 COMMUNES)",
+    title: "🗺️ Cartographie & Action Citoyenne Intercommunale",
+    epciCountBadge: "19 EPCI • Recherche par Commune Active",
+    searchLabel: "🔍 Recherche Directe par Commune ou Village :",
+    searchPlaceholder: "Tapez le nom de votre commune (ex: Bonifacio, Corte, Cargèse, Sartène, Afa...)...",
+    epciLabel: "Ou choisir l'EPCI :",
+    mapHint: "📍 Survolez ou cliquez sur les repères pour auditer une intercommunalité",
+    inspectorTitle: "INSPECTEUR & BAROMÈTRE EPCI",
+    pressurePrefix: "Pression :",
+    barometerTitle: "📊 Baromètre de Pression Foncière & Spéculation :",
+    speculationIdx: "Indice Pression Spéculative :",
+    secHomes: "Résidences Secondaires :",
+    tacitPermits: "Permis Tacites R.424-1 :",
+    memberCommunes: "Communes Membres",
+    keyAudit: "Indicateur Clé Audit :",
+    assocInv: "Enquêtes d'Impact Associées (Cliquables) :",
+    invPrefix: "Enquête",
+    cadaBtnPrefix: "⚖️ Générer la saisine CADA pour",
+    tooltipCommunes: "communes • Indice",
+    noResult: "Aucune commune trouvée",
+    pLevels: { "Critique": "Critique", "Très Élevée": "Très Élevée", "Élevée": "Élevée", "Modérée": "Modérée" }
+  },
+  en: {
+    badge: "SOVEREIGN GIS & BAROMETER — 19 INTER-MUNICIPAL AUTHORITIES (360 COMMUNES)",
+    title: "🗺️ Inter-Municipal Mapping & Civic Action",
+    epciCountBadge: "19 EPCIs • Municipality Search Active",
+    searchLabel: "🔍 Direct Search by Municipality or Village:",
+    searchPlaceholder: "Type your municipality (e.g., Bonifacio, Corte, Cargèse, Sartène, Afa...)...",
+    epciLabel: "Or choose an EPCI:",
+    mapHint: "📍 Hover or click markers to audit an inter-municipal district",
+    inspectorTitle: "EPCI INSPECTOR & BAROMETER",
+    pressurePrefix: "Pressure:",
+    barometerTitle: "📊 Land Pressure & Speculation Barometer:",
+    speculationIdx: "Speculative Pressure Index:",
+    secHomes: "Second Homes Share:",
+    tacitPermits: "Tacit Permits R.424-1:",
+    memberCommunes: "Member Municipalities",
+    keyAudit: "Key Audit Indicator:",
+    assocInv: "Associated Impact Investigations (Clickable):",
+    invPrefix: "Investigation",
+    cadaBtnPrefix: "⚖️ Generate FOIA / CADA Notice for",
+    tooltipCommunes: "municipalities • Index",
+    noResult: "No municipality found",
+    pLevels: { "Critique": "Critical", "Très Élevée": "Very High", "Élevée": "High", "Modérée": "Moderate" }
+  },
+  it: {
+    badge: "GIS SOVRANO & BAROMETRO — 19 ENTI INTERCOMUNALI (360 COMUNI)",
+    title: "🗺️ Mappatura e Azione Civica Intercomunale",
+    epciCountBadge: "19 EPCI • Ricerca per Comune Attiva",
+    searchLabel: "🔍 Ricerca Diretta per Comune o Paese:",
+    searchPlaceholder: "Scrivi il nome del comune (es: Bonifacio, Corte, Ajaccio, Sartène...)...",
+    epciLabel: "Oppure scegli l'EPCI:",
+    mapHint: "📍 Passa o clicca sui punti per esaminare l'ente intercomunale",
+    inspectorTitle: "ISPETTORE & BAROMETRO EPCI",
+    pressurePrefix: "Pressione:",
+    barometerTitle: "📊 Barometro di Pressione Fondiaria e Speculazione:",
+    speculationIdx: "Indice Pressione Speculativa:",
+    secHomes: "Seconde Case:",
+    tacitPermits: "Permessi Taciti R.424-1:",
+    memberCommunes: "Comuni Membri",
+    keyAudit: "Indicatore Chiave Audit:",
+    assocInv: "Inchieste d'Impatto Associate (Cliccabili):",
+    invPrefix: "Inchiesta",
+    cadaBtnPrefix: "⚖️ Genera istanza d'accesso per",
+    tooltipCommunes: "comuni • Indice",
+    noResult: "Nessun comune trovato",
+    pLevels: { "Critique": "Critica", "Très Élevée": "Molto Alta", "Élevée": "Alta", "Modérée": "Moderata" }
+  },
+  es: {
+    badge: "SIG SOBERANO Y BARÓMETRO — 19 MANCOMUNIDADES (360 MUNICIPIOS)",
+    title: "🗺️ Cartografía y Acción Ciudadana Intermunicipal",
+    epciCountBadge: "19 EPCI • Búsqueda por Municipio Activa",
+    searchLabel: "🔍 Búsqueda Directa por Municipio o Localidad:",
+    searchPlaceholder: "Escriba su municipio (ej: Bonifacio, Corte, Ajaccio, Sartène...)...",
+    epciLabel: "O elegir mancomunidad (EPCI):",
+    mapHint: "📍 Pase el ratón o haga clic en los marcadores para auditar",
+    inspectorTitle: "INSPECTOR Y BARÓMETRO EPCI",
+    pressurePrefix: "Presión:",
+    barometerTitle: "📊 Barómetro de Presión Inmobiliaria y Especulación:",
+    speculationIdx: "Índice de Presión Especulativa:",
+    secHomes: "Segundas Residencias:",
+    tacitPermits: "Permisos Tácitos R.424-1:",
+    memberCommunes: "Municipios Miembros",
+    keyAudit: "Indicador Clave de Auditoría:",
+    assocInv: "Investigaciones Asociadas (Clicables):",
+    invPrefix: "Investigación",
+    cadaBtnPrefix: "⚖️ Generar solicitud legal para",
+    tooltipCommunes: "municipios • Índice",
+    noResult: "Ningún municipio encontrado",
+    pLevels: { "Critique": "Crítica", "Très Élevée": "Muy Alta", "Élevée": "Alta", "Modérée": "Moderada" }
+  },
+  pt: {
+    badge: "SIG SOBERANO & BARÓMETRO — 19 INTERCOMUNALIDADES (360 MUNICÍPIOS)",
+    title: "🗺️ Cartografia e Ação Cidadã Intermunicipal",
+    epciCountBadge: "19 EPCI • Pesquisa por Município Ativa",
+    searchLabel: "🔍 Pesquisa Direta por Município ou Aldeia:",
+    searchPlaceholder: "Digite o nome do município (ex: Bonifacio, Corte, Ajaccio...)...",
+    epciLabel: "Ou escolher EPCI:",
+    mapHint: "📍 Clique nos marcadores para auditar uma intercomunalidade",
+    inspectorTitle: "INSPETOR & BARÓMETRO EPCI",
+    pressurePrefix: "Pressão:",
+    barometerTitle: "📊 Barómetro de Pressão Fundiária e Especulação:",
+    speculationIdx: "Índice de Pressão Especulativa:",
+    secHomes: "Segundas Habitações:",
+    tacitPermits: "Licenças Tácitas R.424-1:",
+    memberCommunes: "Municípios Membros",
+    keyAudit: "Indicador-Chave de Auditoria:",
+    assocInv: "Investigações Associadas (Clicáveis):",
+    invPrefix: "Investigação",
+    cadaBtnPrefix: "⚖️ Gerar pedido legal de acesso para",
+    tooltipCommunes: "municípios • Índice",
+    noResult: "Nenhum município encontrado",
+    pLevels: { "Critique": "Crítica", "Très Élevée": "Muito Alta", "Élevée": "Alta", "Modérée": "Moderada" }
+  },
+  ru: {
+    badge: "СУВЕРЕННАЯ ГИС И БАРОМЕТР — 19 ОКРУГОВ (360 КОММУН)",
+    title: "🗺️ Межмуниципальная карта и гражданский контроль",
+    epciCountBadge: "19 EPCI • Поиск по коммунам активен",
+    searchLabel: "🔍 Прямой поиск по коммуне или деревне:",
+    searchPlaceholder: "Введите название коммуны (напр.: Bonifacio, Corte, Ajaccio...)...",
+    epciLabel: "Или выберите округ (EPCI):",
+    mapHint: "📍 Нажмите на маркер для аудита межмуниципального округа",
+    inspectorTitle: "ИНСПЕКТОР И БАРОМЕТР EPCI",
+    pressurePrefix: "Давление:",
+    barometerTitle: "📊 Барометр земельного давления и спекуляции:",
+    speculationIdx: "Индекс спекуляции:",
+    secHomes: "Доля вторых домов:",
+    tacitPermits: "Молчаливые разрешения R.424-1:",
+    memberCommunes: "Входящие коммуны",
+    keyAudit: "Ключевой индикатор аудита:",
+    assocInv: "Связанные расследования (кликабельно):",
+    invPrefix: "Досье",
+    cadaBtnPrefix: "⚖️ Сформировать запрос о доступе для",
+    tooltipCommunes: "коммун • Индекс",
+    noResult: "Коммуна не найдена",
+    pLevels: { "Critique": "Критическое", "Très Élevée": "Очень высокое", "Élevée": "Высокое", "Modérée": "Умеренное" }
+  },
+  zh: {
+    badge: "主权地理信息系统与晴雨表 — 19 个跨市镇联盟 (360 个市镇)",
+    title: "🗺️ 跨市镇地理测绘与公民监督行动",
+    epciCountBadge: "19 个联盟 • 市镇实时检索已启用",
+    searchLabel: "🔍 按市镇或村落直接检索：",
+    searchPlaceholder: "输入市镇名称（例如：Bonifacio, Corte, Ajaccio, Sartène...）",
+    epciLabel: "或选择市镇联盟 (EPCI)：",
+    mapHint: "📍 悬停或点击地图标记以审计对应跨市镇联盟",
+    inspectorTitle: "EPCI 审计检测面板",
+    pressurePrefix: "土地压力：",
+    barometerTitle: "📊 地产与投机压力晴雨表：",
+    speculationIdx: "投机压力指数：",
+    secHomes: "第二居所占比：",
+    tacitPermits: "默许建筑许可 R.424-1：",
+    memberCommunes: "成员市镇",
+    keyAudit: "核心审计指标：",
+    assocInv: "关联影响调查卷宗（可点击）：",
+    invPrefix: "调查",
+    cadaBtnPrefix: "⚖️ 一键生成信息公开法律申请：",
+    tooltipCommunes: "个市镇 • 指数",
+    noResult: "未找到匹配市镇",
+    pLevels: { "Critique": "极高危机", "Très Élevée": "极高", "Élevée": "较高", "Modérée": "中等" }
+  },
+  ja: {
+    badge: "主権GIS・バロメーター — 19広域自治体連合 (全360自治体)",
+    title: "🗺️ 広域自治体マッピング＆市民監視アクション",
+    epciCountBadge: "19 EPCI • 自治体検索稼働中",
+    searchLabel: "🔍 自治体・集落名で直接検索：",
+    searchPlaceholder: "自治体名を入力 (例: Bonifacio, Corte, Ajaccio, Sartène...)...",
+    epciLabel: "またはEPCI連合を選択：",
+    mapHint: "📍 マーカーをクリックして広域自治体の監査データを確認",
+    inspectorTitle: "EPCI 監査インスペクター",
+    pressurePrefix: "土地圧力：",
+    barometerTitle: "📊 地価・投機圧力バロメーター：",
+    speculationIdx: "投機圧力指数：",
+    secHomes: "別荘・セカンドハウス比率：",
+    tacitPermits: "みなし建築許可 R.424-1：",
+    memberCommunes: "構成自治体",
+    keyAudit: "主要監査指標：",
+    assocInv: "関連調査ファイル (クリック可能)：",
+    invPrefix: "調査",
+    cadaBtnPrefix: "⚖️ 情報公開請求書を生成：",
+    tooltipCommunes: "自治体 • 指数",
+    noResult: "該当する自治体が見つかりません",
+    pLevels: { "Critique": "危機的", "Très Élevée": "非常に高い", "Élevée": "高い", "Modérée": "中程度" }
+  }
+};
+
+const t = i18nGis[currentLang as keyof typeof i18nGis] || i18nGis.fr;
+const labelPrefix = t.invPrefix;
 
 const allEnquetes = await getCollection('enquetes');
 // Mappage ID -> slug pour générer des liens d'enquêtes cliquables
-const enqueteSlugMap = {};
+const enqueteSlugMap: Record<number, string> = {};
 allEnquetes.forEach(e => {
-  enqueteSlugMap[e.data.id] = e.slug;
+  enqueteSlugMap[e.data.id] = currentLang === 'en' ? (frToEnSlug[e.slug] || e.slug) : e.slug;
 });
 
 // Liste Exhaustive des 19 Communautés de Communes & d'Agglomération de Corse (100% du Territoire / 360 Communes)
@@ -331,15 +526,15 @@ const intercommunalites = [
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
     <div>
       <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-        SIG SOUVERAIN & BAROMÈTRE — 19 INTERCOMMUNALITÉS (360 COMMUNES)
+        {t.badge}
       </span>
       <h3 class="text-2xl md:text-3xl font-bold font-serif text-slate-100 mt-2">
-        🗺️ Cartographie & Action Citoyenne Intercommunale
+        {t.title}
       </h3>
     </div>
     <div class="flex items-center gap-2 text-xs font-mono">
       <span class="bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 text-amber-400 font-bold">
-        19 EPCI • Recherche par Commune Active
+        {t.epciCountBadge}
       </span>
     </div>
   </div>
@@ -347,25 +542,25 @@ const intercommunalites = [
   <!-- Barre de Recherche Directe par Commune (FONCTIONNALITÉ 1) -->
   <div class="mb-6 bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col md:flex-row gap-4 items-center justify-between">
     <div class="w-full md:w-2/3 relative">
-      <label for="communeSearch" class="text-xs font-mono text-slate-400 block mb-1">🔍 Recherche Directe par Commune ou Village :</label>
+      <label for="communeSearch" class="text-xs font-mono text-slate-400 block mb-1">{t.searchLabel}</label>
       <input 
         type="text" 
         id="communeSearch" 
-        placeholder="Tapez le nom de votre commune (ex: Bonifacio, Corte, Cargèse, Sartène, Afa...)..." 
+        placeholder={t.searchPlaceholder} 
         class="w-full bg-slate-950 border border-slate-700 text-amber-400 text-xs font-mono rounded-lg p-2.5 focus:outline-none focus:border-amber-400 transition"
       />
       <div id="searchResults" class="hidden absolute top-full left-0 right-0 bg-slate-950 border border-amber-500/40 rounded-lg shadow-2xl z-50 mt-1 max-h-48 overflow-y-auto font-mono text-xs"></div>
     </div>
 
     <div class="w-full md:w-1/3">
-      <label for="epciSelect" class="text-xs font-mono text-slate-400 block mb-1">Ou choisir l'EPCI :</label>
+      <label for="epciSelect" class="text-xs font-mono text-slate-400 block mb-1">{t.epciLabel}</label>
       <select 
         id="epciSelect" 
         class="w-full bg-slate-950 border border-slate-700 text-amber-400 text-xs font-mono rounded-lg p-2.5 focus:outline-none focus:border-amber-400"
       >
         {intercommunalites.map((epci) => (
           <option value={epci.id}>
-            {epci.icon} {epci.name} — {epci.pression}
+            {epci.icon} {epci.name} — {t.pLevels[epci.pression as keyof typeof t.pLevels] || epci.pression}
           </option>
         ))}
       </select>
@@ -379,7 +574,7 @@ const intercommunalites = [
     <div class="lg:col-span-7 flex flex-col justify-between">
       <div class="w-full h-[560px] rounded-xl border border-slate-800 bg-slate-900 relative overflow-hidden shadow-inner" id="gisMapContainer"></div>
       <div class="mt-3 flex items-center justify-between text-xs font-mono text-slate-400 bg-slate-900/90 px-4 py-2 rounded-lg border border-slate-800">
-        <span>📍 Survolez ou cliquez sur les repères pour auditer une intercommunalité</span>
+        <span>{t.mapHint}</span>
         <span class="text-amber-400 font-bold">ESRI Dark Gray Canvas</span>
       </div>
     </div>
@@ -387,7 +582,7 @@ const intercommunalites = [
     <!-- Inspecteur Intercommunal & Baromètre (5/12) -->
     <div class="lg:col-span-5 flex flex-col justify-between bg-slate-900 border border-slate-800 rounded-xl p-6">
       <div>
-        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider block mb-3">INSPECTEUR & BAROMÈTRE EPCI</span>
+        <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider block mb-3">{t.inspectorTitle}</span>
 
         <!-- Fiche Détails EPCI Sélectionnée -->
         <div id="epciDetailPanel" class="bg-slate-950 border border-slate-800 rounded-xl p-5">
@@ -399,18 +594,18 @@ const intercommunalites = [
               <span class="text-[10px] font-mono text-slate-400 block" id="panelEpciType">{intercommunalites[0].type}</span>
             </div>
             <span class="px-2.5 py-1 text-[11px] font-mono font-bold rounded bg-red-500/20 text-red-400 border border-red-500/30" id="panelEpciPression">
-              Pression : {intercommunalites[0].pression}
+              {t.pressurePrefix} {t.pLevels[intercommunalites[0].pression as keyof typeof t.pLevels] || intercommunalites[0].pression}
             </span>
           </div>
 
           <!-- BAROMÈTRE COMPARATIF (FONCTIONNALITÉ 3) -->
           <div class="mb-4 bg-slate-900/90 p-3 rounded-lg border border-slate-800/80">
-            <span class="text-[11px] font-mono text-slate-400 font-bold block mb-2">📊 Baromètre de Pression Foncière & Spéculation :</span>
+            <span class="text-[11px] font-mono text-slate-400 font-bold block mb-2">{t.barometerTitle}</span>
             
             <!-- Jauge 1 : Indice Pression globale -->
             <div class="mb-2">
               <div class="flex justify-between text-[10px] font-mono text-slate-400 mb-1">
-                <span>Indice Pression Spéculative :</span>
+                <span>{t.speculationIdx}</span>
                 <span class="text-amber-400 font-bold" id="panelBarometerValue">{intercommunalites[0].pressionValue}%</span>
               </div>
               <div class="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
@@ -421,32 +616,32 @@ const intercommunalites = [
             <!-- Jauge 2 : Part Résidences Secondaires -->
             <div class="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-slate-800 text-[10px] font-mono">
               <div class="bg-slate-950 p-2 rounded border border-slate-800">
-                <span class="text-slate-400 block">Résidences Secondaires :</span>
+                <span class="text-slate-400 block">{t.secHomes}</span>
                 <span class="text-cyan-400 font-bold text-xs" id="panelRatioSecundaire">{intercommunalites[0].ratioSecundaire}</span>
               </div>
               <div class="bg-slate-950 p-2 rounded border border-slate-800">
-                <span class="text-slate-400 block">Permis Tacites R.424-1 :</span>
+                <span class="text-slate-400 block">{t.tacitPermits}</span>
                 <span class="text-amber-400 font-bold text-xs" id="panelPermisTacites">{intercommunalites[0].permisTacitesCount}</span>
               </div>
             </div>
           </div>
 
           <div class="mb-3">
-            <span class="text-xs font-mono text-slate-400 block mb-1">Communes Membres (<span id="panelCommunesCount">{intercommunalites[0].communesCount}</span>) :</span>
+            <span class="text-xs font-mono text-slate-400 block mb-1">{t.memberCommunes} (<span id="panelCommunesCount">{intercommunalites[0].communesCount}</span>) :</span>
             <p class="text-xs font-serif text-slate-300 bg-slate-900 p-2.5 rounded border border-slate-800/80 leading-relaxed max-h-20 overflow-y-auto" id="panelEpciCommunes">
               {intercommunalites[0].details}
             </p>
           </div>
 
           <div class="mb-4">
-            <span class="text-xs font-mono text-slate-400 block mb-1">Indicateur Clé Audit :</span>
+            <span class="text-xs font-mono text-slate-400 block mb-1">{t.keyAudit}</span>
             <div class="text-xs font-mono font-bold text-cyan-400 bg-cyan-500/10 p-2 rounded border border-cyan-500/20" id="panelEpciIndicateur">
               {intercommunalites[0].indicateur}
             </div>
           </div>
 
           <div>
-            <span class="text-xs font-mono text-slate-400 block mb-1.5">{lang === 'en' ? 'Associated Impact Investigations (Clickable) :' : "Enquêtes d'Impact Associées (Cliquables) :"}</span>
+            <span class="text-xs font-mono text-slate-400 block mb-1.5">{t.assocInv}</span>
             <div class="flex flex-wrap gap-2 mb-4" id="panelEpciEnquetes">
               {intercommunalites[0].enquetesAssociees.map(id => {
                 const slug = enqueteSlugMap[id] || `01-le-grand-verrou-financier`;
@@ -468,7 +663,7 @@ const intercommunalites = [
             id="panelCadaActionBtn"
             class="w-full block text-center py-2.5 px-4 bg-amber-500 text-slate-950 font-bold rounded-lg text-xs uppercase tracking-wider font-mono hover:bg-amber-400 transition shadow-lg shadow-amber-500/20"
           >
-            ⚖️ Générer la saisine CADA pour cette Intercommunalité →
+            {t.cadaBtnPrefix} {intercommunalites[0].name} →
           </a>
         </div>
       </div>
@@ -476,7 +671,7 @@ const intercommunalites = [
   </div>
 </div>
 
-<script is:inline define:vars={{ intercommunalites, enqueteSlugMap, basePath, labelPrefix }}>
+<script is:inline define:vars={{ intercommunalites, enqueteSlugMap, basePath, labelPrefix, t }}>
   document.addEventListener('DOMContentLoaded', function() {
     const mapElement = document.getElementById('gisMapContainer');
     if (!mapElement || typeof L === 'undefined') return;
@@ -515,7 +710,7 @@ const intercommunalites = [
     // 1. Chargement de la Couche GeoJSON des 360 Communes sur le Pane Fond (zIndex 400)
     let communesGeoJsonLayer = null;
 
-    fetch('./corsica_communes.geojson')
+    fetch('/corsica_communes.geojson')
       .then(function(res) { return res.json(); })
       .then(function(data) {
         communesGeoJsonLayer = L.geoJSON(data, {
@@ -545,7 +740,7 @@ const intercommunalites = [
         fillOpacity: 0.95
       }).addTo(map);
 
-      circle.bindTooltip(`<b>${epci.name}</b><br/>${epci.communesCount} communes • Indice ${epci.pressionValue}%`, { permanent: false, direction: 'top' });
+      circle.bindTooltip(`<b>${epci.name}</b><br/>${epci.communesCount} ${t.tooltipCommunes} ${epci.pressionValue}%`, { permanent: false, direction: 'top' });
 
       circle.on('click', function() {
         selectEPCI(epci.id);
@@ -565,7 +760,7 @@ const intercommunalites = [
 
       document.getElementById('panelEpciName').innerHTML = `${epci.icon} ${epci.name}`;
       document.getElementById('panelEpciType').textContent = epci.type;
-      document.getElementById('panelEpciPression').textContent = `Pression : ${epci.pression}`;
+      document.getElementById('panelEpciPression').textContent = `${t.pressurePrefix} ${t.pLevels[epci.pression] || epci.pression}`;
       document.getElementById('panelCommunesCount').textContent = epci.communesCount;
       document.getElementById('panelEpciCommunes').textContent = epci.details;
       document.getElementById('panelEpciIndicateur').textContent = epci.indicateur;
@@ -578,7 +773,7 @@ const intercommunalites = [
 
       const actionBtn = document.getElementById('panelCadaActionBtn');
       if (actionBtn) {
-        actionBtn.textContent = `⚖️ Générer la saisine CADA pour ${epci.name} →`;
+        actionBtn.textContent = `${t.cadaBtnPrefix} ${epci.name} →`;
       }
 
       // Génération dynamique de vrais liens cliquables pour chaque enquête associée
@@ -669,7 +864,7 @@ const intercommunalites = [
             });
           });
         } else {
-          searchResults.innerHTML = `<div class="p-3 text-slate-400 text-center">Aucune commune trouvée</div>`;
+          searchResults.innerHTML = `<div class="p-3 text-slate-400 text-center">${t.noResult}</div>`;
           searchResults.classList.remove('hidden');
         }
       });

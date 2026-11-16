@@ -1,75 +1,290 @@
 ---
 import dvfData from '../data/corsica_dvf_360.json';
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const currentLang = ['fr', 'en', 'it', 'es', 'pt', 'ru', 'zh', 'ja'].includes(lang) ? lang : 'en';
+
+const i18n = {
+  fr: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 COMMUNES CORSES (BASE DVF)",
+    title: "🤝 Radar des Transactions & Valorisation Foncière (360 Communes)",
+    coverage: "Couverture : 100 % des 360 communes corses",
+    cartoLink: "Cartographie liée à",
+    whyTitle: "💡 Pourquoi consulter la base officielle DVF (Demandes de Valeurs Foncières) ?",
+    whyDesc: "Ce registre officiel des Finances Publiques (DGFiP) recense chaque transaction immobilière authentique en Corse. Il permet à chaque citoyen de détecter la spéculation foncière, les rachats par des SCI non-résidentes et les prix réels au mètre carré.",
+    attr: "Attribution légale officielle : Données Cadastre & DVF DGFiP.",
+    bufAttr: "Extraction et cartographie réalisées via la plateforme citoyenne Bufitonu.fr",
+    stat1: "Communes Surveillées",
+    stat2: "Transactions Auditées",
+    stat2Unit: "actes",
+    stat3: "Prix Moyen Corse / m²",
+    stat4: "Part SCI / Non-Résidents",
+    selectLabel: "RECHERCHER OU CHOISIR PARMI LES 360 COMMUNES CORSES :",
+    tensionLabel: "Tension",
+    avgPrice: "Prix Moyen / m² :",
+    growth5y: "Évolution 5 ans :",
+    deedsYr: "Actes / an :",
+    nonResPct: "% Non-Résidents :",
+    legalProof: "🔗 Preuve & Enquête Associée :",
+    btnInspectPrefix: "Inspecter les parcelles sur Bufitonu.fr",
+    btnInspectTownPrefix: "Inspecter",
+    btnInspectTownSuffix: "sur Bufitonu.fr",
+    btn3d: "Simulateur Loi Littoral 3D (Règle des 80m)"
+  },
+  en: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 CORSICAN MUNICIPALITIES (DVF REGISTRY)",
+    title: "🤝 Real Estate Transactions & Land Valuation Radar (360 Communes)",
+    coverage: "Coverage: 100% of all 360 Corsican Municipalities",
+    cartoLink: "Cartography linked to",
+    whyTitle: "💡 Why consult the official DVF (Land Value Requests) registry?",
+    whyDesc: "This official French Treasury (DGFiP) registry records every authenticated property and land sale completed in Corsica. It allows citizens to detect real estate speculation, acquisitions by non-resident corporate holdings, and compare real square-meter prices across all 360 municipalities.",
+    attr: "Official legal attribution: French Treasury (DGFiP) Cadastre & DVF Files.",
+    bufAttr: "Geospatial extraction & cross-referencing powered by citizen platform Bufitonu.fr",
+    stat1: "Municipalities Monitored",
+    stat2: "Audited Transactions",
+    stat2Unit: "deeds",
+    stat3: "Average Regional Price / m²",
+    stat4: "Offshore / Non-Resident Share",
+    selectLabel: "SEARCH OR SELECT AMONG THE 360 CORSICAN MUNICIPALITIES:",
+    tensionLabel: "Tension",
+    avgPrice: "Avg Price / m²:",
+    growth5y: "5-Year Growth:",
+    deedsYr: "Deeds / Year:",
+    nonResPct: "Non-Resident %:",
+    legalProof: "🔗 Associated Legal Proof & Investigation:",
+    btnInspectPrefix: "Inspect land parcels on Bufitonu.fr",
+    btnInspectTownPrefix: "Inspect",
+    btnInspectTownSuffix: "on Bufitonu.fr",
+    btn3d: "3D Coastal Continuity Simulator (80m Rule)"
+  },
+  it: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 COMUNI CORSI (REGISTRO DVF)",
+    title: "🤝 Radar Transazioni Immobiliari e Speculazione Fondiaria (360 Comuni)",
+    coverage: "Copertura: 100% dei 360 comuni della Corsica",
+    cartoLink: "Cartografia collegata a",
+    whyTitle: "💡 Perché consultare il registro ufficiale DVF (Valori Fondiari)?",
+    whyDesc: "Questo registro ufficiale del Tesoro francese (DGFiP) registra ogni compravendita immobiliare autenticata in Corsica. Permette ai cittadini di rilevare la speculazione edilizia, gli acquisti da parte di SCI non residenti e confrontare i prezzi reali al metro quadro in tutti i 360 comuni.",
+    attr: "Attribuzione legale ufficiale: Catasto e File DVF DGFiP.",
+    bufAttr: "Estrazione e mappatura realizzate tramite la piattaforma civica Bufitonu.fr",
+    stat1: "Comuni Monitorati",
+    stat2: "Transazioni Esaminate",
+    stat2Unit: "atti",
+    stat3: "Prezzo Medio Regionale / m²",
+    stat4: "Quota SCI / Non Residenti",
+    selectLabel: "CERCA O SELEZIONA TRA I 360 COMUNI DELLA CORSICA:",
+    tensionLabel: "Tensione",
+    avgPrice: "Prezzo Medio / m²:",
+    growth5y: "Crescita 5 anni:",
+    deedsYr: "Atti / anno:",
+    nonResPct: "% Non Residenti:",
+    legalProof: "🔗 Prova Legale e Inchiesta Associata:",
+    btnInspectPrefix: "Ispeziona particelle su Bufitonu.fr",
+    btnInspectTownPrefix: "Ispeziona",
+    btnInspectTownSuffix: "su Bufitonu.fr",
+    btn3d: "Simulatore 3D Legge Litorale (Regola 80m)"
+  },
+  es: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 MUNICIPIOS CORSOS (REGISTRO DVF)",
+    title: "🤝 Radar de Transacciones y Especulación Inmobiliaria (360 Municipios)",
+    coverage: "Cobertura: 100% de los 360 municipios de Córcega",
+    cartoLink: "Cartografía vinculada a",
+    whyTitle: "💡 ¿Por qué consultar el registro oficial DVF (Valores Inmobiliarios)?",
+    whyDesc: "Este registro oficial del Tesoro francés (DGFiP) recoge cada compraventa inmobiliaria autenticada en Córcega. Permite detectar la especulación urbanística, las adquisiciones por sociedades SCI no residentes y comparar precios reales por metro cuadrado en los 360 municipios.",
+    attr: "Atribución legal oficial: Catastro y Registros DVF DGFiP.",
+    bufAttr: "Extracción y cartografía realizadas mediante la plataforma ciudadana Bufitonu.fr",
+    stat1: "Municipios Vigilados",
+    stat2: "Transacciones Auditadas",
+    stat2Unit: "actos",
+    stat3: "Precio Medio Regional / m²",
+    stat4: "Cuota SCI / No Residentes",
+    selectLabel: "BUSCAR O ELEGIR ENTRE LOS 360 MUNICIPIOS DE CÓRCEGA:",
+    tensionLabel: "Tensión",
+    avgPrice: "Precio Medio / m²:",
+    growth5y: "Evolución 5 años:",
+    deedsYr: "Actos / año:",
+    nonResPct: "% No Residentes:",
+    legalProof: "🔗 Prueba Legal e Investigación Asociada:",
+    btnInspectPrefix: "Inspeccionar parcelas en Bufitonu.fr",
+    btnInspectTownPrefix: "Inspeccionar",
+    btnInspectTownSuffix: "en Bufitonu.fr",
+    btn3d: "Simulador 3D Ley de Costas (Regla 80m)"
+  },
+  pt: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 MUNICÍPIOS CORSOS (REGISTO DVF)",
+    title: "🤝 Radar de Transações e Especulação Imobiliária (360 Municípios)",
+    coverage: "Cobertura: 100% dos 360 municípios da Córsega",
+    cartoLink: "Cartografia ligada a",
+    whyTitle: "💡 Por que consultar o registo oficial DVF (Valores Fundiários)?",
+    whyDesc: "Este registo oficial do Tesouro Francês (DGFiP) regista cada compra e venda autenticada na Córsega. Permite aos cidadãos detetar especulação imobiliária, aquisições por empresas não residentes e comparar preços reais por m² nos 360 municípios.",
+    attr: "Atribuição legal oficial: Cadastro e Ficheiros DVF DGFiP.",
+    bufAttr: "Extração e cartografia realizadas pela plataforma cidadã Bufitonu.fr",
+    stat1: "Municípios Vigiados",
+    stat2: "Transações Auditadas",
+    stat2Unit: "escrituras",
+    stat3: "Preço Médio Regional / m²",
+    stat4: "Quota SCI / Não Residentes",
+    selectLabel: "PESQUISAR OU SELECIONAR ENTRE OS 360 MUNICÍPIOS DA CÓRSEGA:",
+    tensionLabel: "Tensão",
+    avgPrice: "Preço Médio / m²:",
+    growth5y: "Evolução 5 anos:",
+    deedsYr: "Atos / ano:",
+    nonResPct: "% Não Residentes:",
+    legalProof: "🔗 Prova Legal e Investigação Associada:",
+    btnInspectPrefix: "Inspecionar parcelas no Bufitonu.fr",
+    btnInspectTownPrefix: "Inspecionar",
+    btnInspectTownSuffix: "no Bufitonu.fr",
+    btn3d: "Simulador 3D Lei do Litoral (Regra 80m)"
+  },
+  ru: {
+    badge: "OPEN DATA DGFIP / INSEE — 360 КОММУН КОРСИКИ (РЕЕСТР DVF)",
+    title: "🤝 Радар сделок с недвижимостью и земельной спекуляции (360 коммун)",
+    coverage: "Охват: 100% всех 360 муниципалитетов Корсики",
+    cartoLink: "Картография связана с",
+    whyTitle: "💡 Зачем проверять официальный государственный реестр DVF?",
+    whyDesc: "Этот официальный реестр казначейства Франции (DGFiP) фиксирует каждую нотариальную сделку купли-продажи на Корсике. Он позволяет выявлять спекуляцию землей, скупку береговой линии нерезидентами и реальную цену за квадратный метр во всех 360 коммунах.",
+    attr: "Официальный источник: Кадастр и файлы DVF (DGFiP).",
+    bufAttr: "Анализ и картография выполнены гражданской платформой Bufitonu.fr",
+    stat1: "Коммун под контролем",
+    stat2: "Проверено сделок",
+    stat2Unit: "актов",
+    stat3: "Средняя цена / м²",
+    stat4: "Доля нерезидентов / SCI",
+    selectLabel: "ВЫБЕРИТЕ ИЗ 360 КОММУН КОРСИКИ:",
+    tensionLabel: "Напряжение",
+    avgPrice: "Средняя цена / м²:",
+    growth5y: "Рост за 5 лет:",
+    deedsYr: "Сделок / год:",
+    nonResPct: "% нерезидентов:",
+    legalProof: "🔗 Связанное доказательство и расследование:",
+    btnInspectPrefix: "Проверить участки на Bufitonu.fr",
+    btnInspectTownPrefix: "Проверить",
+    btnInspectTownSuffix: "на Bufitonu.fr",
+    btn3d: "3D-симулятор закона о побережье (80 м)"
+  },
+  zh: {
+    badge: "开放数据 DGFIP / INSEE — 科西嘉全部 360 个市镇 (DVF 不动产库)",
+    title: "🤝 房地产交易与土地投机监测雷达 (全岛 360 市镇)",
+    coverage: "覆盖率：100% 覆盖科西嘉全岛 360 个市镇",
+    cartoLink: "地图系统联动平台",
+    whyTitle: "💡 为何查阅法国财政部官方 DVF 房产交易登记库？",
+    whyDesc: "由法国财政总局 (DGFiP) 发布的 DVF 登记库记录了科西嘉每一笔经公证的不动产及土地买卖，使公民能够精准追踪海岸线投机炒地、非居民控股公司 (SCI) 圈地比例及全岛 360 市镇真实每平米成交均价。",
+    attr: "法定官方数据源：法国财政部 (DGFiP) 地籍与 DVF 档案。",
+    bufAttr: "空间提取与制图由公民监督平台 Bufitonu.fr 联合驱动",
+    stat1: "监测市镇数量",
+    stat2: "已审计交易数",
+    stat2Unit: "笔契约",
+    stat3: "全岛平均均价 / ㎡",
+    stat4: "非居民 / 离岸 SCI 占比",
+    selectLabel: "搜索或选择科西嘉 360 个市镇之一：",
+    tensionLabel: "市场压力",
+    avgPrice: "平均单价 / ㎡：",
+    growth5y: "5 年涨幅：",
+    deedsYr: "年均成交：",
+    nonResPct: "非居民买家 %：",
+    legalProof: "🔗 关联法律证据与调查档案：",
+    btnInspectPrefix: "在 Bufitonu.fr 核查地块档案",
+    btnInspectTownPrefix: "在 Bufitonu.fr 查看",
+    btnInspectTownSuffix: "地块",
+    btn3d: "3D 海岸线连续性法规模拟器 (80米线)"
+  },
+  ja: {
+    badge: "オープンデータ DGFIP / INSEE — コルシカ全360自治体 (DVF 台帳)",
+    title: "🤝 不動産取引・地価投機監視レーダー (全360自治体)",
+    coverage: "カバー率：コルシカ全360自治体を100%網羅",
+    cartoLink: "連携マッピング",
+    whyTitle: "💡 なぜ仏財務省公式 DVF（不動産取引価格台帳）を確認するのか？",
+    whyDesc: "フランス財務総局(DGFiP)が公開するこの公的台帳には、コルシカで成立したすべての公証不動産売買が記録されています。非居住者不動産会社(SCI)による買い占めや投機的値上がりを全360自治体レベルで検証できます。",
+    attr: "法定一次出典：フランス財務総局 (DGFiP) 地籍・DVFデータ。",
+    bufAttr: "空間データ抽出および地図化：市民プラットフォーム Bufitonu.fr",
+    stat1: "監視対象自治体",
+    stat2: "監査済み取引件数",
+    stat2Unit: "件",
+    stat3: "島内平均単価 / ㎡",
+    stat4: "非居住者・SCI 買収比率",
+    selectLabel: "コルシカ全360自治体から検索・選択：",
+    tensionLabel: "逼迫度",
+    avgPrice: "平均単価 / ㎡：",
+    growth5y: "5年間上昇率：",
+    deedsYr: "年間取引数：",
+    nonResPct: "非居住者比率 %：",
+    legalProof: "🔗 関連する法的証拠・調査ファイル：",
+    btnInspectPrefix: "Bufitonu.fr で区画を調査",
+    btnInspectTownPrefix: "Bufitonu.fr で調査：",
+    btnInspectTownSuffix: "",
+    btn3d: "3D沿岸法シミュレーター (80m連続性ルール)"
+  }
+};
+
+const t = i18n[currentLang as keyof typeof i18n] || i18n.en;
 ---
 
 <div class="bg-slate-950 border border-cyan-500/30 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="foncier-dvf-section">
-  <!-- Section Header -->
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
     <div>
       <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-        OPEN DATA DGFIP / INSEE — 360 CORSICAN MUNICIPALITIES (DVF REGISTRY)
+        {t.badge}
       </span>
       <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2 flex items-center gap-2">
-        <span>🤝 Real Estate Transactions & Land Valuation Radar (360 Communes)</span>
+        <span>{t.title}</span>
       </h3>
     </div>
     <div class="flex flex-col items-start md:items-end gap-1.5">
       <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-        Coverage : 100% of all 360 Corsican Municipalities
+        {t.coverage}
       </div>
       <div class="text-[10px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/30 flex items-center gap-1">
         <span>🛰️</span>
-        <span>Cartography linked to <strong>Bufitonu.fr</strong></span>
+        <span>{t.cartoLink} <strong>Bufitonu.fr</strong></span>
       </div>
     </div>
   </div>
 
-  <!-- Educational Note & Legal Attribution -->
   <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-4 mb-6 space-y-3">
     <h4 class="text-sm font-bold font-serif text-cyan-400 mb-1 flex items-center gap-2">
-      💡 Why consult the official DVF (Land Value Requests) registry?
+      {t.whyTitle}
     </h4>
     <p class="text-xs text-slate-300 font-serif leading-relaxed">
-      This official French Treasury (DGFiP) registry records <strong>every authenticated property and land sale</strong> completed in Corsica. It allows citizens to detect <strong>real estate speculation</strong>, massive acquisitions by non-resident corporate holdings, and compare real square-meter prices against local household incomes across all 360 municipalities.
+      {t.whyDesc}
     </p>
     <div class="pt-2 border-t border-cyan-500/20 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
-      <span>⚖️ <strong>Official legal attribution :</strong> French Treasury (DGFiP) Cadastre & DVF Files.</span>
-      <span class="text-amber-400 font-bold">Geospatial extraction & cross-referencing powered by citizen platform Bufitonu.fr</span>
+      <span>⚖️ <strong>{t.attr}</strong></span>
+      <span class="text-amber-400 font-bold">{t.bufAttr}</span>
     </div>
   </div>
 
-  <!-- Islandwide Key Figures -->
   <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
     <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
-      <span class="text-xs font-mono text-slate-400 block mb-1">Municipalities Monitored</span>
+      <span class="text-xs font-mono text-slate-400 block mb-1">{t.stat1}</span>
       <span class="text-xl font-bold font-mono text-amber-400">360 / 360</span>
     </div>
     <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
-      <span class="text-xs font-mono text-slate-400 block mb-1">Audited Transactions</span>
-      <span class="text-xl font-bold font-mono text-slate-200">{dvfData.statistiques_globales.total_transactions_enregistrees.toLocaleString()} deeds</span>
+      <span class="text-xs font-mono text-slate-400 block mb-1">{t.stat2}</span>
+      <span class="text-xl font-bold font-mono text-slate-200">{dvfData.statistiques_globales.total_transactions_enregistrees.toLocaleString()} {t.stat2Unit}</span>
     </div>
     <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
-      <span class="text-xs font-mono text-slate-400 block mb-1">Average Regional Price / m²</span>
+      <span class="text-xs font-mono text-slate-400 block mb-1">{t.stat3}</span>
       <span class="text-xl font-bold font-mono text-cyan-400">{dvfData.statistiques_globales.prix_moyen_m2_corse} € / m²</span>
     </div>
     <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-center">
-      <span class="text-xs font-mono text-slate-400 block mb-1">Offshore / Non-Resident Share</span>
+      <span class="text-xs font-mono text-slate-400 block mb-1">{t.stat4}</span>
       <span class="text-xl font-bold font-mono text-red-400">{dvfData.statistiques_globales.part_acquisitions_sci_non_residents} %</span>
     </div>
   </div>
 
-  <!-- Municipality Search Dropdown -->
   <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
     <div class="mb-4">
-      <label class="block text-xs font-mono text-slate-400 mb-1">SEARCH OR SELECT AMONG THE 360 CORSICAN MUNICIPALITIES :</label>
+      <label class="block text-xs font-mono text-slate-400 mb-1">{t.selectLabel}</label>
       <select id="dvfCommuneSelectEn" class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-mono">
         {dvfData.communes.map(c => (
-          <option value={c.code_insee}>{c.commune} — {c.epci} — {c.prix_m2_moyen} €/m² — Tension {c.niveau_tension}</option>
+          <option value={c.code_insee}>{c.commune} — {c.epci} — {c.prix_m2_moyen} €/m² — {t.tensionLabel} {c.niveau_tension}</option>
         ))}
       </select>
     </div>
 
-    <!-- Dynamic Detail Card -->
     <div id="dvfDetailPanelEn" class="bg-slate-950 p-5 rounded-lg border border-slate-800 space-y-4">
       <div class="flex justify-between items-center border-b border-slate-800 pb-3">
         <div>
@@ -81,37 +296,36 @@ import dvfData from '../data/corsica_dvf_360.json';
           </span>
         </div>
         <span id="dvfTensionBadgeEn" class="px-3 py-1 bg-red-500/20 text-red-400 border border-red-500/40 rounded-full text-xs font-mono font-bold">
-          Tension {dvfData.communes[0].niveau_tension}
+          {t.tensionLabel} {dvfData.communes[0].niveau_tension}
         </span>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
         <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
-          <span class="text-slate-500 block">Avg Price / m²:</span>
+          <span class="text-slate-500 block">{t.avgPrice}</span>
           <span id="dvfPrixM2En" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].prix_m2_moyen} €</span>
         </div>
         <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
-          <span class="text-slate-500 block">5-Year Growth:</span>
+          <span class="text-slate-500 block">{t.growth5y}</span>
           <span id="dvfEvolEn" class="text-amber-400 font-bold text-sm">+{dvfData.communes[0].evolution_5ans_pct}%</span>
         </div>
         <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
-          <span class="text-slate-500 block">Deeds / Year:</span>
+          <span class="text-slate-500 block">{t.deedsYr}</span>
           <span id="dvfActesEn" class="text-slate-200 font-bold text-sm">{dvfData.communes[0].transactions_annee}</span>
         </div>
         <div class="bg-slate-900 p-2.5 rounded border border-slate-800">
-          <span class="text-slate-500 block">Non-Resident %:</span>
+          <span class="text-slate-500 block">{t.nonResPct}</span>
           <span id="dvfPctSciEn" class="text-red-400 font-bold text-sm">{dvfData.communes[0].pct_non_residents_sci}%</span>
         </div>
       </div>
 
       <div class="bg-slate-900/90 p-3 rounded border border-cyan-500/30 text-xs font-mono">
-        <span class="text-cyan-400 font-bold block mb-1">🔗 Associated Legal Proof & Investigation:</span>
+        <span class="text-cyan-400 font-bold block mb-1">{t.legalProof}</span>
         <span id="dvfPieceAssocieeEn" class="text-slate-300">
           {dvfData.communes[0].piece_cada_associee}
         </span>
       </div>
 
-      <!-- Direct Interactive Gateway to Bufitonu.fr & 3D Coastal Law Simulator -->
       <div class="pt-3 border-t border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
         <a 
           id="dvfBufitonuBtnEn"
@@ -121,7 +335,7 @@ import dvfData from '../data/corsica_dvf_360.json';
           class="px-4 py-2.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/40 hover:border-amber-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2 shadow-md shadow-amber-500/10"
         >
           <span>🛰️</span>
-          <span id="dvfBufitonuLabelEn">Inspect land parcels on Bufitonu.fr</span>
+          <span id="dvfBufitonuLabelEn">{t.btnInspectPrefix}</span>
           <span>→</span>
         </a>
         <a 
@@ -131,7 +345,7 @@ import dvfData from '../data/corsica_dvf_360.json';
           class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-850 text-cyan-400 border border-cyan-500/30 hover:border-cyan-400 font-mono text-xs font-bold transition flex items-center justify-center gap-2"
         >
           <span>📐</span>
-          <span>3D Coastal Continuity Simulator (80m Rule)</span>
+          <span>{t.btn3d}</span>
           <span>↗</span>
         </a>
       </div>
@@ -139,7 +353,7 @@ import dvfData from '../data/corsica_dvf_360.json';
   </div>
 </div>
 
-<script is:inline define:vars={{ communesList: dvfData.communes }}>
+<script is:inline define:vars={{ communesList: dvfData.communes, t }}>
   document.addEventListener('DOMContentLoaded', () => {
     const select = document.getElementById('dvfCommuneSelectEn');
     if (!select) return;
@@ -151,7 +365,7 @@ import dvfData from '../data/corsica_dvf_360.json';
 
       document.getElementById('dvfCommuneNameEn').textContent = c.commune;
       document.getElementById('dvfEpciNameEn').textContent = `EPCI : ${c.epci}`;
-      document.getElementById('dvfTensionBadgeEn').textContent = `Tension ${c.niveau_tension}`;
+      document.getElementById('dvfTensionBadgeEn').textContent = `${t.tensionLabel} ${c.niveau_tension}`;
       document.getElementById('dvfPrixM2En').textContent = `${c.prix_m2_moyen} €`;
       document.getElementById('dvfEvolEn').textContent = `+${c.evolution_5ans_pct}%`;
       document.getElementById('dvfActesEn').textContent = c.transactions_annee;
@@ -160,7 +374,7 @@ import dvfData from '../data/corsica_dvf_360.json';
 
       const bufitonuLabel = document.getElementById('dvfBufitonuLabelEn');
       if (bufitonuLabel) {
-        bufitonuLabel.textContent = `Inspect ${c.commune} on Bufitonu.fr`;
+        bufitonuLabel.textContent = `${t.btnInspectTownPrefix} ${c.commune} ${t.btnInspectTownSuffix}`.trim();
       }
     });
   });

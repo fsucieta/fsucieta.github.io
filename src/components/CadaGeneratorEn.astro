@@ -1,65 +1,261 @@
 ---
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const currentLang = ['fr', 'en', 'it', 'es', 'pt', 'ru', 'zh', 'ja'].includes(lang) ? lang : 'en';
+
 const investigationsList = [
-  { id: 1, title: "Investigation 01 : The Great Financial Lock & Offshore Mortgages" },
-  { id: 2, title: "Investigation 02 : The Myth of Subsidies & The 420M€ Fiscal Seizure" },
-  { id: 3, title: "Investigation 03 : The Universal Land Manifesto & Residency Law" },
-  { id: 4, title: "Investigation 04 : The 175M m³ Water Sovereignty Blueprint" },
-  { id: 5, title: "Investigation 05 : The Offshore SCI Empire & Beneficial Ownership" },
-  { id: 6, title: "Investigation 06 : Fishing Quotas & Fuel Price-Fixing Cartel" },
-  { id: 7, title: "Investigation 07 : The Secret Mining Cadastre & Mineral Commons" },
-  { id: 8, title: "Investigation 08 : Forest Plunder & 500,000-Ha Timber Rente" },
-  { id: 9, title: "Investigation 09 : Tourism Monoculture & 3B€ Capital Flight" },
-  { id: 10, title: "Investigation 10 : Senior Civil Service Tutelage & Administrative Churn" },
-  { id: 11, title: "Investigation 11 : Military Enclaves (2,800 Ha) & NATO Leases" },
-  { id: 12, title: "Investigation 12 : Healthcare Dependence & Medical Evacuations" },
-  { id: 13, title: "Investigation 13 : Educational Under-Investment & Language Denial" },
-  { id: 14, title: "Investigation 14 : Judicial Dispossession & JIRS Marseille" },
-  { id: 15, title: "Investigation 15 : Legality Control & Asymmetric Prefectoral Vetoes" },
-  { id: 16, title: "Investigation 16 : The Miot Decrees & Succession Land Security" },
-  { id: 17, title: "Investigation 17 : The European Charter Lock & Linguistic Isolation" },
-  { id: 18, title: "Investigation 18 : The Stolen Light & 199 MW State Hydro Monopoly" },
-  { id: 19, title: "Investigation 19 : Digital Dependence & Subsea Fiber Gateways" },
-  { id: 20, title: "Investigation 20 : CAP Subsidy Capture & Speculative Pastures" },
-  { id: 21, title: "Investigation 21 : SYVADEC Waste Disaster & 100M€ Landfill Monopoly" },
-  { id: 22, title: "Investigation 22 : The 7.3 Billion Euro Savings Siphoning" },
-  { id: 23, title: "Investigation 23 : Civil Defense Deficit & Firefighting Fleet" },
-  { id: 24, title: "Investigation 24 : Tacit Building Permits & Coastal Concrete" },
-  { id: 25, title: "Investigation 25 : Environmental MRAe Opacity & Anonymous Petitioners" },
-  { id: 26, title: "Investigation 26 : Fake Agricultural Sheds Converted to Villas" },
-  { id: 27, title: "Investigation 27 : The Angelo Cable Car 40M€ Airborne Fiasco" },
-  { id: 28, title: "Investigation 28 : Muvitarra Public Bus Transit Breakdown" },
-  { id: 29, title: "Special Issue 01 : The Paoli Legacy & The Transatlantic Debt" }
+  { id: 1, title: "01 — Grand Financial Lock & Bullet Loans" },
+  { id: 2, title: "02 — The Subsidies Myth & €809M Fiscal Seizure" },
+  { id: 3, title: "03 — Universal Land Manifesto & Residency Status" },
+  { id: 4, title: "04 — Water Sovereignty (Veolia / EDF / 175M m³)" },
+  { id: 5, title: "05 — Offshore SCI Empire & Beneficial Ownership" },
+  { id: 6, title: "06 — Fishing Quotas & Maritime Sovereignty" },
+  { id: 7, title: "07 — Secret Mining Cadastre & BRGM Permits" },
+  { id: 8, title: "08 — Corsican Forest Plunder & Biomass" },
+  { id: 9, title: "09 — Tourism Capital Flight & €3B Leakage" },
+  { id: 10, title: "10 — Senior Bureaucracy & Prefectoral Tutelage" },
+  { id: 11, title: "11 — Military Enclaves (2,842 Ha) & €19.75M Taxes" },
+  { id: 12, title: "12 — Healthcare Underfunding & EVASAN" },
+  { id: 13, title: "13 — Higher Education & Language Rights" },
+  { id: 14, title: "14 — Special JIRS Jurisdiction" },
+  { id: 15, title: "15 — Selective Legality Control" },
+  { id: 16, title: "16 — Miot Decrees & Succession Land Tax" },
+  { id: 17, title: "17 — European Charter & Article 2" },
+  { id: 18, title: "18 — EDF SEI Monopoly & €6.3B Thermal Rents" },
+  { id: 19, title: "19 — Subsea Cables & Digital Dependency" },
+  { id: 20, title: "20 — CAP Subsidies & Speculative Pastures" },
+  { id: 21, title: "21 — SYVADEC Waste Crisis & Landfills" },
+  { id: 22, title: "22 — €7.3B Banking Capture & Credit Rationing" },
+  { id: 23, title: "23 — Civil Defense Deficit & Olbia Canadairs" },
+  { id: 24, title: "24 — Tacit Building Permits & Coastal Concrete" },
+  { id: 25, title: "25 — Environmental MRAe Opacity" },
+  { id: 26, title: "26 — Fuel Depot Cartel (ADLC 25-D-07 €187.5M)" },
+  { id: 27, title: "27 — Angelo Urban Cable Car & POMA Annuity" },
+  { id: 28, title: "28 — SPL Muvitarra Public Bus Breakdown" },
+  { id: 29, title: "29 — Paoli Legacy & International Law" }
 ];
+
+const i18n = {
+  fr: {
+    badge: "ACTION CITOYENNE — DROIT D'ACCÈS CADA (ART. L. 311-1 CRPA)",
+    title: "⚖️ Exiger les Pièces Publiques — Le Droit de Savoir",
+    sub: "Générez une demande officielle de communication en 1 clic",
+    infoTitle: "💡 Qu'est-ce que le recours CADA ?",
+    infoDesc: "Aucun maire, préfet ou délégataire ne peut cacher un document public (contrats, permis, budgets). Sous l'article L. 311-1 du CRPA, l'administration a 30 jours pour vous répondre avant saisine gratuite de la CADA.",
+    lblTopic: "1. CHOISIR LE DOSSIER D'ENQUÊTE :",
+    lblAuth: "2. AUTORITÉ PUBLIQUE VISÉE (Mairie, Préfecture, OEHC) :",
+    phAuth: "ex: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. VOTRE NOM COMPLET / QUALITÉ CITOYENNE :",
+    phName: "ex: Jean Paoli, Citoyen",
+    btnGen: "Générer la Lettre Officielle ↗",
+    lblPrev: "APERÇU DU RECOURS LÉGAL :",
+    dateLoc: "fr-FR",
+    defAuth: "[Autorité Publique Visée]",
+    defName: "[Nom du Citoyen]",
+    tplTo: "À l'attention de :",
+    tplDate: "Date :",
+    tplFrom: "Demandeur :",
+    tplSubj: "OBJET : Demande officielle de communication de documents administratifs (Art. L. 311-1 du CRPA)",
+    tplBody1: "Madame, Monsieur,\n\nEn application du droit fondamental d'accès aux documents administratifs garanti par les articles L. 311-1 et suivants du Code des relations entre le public et l'administration (CRPA), je vous demande communication intégrale et non caviardée de l'ensemble des actes, contrats, délibérations et annexes relatifs au dossier suivant :",
+    tplBody2: "Conformément à la loi, vous disposez d'un délai d'un (1) mois à compter de la réception de la présente pour me transmettre ces pièces par voie électronique ou postale. À défaut de réponse dans ce délai, ce dossier sera immédiatement porté devant la Commission d'Accès aux Documents Administratifs (CADA) puis devant le Tribunal Administratif de Bastia.\n\nVeuillez agréer mes salutations républicaines,"
+  },
+  en: {
+    badge: "CITIZEN ACTION — FREEDOM OF INFORMATION (FOIA / ART. L. 311-1 CRPA)",
+    title: "⚖️ Demand Public Records — The Citizen Right-to-Know",
+    sub: "Generate official administrative records requests in 1 click",
+    infoTitle: "💡 What is the Citizen Right to Know?",
+    infoDesc: "Under French and European public transparency law, no mayor, prefect, or public utility director can conceal public documents (budgets, building permits, water contracts). If an agency refuses after 30 days, refer directly to the statutory CADA watchdog.",
+    lblTopic: "1. SELECT INVESTIGATION TOPIC:",
+    lblAuth: "2. TARGET PUBLIC AUTHORITY (Town Hall, Prefecture, Utility):",
+    phAuth: "e.g. Mairie de Porto-Vecchio, Préfecture de Corse, OEHC...",
+    lblName: "3. YOUR FULL NAME / CITIZEN IDENTITY:",
+    phName: "e.g. Jean Paoli, Citizen Investigator",
+    btnGen: "Generate Official Legal Notice ↗",
+    lblPrev: "PREVIEW OF STATUTORY DEMAND LETTER:",
+    dateLoc: "en-US",
+    defAuth: "[Target Public Authority / Prefecture]",
+    defName: "[Citizen Name]",
+    tplTo: "To:",
+    tplDate: "Date:",
+    tplFrom: "From:",
+    tplSubj: "SUBJECT: Formal Request for Communication of Administrative Records under Article L. 311-1 of the French CRPA",
+    tplBody1: "Sir/Madam,\n\nPursuant to the fundamental right of access to public records guaranteed by Article L. 311-1 et seq. of the Code of Relations between the Public and the Administration (CRPA), I hereby formally request full, unredacted certified copies of all administrative decisions, concession ledgers, and technical audit files relating to:",
+    tplBody2: "Under statutory law, public authorities are required to communicate requested records within thirty (30) days of receipt. In the absence of communication within this mandatory timeframe, this file will be formally referred to the Commission d'Accès aux Documents Administratifs (CADA) and the Administrative Court of Bastia.\n\nRespectfully submitted,"
+  },
+  it: {
+    badge: "AZIONE CIVICA — DIRITTO DI ACCESSO AGLI ATTI (ART. L. 311-1 CRPA)",
+    title: "⚖️ Richiedi gli Atti Pubblici — Diritto di Sapere",
+    sub: "Genera un'istanza formale di accesso agli atti in 1 clic",
+    infoTitle: "💡 Come funziona il ricorso CADA / FOIA?",
+    infoDesc: "Secondo la legge francese ed europea sulla trasparenza, nessun sindaco, prefetto o concessionario può occultare bilanci, permessi edilizi o contratti pubblici. Dopo 30 giorni senza risposta è possibile adire gratuitamente la CADA e il Tribunale Amministrativo.",
+    lblTopic: "1. SELEZIONA IL FASCICOLO D'INCHIESTA:",
+    lblAuth: "2. AUTORITÀ PUBBLICA DESTINATARIA (Comune, Prefettura, Ente):",
+    phAuth: "es: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. NOME COMPLETO / QUALIFICA CITTADINA:",
+    phName: "es: Mario Rossi, Cittadino",
+    btnGen: "Genera Istanza Legale Ufficiale ↗",
+    lblPrev: "ANTEPRIMA DELLA LETTERA LEGALE:",
+    dateLoc: "it-IT",
+    defAuth: "[Autorità Pubblica Destinataria]",
+    defName: "[Nome Cittadino]",
+    tplTo: "Alla cortese attenzione di:",
+    tplDate: "Data:",
+    tplFrom: "Mittente:",
+    tplSubj: "OGGETTO: Istanza formale di accesso agli atti amministrativi ai sensi dell'Art. L. 311-1 CRPA",
+    tplBody1: "Gentile Autorità,\n\nAi sensi del diritto legale di accesso ai documenti amministrativi sancito dagli articoli L. 311-1 e seguenti del Codice CRPA francese, chiedo formalmente copia integrale e non censurata di tutti gli atti, contratti di concessione, delibere e allegati relativi a:",
+    tplBody2: "Per legge l'amministrazione è tenuta a rispondere entro trenta (30) giorni. In caso di silenzio o diniego, la pratica verrà trasmessa alla Commission d'Accès aux Documents Administratifs (CADA) e al Tribunale Amministrativo di Bastia.\n\nDistinti saluti,"
+  },
+  es: {
+    badge: "ACCIÓN CIUDADANA — ACCESO A LA INFORMACIÓN (ART. L. 311-1 CRPA)",
+    title: "⚖️ Exigir Documentos Públicos — Derecho a Saber",
+    sub: "Genere una solicitud legal de transparencia en 1 clic",
+    infoTitle: "💡 ¿Cómo funciona la solicitud CADA / Transparencia?",
+    infoDesc: "La ley francesa y europea prohíbe a cualquier alcalde, prefecto o concesionaria ocultar presupuestos, contratos de agua o permisos urbanísticos. Si no responden en 30 días, puede acudir gratuitamente ante la CADA y el Tribunal Administrativo.",
+    lblTopic: "1. SELECCIONE EL EXPEDIENTE DE INVESTIGACIÓN:",
+    lblAuth: "2. AUTORIDAD PÚBLICA DESTINATARIA (Ayuntamiento, Prefectura):",
+    phAuth: "ej: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. NOMBRE COMPLETO / IDENTIDAD CIUDADANA:",
+    phName: "ej: Juan Paoli, Ciudadano",
+    btnGen: "Generar Notificación Legal Oficial ↗",
+    lblPrev: "VISTA PREVIA DE LA SOLICITUD FORMAL:",
+    dateLoc: "es-ES",
+    defAuth: "[Autoridad Pública Destinataria]",
+    defName: "[Nombre del Ciudadano]",
+    tplTo: "Dirigido a:",
+    tplDate: "Fecha:",
+    tplFrom: "Solicitante:",
+    tplSubj: "ASUNTO: Solicitud formal de acceso a documentos administrativos conforme al Artículo L. 311-1 del CRPA",
+    tplBody1: "Estimado/a responsable,\n\nEn virtud del derecho fundamental de acceso a los archivos públicos garantizado por los artículos L. 311-1 y siguientes del Código CRPA francés, solicito formalmente copia íntegra sin censura de todas las resoluciones, contratos concesionales y anexos técnicos relativos a:",
+    tplBody2: "Según la ley vigente, el organismo dispone de un plazo de treinta (30) días naturales para remitir la documentación. En caso de silencio o denegación, este expediente se elevará ante la Commission d'Accès aux Documents Administratifs (CADA) y el Tribunal Administrativo de Bastia.\n\nAtentamente,"
+  },
+  pt: {
+    badge: "AÇÃO CIDADÃ — ACESSO À INFORMAÇÃO (ART. L. 311-1 CRPA)",
+    title: "⚖️ Exigir Documentos Públicos — Direito a Saber",
+    sub: "Gere um pedido formal de transparência administrativa em 1 clique",
+    infoTitle: "💡 Como funciona o pedido CADA?",
+    infoDesc: "Ao abrigo da lei francesa e europeia, nenhum presidente de câmara ou entidade pública pode ocultar orçamentos, contratos ou licenças de construção. Após 30 dias sem resposta, recorra gratuitamente à CADA e ao Tribunal Administrativo.",
+    lblTopic: "1. SELECIONE O PROCESSO DE INVESTIGAÇÃO:",
+    lblAuth: "2. AUTORIDADE PÚBLICA VISADA (Câmara, Prefeitura):",
+    phAuth: "ex: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. NOME COMPLETO / IDENTIDADE CIDADÃ:",
+    phName: "ex: João Paoli, Cidadão",
+    btnGen: "Gerar Requerimento Legal Oficial ↗",
+    lblPrev: "PRÉ-VISUALIZAÇÃO DA CARTA LEGAL:",
+    dateLoc: "pt-PT",
+    defAuth: "[Autoridade Pública Visada]",
+    defName: "[Nome do Cidadão]",
+    tplTo: "Para:",
+    tplDate: "Data:",
+    tplFrom: "Requerente:",
+    tplSubj: "ASSUNTO: Requerimento oficial de acesso a documentos administrativos ao abrigo do Artigo L. 311-1 do CRPA",
+    tplBody1: "Exmo(a). Senhor(a),\n\nNos termos do direito fundamental de acesso a documentos públicos garantido pelos artigos L. 311-1 e seguintes do Código CRPA francês, venho requerer formalmente cópia integral e não rasurada de todas as decisões, contratos de concessão e auditorias respeitantes a:",
+    tplBody2: "Nos termos da lei, a administração dispõe de trinta (30) dias para comunicar os documentos. Na falta de resposta, o processo será remetido à Commission d'Accès aux Documents Administratifs (CADA) e ao Tribunal Administrativo de Bastia.\n\nCom os melhores cumprimentos,"
+  },
+  ru: {
+    badge: "ГРАЖДАНСКОЕ ДЕЙСТВИЕ — ПРАВО НА ДОСТУП К ИНФОРМАЦИИ (CRPA L. 311-1)",
+    title: "⚖️ Потребовать официальные документы — Право знать",
+    sub: "Сформируйте юридический запрос в 1 клик",
+    infoTitle: "💡 Как работает закон о доступе CADA?",
+    infoDesc: "По закону Франции и ЕС ни мэр, ни префект не вправе скрывать муниципальные бюджеты, водные контракты или разрешения на строительство. При отсутствии ответа через 30 дней дело бесплатно передается в комиссию CADA и Административный суд Бастии.",
+    lblTopic: "1. ВЫБЕРИТЕ ТЕМУ РАССЛЕДОВАНИЯ:",
+    lblAuth: "2. ГОСУДАРСТВЕННЫЙ ОРГАН (Мэрия, Префектура):",
+    phAuth: "напр.: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. ВАШЕ ИМЯ / ГРАЖДАНСКИЙ СТАТУС:",
+    phName: "напр.: Иван Паоли, Гражданин",
+    btnGen: "Сформировать официальный запрос ↗",
+    lblPrev: "ПРЕДПРОСМОТР ЮРИДИЧЕСКОГО ЗАПРОСА:",
+    dateLoc: "ru-RU",
+    defAuth: "[Государственный орган]",
+    defName: "[Имя заявителя]",
+    tplTo: "Кому:",
+    tplDate: "Дата:",
+    tplFrom: "От:",
+    tplSubj: "ТЕМА: Официальный запрос о предоставлении административных документов (Ст. L. 311-1 Кодекса CRPA)",
+    tplBody1: "Уважаемый руководитель,\n\nНа основании законного права граждан на доступ к публичным документам (ст. L. 311-1 и последующие статьи Кодекса CRPA Франции) официально требую предоставить полные заверенные копии всех постановлений, концессионных договоров и аудиторских отчетов по следующему вопросу:",
+    tplBody2: "По закону ответ должен быть предоставлен в течение тридцати (30) дней. В случае отказа или молчания материалы будут направлены в Комиссию CADA и Административный суд Бастии.\n\nС уважением,"
+  },
+  zh: {
+    badge: "公民行动 — 法定信息公开申请权 (法国 CRPA 第 L. 311-1 条)",
+    title: "⚖️ 依法索取官方行政文件 — 公民知情权",
+    sub: "一键生成具法律效力的行政信息公开申请函",
+    infoTitle: "💡 什么是 CADA 信息公开申诉制度？",
+    infoDesc: "根据法国与欧盟透明法案，任何市长、省长或公用事业机构均不得隐瞒公共预算、水务合同或建筑许可。若行政机关在 30 天内未予答复，可免费向法国行政文件获取委员会 (CADA) 及巴斯蒂亚行政法院申诉。",
+    lblTopic: "1. 选择关联调查专题：",
+    lblAuth: "2. 申请公开的行政机关（市政厅、省政府、水务局）：",
+    phAuth: "例：Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. 您的姓名 / 公民身份：",
+    phName: "例：Jean Paoli, Citizen",
+    btnGen: "生成正式法律申请函 ↗",
+    lblPrev: "法定申请函正文预览：",
+    dateLoc: "zh-CN",
+    defAuth: "[目标行政机关名称]",
+    defName: "[申请人姓名]",
+    tplTo: "致：",
+    tplDate: "日期：",
+    tplFrom: "申请人：",
+    tplSubj: "主旨：依据法国行政关系法典 (CRPA) 第 L. 311-1 条正式申请公开行政档案",
+    tplBody1: "敬启者：\n\n根据《法国公众与行政机关关系法典》(CRPA) 第 L. 311-1 条及后续条款所保障的公民基本知情权，本人正式请求提供与以下调查事项相关的全部未经删减行政决议、特许经营合同及财务审计附件的完整副本：",
+    tplBody2: "依法定程序，贵机关须于收到本函之日起三十 (30) 日内予以交付。逾期未复或拒绝公开，本卷宗将依法提交至法国行政文件获取委员会 (CADA) 及巴斯蒂亚行政法院裁决。\n\n此致"
+  },
+  ja: {
+    badge: "市民アクション — 公文書開示請求権 (仏行政関係法典 L. 311-1条)",
+    title: "⚖️ 公的記録の開示を請求する — 市民の知る権利",
+    sub: "ワンクリックで法的な公文書開示請求書を生成",
+    infoTitle: "💡 CADA（行政文書アクセス委員会）とは？",
+    infoDesc: "フランスおよびEUの情報公開法により、市長・県知事・公営機関は公共予算・水道契約・建築許可等の公文書を隠匿できません。30日以内に回答がない場合はCADAおよびバスティア行政裁判所へ無料で異議申し立てが可能です。",
+    lblTopic: "1. 関連する調査トピックを選択：",
+    lblAuth: "2. 請求先の公的機関（市役所・県庁・公社）：",
+    phAuth: "例: Mairie de Porto-Vecchio, Préfecture de Corse...",
+    lblName: "3. ご氏名 / 市民名義：",
+    phName: "例: Jean Paoli, Citizen",
+    btnGen: "公式開示請求書を生成 ↗",
+    lblPrev: "法的請求書プレビュー：",
+    dateLoc: "ja-JP",
+    defAuth: "[請求先の公的機関]",
+    defName: "[請求者氏名]",
+    tplTo: "宛先：",
+    tplDate: "日付：",
+    tplFrom: "請求者：",
+    tplSubj: "件名：フランス行政関係法典(CRPA)第L.311-1条に基づく行政文書の正式開示請求",
+    tplBody1: "関係機関御中\n\nフランス公衆・行政関係法典(CRPA)第L.311-1条以下に保証された公文書アクセス権に基づき、下記の案件に関する一切の行政決定、委託契約書、財務監査資料の完全かつ無修正の写しの交付を正式に請求いたします：",
+    tplBody2: "法定期間により受領後30日以内の回答・交付が義務付けられております。期限内に回答がない場合、行政文書アクセス委員会(CADA)およびバスティア行政裁判所へ正式に付託いたします。\n\n敬具"
+  }
+};
+
+const t = i18n[currentLang as keyof typeof i18n] || i18n.en;
 ---
 
 <div class="bg-slate-950 border border-amber-500/30 rounded-2xl p-6 md:p-8 shadow-2xl my-12" id="cada-generator">
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-b border-slate-800 pb-4">
     <div>
       <span class="px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full text-xs font-bold font-mono uppercase tracking-wider">
-        CITIZEN ACTION — FREEDOM OF INFORMATION (FOIA / ART. L. 311-1 CRPA)
+        {t.badge}
       </span>
       <h3 class="text-2xl font-bold font-serif text-slate-100 mt-2">
-        ⚖️ Demand Public Records — The Citizen Right-to-Know
+        {t.title}
       </h3>
     </div>
     <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">
-      Generate official administrative records requests in 1 click
+      {t.sub}
     </div>
   </div>
 
   <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 mb-6">
     <h4 class="text-sm font-bold font-serif text-amber-400 mb-1 flex items-center gap-2">
-      💡 What is the "Citizen Right to Know"?
+      {t.infoTitle}
     </h4>
     <p class="text-xs text-slate-300 font-serif leading-relaxed">
-      Under French and European public transparency law, <strong>no mayor, prefect, or public utility director can conceal public documents</strong> (budgets, building permits, water contracts, council deliberations). Every citizen has the strict legal right to demand unredacted copies. If an agency refuses, the official statutory watchdog is the <strong>CADA (Commission on Access to Administrative Documents)</strong>. Use this tool to generate your legal notice in 10 seconds.
+      {t.infoDesc}
     </p>
   </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
     <div class="space-y-4">
       <div>
-        <label class="block text-xs font-mono text-slate-400 mb-1">1. SELECT INVESTIGATION TOPIC :</label>
+        <label class="block text-xs font-mono text-slate-400 mb-1">{t.lblTopic}</label>
         <select id="cadaEnqueteSelectEn" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400 font-mono">
           {investigationsList.map(e => (
             <option value={e.id}>{e.title}</option>
@@ -68,47 +264,48 @@ const investigationsList = [
       </div>
 
       <div>
-        <label class="block text-xs font-mono text-slate-400 mb-1">2. TARGET PUBLIC AUTHORITY (Town Hall, Prefecture, Utility) :</label>
-        <input type="text" id="cadaAutoriteInputEn" placeholder="e.g. Mairie de Porto-Vecchio, Préfecture de Corse, OEHC..." class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400" />
+        <label class="block text-xs font-mono text-slate-400 mb-1">{t.lblAuth}</label>
+        <input type="text" id="cadaAutoriteInputEn" placeholder={t.phAuth} class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400" />
       </div>
 
       <div>
-        <label class="block text-xs font-mono text-slate-400 mb-1">3. YOUR FULL NAME / CITIZEN IDENTITY :</label>
-        <input type="text" id="cadaNomInputEn" placeholder="e.g. Jean Paoli, Citizen Investigator" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400" />
+        <label class="block text-xs font-mono text-slate-400 mb-1">{t.lblName}</label>
+        <input type="text" id="cadaNomInputEn" placeholder={t.phName} class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-amber-400" />
       </div>
 
-      <button type="button" id="cadaGenerateBtnEn" class="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-sans rounded-xl transition shadow-lg shadow-amber-500/20 text-sm uppercase tracking-wider">
-        Generate Official Legal Notice ↗
+      <button type="button" id="cadaGenerateBtnEn" class="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-sans rounded-xl transition shadow-lg shadow-amber-500/20 text-sm uppercase tracking-wider cursor-pointer">
+        {t.btnGen}
       </button>
     </div>
 
     <div>
-      <label class="block text-xs font-mono text-slate-400 mb-1">PREVIEW OF STATUTORY DEMAND LETTER :</label>
+      <label class="block text-xs font-mono text-slate-400 mb-1">{t.lblPrev}</label>
       <textarea id="cadaLetterPreviewEn" rows="11" readonly class="w-full p-4 bg-slate-900 border border-slate-800 rounded-xl text-xs font-mono text-slate-300 leading-relaxed focus:outline-none select-all"></textarea>
     </div>
   </div>
 </div>
 
-<script>
+<script is:inline define:vars={{ t }}>
   document.addEventListener('DOMContentLoaded', () => {
-    const select = document.getElementById('cadaEnqueteSelectEn') as HTMLSelectElement | null;
-    const autorite = document.getElementById('cadaAutoriteInputEn') as HTMLInputElement | null;
-    const nom = document.getElementById('cadaNomInputEn') as HTMLInputElement | null;
+    const select = document.getElementById('cadaEnqueteSelectEn');
+    const autorite = document.getElementById('cadaAutoriteInputEn');
+    const nom = document.getElementById('cadaNomInputEn');
     const btn = document.getElementById('cadaGenerateBtnEn');
-    const preview = document.getElementById('cadaLetterPreviewEn') as HTMLTextAreaElement | null;
+    const preview = document.getElementById('cadaLetterPreviewEn');
 
     const updatePreview = () => {
-      const auth = autorite?.value.trim() || "[Target Public Authority / Prefecture]";
-      const name = nom?.value.trim() || "[Citizen Name]";
-      const topic = select?.options[select.selectedIndex]?.text || "Public Records";
+      const auth = (autorite && autorite.value.trim()) || t.defAuth;
+      const name = (nom && nom.value.trim()) || t.defName;
+      const topic = (select && select.options[select.selectedIndex] && select.options[select.selectedIndex].text) || "Public Records";
+      const d = new Date().toLocaleDateString(t.dateLoc);
 
       if (preview) {
-        preview.value = `To : ${auth}\nDate : ${new Date().toLocaleDateString('en-US')}\nFrom : ${name}\n\nSUBJECT : Formal Request for Communication of Administrative Records under Article L. 311-1 of the Code of Relations between the Public and the Administration (CRPA)\n\nSir/Madam,\n\nPursuant to the fundamental right of access to public records guaranteed by Article L. 311-1 et seq. of the CRPA, I hereby formally request full, unredacted certified copies of all administrative decisions, concession ledgers, and technical audit files relating to :\n\n>>> ${topic} <<<\n\nUnder statutory law, public authorities are required to communicate requested records within thirty (30) days of receipt. In the absence of communication within this mandatory timeframe, this file will be formally referred to the Commission d'Accès aux Documents Administratifs (CADA) and the Administrative Court of Bastia.\n\nRespectfully submitted,\n\n${name}`;
+        preview.value = `${t.tplTo} ${auth}\n${t.tplDate} ${d}\n${t.tplFrom} ${name}\n\n${t.tplSubj}\n\n${t.tplBody1}\n\n>>> ${topic} <<<\n\n${t.tplBody2}\n\n${name}`;
       }
     };
 
-    btn?.addEventListener('click', updatePreview);
-    select?.addEventListener('change', updatePreview);
+    if (btn) btn.addEventListener('click', updatePreview);
+    if (select) select.addEventListener('change', updatePreview);
     updatePreview();
   });
 </script>
