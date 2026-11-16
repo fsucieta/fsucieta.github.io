@@ -8,6 +8,7 @@ import SoutienCitoyen from '../../../components/SoutienCitoyen.astro';
 import InvestigationHeader from '../../../components/InvestigationHeader.astro';
 import PiecesJustificativesSection from '../../../components/PiecesJustificativesSection.astro';
 import DebatCitoyenGiscus from '../../../components/DebatCitoyenGiscus.astro';
+import { getTranslatedEnquete, getUiLabels } from '../../../data/i18nEnquetes';
 
 export async function getStaticPaths() {
   const enquetes = await getCollection('enquetes');
@@ -25,101 +26,114 @@ interface Props {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data;
+const langCode = "ja";
+const tEnq = getTranslatedEnquete(data.id, langCode);
+const u = getUiLabels(langCode);
+
+const title = tEnq ? tEnq.title : data.title;
+const subtitle = tEnq ? tEnq.subtitle : data.subtitle;
+const category = tEnq ? tEnq.category : data.category;
+const chapeau = tEnq ? tEnq.chapeau : data.chapeau;
+const author = tEnq ? tEnq.author : data.author;
+const pubDate = tEnq ? tEnq.date : data.date;
+const imageCaption = tEnq ? tEnq.imageCaption : data.imageCaption;
+
 const imgPath = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}?v=20261110_storm`;
 const ogImage = data.image.startsWith('http') ? data.image : `/${data.image.replace(/^\//, '')}`;
 ---
 
 <Layout 
-  title={`${data.title} — L'OCHJU`} 
-  description={data.chapeau}
+  title={`${title} — L'OCHJU`} 
+  description={chapeau}
   image={ogImage}
   canonicalUrl={`https://fsucieta.github.io/ja/enquetes/${entry.slug}/`}
   lang="ja"
 >
-  <!-- Navigation Supérieure avec Logo Intact & Sélecteur 8 Langues -->
   <InvestigationHeader currentLang="ja" slug={entry.slug} refCode={data.ref} id={data.id} />
 
   <article class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-16 space-y-12">
     
-    <!-- En-tête Dossier -->
     <header class="space-y-6">
       <div class="flex flex-wrap items-center gap-3 font-mono-tech text-xs">
         <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-black uppercase tracking-wider text-[10px]">
-          対抗力ある封印済み公文書
+          {u.sealedBadge}
         </span>
         <span class="theme-gold-text font-bold">[{data.ref || `DOSSIER-${data.id}`}]</span>
-        <span class="text-slate-400 uppercase tracking-widest">• {data.category}</span>
+        <span class="text-slate-400 uppercase tracking-widest">• {category}</span>
       </div>
 
       <h1 class="text-3xl sm:text-5xl font-press font-black text-white leading-tight">
-        {data.title}
+        {title}
       </h1>
 
+      {subtitle && (
+        <h2 class="text-lg sm:text-xl font-press font-bold theme-gold-text leading-snug">
+          {subtitle}
+        </h2>
+      )}
+
       <p class="text-lg sm:text-xl font-press text-slate-300 leading-relaxed border-l-2 border-amber-500 pl-5">
-        {data.chapeau}
+        {chapeau}
       </p>
 
-      <!-- Métadonnées ISO -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-xl bg-black/60 border border-white/10 font-mono-tech text-xs text-slate-400">
         <div>
-          <div class="text-[10px] text-slate-500 uppercase">特別調査班</div>
-          <div class="text-slate-200 font-bold truncate">{data.author}</div>
+          <div class="text-[10px] text-slate-500 uppercase">{u.citizenCell}</div>
+          <div class="text-slate-200 font-bold truncate">{author}</div>
         </div>
         <div>
-          <div class="text-[10px] text-slate-500 uppercase">公開日</div>
-          <div class="text-slate-200 font-bold">{data.date}</div>
+          <div class="text-[10px] text-slate-500 uppercase">{u.pubDate}</div>
+          <div class="text-slate-200 font-bold">{pubDate}</div>
         </div>
         <div>
-          <div class="text-[10px] text-slate-500 uppercase">OUTILS OPEN DATA</div>
+          <div class="text-[10px] text-slate-500 uppercase">{u.openDataTools}</div>
           <div class="text-slate-200 font-bold truncate">{data.tool}</div>
         </div>
         <div>
-          <div class="text-[10px] text-slate-500 uppercase">NORME FORENSIQUE</div>
+          <div class="text-[10px] text-slate-500 uppercase">{u.forensicStandard}</div>
           <div class="text-emerald-400 font-bold">ISO/IEC 27037</div>
         </div>
       </div>
     </header>
 
-    <!-- Visuel Enquête -->
     <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black">
-      <img src={imgPath} alt={data.title} class="w-full h-auto object-cover max-h-[500px]" />
-      {data.imageCaption && (
+      <img src={imgPath} alt={title} class="w-full h-auto object-cover max-h-[500px]" />
+      {imageCaption && (
         <div class="p-3 bg-black/80 text-center font-mono-tech text-xs text-slate-400 border-t border-white/10">
-          {data.imageCaption}
+          {imageCaption}
         </div>
       )}
     </div>
 
-    <!-- Corps de l'Investigation -->
     <div class="prose prose-invert prose-amber max-w-none font-press leading-relaxed text-slate-200 space-y-6">
-      <Content />
+      {tEnq ? <div set:html={tEnq.bodyHtml} /> : <Content />}
     </div>
 
-    <!-- Sources Officielles Opposables -->
-    <!-- SECTION FORENSIQUE DES SOURCES ET PIÈCES D'ÉTAT (ISO/IEC 27037) -->
     <PiecesJustificativesSection 
       sources={data.sources} 
       id={data.id} 
       refCode={data.ref} 
-      date={data.date} 
+      date={pubDate} 
       lang="ja" 
     />
 
-    <!-- ESPACE DE DÉBAT CITOYEN & LIKES (GISCUS) -->
     <DebatCitoyenGiscus lang="ja" mapping="pathname" />
 
-    <!-- Module de Soutien Citoyen -->
-    <SoutienCitoyen variant="compact" idPrefix="enq_soutien_" />
+    <SoutienCitoyen variant="compact" idPrefix="enq_soutien_" lang="ja" />
 
-    <!-- Retour Enquêtes -->
-    <div class="pt-8 border-t border-white/10 flex items-center justify-between font-mono-tech text-xs">
+    <div class="pt-8 border-t border-white/10 flex flex-wrap gap-4 items-center justify-between font-mono-tech text-xs">
       <a href="/ja/#enquetes" class="text-amber-400 hover:text-amber-300 font-bold flex items-center gap-1.5">
-        <span>← 9大封印調査一覧へ戻る</span>
+        <span>{u.backTo10}</span>
       </a>
-      <a href="/soutenir/" class="px-4 py-2 rounded-xl bg-amber-500 text-black font-black uppercase">
-        調査活動を支援する
+      <a href="/ja/soutenir/" class="px-4 py-2 rounded-xl bg-amber-500 text-black font-black uppercase">
+        {u.supportBtn}
       </a>
     </div>
 
   </article>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-10 px-6 mt-20 text-center font-mono-tech text-xs text-slate-500 space-y-2">
+    <div class="text-slate-300 font-bold uppercase tracking-widest">{u.footerTitle}</div>
+    <div class="text-[11px] text-slate-600 font-sans">{u.footerSub}</div>
+  </footer>
 </Layout>

@@ -1,36 +1,30 @@
 ---
 /**
  * COMPOSANT MAÎTRE D'ENGAGEMENT & DE SOUTIEN CITOYEN — L'OCHJU
- * Version Blindée & Souveraine (FMHY + Cake Wallet)
- * 
- * Passerelles d'achat CB directes configurées avec votre adresse Cake Wallet :
- * - MoonPay (Leader mondial CB & Apple Pay)
- * - DFX Swiss (Passerelle européenne souveraine, zéro KYC jusqu'à 1000 CHF/jour)
- * - Changelly (Alternative CB & Google Pay)
- * - Auto-garde directe : Monero (XMR) & Bitcoin (BTC) avec lien direct Cake Wallet
+ * Version Blindée, Souveraine & Multilingue (8 Langues)
  */
 import QRCode from 'qrcode';
 
 interface Props {
   variant?: 'full' | 'compact';
   idPrefix?: string;
+  lang?: string;
 }
 
 const {
   variant = 'full',
-  idPrefix = 'sc_'
+  idPrefix = 'sc_',
+  lang = 'fr'
 } = Astro.props;
 
-// Adresses officielles vérifiées (Cake Wallet)
+const currentLang = ['fr', 'en', 'it', 'es', 'pt', 'ru', 'zh', 'ja'].includes(lang) ? lang : 'fr';
+
 const BTC_ADDRESS = "bc1q7hthg2xv44rdwd7xq5jn6mceqlx9n45d7stl28";
 const XMR_ADDRESS = "4Az8HHC47BndQp1t8reNiMMvKpWx55RuuP4nnEXFhYoEcP826Sb3gwZLk4AKu2erEtChqphf4LQYbHwzZFfUkXc491doTwq";
 
-// Passerelles d'achat CB pré-remplies vers votre Cake Wallet
 const ONRAMP_MOONPAY = `https://buy.moonpay.com/?currencyCode=btc&walletAddress=${BTC_ADDRESS}`;
 const ONRAMP_DFX = `https://payment.dfx.swiss/buy?address=${BTC_ADDRESS}&asset=BTC`;
-const ONRAMP_CHANGELLY = `https://buy.changelly.com/?crypto=BTC&address=${BTC_ADDRESS}`;
 
-// QR Codes vectoriels générés en local
 const qrBtc = (await QRCode.toString(`bitcoin:${BTC_ADDRESS}`, {
   type: 'svg',
   margin: 2,
@@ -46,6 +40,419 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
   color: { dark: '#0a0b0e', light: '#ffffff' },
   width: 186
 })).replace('<svg ', '<svg style="width:100%;height:auto;display:block;max-width:100%;" ');
+
+const i18n = {
+  fr: {
+    trustTitle: "PASSERELLE CITOYENNE DE SOUTIEN SÉCURISÉE",
+    trustSub: "Paiement CB classique pour vous · Réception anonyme sur coffre Cake Wallet",
+    trustBadge: "CONFORMITÉ ROYALE ISO/IEC 27037",
+    v1Badge: "VOIE 1 · SIMPLE & RAPIDE",
+    v1Methods: "CARTE BLEUE · APPLE PAY · VIREMENT",
+    v1NoCrypto: "AUCUN COMPTE CRYPTO NÉCESSAIRE",
+    v1TitleA: "Vous voulez soutenir par Carte Bancaire ?",
+    v1TitleB: "Le système s’occupe du reste.",
+    v1Desc: "Pour garantir notre indépendance totale sans vous compliquer la vie, nous utilisons des passerelles directes agréées. Vous réglez simplement par Carte Bancaire ou Apple Pay : la passerelle convertit votre don et le dépose automatiquement dans le coffre numérique Cake Wallet de la Cellule.",
+    v1Feat1: "Montant 100 % libre (dès 10 €)",
+    v1Feat2: "Sécurisation 3D Secure",
+    v1Feat3: "Intitulé neutre sur votre relevé",
+    v1Feat4: "Zéro abonnement récurrent",
+    v1Gateway: "CHOISISSEZ VOTRE PASSERELLE DE PAIEMENT",
+    v1BtnMoonpay: "PAYER PAR CARTE / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (CB & SEPA SANS KYC)",
+    v1Preconfig: "Adresse Cake Wallet pré-configurée :",
+    v2Over: "VOIE 2 · TRANSFERT DIRECT (CAKE WALLET & PROTOCOLES SOUVERAINS)",
+    v2Title: "Vous avez déjà un portefeuille crypto ?",
+    v2Privacy: "Confidentialité cryptographique absolue",
+    xmrBadge: "ANONYMAT TOTAL",
+    xmrTabDesc: "Chiffrement mathématique intégral. Ni l'expéditeur, ni le destinataire, ni le montant ne sont visibles sur la chaîne.",
+    btcBadge: "UNIVERSEL",
+    btcTabDesc: "Le standard de l'or numérique. Dépôt direct vers notre coffre Cake Wallet.",
+    xmrScan: "Flashez depuis Cake Wallet ou votre application Monero",
+    xmrNet: "RÉSEAU MONERO PRINCIPAL",
+    xmrPanelTitle: "Le standard mondial de protection des sources",
+    xmrPanelDesc: "Monero est le protocole de référence des journalistes d'investigation et cypherpunks. Si vous êtes sur smartphone avec Cake Wallet, cliquez ci-dessous pour ouvrir directement l'application :",
+    xmrAddrLabel: "Adresse publique Monero L'OCHJU :",
+    xmrCopy: "COPIER L'ADRESSE MONERO",
+    cakeOpen: "OUVRIR DANS CAKE WALLET",
+    btcScan: "Flashez avec Cake Wallet ou votre portefeuille Bitcoin",
+    btcNet: "RÉSEAU BITCOIN (ON-CHAIN)",
+    btcPanelTitle: "Dépôt direct vers notre coffre Bitcoin",
+    btcPanelDesc: "Adresse native SegWit (bech32) offrant des frais de transfert réduits.",
+    btcAddrLabel: "Adresse officielle Bitcoin L'OCHJU :",
+    btcCopy: "COPIER L'ADRESSE BITCOIN",
+    copied: "✓ COPIÉ DANS LE PRESSE-PAPIER !",
+    v3Title: "VOIE 3 · ACTION CITOYENNE SANS ARGENT (0 €)",
+    v3Sub: "Le partage vaut plus que l'or",
+    v3Card1Title: "Imprimer le Mémorandum",
+    v3Card1Desc: "Téléchargez le dossier de l'Inversion de la Dette et faites-le circuler dans votre village.",
+    v3Card2Title: "Recours CADA Automatique",
+    v3Card2Desc: "Forcez votre mairie à publier les marchés publics et comptes cachés en 3 clics.",
+    v3Card3Title: "Surveiller le Cadastre (SIG 360)",
+    v3Card3Desc: "Vérifiez les mutations immobilières et les zones minières de votre commune.",
+    memoHref: "/#memorandum",
+    cadaHref: "/#cada",
+    gisHref: "/#gis-map"
+  },
+  en: {
+    trustTitle: "SECURE CITIZEN SUPPORT GATEWAY",
+    trustSub: "Standard card payment for you · Anonymous reception on sovereign Cake Wallet vault",
+    trustBadge: "ISO/IEC 27037 FORENSIC COMPLIANCE",
+    v1Badge: "OPTION 1 · SIMPLE & INSTANT",
+    v1Methods: "BANK CARD · APPLE PAY · BANK TRANSFER",
+    v1NoCrypto: "NO CRYPTO ACCOUNT REQUIRED",
+    v1TitleA: "Prefer to support by Credit or Debit Card?",
+    v1TitleB: "The gateway handles the rest.",
+    v1Desc: "To guarantee our total editorial independence with zero hassle, we use licensed direct payment gateways. Simply pay by Bank Card or Apple Pay: the gateway converts your contribution and deposits it automatically into L'OCHJU's sovereign Cake Wallet vault.",
+    v1Feat1: "100% free amount (from €10)",
+    v1Feat2: "3D Secure protection",
+    v1Feat3: "Neutral statement descriptor",
+    v1Feat4: "Zero recurring subscription",
+    v1Gateway: "CHOOSE YOUR PAYMENT GATEWAY",
+    v1BtnMoonpay: "PAY BY CARD / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (CARD & SEPA NO KYC)",
+    v1Preconfig: "Pre-configured Cake Wallet address:",
+    v2Over: "OPTION 2 · DIRECT TRANSFER (CAKE WALLET & SOVEREIGN PROTOCOLS)",
+    v2Title: "Already have a crypto wallet?",
+    v2Privacy: "Absolute cryptographic privacy",
+    xmrBadge: "FULL ANONYMITY",
+    xmrTabDesc: "Full mathematical encryption. Neither sender, recipient, nor amount is visible on-chain.",
+    btcBadge: "UNIVERSAL",
+    btcTabDesc: "The digital gold standard. Direct deposit to our Cake Wallet vault.",
+    xmrScan: "Scan with Cake Wallet or your Monero app",
+    xmrNet: "MONERO MAINNET",
+    xmrPanelTitle: "The global standard for source protection",
+    xmrPanelDesc: "Monero is the benchmark protocol for investigative journalists and whistleblowers. On mobile with Cake Wallet, tap below to open directly:",
+    xmrAddrLabel: "L'OCHJU Public Monero Address:",
+    xmrCopy: "COPY MONERO ADDRESS",
+    cakeOpen: "OPEN IN CAKE WALLET",
+    btcScan: "Scan with Cake Wallet or your Bitcoin wallet",
+    btcNet: "BITCOIN NETWORK (ON-CHAIN)",
+    btcPanelTitle: "Direct deposit to our Bitcoin vault",
+    btcPanelDesc: "Native SegWit (bech32) address offering low transfer fees.",
+    btcAddrLabel: "L'OCHJU Official Bitcoin Address:",
+    btcCopy: "COPY BITCOIN ADDRESS",
+    copied: "✓ COPIED TO CLIPBOARD!",
+    v3Title: "OPTION 3 · ZERO-EURO CIVIC ACTION (€0)",
+    v3Sub: "Sharing knowledge is worth more than gold",
+    v3Card1Title: "Print the Memorandum",
+    v3Card1Desc: "Download the Reversal of Debt file and circulate it locally.",
+    v3Card2Title: "FOIA / CADA Request Generator",
+    v3Card2Desc: "Legally compel administrations to publish hidden contracts in 3 clicks.",
+    v3Card3Title: "Monitor the Land Cadastre (GIS 360)",
+    v3Card3Desc: "Inspect real estate transactions and mining perimeters across all 360 municipalities.",
+    memoHref: "/en/#memorandum",
+    cadaHref: "/en/#cada-generator",
+    gisHref: "/en/#gis-map-section"
+  },
+  it: {
+    trustTitle: "PORTALE CITTADINO DI SOSTEGNO SICURO",
+    trustSub: "Pagamento con carta per te · Ricezione anonima su cassaforte Cake Wallet",
+    trustBadge: "CONFORMITÀ FORENSE ISO/IEC 27037",
+    v1Badge: "VIA 1 · SEMPLICE E RAPIDA",
+    v1Methods: "CARTA DI CREDITO · APPLE PAY · BONIFICO",
+    v1NoCrypto: "NESSUN ACCOUNT CRYPTO NECESSARIO",
+    v1TitleA: "Vuoi sostenere con Carta di Credito?",
+    v1TitleB: "Il sistema pensa al resto.",
+    v1Desc: "Per garantire la nostra totale indipendenza senza complicazioni, utilizziamo gateway diretti autorizzati. Paghi semplicemente con Carta o Apple Pay: il sistema converte il contributo e lo deposita automaticamente nella cassaforte Cake Wallet della Cellula.",
+    v1Feat1: "Importo 100% libero (da 10 €)",
+    v1Feat2: "Sicurezza 3D Secure",
+    v1Feat3: "Voce neutra sull'estratto conto",
+    v1Feat4: "Zero abbonamenti ricorrenti",
+    v1Gateway: "SCEGLI IL TUO GATEWAY DI PAGAMENTO",
+    v1BtnMoonpay: "PAGA CON CARTA / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (CARTA & SEPA SENZA KYC)",
+    v1Preconfig: "Indirizzo Cake Wallet preconfigurato:",
+    v2Over: "VIA 2 · TRASFERIMENTO DIRETTO (CAKE WALLET & PROTOCOLLI SOVRANI)",
+    v2Title: "Hai già un portafoglio crypto?",
+    v2Privacy: "Riservatezza crittografica assoluta",
+    xmrBadge: "ANONIMATO TOTALE",
+    xmrTabDesc: "Crittografia matematica integrale. Né mittente, né destinatario, né importo sono visibili sulla blockchain.",
+    btcBadge: "UNIVERSALE",
+    btcTabDesc: "Lo standard dell'oro digitale. Deposito diretto verso il nostro Cake Wallet.",
+    xmrScan: "Scansiona con Cake Wallet o la tua app Monero",
+    xmrNet: "RETE PRINCIPALE MONERO",
+    xmrPanelTitle: "Lo standard mondiale per la protezione delle fonti",
+    xmrPanelDesc: "Monero è il protocollo di riferimento per i giornalisti investigativi. Su smartphone con Cake Wallet, clicca qui sotto per aprire l'app:",
+    xmrAddrLabel: "Indirizzo pubblico Monero L'OCHJU:",
+    xmrCopy: "COPIA INDIRIZZO MONERO",
+    cakeOpen: "APRI IN CAKE WALLET",
+    btcScan: "Scansiona con Cake Wallet o il tuo portafoglio Bitcoin",
+    btcNet: "RETE BITCOIN (ON-CHAIN)",
+    btcPanelTitle: "Deposito diretto nella nostra cassaforte Bitcoin",
+    btcPanelDesc: "Indirizzo nativo SegWit (bech32) con commissioni ridotte.",
+    btcAddrLabel: "Indirizzo ufficiale Bitcoin L'OCHJU:",
+    btcCopy: "COPIA INDIRIZZO BITCOIN",
+    copied: "✓ COPIATO NEGLI APPUNTI!",
+    v3Title: "VIA 3 · AZIONE CIVICA SENZA DENARO (0 €)",
+    v3Sub: "Condividere vale più dell'oro",
+    v3Card1Title: "Stampa il Memorandum",
+    v3Card1Desc: "Scarica il dossier sull'Inversione del Debito e diffondilo nel tuo territorio.",
+    v3Card2Title: "Istanza FOIA / CADA Automatica",
+    v3Card2Desc: "Obbliga gli enti pubblici a pubblicare appalti e bilanci nascosti in 3 clic.",
+    v3Card3Title: "Monitora il Catasto (SIG 360)",
+    v3Card3Desc: "Verifica le compravendite immobiliari e le concessioni minerarie dei 360 comuni.",
+    memoHref: "/it/#memorandum",
+    cadaHref: "/it/#cada",
+    gisHref: "/it/#gis-map"
+  },
+  es: {
+    trustTitle: "PASARELA CIUDADANA DE APOYO SEGURO",
+    trustSub: "Pago con tarjeta convencional · Recepción anónima en bóveda Cake Wallet",
+    trustBadge: "CONFORMIDAD FORENSE ISO/IEC 27037",
+    v1Badge: "VÍA 1 · SIMPLE Y RÁPIDA",
+    v1Methods: "TARJETA BANCARIA · APPLE PAY · TRANSFERENCIA",
+    v1NoCrypto: "NO REQUIERE CUENTA CRIPTO",
+    v1TitleA: "¿Desea apoyar mediante Tarjeta Bancaria?",
+    v1TitleB: "El sistema se encarga del resto.",
+    v1Desc: "Para garantizar nuestra independencia total sin complicaciones, utilizamos pasarelas directas autorizadas. Paga simplemente con Tarjeta o Apple Pay: la pasarela convierte su aportación y la deposita automáticamente en la bóveda Cake Wallet de la Célula.",
+    v1Feat1: "Importe 100 % libre (desde 10 €)",
+    v1Feat2: "Protección 3D Secure",
+    v1Feat3: "Concepto neutro en su extracto",
+    v1Feat4: "Cero suscripciones recurrentes",
+    v1Gateway: "ELIJA SU PASARELA DE PAGO",
+    v1BtnMoonpay: "PAGAR CON TARJETA / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (TARJETA Y SEPA SIN KYC)",
+    v1Preconfig: "Dirección Cake Wallet preconfigurada:",
+    v2Over: "VÍA 2 · TRANSFERENCIA DIRECTA (CAKE WALLET Y PROTOCOLOS SOBERANOS)",
+    v2Title: "¿Ya dispone de un monedero cripto?",
+    v2Privacy: "Confidencialidad criptográfica absoluta",
+    xmrBadge: "ANONIMATO TOTAL",
+    xmrTabDesc: "Cifrado matemático integral. Ni remitente, ni destinatario ni importe son visibles en la cadena.",
+    btcBadge: "UNIVERSAL",
+    btcTabDesc: "El estándar del oro digital. Depósito directo a nuestra bóveda Cake Wallet.",
+    xmrScan: "Escanee desde Cake Wallet o su aplicación Monero",
+    xmrNet: "RED PRINCIPAL MONERO",
+    xmrPanelTitle: "El estándar mundial de protección de fuentes",
+    xmrPanelDesc: "Monero es el protocolo de referencia para periodistas de investigación. En móvil con Cake Wallet, pulse abajo para abrir directamente:",
+    xmrAddrLabel: "Dirección pública Monero L'OCHJU:",
+    xmrCopy: "COPIAR DIRECCIÓN MONERO",
+    cakeOpen: "ABRIR EN CAKE WALLET",
+    btcScan: "Escanee con Cake Wallet o su monedero Bitcoin",
+    btcNet: "RED BITCOIN (ON-CHAIN)",
+    btcPanelTitle: "Depósito directo en nuestra bóveda Bitcoin",
+    btcPanelDesc: "Dirección nativa SegWit (bech32) con comisiones de red reducidas.",
+    btcAddrLabel: "Dirección oficial Bitcoin L'OCHJU:",
+    btcCopy: "COPIAR DIRECCIÓN BITCOIN",
+    copied: "✓ ¡COPIADO AL PORTAPAPELES!",
+    v3Title: "VÍA 3 · ACCIÓN CIUDADANA SIN DINERO (0 €)",
+    v3Sub: "Compartir vale más que el oro",
+    v3Card1Title: "Imprimir el Memorándum",
+    v3Card1Desc: "Descargue el informe de Inversión de la Deuda y compártalo en su localidad.",
+    v3Card2Title: "Recurso de Transparencia Automático",
+    v3Card2Desc: "Exija legalmente a su ayuntamiento publicar contratos y cuentas ocultas en 3 clics.",
+    v3Card3Title: "Vigilar el Catastro (SIG 360)",
+    v3Card3Desc: "Consulte transacciones inmobiliarias y perímetros mineros en los 360 municipios.",
+    memoHref: "/es/#memorandum",
+    cadaHref: "/es/#cada",
+    gisHref: "/es/#gis-map"
+  },
+  pt: {
+    trustTitle: "PORTAL CIDADÃO DE APOIO SEGURO",
+    trustSub: "Pagamento por cartão convencional · Receção anónima no cofre Cake Wallet",
+    trustBadge: "CONFORMIDADE FORENSE ISO/IEC 27037",
+    v1Badge: "VIA 1 · SIMPLES E RÁPIDA",
+    v1Methods: "CARTÃO BANCÁRIO · APPLE PAY · TRANSFERÊNCIA",
+    v1NoCrypto: "NENHUMA CONTA CRIPTO NECESSÁRIA",
+    v1TitleA: "Quer apoiar por Cartão Bancário?",
+    v1TitleB: "O sistema trata do resto.",
+    v1Desc: "Para garantir a nossa independência total sem complicações, utilizamos gateways diretos autorizados. Paga simplesmente com Cartão ou Apple Pay: o gateway converte o seu apoio e deposita-o automaticamente no cofre digital Cake Wallet da Célula.",
+    v1Feat1: "Montante 100% livre (a partir de 10 €)",
+    v1Feat2: "Segurança 3D Secure",
+    v1Feat3: "Descrição neutra no extrato",
+    v1Feat4: "Zero subscrições recorrentes",
+    v1Gateway: "ESCOLHA O SEU GATEWAY DE PAGAMENTO",
+    v1BtnMoonpay: "PAGAR COM CARTÃO / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (CARTÃO & SEPA SEM KYC)",
+    v1Preconfig: "Endereço Cake Wallet pré-configurado:",
+    v2Over: "VIA 2 · TRANSFERÊNCIA DIRETA (CAKE WALLET & PROTOCOLOS SOBERANOS)",
+    v2Title: "Já tem uma carteira cripto?",
+    v2Privacy: "Confidencialidade criptográfica absoluta",
+    xmrBadge: "ANONIMATO TOTAL",
+    xmrTabDesc: "Encriptação matemática integral. Nem remetente, nem destinatário nem montante são visíveis na cadeia.",
+    btcBadge: "UNIVERSAL",
+    btcTabDesc: "O padrão do ouro digital. Depósito direto no nosso cofre Cake Wallet.",
+    xmrScan: "Digitalize com a Cake Wallet ou a sua app Monero",
+    xmrNet: "REDE PRINCIPAL MONERO",
+    xmrPanelTitle: "O padrão mundial de proteção de fontes",
+    xmrPanelDesc: "Monero é o protocolo de referência dos jornalistas de investigação. No telemóvel com a Cake Wallet, clique abaixo para abrir diretamente:",
+    xmrAddrLabel: "Endereço público Monero L'OCHJU:",
+    xmrCopy: "COPIAR ENDEREÇO MONERO",
+    cakeOpen: "ABRIR NA CAKE WALLET",
+    btcScan: "Digitalize com a Cake Wallet ou a sua carteira Bitcoin",
+    btcNet: "REDE BITCOIN (ON-CHAIN)",
+    btcPanelTitle: "Depósito direto no nosso cofre Bitcoin",
+    btcPanelDesc: "Endereço nativo SegWit (bech32) com taxas de transferência reduzidas.",
+    btcAddrLabel: "Endereço oficial Bitcoin L'OCHJU:",
+    btcCopy: "COPIAR ENDEREÇO BITCOIN",
+    copied: "✓ COPIADO PARA A ÁREA DE TRANSFERÊNCIA!",
+    v3Title: "VIA 3 · AÇÃO CIDADÃ SEM DINHEIRO (0 €)",
+    v3Sub: "A partilha vale mais do que o ouro",
+    v3Card1Title: "Imprimir o Memorando",
+    v3Card1Desc: "Descarregue o dossiê da Inversão da Dívida e divulgue-o na sua comunidade.",
+    v3Card2Title: "Pedido de Acesso Legal Automático",
+    v3Card2Desc: "Exija legalmente a publicação de contratos públicos e contas ocultas em 3 cliques.",
+    v3Card3Title: "Vigiar o Cadastro (SIG 360)",
+    v3Card3Desc: "Verifique transações imobiliárias e concessões mineiras nos 360 municípios.",
+    memoHref: "/pt/#memorandum",
+    cadaHref: "/pt/#cada",
+    gisHref: "/pt/#gis-map"
+  },
+  ru: {
+    trustTitle: "ЗАЩИЩЕННЫЙ ШЛЮЗ ГРАЖДАНСКОЙ ПОДДЕРЖКИ",
+    trustSub: "Обычная оплата картой для вас · Анонимное зачисление на сейф Cake Wallet",
+    trustBadge: "СТАНДАРТ ISO/IEC 27037",
+    v1Badge: "ПУТЬ 1 · ПРОСТО И БЫСТРО",
+    v1Methods: "БАНКОВСКАЯ КАРТА · APPLE PAY · ПЕРЕВОД",
+    v1NoCrypto: "КРИПТОАККАУНТ НЕ ТРЕБУЕТСЯ",
+    v1TitleA: "Хотите поддержать банковской картой?",
+    v1TitleB: "Система сделает всё остальное.",
+    v1Desc: "Чтобы гарантировать нашу полную независимость без лишних сложностей, мы используем лицензированные прямые шлюзы. Вы оплачиваете картой или Apple Pay, а шлюз автоматически зачисляет вклад в цифровой сейф Cake Wallet.",
+    v1Feat1: "Свободная сумма (от 10 €)",
+    v1Feat2: "Защита 3D Secure",
+    v1Feat3: "Нейтральная запись в выписке",
+    v1Feat4: "Никаких регулярных списаний",
+    v1Gateway: "ВЫБЕРИТЕ ПЛАТЕЖНЫЙ ШЛЮЗ",
+    v1BtnMoonpay: "ОПЛАТИТЬ КАРТОЙ / APPLE PAY",
+    v1BtnDfx: "DFX SWISS (КАРТА И SEPA БЕЗ KYC)",
+    v1Preconfig: "Преднастроенный адрес Cake Wallet:",
+    v2Over: "ПУТЬ 2 · ПРЯМОЙ ПЕРЕВОД (CAKE WALLET И СУВЕРЕННЫЕ ПРОТОКОЛЫ)",
+    v2Title: "У вас уже есть криптокошелек?",
+    v2Privacy: "Абсолютная криптографическая приватность",
+    xmrBadge: "ПОЛНАЯ АНОНИМНОСТЬ",
+    xmrTabDesc: "Полное математическое шифрование. Ни отправитель, ни получатель, ни сумма не видны в блокчейне.",
+    btcBadge: "УНИВЕРСАЛЬНЫЙ",
+    btcTabDesc: "Стандарт цифрового золота. Прямое зачисление в наш сейф Cake Wallet.",
+    xmrScan: "Сканируйте через Cake Wallet или ваше приложение Monero",
+    xmrNet: "ОСНОВНАЯ СЕТЬ MONERO",
+    xmrPanelTitle: "Мировой стандарт защиты источников",
+    xmrPanelDesc: "Monero — эталонный протокол для журналистов-расследователей. Если вы со смартфона с Cake Wallet, нажмите ниже:",
+    xmrAddrLabel: "Публичный адрес Monero L'OCHJU:",
+    xmrCopy: "СКОПИРОВАТЬ АДРЕС MONERO",
+    cakeOpen: "ОТКРЫТЬ В CAKE WALLET",
+    btcScan: "Сканируйте через Cake Wallet или ваш кошелек Bitcoin",
+    btcNet: "СЕТЬ BITCOIN (ON-CHAIN)",
+    btcPanelTitle: "Прямое пополнение нашего сейфа Bitcoin",
+    btcPanelDesc: "Нативный адрес SegWit (bech32) с пониженной комиссией сети.",
+    btcAddrLabel: "Официальный адрес Bitcoin L'OCHJU:",
+    btcCopy: "СКОПИРОВАТЬ АДРЕС BITCOIN",
+    copied: "✓ СКОПИРОВАНО В БУФЕР ОБМЕНА!",
+    v3Title: "ПУТЬ 3 · ГРАЖДАНСКОЕ УЧАСТИЕ БЕЗ ДЕНЕГ (0 €)",
+    v3Sub: "Распространение правды дороже золота",
+    v3Card1Title: "Распечатать Меморандум",
+    v3Card1Desc: "Скачайте досье об инверсии долга и распространите его на местах.",
+    v3Card2Title: "Юридический запрос о доступе",
+    v3Card2Desc: "Потребуйте от мэрии публикации скрытых контрактов в 3 клика.",
+    v3Card3Title: "Мониторинг кадастра (ГИС 360)",
+    v3Card3Desc: "Проверяйте сделки с недвижимостью и горнодобывающие участки в 360 коммунах.",
+    memoHref: "/ru/#memorandum",
+    cadaHref: "/ru/#cada",
+    gisHref: "/ru/#gis-map"
+  },
+  zh: {
+    trustTitle: "安全公民支持通道",
+    trustSub: "常规银行卡支付 · Cake Wallet 匿名加密金库直收",
+    trustBadge: "ISO/IEC 27037 司法标准",
+    v1Badge: "方式 1 · 快捷支持",
+    v1Methods: "银行卡 · APPLE PAY · 银行转账",
+    v1NoCrypto: "无需加密货币账户",
+    v1TitleA: "想通过银行卡支持我们？",
+    v1TitleB: "系统自动完成其余步骤。",
+    v1Desc: "为在不增加操作门槛的前提下确保编辑完全独立，我们采用持牌直接支付网关。您只需使用银行卡或 Apple Pay 支付，网关会自动将款项存入研究小组的 Cake Wallet 金库。",
+    v1Feat1: "金额完全自由（10 欧元起）",
+    v1Feat2: "3D Secure 安全验证",
+    v1Feat3: "账单中性商户名称",
+    v1Feat4: "无任何定期自动扣款",
+    v1Gateway: "选择您的支付网关",
+    v1BtnMoonpay: "使用银行卡 / APPLE PAY 支付",
+    v1BtnDfx: "DFX SWISS（免 KYC 银行卡 / SEPA）",
+    v1Preconfig: "预配置 Cake Wallet 地址：",
+    v2Over: "方式 2 · 直接转账（CAKE WALLET 与主权加密协议）",
+    v2Title: "已经拥有加密钱包？",
+    v2Privacy: "绝对密码学隐私保护",
+    xmrBadge: "完全匿名",
+    xmrTabDesc: "全程数学加密。发送方、接收方及金额均不会在链上公开可见。",
+    btcBadge: "全球通用",
+    btcTabDesc: "数字黄金标准。直接存入我们的 Cake Wallet 金库。",
+    xmrScan: "使用 Cake Wallet 或 Monero 应用扫码",
+    xmrNet: "MONERO 主网",
+    xmrPanelTitle: "全球调查记者信源保护黄金标准",
+    xmrPanelDesc: "Monero 是调查记者与吹哨人的首选隐私协议。如您在手机安装了 Cake Wallet，可直接点击下方打开：",
+    xmrAddrLabel: "L'OCHJU 公开 Monero 地址：",
+    xmrCopy: "复制 MONERO 地址",
+    cakeOpen: "在 CAKE WALLET 中打开",
+    btcScan: "使用 Cake Wallet 或比特币钱包扫码",
+    btcNet: "BITCOIN 网络 (ON-CHAIN)",
+    btcPanelTitle: "直接存入我们的比特币金库",
+    btcPanelDesc: "原生 SegWit (bech32) 地址，提供更低的转账手续费。",
+    btcAddrLabel: "L'OCHJU 官方比特币地址：",
+    btcCopy: "复制比特币地址",
+    copied: "✓ 已复制到剪贴板！",
+    v3Title: "方式 3 · 零成本公民行动 (0 €)",
+    v3Sub: "传播真相胜过黄金",
+    v3Card1Title: "打印主权备忘录",
+    v3Card1Desc: "下载《债务反转》完整档案并在您的社区传播。",
+    v3Card2Title: "一键生成信息公开申请",
+    v3Card2Desc: "三步依法要求市政当局公布隐藏合同与账目。",
+    v3Card3Title: "监控土地地籍 (GIS 360)",
+    v3Card3Desc: "核查全岛 360 个市镇的不动产交易与矿产勘查边界。",
+    memoHref: "/zh/#memorandum",
+    cadaHref: "/zh/#cada",
+    gisHref: "/zh/#gis-map"
+  },
+  ja: {
+    trustTitle: "安全な市民支援ゲートウェイ",
+    trustSub: "通常のカード決済 · Cake Wallet 匿名金庫で安全に受領",
+    trustBadge: "ISO/IEC 27037 準拠",
+    v1Badge: "方法 1 · シンプル＆即時",
+    v1Methods: "クレジットカード · APPLE PAY · 銀行振込",
+    v1NoCrypto: "暗号資産口座は不要",
+    v1TitleA: "クレジットカードでのご支援ですか？",
+    v1TitleB: "残りの処理はシステムにお任せ。",
+    v1Desc: "手間をかけずに編集の完全な独立性を保つため、認可されたダイレクト決済ゲートウェイを利用しています。カードまたは Apple Pay でお支払いいただくと、自動的に調査チームの Cake Wallet 金庫へ入金されます。",
+    v1Feat1: "金額は完全に自由（10ユーロから）",
+    v1Feat2: "3Dセキュア認証対応",
+    v1Feat3: "明細に中立的な名称を表記",
+    v1Feat4: "定期課金・自動更新一切なし",
+    v1Gateway: "決済ゲートウェイを選択",
+    v1BtnMoonpay: "カード / APPLE PAY で支払う",
+    v1BtnDfx: "DFX SWISS（KYC不要 カード・SEPA）",
+    v1Preconfig: "事前設定済み Cake Wallet アドレス：",
+    v2Over: "方法 2 · 直接送金（CAKE WALLET・主権プロトコル）",
+    v2Title: "すでに暗号資産ウォレットをお持ちですか？",
+    v2Privacy: "絶対的な暗号プライバシー保護",
+    xmrBadge: "完全匿名",
+    xmrTabDesc: "完全な数学的暗号化により、送信元・送信先・金額はいずれもチェーン上で秘匿されます。",
+    btcBadge: "ユニバーサル",
+    btcTabDesc: "デジタルゴールドの標準規格。Cake Wallet 金庫へ直接預け入れ。",
+    xmrScan: "Cake Wallet または Monero アプリでスキャン",
+    xmrNet: "MONERO メインネット",
+    xmrPanelTitle: "情報源保護の世界標準プロトコル",
+    xmrPanelDesc: "Monero は調査報道記者が選ぶ最高水準のプライバシー通貨です。Cake Wallet をお使いの場合は下から直接起動できます：",
+    xmrAddrLabel: "L'OCHJU 公開 Monero アドレス：",
+    xmrCopy: "MONERO アドレスをコピー",
+    cakeOpen: "CAKE WALLET で開く",
+    btcScan: "Cake Wallet または Bitcoin ウォレットでスキャン",
+    btcNet: "BITCOIN ネットワーク (ON-CHAIN)",
+    btcPanelTitle: "Bitcoin 金庫への直接送金",
+    btcPanelDesc: "送金手数料を抑えたネイティブ SegWit (bech32) アドレス。",
+    btcAddrLabel: "L'OCHJU 公式 Bitcoin アドレス：",
+    btcCopy: "BITCOIN アドレスをコピー",
+    copied: "✓ クリップボードにコピーしました！",
+    v3Title: "方法 3 · 資金不要の市民アクション (0 €)",
+    v3Sub: "事実の共有は黄金に勝る",
+    v3Card1Title: "主権覚書を印刷する",
+    v3Card1Desc: "『負債の逆転』ファイルをダウンロードして地域に広める。",
+    v3Card2Title: "情報公開請求書を自動生成",
+    v3Card2Desc: "3クリックで自治体に非公開契約と会計の開示を法的に請求。",
+    v3Card3Title: "土地台帳を監視 (GIS 360)",
+    v3Card3Desc: "全360自治体の不動産取引および鉱区境界を検証。",
+    memoHref: "/ja/#memorandum",
+    cadaHref: "/ja/#cada",
+    gisHref: "/ja/#gis-map"
+  }
+};
+
+const t = i18n[currentLang as keyof typeof i18n] || i18n.fr;
 ---
 
 <div class="space-y-12" id={`${idPrefix}wrapper`}>
@@ -55,72 +462,69 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
     <div class="flex items-center gap-3">
       <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
       <div>
-        <div class="text-white font-bold">PASSERELLE CITOYENNE DE SOUTIEN SÉCURISÉE</div>
-        <div class="text-[11px] text-slate-400">Paiement CB classique pour vous · Réception anonyme sur coffre Cake Wallet</div>
+        <div class="text-white font-bold">{t.trustTitle}</div>
+        <div class="text-[11px] text-slate-400">{t.trustSub}</div>
       </div>
     </div>
     <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[10px] font-bold uppercase tracking-wider">
-      CONFORMITÉ ROYALE ISO/IEC 27037
+      {t.trustBadge}
     </span>
   </div>
 
-  <!-- ================= VOIE 1 : PAIEMENT PAR CARTE BANCAIRE / APPLE PAY (30 SECONDES) ================= -->
+  <!-- ================= VOIE 1 : PAIEMENT PAR CARTE BANCAIRE / APPLE PAY ================= -->
   <div class="rounded-3xl theme-surface border-2 border-amber-500/50 p-6 sm:p-10 shadow-2xl relative overflow-hidden group">
     <div class="absolute -right-20 -top-20 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-white/10">
       <div class="flex items-center gap-2.5">
         <span class="px-3.5 py-1 rounded-full bg-amber-500 text-black font-mono-tech text-xs font-black uppercase tracking-wider">
-          VOIE 1 · SIMPLE & RAPIDE
+          {t.v1Badge}
         </span>
         <span class="font-mono-tech text-xs font-bold text-white uppercase tracking-widest hidden sm:inline">
-          CARTE BLEUE · APPLE PAY · VIREMENT
+          {t.v1Methods}
         </span>
       </div>
       <span class="text-xs font-mono-tech text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 font-bold">
-        AUCUN COMPTE CRYPTO NÉCESSAIRE
+        {t.v1NoCrypto}
       </span>
     </div>
 
     <div class="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
       
-      <!-- Texte Explicatif Pédagogique -->
       <div class="lg:col-span-7 space-y-4">
         <h3 class="text-2xl sm:text-4xl font-press font-bold text-white leading-tight">
-          Vous voulez soutenir par Carte Bancaire ? <br/>
-          <span class="text-amber-400">Le système s’occupe du reste.</span>
+          {t.v1TitleA} <br/>
+          <span class="text-amber-400">{t.v1TitleB}</span>
         </h3>
         <p class="text-slate-300 font-press text-base leading-relaxed">
-          Pour garantir notre indépendance totale sans vous compliquer la vie, nous utilisons des passerelles directes agréées. Vous réglez simplement par <strong>Carte Bancaire ou Apple Pay</strong> : la passerelle convertit votre don et le dépose automatiquement dans le coffre numérique Cake Wallet de la Cellule.
+          {t.v1Desc}
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-mono-tech text-xs text-slate-300">
           <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center gap-2.5">
             <span class="text-emerald-400 text-sm">✓</span>
-            <span>Montant 100 % libre (dès 10 €)</span>
+            <span>{t.v1Feat1}</span>
           </div>
           <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center gap-2.5">
             <span class="text-emerald-400 text-sm">✓</span>
-            <span>Sécurisation 3D Secure</span>
+            <span>{t.v1Feat2}</span>
           </div>
           <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center gap-2.5">
             <span class="text-emerald-400 text-sm">✓</span>
-            <span>Intitulé neutre sur votre relevé</span>
+            <span>{t.v1Feat3}</span>
           </div>
           <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center gap-2.5">
             <span class="text-emerald-400 text-sm">✓</span>
-            <span>Zéro abonnement récurrent</span>
+            <span>{t.v1Feat4}</span>
           </div>
         </div>
       </div>
 
-      <!-- Module d'Action CB Clé en Main -->
       <div class="lg:col-span-5 p-6 sm:p-7 rounded-2xl bg-black/70 border border-white/15 space-y-5 text-center shadow-xl">
         <div class="font-mono-tech text-xs text-amber-400 font-bold uppercase tracking-wider">
-          CHOISISSEZ VOTRE PASSERELLE DE PAIEMENT
+          {t.v1Gateway}
         </div>
 
-        <!-- Bouton Principal MoonPay -->
         <a 
           href={ONRAMP_MOONPAY}
           target="_blank"
@@ -128,10 +532,9 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
           class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-black font-mono-tech text-sm font-black uppercase tracking-wider shadow-2xl hover:brightness-110 hover:scale-[1.02] transition duration-200 flex items-center justify-center gap-3 cursor-pointer"
         >
           <span>💳</span>
-          <span>PAYER PAR CARTE / APPLE PAY</span>
+          <span>{t.v1BtnMoonpay}</span>
         </a>
 
-        <!-- Bouton Alternatif DFX Swiss (Sans KYC) -->
         <a 
           href={ONRAMP_DFX}
           target="_blank"
@@ -139,11 +542,11 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
           class="w-full py-3 px-4 rounded-xl bg-black border border-amber-400/60 hover:border-amber-400 text-amber-300 font-mono-tech text-xs font-bold uppercase tracking-wider transition flex items-center justify-center gap-2"
         >
           <span>🇨🇭</span>
-          <span>DFX SWISS (CB & SEPA SANS KYC)</span>
+          <span>{t.v1BtnDfx}</span>
         </a>
 
         <div class="text-[11px] font-mono-tech text-slate-400 space-y-1 pt-2 border-t border-white/10">
-          <div>Adresse Cake Wallet pré-configurée :</div>
+          <div>{t.v1Preconfig}</div>
           <div class="text-amber-300 font-bold break-all select-all text-[10px] bg-black/80 p-2 rounded border border-white/10">
             {BTC_ADDRESS}
           </div>
@@ -153,26 +556,23 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
     </div>
   </div>
 
-  <!-- ================= VOIE 2 : AUTO-GARDE DIRECTE (CAKE WALLET / MONERO / BITCOIN) ================= -->
+  <!-- ================= VOIE 2 : AUTO-GARDE DIRECTE ================= -->
   <div class="rounded-3xl theme-surface border border-white/15 p-6 sm:p-10 shadow-2xl space-y-8">
     <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/10">
       <div>
         <div class="font-mono-tech text-xs text-cyan-400 font-bold uppercase tracking-widest mb-1">
-          VOIE 2 · TRANSFERT DIRECT (CAKE WALLET & PROTOCOLES SOUVERAINS)
+          {t.v2Over}
         </div>
         <h3 class="text-2xl font-press font-bold text-white">
-          Vous avez déjà un portefeuille crypto ?
+          {t.v2Title}
         </h3>
       </div>
       <span class="text-xs font-mono-tech text-slate-400 bg-black/40 px-3 py-1.5 rounded-lg border border-white/10">
-        Confidentialité cryptographique absolue
+        {t.v2Privacy}
       </span>
     </div>
 
-    <!-- Onglets Monero vs Bitcoin -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono-tech text-xs">
-      
-      <!-- Option Monero -->
       <button
         type="button"
         onclick="switchCryptoTab('xmr')"
@@ -184,15 +584,14 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
             <span>🛡️</span> Monero (XMR)
           </span>
           <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px] font-bold border border-cyan-400/30">
-            ANONYMAT TOTAL
+            {t.xmrBadge}
           </span>
         </div>
         <p class="text-[11px] text-slate-300 font-press">
-          Chiffrement mathématique intégral. Ni l'expéditeur, ni le destinataire, ni le montant ne sont visibles sur la chaîne.
+          {t.xmrTabDesc}
         </p>
       </button>
 
-      <!-- Option Bitcoin -->
       <button
         type="button"
         onclick="switchCryptoTab('btc')"
@@ -204,14 +603,13 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
             <span>₿</span> Bitcoin (BTC)
           </span>
           <span class="px-2 py-0.5 rounded bg-white/10 text-slate-300 text-[10px] font-bold border border-white/20">
-            UNIVERSEL
+            {t.btcBadge}
           </span>
         </div>
         <p class="text-[11px] text-slate-400 font-press">
-          Le standard de l'or numérique. Dépôt direct vers notre coffre Cake Wallet.
+          {t.btcTabDesc}
         </p>
       </button>
-
     </div>
 
     <!-- Panneau Monero (XMR) -->
@@ -220,29 +618,29 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
         
         <div class="lg:col-span-5 flex flex-col items-center justify-center p-5 bg-black/80 rounded-2xl border border-white/10 space-y-3">
           <div class="p-3 bg-white rounded-2xl shadow-xl w-full max-w-[210px] overflow-hidden">
-            <div set:html={qrXmr} class="w-full h-auto [&>svg]:w-full [&>svg]:h-auto [&>svg]:block" />
+            <div set:html={qrXmr} class="w-full h-auto" />
           </div>
           <div class="text-[11px] font-mono-tech text-slate-400 text-center">
-            Flashez depuis <strong>Cake Wallet</strong> ou votre application Monero
+            {t.xmrScan}
           </div>
         </div>
 
         <div class="lg:col-span-7 space-y-5">
           <div class="space-y-2">
             <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-[10px] font-mono-tech font-bold uppercase tracking-wider">
-              RÉSEAU MONERO PRINCIPAL
+              {t.xmrNet}
             </span>
             <h4 class="text-xl font-press font-bold text-white">
-              Le standard mondial de protection des sources
+              {t.xmrPanelTitle}
             </h4>
             <p class="text-xs sm:text-sm font-press text-slate-300 leading-relaxed">
-              Monero est le protocole de référence des journalistes d'investigation et cypherpunks. Si vous êtes sur smartphone avec <strong>Cake Wallet</strong>, cliquez ci-dessous pour ouvrir directement l'application :
+              {t.xmrPanelDesc}
             </p>
           </div>
 
           <div class="space-y-2">
             <label class="block font-mono-tech text-[10px] uppercase text-slate-400 tracking-wider">
-              Adresse publique Monero L'OCHJU :
+              {t.xmrAddrLabel}
             </label>
             <div class="p-3 rounded-xl bg-black/90 border border-white/15 text-cyan-300 font-mono-tech text-xs break-all select-all">
               {XMR_ADDRESS}
@@ -252,12 +650,12 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
           <div class="flex flex-wrap items-center gap-3 pt-2">
             <button
               type="button"
-              onclick={`copyText('${XMR_ADDRESS}', 'btn_copy_xmr')`}
+              onclick={`copyText('${XMR_ADDRESS}', 'btn_copy_xmr', ${JSON.stringify(t.copied)})`}
               id="btn_copy_xmr"
               class="px-5 py-2.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-mono-tech text-xs font-black uppercase tracking-wider transition cursor-pointer flex items-center gap-2"
             >
               <span>📋</span>
-              <span id="label_copy_xmr">COPIER L'ADRESSE MONERO</span>
+              <span id="label_copy_xmr">{t.xmrCopy}</span>
             </button>
 
             <a
@@ -265,7 +663,7 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
               class="px-5 py-2.5 rounded-xl bg-black border border-cyan-400/60 hover:border-cyan-400 text-cyan-300 font-mono-tech text-xs font-bold transition flex items-center gap-2"
             >
               <span>🍰</span>
-              <span>OUVRIR DANS CAKE WALLET</span>
+              <span>{t.cakeOpen}</span>
             </a>
           </div>
         </div>
@@ -279,29 +677,29 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
         
         <div class="lg:col-span-5 flex flex-col items-center justify-center p-5 bg-black/80 rounded-2xl border border-white/10 space-y-3">
           <div class="p-3 bg-white rounded-2xl shadow-xl w-full max-w-[210px] overflow-hidden">
-            <div set:html={qrBtc} class="w-full h-auto [&>svg]:w-full [&>svg]:h-auto [&>svg]:block" />
+            <div set:html={qrBtc} class="w-full h-auto" />
           </div>
           <div class="text-[11px] font-mono-tech text-slate-400 text-center">
-            Flashez avec <strong>Cake Wallet</strong> ou votre portefeuille Bitcoin
+            {t.btcScan}
           </div>
         </div>
 
         <div class="lg:col-span-7 space-y-5">
           <div class="space-y-2">
             <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[10px] font-mono-tech font-bold uppercase tracking-wider">
-              RÉSEAU BITCOIN (ON-CHAIN)
+              {t.btcNet}
             </span>
             <h4 class="text-xl font-press font-bold text-white">
-              Dépôt direct vers notre coffre Bitcoin
+              {t.btcPanelTitle}
             </h4>
             <p class="text-xs sm:text-sm font-press text-slate-300 leading-relaxed">
-              Adresse native SegWit (bech32) offrant des frais de transfert réduits.
+              {t.btcPanelDesc}
             </p>
           </div>
 
           <div class="space-y-2">
             <label class="block font-mono-tech text-[10px] uppercase text-slate-400 tracking-wider">
-              Adresse officielle Bitcoin L'OCHJU :
+              {t.btcAddrLabel}
             </label>
             <div class="p-3 rounded-xl bg-black/90 border border-white/15 text-amber-300 font-mono-tech text-xs break-all select-all">
               {BTC_ADDRESS}
@@ -311,12 +709,12 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
           <div class="flex flex-wrap items-center gap-3 pt-2">
             <button
               type="button"
-              onclick={`copyText('${BTC_ADDRESS}', 'btn_copy_btc')`}
+              onclick={`copyText('${BTC_ADDRESS}', 'btn_copy_btc', ${JSON.stringify(t.copied)})`}
               id="btn_copy_btc"
               class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-mono-tech text-xs font-black uppercase tracking-wider transition cursor-pointer flex items-center gap-2"
             >
               <span>📋</span>
-              <span id="label_copy_btc">COPIER L'ADRESSE BITCOIN</span>
+              <span id="label_copy_btc">{t.btcCopy}</span>
             </button>
 
             <a
@@ -324,7 +722,7 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
               class="px-5 py-2.5 rounded-xl bg-black border border-amber-400/60 hover:border-amber-400 text-amber-300 font-mono-tech text-xs font-bold transition flex items-center gap-2"
             >
               <span>🍰</span>
-              <span>OUVRIR DANS CAKE WALLET</span>
+              <span>{t.cakeOpen}</span>
             </a>
           </div>
         </div>
@@ -334,51 +732,51 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
 
   </div>
 
-  <!-- ================= VOIE 3 : SOUTIEN CITOYEN 0 € (ESPRIT FMHY) ================= -->
+  <!-- ================= VOIE 3 : SOUTIEN CITOYEN 0 € ================= -->
   <div class="rounded-3xl bg-black/40 border border-emerald-500/30 p-6 sm:p-8 space-y-6">
     <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-white/10">
       <div class="flex items-center gap-2.5 font-mono-tech text-xs text-emerald-400 font-bold uppercase tracking-widest">
-        <span>✊</span> VOIE 3 · ACTION CITOYENNE SANS ARGENT (0 €)
+        <span>✊</span> {t.v3Title}
       </div>
       <span class="text-[11px] font-mono-tech text-slate-400">
-        Le partage vaut plus que l'or
+        {t.v3Sub}
       </span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono-tech text-xs">
       <a 
-        href="/#memorandum" 
+        href={t.memoHref} 
         class="p-4 rounded-xl bg-black/60 border border-white/10 hover:border-emerald-400 transition space-y-2 block"
       >
         <div class="text-white font-bold flex items-center gap-2">
-          <span>📄</span> Imprimer le Mémorandum
+          <span>📄</span> {t.v3Card1Title}
         </div>
         <p class="text-[11px] text-slate-400 font-press leading-relaxed">
-          Téléchargez le dossier de l'Inversion de la Dette et faites-le circuler dans votre village.
+          {t.v3Card1Desc}
         </p>
       </a>
 
       <a 
-        href="/#cada" 
+        href={t.cadaHref} 
         class="p-4 rounded-xl bg-black/60 border border-white/10 hover:border-emerald-400 transition space-y-2 block"
       >
         <div class="text-white font-bold flex items-center gap-2">
-          <span>⚖️</span> Recours CADA Automatique
+          <span>⚖️</span> {t.v3Card2Title}
         </div>
         <p class="text-[11px] text-slate-400 font-press leading-relaxed">
-          Forcez votre mairie à publier les marchés publics et comptes cachés en 3 clics.
+          {t.v3Card2Desc}
         </p>
       </a>
 
       <a 
-        href="/#gis-map" 
+        href={t.gisHref} 
         class="p-4 rounded-xl bg-black/60 border border-white/10 hover:border-emerald-400 transition space-y-2 block"
       >
         <div class="text-white font-bold flex items-center gap-2">
-          <span>🗺️</span> Surveiller le Cadastre (SIG 360)
+          <span>🗺️</span> {t.v3Card3Title}
         </div>
         <p class="text-[11px] text-slate-400 font-press leading-relaxed">
-          Vérifiez les mutations immobilières et les zones minières de votre commune.
+          {t.v3Card3Desc}
         </p>
       </a>
     </div>
@@ -386,7 +784,6 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
 
 </div>
 
-<!-- SCRIPT JS LOCAL ET LÉGER DE BASCULE D'ONGLETS ET COPIE -->
 <script is:inline>
   function switchCryptoTab(asset) {
     const tabXmr = document.getElementById('tab_xmr');
@@ -411,7 +808,7 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
     }
   }
 
-  function copyText(val, btnId) {
+  function copyText(val, btnId, copiedMsg) {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(val);
     } else {
@@ -427,7 +824,7 @@ const qrXmr = (await QRCode.toString(`monero:${XMR_ADDRESS}`, {
     const labelEl = document.getElementById(labelId);
     if (labelEl) {
       const orig = labelEl.innerText;
-      labelEl.innerText = "✓ COPIÉ DANS LE PRESSE-PAPIER !";
+      labelEl.innerText = copiedMsg || "✓ COPIED!";
       setTimeout(() => {
         labelEl.innerText = orig;
       }, 2500);

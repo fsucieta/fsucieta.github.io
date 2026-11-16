@@ -13,16 +13,28 @@ const {
   id 
 } = Astro.props;
 
+// Correspondance bidirectionnelle des slugs FR <-> EN
+const frToEnSlug: Record<string, string> = {
+  "26-le-verrou-des-depots-petroliers": "26-the-fuel-depot-monopoly",
+  "28-muvitarra-le-sacrifice-des-bus": "28-le-naufrage-organise-de-la-muvitarra"
+};
+const enToFrSlug: Record<string, string> = {
+  "26-the-fuel-depot-monopoly": "26-le-verrou-des-depots-petroliers",
+  "28-le-naufrage-organise-de-la-muvitarra": "28-muvitarra-le-sacrifice-des-bus"
+};
+const baseFrSlug = slug ? (enToFrSlug[slug] || slug) : '';
+const baseEnSlug = slug ? (frToEnSlug[baseFrSlug] || baseFrSlug) : '';
+
 // Configuration des langues
 const languages = [
-  { code: 'fr', label: 'Français', path: slug ? `/enquetes/${slug}/` : '/' },
-  { code: 'en', label: 'English', path: slug ? `/en/investigations/${slug}/` : '/en/' },
-  { code: 'it', label: 'Italiano', path: slug ? `/it/enquetes/${slug}/` : '/it/' },
-  { code: 'es', label: 'Español', path: slug ? `/es/enquetes/${slug}/` : '/es/' },
-  { code: 'pt', label: 'Português', path: slug ? `/pt/enquetes/${slug}/` : '/pt/' },
-  { code: 'ru', label: 'Русский', path: slug ? `/ru/enquetes/${slug}/` : '/ru/' },
-  { code: 'zh', label: '中文', path: slug ? `/zh/enquetes/${slug}/` : '/zh/' },
-  { code: 'ja', label: '日本語', path: slug ? `/ja/enquetes/${slug}/` : '/ja/' },
+  { code: 'fr', label: 'Français', path: baseFrSlug ? `/enquetes/${baseFrSlug}/` : '/' },
+  { code: 'en', label: 'English', path: baseEnSlug ? `/en/investigations/${baseEnSlug}/` : '/en/' },
+  { code: 'it', label: 'Italiano', path: baseFrSlug ? `/it/enquetes/${baseFrSlug}/` : '/it/' },
+  { code: 'es', label: 'Español', path: baseFrSlug ? `/es/enquetes/${baseFrSlug}/` : '/es/' },
+  { code: 'pt', label: 'Português', path: baseFrSlug ? `/pt/enquetes/${baseFrSlug}/` : '/pt/' },
+  { code: 'ru', label: 'Русский', path: baseFrSlug ? `/ru/enquetes/${baseFrSlug}/` : '/ru/' },
+  { code: 'zh', label: '中文', path: baseFrSlug ? `/zh/enquetes/${baseFrSlug}/` : '/zh/' },
+  { code: 'ja', label: '日本語', path: baseFrSlug ? `/ja/enquetes/${baseFrSlug}/` : '/ja/' },
 ];
 
 const homePath = currentLang === 'fr' ? '/' : `/${currentLang}/`;
@@ -81,26 +93,28 @@ const l = labels[currentLang as keyof typeof labels] || labels.fr;
       
       <!-- Dropdown Sélecteur International 8 Langues -->
       <div class="relative group/lang">
-        <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
+        <button type="button" class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
           <span class="uppercase">{currentLang}</span> <span class="text-[10px] text-amber-400">▼</span>
         </button>
-        <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-36 z-50 font-mono text-xs">
-          {languages.map((lng) => {
-            const isCurrent = lng.code === currentLang;
-            return (
-              <a 
-                href={lng.path} 
-                class={`px-3 py-1 rounded flex items-center justify-between transition ${
-                  isCurrent 
-                    ? 'bg-amber-500/20 text-amber-300 font-bold' 
-                    : 'text-slate-300 hover:text-white hover:bg-white/10'
-                }`}
-              >
-                <span>{lng.label}</span> 
-                <span class="text-[10px] text-slate-500 uppercase">{lng.code}</span>
-              </a>
-            );
-          })}
+        <div class="absolute right-0 top-full pt-1 hidden group-hover/lang:block group-focus-within/lang:block z-50">
+          <div class="bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 flex flex-col gap-1 w-36 font-mono text-xs">
+            {languages.map((lng) => {
+              const isCurrent = lng.code === currentLang;
+              return (
+                <a 
+                  href={lng.path} 
+                  class={`px-3 py-1 rounded flex items-center justify-between transition ${
+                    isCurrent 
+                      ? 'bg-amber-500/20 text-amber-300 font-bold' 
+                      : 'text-slate-300 hover:text-white hover:bg-white/10'
+                  }`}
+                >
+                  <span>{lng.label}</span> 
+                  <span class="text-[10px] text-slate-500 uppercase">{lng.code}</span>
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
 

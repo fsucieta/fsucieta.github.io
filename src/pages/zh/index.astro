@@ -2,9 +2,11 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import GisMap from '../../components/GisMap.astro';
-import CadaGenerator from '../../components/CadaGenerator.astro';
+import CadaGeneratorEn from '../../components/CadaGeneratorEn.astro';
 import DoctrinePreuves from '../../components/DoctrinePreuves.astro';
-import FoncierDvfRadar from '../../components/FoncierDvfRadar.astro';
+import FoncierDvfRadarEn from '../../components/FoncierDvfRadarEn.astro';
+import { getTranslatedEnquete, getUiLabels } from '../../data/i18nEnquetes';
+const u = getUiLabels('zh');
 
 const allEnquetes = await getCollection('enquetes');
 const idsFinalises = [2, 22, 26, 18, 27, 7, 23, 28, 4, 11];
@@ -83,7 +85,7 @@ const enquetesFinalisees = idsFinalises
         <img 
           src="/logo_l_ochju_intact_100pct.png" 
           alt="L'OCHJU" 
-          class="h-6 sm:h-9 md:h-12 w-auto max-w-[130px] sm:max-w-none object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.25)] transition duration-300"
+          class="h-6 sm:h-10 md:h-12 w-auto max-w-[130px] sm:max-w-none object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.25)] transition duration-300"
         />
       </a>
 
@@ -95,10 +97,11 @@ const enquetesFinalisees = idsFinalises
         
         <!-- Dropdown Sélecteur International -->
         <div class="relative group/lang">
-          <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-2.5 py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold">
-            <span>ZH</span> <span class="text-[10px]">▼</span>
+          <button type="button" class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-2.5 py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer">
+            <span>ZH</span> <span class="text-[10px] text-amber-400">▼</span>
           </button>
-          <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-32 z-50 font-mono text-xs">
+          <div class="absolute right-0 top-full pt-1 hidden group-hover/lang:block group-focus-within/lang:block z-50">
+            <div class="bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 flex flex-col gap-1 w-36 font-mono text-xs">
             <a href="/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Français</span> <span class="text-[10px] text-slate-500">FR</span></a>
             <a href="/en/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>English</span> <span class="text-[10px] text-slate-500">EN</span></a>
             <a href="/it/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Italiano</span> <span class="text-[10px] text-slate-500">IT</span></a>
@@ -107,6 +110,7 @@ const enquetesFinalisees = idsFinalises
             <a href="/ru/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Русский</span> <span class="text-[10px] text-slate-500">RU</span></a>
             <a href="/zh/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>中文</span> <span class="text-[10px] text-slate-500">ZH</span></a>
             <a href="/ja/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>日本語</span> <span class="text-[10px] text-slate-500">JA</span></a>
+          </div>
           </div>
         </div>
       </div>
@@ -157,7 +161,7 @@ const enquetesFinalisees = idsFinalises
       </div>
     </section>
 
-    <!-- 2. LES 9 ENQUÊTES SCELLÉES -->
+    <!-- 2. LES 10 ENQUÊTES SCELLÉES -->
     <section class="space-y-8" id="enquetes">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
         <div>
@@ -176,7 +180,10 @@ const enquetesFinalisees = idsFinalises
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {enquetesFinalisees.map((enquete, index) => {
           const d = enquete.data;
-          const displayTitle = d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+          const tEnq = getTranslatedEnquete(d.id, 'zh');
+          const displayTitle = tEnq ? tEnq.title : d.title.replace(/^Enquête\s+\d+\s*:\s*/i, '');
+          const displayCategory = tEnq ? tEnq.category : d.category;
+          const displayChapeau = tEnq ? tEnq.chapeau : d.chapeau;
           const imgPath = d.image.startsWith('http') ? d.image : `/${d.image.replace(/^\//, '')}`;
           const isLead = index === 0;
 
@@ -186,7 +193,7 @@ const enquetesFinalisees = idsFinalises
                 <div class="flex items-center gap-2">
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                   <span class="theme-gold-text font-bold">[{d.reference || `DOSSIER-${d.id}`}]</span>
-                  <span class="text-slate-400 uppercase tracking-wider hidden sm:inline">· {d.category}</span>
+                  <span class="text-slate-400 uppercase tracking-wider hidden sm:inline">· {displayCategory}</span>
                 </div>
                 <span class="bg-emerald-500/10 text-emerald-400 font-mono-tech font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-emerald-500/30 flex items-center gap-1.5">
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -206,20 +213,20 @@ const enquetesFinalisees = idsFinalises
               <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div>
                   <h3 class={`font-press font-bold text-white group-hover:text-amber-300 transition leading-snug ${isLead ? 'text-2xl sm:text-3xl' : 'text-lg sm:text-xl'}`}>
-                    <a href={`/enquetes/${enquete.slug}/`} class="hover:underline">
+                    <a href={`/zh/enquetes/${enquete.slug}/`} class="hover:underline">
                       {displayTitle}
                     </a>
                   </h3>
                   <p class="text-slate-300 text-xs sm:text-sm line-clamp-3 mt-3 leading-relaxed font-press">
-                    {d.chapeau}
+                    {displayChapeau}
                   </p>
                 </div>
 
                 <div class="pt-4 border-t border-white/10 flex items-center justify-between font-mono-tech text-xs">
-                  <a href={`/enquetes/${enquete.slug}/`} class="text-amber-400 group-hover:text-amber-300 font-bold flex items-center gap-1.5">
+                  <a href={`/zh/enquetes/${enquete.slug}/`} class="text-amber-400 group-hover:text-amber-300 font-bold flex items-center gap-1.5">
                     <span>查看完整卷宗</span> <span>→</span>
                   </a>
-                  <span class="text-[10px] text-slate-500 uppercase">ISO 27037 SCELLÉ</span>
+                  <span class="text-[10px] text-slate-500 uppercase">{u.isoCardBadge}</span>
                 </div>
               </div>
             </article>
@@ -230,15 +237,15 @@ const enquetesFinalisees = idsFinalises
 
     <!-- 3. OUTILS SOUVERAINS (SIG 360, CADA, DVF) -->
     <div id="gis-map" class="space-y-4">
-      <GisMap />
+      <GisMap lang="en" />
     </div>
 
     <div id="foncier-dvf" class="space-y-4">
-      <FoncierDvfRadar />
+      <FoncierDvfRadarEn />
     </div>
 
     <div id="cada" class="space-y-4">
-      <CadaGenerator />
+      <CadaGeneratorEn />
     </div>
 
     <!-- OUTRO RITUELLE -->
@@ -252,10 +259,10 @@ const enquetesFinalisees = idsFinalises
 
   <footer class="border-t border-slate-800 bg-slate-950 py-10 px-6 mt-20 text-center font-mono-tech text-xs text-slate-500 space-y-3">
     <div class="text-slate-300 font-bold uppercase tracking-widest">
-      L'OCHJU — CELLULE D'INVESTIGATION CITOYENNE & OPEN DATA
+      {u.footerTitle}
     </div>
     <div class="text-[11px] text-slate-600 font-sans max-w-3xl mx-auto leading-relaxed">
-      Édition citoyenne non professionnelle à but non lucratif (LCEN) · ISO/IEC 27037.
+      {u.footerSub}
     </div>
   </footer>
 </Layout>

@@ -1,109 +1,109 @@
 ---
 id: 11
-title: "Le Sanctuaire Confisqué : L'Autopsie des 2 842 Hectares Militaires et le Système des Rentes d'État (50 Millions d'Euros par An)"
-subtitle: "BA 126 Solenzara, Aspretto, Camp Raffalli et Diane : révélations sur l'accord secret avec l'armée américaine, le marché de 91 millions d'euros pour les pistes, les 41 millions de litres d'eau volés à la rivière et les 19,75 millions d'euros d'impôts impayés que l'État doit à nos communes."
-category: "DÉFENSE & TERRITOIRE"
+title: "The Confiscated Sanctuary: Autopsy of 2,842 Military Hectares and the State Rent System (€50 Million per Year)"
+subtitle: "BA 126 Solenzara, Aspretto, Camp Raffalli and Diane: revelations on the secret US military treaty, the €91 million runway contract, 41 million liters of river water diverted, and €19.75 million in unpaid property taxes owed to Corsican municipalities."
+category: "DEFENSE & TERRITORY"
 status: cloturee
 ref: "LOCHJU-DOSSIER-11"
-author: "Cellule d'Investigation L'OCHJU"
-date: "Octobre 2026"
-tool: "Enquête citoyenne sur pièces d'État certifiées"
-chapeau: "Un quart des plaines littorales de Corse est cadenassé sous miradors. Pendant qu'il est devenu impossible de se loger et que les jeunes agriculteurs de l'île sont chassés par la flambée des prix, l'État exploite notre sol comme une entreprise commerciale géante qui rapporte 50 millions d'euros par an à Paris. L'examen minutieux des documents officiels — du traité international déposé à l'ONU au contrat de 91 millions d'euros pour les pistes, en passant par les rapports sur l'eau et les 2 848 terrains recensés au cadastre — démontre que l'armée viole la loi fiscale et doit immédiatement 19,75 millions d'euros d'arriérés aux communes corses."
+author: "L'OCHJU Investigation Desk"
+date: "October 2026"
+tool: "Citizen forensic audit on certified State records"
+chapeau: "One quarter of Corsica's flat coastal plains is locked behind barbed wire and watchtowers. While housing has become unaffordable and young local farmers are priced out of the island, the French State operates Corsican land as a giant commercial enterprise generating €50 million per year for Paris. Detailed inspection of official state filings — from the bilateral treaty registered at the United Nations to the €91 million runway tender, water authority findings, and 2,848 cadastral land parcels — proves that the military breaches tax law and owes €19.75 million in immediate back taxes to Corsican towns."
 image: "/img_enquete_11.jpg"
 sources:
-  - name: "Accord international officiel France - Armée américaine (Traité ONU n° 38665)"
+  - name: "Official Bilateral Agreement France - US Air Force (UN Treaty #38665)"
     url: "https://treaties.un.org/"
     sha256: "ae3f0b842228bc22a59c122cc9092fafef1512d33b682e7ad83d18c355c617e8"
-  - name: "Contrat officiel de l'État : 91 millions d'euros pour refaire les pistes (Avis BOAMP 440653)"
+  - name: "Official State Procurement Contract: €91M for Runway Reconstruction (BOAMP Notice 440653)"
     url: "https://www.boamp.fr/"
     sha256: "3a1c5e7f9a1c3d5e7b9a1c3f5e7d9b1a7c2d8a4b9e1f0c3d5e7b9a1c3f5e7d9b"
-  - name: "Rapport d'enquête sur l'eau et la pollution (Autorité Environnementale MRAe 2025-DKCOR3)"
+  - name: "Environmental Authority Inspection Report on Water & PFAS Pollution (MRAe 2025-DKCOR3)"
     url: "https://www.mrae.developpement-durable.gouv.fr/"
     sha256: "92645040b224fdb55bc78a007186f929907a634728409978e6eb5df8394919ba"
-  - name: "Votes officiels des élus de Corse demandant la restitution d'Aspretto (Délibérations 14/207 et 21/017)"
+  - name: "Corsican Assembly Votes Requesting Return of Aspretto Base (Deliberations 14/207 & 21/017)"
     url: "https://www.isula.corsica/"
     sha256: "d8705264cbb2bd7792ff30558ff1fde8aa8bdf829a1b5d221a40395e9bde6e52"
-  - name: "Relevé du registre des terrains de Ventiseri (2 848 parcelles recensées aux Impôts)"
+  - name: "Ventiseri Cadastral Land Registry Extract (2,848 Parcels Recorded at DGFiP Tax Office)"
     url: "https://cadastre.data.gouv.fr/"
     sha256: "9c8b7a6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
-  - name: "Liste complète des 137 contrats payés par l'armée en Corse (Données officielles 2015-2026)"
+  - name: "Complete Registry of 137 Military Procurement Contracts in Corsica (2015–2026 Public Data)"
     url: "https://data.gouv.fr/"
     sha256: "6b1f8e2d4c0a5e9b7f3a1c8d5e2f4a6b0c9e7d5a3f1b8c6e4a2d0f9b7c5a3e1f"
 ---
 
 <!-- ==========================================================================
-     CARTOUCHE MAÎTRE À DOUBLE LECTURE : L'IMPACT DIRECT ET LES DOCUMENTS OFFICIELS
+     MASTER DOUBLE-SHELF DOSSIER CARD: DIRECT IMPACT & OFFICIAL EVIDENCE
      ========================================================================== -->
 <div class="my-8 not-prose rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 p-6 md:p-8 shadow-2xl relative overflow-hidden">
   <div class="absolute -top-16 -right-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-  <!-- NIVEAU POPULAIRE : LES CHIFFRES CHOCS EN CLAIR -->
+  <!-- POPULAR TIER: CLEAR HEADLINE FIGURES -->
   <div class="border-b border-amber-500/30 pb-5 mb-5">
     <div class="flex items-center gap-2 mb-2">
       <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
       <span class="text-xs font-mono font-bold tracking-widest uppercase text-amber-400">
-        👁️ U SAPÈ CITADINU : CE QUE CE SCANDALE VOUS COÛTE DIRECTEMENT
+        👁️ U SAPÈ CITADINU : WHAT THIS SCANDAL COSTS YOUR COMMUNITY DIRECTLY
       </span>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Terres Bloquées</span>
-        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">2 842 hectares</span>
-        <span class="text-[10px] text-slate-400 block mt-1">1 quart des plaines littorales plates de l'île</span>
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Locked Land</span>
+        <span class="text-xl md:text-2xl font-black text-rose-400 font-mono">2,842 hectares</span>
+        <span class="text-[10px] text-slate-400 block mt-1">1 quarter of all flat coastal plains on the island</span>
       </div>
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Bonne Terre Abandonnée</span>
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Idle Prime Farmland</span>
         <span class="text-xl md:text-2xl font-black text-amber-400 font-mono">327 hectares</span>
-        <span class="text-[10px] text-slate-400 block mt-1">Bloqués sous barbelés à Ventiseri = 35 fermes maraîchères interdites</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Fenced off in Ventiseri = 35 blocked vegetable farms</span>
       </div>
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Argent Encaissé par Paris</span>
-        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">50 M€ par an</span>
-        <span class="text-[10px] text-slate-400 block mt-1">Location du ciel corse et kérosène détaxé (0 € pour nos villages)</span>
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Collected by Paris</span>
+        <span class="text-xl md:text-2xl font-black text-emerald-400 font-mono">€50M / year</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Airspace leases & duty-free fuel (€0 for our villages)</span>
       </div>
       <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Impôts Dûs à Nos Mairies</span>
-        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">19,75 millions €</span>
-        <span class="text-[10px] text-slate-400 block mt-1">Dette immédiate de l'État envers 7 communes selon la loi fiscale</span>
+        <span class="text-[11px] font-mono text-slate-400 uppercase block mb-1">Taxes Owed to Towns</span>
+        <span class="text-xl md:text-2xl font-black text-cyan-400 font-mono">€19.75 million</span>
+        <span class="text-[10px] text-slate-400 block mt-1">Immediate State tax debt to 7 municipalities under tax law</span>
       </div>
     </div>
     <div class="p-4 rounded-xl bg-slate-950/90 border border-amber-500/20 my-3">
       <p class="font-serif text-sm text-slate-200 leading-relaxed italic m-0">
-        « Si vous vivez en Corse, on vous répète depuis toujours qu'il n'y a plus de place, que le mètre carré est devenu inabordable et que nos enfants doivent s'exiler. La réalité des registres publics est brutale : l'État verrouille 2 842 hectares de nos terres les plus plates et fertiles en bord de mer. Pendant que les maires manquent d'espace et que les agriculteurs subissent des coupures d'eau en pleine canicule, la base militaire pompe 41 millions de litres d'eau dans la rivière sans payer un centime, et encaisse 50 millions d'euros par an en louant notre ciel aux armées de l'OTAN. Tous les documents officiels qui le prouvent sont détaillés ci-dessous. »
+        « If you live in Corsica, you are constantly told there is no land left, square meters are unaffordable, and young people must leave. Public registries reveal the raw truth: the French State locks away 2,842 hectares of our flattest, most fertile coastal land. While mayors lack space and farmers face drought bans, the Solenzara base pumps 41 million liters of river water every year free of charge and collects €50 million annually renting our sky to NATO air forces. Every official document proving this is archived below. »
       </p>
     </div>
   </div>
 
-  <!-- NIVEAU DES PREUVES OFFICIELLES -->
+  <!-- FORENSIC TIER -->
   <div class="space-y-3">
     <div class="text-[11px] font-mono text-cyan-400 uppercase tracking-wider font-semibold flex items-center justify-between">
-      <span>⚖️ LES DOCUMENTS OFFICIELS QUI PROUVENT CHAQUE CHIFFRE :</span>
-      <span class="text-[10px] text-slate-500 font-normal">Chaque pièce est vérifiée et consultable au centime près</span>
+      <span>⚖️ OFFICIAL RECORDS PROVING EVERY SINGLE FIGURE:</span>
+      <span class="text-[10px] text-slate-500 font-normal">Each exhibit audited down to the cent</span>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-mono text-xs">
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">📄 <strong>Traité officiel déposé à l'ONU (Recueil des Traités n° 38665)</strong></span>
-        <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">Texte intégral certifié</span>
+        <span class="text-slate-300">📄 <strong>Official Treaty Filed at the UN (UNTS No. 38665)</strong></span>
+        <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">Certified full text</span>
       </div>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">📑 <strong>Marché officiel de l'État : Réfection des pistes (91 millions €)</strong></span>
-        <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">Journal officiel BOAMP</span>
+        <span class="text-slate-300">📑 <strong>State Procurement: Runway Overhaul (€91 Million)</strong></span>
+        <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">BOAMP Official Gazette</span>
       </div>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">📑 <strong>Rapport de l'Autorité Environnementale (Forages & Pollutions)</strong></span>
-        <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">Rapport d'État 2025</span>
+        <span class="text-slate-300">📑 <strong>Environmental Authority Report (Drilling & PFAS)</strong></span>
+        <span class="text-[10px] text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">2025 State Report</span>
       </div>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">📜 <strong>Votes de l'Assemblée de Corse pour la restitution d'Aspretto</strong></span>
-        <span class="text-[10px] text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Délibérations 14/207 & 21/017</span>
+        <span class="text-slate-300">📜 <strong>Corsican Assembly Votes for Return of Aspretto</strong></span>
+        <span class="text-[10px] text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Deliberations 14/207 & 21/017</span>
       </div>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">🗺️ <strong>Relevé du cadastre des 2 848 parcelles bloquées à Ventiseri</strong></span>
-        <span class="text-[10px] text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-800/40">Registre des Impôts DGFiP</span>
+        <span class="text-slate-300">🗺️ <strong>Cadastral Audit of 2,848 Parcels in Ventiseri</strong></span>
+        <span class="text-[10px] text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-800/40">DGFiP Tax Registry</span>
       </div>
       <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-        <span class="text-slate-300">📊 <strong>Registre des 137 marchés payés par l'armée en Corse</strong></span>
-        <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">Données budgétaires 2015-2026</span>
+        <span class="text-slate-300">📊 <strong>Ledger of 137 Military Contracts in Corsica</strong></span>
+        <span class="text-[10px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">2015–2026 Budget Data</span>
       </div>
     </div>
   </div>
@@ -111,314 +111,203 @@ sources:
 
 ---
 
-## La Minute d'Arrêt : Une Ligne Diplomatique Qui Bloque la Justice Locale
+## Opening Exhibit: One Diplomatic Clause Blocking Local Justice
 
-*« L'Armée de l'Air autorise les forces aériennes américaines en Europe à utiliser les installations, l'espace aérien et le champ de tir de Solenzara et Diane... Toute réclamation résultant de l'exécution du présent accord sera traitée conformément à l'article VIII du statut des forces de l'OTAN. »*  
-Recueil officiel des Traités des Nations Unies, Volume 2190, Accord international n° 38665.
+*"The French Air Force authorizes the United States Air Forces in Europe to use the facilities, airspace and firing range of Solenzara and Diane... Any claim arising out of the implementation of this Agreement shall be settled in accordance with Article VIII of the NATO Status of Forces Agreement."*  
+United Nations Treaty Series, Volume 2190, International Agreement No. 38665.
 
-Ce texte ne sort pas d'une rumeur. C'est un traité officiel signé entre la France et les États-Unis, enregistré au siège de l'ONU à New York.
+This is not speculation. It is an official bilateral treaty signed between France and the United States and deposited at UN Headquarters in New York.
 
-Ce qu'il impose à la Corse en une seule phrase est sans appel : **les armées étrangères ont l'autorisation de s'entraîner au tir réel dans notre ciel et dans notre mer, et si vous subissez des dégâts, des nuisances sonores permanentes ou des pollutions, la justice locale et vos maires sont privés de tout pouvoir d'agir.**
+Its legal consequence for Corsica is stark: **foreign air forces are authorized to conduct live-fire bombing drills in our skies and waters, while local courts and Corsican mayors are stripped of legal power to seek redress for noise, pollution, or damage.**
 
-Pendant que vous cherchez un logement devenu impossible à payer à Ajaccio, Bastia, Furiani ou Porto-Vecchio, et que les jeunes d'ici ne trouvent plus un seul hectare de terre à acheter pour s'installer, l'État bloque **2 842 hectares de nos terres les plus riches en bord de mer**. 
-
-L'enquête menée sur les comptes publics, les délibérations et les contrats officiels prouve que ces bases ne sont pas de simples casernes : **l'État les gère comme une entreprise commerciale géante qui rapporte 50 millions d'euros par an à Paris, sans verser un seul euro aux communes corses qui en subissent toutes les nuisances.**
+Meanwhile, the French State locks away **2,842 hectares of our richest flat coastal land** while families cannot find affordable housing and young farmers cannot buy a single hectare. Cross-auditing public budgets, deliberations, and contracts proves these bases are not simple barracks: **Paris operates them as a commercial enterprise grossing up to €50 million a year while paying zero local property tax to host municipalities.**
 
 ---
 
-## 1. LE CIEL DE CORSE COMMERCIALISÉ AUX ARMÉES DE L'OTAN
+## 1. CORSICAN AIRSPACE COMMERCIALIZED TO NATO FORCES
 
-Quand on écoute les discours officiels, la base aérienne 126 de Solenzara est présentée comme un bouclier indispensable pour la sécurité de la France.
+Official speeches present BA 126 Solenzara as an indispensable defense shield. Flight registries reveal the truth: **no permanent French fighter squadron is stationed at Solenzara.**
 
-Regardez la réalité des registres de vol : **il n'y a aucun escadron d'avions de chasse français basé en permanence à Solenzara.**
+Its true function is commercial and international: a paid live-fire training hub for NATO air forces (United States, Belgium, United Kingdom, Germany) leasing Corsican airspace and the Diane offshore bombing range under two extraordinary legal privileges:
 
-À quoi sert donc ce gigantesque aéroport militaire de 600 hectares ? 
-
-Sa véritable activité est internationale et commerciale : c'est un centre d'entraînement payant pour les armées de l'OTAN (États-Unis, Belgique, Grande-Bretagne, Allemagne), qui viennent louer l'espace aérien corse et le champ de tir en mer de Diane.
-
-Ce fonctionnement repose sur deux règles d'exception :
-
-1. **L'interdiction de recours pour les habitants (Article VIII du traité de l'OTAN)** :  
-   Un avion étranger brise le mur du son au-dessus de votre village ? Des résidus métalliques polluent les zones de pêche de la Plaine Orientale ? L'article VIII du traité décharge totalement les forces alliées. Les habitants et les maires corses sont juridiquement empêchés de porter plainte directement contre les armées étrangères.
-
-2. **Un dépôt géant de bombes étrangères sur notre littoral** :  
-   Le traité alloue des hangars blindés et des alvéoles sécurisées exclusivement réservées aux forces américaines pour stocker leurs bombes guidées et munitions de haute précision. La Costa Serena sert ainsi de gare logistique pour des armes lourdes internationales, sans qu'aucun élu local n'ait son mot à dire.
-
-> **Ce que cela signifie concrètement :**  
-> On vous demande de trier vos emballages et de faire attention à votre consommation pour protéger l'environnement, pendant que des chasseurs de combat étrangers viennent s'entraîner au largage de bombes au large d'Aléria, avec un accord officiel qui les protège de toute responsabilité en cas de dégâts sur nos côtes.
+1. **Citizen Immunity Shield (NATO SOFA Article VIII)**: Allied air forces are shielded from direct local litigation over sonic booms or metallic debris falling in Eastern Plain fishing grounds.
+2. **A Foreign Precision-Guided Bomb Depot on Our Coastline**: The UN treaty allocates hardened bunkers exclusively to US forces to stockpile laser-guided bombs and munitions without local municipal oversight.
 
 ---
 
-## 2. 2 842 HECTARES BLOQUÉS ET LE SCANDALE DES 327 HECTARES EN FRICHE À VENTISERI
+## 2. 2,842 CONFISCATED HECTARES & THE 327 IDLE HECTARES AT VENTISERI
 
-On vous explique partout qu'il n'y a plus de terres disponibles pour loger nos familles ou pour installer des jeunes agriculteurs. 
-
-Regardez l'inventaire précis des terrains que le Ministère des Armées garde sous clé en Corse, issu du registre national des propriétés de l'État :
+Official inventory from the French State Real Estate Registry (*Domaines*) across Corsica:
 
 <div class="overflow-x-auto my-6 rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl">
 
-| Lieu Militaire Sanctuarisé | Commune Siège | Surface Cadastrée | Utilisation Réelle sur le Terrain | Ce que la Mairie Reçoit en Impôts |
+| Military Site | Municipality | Cadastral Area | Real Field Usage | Property Tax Paid to Town |
 | :--- | :--- | :--- | :--- | :--- |
-| **Base Aérienne 126** | Ventiseri | **600 Hectares** | Pistes, escale d'avions étrangers, dépôts de bombes | **0 € de taxe foncière** |
-| **Champ de Tir en Mer de Diane** | Linguizetta | **570 Hectares** | Tirs à la bombe guidée et missiles en mer | **0 € de taxe foncière** |
-| **Camp Raffalli (2e REP)** | Calvi et Calenzana | **340 Hectares** | Casernement de la Légion, Fiume Seccu | **0 € de taxe foncière** |
-| **Base Navale du Lazaret d'Aspretto** | Ajaccio | **18 Hectares** | Port militaire, bureaux et logements de passage | **0 € de taxe foncière** |
-| **Champs de tir, radars et casemates** | Multi-communes | **1 314 Hectares** | Saint-Florent (Casta), Bonifacio, Pigno, Chiappa | **0 € de taxe foncière** |
-| **TOTAL DES TERRES CONFISQUÉES** | **Toute la Corse** | **2 842 HECTARES** | **24,8 % des plaines littorales plates de l'île** | **0,00 € versé à nos villages** |
+| **Air Base 126 (BA 126)** | Ventiseri | **600 Hectares** | Runways, foreign aircraft stopovers, bomb bunkers | **€0 property tax** |
+| **Diane Offshore Firing Range** | Linguizetta | **570 Hectares** | Guided bomb and missile live-fire sea zone | **€0 property tax** |
+| **Camp Raffalli (2nd REP)** | Calvi & Calenzana | **340 Hectares** | Foreign Legion barracks, Fiume Seccu | **€0 property tax** |
+| **Aspretto Naval Base** | Ajaccio | **18 Hectares** | Military harbor, offices and transit quarters | **€0 property tax** |
+| **Ranges, Radar & Bunkers** | Multi-municipal | **1,314 Hectares** | Saint-Florent (Casta), Bonifacio, Pigno, Chiappa | **€0 property tax** |
+| **TOTAL CONFISCATED LAND** | **All Corsica** | **2,842 Hectares** | **24.8% of the island's flat coastal plains** | **€0.00 paid to villages** |
 
 </div>
 
-### Le Flagrant Délit des 327 Hectares de Bonne Terre Laissés à l'Abandon
-Regardons ce qui se passe à l'intérieur des clôtures de la base de Ventiseri :
-- Les pistes en dur, les hangars d'entretien et les dépôts de munitions n'occupent que **185 hectares** (soit seulement 30 % du domaine).
-- **327 hectares de terres agricoles d'une qualité exceptionnelle dorment à l'état d'abandon total, couverts d'herbes folles.**
-
-> **Ce que ces 327 hectares permettraient de réaliser pour la Corse :**  
-> C'est une plaine alluvionnaire remarquable, parfaitement plate, arrosée en permanence par le fleuve Travo.  
-> Ces 327 hectares permettraient d'installer immédiatement **35 jeunes agriculteurs** qui cherchent désespérément de la terre. Ils permettraient de produire **1 800 tonnes de fruits et légumes frais chaque année**, de quoi nourrir 45 000 personnes et approvisionner toutes les cantines scolaires de Corse en nourriture saine.  
-> Au lieu de nourrir nos enfants et de créer des emplois pour nos jeunes, cette terre nourricière est verrouillée derrière des miradors militaires sans servir à rien.
+### Flagship Waste: 327 Hectares of Prime Alluvial Soil Left Wild
+Inside Ventiseri's perimeter fence, paved runways, hangars, and bunkers occupy only **185 hectares** (30% of the base). **327 hectares of fertile, flat alluvial soil watered by the Travo river sit completely abandoned.** Those 327 hectares could immediately settle **35 young farmers** and produce **1,800 tonnes of fresh fruit and vegetables annually** — enough to supply every school canteen in Corsica.
 
 ---
 
-## 3. L'ARGENT CACHÉ : 50 MILLIONS D'EUROS ENCAISSÉS CHAQUE ANNÉE PAR L'ÉTAT
+## 3. HIDDEN REVENUE: NEARLY €50 MILLION COLLECTED EVERY YEAR BY THE STATE
 
-Lorsque nos maires demandent pourquoi ces immenses terrains ne paient pas un centime d'impôt local à la commune, le Ministère des Armées répond toujours la même chose : *« Ce sont des biens publics militaires affectés à la défense gratuite, ils ne rapportent aucun argent »*.
+Whenever mayors ask why these giant compounds pay zero property tax, the Ministry of Armed Forces claims they are *non-revenue-generating public defense facilities*. State budgets and 137 public military contracts prove otherwise — Paris monetizes Corsican military sites for **€39.4M to €53.1M per year**:
 
-C'est faux. L'analyse des budgets de l'État et des 137 marchés publics passés par l'armée montre que **l'État a monétisé l'ensemble du dispositif militaire corse et encaisse chaque année entre 39,4 et 53,1 millions d'euros :**
+### A. Solenzara Air Base Revenues: €28.8M to €42.5M / year
+1. **Diane Range Toll (€12M–€16M/yr)**: Billed to foreign NATO air forces at **€4,500 to €7,800 per flight hour per aircraft**.
+2. **Tax-Free Aviation Fuel Trade (€9.5M–€15M/yr)**: Solenzara operates its own offshore sea oil terminal (BOAMP 25-1584), importing tax-exempt fuel and reselling it with logistical margins to visiting foreign squadrons.
+3. **Hardened Hangars & Munitions Storage (€4.8M–€7.5M/yr)**: Paid ramp parking, engine test benches, and underground ordnance storage.
+4. **Private Defense Contractor Trials (€2.5M–€4M/yr)**: Rented to Dassault Aviation, Thales, and MBDA to test export fighters and missiles.
 
-### A. L'Argent Encaissé sur la Base de Solenzara : 28,8 à 42,5 Millions d'Euros par an
-1. **Le péage de Diane (12 à 16 millions d'euros par an)** :  
-   Le champ de tir maritime de Diane est loué aux armées étrangères de l'OTAN (Belges, Britanniques, Allemands, Américains). Les tarifs officiels de passage sont facturés entre **4 500 € et 7 800 € l'heure de vol par avion**. Lors des exercices réunissant 40 avions de chasse pendant trois semaines, les factures de location atteignent des dizaines de millions d'euros.
-2. **Le commerce de carburant d'aviation (9,5 à 15 millions d'euros par an)** :  
-   La base possède son propre quai pétrolier en mer (Avis officiel BOAMP 25-1584). Le carburant militaire y est débarqué en franchise totale de taxes françaises, puis revendu avec une marge commerciale logistique aux escadrons étrangers qui viennent s'entraîner.
-3. **Le stationnement et les hangars sécurisés (4,8 à 7,5 millions d'euros par an)** :  
-   Prestations d'escale payantes pour les avions de passage, location des bancs d'essai des moteurs et gardiennage sécurisé des munitions dans le grand dépôt souterrain.
-4. **Les essais pour les marchands d'armes privés (2,5 à 4 millions d'euros par an)** :  
-   L'armée loue les pistes de Solenzara et l'espace maritime corse à de grandes firmes privées (Dassault Aviation, Thales, MBDA) pour tester leurs nouveaux avions de combat et missiles avant de les exporter à l'étranger.
-
-### B. L'Argent Encaissé à Ajaccio, Calvi et sur les Sommets : 10,6 Millions d'Euros par an
-- **À la base navale d'Aspretto (Ajaccio) — environ 4,2 millions par an** :  
-  L'armée a rénové les anciens ateliers (Marchés publics BOAMP 26-93040 et 26-19301) pour héberger les vedettes rapides des douanes sous forme de baux payants. Elle facture également l'hébergement des compagnies de CRS et de gendarmes mobiles déplacées sur l'île (Avis BOAMP 23-180567).
-- **Au Camp Raffalli de Calvi et au champ de tir de Casta — environ 3,8 millions par an** :  
-  Mise à disposition payante des zones de tir désertiques des Agriates à des unités militaires extérieures et organisation de stages d'entraînement commando tarifés.
-- **Sur les radars et sémaphores de montagne — environ 2,6 millions par an** :  
-  L'État loue les sommets stratégiques (comme la Serra di Pigno au-dessus de Bastia, ou la Chiappa à Porto-Vecchio) aux grands opérateurs de téléphonie mobile (Orange, SFR, Bouygues, TDF) pour y installer leurs antennes relais 4G et 5G.
-
-> **Le bilan financier brut :**  
-> L'État encaisse **près de 50 millions d'euros par an** grâce aux terrains et aux installations situés sur le sol de la Corse.  
-> La part reversée aux communes corses qui subissent le bruit, les servitudes et l'usure des routes : **0,00 €**.
+### B. Ajaccio, Calvi & Mountain Radar Revenues: €10.6M / year
+- **Aspretto Naval Base (Ajaccio) — ~€4.2M/yr**: Refurbished workshops (BOAMP 26-93040 & 26-19301) leased to Customs patrol boats plus paid housing for visiting mobile police units (BOAMP 23-180567).
+- **Camp Raffalli & Casta Firing Range — ~€3.8M/yr**: Paid tactical training and commando courses rented to external units.
+- **Mountain Radar Peaks — ~€2.6M/yr**: Telecom tower leases to Orange, SFR, Bouygues, and TDF on Serra di Pigno (Bastia) and Chiappa (Porto-Vecchio).
 
 ---
 
-## 4. L'INJUSTICE DE L'EAU ET LA POLLUTION LAISSÉE SUR PLACE
+## 4. WATER INJUSTICE & UNTREATED PFAS CONTAMINATION
 
-Le rapport officiel de l'Autorité Environnementale de l'État (Avis délibéré MRAe n° 2025-DKCOR3) met au jour une inégalité insupportable :
-
-1. **41 millions de litres d'eau volés à la rivière chaque année** :  
-   La base de Solenzara exploite de manière autonome **trois forages industriels très profonds** qui pompent chaque année 41 200 m³ d'eau douce directement dans la nappe alluviale du fleuve Travo.  
-   Pendant les étés de sécheresse, quand la préfecture publie des arrêtés de crise interdisant aux agriculteurs de la Plaine Orientale d'arroser leurs cultures sous peine de poursuites, **les forages de la base militaire continuent de tourner à plein régime pour laver les pistes et les avions, sans compteur de coupure ni aucune restriction.**
-
-2. **28 millions d'euros de pollution non nettoyée dans nos sols** :  
-   Pendant plus de quarante ans, l'utilisation massive de mousses anti-incendie contenant des composés chimiques toxiques (les polluants éternels PFAS) et la manipulation annuelle de plus de 12 000 tonnes de carburant d'aviation ont pollué les nappes et les sols alluvionnaires.  
-   Le coût nécessaire pour dépolluer ces sols et enlever les résidus pyrotechniques est évalué à plus de **28 millions d'euros**, mais l'État n'a prévu aucun budget pour réparer les dégâts.
+The State Environmental Authority report (MRAe Opinion No. 2025-DKCOR3) documents two severe environmental breaches:
+1. **41 Million Liters of Water Pumped Annually**: BA 126 operates deep industrial boreholes drawing **41,200 m³** per year from the Travo river aquifer — running at full capacity to wash runways and jets even when prefectural drought bans forbid Eastern Plain farmers from irrigating crops.
+2. **€28 Million in Untreated PFAS & Fuel Pollution**: Decades of PFAS firefighting foams and handling 12,000+ tonnes of jet fuel per year have contaminated soils and groundwater, leaving over **€28 million** in unbudgeted remediation liabilities.
 
 ---
 
-## 5. LA FAILLE DE LA LOI : L'ÉTAT DOIT 19,75 MILLIONS D'EUROS D'IMPÔTS À NOS MAIRIES
+## 5. THE LEGAL BREACH: THE STATE OWES €19.75 MILLION IN BACK TAXES TO OUR MUNICIPALITIES
 
-C'est ici que le rapport de force s'inverse grâce à la loi républicaine.
+Under **Article 1382 of the French General Tax Code (CGI)**, State property is exempt from local property tax *only* if strictly **unproductive of revenue**. Established **Conseil d'État case law (October 27, 1999)** confirms that as soon as a State compound hosts paid activities, fuel resales, or commercial telecom leases, **tax exemption ceases automatically**.
 
-L'article 1382 du Code Général des Impôts énonce une règle très claire : les propriétés de l'État ne sont exonérées de taxe foncière qu'à une condition juridique absolue : **les biens doivent être strictement improductifs de revenus**.
+Annual property tax shortfall suffered by host municipalities:
+- **Ventiseri & Solaro (BA 126 - 600 ha)**: €1,280,000 / year
+- **Calvi & Calenzana (Camp Raffalli - 340 ha)**: €890,000 / year
+- **Ajaccio (Aspretto - 18 ha)**: €460,000 / year
+- **Linguizetta & radar towns (1,314 ha)**: €1,320,000 / year
+- **TOTAL ANNUAL SHORTFALL**: **€3,950,000 / year**
 
-Les plus hauts juges administratifs de France (le Conseil d'État, dans son arrêt du 27 octobre 1999) ont fixé la jurisprudence : **dès lors qu'une emprise de l'État accueille des activités payantes, des refacturations de carburant ou des loyers d'antennes, l'exonération d'impôt s'effondre de plein droit.**
-
-Puisque l'État fait du commerce avec ses installations militaires en Corse, il n'a plus aucun droit d'échapper à l'impôt local. Il doit payer la taxe foncière comme n'importe quel propriétaire.
-
-### Le Calcul Officiel de la Dette Fiscale de l'État :
-Sur la base des mètres carrés cadastrés et des taux votés par les communes, le manque à gagner fiscal subi chaque année par nos villages s'établit à :
-
-- **Pour Ventiseri et Solaro (Base de Solenzara - 600 hectares)** : 1 280 000 € par an
-- **Pour Calvi et Calenzana (Camp Raffalli - 340 hectares)** : 890 000 € par an
-- **Pour Ajaccio (Base d'Aspretto - 18 hectares)** : 460 000 € par an
-- **Pour Linguizetta et les communes des radars (1 314 hectares)** : 1 320 000 € par an
-- **MANQUE À GAGNER GLOBAL POUR LA CORSE : 3 950 000 € PAR AN**
-
-En application des règles fiscales qui permettent de réclamer les 4 dernières années non prescrites plus l'année en cours (soit 5 ans d'arriérés), **nos 7 communes détiennent une créance légale totale de 19 750 000 € immédiatement exigible auprès de l'État.**
-
-> **Ce que représentent 19,75 millions d'euros pour le quotidien de nos villages :**  
-> Avec cette somme qui leur revient de droit, nos mairies peuvent :  
-> - Rénover l'intégralité des canalisations d'eau potables fuyardes dans le Fium'Orbu et en Balagne,  
-> - Rendre les cantines scolaires gratuites pour les familles modestes,  
-> - Ouvrir de nouvelles crèches municipales,  
-> - Réhabiliter des logements au village pour que les jeunes ménages puissent rester vivre sur leur terre sans s'endetter sur trente ans.
+Across the 5 legally collectible tax years (4 prior years + current year), **7 Corsican municipalities hold an immediately enforceable €19,750,000 tax claim against the French State.**
 
 ---
 
-## 6. LES EXCUSES QU'ILS VONT VOUS DONNER ET LA RÉALITÉ DES FAITS
+## 6. THREE PREDICTABLE STATE EXCUSES — DISMANTLED BY FACTS
 
-Dès la parution de cette enquête, les services de l'État tenteront d'éteindre l'incendie par leurs trois éléments de langage habituels :
-
-1. **Première excuse : « Ces informations touchent au secret-défense et à la sécurité nationale »**  
-   *La réalité :* **Aucun secret militaire n'est violé.** Chaque ligne, chaque chiffre et chaque contrat cité dans ce dossier provient des registres publics de l'État, du Journal officiel des marchés publics (BOAMP), des données foncières de la DGFiP et du Recueil officiel des traités de l'ONU à New York. C'est l'État lui-même qui a publié ces chiffres ; la Cellule L'OCHJU n'a fait que les mettre au jour et faire l'addition.
-
-2. **Deuxième excuse : « L'armée ne fait aucun bénéfice, ce sont de simples remboursements de charges »**  
-   *La réalité :* La loi et les juges du Conseil d'État ne font aucune distinction sur l'appellation comptable : dès lors qu'il y a des flux d'argent qui rentrent (loyers d'antennes 4G, passes de tir facturées, ventes de carburéacteur, cantonnements payants), **l'exonération fiscale de l'article 1382 du Code Général des Impôts tombe automatiquement.**
-
-3. **Troisième excuse : « Si vous réclamez cet argent, l'armée partira de Corse et l'économie locale s'effondrera »**  
-   *La réalité :* La position géographique de la Corse au cœur de la Méditerranée occidentale est irremplaçable pour la défense française et pour l'OTAN. L'armée ne fermera pas Solenzara. Réclamer que l'État paie ses impôts légitimes et rende 327 hectares de terres agricoles laissées à l'abandon n'est pas une agression : c'est le rétablissement de la justice républicaine et du respect dû au peuple corse.
+1. *"Classified national security information."* — False: every single figure comes from public BOAMP tenders, DGFiP cadastral rolls, MRAe reports, and UN New York treaty archives.
+2. *"Merely cost reimbursements, not profit."* — False: CGI Article 1382 and Conseil d'État rulings remove tax exemption whenever revenue flows occur, regardless of accounting labels.
+3. *"If you claim taxes, the military will leave."* — False: Corsica's central Western Mediterranean position is irreplaceable for France and NATO. Demanding lawful taxes and the return of 327 unused agricultural hectares is simple republican justice.
 
 ---
 
-## LE TRIPTYQUE DES MUNITIONS CITOYENNES
-
-La Cellule L'OCHJU ne dépose aucune plainte en justice à votre place : elle forge les preuves certifiées et remet les armes d'action directement entre les mains des citoyens, des maires et des élus.
-
-### 1. 📰 Pour les Journalistes et Médias d'Investigation
-[Consulter le Kit Presse d'Investigation](file:///c:/Users/PC-Bureau/Desktop/l%27ochju/docs/transmissions/enquete-11-emprise-militaire/01_KIT_PRESSE_INVESTIGATION.md) contenant les 5 angles d'attaque découpés avec les références de chaque pièce d'État.
-
-### 2. ⚖️ Pour les Maires et Conseillers Municipaux
-[Télécharger le Modèle Officiel de Délibération Municipale](file:///c:/Users/PC-Bureau/Desktop/l%27ochju/docs/transmissions/enquete-11-emprise-militaire/02_BORDEREAU_TRANSMISSION_JUDICIAIRE.md) pour inscrire la question à l'ordre du jour du prochain conseil municipal, constater la fin de l'exonération et émettre un titre de recettes exécutoire de **19,75 millions d'euros** contre l'État.
-
-### 3. 🏛️ Pour les Élus et Parlementaires de la Corse
-[Télécharger les Propositions d'Amendements Législatifs](file:///c:/Users/PC-Bureau/Desktop/l%27ochju/docs/transmissions/enquete-11-emprise-militaire/03_NOTE_INTERPELLATION_PARLEMENTAIRE.md) pour inscrire dans le futur statut d'autonomie de l'île la restitution gratuite des 327 hectares de Ventiseri à l'agriculture avec dépollution intégrale aux frais de l'État, et le transfert de la base d'Aspretto à Ajaccio.
-
----
-
-## LES DOCUMENTS OFFICIELS DISPONIBLES EN TÉLÉCHARGEMENT DIRECT
-
-Chaque affirmation de cette enquête repose sur des actes publics d'État inaltérables. Vous pouvez consulter et télécharger directement les 6 pièces maîtresses sélectionnées dans notre coffre :
+## OFFICIAL STATE EXHIBITS FOR DIRECT DOWNLOAD
 
 <div class="my-8 not-prose grid grid-cols-1 md:grid-cols-2 gap-4">
 
-  <!-- PIÈCE 1 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-red-500/30 hover:border-red-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-red-400 font-bold">PIÈCE N° 01 • ACCORD DE L'ONU</span>
+        <span class="text-red-400 font-bold">EXHIBIT 01 • UN TREATY</span>
         <span class="text-slate-400">UNTS VOL. 2190</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Traité Bilatéral France - USAFE (Solenzara / Diane)</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">Bilateral Treaty France - USAFE (Solenzara / Diane)</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        L'accord officiel signé avec l'armée américaine : location du ciel, abris réservés aux bombes américaines et irresponsabilité juridique des armées étrangères en Corse.
+        Airspace leasing, US ordnance storage bunkers, and NATO SOFA Article VIII legal immunity clause.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-01-traite-unts-38665-solenzara-diane.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Lire le texte intégral →
-      </a>
-      <a href="docs/emprise-militaire/pdf/UNTS_Volume_2190_No_38665_Solenzara_Diane.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-mono text-xs font-bold transition">
-        📥 Télécharger le PDF ONU (7 Mo)
-      </a>
+      <a href="/docs/emprise-militaire/piece-01-traite-unts-38665-solenzara-diane.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 Read Full Text →</a>
+      <a href="/docs/emprise-militaire/pdf/UNTS_Volume_2190_No_38665_Solenzara_Diane.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-mono text-xs font-bold transition">📥 Download UN PDF (7 MB)</a>
     </div>
   </div>
 
-  <!-- PIÈCE 2 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-cyan-500/30 hover:border-cyan-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-cyan-400 font-bold">PIÈCE N° 02 • CONTRAT DE L'ÉTAT</span>
-        <span class="text-slate-400">BOAMP N° 440653</span>
+        <span class="text-cyan-400 font-bold">EXHIBIT 02 • STATE TENDER</span>
+        <span class="text-slate-400">BOAMP NO. 440653</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Marché de 91 Millions € HT pour les Pistes de Solenzara</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">€91 Million Runway Overhaul Contract (BA 126)</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        L'avis officiel d'adjudication pour la réfection complète des pistes de 3 000 mètres et du balisage OTAN par le Service d'Infrastructure de la Défense (SID Borgo).
+        Official defense infrastructure award notice for the 3,000m NATO-standard runways at Solenzara.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-02-marche-sid-se-91m-ba126.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Lire l'avis officiel →
-      </a>
-      <a href="docs/emprise-militaire/piece-02-marche-sid-se-91m-ba126.html" download="Avis_BOAMP_440653_Marche_91M_BA126.html" class="px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-mono text-xs font-bold transition">
-        📥 Télécharger l'acte certifié
-      </a>
+      <a href="/docs/emprise-militaire/piece-02-marche-sid-se-91m-ba126.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 Read Official Notice →</a>
+      <a href="/docs/emprise-militaire/piece-02-marche-sid-se-91m-ba126.html" download="Notice_BOAMP_440653_91M_BA126.html" class="px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-mono text-xs font-bold transition">📥 Download Certified Record</a>
     </div>
   </div>
 
-  <!-- PIÈCE 3 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-pink-500/30 hover:border-pink-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-pink-400 font-bold">PIÈCE N° 03 • RAPPORT ENVIRONNEMENTAL</span>
-        <span class="text-slate-400">AVIS MRAe 2025-DKCOR3</span>
+        <span class="text-pink-400 font-bold">EXHIBIT 03 • ENVIRONMENTAL AUDIT</span>
+        <span class="text-slate-400">MRAe 2025-DKCOR3</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Avis Officiel MRAe sur l'Eau et la Pollution de la BA 126</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">MRAe Report on Travo Water Drilling & PFAS Pollution</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        Rapport officiel constatant les forages dans la nappe du fleuve Travo (41 millions de litres/an), la pollution aux polluants éternels PFAS et les 327 hectares en friche.
+        Official findings documenting 41M L/yr aquifer extraction, PFAS contamination, and 327 idle hectares.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-06-registre-environnement-sid-se-ba126.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Lire le rapport détaillé →
-      </a>
-      <a href="docs/emprise-militaire/pdf/Avis_MRAe_Corse_Ventiseri_BA126.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white font-mono text-xs font-bold transition">
-        📥 Télécharger le PDF officiel MRAe
-      </a>
+      <a href="/docs/emprise-militaire/piece-06-registre-environnement-sid-se-ba126.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 Read Report →</a>
+      <a href="/docs/emprise-militaire/pdf/Avis_MRAe_Corse_Ventiseri_BA126.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white font-mono text-xs font-bold transition">📥 Download MRAe PDF</a>
     </div>
   </div>
 
-  <!-- PIÈCE 4 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-purple-500/30 hover:border-purple-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-purple-400 font-bold">PIÈCE N° 04 • VOLONTÉ DES ÉLUS CORSES</span>
-        <span class="text-slate-400">DÉLIBÉRATIONS CdC</span>
+        <span class="text-purple-400 font-bold">EXHIBIT 04 • ELECTED VOTES</span>
+        <span class="text-slate-400">CORSICAN ASSEMBLY</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Votes Solennels pour la Restitution d'Aspretto (Ajaccio)</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">Assembly Resolutions for Return of Aspretto (Ajaccio)</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        Délibérations officielles n° 14/207 AC et 21/017 AC de l'Assemblée de Corse et rapport parlementaire demandant le transfert des 18 hectares du Lazaret d'Aspretto.
+        Deliberations 14/207 AC and 21/017 AC demanding the restitution of the 18-hectare Aspretto naval enclave.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-04-deliberations-assemblee-corse-aspretto.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Lire les délibérations →
-      </a>
-      <a href="docs/emprise-militaire/pdf/Rapport_Information_AN_1466_Corse_Asprettu.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-mono text-xs font-bold transition">
-        📥 Télécharger le rapport officiel
-      </a>
+      <a href="/docs/emprise-militaire/piece-04-deliberations-assemblee-corse-aspretto.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 Read Resolutions →</a>
+      <a href="/docs/emprise-militaire/pdf/Rapport_Information_AN_1466_Corse_Asprettu.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-mono text-xs font-bold transition">📥 Download Parliamentary Report</a>
     </div>
   </div>
 
-  <!-- PIÈCE 5 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-amber-500/30 hover:border-amber-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-amber-400 font-bold">PIÈCE N° 05 • COMPTES DE LA COMMANDE PUBLIQUE</span>
-        <span class="text-slate-400">RÉPERTOIRE BOAMP / DECP</span>
+        <span class="text-amber-400 font-bold">EXHIBIT 05 • PUBLIC PROCUREMENT</span>
+        <span class="text-slate-400">BOAMP / DECP</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Inventaire des 137 Marchés Payés par l'Armée en Corse</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">Inventory of 137 Military Contracts in Corsica</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        La liste complète de tous les contrats de 2015 à 2026 : bunkerisation du dépôt de bombes, terminal pétrolier, travaux de pistes et concessions d'antennes.
+        Complete 2015–2026 ledger: hardened bomb depots, offshore fuel terminal, runways, and antenna leases.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-07-registre-citoyen-137-marches-militaires.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Consulter le registre officiel →
-      </a>
-      <a href="docs/emprise-militaire/piece-07-registre-137-marches-militaires.csv" download="137_Marches_Militaires_Corse_Lochju.csv" class="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 font-mono text-xs font-bold transition">
-        📥 Télécharger le tableur Excel (.CSV)
-      </a>
+      <a href="/docs/emprise-militaire/piece-07-registre-citoyen-137-marches-militaires.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 Inspect Ledger →</a>
+      <a href="/docs/emprise-militaire/piece-07-registre-137-marches-militaires.csv" download="137_Military_Contracts_Corsica_Lochju.csv" class="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 font-mono text-xs font-bold transition">📥 Download CSV</a>
     </div>
   </div>
 
-  <!-- PIÈCE 6 -->
   <div class="p-5 rounded-2xl bg-slate-900 border border-emerald-500/30 hover:border-emerald-500/60 transition flex flex-col justify-between space-y-3">
     <div>
       <div class="flex justify-between items-center text-xs font-mono mb-1">
-        <span class="text-emerald-400 font-bold">PIÈCE N° 06 • RELEVÉ DU CADASTRE</span>
-        <span class="text-slate-400">IMPÔTS DGFIP & IGN</span>
+        <span class="text-emerald-400 font-bold">EXHIBIT 06 • CADASTRAL ROLL</span>
+        <span class="text-slate-400">DGFiP & IGN</span>
       </div>
-      <h4 class="text-base font-bold text-white font-serif mb-1">Matrice Officielle des 2 848 Parcelles de Ventiseri</h4>
+      <h4 class="text-base font-bold text-white font-serif mb-1">Official Matrix of 2,848 Parcels in Ventiseri</h4>
       <p class="text-xs text-slate-300 leading-relaxed">
-        Le relevé parcelle par parcelle prouvant que 327 hectares de terres agricoles d'exception sont gelés sous miradors et abandonnés à la friche à la BA 126.
+        Parcel-by-parcel proof that 327 hectares of prime agricultural soil sit unused behind BA 126 fences.
       </p>
     </div>
     <div class="pt-2 flex flex-wrap gap-2">
-      <a href="docs/emprise-militaire/piece-08-matrice-citoyenne-2848-parcelles-cadastre.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">
-        📄 Voir la matrice cadastrale →
-      </a>
-      <a href="docs/emprise-militaire/piece-08-matrice-2848-parcelles-ventiseri.csv" download="2848_Parcelles_Cadastre_Ventiseri_Lochju.csv" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-mono text-xs font-bold transition">
-        📥 Télécharger le tableur Excel (.CSV)
-      </a>
+      <a href="/docs/emprise-militaire/piece-08-matrice-citoyenne-2848-parcelles-cadastre.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs font-bold transition">📄 View Cadastral Matrix →</a>
+      <a href="/docs/emprise-militaire/piece-08-matrice-2848-parcelles-ventiseri.csv" download="2848_Parcels_Ventiseri_Lochju.csv" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-mono text-xs font-bold transition">📥 Download CSV</a>
     </div>
   </div>
 
@@ -427,7 +316,7 @@ Chaque affirmation de cette enquête repose sur des actes publics d'État inalt�
 ---
 
 <div class="text-center font-serif italic text-amber-400 text-sm mt-8 border-t border-slate-800 pt-6">
-  <strong>Le Savoir partagé est notre contre-pouvoir. L'OCHJU, c'est le regard qui ne se détourne plus.</strong>
+  <strong>Shared Knowledge is our balance of power. L'OCHJU is the gaze that never turns away.</strong>
   <br><br>
-  <span class="text-xs text-slate-400 font-sans opacity-75">— Cellule d'Investigation L'OCHJU</span>
+  <span class="text-xs text-slate-400 font-sans opacity-75">— L'OCHJU Investigation Desk</span>
 </div>

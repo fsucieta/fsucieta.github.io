@@ -1,7 +1,7 @@
 ﻿---
 // index.astro - VERSION OFFICIELLE COMPLÈTE L'OCHJU
 // Typographie Presse d'Investigation Mondiale (Newsreader / Publico + Inter + JetBrains Mono)
-// Intégralité des outils : 9 Enquêtes + SIG 360 Communes + Radar DVF + CADA + Doctrine ISO 27037
+// Intégralité des outils : 10 Enquêtes + SIG 360 Communes + Radar DVF + CADA + Doctrine ISO 27037
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import GisMap from '../components/GisMap.astro';
@@ -11,13 +11,14 @@ import DoctrinePreuves from '../components/DoctrinePreuves.astro';
 import FoncierDvfRadar from '../components/FoncierDvfRadar.astro';
 
 const allEnquetes = await getCollection('enquetes');
-const idsFinalises = [2, 22, 26, 18, 27, 7, 23, 28, 4, 11];
+const idsFinalises = [2, 5, 22, 26, 18, 27, 7, 23, 28, 4, 11];
 const enquetesFinalisees = idsFinalises
   .map(id => allEnquetes.find(e => e.data.id === id))
   .filter((e): e is NonNullable<typeof e> => Boolean(e));
 
 const impactFoyer: Record<number, { val: string; label: string }> = {
   2: { val: "- 4 919 €", label: "Ponction Nette / foyer" },
+  5: { val: "290,8 M€", label: "Évasion SCI (10 ans)" },
   22: { val: "10 475 €", label: "Captation Épargne / foyer" },
   18: { val: "2 140 €", label: "Surcoût Énergie / an" },
   27: { val: "38 M€", label: "Argent Public Englouti" },
@@ -32,7 +33,7 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
 
 <Layout 
   title="L'OCHJU — Média Citoyen d'Investigation Médico-Légale (L'aveti ?)"
-  description="L'OCHJU — Premier média d'investigation en Corse fondé sur l'open data et la preuve médico-légale. Les 9 grandes enquêtes scellées en libre accès."
+  description="L'OCHJU — Premier média d'investigation en Corse fondé sur l'open data et la preuve médico-légale. Les 10 grandes enquêtes scellées en libre accès."
 >
   <!-- TYPOGRAPHIE PRESSE D'INVESTIGATION PRESTIGE : Newsreader (Éditorial ProPublica/NYT) + Inter + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,10 +151,11 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
         
         <!-- Dropdown Sélecteur International 8 Langues -->
         <div class="relative group/lang">
-          <button class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
+          <button type="button" class="text-xs font-mono bg-black/60 hover:bg-white/10 text-slate-300 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-white/20 transition flex items-center gap-1 font-bold cursor-pointer text-[10px] sm:text-xs shrink-0">
             <span>FR</span> <span class="text-[10px] text-amber-400">▼</span>
           </button>
-          <div class="absolute right-0 top-full mt-1 bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 hidden group-hover/lang:flex flex-col gap-1 w-32 z-50 font-mono text-xs">
+          <div class="absolute right-0 top-full pt-1 hidden group-hover/lang:block group-focus-within/lang:block z-50">
+            <div class="bg-black/95 border border-white/20 rounded-xl shadow-2xl py-2 px-1 flex flex-col gap-1 w-36 font-mono text-xs">
             <a href="./" class="px-3 py-1 hover:bg-white/10 rounded text-amber-400 font-bold flex items-center justify-between"><span>Français</span> <span class="text-[10px] text-slate-500">FR</span></a>
             <a href="./en/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>English</span> <span class="text-[10px] text-slate-500">EN</span></a>
             <a href="./it/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Italiano</span> <span class="text-[10px] text-slate-500">IT</span></a>
@@ -162,6 +164,7 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
             <a href="./ru/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>Русский</span> <span class="text-[10px] text-slate-500">RU</span></a>
             <a href="./zh/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>中文</span> <span class="text-[10px] text-slate-500">ZH</span></a>
             <a href="./ja/" class="px-3 py-1 hover:bg-white/10 rounded text-slate-300 hover:text-white flex items-center justify-between"><span>日本語</span> <span class="text-[10px] text-slate-500">JA</span></a>
+          </div>
           </div>
         </div>
       </div>
@@ -173,7 +176,7 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
   <nav class="bg-slate-950/90 border-b border-slate-800 backdrop-blur sticky top-[64px] md:top-[80px] z-40 py-2 px-4 shadow-md overflow-x-auto" aria-label="Navigation rapide par sections">
     <div class="max-w-7xl mx-auto flex flex-nowrap overflow-x-auto whitespace-nowrap scrollbar-none items-center justify-start sm:justify-center gap-1.5 sm:gap-2 text-xs font-mono-tech px-2">
       <a href="#memorandum" class="px-3 py-1.5 rounded-lg text-amber-300 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 transition font-bold">Mémorandum</a>
-      <a href="#enquetes" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">9 Enquêtes</a>
+      <a href="#enquetes" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">10 Enquêtes</a>
       <a href="#gis-map" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Carte 360</a>
       <a href="#foncier-dvf" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Radar DVF</a>
       <a href="#cada" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Recours CADA</a>
@@ -245,7 +248,7 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
       </div>
     </section>
 
-    <!-- ================= 2. LES 9 GRANDES ENQUÊTES SCELLÉES ================= -->
+    <!-- ================= 2. LES 10 GRANDES ENQUÊTES SCELLÉES ================= -->
     <section class="space-y-6" id="enquetes">
       
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-white/10 pb-4">
@@ -255,7 +258,7 @@ const impactFoyer: Record<number, { val: string; label: string }> = {
             <span>PREUVES SCELLÉES · SOUS NORME ISO/IEC 27037</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-press font-bold text-white mt-1">
-            Les 9 Grandes Enquêtes d'Instruction
+            Les 10 Grandes Enquêtes d'Instruction
           </h2>
           <p class="font-mono-tech text-xs text-slate-400 mt-1">
             Autopsies médico-légales complètes, bilans financiers certifiés et pièces opposables au juge.
